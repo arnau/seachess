@@ -1,9 +1,11 @@
 # Docker on Ubuntu 14.04
 
+Written by Arnau Siches on 2014-12-20.
+
 _All tests are done using a Vagrant `ubuntu/trusty64` box_.
 
 Ubuntu Trusty (Kernel 3.13.0-43-generic) offers `docker.io` package which
-installs Docker 1.0.1. That is to far from the current version (1.4.)
+installs Docker 1.0.1. That is too far from the current version (1.4.)
 
 To [install Docker from Docker-mantained package](https://docs.docker.com/installation/ubuntulinux)
 you can `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`.
