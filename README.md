@@ -1,4 +1,3 @@
-blog
-====
+# Blog
 
 A bunch of notes
