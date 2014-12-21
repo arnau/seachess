@@ -1,0 +1,43 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
+
+@prefix s: <http://spoontaneous.net/about/> .
+
+s: rdfa:usesVocabulary schema: .
+
+<http://spoontaneous.net/foaf>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://spoontaneous.net/foaf#me> ;
+  foaf:primaryTopic <http://spoontaneous.net/foaf#me> ;
+.
+
+<https://rubygems.org/gems/iso8601>
+  a doap:Project;
+  doap:name "ISO8601"@en ;
+.
+
+<https://github.com/arnau/iso8601>
+  a doap:GitRepository ;
+.
+
+<http://spoontaneous.net/foaf#me>
+  a foaf:Person ;
+  doap:homepage <http://github.com/arnau> ;
+  doap:repository <http://github.com/arnau>;
+  owl:sameAs <http://spoontaneous.net/foaf.rdf> ,
+             <http://spoontaneous.net/foaf.ttl> ;
+
+  foaf:currentProject <https://rubygems.org/gems/iso8601> ;
+  foaf:homepage <http://spoontaneous.net/> ;
+  # foaf:pastProject ...,
+  foaf:topic_interest <http://dbpedia.org/resource/Semantic_web> ,
+                      <http://dbpedia.org/resource/Linked_data> ,
+                      <http://dbpedia.org/resource/Ruby_(programming_language)> ;
+  foaf:weblog <https://github.com/arnau/blog/> ;
+  foaf:workplaceHomepage <http://ustwo.com/> ;
+.
