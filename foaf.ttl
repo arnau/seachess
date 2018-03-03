@@ -6,14 +6,14 @@
 @prefix schema: <http://schema.org/> .
 @prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> .
 
-@prefix s: <http://spoontaneous.net/about/> .
+@prefix s: <https://www.spoontaneous.net/about/> .
 
 s: rdfa:usesVocabulary schema: .
 
-<http://spoontaneous.net/foaf>
+<https://spoontaneous.net/foaf>
   a foaf:PersonalProfileDocument ;
-  foaf:maker <http://spoontaneous.net/foaf#me> ;
-  foaf:primaryTopic <http://spoontaneous.net/foaf#me> ;
+  foaf:maker <https://www.spoontaneous.net/foaf#me> ;
+  foaf:primaryTopic <https://www.spoontaneous.net/foaf#me> ;
 .
 
 <https://rubygems.org/gems/iso8601>
@@ -25,19 +25,18 @@ s: rdfa:usesVocabulary schema: .
   a doap:GitRepository ;
 .
 
-<http://spoontaneous.net/foaf#me>
+<http://www.spoontaneous.net/foaf#me>
   a foaf:Person ;
   doap:homepage <http://github.com/arnau> ;
   doap:repository <http://github.com/arnau>;
-  owl:sameAs <http://spoontaneous.net/foaf.rdf> ,
-             <http://spoontaneous.net/foaf.ttl> ;
 
   foaf:currentProject <https://rubygems.org/gems/iso8601> ;
-  foaf:homepage <http://spoontaneous.net/> ;
+  foaf:homepage <http://www.spoontaneous.net/> ;
   # foaf:pastProject ...,
   foaf:topic_interest <http://dbpedia.org/resource/Semantic_web> ,
                       <http://dbpedia.org/resource/Linked_data> ,
                       <http://dbpedia.org/resource/Ruby_(programming_language)> ;
-  foaf:weblog <https://github.com/arnau/blog/> ;
-  foaf:workplaceHomepage <http://ustwo.com/> ;
+                      <http://dbpedia.org/resource/Elixir_(programming_language)> ;
+                      <http://dbpedia.org/resource/Rust_(programming_language)> ;
+  foaf:weblog <https://www.spoontaneous.net> ;
 .
