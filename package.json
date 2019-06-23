@@ -1,0 +1,41 @@
+{
+  "name": "seachess",
+  "version": "1.0.0",
+  "description": "The seachess website",
+  "main": "index.js",
+  "repository": "git@github.com:arnau/seachess.git",
+  "author": "Arnau Siches",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "gatsby": "^2.10.0",
+    "gatsby-image": "^2.2.1",
+    "gatsby-plugin-manifest": "^2.2.0",
+    "gatsby-plugin-offline": "^2.2.0",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.2.1",
+    "gatsby-remark-vscode": "^1.0.6",
+    "gatsby-source-filesystem": "^2.1.0",
+    "gatsby-transformer-remark": "^2.5.0",
+    "gatsby-transformer-sharp": "^2.2.0",
+    "gatsby-transformer-toml": "^2.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-plugin-react": "^7.13.0",
+    "gatsby-cli": "^2.7.0",
+    "prettier": "^1.18.2"
+  }
+}

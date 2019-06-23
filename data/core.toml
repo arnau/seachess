@@ -1,0 +1,23 @@
+title = "Seachess"
+description = "Notes, drawings and other activity from Arnau Siches"
+
+[author]
+name = "Arnau Siches"
+github = "@arnau"
+twitter = "@arnau_siches"
+keybase = "@arnau"
+
+[[tools]]
+id = "gatsby"
+name = "Gatsby"
+url = "https://www.gatsbyjs.org"
+
+[[tools]]
+id = "netlify"
+name = "Netlify"
+url = "https://www.netlify.com"
+
+[[tools]]
+id = "github"
+name = "Github"
+url = "https://www.github.com"
