@@ -1,14 +1,61 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+// import urljoin from "url-join";
+
+
+export function article({url, headline, images, date, author, description}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': url
+    },
+    headline,
+    'image': images,
+    'datePublished': date,
+    'dateModified': date,
+    'author': {
+      '@type': 'Person',
+      'name': author.name,
+    },
+    'publisher': {
+      '@type': 'Organisation',
+      'name': 'Sea Chess',
+      'logo': {
+        '@type': 'ImageObject',
+        'url': '/logo.jpg' // TODO
+      }
+    },
+    description
+  }
+}
+
+
+export function breadcrumb(list) {
+  return ({
+    '@context': 'http://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: list.map(({url, name}) => ({
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@id': url,
+        name,
+      }
+    }))
+  })
+}
+
+export function Snippet(data) {
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify(data)}
+    </script>
+  )
+}
 
 function Meta({ description, meta, title }) {
   const { core } = useStaticQuery(
@@ -27,9 +74,7 @@ function Meta({ description, meta, title }) {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang: 'en',
-      }}
+      htmlAttributes={{lang: 'en'}}
       title={title}
       titleTemplate={`%s | ${core.title}`}
       meta={[

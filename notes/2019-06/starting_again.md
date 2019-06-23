@@ -9,4 +9,7 @@ tags:
 
 # Starting again
 
-Back in the day foo bar
+Back in 2013 I stopped my blog after almost a decade of blogging about
+technical stuff.
+
+Now seems the right time to start again.
