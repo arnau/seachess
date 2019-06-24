@@ -1,7 +1,73 @@
 const path = require('path')
 
-exports.onCreateNode = ({ node, actions }) => {
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes, createFieldExtension } = actions
+  const typeDefs = `
+    type Sketch implements Node @dontInfer {
+      caption: String!
+      id: ID!
+      image: File! @fileByRelativePath
+      date: Date @dateformat
+      author: Author! @link
+      tools: [Tool]
+    }
+
+    type Tool {
+      id: ID!
+      name: String!
+      url: String
+    }
+
+    type Settings implements Node @dontInfer {
+      title: String!
+      description: String
+      url: String
+      author: Author
+      tools: [Tool]
+    }
+
+    type Author implements Node {
+      id: ID!
+      name: String!
+      github: Tool
+      twitter: Tool
+      keybase: Tool
+    }
+
+    # union TOML = Sketch | Settings
+  `
+
+  createTypes(typeDefs)
+}
+
+async function createAuthorNodeFromSettings({
+  node,
+  actions,
+  createContentDigest,
+}) {
+  const { createNode, createParentChildLink } = actions
+  const authorNode = {
+    ...node.author,
+    children: [],
+    parent: node.id,
+    internal: {
+      type: 'Author',
+      contentDigest: createContentDigest(node.author),
+    }
+  }
+
+  createNode(authorNode)
+  createParentChildLink({parent: node, child: authorNode})
+}
+
+
+exports.onCreateNode = (args) => {
+  const { node, actions } = args
   const { createNodeField } = actions
+
+  if (node.internal.type === 'Settings') {
+    createAuthorNodeFromSettings(args)
+  }
 
   if (node.internal.type === 'MarkdownRemark') {
     const meta = node.frontmatter
@@ -11,105 +77,76 @@ exports.onCreateNode = ({ node, actions }) => {
     }
 
     if (meta.type === 'note') {
-      if (typeof meta.date === 'undefined') {
-        throw new Error(`${node.id} has no date`)
+      if (typeof meta.id === 'undefined') {
+        throw new Error(`${node.id} has no id`)
       }
 
-      const group = meta.date.slice(0, 7)
-
-      createNodeField({node, name: 'group', value: group})
-      createNodeField({node, name: 'slug', value: `/${group}/${meta.id}`})
+      createNodeField({node, name: 'slug', value: `/notes/${meta.id}`})
     }
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
+async function createSketchPages({ graphql, actions }) {
   const { createPage } = actions
-  const notePage = path.resolve('src/templates/note.js')
-  const groupPage = path.resolve('src/templates/group.js')
-  // const tagPage = path.resolve('src/templates/tag.jsx')
-
-  const markdownQueryResult = await graphql(
-    `
+  const sketchPage = path.resolve('src/templates/sketch.js')
+  const result = await graphql(`
       {
-        allMarkdownRemark {
-          edges {
-            node {
-              fields {
-                slug
-                group
-              }
-              frontmatter {
-                title
-                tags
-                date
-              }
-            }
-          }
+        allSketch(sort: {fields: date, order: ASC}) {
+          edges { node { id } }
         }
       }
-    `
-  )
+    `)
 
-  if (markdownQueryResult.errors) {
-    console.error(markdownQueryResult.errors)
-    throw markdownQueryResult.errors
+  if (result.errors) {
+    console.error(result.errors)
+    throw result.errors
   }
 
-  const tagSet = new Set()
-  const groupSet = new Set()
-  const postsEdges = markdownQueryResult.data.allMarkdownRemark.edges
-
-  postsEdges.sort((a, b) => {
-    if (a.frontmatter.date < b.frontmatter.date) return 1
-    if (b.frontmatter.date > a.frontmatter.date) return -1
-
-    return 0
-  })
-
-  postsEdges.forEach((edge, index) => {
-    if (edge.node.frontmatter.tags) {
-      edge.node.frontmatter.tags.forEach(tag => {
-        tagSet.add(tag)
-      })
-
-      groupSet.add(edge.node.fields.group)
-    }
-
-
-    const nextID = index + 1 < postsEdges.length ? index + 1 : 0
-    const prevID = index - 1 >= 0 ? index - 1 : postsEdges.length - 1
-    const nextEdge = postsEdges[nextID]
-    const prevEdge = postsEdges[prevID]
-
+  result.data.allSketch.edges.forEach(({ node }) => {
+    const path = `/sketches/${node.id}`
     createPage({
-      path: edge.node.fields.slug,
-      component: notePage,
+      path,
+      component: sketchPage,
       context: {
-        slug: edge.node.fields.slug,
-        nexttitle: nextEdge.node.frontmatter.title,
-        nextslug: nextEdge.node.fields.slug,
-        prevtitle: prevEdge.node.frontmatter.title,
-        prevslug: prevEdge.node.fields.slug
+        id: node.id,
+        slug: path,
       }
     })
   })
+}
 
-  groupSet.forEach(group => {
+async function createNotePages({ graphql, actions }) {
+  const { createPage } = actions
+  const notePage = path.resolve('src/templates/note.js')
+  const filter = process.env.NODE_ENV === 'development'
+    ? '{ frontmatter: { status: {ne: "draft" }}}'
+    : '{}'
+
+  const result = await graphql(`
+      {
+        allMarkdownRemark(filter: ${filter}) {
+          edges { node { fields { slug } } }
+        }
+      }
+    `)
+
+  if (result.errors) {
+    console.error(result.errors)
+    throw result.errors
+  }
+
+  result.data.allMarkdownRemark.edges.forEach(({node}) => {
     createPage({
-      path: `/${group}/`,
-      component: groupPage,
-      context: {group}
+      path: node.fields.slug,
+      component: notePage,
+      context: {
+        slug: node.fields.slug,
+      }
     })
   })
+}
 
-  // tagSet.forEach(tag => {
-  //   createPage({
-  //     path: `/tags/${_.kebabCase(tag)}/`,
-  //     component: tagPage,
-  //     context: {
-  //       tag
-  //     }
-  //   })
-  // })
+exports.createPages = async (args) => {
+  await createSketchPages(args)
+  await createNotePages(args)
 }

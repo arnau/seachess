@@ -1,6 +1,7 @@
-# Blog
+# Seachess
 
-A bunch of notes
+The codebase for my website. A bunch of notes and sketches build with
+[Gatsbyjs](https://gatsbyjs.org).
 
 ## Licence
 

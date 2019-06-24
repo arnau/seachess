@@ -1,6 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
 
 import Layout from '../components/layout'
 import Meta from '../components/meta'
@@ -11,18 +11,25 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-
-function NotFoundPage() {
+function Page({location, title, children}) {
   const classes = useStyles()
+
   return (
-    <Layout location="/404">
+    <Layout location={location}>
+      <Meta title={title} />
+
       <div className={classes.root}>
-        <Meta title="Not found" />
-        <Typography component="h1" variant="h2">Page not found</Typography>
-        <p>The page you are trying to access does not exist.</p>
+        { children }
       </div>
     </Layout>
   )
 }
 
-export default NotFoundPage
+Page.propTypes = {
+  location: PropTypes.string,
+  title: PropTypes.string,
+  children: PropTypes.array,
+}
+
+
+export default Page

@@ -1,16 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: 'Seachess',
-    description: 'Arnau Siches\' website',
-    author: '@arnau',
+    siteUrl: 'https://www.seachess.net',
+  },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'Author.id',
+    // 'Sketch.author': 'Author.id'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-material-ui',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
+        name: 'sketches',
+        path: `${__dirname}/sketches`,
       },
     },
     {
@@ -27,27 +33,50 @@ module.exports = {
         path: `${__dirname}/notes`,
       },
     },
-    'gatsby-transformer-toml',
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-transformer-toml5',
       options: {
-        plugins: [{
-          resolve: 'gatsby-remark-vscode'
-        }]
+        defaultType: 'ION'
       }
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-transformer-remark',
       options: {
-        name: 'seachess',
-        short_name: 'seachess',
-        start_url: '/',
-        background_color: '#993366',
-        theme_color: '#993366',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        excerpt_separator: '<!-- end -->',
+        plugins: [
+          'gatsby-remark-rfc8288',
+          'gatsby-remark-graphviz',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-autolink-headers',
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_self',
+              rel: 'nofollow noopener'
+            }
+          },
+          {
+            resolve: 'gatsby-remark-component',
+            options: { components: ['my-component', 'other-component'] }
+          },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: true,
+              noInlineHighlight: false,
+            }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+            },
+          }
+        ]
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -7,14 +7,13 @@ import Heading from '../components/heading'
 import Page from '../components/page'
 
 
-function Index({location, data}) {
+function Notes({location, data}) {
   const set = data.allMarkdownRemark.edges
   const { settings } = data
 
   return (
-    <Page location={location.pathname} title="Home">
-      <Heading>Recent</Heading>
-
+    <Page location={location.pathname} title="Notes">
+      <Heading>Notes</Heading>
       {
         set.map(({node}) => {
           return (
@@ -32,7 +31,7 @@ function Index({location, data}) {
   )
 }
 
-Index.propTypes = {
+Notes.propTypes = {
   location: PropTypes.object,
   data: PropTypes.object,
   pageContext: PropTypes.object,
@@ -41,13 +40,12 @@ Index.propTypes = {
 
 /* eslint no-undef: "off" */
 export const query = graphql`
-  query Recent {
+  query Notes {
     settings {
       author { name }
     }
     allMarkdownRemark(
-      limit: 1
-      filter: { frontmatter: { type: {eq: "note"}, status: {ne: "draft" }}}
+      filter: { frontmatter: { type: {eq: "note"}, status: {ne: "draft"}}}
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -55,18 +53,16 @@ export const query = graphql`
           fields {
             slug
           }
-          timeToRead
-          excerpt(format: HTML, pruneLength: 500)
           frontmatter {
             id
             title
             type
-            tags
             date
           }
+          excerpt(format: HTML, pruneLength: 100)
         }
       }
     }
   }
 `
-export default Index
+export default Notes

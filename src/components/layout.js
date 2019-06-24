@@ -1,21 +1,44 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import 'typeface-roboto'
+import '../prism-theme.css'
+
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Container from '@material-ui/core/Container'
+import { makeStyles } from '@material-ui/core/styles'
+import { ThemeProvider } from '@material-ui/styles'
 
 import Header from './header'
-import './layout.css'
+import Footer from './footer'
+import theme from '../theme'
 
-function Layout({ children }) {
+const useStyles = makeStyles(theme => ({
+  wrapper: {
+    marginTop: theme.spacing(6),
+    // backgroundColor: theme.palette.background.main,
+    backgroundColor: '#FAFAFA',
+  },
+  links: {
+    '@global': {
+      'a': {
+        color: theme.palette.primary.main,
+        textDecoration: 'underline'
+      },
+      'a:visited': {
+        color: theme.palette.primary.visited,
+      }
+    },
+
+  }
+}))
+
+
+function Wrapper({ location, children, maxWidth }) {
+  const classes = useStyles()
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
-      core: coreToml {
+      settings {
         title,
       }
     }
@@ -23,28 +46,36 @@ function Layout({ children }) {
 
   return (
     <React.Fragment>
-      <Header siteTitle={data.core.title} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0px 1.0875rem 1.45rem',
-          paddingTop: 0,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <Header location={location} siteTitle={data.settings.title} />
+      <div className={`${classes.wrapper} ${classes.links}`} vocab="http://schema.org/">
+        <Container maxWidth={maxWidth || 'md'}>
+          <main>{children}</main>
+        </Container>
       </div>
+      <Footer className={classes.links} />
     </React.Fragment>
+  )
+}
+
+Wrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  location: PropTypes.string.isRequired,
+  maxWidth: PropTypes.string,
+}
+
+function Layout({ location, children, maxWidth }) {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Wrapper location={location} maxWidth={maxWidth}>{children}</Wrapper>
+    </ThemeProvider>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  location: PropTypes.string.isRequired,
+  maxWidth: PropTypes.string,
 }
 
 export default Layout

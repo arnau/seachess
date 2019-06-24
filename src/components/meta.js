@@ -5,63 +5,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 // import urljoin from "url-join";
 
 
-export function article({url, headline, images, date, author, description}) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'NewsArticle',
-    'mainEntityOfPage': {
-      '@type': 'WebPage',
-      '@id': url
-    },
-    headline,
-    'image': images,
-    'datePublished': date,
-    'dateModified': date,
-    'author': {
-      '@type': 'Person',
-      'name': author.name,
-    },
-    'publisher': {
-      '@type': 'Organisation',
-      'name': 'Sea Chess',
-      'logo': {
-        '@type': 'ImageObject',
-        'url': '/logo.jpg' // TODO
-      }
-    },
-    description
-  }
-}
-
-
-export function breadcrumb(list) {
-  return ({
-    '@context': 'http://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: list.map(({url, name}) => ({
-      '@type': 'ListItem',
-      position: 1,
-      item: {
-        '@id': url,
-        name,
-      }
-    }))
-  })
-}
-
-export function Snippet(data) {
-  return (
-    <script type="application/ld+json">
-      {JSON.stringify(data)}
-    </script>
-  )
-}
-
 function Meta({ description, meta, title }) {
-  const { core } = useStaticQuery(
+  const { settings } = useStaticQuery(
     graphql`
-      query {
-        core: coreToml {
+      query MetaQuery {
+        settings {
           title
           description
           author { name }
@@ -70,29 +18,17 @@ function Meta({ description, meta, title }) {
     `
   )
 
-  const metaDescription = description || core.description
+  const metaDescription = description || settings.description
 
   return (
     <Helmet
       htmlAttributes={{lang: 'en'}}
       title={title}
-      titleTemplate={`%s | ${core.title}`}
+      titleTemplate={`%s | ${settings.title}`}
       meta={[
         {
           name: 'description',
           content: metaDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
         },
         {
           name: 'twitter:card',
@@ -100,7 +36,7 @@ function Meta({ description, meta, title }) {
         },
         {
           name: 'twitter:creator',
-          content: core.author.name,
+          content: settings.author.name,
         },
         {
           name: 'twitter:title',
@@ -111,7 +47,13 @@ function Meta({ description, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      {
+        //<link rel="stylesheet"
+        //href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+      }
+      {/* <link rel="sitemap" type="application/xml" href="/sitemap.xml" /> */}
+    </Helmet>
   )
 }
 

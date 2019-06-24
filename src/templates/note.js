@@ -1,43 +1,60 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-// import UserInfo from "../components/UserInfo/UserInfo";
-// import Disqus from "../components/Disqus/Disqus";
-// import PostTags from "../components/PostTags/PostTags";
-// import SocialLinks from "../components/SocialLinks/SocialLinks";
-import Meta from '../components/meta'
-// import config from "../../data/SiteConfig";
-// import "./b16-tomorrow-dark.css";
-// import "./post.css";
+import { makeStyles } from '@material-ui/core/styles'
+import Typography from '@material-ui/core/Typography'
+import rehypeReact from 'rehype-react'
+import sanitizeHtml from 'sanitize-html'
 
-function Note({data, pageContext}) {
-  const { slug } = pageContext
+import Layout from '../components/layout'
+import Meta from '../components/meta'
+import MetaNote from '../components/metanote'
+// import Disqus from "../components/Disqus/Disqus";
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    padding: theme.spacing(2, 0),
+  },
+  metanote: {
+    fontSize: 14,
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(4)
+  }
+}))
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  // components: { "interactive-counter": Counter },
+  components: {},
+}).Compiler
+
+function Note({location, data}) {
+  const classes = useStyles()
   const note = data.markdownRemark
   const meta = note.frontmatter
+  const title = meta.title
+  const body = renderAst(note.htmlAst)
 
   return (
-    <Layout>
-      <div>
-        {/* <SEO title={post.title} postPath={slug} postNode={postNode} postSEO /> */}
-        <Meta title={note.headings[0].value} />
+    <Layout location="/notes/">
+      <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
+        <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
         <div>
-          <div dangerouslySetInnerHTML={{ __html: note.html }} />
-          <div className="post-meta">
-            {meta.date}
-            {/* <PostTags tags={meta.tags} /> */}
-            {/* <SocialLinks postPath={slug} postNode={postNode} /> */}
-          </div>
-          {/* <UserInfo config={config} /> */}
+          <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote} />
+
+
+          <Typography property="name" component="h1" variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
+          <div property="articleBody">{body}</div>
           {/* <Disqus postNode={postNode} /> */}
         </div>
-      </div>
+      </article>
     </Layout>
 
   )
 }
 
 Note.propTypes = {
+  location: PropTypes.object,
   data: PropTypes.object,
   pageContext: PropTypes.object,
 }
@@ -46,18 +63,18 @@ Note.propTypes = {
 export const query = graphql`
   query NoteBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      timeToRead
+      htmlAst
       excerpt
       frontmatter {
+        title
         date
         tags
+        author {
+          name
+        }
       }
       fields {
         slug
-      }
-      headings(depth: h1) {
-        value
       }
     }
   }
