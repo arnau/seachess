@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Mobster"
+id = "1220fdd99e4f35374a5fcac6b2d3c71b95c82a8bb8b959d0a20e770c47f8f6342ec5"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-01-15
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

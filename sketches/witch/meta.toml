@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Witch"
+id = "12203ee71ef96c3185496e76ff9fd9938ff25f125110aa51ec832bc8f06f2aafdbae"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-01-15
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

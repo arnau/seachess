@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Dragon and castle"
+id = "12200805f20cb75e8f65ddb43ab94cd9fe69d22a9b6a82b23e3a31922e9733681590"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-03-10
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

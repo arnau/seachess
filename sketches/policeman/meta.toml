@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Old man"
+id = "1220340b2de7c4ca6dedbc005539af2f5f7d31009155e89fa93486ec5eafb773e56c"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-02-20
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

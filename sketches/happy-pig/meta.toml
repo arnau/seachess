@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Happy pig"
+id = "122012a1e72b4b76b795f5fcf4886491775b8bff3df3e940005825b312dc333a1e9b"
+image = "./image.jpg"
+author = "arnau"
+date = 2013-01-01
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

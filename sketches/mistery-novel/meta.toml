@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Mistery novel"
+id = "122084084c8eca081a8563498157cee8cd176382a3e10b5f8ecc7eded3aaf6e0f534"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-01-01
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"

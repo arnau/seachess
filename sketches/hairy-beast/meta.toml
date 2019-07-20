@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Hairy beast"
+id = "1220210c3184f7e4c48d7c2f56c5fea96094b3c64b18b563299970699d83439bfb93"
+image = "./image.jpg"
+author = "arnau"
+date = 2014-10-16
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"
