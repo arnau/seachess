@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@arnau/gatsby-transformer-toml@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@arnau/gatsby-transformer-toml/-/gatsby-transformer-toml-1.0.0.tgz#37feb3b40a408bacf4f44ff92d0e2ea8cc6bd8ee"
+  integrity sha512-7sO4uoipON3AqC/hgmEOw8eYpobXynrzJbIURlTp3DROAENToXnCsR69ye3XfXF0CHlVeylYfE6UiqR623SbeA==
+  dependencies:
+    ion-parser "^0.5.1"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
@@ -5882,15 +5889,6 @@ gatsby-transformer-sharp@^2.2.0:
     probe-image-size "^4.0.0"
     semver "^5.6.0"
     sharp "^0.22.1"
-
-gatsby-transformer-toml@^2.2.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-toml/-/gatsby-transformer-toml-2.2.2.tgz#7110b076e1cff79f4b6e7ac20d7d8bfc0612e5ea"
-  integrity sha512-YZH3rp00IVVpGrZI1nDfsBW833rMq+h3/d9piWGrNgWRovXOBbA+Cm9a7+N+Xo+EYrSUKaQSk1ctVhlYrWZPaA==
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    bluebird "^3.5.0"
-    toml "^2.3.2"
 
 gatsby@^2.10.0:
   version "2.13.28"
@@ -13026,11 +13024,6 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
-
-toml@^2.3.2:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/toml/-/toml-2.3.6.tgz#25b0866483a9722474895559088b436fd11f861b"
-  integrity sha512-gVweAectJU3ebq//Ferr2JUY4WKSDe5N+z0FvjDncLGyHmIDoxgY/2Ie4qfEIDm4IS7OA6Rmdm7pdEEdMcV/xQ==
 
 topo@2.x.x:
   version "2.0.2"

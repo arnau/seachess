@@ -33,12 +33,7 @@ module.exports = {
         path: `${__dirname}/notes`,
       },
     },
-    {
-      resolve: 'gatsby-transformer-toml5',
-      options: {
-        defaultType: 'ION'
-      }
-    },
+    '@arnau/gatsby-transformer-toml',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
