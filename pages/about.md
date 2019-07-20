@@ -1,7 +1,0 @@
----
-url: about
----
-
-# About
-
-TODO
