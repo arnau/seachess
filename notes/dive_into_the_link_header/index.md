@@ -4,6 +4,7 @@ author: arnau
 id: dive-into-the-link-header
 title: A dive into the <code>Link</code> header
 type: note
+status: published
 tags:
   - web
   - standards
