@@ -40,6 +40,16 @@ module.exports = {
       options: {
         excerpt_separator: '<!-- end -->',
         plugins: [
+          {
+            resolve: 'gatsby-remark-curlie',
+            options: {
+              db: [
+                {id: 'example', 'url': 'https://example.org/'},
+                {id: 'curie', 'url': 'https://www.w3.org/TR/curie', 'publisher': 'W3C', 'published': '2010'},
+                {id: 'url', 'url': 'https://url.spec.whatwg.org/#', 'publisher': 'WHATWG'},
+              ]
+            }
+          },
           'gatsby-remark-rfc8288',
           'gatsby-remark-graphviz',
           'gatsby-remark-copy-linked-files',
