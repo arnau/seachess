@@ -1,7 +1,7 @@
 const path = require('path')
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes, createFieldExtension } = actions
+  const { createTypes } = actions
   const typeDefs = `
     type Sketch implements Node @dontInfer {
       caption: String!
@@ -23,6 +23,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       url: String
       author: Author
+      copyright: String
       tools: [Tool]
     }
 

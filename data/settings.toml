@@ -2,6 +2,7 @@ type = "Settings"
 title = "Sea Chess"
 description = "Notes, drawings and other activity from Arnau Siches"
 url = "https://www.seachess.net"
+copyright = "2019, Arnau Siches"
 
 [author]
 id = "arnau"

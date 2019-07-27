@@ -13,6 +13,65 @@ module.exports = {
     'gatsby-plugin-material-ui',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            settings {
+              title
+              description
+              url
+              copyright
+            }
+          }
+        `,
+        setup: ({ query: { settings, ...rest }}) => {
+          return {
+            ...settings,
+            ...rest,
+          }
+        },
+        feeds: [
+          {
+            serialize: ({ query: { settings, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: settings.url + edge.node.fields.slug,
+                  guid: settings.url + edge.node.fields.slug,
+                  copyright: settings.copyright,
+                  // custom_elements: [{ 'content:encoded': edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { frontmatter: { type: {eq: "note"}, status: {ne: "draft"}}}
+                  sort: { fields: [frontmatter___date], order: DESC }
+                ) {
+                  edges {
+                    node {
+                      excerpt(format: HTML, pruneLength: 100)
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Seachess RSS Feed',
+          },
+        ],
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'sketches',
