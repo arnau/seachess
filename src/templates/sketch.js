@@ -130,7 +130,7 @@ export const query = graphql`
       }
       image {
         childImageSharp {
-          fixed(fit: FILL, width: 300) {
+          fixed(fit: COVER, width: 300) {
             src
           }
           fluid(fit: CONTAIN, maxWidth: 1216) {
