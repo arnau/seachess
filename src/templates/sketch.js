@@ -91,12 +91,14 @@ function Sketch({ data }) {
   const { fluid, fixed } = sketch.image.childImageSharp
   const width = fluid.aspectRatio > 1 ? 'lg' : 'md'
   const url = settings.url + fixed.src
+  const date = moment(sketch.date).format('MMMM D, YYYY')
+
   const meta = {
     'twitter:card': 'summary_large_images',
     'og:image': url,
     'twitter:image': url,
-    'twitter:label1': sketch.date,
-    'twitter:data1': sketch.date,
+    'twitter:label1': date,
+    'twitter:data1': date,
   }
 
   return (
