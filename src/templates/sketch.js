@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 import moment from 'moment'
 
 import Link from '../components/link'
+import Meta from '../components/meta'
 import Layout from '../components/layout'
 
 function Tool({ id, name, url }) {
@@ -86,12 +87,21 @@ const useStyles = makeStyles(theme => ({
 
 function Sketch({ data }) {
   const classes = useStyles()
-  const { sketch }= data
-  const { fluid } = sketch.image.childImageSharp
+  const { settings, sketch }= data
+  const { fluid, fixed } = sketch.image.childImageSharp
   const width = fluid.aspectRatio > 1 ? 'lg' : 'md'
+  const url = settings.url + fixed.src
+  const meta = {
+    'twitter:card': 'summary_large_images',
+    'og:image': url,
+    'twitter:image': url,
+    'twitter:label1': sketch.date,
+    'twitter:data1': sketch.date,
+  }
 
   return (
     <Layout location="/sketches/" maxWidth={width}>
+      <Meta title={sketch.caption} meta={ meta } />
       <div className={classes.root}>
         <MetaSketch tools={sketch.tools} date={sketch.date} className={classes.meta} />
         <Img alt={sketch.caption} fluid={fluid} />
@@ -108,6 +118,7 @@ Sketch.propTypes = {
 /* eslint no-undef: "off" */
 export const query = graphql`
   query SketchById($id: String!) {
+    settings { url }
     sketch(id: { eq: $id }) {
       id
       date
@@ -119,6 +130,9 @@ export const query = graphql`
       }
       image {
         childImageSharp {
+          fixed(fit: FILL, width: 300) {
+            src
+          }
           fluid(fit: CONTAIN, maxWidth: 1216) {
             ...GatsbyImageSharpFluid
             originalImg

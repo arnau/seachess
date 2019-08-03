@@ -12,41 +12,32 @@ function Meta({ description, meta, title }) {
         settings {
           title
           description
-          author { name }
+          author {
+            name
+            twitter { name }
+          }
         }
       }
     `
   )
 
   const metaDescription = description || settings.description
+  const metadata = {
+    description: metaDescription,
+    'twitter:card': 'summary',
+    'twitter:creator': settings.author.twitter.name,
+    'twitter:title': title,
+    'twitter:description': metaDescription,
+    'og:title': title,
+    'og:description': metaDescription,
+  }
 
   return (
     <Helmet
       htmlAttributes={{lang: 'en'}}
       title={title}
       titleTemplate={`%s | ${settings.title}`}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:creator',
-          content: settings.author.name,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ].concat(meta)}
+      meta={Object.entries({ ...metadata, ...meta}).map(([name, content]) => ({name, content}))}
     >
       {
         //<link rel="stylesheet"
@@ -64,7 +55,7 @@ Meta.defaultProps = {
 Meta.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.object,
   title: PropTypes.string.isRequired,
 }
 
