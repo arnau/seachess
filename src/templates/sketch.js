@@ -94,7 +94,7 @@ function Sketch({ data }) {
   const date = moment(sketch.date).format('MMMM D, YYYY')
 
   const meta = {
-    'twitter:card': 'summary_large_images',
+    'twitter:card': 'summary_large_image',
     'og:image': url,
     'twitter:image': url,
     'twitter:label1': date,
