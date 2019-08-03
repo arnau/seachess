@@ -119,13 +119,9 @@ async function createSketchPages({ graphql, actions }) {
 async function createNotePages({ graphql, actions }) {
   const { createPage } = actions
   const notePage = path.resolve('src/templates/note.js')
-  const filter = process.env.NODE_ENV === 'development'
-    ? '{ frontmatter: { status: {ne: "draft" }}}'
-    : '{}'
-
   const result = await graphql(`
       {
-        allMarkdownRemark(filter: ${filter}) {
+        allMarkdownRemark {
           edges { node { fields { slug } } }
         }
       }
