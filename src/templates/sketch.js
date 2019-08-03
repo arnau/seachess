@@ -96,7 +96,6 @@ function Sketch({ data }) {
   const meta = {
     'twitter:card': 'summary_large_image',
     'og:image': url,
-    'twitter:image': url,
     'twitter:label1': date,
     'twitter:data1': date,
   }

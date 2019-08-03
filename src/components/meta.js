@@ -26,19 +26,22 @@ function Meta({ description, meta, title }) {
     description: metaDescription,
     'twitter:card': 'summary',
     'twitter:creator': settings.author.twitter.name,
-    'twitter:title': title,
-    'twitter:description': metaDescription,
     'og:title': title,
     'og:description': metaDescription,
   }
+
+  const metaset = Object.entries({ ...metadata, ...meta}).map(([name, content]) => {
+    const obj = name.startsWith('og') ? {property: name, content} : {name, content}
+
+    return obj
+  })
 
   return (
     <Helmet
       htmlAttributes={{lang: 'en'}}
       title={title}
       titleTemplate={`%s | ${settings.title}`}
-      meta={Object.entries({ ...metadata, ...meta}).map(([name, content]) => ({name, content}))}
-    >
+      meta={metaset}>
       {
         //<link rel="stylesheet"
         //href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
