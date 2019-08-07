@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Furry dragon"
+id = "122044dcede850844b1bcff818d5406fbbb0850fa50c0db26cf0404f81f3c0ca3ec9"
+image = "./image.jpg"
+author = "arnau"
+date = 2019-08-06
+
+[[tools]]
+id = "ipadpro"
+name = "iPad Pro"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"
