@@ -27,7 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tools: [Tool]
     }
 
-    type Author implements Node {
+    type Author implements Node @childOf(types: ["Settings", "Sketch"]) {
       id: ID!
       name: String!
       github: Tool
