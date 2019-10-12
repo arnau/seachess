@@ -52,7 +52,7 @@ function Meta({ description, meta, title }) {
 }
 
 Meta.defaultProps = {
-  meta: [],
+  meta: {},
 }
 
 Meta.propTypes = {

@@ -1,9 +1,9 @@
+import dayjs from 'dayjs'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Img from 'gatsby-image'
-import moment from 'moment'
 
 import Link from '../components/link'
 import Meta from '../components/meta'
@@ -46,7 +46,7 @@ PublicationDate.propTypes = {
 }
 
 function PublicationDate({date}) {
-  const instant = moment(date)
+  const instant = dayjs(date)
   const iso = instant.format('YYYY-MM-DD')
 
   return (
@@ -91,7 +91,7 @@ function Sketch({ data }) {
   const { fluid, fixed } = sketch.image.childImageSharp
   const width = fluid.aspectRatio > 1 ? 'lg' : 'md'
   const url = settings.url + fixed.src
-  const date = moment(sketch.date).format('MMMM D, YYYY')
+  const date = dayjs(sketch.date).format('MMMM D, YYYY')
 
   const meta = {
     'twitter:card': 'summary_large_image',

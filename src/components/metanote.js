@@ -1,9 +1,9 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 import React from 'react'
 import PropTypes from 'prop-types'
 
 function PublicationDate({date}) {
-  const instant = moment(date)
+  const instant = dayjs(date)
   const iso = instant.format('YYYY-MM-DD')
 
   return (
