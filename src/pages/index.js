@@ -46,7 +46,7 @@ export const query = graphql`
       author { name }
     }
     allMarkdownRemark(
-      limit: 1
+      limit: 2
       filter: { frontmatter: { type: {eq: "note"}}}
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
