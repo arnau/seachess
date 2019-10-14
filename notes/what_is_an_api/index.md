@@ -54,7 +54,7 @@ digraph g {
 }
 ```
 
-This graph illustrates that _any_ interaction between a browser and a server
+This graphic illustrates that _any_ interaction between a browser and a server
 occurs through an API, specifically an HTTP API.
 
 In the scenario of a website, the API most likely lets the browser get
