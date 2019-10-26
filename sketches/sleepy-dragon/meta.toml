@@ -1,0 +1,15 @@
+type = "Sketch"
+caption = "Sleepy dragon"
+id = "122024fa8c909fa83e0db71b0e2ef704912ddb9ba61db4e6b9270dafbf544425a7a9"
+image = "./image.jpg"
+author = "arnau"
+date = 2019-10-22
+
+[[tools]]
+id = "ipad2"
+name = "iPad"
+
+[[tools]]
+id = "procreate"
+name = "Procreate"
+url = "https://procreate.art/"
