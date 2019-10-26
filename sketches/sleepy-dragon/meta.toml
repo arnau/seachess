@@ -6,8 +6,8 @@ author = "arnau"
 date = 2019-10-22
 
 [[tools]]
-id = "ipad2"
-name = "iPad"
+id = "ipadpro"
+name = "iPad Pro"
 
 [[tools]]
 id = "procreate"
