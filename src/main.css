@@ -4,3 +4,13 @@ hr {
   background-color: #DDD;
   margin-bottom: 40px;
 }
+
+.brand-text {
+  margin-left: 16px;
+}
+
+@media (max-width: 500px) {
+  .brand-text {
+    display: none;
+  }
+}

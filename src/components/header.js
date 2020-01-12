@@ -1,8 +1,7 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useTheme, makeStyles } from '@material-ui/core/styles'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
@@ -30,22 +29,16 @@ const useStyles = makeStyles(theme => ({
   group: {
     flexGrow: 1,
   },
-  title: {
-    marginLeft: theme.spacing(2),
-  },
 }))
 
 function Brand({ classes, title }) {
-  const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('sm'))
-
   return (
     <React.Fragment>
       <Typography variant="h6" component="span" color="inherit"
         className={classes.group}>
         <Link to="/" className={classes.link}>
           <SeaEye />
-          { matches ? <span className={classes.title}>{title}</span> : null }
+          <span className="brand-text">{title}</span>
         </Link>
       </Typography>
     </React.Fragment>
