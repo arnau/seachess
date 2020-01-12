@@ -11,9 +11,33 @@ import Heading from '../components/heading'
 import Page from '../components/page'
 import Link from '../components/link'
 
+function Group({ data, settings }) {
+  const { author } = settings
+
+  return (
+    data.map(({node}) => {
+      const { id, title, date } = node.frontmatter
+      const { slug } = node.fields
+
+      return (
+        <ExcerptNote key={id}
+          title={title}
+          href={slug}
+          date={date}
+          author={author.name}>
+          <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+        </ExcerptNote>
+      )
+    })
+  )
+}
+
+Group.propTypes = {
+  data: PropTypes.object,
+  settings: PropTypes.object,
+}
 
 function Index({location, data}) {
-  const set = data.allMarkdownRemark.edges
   const { settings } = data
 
   return (
@@ -30,19 +54,9 @@ function Index({location, data}) {
 
       <Heading>Recent</Heading>
 
-      {
-        set.map(({node}) => {
-          return (
-            <ExcerptNote key={node.frontmatter.id}
-              title={node.frontmatter.title}
-              href={node.fields.slug}
-              date={node.frontmatter.date}
-              author={settings.author.name}>
-              <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </ExcerptNote>
-          )
-        })
-      }
+      <Group data={data.bulletin.edges} settings={settings} />
+      <Group data={data.notes.edges} settings={settings} />
+
     </Page>
   )
 }
@@ -60,7 +74,29 @@ export const query = graphql`
     settings {
       author { name }
     }
-    allMarkdownRemark(
+    bulletin: allMarkdownRemark(
+      limit: 1
+      filter: { frontmatter: { type: {eq: "bulletin"}}}
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          timeToRead
+          excerpt(format: HTML, pruneLength: 500)
+          frontmatter {
+            id
+            title
+            type
+            tags
+            date
+          }
+        }
+      }
+    }
+    notes: allMarkdownRemark(
       limit: 2
       filter: { frontmatter: { type: {eq: "note"}}}
       sort: { fields: [frontmatter___date], order: DESC }
