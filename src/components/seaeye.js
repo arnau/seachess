@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { makeStyles } from '@material-ui/core/styles'
 
 
@@ -9,14 +10,30 @@ const useStyles = makeStyles({
   }
 })
 
-function SeaEye() {
-  const base = 6
-  const rad = base * 3
-  const dim = rad * 2
-  const eye = base * 2.4
+function Square({ side, x, y, fill, stroke }) {
+  return (
+    <rect width={side} height={side} x={x} y={y} fill={fill} stroke={stroke} />
+  )
+}
 
-  const primary = '#FFDD00'
-  const secondary = '#000000'
+Square.propTypes = {
+  side: PropTypes.number.isRequired,
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  fill: PropTypes.string.isRequired,
+  stroke: PropTypes.string.isRequired,
+}
+
+
+
+function SeaEye() {
+  const side = 8
+  const dim = (side * 4) + 2
+
+  const primary = '#00AAFF'
+  const secondary = '#0055AA'
+  const neutral = '#55CCEE'
+  const hlight = '#FFDD00'
   const classes = useStyles()
 
   return(
@@ -28,11 +45,94 @@ function SeaEye() {
       width={dim} height={dim}
       viewBox={`0, 0, ${dim}, ${dim}`}
     >
-      <circle cx={rad} cy={rad} r={rad} fill={secondary} />
-      <circle cx={rad} cy={rad} r={eye} fill={primary} />
-      <circle cx={rad} cy={rad} r={base} fill={secondary} />
-    </svg>
 
+      {/* row 1 */}
+      <rect width={side} height={side} x={1} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1} fill={primary} stroke={neutral} />
+      {/*
+      <rect width={side} height={side} x={1 + (side * 4)} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1} fill={primary} stroke={neutral} />
+      */}
+
+      {/* row 2 */}
+      <rect width={side} height={side} x={1} y={1 + (side * 1)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 1)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 1)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 1)} fill={secondary} stroke={neutral} />
+      {/*
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 1)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 1)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 1)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 1)} fill={secondary} stroke={neutral} />
+      */}
+
+      {/* row 3 */}
+      <rect width={side} height={side} x={1} y={1 + (side * 2)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 2)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 2)} fill={hlight} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 2)} fill={secondary} stroke={neutral} />
+      {/*
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 2)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 2)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 2)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 2)} fill={secondary} stroke={neutral} />
+      */}
+
+      {/* row 4 */}
+      <rect width={side} height={side} x={1} y={1 + (side * 3)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      {/*
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 3)} fill={secondary} stroke={neutral} />
+      */}
+
+      {/*
+
+      <rect width={side} height={side} x={1} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 4)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 4)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 4)} fill={primary} stroke={neutral} />
+
+      <rect width={side} height={side} x={1} y={1 + (side * 5)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 5)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 5)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 5)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 5)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 5)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 5)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 5)} fill={secondary} stroke={neutral} />
+
+      <rect width={side} height={side} x={1} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 6)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 6)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 6)} fill={secondary} stroke={neutral} />
+
+      <rect width={side} height={side} x={1} y={1 + (side * 7)} fill={primary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 1)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 2)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 3)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 4)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 5)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 6)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      <rect width={side} height={side} x={1 + (side * 7)} y={1 + (side * 7)} fill={secondary} stroke={neutral} />
+      */}
+    </svg>
   )
 }
 
