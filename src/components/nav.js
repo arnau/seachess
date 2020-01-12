@@ -38,8 +38,10 @@ const options = [
 ]
 
 function Nav({ location }) {
+  const llocation = ['/notes/','/sketches/','/bulletins/'].some(x => location == x)
+    ? location : false
   return (
-    <STabs value={location}>
+    <STabs value={llocation}>
       {
         options.map(({url, label}) => <STab key={url} to={url} value={url} label={label} />)
       }
