@@ -127,10 +127,11 @@ async function createSketchPages({ graphql, actions }) {
 async function createNotePages({ graphql, actions }) {
   const { createPage } = actions
   const notePage = path.resolve('src/templates/note.js')
+  const bulletinPage = path.resolve('src/templates/bulletin.js')
   const result = await graphql(`
       {
         allMarkdownRemark {
-          edges { node { fields { slug } } }
+          edges { node { fields { slug } frontmatter { type } } }
         }
       }
     `)
@@ -143,7 +144,7 @@ async function createNotePages({ graphql, actions }) {
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
     createPage({
       path: node.fields.slug,
-      component: notePage,
+      component: node.frontmatter.type == 'note' ? notePage : bulletinPage,
       context: {
         slug: node.fields.slug,
       }
