@@ -45,7 +45,7 @@ function Index({location, data}) {
       <Paper variant="outlined">
         <CardContent>
           <Typography>
-            <strong>Seachess</strong> is where I, Arnau Siches, publish my <Link
+            <strong>Seachess</strong> is where I publish my <Link
               to="/notes/">notes</Link> and <Link to="/sketches/">sketches</Link>.
             Check out the <Link to="/about/">about</Link> to know more about me.
           </Typography>
