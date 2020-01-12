@@ -84,6 +84,14 @@ exports.onCreateNode = (args) => {
 
       createNodeField({node, name: 'slug', value: `/notes/${meta.id}`})
     }
+
+    if (meta.type === 'bulletin') {
+      if (typeof meta.id === 'undefined') {
+        throw new Error(`${node.id} has no id`)
+      }
+
+      createNodeField({node, name: 'slug', value: `/bulletins/${meta.id}`})
+    }
   }
 }
 

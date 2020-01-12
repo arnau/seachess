@@ -92,6 +92,13 @@ module.exports = {
         path: `${__dirname}/notes`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'bulletins',
+        path: `${__dirname}/bulletins`,
+      },
+    },
     '@arnau/gatsby-transformer-toml',
     'gatsby-transformer-sharp',
     {
