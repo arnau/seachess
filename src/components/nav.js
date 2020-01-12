@@ -36,10 +36,10 @@ const STab = withStyles(theme => ({
 }))(props => <Tab disableRipple component={Link} {...props} />)
 
 const options = [
-  { url: '/', label: 'Home'},
   { url: '/notes/', label: 'Notes'},
   { url: '/sketches/', label: 'Sketches'},
-  { url: '/about/', label: 'About'},
+  { url: '/bulletins/', label: 'Bulletins'},
+  // { url: '/about/', label: 'About'},
 ]
 
 function Nav({ location }) {

@@ -2,9 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
+import CardContent from '@material-ui/core/CardContent'
+import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
+
 import ExcerptNote from '../components/excerptnote'
 import Heading from '../components/heading'
 import Page from '../components/page'
+import Link from '../components/link'
 
 
 function Index({location, data}) {
@@ -13,6 +18,16 @@ function Index({location, data}) {
 
   return (
     <Page location={location.pathname} title="Home">
+      <Paper variant="outlined">
+        <CardContent>
+          <Typography>
+            <strong>Seachess</strong> is where I, Arnau Siches, publish my <Link
+              to="/notes/">notes</Link> and <Link to="/sketches/">sketches</Link>.
+            Check out the <Link to="/about/">about</Link> to know more about me.
+          </Typography>
+        </CardContent>
+      </Paper>
+
       <Heading>Recent</Heading>
 
       {
