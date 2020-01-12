@@ -7,7 +7,7 @@ import Heading from '../components/heading'
 import Link from '../components/link'
 
 
-function About({location, data}) {
+function About({ location, data }) {
   const { settings } = data
 
   return (

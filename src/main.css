@@ -1,0 +1,16 @@
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #DDD;
+  margin-bottom: 40px;
+}
+
+.brand-text {
+  margin-left: 16px;
+}
+
+@media (max-width: 500px) {
+  .brand-text {
+    display: none;
+  }
+}
