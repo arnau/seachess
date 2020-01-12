@@ -1,11 +1,12 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { useTheme, makeStyles } from '@material-ui/core/styles'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import AppBar from '@material-ui/core/AppBar'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Toolbar from '@material-ui/core/Toolbar'
-import { makeStyles } from '@material-ui/core/styles'
 
 import SeaEye from './seaeye'
 import Nav from './nav'
@@ -17,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   link: {
-    marginLeft: theme.spacing(2),
+    display: 'inline-block',
     color: 'black',
     textDecoration: 'none',
     fontVariant: 'all-small-caps',
@@ -26,34 +27,44 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
+  group: {
     flexGrow: 1,
   },
-  sea: {
-    color: theme.palette.primary.main,
+  title: {
+    marginLeft: theme.spacing(2),
   },
-  chess: {
-    color: '#2255CC'
-  }
 }))
 
+function Brand({ classes, title }) {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.up('sm'))
+
+  return (
+    <React.Fragment>
+      <Typography variant="h6" component="span" color="inherit"
+        className={classes.group}>
+        <Link to="/" className={classes.link}>
+          <SeaEye />
+          { matches ? <span className={classes.title}>{title}</span> : null }
+        </Link>
+      </Typography>
+    </React.Fragment>
+  )
+}
+
+Brand.propTypes = {
+  title: PropTypes.string.isRequired,
+  classes: PropTypes.object.isRequired,
+}
 
 function Header({ location, siteTitle }) {
   const classes = useStyles()
-  const [sea, chess] = siteTitle.split(' ')
 
   return (
     <AppBar position="fixed" color="default" elevation={0} className={classes.root}>
       <Container maxWidth="md">
         <Toolbar variant="dense" disableGutters={true}>
-          <SeaEye />
-          <Typography variant="h6" component="span" color="inherit" className={classes.title}>
-            <Link to="/" className={classes.link}>
-              {/* {siteTitle} */}
-              <span className={classes.sea}>{sea}</span>
-              <span className={classes.chess}>{chess}</span>
-            </Link>
-          </Typography>
+          <Brand classes={classes} title={siteTitle} />
           <Nav location={location} />
         </Toolbar>
       </Container>
