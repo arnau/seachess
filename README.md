@@ -9,5 +9,5 @@ The codebase for my website. A bunch of notes and sketches build with
 
 The codebase is licensed under the [MIT licence](./LICENCE).
 
-The website content, texual and images, are licensed under a
+The website content, text and images, are licensed under a
 [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/)
