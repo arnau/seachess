@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 
 import Typography from '@material-ui/core/Typography'
 
-import Link from '../components/link'
 import ExcerptNote from '../components/excerptnote'
 import Heading from '../components/heading'
 import Page from '../components/page'
@@ -18,7 +17,7 @@ function Bulletins({location, data}) {
     <Page location={location.pathname} title="Bulletins">
       <Heading>Bulletins</Heading>
       <Typography component="p" paragraph={true}>
-        Subscribe to new issues of the bulletin using the <Link to="/bulletins/rss.xml">RSS feed</Link>.
+        Subscribe to new issues of the bulletin using the <a href="/bulletins/rss.xml">RSS feed</a>.
       </Typography>
       {
         set.map(({node}) => {

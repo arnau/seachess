@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography'
 import rehypeReact from 'rehype-react'
 import sanitizeHtml from 'sanitize-html'
 
-import Link from '../components/link'
 import Layout from '../components/layout'
 import Meta from '../components/meta'
 import MetaNote from '../components/metanote'
@@ -44,7 +43,7 @@ function Bulletin({location, data}) {
           <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote}>
             <Typography component="span" className={classes.metanote}>
               Subscribe to new issues of the bulletin using
-              the <Link to="/bulletins/rss.xml">RSS feed</Link>.
+              the <a href="/bulletins/rss.xml">RSS feed</a>.
             </Typography>
           </MetaNote>
 
