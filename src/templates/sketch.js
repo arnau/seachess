@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import Img from 'gatsby-image'
 
 import Link from '../components/link'
+import Licence from '../components/licence'
 import Meta from '../components/meta'
 import Layout from '../components/layout'
 
@@ -106,6 +107,7 @@ function Sketch({ data }) {
       <div className={classes.root}>
         <MetaSketch tools={sketch.tools} date={sketch.date} className={classes.meta} />
         <Img alt={sketch.caption} fluid={fluid} />
+        <Licence />
       </div>
     </Layout>
   )

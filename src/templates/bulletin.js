@@ -9,7 +9,9 @@ import sanitizeHtml from 'sanitize-html'
 import Layout from '../components/layout'
 import Meta from '../components/meta'
 import MetaNote from '../components/metanote'
+import Licence from '../components/licence'
 // import Disqus from "../components/Disqus/Disqus";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -51,6 +53,8 @@ function Bulletin({location, data}) {
           <div property="articleBody">{body}</div>
           {/* <Disqus postNode={postNode} /> */}
         </div>
+
+        <Licence />
       </article>
     </Layout>
 
