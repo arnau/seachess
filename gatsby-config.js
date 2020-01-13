@@ -68,6 +68,41 @@ module.exports = {
             output: '/rss.xml',
             title: 'Seachess RSS Feed',
           },
+          {
+            serialize: ({ query: { settings, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.html,
+                  date: edge.node.frontmatter.date,
+                  url: settings.url + edge.node.fields.slug,
+                  guid: settings.url + edge.node.fields.slug,
+                  copyright: settings.copyright,
+                  // custom_elements: [{ 'content:encoded': edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { frontmatter: { type: {eq: "bulletin"}}}
+                  sort: { fields: [frontmatter___date], order: DESC }
+                ) {
+                  edges {
+                    node {
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/bulletins/rss.xml',
+            title: 'Seachess Bulletin RSS Feed',
+          },
         ],
       }
     },

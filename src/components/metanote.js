@@ -17,11 +17,13 @@ PublicationDate.propTypes = {
   date: PropTypes.string,
 }
 
-function MetaNote({date, author, className}) {
+function MetaNote({date, author, className, children}) {
   return (
     <div className={className}>
-      On <PublicationDate date={date} /> by <span property="creator">{author}</span>
+      On <PublicationDate date={date} /> by <span property="creator">{author}</span>.
       {/* <a href={slug} itemProp="url" title={title}>#</a> */}
+      { ' ' }
+      { children }
     </div>
   )
 }
@@ -30,6 +32,7 @@ MetaNote.propTypes = {
   date: PropTypes.string,
   author: PropTypes.string,
   className: PropTypes.string,
+  children: PropTypes.any,
 }
 
 export default MetaNote

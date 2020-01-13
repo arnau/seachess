@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
+import Typography from '@material-ui/core/Typography'
+
+import Link from '../components/link'
 import ExcerptNote from '../components/excerptnote'
 import Heading from '../components/heading'
 import Page from '../components/page'
@@ -14,6 +17,9 @@ function Bulletins({location, data}) {
   return (
     <Page location={location.pathname} title="Bulletins">
       <Heading>Bulletins</Heading>
+      <Typography component="p" paragraph={true}>
+        Subscribe to new issues of the bulletin using the <Link to="/bulletins/rss.xml">RSS feed</Link>.
+      </Typography>
       {
         set.map(({node}) => {
           return (
