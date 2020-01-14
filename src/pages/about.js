@@ -42,7 +42,7 @@ function About({ location, data }) {
         Netlify doesn't offer this information in their free plan.</p>
 
       <p>This required to add an infamous cookie wall as imposed by ICO and
-        firends. The "solution" to put users in control of their privacy.
+        friends. The "solution" to put users in control of their privacy.
         Laughable. On top of that, people are starting shame you if you use
         cookies. Great one! now people that want to use cookies with honest
         purposes have to justify themselves and people that use them for shady
