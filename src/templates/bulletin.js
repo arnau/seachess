@@ -10,12 +10,15 @@ import Layout from '../components/layout'
 import Meta from '../components/meta'
 import MetaNote from '../components/metanote'
 import Licence from '../components/licence'
-// import Disqus from "../components/Disqus/Disqus";
+import Subscription from '../components/subscription'
 
 
 const useStyles = makeStyles(theme => ({
   root: {
     padding: theme.spacing(2, 0),
+  },
+  header: {
+    marginBottom: theme.spacing(2),
   },
   metanote: {
     fontSize: 14,
@@ -42,16 +45,14 @@ function Bulletin({location, data}) {
       <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
         <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
         <div>
-          <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote}>
-            <Typography component="span" className={classes.metanote}>
-              Subscribe to new issues of the bulletin using
-              the <a href="/bulletins/rss.xml">RSS feed</a>.
-            </Typography>
-          </MetaNote>
+          <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote} />
 
-          <Typography property="name" component="h1" variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
+          <Typography
+            className={classes.header}
+            property="name" component="h1" variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
+
+          <Subscription />
           <div property="articleBody">{body}</div>
-          {/* <Disqus postNode={postNode} /> */}
         </div>
 
         <Licence />
