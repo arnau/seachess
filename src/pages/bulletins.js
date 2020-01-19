@@ -2,12 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import Typography from '@material-ui/core/Typography'
-
 import ExcerptNote from '../components/excerptnote'
 import Heading from '../components/heading'
 import Page from '../components/page'
-
+import Subscription from '../components/subscription'
 
 function Bulletins({location, data}) {
   const set = data.allMarkdownRemark.edges
@@ -16,9 +14,7 @@ function Bulletins({location, data}) {
   return (
     <Page location={location.pathname} title="Bulletins">
       <Heading>Bulletins</Heading>
-      <Typography component="p" paragraph={true}>
-        Subscribe to new issues of the bulletin using the <a href="/bulletins/rss.xml">RSS feed</a>.
-      </Typography>
+      <Subscription />
       {
         set.map(({node}) => {
           return (
