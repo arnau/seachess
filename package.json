@@ -49,6 +49,8 @@
     "react-helmet": "^5.2.1",
     "react-photo-gallery": "^8.0.0",
     "rehype-react": "^4.0.1",
+    "remark-html": "^10.0.0",
+    "remark-rehype": "^5.0.0",
     "sanitize-html": "^1.20.1",
     "typeface-roboto": "^0.0.75"
   },

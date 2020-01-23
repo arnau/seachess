@@ -8,7 +8,7 @@ import Page from '../components/page'
 import Subscription from '../components/subscription'
 
 function Bulletins({location, data}) {
-  const set = data.allMarkdownRemark.edges
+  const set = data.allBulletin.edges
   const { settings } = data
 
   return (
@@ -18,13 +18,11 @@ function Bulletins({location, data}) {
       {
         set.map(({node}) => {
           return (
-            <ExcerptNote key={node.frontmatter.id}
-              title={node.frontmatter.title}
-              href={node.fields.slug}
-              date={node.frontmatter.date}
-              author={settings.author.name}>
-              <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </ExcerptNote>
+            <ExcerptNote key={node.id}
+              title={node.title}
+              href={node.slug}
+              date={node.date}
+              author={settings.author.name}/>
           )
         })
       }
@@ -45,22 +43,14 @@ export const query = graphql`
     settings {
       author { name }
     }
-    allMarkdownRemark(
-      filter: { frontmatter: { type: {eq: "bulletin"}}}
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
+    allBulletin(sort: { fields: date, order: DESC }) {
       edges {
         node {
-          fields {
-            slug
-          }
-          frontmatter {
-            id
-            title
-            type
-            date
-          }
-          excerpt(format: HTML, pruneLength: 100)
+          id
+          slug
+          title
+          date
+          introduction
         }
       }
     }

@@ -1,8 +1,45 @@
 const path = require('path')
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createFieldExtension, createTypes } = actions
+
+  createFieldExtension({
+    name: 'slug',
+    args: {
+      base: 'String'
+    },
+    extend({ base }) {
+      return {
+        resolve(source) {
+          return `${base}/${source.id}`
+        },
+      }
+    },
+  })
+
   const typeDefs = `
+    type Bulletin implements Node @dontInfer {
+      id : ID!
+      date : Date @dateformat
+      author : Author! @link
+      title : String!
+      status : Status!
+      introduction : String!
+      links : [Link!]!
+      slug : String! @slug(base: "/bulletins")
+    }
+
+    type Link {
+      title : String!
+      url : String!
+      comment : String!
+    }
+
+    enum Status {
+      Draft
+      Published
+    }
+
     type Sketch implements Node @dontInfer {
       caption: String!
       id: ID!
@@ -10,6 +47,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       author: Author! @link
       tools: [Tool]
+      slug : String! @slug(base: "/sketches")
     }
 
     type Tool {
@@ -27,7 +65,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       tools: [Tool]
     }
 
-    type Author implements Node @childOf(types: ["Settings", "Sketch"]) {
+    type Author implements Node @childOf(types: ["Settings", "Sketch", "Bulletin"]) {
       id: ID!
       name: String!
       github: Tool
@@ -85,19 +123,12 @@ exports.onCreateNode = (args) => {
       createNodeField({node, name: 'slug', value: `/notes/${meta.id}`})
     }
 
-    if (meta.type === 'bulletin') {
-      if (typeof meta.id === 'undefined') {
-        throw new Error(`${node.id} has no id`)
-      }
-
-      createNodeField({node, name: 'slug', value: `/bulletins/${meta.id}`})
-    }
   }
 }
 
 async function createSketchPages({ graphql, actions }) {
   const { createPage } = actions
-  const sketchPage = path.resolve('src/templates/sketch.js')
+  const component = path.resolve('src/templates/sketch.js')
   const result = await graphql(`
       {
         allSketch(sort: {fields: date, order: ASC}) {
@@ -115,7 +146,7 @@ async function createSketchPages({ graphql, actions }) {
     const path = `/sketches/${node.id}`
     createPage({
       path,
-      component: sketchPage,
+      component,
       context: {
         id: node.id,
         slug: path,
@@ -126,11 +157,10 @@ async function createSketchPages({ graphql, actions }) {
 
 async function createNotePages({ graphql, actions }) {
   const { createPage } = actions
-  const notePage = path.resolve('src/templates/note.js')
-  const bulletinPage = path.resolve('src/templates/bulletin.js')
+  const component = path.resolve('src/templates/note.js')
   const result = await graphql(`
       {
-        allMarkdownRemark {
+        allMarkdownRemark(filter: {frontmatter: {type: {eq: "note"}}}) {
           edges { node { fields { slug } frontmatter { type } } }
         }
       }
@@ -144,9 +174,37 @@ async function createNotePages({ graphql, actions }) {
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
     createPage({
       path: node.fields.slug,
-      component: node.frontmatter.type == 'note' ? notePage : bulletinPage,
+      component,
       context: {
         slug: node.fields.slug,
+      }
+    })
+  })
+}
+
+async function createBulletinPages({ graphql, actions }) {
+  const { createPage } = actions
+  const component = path.resolve('src/templates/bulletin.js')
+  const result = await graphql(`
+      {
+        allBulletin {
+          edges { node { id slug } }
+        }
+      }
+    `)
+
+  if (result.errors) {
+    console.error(result.errors)
+    throw result.errors
+  }
+
+  result.data.allBulletin.edges.forEach(({ node }) => {
+    createPage({
+      path: node.slug,
+      component,
+      context: {
+        id: node.id,
+        slug: node.slug,
       }
     })
   })
@@ -155,4 +213,5 @@ async function createNotePages({ graphql, actions }) {
 exports.createPages = async (args) => {
   await createSketchPages(args)
   await createNotePages(args)
+  await createBulletinPages(args)
 }

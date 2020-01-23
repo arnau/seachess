@@ -3,8 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-import rehypeReact from 'rehype-react'
+
+import markdown from 'remark-parse'
+import rehype2react from 'rehype-react'
+import remark2rehype from 'remark-rehype'
 import sanitizeHtml from 'sanitize-html'
+import unified from 'unified'
 
 import Layout from '../components/layout'
 import Meta from '../components/meta'
@@ -27,32 +31,52 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  // components: { "interactive-counter": Counter },
-  components: {},
-}).Compiler
+const processor = unified()
+  .use(markdown)
+  .use(remark2rehype)
+  .use(rehype2react, { createElement: React.createElement })
 
 function Bulletin({location, data}) {
   const classes = useStyles()
-  const note = data.markdownRemark
-  const meta = note.frontmatter
-  const title = meta.title
-  const body = renderAst(note.htmlAst)
+  const { title, introduction, date, links, author } = data.bulletin
 
   return (
     <Layout location="/bulletins/">
       <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
         <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
         <div>
-          <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote} />
+          <MetaNote date={date} author={author.name} className={classes.metanote} />
 
           <Typography
             className={classes.header}
-            property="name" component="h1" variant="h3" dangerouslySetInnerHTML={{ __html: title }}/>
+            property="name" component="h1" variant="h3">
+            {title}
+          </Typography>
 
           <Subscription />
-          <div property="articleBody">{body}</div>
+
+          <Typography component="p">
+            {introduction}
+          </Typography>
+          <hr />
+
+          <div property="articleBody">
+            {
+              links.map(link => {
+                return (
+                  <div key={link.url}>
+                    <Typography component="h2" variant="h6">
+                      <a href={link.url}>{link.title}</a>
+                    </Typography>
+                    <Typography component="p">
+                      {processor.processSync(link.comment).contents}
+                    </Typography>
+                    <hr />
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
 
         <Licence />
@@ -71,19 +95,17 @@ Bulletin.propTypes = {
 /* eslint no-undef: "off" */
 export const query = graphql`
   query BulletinBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      htmlAst
-      excerpt
-      frontmatter {
+    bulletin(slug: { eq: $slug }) {
+      id
+      slug
+      author { name }
+      title
+      introduction
+      date
+      links {
         title
-        date
-        tags
-        author {
-          name
-        }
-      }
-      fields {
-        slug
+        url
+        comment
       }
     }
   }
