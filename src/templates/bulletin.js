@@ -68,7 +68,7 @@ function Bulletin({location, data}) {
                     <Typography component="h2" variant="h6">
                       <a href={link.url}>{link.title}</a>
                     </Typography>
-                    <Typography component="p">
+                    <Typography component="div">
                       {processor.processSync(link.comment).contents}
                     </Typography>
                     <hr />
