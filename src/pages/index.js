@@ -11,6 +11,7 @@ import Heading from '../components/heading'
 import Page from '../components/page'
 import Link from '../components/link'
 
+
 function Group({ data, settings }) {
   const { author } = settings
 
@@ -33,7 +34,7 @@ function Group({ data, settings }) {
 }
 
 Group.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
   settings: PropTypes.object,
 }
 
@@ -54,7 +55,15 @@ function Index({location, data}) {
 
       <Heading>Recent</Heading>
 
-      <Group data={data.bulletin.edges} settings={settings} />
+      {
+        data.bulletin.edges.map(({ node }) =>
+          <ExcerptNote key={node.id}
+            title={node.title}
+            href={node.slug}
+            date={node.date}
+            author={settings.author.name}/>
+        )
+      }
       <Group data={data.notes.edges} settings={settings} />
 
     </Page>
@@ -74,25 +83,16 @@ export const query = graphql`
     settings {
       author { name }
     }
-    bulletin: allMarkdownRemark(
+    bulletin: allBulletin(
       limit: 1
-      filter: { frontmatter: { type: {eq: "bulletin"}}}
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: date, order: DESC }
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
-          timeToRead
-          excerpt(format: HTML, pruneLength: 500)
-          frontmatter {
-            id
-            title
-            type
-            tags
-            date
-          }
+          id
+          slug
+          title
+          date
         }
       }
     }
