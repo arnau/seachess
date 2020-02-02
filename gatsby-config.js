@@ -1,3 +1,21 @@
+var remark = require('remark')
+var html = require('remark-html')
+
+function bulletin_to_html({ introduction, links }) {
+  const links_s = links.map(link =>
+    `## [${link.title}](${link.url})\n${link.comment}\n`)
+  const md = `${introduction}\n${links_s}`
+  let result
+
+  remark().use(html).process(md, (err, file) => {
+    if (err) throw err
+
+    result = String(file)
+  })
+
+  return result
+}
+
 module.exports = {
   siteMetadata: {
     title: 'Seachess',
@@ -70,31 +88,32 @@ module.exports = {
             title: 'Seachess RSS Feed',
           },
           {
-            serialize: ({ query: { settings, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.html,
-                  date: edge.node.frontmatter.date,
-                  url: settings.url + edge.node.fields.slug,
-                  guid: settings.url + edge.node.fields.slug,
+            serialize: ({ query: { settings, allBulletin } }) => {
+              return allBulletin.edges.map(edge => {
+                return {
+                  title: edge.node.title,
+                  description: bulletin_to_html(edge.node),
+                  date: edge.node.date,
+                  url: settings.url + edge.node.slug,
+                  guid: settings.url + edge.node.slug,
                   copyright: settings.copyright,
                   // custom_elements: [{ 'content:encoded': edge.node.html }],
-                })
+                }
               })
             },
             query: `
               {
-                allMarkdownRemark(
-                  filter: { frontmatter: { type: {eq: "bulletin"}}}
-                  sort: { fields: [frontmatter___date], order: DESC }
-                ) {
+                allBulletin(sort: { fields: date, order: DESC }) {
                   edges {
                     node {
-                      html
-                      fields { slug }
-                      frontmatter {
+                      slug
+                      title
+                      date
+                      introduction
+                      links {
                         title
-                        date
+                        url
+                        comment
                       }
                     }
                   }
