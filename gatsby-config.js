@@ -8,7 +8,7 @@ module.exports = {
     // 'Sketch.author': 'Author.id'
   },
   plugins: [
-    'gatsby-plugin-no-sourcemaps',
+    // 'gatsby-plugin-no-sourcemaps',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-material-ui',
