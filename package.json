@@ -13,7 +13,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "serve": "gatsby serve",
-    "test": "jest"
+    "test": "echo noop"
   },
   "dependencies": {
     "@arnau/gatsby-transformer-toml": "^1.0.0",
@@ -56,14 +56,14 @@
     "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
+    "@types/react": "^16.9.19",
     "babel-preset-gatsby": "^0.2.1",
     "eslint": "^6.0.0",
     "eslint-plugin-react": "^7.13.0",
     "gatsby-cli": "^2.7.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.8.0",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.8.6"
+    "react-test-renderer": "^16.8.6",
+    "typescript": "^3.7.5"
   }
 }
