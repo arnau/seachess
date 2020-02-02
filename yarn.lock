@@ -5913,6 +5913,11 @@ gatsby-plugin-material-ui@^2.1.0:
     clean-css "^4.2.1"
     postcss "^7.0.17"
 
+gatsby-plugin-no-sourcemaps@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-2.1.2.tgz#43dd8d5ca8eb375a54c95990d9801397fd7d5235"
+  integrity sha512-3Yji1EVFWV2j2IdWTzwi1B2CAZY4eGlqKePwKSb6x4on92Yva036G7jhsF44jaS+aMcLNVven7Gs1o9/mK5siA==
+
 gatsby-plugin-offline@^3.0.7:
   version "3.0.31"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.31.tgz#bf72635ab1fad91bee9d1dde171ca063eb4ab348"
