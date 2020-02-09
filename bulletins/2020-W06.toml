@@ -9,8 +9,9 @@ These are the things that caught my attention this week.
 """
 
 [[links]]
-title = "Bringing WebAssembly out side the web with WASI (video)"
+title = "Bringing WebAssembly out side the web with WASI"
 url = "https://www.youtube.com/watch?v=fh9WXPu0hw8"
+type = "video"
 comment = """
 Lin Clark walks us through the ideas behind WebAssembly and how the result of
 it could lead to a more secure world.

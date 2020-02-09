@@ -59,8 +59,9 @@ Worth remembering that
 """
 
 [[links]]
-title = "Rust at speed: building a fast, concurrent database (video)"
+title = "Rust at speed: building a fast, concurrent database"
 url = "https://www.youtube.com/watch?v=s19G6n0UjsM"
+type = "video"
 comment = """
 In this talk from early 2019, Jon Gjengset explains in a very succinctly
 manner the idea behind Rust ownership and what is this `unsafe` thing in Rust
