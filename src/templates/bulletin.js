@@ -24,6 +24,14 @@ const useStyles = makeStyles(theme => ({
   header: {
     marginBottom: theme.spacing(2),
   },
+  doctype: {
+    textTransform: 'uppercase',
+    fontSize: '0.8rem',
+    verticalAlign: 'super',
+    padding: '0 4px',
+    marginLeft: theme.spacing(1),
+    backgroundColor: '#fca'
+  },
   metanote: {
     fontSize: 14,
     marginTop: theme.spacing(2),
@@ -63,10 +71,14 @@ function Bulletin({location, data}) {
           <div property="articleBody">
             {
               links.map(link => {
+                const doctype = link.type
+                  ? <span className={classes.doctype}>{link.type}</span>
+                  : ''
                 return (
                   <div key={link.url}>
                     <Typography component="h2" variant="h6">
                       <a href={link.url}>{link.title}</a>
+                      {doctype}
                     </Typography>
                     <Typography component="div">
                       {processor.processSync(link.comment).contents}
@@ -104,6 +116,7 @@ export const query = graphql`
       date
       links {
         title
+        type
         url
         comment
       }

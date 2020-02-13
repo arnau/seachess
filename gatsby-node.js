@@ -31,6 +31,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Link {
       title : String!
+      type : String
       url : String!
       comment : String!
     }
