@@ -4,7 +4,7 @@ var html = require('remark-html')
 function bulletin_to_html({ introduction, links }) {
   const links_s = links.map(link =>
     `## [${link.title}](${link.url})\n${link.comment}\n`)
-  const md = `${introduction}\n${links_s}`
+  const md = `${introduction}\n${links_s.join('\n')}`
   let result
 
   remark().use(html).process(md, (err, file) => {
