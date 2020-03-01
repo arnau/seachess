@@ -55,7 +55,7 @@ title = "Write a User Permissions System in 5 lines of Prolog"
 url = "https://dev.to/gilbert/write-a-user-permissions-system-in-5-lines-of-prolog-mof"
 comment = """
 An article showing the beauty of a rule-based programming language. Now that
-AI is in everyone agenda, it's a great time to learn some Prolog and consider
+AI is in everyone's agenda, it's a great time to learn some Prolog and consider
 if perhaps that complex machinery you were thinking in building can be handled
 with a few lines of Prolog.
 """
