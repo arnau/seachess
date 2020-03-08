@@ -27,7 +27,7 @@ time (this is called 'slew' correction).
 title = "Please stop recommending Git Flow!"
 url = "https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/"
 comment = """
-A very much needed article around the hype of gifflow. If you use Git, you
+A very much needed article around the hype of gitflow. If you use Git, you
 won't regret reading it.
 """
 
