@@ -34,7 +34,7 @@ A tool to manage Python dependencies. It feels similar to
 environments ergonomic. Poetry, though, lets you manage a package lifecycle
 whilst Pipenv seems more application oriented.
 
-It's nice to see the Python dependecy management space coming out of the dark
+It's nice to see the Python dependency management space coming out of the dark
 ages of `pip`, `virtualenv`, `setup.py` and other horrors.
 
 You might like reading [A deeper look into Pipenv and Poetry](https://frostming.com/2019/01-04/pipenv-poetry)
