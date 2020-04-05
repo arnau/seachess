@@ -9,6 +9,7 @@ import rehype2react from 'rehype-react'
 import remark2rehype from 'remark-rehype'
 import sanitizeHtml from 'sanitize-html'
 import unified from 'unified'
+import GithubSlugger from 'github-slugger'
 
 import Layout from '../components/layout'
 import Meta from '../components/meta'
@@ -16,6 +17,7 @@ import MetaNote from '../components/metanote'
 import Licence from '../components/licence'
 import Subscription from '../components/subscription'
 
+const slug = GithubSlugger.slug
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,6 +38,11 @@ const useStyles = makeStyles(theme => ({
     fontSize: 14,
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(4)
+  },
+  anchor: {
+    textTransform: 'uppercase',
+    fontSize: '0.8rem',
+    verticalAlign: 'super',
   }
 }))
 
@@ -43,6 +50,7 @@ const processor = unified()
   .use(markdown)
   .use(remark2rehype)
   .use(rehype2react, { createElement: React.createElement })
+
 
 function Bulletin({location, data}) {
   const classes = useStyles()
@@ -74,9 +82,10 @@ function Bulletin({location, data}) {
                 const doctype = link.type
                   ? <span className={classes.doctype}>{link.type}</span>
                   : ''
+                const anchor = slug(link.title)
                 return (
                   <div key={link.url}>
-                    <Typography component="h2" variant="h6">
+                    <Typography id={anchor} component="h2" variant="h6">
                       <a href={link.url}>{link.title}</a>
                       {doctype}
                     </Typography>
