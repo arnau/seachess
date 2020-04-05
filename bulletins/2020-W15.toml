@@ -1,0 +1,81 @@
+date = 2020-04-12
+author = "arnau"
+id = "2020-W15"
+title = "Issue 2020-W15"
+type = "Bulletin"
+status = "Published"
+introduction = """
+These are the things that caught my attention this week.
+"""
+
+[[links]]
+title = "My unorthodox, branchless git workflow"
+url = "https://drewdevault.com/2020/04/05/My-weird-branchless-git-workflow.html"
+comment = """
+An article on working with Git without branches. An interesting contrast to
+last week's [How the Creators of Git Do
+Branching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb).
+"""
+
+[[links]]
+title = "Why you should stop using Google Analytics on your website"
+url = "https://plausible.io/blog/remove-google-analytics"
+comment = """
+An article to help you consider alternatives to Google Analytics.
+
+Although the article has good content, keep in mind Plausible is a competitor
+of Google Analytics. That said, [Plausible have their code
+open](https://github.com/plausible-insights/plausible) so it's a plus in
+transparency.
+"""
+
+[[links]]
+title = "Black illustrations"
+url = "https://www.blackillustrations.com/"
+comment = """
+A set of illustrations for free (or anything you think is the right price). In
+their words:
+
+> There just isn't a lot of diversity in design.  People of color are often
+underrepresented in illustrations, lacking in the design process and often go
+unseen in visuals across the internet.
+"""
+
+[[links]]
+title = "Why I'm leaving Elm"
+url = "https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/"
+comment = """
+An article with lots of reasons why you might not want to invest in Elm. This
+in particular is what made me stop considering Elm as a worthwhile option
+around the time 0.19 was released:
+
+> They do not say “Why don’t you just”, they say “You must just” — despite not
+knowing anything about the rest of the project-specific constraints that you
+are taking into account and couldn’t explain — and then they build that
+opinion into the compiler itself.
+
+Even if you don't care about Elm, it's a good article to reflect on open
+source and governance.
+"""
+
+[[links]]
+title = "From failure to Fehler"
+url = "https://boats.gitlab.io/blog/post/failure-to-fehler/"
+comment = """
+An article on error handling in Rust by the author of
+[failure](https://crates.io/crates/failure) and
+[fehler](https://crates.io/crates/fehler).
+
+From the same author, worth a read [A brief apology of Ok-Wrapping](https://boats.gitlab.io/blog/post/why-ok-wrapping/).
+"""
+
+[[links]]
+title = "Why you (probably) don't need PostGIS"
+url = "https://blog.rebased.pl/2020/04/07/why-you-probably-dont-need-postgis.html"
+comment = """
+An article with a handful of ways you can avoid using PostGIS by taking
+advantage of Postgres features and lightweight extensions.
+
+It links to [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index),
+a spatial extension for SQLite.
+"""
