@@ -37,17 +37,8 @@ function About({ location, data }) {
       <h2>Cookie usage</h2>
 
       <p>This website doesn't use cookies anymore. Originally it used Google
-        Analytics to gather minimal information on what routes were hit,
-        the same information you would get from server side logs, because
-        Netlify doesn't offer this information in their free plan.</p>
+        Analytics to gather minimal information on what routes were hit.</p>
 
-      <p>This required to add an infamous cookie wall as imposed by ICO and
-        friends. The "solution" to put users in control of their privacy.
-        Laughable. On top of that, people are starting shame you if you use
-        cookies. Great one! now people that want to use cookies with honest
-        purposes have to justify themselves and people that use them for shady
-        purposes will carry on because they couldn't care less. Well done data
-        privacy zealous guardians. Well done.</p>
 
       <h2>What's up with this silly name</h2>
 
