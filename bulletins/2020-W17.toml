@@ -1,0 +1,60 @@
+date = 2020-04-26
+author = "arnau"
+id = "2020-W17"
+title = "Issue 2020-W17"
+type = "Bulletin"
+status = "Published"
+introduction = """
+These are the things that caught my attention this week.
+"""
+
+[[links]]
+title = "Webassembly studio"
+url = "https://webassembly.studio/"
+comment = """
+An online tool to explore and learn Webassembly. Allows projects in C, Rust,
+Typescript and more.
+"""
+
+[[links]]
+title = "Things I Wished More Developers Knew About Databases"
+url = "https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78"
+comment = """
+An article touching upon seventeen topics worth paying more attention to
+whilst working with databases.
+"""
+
+[[links]]
+title = "Building a Rust Web Browser"
+url = "https://joshondesign.com/2020/03/10/rust_minibrowser"
+comment = """
+A series of articles on how the author is progressing in his mini webbrowser
+project.
+"""
+
+[[links]]
+title = "Delivering on an architecture strategy"
+url = "https://blog.thepete.net/blog/2019/12/09/delivering-on-an-architecture-strategy/"
+comment = """
+An article highlighting fundamental practices in a multi-discipline _product_
+team and where a technical and an architectural strategy play their part.
+
+There is a bit I dislike though, the categorisation of people as either
+"doers" or "dreamers". It is oversimplistic and gives a blank check to certain
+type of people that _think_ they are doing their part by just dreaming
+unrealistic half-baked ideas.
+"""
+
+[[links]]
+title = "Markmap"
+url = "https://github.com/gera2ld/markmap-lib"
+comment = """
+A tool to plot mindmaps out of Markdown.
+"""
+
+[[links]]
+title = "Navi"
+url = "https://github.com/denisidoro/navi"
+comment = """
+An interactive cheatsheet tool for the command-line and application launchers.
+"""
