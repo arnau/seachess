@@ -21,7 +21,7 @@ fastest](https://github.com/newren/git-filter-repo/). But it's
 straightforward enough and requires nothing but standard Git.
 
 If you want to follow along, you can setup the scene running the
-script in the [appendix section](#appendix) at the bottom.
+script in the [appendix section](#appendix) at the end.
 
 
 ## The scene
