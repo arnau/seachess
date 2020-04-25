@@ -256,3 +256,9 @@ add_tree "hazel-tree"
 add_tree "orange-tree"
 add_tree "plum-tree"
 ```
+
+## Addendum
+
+Git grafting is a big and diverse topic. This note barely scratches the
+surface. Check [git replace](https://git-scm.com/book/en/v2/Git-Tools-Replace)
+to see an example of splitting a repository in two _reconnectable_ parts.
