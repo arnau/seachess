@@ -1,0 +1,78 @@
+date = 2020-05-03
+author = "arnau"
+id = "2020-W18"
+title = "Issue 2020-W18"
+type = "Bulletin"
+status = "Published"
+introduction = """
+These are the things that caught my attention this week.
+"""
+
+[[links]]
+title = "Delta"
+url = "https://github.com/dandavison/delta"
+comment = """
+A syntax-highlighter for git and diff output.
+"""
+
+[[links]]
+title = "How does a TCP Reset Attack work?"
+url = "https://robertheaton.com/2020/04/27/how-does-a-tcp-reset-attack-work/"
+comment = """
+An article explaining the mechanics of a TCP reset attack. Apparently, one of
+the techniques used by China's Great Firewall to enforce their censorship.
+"""
+
+[[links]]
+title = "Public APIs"
+url = "https://public-apis.io/"
+comment = """
+A collection of public HTTP API services categorised by topic.
+
+You may also be interested in [Public API](https://public-apis.xyz/).
+"""
+
+[[links]]
+title = "Data Ingestion with Rust and AWS Lambda"
+url = "https://jamesmcm.github.io/blog/2020/04/19/data-engineering-with-rust-and-aws-lambda"
+comment = """
+A tutorial of how to setup an AWS Lambda function with Rust, consuming
+spreadsheets from AWS S3.
+
+The [Rusoto](https://github.com/rusoto/rusoto) project, although not yet 1.0,
+is already covering quite a few [AWS services](https://www.rusoto.org/supported-aws-services.html).
+
+The [Amadeus](https://github.com/constellation-rs/amadeus) project is worth a
+look as well if you are into data processing, ETL or analysis.
+"""
+
+[[links]]
+title = "Degeneracy, Code and Innovation"
+url = "https://adl.io/essays/degeneracy-code-and-innovation/"
+comment = """
+An article exploring the parallelisms of _degeneracy_, from
+biology, applied to other situations like technical solutions, professional
+career, etc.
+
+If you are like me, you'll have to ignore the bits that seem to imply that
+Nature has some sort of intention or grand plan. Even with that, there are
+some good seeds for thought in there.
+
+> Ever worked in a startup with a messy codebase everyone agrees has poor
+> architecture? In that startup, did the PM ever come up with an off-the-wall
+> idea—and instead of resistance, the team said, “actually… we just need to
+> tweak the X and bolt-on a Y, and we could do that pretty easily. It’ll be
+> ugly, but we can do it.”
+>
+> That first example is the anti-pattern Fisher is talking about. That second
+> example: unintentional degeneracy. Succeeding because of “bad” architecture,
+> not in spite of bad architecture.
+"""
+
+[[links]]
+title = "Driving change: why are your ideas being rejected?"
+url = "https://medium.com/@bocytko/driving-change-why-are-your-ideas-being-rejected-e2ab96227e40"
+comment = """
+An article about the factors that may prevent a proposal of improvement from
+being adopted.
+"""
