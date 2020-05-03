@@ -79,6 +79,8 @@ function Bulletin({location, data}) {
           <div property="articleBody">
             {
               links.map(link => {
+                const comment = processor.processSync(link.comment)
+
                 const doctype = link.type
                   ? <span className={classes.doctype}>{link.type}</span>
                   : ''
@@ -90,7 +92,7 @@ function Bulletin({location, data}) {
                       {doctype}
                     </Typography>
                     <Typography component="div">
-                      {processor.processSync(link.comment).contents}
+                      {comment.result}
                     </Typography>
                     <hr />
                   </div>
