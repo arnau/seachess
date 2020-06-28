@@ -37,7 +37,7 @@ comment = """
 An article analysing the security weaknesses of 2000 npm modules in their use
 of JWT (RFC 7519).
 
-Make sure to check [Semgrep](https://www.assemblyscript.org/) a command-line
+Make sure to check [Semgrep](https://semgrep.live) a command-line
 tool for offline static analysis.
 """
 
