@@ -1,0 +1,16 @@
+[package]
+name = "aquarium"
+version = "0.1.0"
+authors = ["Arnau Siches <asiches@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+path = "src/main.rs"
+name = "aq"
+
+[dependencies]
+clap = "=3.0.0-beta.1"
+csv = "1.1"
+svg = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
