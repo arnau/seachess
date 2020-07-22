@@ -8,7 +8,11 @@ use std::fmt;
 
 #[derive(Clone, Debug)]
 pub enum Achievement {
+    /// The task did not make any change.
     Noop,
+    /// The task was cancelled by the user.
+    Cancelled,
+    /// The task was done as expected.
     Done,
 }
 
@@ -18,6 +22,7 @@ impl fmt::Display for Achievement {
 
         match self {
             A::Noop => write!(f, "Nothing to do."),
+            A::Cancelled => write!(f, "Cancelled the task at hand."),
             A::Done => write!(f, "Finished processing all given work."),
         }
     }
