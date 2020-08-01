@@ -1,0 +1,60 @@
+date = 2020-08-09
+author = "arnau"
+id = "2020-W32"
+title = "Issue 2020-W32"
+type = "Bulletin"
+status = "Published"
+introduction = """
+These are the things that caught my attention this week.
+"""
+
+[[links]]
+title = "Why You Should Do NLP Beyond English"
+url = "https://ruder.io/nlp-beyond-english/"
+comment = """
+An article highlighting the shortcomings in the current approach to natural
+language processing and the risks that they carry.
+"""
+
+[[links]]
+title = "Responsive compilers"
+url = "https://www.youtube.com/watch?v=N6b44kMS6OM"
+type = "video"
+comment = """
+A talk introducing [Salsa](https://github.com/salsa-rs/salsa) and how Rust
+is trying to build an incremental compiler that works well with IDEs.
+"""
+
+[[links]]
+title = "An introduction to Conflict-Free Replicated Data Types"
+url = "https://lars.hupel.info/topics/crdt/01-intro/"
+comment = """
+A series introducing the foundations of Conflict-Free Replicated Data Types
+(CRDT) and how they reconcile data across a distributed system.
+"""
+
+[[links]]
+title = "Pandera"
+url = "https://github.com/pandera-dev/pandera"
+comment = """
+A library to validate data structures in [Pandas](https://pandas.pydata.org/).
+"""
+
+[[links]]
+title = "An introduction to nix-shell"
+url = "https://ghedam.at/15978/an-introduction-to-nix-shell"
+comment = """
+An article explaining the basics of `nix-shell` as a reproducible development
+environment.
+
+If the article leaves you with appetite for more, [nix.env](https://nix.dev/)
+should be your next stop.
+"""
+
+[[links]]
+title = "Pre-mortem: how to anticipate failure with prospective hindsight"
+url = "https://nesslabs.com/pre-mortem-anticipate-failure-with-prospective-hindsight"
+comment = """
+An article explaining the pre-mortem technique and how it helps manage the
+optimism bias our team might have at the beginning of a project.
+"""
