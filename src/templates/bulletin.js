@@ -92,7 +92,7 @@ function Bulletin({location, data}) {
                       {doctype}
                     </Typography>
                     <Typography component="div">
-                      {comment.result}
+                      {comment.contents}
                     </Typography>
                     <hr />
                   </div>
