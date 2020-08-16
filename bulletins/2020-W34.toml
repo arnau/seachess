@@ -1,0 +1,74 @@
+date = 2020-08-23
+author = "arnau"
+id = "2020-W34"
+title = "Issue 2020-W34"
+type = "Bulletin"
+status = "Published"
+introduction = """
+This week I got back into the Nu shell, kept digging into CRDTs, got closure
+with Mozilla's XUL story and considered the perils of AR for our personal
+privacy.
+"""
+
+[[links]]
+title = "Are CRDTs suitable for shared editing?"
+url = "https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/"
+comment = """
+An article explaining the optimisations you can apply to CRDT structures to
+keep their resource consumption in check.
+"""
+
+[[links]]
+title = "Nu shell"
+url = "https://www.nushell.sh"
+comment = """
+A shell that focuses on structrued data manipulation instead of raw streams. A
+snippet to give you a taste:
+
+```
+nu> ls | sort-by size
+────┬────────────────────────────────────┬──────┬────────┬─────────────
+ #  │ name                               │ type │ size   │ modified
+────┼────────────────────────────────────┼──────┼────────┼─────────────
+  0 │ ./seachess/bulletins/2020-W34.toml │ File │  764 B │ 4 mins ago
+  1 │ ./seachess/bulletins/2020-W22.toml │ File │ 1.5 KB │ 3 days ago
+...
+```
+"""
+
+[[links]]
+title = "Digital Sight Management, and the Mystery of the Missing Amazon Receipts"
+url = "https://mssv.net/2020/08/16/digital-sight-management-and-the-mystery-of-the-missing-amazon-receipts/"
+comment = """
+An article about the future of wearable AR and the impact on corportations
+that base their strength in amassing data.
+"""
+
+[[links]]
+title = "danfo.js"
+url = "https://github.com/opensource9ja/danfojs"
+comment = """
+A library in JavaScript for high-performance for manipulating structured data
+akin to [Pandas](https://pandas.pydata.org) in Python.
+"""
+
+[[links]]
+title = "Why Did Mozilla Remove XUL Add-ons?"
+url = "https://yoric.github.io/post/why-did-mozilla-remove-xul-addons/"
+comment = """
+An article about the history of the Firefox extension model. If you where into
+XUL back in the day, it might give you some closure.
+"""
+
+[[links]]
+title = "JMAP"
+url = "https://jmap.io/"
+comment = """
+A standard for mail. An attempt to be a replacement for IMAP based on HTTPS
+and JSON although not restricted to either.
+
+It has been published as two internet standards:
+[RFC8620](https://tools.ietf.org/html/rfc8620) and
+[RFC8621](https://tools.ietf.org/html/rfc8621)
+"""
+
