@@ -23,7 +23,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date : Date @dateformat
       author : Author! @link
       title : String!
-      status : Status!
+      status : String!
       introduction : String!
       links : [Link!]!
       slug : String! @slug(base: "/bulletins")
@@ -34,11 +34,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       type : String
       url : String!
       comment : String!
-    }
-
-    enum Status {
-      Draft
-      Published
     }
 
     type Sketch implements Node @dontInfer {

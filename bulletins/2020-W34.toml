@@ -3,7 +3,7 @@ author = "arnau"
 id = "2020-W34"
 title = "Issue 2020-W34"
 type = "Bulletin"
-status = "Published"
+status = "published"
 introduction = """
 This week I got back into the Nu shell, kept digging into CRDTs, got closure
 with Mozilla's XUL story and considered the perils of AR for our personal
