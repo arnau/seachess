@@ -22,7 +22,7 @@ keep their resource consumption in check.
 title = "Nu shell"
 url = "https://www.nushell.sh"
 comment = """
-A shell that focuses on structrued data manipulation instead of raw streams. A
+A shell that focuses on structured data manipulation instead of raw streams. A
 snippet to give you a taste:
 
 ```
@@ -40,7 +40,7 @@ nu> ls | sort-by size
 title = "Digital Sight Management, and the Mystery of the Missing Amazon Receipts"
 url = "https://mssv.net/2020/08/16/digital-sight-management-and-the-mystery-of-the-missing-amazon-receipts/"
 comment = """
-An article about the future of wearable AR and the impact on corportations
+An article about the future of wearable AR and the impact on corporations
 that base their strength in amassing data.
 """
 
