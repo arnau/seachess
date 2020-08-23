@@ -1,0 +1,61 @@
+date = 2020-08-30
+author = "arnau"
+id = "2020-W35"
+title = "Issue 2020-W35"
+type = "Bulletin"
+status = "published"
+introduction = """
+This week some news in the WebAssembly space, a bit of software architecture,
+digging out the metacrap, productive porn and abusing gzip for fun.
+"""
+
+[[links]]
+title = "Motoko, a programming language for building directly on the internet"
+url = "https://stackoverflow.blog/2020/08/24/motoko-the-language-that-turns-the-web-into-a-computer/"
+comment = """
+An article about the Internet Computer project and how Motoko was designed
+to support it using WebAssembly.
+"""
+
+[[links]]
+title = "Lunatic: Actor based WebAssembly runtime for the backend"
+url = "https://dev.to/bkolobara/lunatic-actor-based-webassembly-runtime-for-the-backend-36oj"
+comment = """
+An article presenting a runtime written in Rust that works in an actor-based
+model similar to Erlang with the difference of each actor being a WebAssembly
+instance with its own dedicated permissions.
+"""
+
+[[links]]
+title = "Architecture Playbook"
+url = "https://nocomplexity.com/documents/arplaybook/"
+comment = """
+A book on the different aspects of technical architecture (business, data,
+software, etc).
+"""
+
+[[links]]
+title = "Metacrap: Putting the torch to seven straw-men of the meta-utopia"
+url = "https://people.well.com/user/doctorow/metacrap.htm"
+comment = """
+A classic on the topic of metadata and its usefulness.
+"""
+
+[[links]]
+title = "Productivity porn"
+url = "https://nesslabs.com/productivity-porn"
+comment = """
+An article highlighting a couple of signs that are more about
+procrastination than productivity.
+
+You might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)
+from the same author.
+"""
+
+[[links]]
+title = "How to turn an ordinary gzip archive into a database"
+url = "https://rushter.com/blog/gzip-indexing/"
+comment = """
+An article about how to use the gzip concatenation feature to achieve random
+access.
+"""
