@@ -1,0 +1,34 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "mentions.csv",
+  "schema:creator": {
+    "schema:url": "https://www.seachess.net",
+    "schema:name": "Seachess"
+  },
+  "tableSchema": [{
+    "columns": [
+      {
+        "titles": "mention_url",
+        "name": "mention_url",
+        "datatype": "anyURI",
+        "required": true,
+        "schema:description": "The URL mentioned in an entry."
+      },
+      {
+        "titles": "entry_url",
+        "name": "entry_url",
+        "datatype": "anyURI",
+        "required": true,
+        "schema:description": "The entry URL where the mention was made."
+      }
+    ],
+    "primaryKey": ["mention_url", "entry_url"],
+    "foreignKeys": {
+      "columnReference": "entry_url",
+      "reference": {
+        "resource": "entries.csv",
+        "columnReference": "url"
+      }
+    }
+  }]
+}

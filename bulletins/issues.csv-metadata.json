@@ -1,0 +1,51 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "issues.csv",
+  "schema:creator": {
+    "schema:url": "https://www.seachess.net",
+    "schema:name": "Seachess"
+  },
+  "tableSchema": [{
+    "columns": [
+      {
+        "titles": "id",
+        "name": "id",
+        "datatype": "string",
+        "required": true,
+        "schema:description": "The unique identifier for the issue."
+      },
+      {
+        "titles": "publication_date",
+        "name": "publication_date",
+        "datatype": "date",
+        "required": true,
+        "schema:description": "The date the issue was published."
+      },
+      {
+        "titles": "description",
+        "name": "description",
+        "datatype": "string",
+        "required": true,
+        "schema:description": "The description of the issue."
+      },
+      {
+        "titles": "title",
+        "name": "title",
+        "datatype": "string",
+        "required": true,
+        "schema:description": "The name of the issue."
+      },
+      {
+        "titles": "status",
+        "name": "status",
+        "datatype": {
+          "base": "string",
+          "format": "published|ready|draft"
+        },
+        "required": true,
+        "schema:description": "The publication status of the issue."
+      }
+    ],
+    "primaryKey": "id"
+  }]
+}
