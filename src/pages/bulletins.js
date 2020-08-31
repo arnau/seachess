@@ -42,7 +42,7 @@ PublicationDate.propTypes = {
 }
 
 function Bulletins({location, data}) {
-  const set = data.allBulletin.edges
+  const set = data.allIssue.edges
   const classes = useStyles()
 
   return (
@@ -67,8 +67,8 @@ function Bulletins({location, data}) {
                     {node.id}
                   </Link>
                 </TableCell>
-                <TableCell className={classes.date}><PublicationDate date={node.date}/></TableCell>
-                <TableCell>{node.introduction}</TableCell>
+                <TableCell className={classes.date}><PublicationDate date={node.publication_date}/></TableCell>
+                <TableCell>{node.description}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -88,13 +88,13 @@ Bulletins.propTypes = {
 /* eslint no-undef: "off" */
 export const query = graphql`
   query Bulletins {
-    allBulletin(sort: { fields: date, order: DESC }) {
+    allIssue(sort: { fields: publication_date, order: DESC }) {
       edges {
         node {
           id
           slug
-          date
-          introduction
+          publication_date
+          description
         }
       }
     }

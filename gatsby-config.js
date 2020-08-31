@@ -1,10 +1,13 @@
 var remark = require('remark')
 var html = require('remark-html')
 
-function bulletin_to_html({ introduction, links }) {
-  const links_s = links.map(link =>
-    `## [${link.title}](${link.url})\n${link.comment}\n`)
-  const md = `${introduction}\n${links_s.join('\n')}`
+function bulletin_to_html({ id, description }, links) {
+  const links_s = links.edges
+    .filter(({ node }) => node.issue_id == id)
+    .map(({ node }) => {
+      console.log(node)
+      return `## [${node.title}](${node.url})\n${node.comment}\n`})
+  const md = `${description}\n${links_s.join('\n')}`
   let result
 
   remark().use(html).process(md, (err, file) => {
@@ -88,33 +91,37 @@ module.exports = {
             title: 'Seachess RSS Feed',
           },
           {
-            serialize: ({ query: { settings, allBulletin } }) => {
-              return allBulletin.edges.map(edge => {
+            serialize: ({ query: { settings, allIssue, links } }) => {
+              return allIssue.edges.map(edge => {
                 return {
-                  title: edge.node.title,
-                  description: bulletin_to_html(edge.node),
-                  date: edge.node.date,
+                  title: `Issue ${edge.node.id}`,
+                  description: bulletin_to_html(edge.node, links),
+                  date: edge.node.publication_date,
                   url: settings.url + edge.node.slug,
                   guid: settings.url + edge.node.slug,
                   copyright: settings.copyright,
-                  // custom_elements: [{ 'content:encoded': edge.node.html }],
                 }
               })
             },
             query: `
               {
-                allBulletin(sort: { fields: date, order: DESC }) {
+                allIssue(sort: { fields: publication_date, order: DESC }) {
                   edges {
                     node {
+                      id
                       slug
+                      publication_date
+                      description
+                    }
+                  }
+                }
+                links: allIssueEntry {
+                  edges {
+                    node {
+                      url
                       title
-                      date
-                      introduction
-                      links {
-                        title
-                        url
-                        comment
-                      }
+                      comment
+                      issue_id
                     }
                   }
                 }
@@ -153,6 +160,23 @@ module.exports = {
         name: 'bulletins',
         path: `${__dirname}/bulletins`,
       },
+    },
+    {
+      resolve: 'gatsby-transformer-csv',
+      options: {
+        typeName: ({ node }) => {
+          switch (node.name) {
+          case 'entries':
+            return 'IssueEntry'
+          case 'issues':
+            return 'Issue'
+          case 'mentions':
+            return 'Mention'
+          default:
+            return `X${node.name}Csv`
+          }
+        }
+      }
     },
     '@arnau/gatsby-transformer-toml',
     'gatsby-transformer-sharp',

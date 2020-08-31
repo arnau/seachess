@@ -18,22 +18,21 @@ exports.createSchemaCustomization = ({ actions }) => {
   })
 
   const typeDefs = `
-    type Bulletin implements Node @dontInfer {
-      id : ID!
-      date : Date @dateformat
-      author : Author! @link
-      title : String!
-      status : String!
-      introduction : String!
-      links : [Link!]!
+    type Issue implements Node @dontInfer {
+      id: ID!
+      publication_date : Date @dateformat
+      title: String!
+      status: String!
+      description: String!
       slug : String! @slug(base: "/bulletins")
     }
 
-    type Link {
+    type IssueEntry implements Node @dontInfer {
+      url : ID!
       title : String!
-      type : String
-      url : String!
       comment : String!
+      content_type : String!
+      issue_id : String!
     }
 
     type Sketch implements Node @dontInfer {
@@ -61,15 +60,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       tools: [Tool]
     }
 
-    type Author implements Node @childOf(types: ["Settings", "Sketch", "Bulletin"]) {
+    type Author implements Node @childOf(types: ["Settings", "Sketch"]) {
       id: ID!
       name: String!
       github: Tool
       twitter: Tool
       keybase: Tool
     }
-
-    # union TOML = Sketch | Settings
   `
 
   createTypes(typeDefs)
@@ -183,7 +180,7 @@ async function createBulletinPages({ graphql, actions }) {
   const component = path.resolve('src/templates/bulletin.js')
   const result = await graphql(`
       {
-        allBulletin {
+        allIssue {
           edges { node { id slug } }
         }
       }
@@ -194,7 +191,7 @@ async function createBulletinPages({ graphql, actions }) {
     throw result.errors
   }
 
-  result.data.allBulletin.edges.forEach(({ node }) => {
+  result.data.allIssue.edges.forEach(({ node }) => {
     createPage({
       path: node.slug,
       component,
