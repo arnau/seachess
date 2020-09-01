@@ -2,58 +2,43 @@ url,title,comment,content_type,issue_id
 https://github.com/BLAKE3-team/BLAKE3,BLAKE3,"BLAKE3 is a new hashing algorithm substantially faster than BLAKE2 and SHA3.
 Also very interesting the way they use Merkle trees to allow incremental
 validation. See the [bao](https://github.com/oconnor663/bao) project for an
-application of it.
-",text,2020-W02
-https://www.inkandswitch.com/local-first.html,"Local first: You own your data, in spite of the cloud","Well articulated analysis on local first software, benefits and challenges.
-",text,2020-W02
-https://musicforprogramming.net/,Music for programming,"Curated music collection intended for prolonged intense concentration periods.
-",text,2020-W02
+application of it.",text,2020-W02
+https://www.inkandswitch.com/local-first.html,"Local first: You own your data, in spite of the cloud","Well articulated analysis on local first software, benefits and challenges.",text,2020-W02
+https://musicforprogramming.net/,Music for programming,Curated music collection intended for prolonged intense concentration periods.,text,2020-W02
 https://web.hypothes.is/,"Annotate the web, with anyone, anywhere","Service built around the [Open Annotation](http://openannotation.org/)
 initiative which was the effort for the W3C specifications
 [Web Annotation Data Model](https://www.w3.org/TR/annotation-model/),
 [Web Annotation Vocabulary](https://www.w3.org/TR/annotation-vocab/) and
-[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/)
-",text,2020-W02
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/)",text,2020-W02
 https://hackernoon.com/the-mvp-is-dead-long-live-the-rat-233d5d16ab02,"Riskiest Assumption Test. The MVP is dead, long live the RAT","A bit old (2016) article about why the ""Riskiest Assumptions Test"" is a better
 tool for managing uncertainty in a project than the popular ""Minimum Viable
-Product"".
-",text,2020-W02
+Product"".",text,2020-W02
 https://alpha.iodide.io/,Iodide,"Research tool from Mozilla exploring the use of WebAssembly to bring mature data
-analysis tools such as Pandas to the browser.
-",text,2020-W02
+analysis tools such as Pandas to the browser.",text,2020-W02
 https://stackedit.io/,StackEdit,"An open-source Markdown editor on the browser, as a library, extension or
-standalone.
-",text,2020-W03
+standalone.",text,2020-W03
 https://themer.dev/,Themer,"Web tool that takes a set of colors and generates themes for tools such as
-iTerm, Vim, VS Code, tmux and many more.
-",text,2020-W03
+iTerm, Vim, VS Code, tmux and many more.",text,2020-W03
 https://www.alexdebrie.com/posts/dynamodb-no-bad-queries/,"SQL, NoSQL, and Scale: How DynamoDB scales where relational databases don't","This article explores in depth the DynamoDB tradeoffs in contrast with the
 relational database model and gives some insight in how to design your data
-when classic tools like SQL joins are not available.
-",text,2020-W03
+when classic tools like SQL joins are not available.",text,2020-W03
 https://medium.com/@rbranson/sharing-sqlite-databases-across-containers-is-surprisingly-brilliant-bacb8d753054,Sharing an SQLite database across containers is surprisingly brilliant,"Segment shares their experience sharing SQLite database as a Docker volume
 leveraging [SQLite's Write-Ahead Logging (WAL)](https://www.sqlite.org/wal.html).
 
-If distributed SQLite sounds appealing to you don't miss [Rqlite](https://github.com/rqlite/rqlite).
-",text,2020-W03
+If distributed SQLite sounds appealing to you don't miss [Rqlite](https://github.com/rqlite/rqlite).",text,2020-W03
 https://github.com/wfxr/forgit,Forgit,"A utility tool powered by [fzf](https://github.com/junegunn/fzf) for using git
-interactively.
-",text,2020-W03
+interactively.",text,2020-W03
 https://godbolt.org/,Godbolt: Compiler explorer,"Web tool that lets you inspect the generated assembly from different
 programming languages such as Rust, Go or C++. The list is long.
 
 Follow the [Down the Stack: Compiled Rust Part
 1](https://blog.ryanlevick.com/down-the-stack-part-1/) article to get a gentle
-introduction to x86-64 assembly using Godbolt.
-",text,2020-W03
-https://eunoia.world/,Eunoia,"A searchable directory of words that don't translate to English.
-",text,2020-W04
+introduction to x86-64 assembly using Godbolt.",text,2020-W03
+https://eunoia.world/,Eunoia,A searchable directory of words that don't translate to English.,text,2020-W04
 https://www.jetbrains.com/lp/mono/,Jetbrains,"A monospaced typography designed for developers, with ligatures, well
-differentiated symbols and more.
-",text,2020-W04
+differentiated symbols and more.",text,2020-W04
 https://marmelab.com/react-admin/,React Admin,"A frontend Framework for building admin applications running in the browser,
-on top of REST/GraphQL APIs, using ES6, React and Material Design.
-",text,2020-W04
+on top of REST/GraphQL APIs, using ES6, React and Material Design.",text,2020-W04
 https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/,Trade-offs under pressure,"This is the first part of a digested walkthrough of the paper [Trade-offs
 under pressure: heuristics and observations of teams resolving internet
 service
@@ -62,20 +47,17 @@ Allspaw, Masters thesis, Lund University, 2015.
 
 If the topic doesn't catch your attention, have a tour around their archives;
 [The morning paper](https://blog.acolyer.org/) is a remarkable place to find
-interesting papers on a wide range of topics.
-",text,2020-W04
+interesting papers on a wide range of topics.",text,2020-W04
 https://www.theguild.nl/when-elixirs-performance-becomes-rust-y/,When Elixir's performance becomes Rust-y,"An article about how to use Rust with Elixir using
 [rustler](https://github.com/rusterlium/rustler), a library to create Erlang
 NIF functions in Rust.
 
 Worth remembering that
-[Discord also does this mix](https://blog.discordapp.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3).
-",text,2020-W04
+[Discord also does this mix](https://blog.discordapp.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3).",text,2020-W04
 https://www.youtube.com/watch?v=s19G6n0UjsM,"Rust at speed: building a fast, concurrent database","In this talk from early 2019, Jon Gjengset explains in a very succinctly
 manner the idea behind Rust ownership and what is this `unsafe` thing in Rust
 all about. And of course, the database he is working on,
-[Noria](https://github.com/mit-pdos/noria) is the jewel of the talk.
-",video,2020-W04
+[Noria](https://github.com/mit-pdos/noria) is the jewel of the talk.",video,2020-W04
 https://terminusdb.com/,TerminusDB,"A graph database focused on knowledge graph representation. The new
 version, 1.1, introduces a new storage system with revision control à la git.
 In their words:
@@ -89,118 +71,88 @@ In almost fifteen years with an on-and-off relationship with RDF, TerminusDB
 is the first database that I try that doesn't force you to manage all the
 complexity typically associated with RDF. I believe they have found a
 plausible abstraction for people that want to work with graphs without
-investing in the guts and bowels of RDF.
-",text,2020-W05
+investing in the guts and bowels of RDF.",text,2020-W05
 https://beepb00p.xyz/unnecessary-db.html,Against unnecessary databases,"A comprehensive list of trade-offs on the topic of maintaining a local copy of
-remote data you don't own (or rather, you may own but you don't control).
-",text,2020-W05
+remote data you don't own (or rather, you may own but you don't control).",text,2020-W05
 https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense,Stealing data with CSS: Attack and Defense,"CSS Exfil is a method to let an attacker steal targeted data using _CSS
 alone_.
 
 Mike Gualtieri explains in detail how the attack works and provides extensions
-for Firefox and Chrome to mitigate it.
-",text,2020-W05
+for Firefox and Chrome to mitigate it.",text,2020-W05
 https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/,An Overview of Fuzzy Name Matching Techniques,"This article goes through a couple of methods and their strengths and
-weaknesses to match names.
-",text,2020-W05
+weaknesses to match names.",text,2020-W05
 https://pingcap.com/blog/rust-compilation-model-calamity/,The Rust Compilation Model Calamity,"This is the first part of a series of articles explaining what trade-offs make
 Rust be slow at compile time. The short and oversimplified answer is: fast run
-time and strong safe guarantees.
-",text,2020-W05
+time and strong safe guarantees.",text,2020-W05
 https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/,The Rise and Fall of the OLAP Cube,"This article may interest you in two ways. if you are not familiar with the
 concepts of OLTP and OLAP it will serve as a lightweight introduction;
 otherwise it will serve to understand why OLAP cubes are less relevant than
-they were a decade ago.
-",text,2020-W05
+they were a decade ago.",text,2020-W05
 https://www.youtube.com/watch?v=fh9WXPu0hw8,Bringing WebAssembly out side the web with WASI,"Lin Clark walks us through the ideas behind WebAssembly and how the result of
 it could lead to a more secure world.
 
 If you rather read than watch, check her article
-[Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)
-",video,2020-W06
+[Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)",video,2020-W06
 https://cfsamsonbooks.gitbook.io/epoll-kqueue-iocp-explained,"Epoll, Kqueue and IOCP explained with Rust","A web book on different methods to use different strategies for efficient high
-performance I/O.
-",text,2020-W06
+performance I/O.",text,2020-W06
 https://medium.com/wasm/strings-in-webassembly-wasm-57a05c1ea333,Strings in WebAssembly (Wasm),"An in-depth explanation of how Strings work in WebAssembly, specifically how
-Rust wasm-bindgen handles them.
-",text,2020-W06
+Rust wasm-bindgen handles them.",text,2020-W06
 https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f,Why Discord is switching from Go to Rust,"This is another sneak peek into how Discord is architected through a success
-story using Rust.
-",text,2020-W06
+story using Rust.",text,2020-W06
 https://dirk.rave.org/combinatris/,Combinatris,"A game like Tetris using [SKI
 combinators](https://en.wikipedia.org/wiki/SKI_combinator_calculus) instead of
-coloured blocks. This is a good excuse to learn how they work isn't it?
-",text,2020-W06
+coloured blocks. This is a good excuse to learn how they work isn't it?",text,2020-W06
 https://github.com/XAMPPRocky/tokei,Tokei,"A tool that gives statistics about a codebase. It will show number of files,
-total lines, comments and blank lines grouped by language.
-",text,2020-W06
+total lines, comments and blank lines grouped by language.",text,2020-W06
 https://github.com/direnv/direnv,Direnv,"A tool that augments existing shells by loading and unloading environment
-variables depending on the current directory.
-",text,2020-W07
+variables depending on the current directory.",text,2020-W07
 https://github.com/wagoodman/dive,Dive,"A tool for exploring a docker image, layer contents, and discovering ways to
-shrink the size of your Docker/OCI image.
-",text,2020-W07
+shrink the size of your Docker/OCI image.",text,2020-W07
 https://christine.website/blog/i-was-wrong-about-nix-2020-02-10,I was Wrong about Nix,"An article that will walk you through the benefits of
 [nix](https://nixos.org/nix/) by showing how to build a Docker image with a
-backend in Go and a frontend in Elm.
-",text,2020-W07
+backend in Go and a frontend in Elm.",text,2020-W07
 https://jhalderm.com/pub/papers/letsencrypt-ccs19.pdf,Let’s Encrypt: An Automated Certificate Authority to Encrypt the Entire Web,"A paper explaining the birth of Let's Encrypt and the context that made it
-happen and succeed.
-",pdf,2020-W07
+happen and succeed.",pdf,2020-W07
 https://keepachangelog.com/en/1.0.0/,Keep a Changelog,"A few recommendations on how to keep record of change for your project. They
 are quite codebase centric but can be extrapolated to other contexts like a
-product decision log.
-",text,2020-W07
+product decision log.",text,2020-W07
 https://blog.acolyer.org/2020/02/14/programs-life-cycles-laws/,"Programs, life cycles, and laws of software evolution","A tour on the 40 years-old paper [Programs, life cycles, and laws of software
 evolution](https://users.ece.utexas.edu/~perry/education/SE-Intro/lehman.pdf),
 Lehman, Proc. IEEE, 1980.
 
 Both the article and the paper are worth reading if you have an interest in
-software development and evolution.
-",text,2020-W07
-https://fabiensanglard.net/floating_point_visually_explained/,Floating Point Visually Explained,"A succinct article explaining the mechanics of floating point numbers.
-",text,2020-W08
+software development and evolution.",text,2020-W07
+https://fabiensanglard.net/floating_point_visually_explained/,Floating Point Visually Explained,A succinct article explaining the mechanics of floating point numbers.,text,2020-W08
 https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow,How FZF and ripgrep improved my workflow,"An article full of nice little snippets to take advantage of fzf and ripgrep.
-Two of my must-have when I'm working in the terminal.
-",text,2020-W08
+Two of my must-have when I'm working in the terminal.",text,2020-W08
 https://medium.com/@inonst/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2,A Deep Dive On The Most Critical API Vulnerability — BOLA (Broken Object Level Authorization),"An in-depth explanation about BOLA, an authorisation exploit you want to be on
 top of if you are in the API business.
 
-It has a gentle explanation for non-technical readers.
-",text,2020-W08
+It has a gentle explanation for non-technical readers.",text,2020-W08
 https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1,Testing in production the safe way,"An article that attempts to destigmatise the idea of “testing in production”
 by analysing the benefits and shortcomings of different stages such as
-development, test environment, deployment, release and post-release.
-",text,2020-W08
+development, test environment, deployment, release and post-release.",text,2020-W08
 https://rhg.dev/posts/elm-code-generation,Elm code generation,"An article that walks your through how to build a headless elm app running on
-Node.js.
-",text,2020-W08
+Node.js.",text,2020-W08
 https://protonmail.com/blog/internet-of-things-privacy-iot-explained/,The privacy risks of the Internet of Things,"An article to make you think in how apparently harmless things could become an
 intrusion to your daily life. You may think you have nothing to hide but, are
-you ok with letting others steal your information and monetise it?
-",text,2020-W08
+you ok with letting others steal your information and monetise it?",text,2020-W08
 https://open-wc.org/codelabs/basics/web-components.html,Web Components codelab,"A tutorial showing the features available with Web Components. Ideal if you
 have done some web frontend development and want to get a sense of what Web
-Components bring to the table.
-",text,2020-W09
+Components bring to the table.",text,2020-W09
 https://dev.to/arcanis/plugin-systems-when-why-58pp,Plugin systems - when & why?,"An article reflecting on the experience of maintaining a plugin-based CLI
-versus a monolith CLI.
-",text,2020-W09
+versus a monolith CLI.",text,2020-W09
 https://bastion.rs/,Bastion. Highly-available Distributed Fault-tolerant Runtime,"A highly-available, fault-tolerant runtime system that provides an actor model
-with supervision strategies. Like Erlang but in Rust.
-",text,2020-W09
+with supervision strategies. Like Erlang but in Rust.",text,2020-W09
 https://hacks.mozilla.org/2020/02/securing-firefox-with-webassembly/,Securing Firefox with WebAssembly,"An article briefly explaining the current methods used in Firefox to isolate
 execution (sandboxing) and an extensive explanation of the new approach using
-webassembly (wasi) compiled ahead of time.
-",text,2020-W09
+webassembly (wasi) compiled ahead of time.",text,2020-W09
 https://alexwlchan.net/2019/12/yaml-impossible/,YAML impossible,"A showcase of why you should never trust YAML, and should parse it with care
-and defensively.
-",text,2020-W09
+and defensively.",text,2020-W09
 https://dev.to/gilbert/write-a-user-permissions-system-in-5-lines-of-prolog-mof,Write a User Permissions System in 5 lines of Prolog,"An article showing the beauty of a rule-based programming language. Now that
 AI is in everyone's agenda, it's a great time to learn some Prolog and consider
 if perhaps that complex machinery you were thinking in building can be handled
-with a few lines of Prolog.
-",text,2020-W09
+with a few lines of Prolog.",text,2020-W09
 https://caolan.uk/articles/time-disorder/,Time Disorder,"An article with a comprehensive warning against relying on timestamps for
 ordering. May or may not apply to your current situation but time is messy and
 understanding why will help prevent unpleasant events.
@@ -209,35 +161,27 @@ A pearl (of many) you will find in the article:
 
 > Jumps in time can cause problems, so services like ntpd often prefer to slow
 down or speed up the system clock until it gradually approaches the correct
-time (this is called 'slew' correction).
-",text,2020-W10
+time (this is called 'slew' correction).",text,2020-W10
 https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/,Please stop recommending Git Flow!,"A very much needed article around the hype of gitflow. If you use Git, you
-won't regret reading it.
-",text,2020-W10
+won't regret reading it.",text,2020-W10
 https://caniuse.rs/,Can I use (Rust),"A service to search for availability and stability of Rust features. Similar
 idea but simpler of the famous [caniuse](https://caniuse.com/) for web
-features.
-",text,2020-W10
+features.",text,2020-W10
 https://rudism.com/the-brave-browser-is-brilliant/,The Brave browser is brilliant,"An article explaining the Brave “business model”. Some of us would call this a
 scam, judge by yourself.
 
 You might also like this [complementary
-reading](https://github.com/lobsters/lobsters/issues/761).
-",text,2020-W10
+reading](https://github.com/lobsters/lobsters/issues/761).",text,2020-W10
 https://web.eecs.utk.edu/~azh/pubs/Chattopadhyay2020CHI_NotebookPainpoints.pdf,What’s Wrong with Computational Notebooks?,"A paper describing a field study on the current computational notebook
-landscape to identify pain points and improvement opportunities.
-",pdf,2020-W10
+landscape to identify pain points and improvement opportunities.",pdf,2020-W10
 https://www.youtube.com/watch?v=jdliXz70NtM,Finding your service boundaries,"A talk on how to organise your system (application, service, etc). Long but
 clearly shows how to apply DDD thinking to your system no matter the level of
-abstraction.
-",video,2020-W10
+abstraction.",video,2020-W10
 https://www.nmattia.com/posts/2018-03-21-nix-reproducible-setup-linux-macos.html,Nix: A Reproducible Setup for Linux and macOS,"A nice and gentle introduction to Nix, the package manager. It helps with the
 transition from more classic mental models such as Brew or Apt without being
-as dry as the Nix manual or the [Nix pills](https://nixos.org/nixos/nix-pills/index.html).
-",text,2020-W11
+as dry as the Nix manual or the [Nix pills](https://nixos.org/nixos/nix-pills/index.html).",text,2020-W11
 https://medium.com/@productivitypinata/i-got-99-problems-and-your-hiring-practices-are-all-of-them-cb1e6a5877ea,I Got 99 Problems And Your Hiring Practices Are All Of Them (Part 1),"An article (part 1 of 6) reflecting on hiring practices that you should likely
-consider if your role is to manage a team.
-",text,2020-W11
+consider if your role is to manage a team.",text,2020-W11
 https://python-poetry.org/,Poetry,"A tool to manage Python dependencies. It feels similar to
 [Pipenv](https://pipenv.pypa.io) in that makes working with virtual
 environments ergonomic. Poetry, though, lets you manage a package lifecycle
@@ -247,11 +191,9 @@ It's nice to see the Python dependency management space coming out of the dark
 ages of `pip`, `virtualenv`, `setup.py` and other horrors.
 
 You might like reading [A deeper look into Pipenv and Poetry](https://frostming.com/2019/01-04/pipenv-poetry)
-from one of the collaborators of Pipenv.
-",text,2020-W11
+from one of the collaborators of Pipenv.",text,2020-W11
 https://blog.cloudflare.com/the-history-of-the-url/,The history of the URL,"A well narrated bit of history. Although a bit technical at times, it is
-indeed a must if you are interested in the early days of the Internet.
-",text,2020-W11
+indeed a must if you are interested in the early days of the Internet.",text,2020-W11
 https://medium.com/@maxsparr0w/performance-of-node-js-compared-to-actix-web-37f20810fb1a,ExpressJS vs Actix-Web. It is exactly what you think,"An article comparing Actix-Web (Rust) against ExpressJS (Node.js).
 Unsurprisingly, Actix is faster consumes less resources and takes advantage of
 multiple CPU cores. As with any benchmark or comparison always read the fine
@@ -259,32 +201,24 @@ print to understand the tradeoffs and artificial conditions.
 
 If you consider Rust for web server development have a look at
 [Are we web yet?](https://www.arewewebyet.org/) before making the decision. It
-may or may not be the right time for your product to adopt Rust in this space.
-",text,2020-W11
+may or may not be the right time for your product to adopt Rust in this space.",text,2020-W11
 https://blog.timescale.com/blog/why-sql-beating-nosql-what-this-means-for-future-of-data-time-series-database-348b777b847a/,"Why SQL is beating NoSQL, and what this means for the future of data","An article with a bit of history on the inception of SQL, its decline with the
-advent of noSQL and its comeback.
-",text,2020-W11
+advent of noSQL and its comeback.",text,2020-W11
 https://doriantaylor.com/agile-as-trauma,Agile as trauma,"An article reflecting on where Agile comes from and why some of the mantras
 are not always a good thing.
 
 Same topic, different angle is [Agile
-Fluency](https://www.martinfowler.com/articles/agileFluency.html).
-",text,2020-W12
+Fluency](https://www.martinfowler.com/articles/agileFluency.html).",text,2020-W12
 https://oduinn.com/2020/02/25/distributed-team-vs-remote-work-and-work-from-home/,"Distributed Team vs Remote Work, Virtual Work, Telework and Work From Home","An attempt to define and contextualise terminology around teams not working in
-the same physical place.
-",text,2020-W12
+the same physical place.",text,2020-W12
 https://blog.repl.it/clui,CLUI: Building a Graphical Command Line,"An article exploring what's next for user interfaces. Rich and interactive CLI
-is not new but the article has a twist worth paying attention to.
-",text,2020-W12
+is not new but the article has a twist worth paying attention to.",text,2020-W12
 https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3,How GitHub blocked me (and all my libraries),"A tale of the dark side of Github. Ah! now Npm joins the party of ~~open~~
-restricted source (https://blog.npmjs.org/post/612764866888007680/next-phase-montage).
-",text,2020-W12
+restricted source (https://blog.npmjs.org/post/612764866888007680/next-phase-montage).",text,2020-W12
 https://github.com/sharkdp/pastel,Pastel,"A command-line tool to to generate, analyze, convert and manipulate colors.
-Some interfaces are a delight to use.
-",text,2020-W12
+Some interfaces are a delight to use.",text,2020-W12
 https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine,Rewriting the heart of our sync engine,"An article from Dropbox explaining the problems they faced with their
-synchronisation engine.
-",text,2020-W12
+synchronisation engine.",text,2020-W12
 https://protonmail.com/blog/zoom-privacy-issues/,Using Zoom? Here are the privacy issues you need to be aware of,"An article warning on Zoom users on known shady practices done and offered by
 the company. And a timely reminder that less than a year ago Zoom had a
 security problem they neglected and approached with sloppiness.
@@ -292,8 +226,7 @@ security problem they neglected and approached with sloppiness.
 If you need more convincing check these out, [Zoom iOS app sends data to
 Facebook](https://www.vice.com/en_us/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account)
 , [Zoom needs to clean up its privacy act](https://blogs.harvard.edu/doc/2020/03/27/zoom/)
-and [More on Zoom and privacy](http://blogs.harvard.edu/doc/2020/03/28/more-zoom/).
-",text,2020-W13
+and [More on Zoom and privacy](http://blogs.harvard.edu/doc/2020/03/28/more-zoom/).",text,2020-W13
 https://www.infoworld.com/article/3533410/9-offbeat-databases-worth-a-look.html,9 offbeat databases worth a look,"A list of less popular databases. I have a weakness for in-process databases
 like SQLite so [DuckDB](https://www.duckdb.org/) is my choice out of these
 nine:
@@ -302,59 +235,45 @@ nine:
 fast while embedded in another process.
 
 Ok, it's not in the article but if embedded databases is of your interest,
-check out [Sled](https://github.com/spacejam/sled).
-",text,2020-W13
-https://pythonspeed.com/articles/indexing-pandas-sqlite/,Fast subsets of large datasets with Pandas and SQLite,"An article explaining two strategies to manage large datasets with Pandas.
-",text,2020-W13
+check out [Sled](https://github.com/spacejam/sled).",text,2020-W13
+https://pythonspeed.com/articles/indexing-pandas-sqlite/,Fast subsets of large datasets with Pandas and SQLite,An article explaining two strategies to manage large datasets with Pandas.,text,2020-W13
 https://matklad.github.io/2020/03/22/fast-simple-rust-interner.html,Fast and Simple Rust Interner,"A quick introduction to string interning in Rust. Most relevant if you are
-interested in Rust and optimal data structures.
-",text,2020-W13
-https://anssi-fr.github.io/rust-guide/,Secure Rust Guidelines,"A book of guidelines for developing Rust applications in a secure manner.
-",text,2020-W13
+interested in Rust and optimal data structures.",text,2020-W13
+https://anssi-fr.github.io/rust-guide/,Secure Rust Guidelines,A book of guidelines for developing Rust applications in a secure manner.,text,2020-W13
 https://github.com/dskkato/rjo,Rjo,"A small utility to create JSON objects, written in Rust. The original tool is
-[Jo](https://github.com/jpmens/jo), written in C.
-",text,2020-W13
+[Jo](https://github.com/jpmens/jo), written in C.",text,2020-W13
 https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb,How the Creators of Git Do Branching,"An article explaining the Git Workflow juxtaposed to the well known
 [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/).
 
 Both workflows assume a product with multiple releases in play. If you have a
-single-release situation like a simple web application, don't even bother.
-",text,2020-W14
+single-release situation like a simple web application, don't even bother.",text,2020-W14
 https://blog.royalsloth.eu/posts/sad-state-of-cross-platform-gui-frameworks/,Sad state of cross platform GUI frameworks,"An overview of a handful of graphical user interface frameworks. Shows the
 poor state of the situation and puts in context the (well deserved) criticisms
-[Electron](https://www.electronjs.org/) tends to receive lately.
-",text,2020-W14
+[Electron](https://www.electronjs.org/) tends to receive lately.",text,2020-W14
 https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791,10 Things I Hate About PostgreSQL,"An article with a healthy criticism to PostgreSQL. It ends with:
 
 > You should probably still use PostgreSQL and not something else for storing
-data that you’d ideally like to, you know, keep around for some time.
-",text,2020-W14
-https://thomashartmann.dev/blog/on-generics-and-associated-types/,On Generics and Associated Types,"An article about when to use generics and associated types in Rust.
-",text,2020-W14
+data that you’d ideally like to, you know, keep around for some time.",text,2020-W14
+https://thomashartmann.dev/blog/on-generics-and-associated-types/,On Generics and Associated Types,An article about when to use generics and associated types in Rust.,text,2020-W14
 https://martinfowler.com/articles/value-architectural-attribute.html,The Elephant in the Architecture,"An article on why technical (architectural) decisions need to be contrasted
-against business value.
-",text,2020-W14
+against business value.",text,2020-W14
 https://stork-search.net/,Stork,"A tool to offer a search function to a static site. A nice addition to the
-[JAMstack](https://jamstack.org/) toolbelt.
-",text,2020-W14
+[JAMstack](https://jamstack.org/) toolbelt.",text,2020-W14
 https://drewdevault.com/2020/04/05/My-weird-branchless-git-workflow.html,"My unorthodox, branchless git workflow","An article on working with Git without branches. An interesting contrast to
 last week's [How the Creators of Git Do
-Branching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb).
-",text,2020-W15
+Branching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb).",text,2020-W15
 https://plausible.io/blog/remove-google-analytics,Why you should stop using Google Analytics on your website,"An article to help you consider alternatives to Google Analytics.
 
 Although the article has good content, keep in mind Plausible is a competitor
 of Google Analytics. That said, [Plausible have their code
 open](https://github.com/plausible-insights/plausible) so it's a plus in
-transparency.
-",text,2020-W15
+transparency.",text,2020-W15
 https://www.blackillustrations.com/,Black illustrations,"A set of illustrations for free (or anything you think is the right price). In
 their words:
 
 > There just isn't a lot of diversity in design.  People of color are often
 underrepresented in illustrations, lacking in the design process and often go
-unseen in visuals across the internet.
-",text,2020-W15
+unseen in visuals across the internet.",text,2020-W15
 https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/,Why I'm leaving Elm,"An article with lots of reasons why you might not want to invest in Elm. This
 in particular is what made me stop considering Elm as a worthwhile option
 around the time 0.19 was released:
@@ -365,20 +284,17 @@ are taking into account and couldn’t explain — and then they build that
 opinion into the compiler itself.
 
 Even if you don't care about Elm, it's a good article to reflect on open
-source and governance.
-",text,2020-W15
+source and governance.",text,2020-W15
 https://boats.gitlab.io/blog/post/failure-to-fehler/,From failure to Fehler,"An article on error handling in Rust by the author of
 [failure](https://crates.io/crates/failure) and
 [fehler](https://crates.io/crates/fehler).
 
-From the same author, worth a read [A brief apology of Ok-Wrapping](https://boats.gitlab.io/blog/post/why-ok-wrapping/).
-",text,2020-W15
+From the same author, worth a read [A brief apology of Ok-Wrapping](https://boats.gitlab.io/blog/post/why-ok-wrapping/).",text,2020-W15
 https://blog.rebased.pl/2020/04/07/why-you-probably-dont-need-postgis.html,Why you (probably) don't need PostGIS,"An article with a handful of ways you can avoid using PostGIS by taking
 advantage of Postgres features and lightweight extensions.
 
 It links to [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index),
-a spatial extension for SQLite.
-",text,2020-W15
+a spatial extension for SQLite.",text,2020-W15
 https://launchdarkly.com/blog/the-fallacy-of-move-fast-and-break-things/,The Fallacy of Move Fast and Break Things,"An article challenging the belief that increased velocity is a good thing in
 itself.
 
@@ -391,59 +307,44 @@ break are high.
 is article somewhat related you might enjoy.
 
 > It’s a mistake to conflate success with shipping a large quantity of
-features.
-",text,2020-W16
+features.",text,2020-W16
 https://vishalkapur.com/how-to-have-impact/,How to have impact,"An article that proposes an alternative approach to how to evaluate your work
 other than good intentions that may or may not end up in the intended impact.
 
 While reading it I couldn't shake out of my head the
 [Wardley Maps
-book](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec).
-",text,2020-W16
+book](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec).",text,2020-W16
 https://blog.yoshuawuyts.com/byte-ordered-stream-parsing/,Byte Ordered Streams,"An article with a nicely condensed description of endianness and how to deal
-with byte streams in Rust.
-",text,2020-W16
+with byte streams in Rust.",text,2020-W16
 https://jeremykun.com/2020/01/14/the-communicative-value-of-using-git-well/,The Communicative Value of Using Git Well,"An article with a few considerations about how to improve the narrative of Git
 history.
 
 If this topic resonates with you, [Literate
-Git](https://github.com/bennorth/literate-git) might catch your eye.
-",text,2020-W16
-https://www.yuvalrob.com,Yuval Robicheck illustrations,"A set of brilliant illustrations from Yuval Robicheck.
-",text,2020-W16
+Git](https://github.com/bennorth/literate-git) might catch your eye.",text,2020-W16
+https://www.yuvalrob.com,Yuval Robicheck illustrations,A set of brilliant illustrations from Yuval Robicheck.,text,2020-W16
 https://thenewstack.io/observability-a-3-year-retrospective,Observability — A 3-Year Retrospective,"An article reflecting on the evolution of the techniques around understanding
-how a system performs.
-",text,2020-W16
+how a system performs.",text,2020-W16
 https://webassembly.studio/,Webassembly studio,"An online tool to explore and learn Webassembly. Allows projects in C, Rust,
-Typescript and more.
-",text,2020-W17
+Typescript and more.",text,2020-W17
 https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78,Things I Wished More Developers Knew About Databases,"An article touching upon seventeen topics worth paying more attention to
-whilst working with databases.
-",text,2020-W17
+whilst working with databases.",text,2020-W17
 https://joshondesign.com/2020/03/10/rust_minibrowser,Building a Rust Web Browser,"A series of articles on how the author is progressing in his mini webbrowser
-project.
-",text,2020-W17
+project.",text,2020-W17
 https://blog.thepete.net/blog/2019/12/09/delivering-on-an-architecture-strategy/,Delivering on an architecture strategy,"An article highlighting fundamental practices in a multi-discipline _product_
 team and where a technical and an architectural strategy play their part.
 
 There is a bit I dislike though, the categorisation of people as either
 ""doers"" or ""dreamers"". It is oversimplistic and gives a blank check to certain
 type of people that _think_ they are doing their part by just dreaming
-unrealistic half-baked ideas.
-",text,2020-W17
-https://github.com/gera2ld/markmap-lib,Markmap,"A tool to plot mindmaps out of Markdown.
-",text,2020-W17
-https://github.com/denisidoro/navi,Navi,"An interactive cheatsheet tool for the command-line and application launchers.
-",text,2020-W17
-https://github.com/dandavison/delta,Delta,"A syntax-highlighter for git and diff output.
-",text,2020-W18
+unrealistic half-baked ideas.",text,2020-W17
+https://github.com/gera2ld/markmap-lib,Markmap,A tool to plot mindmaps out of Markdown.,text,2020-W17
+https://github.com/denisidoro/navi,Navi,An interactive cheatsheet tool for the command-line and application launchers.,text,2020-W17
+https://github.com/dandavison/delta,Delta,A syntax-highlighter for git and diff output.,text,2020-W18
 https://robertheaton.com/2020/04/27/how-does-a-tcp-reset-attack-work/,How does a TCP Reset Attack work?,"An article explaining the mechanics of a TCP reset attack. Apparently, one of
-the techniques used by China's Great Firewall to enforce their censorship.
-",text,2020-W18
+the techniques used by China's Great Firewall to enforce their censorship.",text,2020-W18
 https://public-apis.io/,Public APIs,"A collection of public HTTP API services categorised by topic.
 
-You may also be interested in [Public API](https://public-apis.xyz/).
-",text,2020-W18
+You may also be interested in [Public API](https://public-apis.xyz/).",text,2020-W18
 https://jamesmcm.github.io/blog/2020/04/19/data-engineering-with-rust-and-aws-lambda,Data Ingestion with Rust and AWS Lambda,"A tutorial of how to setup an AWS Lambda function with Rust, consuming
 spreadsheets from AWS S3.
 
@@ -451,8 +352,7 @@ The [Rusoto](https://github.com/rusoto/rusoto) project, although not yet 1.0,
 is already covering quite a few [AWS services](https://www.rusoto.org/supported-aws-services.html).
 
 The [Amadeus](https://github.com/constellation-rs/amadeus) project is worth a
-look as well if you are into data processing, ETL or analysis.
-",text,2020-W18
+look as well if you are into data processing, ETL or analysis.",text,2020-W18
 https://adl.io/essays/degeneracy-code-and-innovation/,"Degeneracy, Code and Innovation","An article exploring the parallelisms of _degeneracy_, from
 biology, applied to other situations like technical solutions, professional
 career, etc.
@@ -469,21 +369,17 @@ some good seeds for thought in there.
 >
 > That first example is the anti-pattern Fisher is talking about. That second
 > example: unintentional degeneracy. Succeeding because of “bad” architecture,
-> not in spite of bad architecture.
-",text,2020-W18
+> not in spite of bad architecture.",text,2020-W18
 https://medium.com/@bocytko/driving-change-why-are-your-ideas-being-rejected-e2ab96227e40,Driving change: why are your ideas being rejected?,"An article about the factors that may prevent a proposal of improvement from
-being adopted.
-",text,2020-W18
+being adopted.",text,2020-W18
 https://poloclub.github.io/cnn-explainer,What is a Convolutional Neural Network?,"An article introducing the concepts involved in a Convolutional Neural Network
-(CNN) and complemented with an interactive visualisation.
-",text,2020-W19
+(CNN) and complemented with an interactive visualisation.",text,2020-W19
 https://gleam.run/,Gleam,"A programming language, statically typed and functional that compiles to
 [Erlang](https://www.erlang.org/) VM with interoperability with other BEAM
 languages such as [Elixir](https://elixir-lang.org/).
 
 This week the team behind it has [released version 0.8](https://lpil.uk/blog/gleam-v0.8-released/)
-with a noticeable improvement in developer experience.
-",text,2020-W19
+with a noticeable improvement in developer experience.",text,2020-W19
 https://blog.fullstory.com/suck-less-cycle,Structured Wrongness With the Suck Less Cycle,"An article describing a lifecycle to frame how to iterate on a product
 reliably.
 
@@ -496,38 +392,28 @@ highlighting that although good enough is enough, the story doesn't end there.
 
 After all, “quality is relative” without a framework to assess what you have
 done is just accepting you don't care about the result, you only care about
-getting away with it.
-",text,2020-W19
+getting away with it.",text,2020-W19
 https://venam.nixers.net/blog/unix/2020/05/02/time-on-unix.html,Time in Unix,"An article that will challenge your trust on time and its implementation in
 computer systems.
 
 > […] in Unix time, each day is considered to be exactly 86400 SI seconds,
 > which would mean it should skew away from real UTC, and thus drifts away from
-> UT1 (mean time).
-",text,2020-W19
-https://vole.wtf/scunthorpe-sans/,Scunthorpe Sans,"A font that censors bad language automatically.
-",text,2020-W19
-https://www.cybertec-postgresql.com/en/postgresql-count-made-fast/,PostgreSQL count(*) made fast,"An article about the quirks of Postgres' `count` function.
-",text,2020-W19
-https://blog.timescale.com/blog/time-series-compression-algorithms-explained/,"Time-series compression algorithms, explained","An article that walks through a set of techniques to store more in less space.
-",text,2020-W20
+> UT1 (mean time).",text,2020-W19
+https://vole.wtf/scunthorpe-sans/,Scunthorpe Sans,A font that censors bad language automatically.,text,2020-W19
+https://www.cybertec-postgresql.com/en/postgresql-count-made-fast/,PostgreSQL count(*) made fast,An article about the quirks of Postgres' `count` function.,text,2020-W19
+https://blog.timescale.com/blog/time-series-compression-algorithms-explained/,"Time-series compression algorithms, explained",An article that walks through a set of techniques to store more in less space.,text,2020-W20
 https://github.com/indygreg/PyOxidizer,PyOxidizer,"A tool for packaging and distributing Python applications.
 
-Produces self-contained binaries like [PyInstaller](https://github.com/pyinstaller/pyinstaller).
-",text,2020-W20
+Produces self-contained binaries like [PyInstaller](https://github.com/pyinstaller/pyinstaller).",text,2020-W20
 https://encore.dev/blog/git-clone-grpc,Git clone over gRPC,"An article about how to run Git over gRPC instead of HTTP or SSH by building a
-custom [git remote helper](https://git-scm.com/docs/gitremote-helpers).
-",text,2020-W20
+custom [git remote helper](https://git-scm.com/docs/gitremote-helpers).",text,2020-W20
 https://keys.pub,Keys.pub,"A tool for managing keys for encryption and signing.
 
 Similar to [Keybase](https://keybase.io/) tech stack (from a former Keybase
-employee) but open source.
-",text,2020-W20
-https://www.youtube.com/watch?v=AkYDsiRVqno,Why software architects fail – and what to do about it,"A talk that brilliantly identifies the archetypes of developers / architects.
-",video,2020-W20
+employee) but open source.",text,2020-W20
+https://www.youtube.com/watch?v=AkYDsiRVqno,Why software architects fail – and what to do about it,A talk that brilliantly identifies the archetypes of developers / architects.,video,2020-W20
 https://hacks.mozilla.org/2020/04/fuzzing-with-webidl/,Fuzzing Firefox with WebIDL,"An article introducing the main concepts of fuzz testing and how the Firefox
-team uses it to identify bugs.
-",text,2020-W20
+team uses it to identify bugs.",text,2020-W20
 https://dev.to/lampewebdev/writing-webassembly-in-rust-and-runing-it-in-deno-144j,Writing WebAssembly in Rust and runing it in Deno!,"A tutorial to begin with Deno and Webassembly.
 
 [Deno](https://github.com/denoland/deno) is starting to get some traction in
@@ -536,255 +422,182 @@ the Javascript space and With Webassembly it's an attractive combination.
 If you haven't read about Deno before, try this [Deno overview](https://blog.bitsrc.io/what-is-deno-and-will-it-replace-nodejs-a13aa1734a74).
 
 If you have, and you are into Typescript, check the rationale behind Deno's
-[TypeScript compiler in Rust](https://github.com/denoland/deno/issues/5432).
-",text,2020-W21
+[TypeScript compiler in Rust](https://github.com/denoland/deno/issues/5432).",text,2020-W21
 https://www.johnbcoughlin.com/posts/floating-point-axiom/,Taming Floating Point Error,"An article explaining the Fundamental Axiom of Floating Point Arithmetic and
-the effects in floating point computations.
-",text,2020-W21
+the effects in floating point computations.",text,2020-W21
 https://www.dolthub.com/,DoltHub,"A service to host [dolt](https://github.com/liquidata-inc/dolt) repositories.
 
 Dolt is a relational database manager with version control backed in. It's
-still in an early stage (v0.17.0) but already looking promising.
-",text,2020-W21
+still in an early stage (v0.17.0) but already looking promising.",text,2020-W21
 https://nick.groenen.me/posts/rust-error-handling/,Structuring and handling errors in 2020,"An article that explains the rationale of approaching error handling
 differently for libraries than for applications in Rust. It showcases both
 approaches using [anyhow](https://crates.io/crates/anyhow) and
 [thiserror](https://crates.io/crates/thiserror).
 
 Beware of the performance hit of using anyhow though. The comment at the end
-explains the trade-off well.
-",text,2020-W21
+explains the trade-off well.",text,2020-W21
 https://www.typography.com/blog/text-for-proofing-fonts,Text for proofing fonts,"An article discussing the actual usefulness of pangrams for font design and an
-alternative aiming to be more adequate for language-based singularities.
-",text,2020-W21
+alternative aiming to be more adequate for language-based singularities.",text,2020-W21
 https://blog.datomic.com/2017/01/the-ten-rules-of-schema-growth.html,The Ten Rules of Schema Growth,"An article on database schema evolution and how to think about them in a
-non-destructive way.
-",text,2020-W21
-https://geoman.io/leaflet-geoman,Leaflet-Geoman,"A tool to edit Leaflet geometries.
-",text,2020-W22
-https://mathvault.ca/math-glossary,The Definitive Glossary of Higher Mathematical Jargon,"A glossary of 106 terms related to mathematics.
-",text,2020-W22
+non-destructive way.",text,2020-W21
+https://geoman.io/leaflet-geoman,Leaflet-Geoman,A tool to edit Leaflet geometries.,text,2020-W22
+https://mathvault.ca/math-glossary,The Definitive Glossary of Higher Mathematical Jargon,A glossary of 106 terms related to mathematics.,text,2020-W22
 https://www.expressionsofchange.org/reification-of-interaction/,CLIs are reified UIs,"An article looking at the debate between Graphical User interfaces (GUIs) and
-Command Line Interfaces (CLIs) from a different angle.
-",text,2020-W22
+Command Line Interfaces (CLIs) from a different angle.",text,2020-W22
 http://karolis.koncevicius.lt/posts/fast_navigation_in_terminal_coming_full_cirlce/,Fast Navigation in Terminal: Coming Full Circle,"An article describing the author's experience trying to remove friction whilst
-navigating directories.
-",text,2020-W22
+navigating directories.",text,2020-W22
 https://tauri.studio,Tauri,"A tool to build applications for the major desktop platforms.
 
 Although it is still early days, it aims to be a more efficient alternative to
-Electron.
-",text,2020-W22
+Electron.",text,2020-W22
 https://github.com/ijl/orjson,Orjson,"A Python library written in Rust to manage JSON. The authors claim it is
-faster and more correct than the way offered by the standard library.
-",text,2020-W22
-https://scriptingosx.com/2019/06/moving-to-zsh/,Moving to zsh,"A tutorial to get started with ZSH.
-",text,2020-W23
-https://www.jamisbuck.org/mazes/,Maze Algorithms,"A showcase of maze algorithms.
-",text,2020-W23
+faster and more correct than the way offered by the standard library.",text,2020-W22
+https://scriptingosx.com/2019/06/moving-to-zsh/,Moving to zsh,A tutorial to get started with ZSH.,text,2020-W23
+https://www.jamisbuck.org/mazes/,Maze Algorithms,A showcase of maze algorithms.,text,2020-W23
 https://www.sqlite.org/src/thisdayinhistory?today=2020-05-29,SQLite turns 20,"The timeline for SQLite, only showing the birth day (2020-05-29).
 
 Besides celebrating 20 years of existence of one of the most used databases,
 this link shows an interesting feature of
 [Fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki) the version
 control system used by SQLite, from the same authors, using SQLite as a
-storage system.
-",text,2020-W23
+storage system.",text,2020-W23
 http://www.hackerfactor.com/blog/?/archives/432-Looks-Like-It.html,Looks Like It,"An article explaining the mechanics of a perceptual hash algorithm and how it
-helps in finding similar images.
-",text,2020-W23
-https://www.serverlessops.io/blog/hello-serverless,Hello Serverless,"A series on how to approach serverless systems with AWS.
-",text,2020-W23
+helps in finding similar images.",text,2020-W23
+https://www.serverlessops.io/blog/hello-serverless,Hello Serverless,A series on how to approach serverless systems with AWS.,text,2020-W23
 https://penrose.ink/siggraph20,Penrose: from mathematical notation to beautiful diagrams,"A paper introducing Penrose, a mathematical notation that translates to one or
-more visual representations.
-",text,2020-W23
+more visual representations.",text,2020-W23
 https://untools.co/,Tools for better thinking,"A catalogue of techniques to aid analysing a problem with examples for each
-technique.
-",text,2020-W24
+technique.",text,2020-W24
 https://octobus.net/blog/2020-06-05-not-everything-is-utf8.html,Not everything is UTF-8,"An article showing why programmers can't always afford to assume strings are
-UTF-8.
-",text,2020-W24
-https://www.nngroup.com/articles/flat-ui-less-attention-cause-uncertainty/,Flat UI Elements Attract Less Attention and Cause Uncertainty,"A study on the effectiveness of flat user interfaces.
-",text,2020-W24
+UTF-8.",text,2020-W24
+https://www.nngroup.com/articles/flat-ui-less-attention-cause-uncertainty/,Flat UI Elements Attract Less Attention and Cause Uncertainty,A study on the effectiveness of flat user interfaces.,text,2020-W24
 https://commoncog.com/blog/tacit-knowledge-is-a-real-thing/,Why Tacit Knowledge is More Important Than Deliberate Practice,"An article introducing the concept of “Tacit knowledge” and how it relates to
 Naturalistic Decision Making.
 
 You may want to also consider
 [The Problems with Deliberate Practice](https://commoncog.com/blog/the-problems-with-deliberate-practice/) from the
-same author.
-",text,2020-W24
+same author.",text,2020-W24
 https://dropbox.tech/application/speeding-up-a-git-monorepo-at-dropbox-with--200-lines-of-code,Speeding up a Git monorepo at Dropbox with <200 lines of code,"An article about the journey Dropbox went through to improve their version
-control system responsiveness and the overall developer experience.
-",text,2020-W24
+control system responsiveness and the overall developer experience.",text,2020-W24
 https://blog.jupyter.org/a-jupyter-kernel-for-sqlite-9549c5dcf551,A Jupyter kernel for SQLite,"An article anouncing the [xeus-sqlite](https://xeus-sqlite.readthedocs.io)
-project that will bring first-class SQLite interaction in Jupyter notebooks.
-",text,2020-W24
+project that will bring first-class SQLite interaction in Jupyter notebooks.",text,2020-W24
 https://github.com/chmln/sd,Intuitive find & replace CLI (sed alternative),"A tool to replace [`sed`](https://linux.die.net/man/1/sed). It offers less
-backslashes and more familiar regular expressions.
-",text,2020-W25
-https://journals.sagepub.com/doi/10.1177/2631787720929704,Playing the Bullshit Game: How Empty and Misleading Communication Takes Over Organizations,"A paper that argues that bullshit is a social practice.
-",text,2020-W25
+backslashes and more familiar regular expressions.",text,2020-W25
+https://journals.sagepub.com/doi/10.1177/2631787720929704,Playing the Bullshit Game: How Empty and Misleading Communication Takes Over Organizations,A paper that argues that bullshit is a social practice.,text,2020-W25
 https://blog.piekniewski.info/2020/06/08/ai-the-no-bullshit-approach/,AI - the no bullshit approach,"An article analysing the landscape of constructing computer programs and what
-are the shortcomings of the current hybrid approaches.
-",text,2020-W25
+are the shortcomings of the current hybrid approaches.",text,2020-W25
 https://www.youtube.com/watch?v=8O0Nt9qY_vo,Crust of Rust: Smart Pointers and Interior Mutability,"A video on the differences of different smart pointers in Rust such as `Cell`,
-`RefCell` and `Rc`.
-",video,2020-W25
-https://mathtocode.com/,Math to code,"An interactive tutorial to learn [NumPy](https://numpy.org/).
-",text,2020-W25
+`RefCell` and `Rc`.",video,2020-W25
+https://mathtocode.com/,Math to code,An interactive tutorial to learn [NumPy](https://numpy.org/).,text,2020-W25
 https://camunda.com/products/modeler/,BPMN Modeler,"A tool to create flow diagrams in [BPMN](https://www.omg.org/spec/BPMN/2.0/)
 based on [bpmn-js](https://bpmn.io/)
 
 The [tutorial](https://camunda.com/bpmn/) from the same people is much more
-palatable than the OMG specification.
-",text,2020-W25
-https://www.skoumal.com/en/parallel-read-and-write-in-sqlite/,Parallel read and write in SQLite,"An article on how locks, journals and Work-Ahead Logs work in SQLite.
-",text,2020-W26
-https://thomazleite.com/posts/development-with-nix-python/,Development with Nix: Python,"A short tutorial on using Nix to harness Python dependency management.
-",text,2020-W26
+palatable than the OMG specification.",text,2020-W25
+https://www.skoumal.com/en/parallel-read-and-write-in-sqlite/,Parallel read and write in SQLite,"An article on how locks, journals and Work-Ahead Logs work in SQLite.",text,2020-W26
+https://thomazleite.com/posts/development-with-nix-python/,Development with Nix: Python,A short tutorial on using Nix to harness Python dependency management.,text,2020-W26
 https://www.assemblyscript.org/,A language made for WebAssembly,"A programming language that takes a subset of TypeScript and targets
-WebAssembly.
-",text,2020-W26
+WebAssembly.",text,2020-W26
 https://r2c.dev/blog/2020/hardcoded-secrets-unverified-tokens-and-other-common-jwt-mistakes/,"Hardcoded secrets, unverified tokens, and other common JWT mistakes","An article analysing the security weaknesses of 2000 npm modules in their use
 of JWT (RFC 7519).
 
 Make sure to check [Semgrep](https://semgrep.live) a command-line
-tool for offline static analysis.
-",text,2020-W26
+tool for offline static analysis.",text,2020-W26
 https://blog.burntsushi.net/csv/,Rust and CSV parsing,"An article on how to use and optimise reding and writing CSV. If you think CSV
 is simple, this article is for you.
 
 If you are into CSV, check [BaDSV](https://github.com/RocketRace/badsv) for a
-treat.
-",text,2020-W26
+treat.",text,2020-W26
 https://sachanganesh.com/programming/graph-tree-traversals-in-rust/,Graph & Tree Traversals in Rust,"A tutorial on how to implement a tree data structure in Rust such that it can
 be iterated and mutated. It's one of the nicest introductions to arena
-allocators I've seen so far.
-",text,2020-W26
+allocators I've seen so far.",text,2020-W26
 https://rx.cloudhead.io/,rx: Modern and minimalist pixel editor,"A pixel editor with a modal interface that allows you to create still and
-animated pixel art.
-",text,2020-W27
+animated pixel art.",text,2020-W27
 https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html,xi-editor retrospective,"An article reflecting back on the 4 years the XI editor has been in
 development, from early ambitions to roadblockers and assumptions that turned
-out to be not quite right.
-",text,2020-W27
+out to be not quite right.",text,2020-W27
 https://use-the-index-luke.com/no-offset,We need tool support for keyset pagination,"A classic article on the implications of paginating SQL using offset and the
 benefits of the alternative approach.
 
 I was revisiting this article to try to optimise a query on a large SQLite
-table (191 million records) but sadly SQLite does not implement `FETCH`.
-",text,2020-W27
+table (191 million records) but sadly SQLite does not implement `FETCH`.",text,2020-W27
 https://mkaszubowski.com/2020/06/24/decomposing-models-lifecycle.html,Decomposing domain models based on lifecycles,"An article analysing the anemic domain model and how to recover from it using
-the lifecycle of the data involved.
-",text,2020-W27
-https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/,A crash course in just-in-time (JIT) compilers,"An article on interpreters, compilers and how just-in-time compilers work.
-",text,2020-W27
-https://www.nickwilcox.com/blog/arm_vs_x86_memory_model/,Examining ARM vs X86 Memory Models with Rust,"An article exploring how ARM and x86 work.
-",text,2020-W27
+the lifecycle of the data involved.",text,2020-W27
+https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/,A crash course in just-in-time (JIT) compilers,"An article on interpreters, compilers and how just-in-time compilers work.",text,2020-W27
+https://www.nickwilcox.com/blog/arm_vs_x86_memory_model/,Examining ARM vs X86 Memory Models with Rust,An article exploring how ARM and x86 work.,text,2020-W27
 https://nesslabs.com/cobra-effect,The Cobra Effect: how linear thinking leads to unintended consequences,"An article about the Cobra effect and some ideas on how to avoid it when
-making decisions.
-",text,2020-W28
+making decisions.",text,2020-W28
 https://untools.co/ladder-of-inference,Ladder of inference,"A technique to methodically challenge your thinking in order to improve in
-your decision making.
-",text,2020-W28
-https://www.pyret.org/,Pyret,"A programming language designed specifically for educational purposes.
-",text,2020-W28
+your decision making.",text,2020-W28
+https://www.pyret.org/,Pyret,A programming language designed specifically for educational purposes.,text,2020-W28
 https://levelup.gitconnected.com/no-cookies-no-problem-using-etags-for-user-tracking-3e745544176b,"No Cookies, No Problem — Using ETags For User Tracking","An article reminding us that when we say “cookies” we mean “any means you use
-to track user behaviour”.
-",text,2020-W28
-https://1linelayouts.glitch.me/,1-Line Layouts,"A showcase of CSS layouts using either flexbox or grid.
-",text,2020-W28
+to track user behaviour”.",text,2020-W28
+https://1linelayouts.glitch.me/,1-Line Layouts,A showcase of CSS layouts using either flexbox or grid.,text,2020-W28
 https://vscodium.com/,Free/Libre Open Source Software Binaries of VSCode,"An binary distribution of the VSCode editor without the MicroSoft telemetry
-and licensed as MIT instead of the [MS non-FLOSS licence](https://code.visualstudio.com/license).
-",text,2020-W28
+and licensed as MIT instead of the [MS non-FLOSS licence](https://code.visualstudio.com/license).",text,2020-W28
 https://www.hillelwayne.com/contract-examples/,Finding Property Tests,"An article explaining what property tests are and what are they good for.
 
 From the same author, [Property Testing with Complex
 Inputs](https://www.hillelwayne.com/post/property-testing-complex-inputs/)
 explores further the potential of property testing around generating test
-data.
-",text,2020-W29
+data.",text,2020-W29
 https://github.com/augmentable-dev/gitqlite,gitqlite,"A tool to query [Git](https://git-scm.com/) repositories with SQL. Another
-expression of SQLite's virtual tables.
-",text,2020-W29
+expression of SQLite's virtual tables.",text,2020-W29
 https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning,Testing Firefox more efficiently with machine learning,"An article on how Firefox is trying to improve the performance of their
 continuous integration by using machine learning to select the relevant subset
-of tests to run for a given change.
-",text,2020-W29
+of tests to run for a given change.",text,2020-W29
 https://petevilter.me/post/datalog-typechecking/,Turning the IDE Inside Out with Datalog,"An article exploring the potential benefits of using a Datalog to build an
-Integrated Development Environment (IDE).
-",text,2020-W29
+Integrated Development Environment (IDE).",text,2020-W29
 https://materialize.io/eventual-consistency-isnt-for-streaming/,Eventual Consistency isn’t for Streaming,"An article exploring the shortcomings of eventual consistency applied to
-streaming systems.
-",text,2020-W29
+streaming systems.",text,2020-W29
 https://aito.ai/blog/could-predictive-database-queries-replace-machine-learning-models/,Could predictive database queries replace machine learning models?,"An article on how predictive queries give a different approach than other
 predictive methods. Let me pique your curiosity with a quote:
 
 > Predictive queries resemble normal database queries with the exception that
 they provide predictions about the unknown, while the traditional database
-queries provide facts about the known
-",text,2020-W29
-https://blog.logrocket.com/property-based-testing-in-rust-with-proptest/,Property-based testing in Rust with Proptest,"A tutorial on property-based testing in Rust.
-",text,2020-W30
+queries provide facts about the known",text,2020-W29
+https://blog.logrocket.com/property-based-testing-in-rust-with-proptest/,Property-based testing in Rust with Proptest,A tutorial on property-based testing in Rust.,text,2020-W30
 https://arxiv.org/html/0901.4016,"A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable","An article defining a way to generate identifiers that are readable and
-opaque. An attractive alternative to hexadecimal identifiers.
-",text,2020-W30
+opaque. An attractive alternative to hexadecimal identifiers.",text,2020-W30
 https://aeon.co/essays/the-dream-of-total-information-became-a-nightmare-in-postwar-china,Counting China,"An article narrating the relationship between statistics and China in the
-1950's.
-",text,2020-W30
+1950's.",text,2020-W30
 https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/,Mathematicians Discover the Perfect Way to Multiply,"An article about the speed of the multiplication operation and how it
-is a fundamental limit for more advanced problem solving in computers.
-",text,2020-W30
+is a fundamental limit for more advanced problem solving in computers.",text,2020-W30
 https://wiki.js.org/,Wiki.js,"An application to run your own wiki with an extensive set of extensions. It's
 still in early development and missing some of the more interesting features
-but definitely a tool to keep an eye on.
-",text,2020-W30
+but definitely a tool to keep an eye on.",text,2020-W30
 https://www.youtube.com/watch?v=Jes3bD6P0To,Tree-sitter - a new parsing system for programming tools,"A talk on a new (2018) approach to syntax highlighting in the Atom editor and
 the potential of using tree syntaxes with an accessible API to that tree to
-operate on it from the editor.
-",video,2020-W30
+operate on it from the editor.",video,2020-W30
 https://nullprogram.com/blog/2020/08/01/,Conventions for Command Line Options,"An article describing the classic conventions in Unix command line interfaces
-and some of the problems derived from deviating from them.
-",text,2020-W31
+and some of the problems derived from deviating from them.",text,2020-W31
 https://github.com/alacritty/alacritty,Alacritty,"A terminal emulator, cross-platform and GPU accelerated. I've been following
 this project for quite some time but now, with the new release, v0.5, I'm
-adopting it as my main terminal.
-",text,2020-W31
-https://ncase.me/loopy/,Loopy,"A tool to draw interactive system diagrams.
-",text,2020-W31
-https://codefaster.substack.com/p/mastering-jq-part-1-59c,Mastering JQ: Part 1,"An tutorial on the basics of how jq works.
-",text,2020-W31
+adopting it as my main terminal.",text,2020-W31
+https://ncase.me/loopy/,Loopy,A tool to draw interactive system diagrams.,text,2020-W31
+https://codefaster.substack.com/p/mastering-jq-part-1-59c,Mastering JQ: Part 1,An tutorial on the basics of how jq works.,text,2020-W31
 https://pnevyk.github.io/posts/query-system-in-rust/,Writing a simple query system in Rust,"An article explaining the rudiments of a query system pattern in Rust. A nice
-opportunity to see a basic application of Rust reflection capabilities.
-",text,2020-W31
+opportunity to see a basic application of Rust reflection capabilities.",text,2020-W31
 https://github.com/sharkdp/hexyl,Hexyl,"A tool to view the hexadecimal representation of a file. Similar to `hexdump`
-but with bytes coloured by category.
-",text,2020-W31
+but with bytes coloured by category.",text,2020-W31
 https://ruder.io/nlp-beyond-english/,Why You Should Do NLP Beyond English,"An article highlighting the shortcomings in the current approach to natural
-language processing and the risks that they carry.
-",text,2020-W32
+language processing and the risks that they carry.",text,2020-W32
 https://www.youtube.com/watch?v=N6b44kMS6OM,Responsive compilers,"A talk introducing [Salsa](https://github.com/salsa-rs/salsa) and how Rust
-is trying to build an incremental compiler that works well with IDEs.
-",video,2020-W32
+is trying to build an incremental compiler that works well with IDEs.",video,2020-W32
 https://lars.hupel.info/topics/crdt/01-intro/,An introduction to Conflict-Free Replicated Data Types,"A series introducing the foundations of Conflict-Free Replicated Data Types
-(CRDT) and how they reconcile data across a distributed system.
-",text,2020-W32
-https://github.com/pandera-dev/pandera,Pandera,"A library to validate data structures in [Pandas](https://pandas.pydata.org/).
-",text,2020-W32
+(CRDT) and how they reconcile data across a distributed system.",text,2020-W32
+https://github.com/pandera-dev/pandera,Pandera,A library to validate data structures in [Pandas](https://pandas.pydata.org/).,text,2020-W32
 https://ghedam.at/15978/an-introduction-to-nix-shell,An introduction to nix-shell,"An article explaining the basics of `nix-shell` as a reproducible development
 environment.
 
 If the article leaves you with appetite for more, [nix.env](https://nix.dev/)
-should be your next stop.
-",text,2020-W32
+should be your next stop.",text,2020-W32
 https://nesslabs.com/pre-mortem-anticipate-failure-with-prospective-hindsight,Pre-mortem: how to anticipate failure with prospective hindsight,"An article explaining the pre-mortem technique and how it helps manage the
-optimism bias our team might have at the beginning of a project.
-",text,2020-W32
+optimism bias our team might have at the beginning of a project.",text,2020-W32
 https://locallyoptimistic.com/post/git-for-data-not-a-silver-bullet,Git for Data: Not a Silver Bullet,"An article reflecting on [The Rise of
 DataOps](https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4)
 and describing a more classic append-only log approach to deal with how data
-changes over time and keep enough reproducibility guarantees.
-",text,2020-W33
+changes over time and keep enough reproducibility guarantees.",text,2020-W33
 https://medium.com/young-coder/mozilla-the-greatest-tech-company-left-behind-9e912098a0e1,Mozilla: The Greatest Tech Company Left Behind,"An article reflecting on the impact of the recent layoffs in Mozilla.
 
 You might also be interested in [Web browsers need to stop](https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html),
@@ -792,16 +605,12 @@ a short rant on the state of web browsers in 2020.
 
 Finally, [Open Standards are simple](https://portal.mozz.us/gemini/ebc.li/posts/open-standards-are-simple.gmi)
 is a somewhat related article making a few interesting points on the effects
-of complexity in openness.
-",text,2020-W33
+of complexity in openness.",text,2020-W33
 https://github.com/Byron/gitoxide,gitoxide,"A reimplementation of Git written in Rust. It is still not feature complete
-but the foundations are already there.
-",text,2020-W33
-https://onelook.com/,One look,"A dictionary search with partial word search.
-",text,2020-W33
+but the foundations are already there.",text,2020-W33
+https://onelook.com/,One look,A dictionary search with partial word search.,text,2020-W33
 https://www.growbyginkgo.com/2020/07/15/beyond-smart-rocks/,Beyond Smart Rocks,"An article touching on possible replacements for our current computers and in
-particular on the potential of slime.
-",text,2020-W33
+particular on the potential of slime.",text,2020-W33
 https://www.geopackage.org/,GeoPackage,"A format to structure geospatial information in SQLite.
 
 A couple of weeks back I played with the UK geospatial information which
@@ -811,11 +620,9 @@ SQLite database.
 
 The good news is that now they are improving and starting to offer data in
 GeoPackage which, besides using SQLite, defines a particular way to lay the
-geospatial data.
-",text,2020-W33
+geospatial data.",text,2020-W33
 https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/,Are CRDTs suitable for shared editing?,"An article explaining the optimisations you can apply to CRDT structures to
-keep their resource consumption in check.
-",text,2020-W34
+keep their resource consumption in check.",text,2020-W34
 https://www.nushell.sh,Nu shell,"A shell that focuses on structured data manipulation instead of raw streams. A
 snippet to give you a taste:
 
@@ -827,43 +634,31 @@ nu> ls | sort-by size
   0 │ ./seachess/bulletins/2020-W34.toml │ File │  764 B │ 4 mins ago
   1 │ ./seachess/bulletins/2020-W22.toml │ File │ 1.5 KB │ 3 days ago
 ...
-```
-",text,2020-W34
+```",text,2020-W34
 https://mssv.net/2020/08/16/digital-sight-management-and-the-mystery-of-the-missing-amazon-receipts/,"Digital Sight Management, and the Mystery of the Missing Amazon Receipts","An article about the future of wearable AR and the impact on corporations
-that base their strength in amassing data.
-",text,2020-W34
+that base their strength in amassing data.",text,2020-W34
 https://github.com/opensource9ja/danfojs,danfo.js,"A library in JavaScript for high-performance for manipulating structured data
-akin to [Pandas](https://pandas.pydata.org) in Python.
-",text,2020-W34
+akin to [Pandas](https://pandas.pydata.org) in Python.",text,2020-W34
 https://yoric.github.io/post/why-did-mozilla-remove-xul-addons/,Why Did Mozilla Remove XUL Add-ons?,"An article about the history of the Firefox extension model. If you where into
-XUL back in the day, it might give you some closure.
-",text,2020-W34
+XUL back in the day, it might give you some closure.",text,2020-W34
 https://jmap.io/,JMAP,"A standard for mail. An attempt to be a replacement for IMAP based on HTTPS
 and JSON although not restricted to either.
 
 It has been published as two internet standards:
 [RFC8620](https://tools.ietf.org/html/rfc8620) and
-[RFC8621](https://tools.ietf.org/html/rfc8621)
-",text,2020-W34
+[RFC8621](https://tools.ietf.org/html/rfc8621)",text,2020-W34
 https://stackoverflow.blog/2020/08/24/motoko-the-language-that-turns-the-web-into-a-computer/,"Motoko, a programming language for building directly on the internet","An article about the Internet Computer project and how Motoko was designed
-to support it using WebAssembly.
-",text,2020-W35
+to support it using WebAssembly.",text,2020-W35
 https://dev.to/bkolobara/lunatic-actor-based-webassembly-runtime-for-the-backend-36oj,Lunatic: Actor based WebAssembly runtime for the backend,"An article presenting a runtime written in Rust that works in an actor-based
 model similar to Erlang with the difference of each actor being a WebAssembly
-instance with its own dedicated permissions.
-",text,2020-W35
+instance with its own dedicated permissions.",text,2020-W35
 https://nocomplexity.com/documents/arplaybook/,Architecture Playbook,"A book on the different aspects of technical architecture (business, data,
-software, etc).
-",text,2020-W35
-https://people.well.com/user/doctorow/metacrap.htm,Metacrap: Putting the torch to seven straw-men of the meta-utopia,"A classic on the topic of metadata and its usefulness.
-",text,2020-W35
+software, etc).",text,2020-W35
+https://people.well.com/user/doctorow/metacrap.htm,Metacrap: Putting the torch to seven straw-men of the meta-utopia,A classic on the topic of metadata and its usefulness.,text,2020-W35
 https://nesslabs.com/productivity-porn,Productivity porn,"An article highlighting a couple of signs that are more about
 procrastination than productivity.
 
 You might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)
-from the same author.
-",text,2020-W35
+from the same author.",text,2020-W35
 https://rushter.com/blog/gzip-indexing/,How to turn an ordinary gzip archive into a database,"An article about how to use the gzip concatenation feature to achieve random
-access.
-",text,2020-W35
-https://neilkakkar.com/Bayes-Theorem-Framework-for-Critical-Thinking.html,Bayes Theorem: A Framework for Critical Thinking,An article about using Bayes theorem as a decision making strategy.,text,2020-W36
+access.",text,2020-W35
