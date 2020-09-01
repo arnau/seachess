@@ -4,11 +4,10 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-pub mod achievement;
-pub mod bulletin;
-pub mod cli;
-pub mod error;
-pub mod logo;
+use serde::{Deserialize, Serialize};
 
-pub use achievement::Achievement;
-pub use error::Error;
+#[derive(Clone, Debug, Deserialize, Serialize)]
+pub struct Mention {
+    pub(crate) mention_url: String,
+    pub(crate) entry_url: String,
+}

@@ -26,6 +26,10 @@ const useStyles = makeStyles(theme => ({
   header: {
     marginBottom: theme.spacing(2),
   },
+  excerpt: {
+    marginTop: theme.spacing(6),
+    marginBottom: theme.spacing(4),
+  },
   doctype: {
     textTransform: 'uppercase',
     fontSize: '0.8rem',
@@ -54,14 +58,17 @@ const processor = unified()
 
 function Bulletin({location, data}) {
   const classes = useStyles()
-  const { title, introduction, date, links, author } = data.bulletin
+  const { id, description, publication_date } = data.issue
+  const title = `Issue ${id}`
+  const { author } = data
+  const links = data.links.edges
 
   return (
     <Layout location="/bulletins/">
       <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
         <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
         <div>
-          <MetaNote date={date} author={author.name} className={classes.metanote} />
+          <MetaNote date={publication_date} author={author.name} className={classes.metanote} />
 
           <Typography
             className={classes.header}
@@ -71,24 +78,23 @@ function Bulletin({location, data}) {
 
           <Subscription />
 
-          <Typography component="p">
-            {introduction}
+          <Typography component="p" className={classes.excerpt}>
+            {description}
           </Typography>
           <hr />
 
           <div property="articleBody">
             {
-              links.map(link => {
-                const comment = processor.processSync(link.comment)
-
-                const doctype = link.type
-                  ? <span className={classes.doctype}>{link.type}</span>
-                  : ''
-                const anchor = slug(link.title)
+              links.map(({ node }) => {
+                const comment = processor.processSync(node.comment)
+                const doctype = node.content_type == 'text'
+                  ? ''
+                  : <span className={classes.doctype}>{node.content_type}</span>
+                const anchor = slug(node.title)
                 return (
-                  <div key={link.url}>
+                  <div key={node.url}>
                     <Typography id={anchor} component="h2" variant="h6">
-                      <a href={link.url}>{link.title}</a>
+                      <a href={node.url}>{node.title}</a>
                       {doctype}
                     </Typography>
                     <Typography component="div">
@@ -117,19 +123,27 @@ Bulletin.propTypes = {
 
 /* eslint no-undef: "off" */
 export const query = graphql`
-  query BulletinBySlug($slug: String!) {
-    bulletin(slug: { eq: $slug }) {
+  query BulletinById($id: String!) {
+    author(id: { eq: "arnau"}) {
+      name
+    }
+
+    issue(id: { eq: $id }) {
       id
       slug
-      author { name }
-      title
-      introduction
-      date
-      links {
-        title
-        type
-        url
-        comment
+      description
+      publication_date
+    }
+
+    links: allIssueEntry(filter: { issue_id: { eq: $id } }) {
+      edges {
+        node {
+          url
+          title
+          comment
+          content_type
+          issue_id
+        }
       }
     }
   }

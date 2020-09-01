@@ -11,6 +11,7 @@ use aquarium::cli;
 #[derive(Debug, Clap)]
 enum Subcommand {
     Logo(cli::logo::Cmd),
+    Bulletin(cli::bulletin::Cmd),
 }
 
 #[derive(Debug, Clap)]
@@ -27,6 +28,14 @@ fn main() {
         Subcommand::Logo(mut cmd) => match cmd.run() {
             Ok(msg) => {
                 println!("{}", msg);
+            }
+            Err(err) => {
+                eprintln!("{:?}", err);
+            }
+        },
+        Subcommand::Bulletin(cmd) => match cmd.run() {
+            Ok(_msg) => {
+                // println!("{}", msg);
             }
             Err(err) => {
                 eprintln!("{:?}", err);

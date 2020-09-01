@@ -58,9 +58,9 @@ function Index({location, data}) {
       {
         data.bulletin.edges.map(({ node }) =>
           <ExcerptNote key={node.id}
-            title={node.title}
+            title={`Issue ${node.id}`}
             href={node.slug}
-            date={node.date}
+            date={node.publication_date}
             author={settings.author.name}/>
         )
       }
@@ -83,16 +83,15 @@ export const query = graphql`
     settings {
       author { name }
     }
-    bulletin: allBulletin(
+    bulletin: allIssue(
       limit: 1
-      sort: { fields: date, order: DESC }
+      sort: { fields: publication_date, order: DESC }
     ) {
       edges {
         node {
           id
           slug
-          title
-          date
+          publication_date
         }
       }
     }
