@@ -108,8 +108,6 @@ pub struct Edit {
     /// Cache path
     #[clap(long, value_name = "path", default_value = "./bulletin.db")]
     cache_path: PathBuf,
-    /// Url to edit
-    url: Option<String>,
 }
 
 impl Edit {
@@ -117,12 +115,7 @@ impl Edit {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let entry = match &self.url {
-            Some(url) => storage::get_entry(&tx, url)?,
-            None => select_entry(&tx)?,
-        };
-        // It simplifies the logic of 'editing' if we are only concerned about adding an entry later
-        // on.
+        let entry = select_entry(&tx)?;
         storage::delete_entry(&tx, &entry.url)?;
 
         let value = toml::to_string(&entry)?;
@@ -146,8 +139,6 @@ pub struct Remove {
     /// Cache path
     #[clap(long, value_name = "path", default_value = "./bulletin.db")]
     cache_path: PathBuf,
-    /// Url to edit
-    url: Option<String>,
 }
 
 impl Remove {
@@ -155,10 +146,7 @@ impl Remove {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let entry = match &self.url {
-            Some(url) => storage::get_entry(&tx, url)?,
-            None => select_entry(&tx)?,
-        };
+        let entry = select_entry(&tx)?;
 
         storage::delete_entry(&tx, &entry.url)?;
 
