@@ -4,9 +4,7 @@ var html = require('remark-html')
 function bulletin_to_html({ id, description }, links) {
   const links_s = links.edges
     .filter(({ node }) => node.issue_id == id)
-    .map(({ node }) => {
-      console.log(node)
-      return `## [${node.title}](${node.url})\n${node.comment}\n`})
+    .map(({ node }) => `## [${node.title}](${node.url})\n${node.comment}\n`)
   const md = `${description}\n${links_s.join('\n')}`
   let result
 
