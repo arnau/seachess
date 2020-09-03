@@ -662,3 +662,12 @@ You might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)
 from the same author.",text,2020-W35
 https://rushter.com/blog/gzip-indexing/,How to turn an ordinary gzip archive into a database,"An article about how to use the gzip concatenation feature to achieve random
 access.",text,2020-W35
+https://github.com/pemistahl/grex,Grex,A command-line tool to generate regular expressions from test cases.,text,2020-W36
+https://github.com/hoffstadt/DearPyGui,Dear PyGui,A library in Python to draw GPU-accelerated graphical user interfaces.,text,2020-W36
+https://github.com/andmarti1424/sc-im,SC-IM,A terminal-based spreadsheet with a Vim flavour.,text,2020-W36
+https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i,Many models workflows in python: part i,An article porting Hadley Wickham's approach to data analysis to Python.,text,2020-W36
+https://bytecodealliance.org/articles/reference-types-in-wasmtime,WebAssembly Reference Types in Wasmtime,"An article explaining with examples the Reference Types proposal for
+WebAssembly.",text,2020-W36
+https://www.usenix.org/conference/soups2020/presentation/bird,Replication: Why We Still Can't Browse in Peace: On the Uniqueness and Reidentifiability of Web Browsing Histories,"A paper analysing the privacy threat that browser history leakage impose to
+individuals. This work replicates and extends the 2012 paper “Why Johnny Can't
+Browse in Peace: On the Uniqueness of Web Browsing History Patterns”.",pdf,2020-W36
