@@ -61,7 +61,9 @@ function Index({location, data}) {
             title={`Issue ${node.id}`}
             href={node.slug}
             date={node.publication_date}
-            author={settings.author.name}/>
+            author={settings.author.name}>
+            <p dangerouslySetInnerHTML={{ __html: node.description }} />
+          </ExcerptNote>
         )
       }
       <Group data={data.notes.edges} settings={settings} />
@@ -91,6 +93,7 @@ export const query = graphql`
         node {
           id
           slug
+          description
           publication_date
         }
       }
