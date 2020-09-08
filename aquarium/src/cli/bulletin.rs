@@ -21,6 +21,7 @@ enum Subcommand {
     Extrude(Extrude),
     Load(Load),
     Remove(Remove),
+    Publish(Publish),
 }
 
 /// Manages bulletins
@@ -38,6 +39,7 @@ impl Cmd {
             Subcommand::Extrude(cmd) => cmd.run(),
             Subcommand::Load(cmd) => cmd.run(),
             Subcommand::Remove(cmd) => cmd.run(),
+            Subcommand::Publish(cmd) => cmd.run(),
         }
     }
 }
@@ -309,6 +311,43 @@ impl Extrude {
             }
             "toml" => serialize::to_toml(&tx, &self.output_path)?,
             _ => unreachable!(),
+        }
+
+        tx.commit()?;
+
+        Ok(Achievement::Done)
+    }
+}
+
+/// Publishes the next issue if it's in a `Ready` state.
+#[derive(Debug, Clap)]
+pub struct Publish {
+    /// Cache path
+    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    cache_path: PathBuf,
+}
+
+impl Publish {
+    pub fn run(&self) -> Result<Achievement, Error> {
+        let mut conn = storage::connect(&self.cache_path)?;
+        let tx = conn.transaction()?;
+
+        let mut issue = storage::get_ready(&tx)
+            .map_err(|_| Error::Unknown("No issues found in a ready state.".into()))?;
+        let mut value = issue.description.clone();
+        let entries = storage::get_issue_entries(&tx, &issue.id)?;
+
+        for entry in entries {
+            value.push_str(&format!("\n\n  * {}", entry.comment));
+        }
+
+        if let Some(value) = Editor::new().extension(".md").edit(&value)? {
+            issue.description = value;
+            issue.status = Status::Published;
+
+            storage::update_issue(&tx, &issue)?;
+        } else {
+            return Ok(Achievement::Cancelled);
         }
 
         tx.commit()?;

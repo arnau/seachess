@@ -160,6 +160,33 @@ pub fn change_issue_status(tx: &Transaction, id: &issue::Id, status: &Status) ->
     Ok(())
 }
 
+pub fn update_issue(tx: &Transaction, issue: &issue::Record) -> Result<(), Error> {
+    let mut stmt = tx.prepare(
+        r#"
+        UPDATE bulletin_issue
+        SET
+            publication_date = ?,
+            description = ?,
+            title = ?,
+            status = ?
+        WHERE
+            id = ?
+        "#,
+    )?;
+
+    let values: [&dyn rusqlite::ToSql; 5] = [
+        &issue.publication_date,
+        &issue.description,
+        &issue.title,
+        &issue.status,
+        &issue.id,
+    ];
+
+    stmt.execute(&values)?;
+
+    Ok(())
+}
+
 pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
     let mut stmt = tx.prepare(
         r#"
@@ -194,6 +221,28 @@ pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
     Ok(list)
 }
 
+pub fn get_ready(tx: &Transaction) -> Result<issue::Record, Error> {
+    let mut stmt = tx.prepare(
+        r#"
+        SELECT id, publication_date, title, description, status
+        FROM bulletin_issue
+        WHERE status = 'ready'
+        "#,
+    )?;
+
+    let issue = stmt.query_row(NO_PARAMS, |row| {
+        Ok(issue::Record {
+            id: row.get(0)?,
+            publication_date: row.get(1)?,
+            title: row.get(2)?,
+            description: row.get(3)?,
+            status: row.get(4)?,
+        })
+    })?;
+
+    Ok(issue)
+}
+
 pub fn get_entry(tx: &Transaction, url: &str) -> Result<entry::Record, Error> {
     let mut stmt = tx.prepare(
         r#"
@@ -219,6 +268,38 @@ pub fn get_entry(tx: &Transaction, url: &str) -> Result<entry::Record, Error> {
     })?;
 
     Ok(entry)
+}
+
+pub fn get_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<Vec<entry::Record>, Error> {
+    let mut stmt = tx.prepare(
+        r#"
+        SELECT
+            url,
+            title,
+            comment,
+            content_type,
+            issue_id
+        FROM bulletin_entry
+        WHERE issue_id = ?
+        ORDER BY issue_id, url
+        "#,
+    )?;
+    let mut list = Vec::new();
+    let rows = stmt.query_map(&[id], |row| {
+        Ok(entry::Record {
+            url: row.get(0)?,
+            title: row.get(1)?,
+            comment: row.get(2)?,
+            content_type: row.get(3)?,
+            issue_id: row.get(4)?,
+        })
+    })?;
+
+    for result in rows {
+        list.push(result?);
+    }
+
+    Ok(list)
 }
 
 pub fn count_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<u32, Error> {
