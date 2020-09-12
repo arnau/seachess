@@ -671,3 +671,14 @@ WebAssembly.",text,2020-W36
 https://www.usenix.org/conference/soups2020/presentation/bird,Replication: Why We Still Can't Browse in Peace: On the Uniqueness and Reidentifiability of Web Browsing Histories,"A paper analysing the privacy threat that browser history leakage impose to
 individuals. This work replicates and extends the 2012 paper “Why Johnny Can't
 Browse in Peace: On the Uniqueness of Web Browsing History Patterns”.",pdf,2020-W36
+https://halite.io/,Halite,"A game where participants have to write a bot in order to play.
+
+I found it via [Halite III Bot Development Kit in Rust](https://sgolem.com/halite-iii-bot-development-kit-in-rust)",text,2020-W37
+https://dbdb.io/,Database of databases,"A catalogue of databases classified by licence, programming language and more.",text,2020-W37
+https://weinholt.se/articles/non-posix-filesystems/,Non-POSIX file systems,An article about file systems and their history.,text,2020-W37
+https://g6.antv.vision,G6 Graph Visualization Engine,A library in TypeScript to manage graph visualisations and analysis.,text,2020-W37
+https://wascc.dev,waSCC,"A dynamic, elastically scalable WebAssembly host runtime for securely connecting
+actors and capability providers.",text,2020-W37
+https://ahelwer.ca/post/2020-04-15-probabilistic-distsys/,How do you reason about a probabilistic distributed system?,"An article about the implications of designing distributed systems for probabilistic consensus protocols.
+
+Even if distributed systems is not your thing, [PRISM](https://www.prismmodelchecker.org) the probabilistic model checker is worth a look.",text,2020-W37
