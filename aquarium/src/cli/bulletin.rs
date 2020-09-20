@@ -4,15 +4,16 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use crate::bulletin::Issue;
 use crate::bulletin::{entry, issue, serialize, storage, Status};
 use crate::{Achievement, Error};
 use clap::Clap;
 use dialoguer::{theme::ColorfulTheme, Editor, Select};
 use rusqlite::Transaction;
 use std::fs::File;
-use std::io::prelude::*;
 use std::path::{Path, PathBuf};
+
+static CACHE_PATH: &str = "./cache.db";
+static CANONICAL_STORAGE_PATH: &str = "./bulletins/";
 
 #[derive(Debug, Clap)]
 enum Subcommand {
@@ -47,7 +48,7 @@ impl Cmd {
 #[derive(Debug, Clap)]
 pub struct Add {
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
 }
 
@@ -127,7 +128,7 @@ fn add_new_entry(tx: &Transaction, entry: entry::Record) -> Result<Achievement, 
 #[derive(Debug, Clap)]
 pub struct Edit {
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
 }
 
@@ -158,7 +159,7 @@ impl Edit {
 #[derive(Debug, Clap)]
 pub struct Remove {
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
 }
 
@@ -210,15 +211,12 @@ fn select_entry(tx: &Transaction) -> Result<entry::Record, Error> {
 #[derive(Debug, Clap)]
 pub struct Load {
     /// Path to write the resulting bulletin data.
-    #[clap(long, short = "i", value_name = "path", default_value = "./bulletins/")]
+    #[clap(long, short = "i", value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     input_path: PathBuf,
 
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
-
-    #[clap(long, short = "f", default_value = "toml", possible_values = &["csv", "toml"])]
-    format: String,
 }
 
 impl Load {
@@ -227,57 +225,18 @@ impl Load {
         storage::bootstrap(&conn)?;
         let tx = conn.transaction()?;
 
-        match self.format.as_ref() {
-            // TODO: Probably a good idea to check the CSV schema here.
-            "csv" => {
-                let issues_path = &self.input_path.join("issues.csv");
-                let entries_path = &self.input_path.join("entries.csv");
+        // TODO: Probably a good idea to check the CSV schema here.
+        let issues_path = &self.input_path.join("issues.csv");
+        let entries_path = &self.input_path.join("entries.csv");
 
-                process_csv_issues(&issues_path, &tx)?;
-                process_csv_entries(&entries_path, &tx)?;
-            }
-            "toml" => {
-                let paths = collect_toml_paths(&self.input_path)?;
-
-                for path in paths {
-                    process_toml(&path, &tx)?;
-                }
-            }
-            _ => unreachable!(),
-        }
+        process_csv_issues(&issues_path, &tx)?;
+        process_csv_entries(&entries_path, &tx)?;
 
         tx.commit()?;
         storage::disconnect(&conn)?;
 
         Ok(Achievement::Done)
     }
-}
-
-fn collect_toml_paths(base_path: &Path) -> Result<Vec<PathBuf>, Error> {
-    let mut paths: Vec<PathBuf> = Vec::new();
-    for result in base_path.read_dir()? {
-        let entry = result?;
-        let path = entry.path();
-
-        if let Some(ext) = path.extension() {
-            if ext == "toml" {
-                paths.push(path);
-            }
-        }
-    }
-
-    Ok(paths)
-}
-
-fn process_toml(path: &Path, tx: &Transaction) -> Result<(), Error> {
-    let mut file = File::open(path)?;
-    let mut contents = String::new();
-    file.read_to_string(&mut contents)?;
-
-    let issue: Issue = toml::from_str(&contents)?;
-    storage::store_issue(tx, &issue)?;
-
-    Ok(())
 }
 
 fn process_csv_issues(path: &Path, tx: &Transaction) -> Result<(), Error> {
@@ -305,12 +264,10 @@ fn process_csv_entries(path: &Path, tx: &Transaction) -> Result<(), Error> {
 #[derive(Debug, Clap)]
 pub struct Extrude {
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
-    #[clap(long, short = "f", default_value = "csv", possible_values = &["csv", "toml"])]
-    format: String,
     /// Path to write the resulting bulletin data.
-    #[clap(long, short = "o", value_name = "path", default_value = "./bulletins/")]
+    #[clap(long, short = "o", value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     output_path: PathBuf,
 }
 
@@ -322,15 +279,9 @@ impl Extrude {
         let entries_path = self.output_path.join("entries.csv");
         let mentions_path = self.output_path.join("mentions.csv");
 
-        match self.format.as_ref() {
-            "csv" => {
-                serialize::issues_to_csv(&tx, File::create(issues_path)?)?;
-                serialize::entries_to_csv(&tx, File::create(entries_path)?)?;
-                serialize::mentions_to_csv(&tx, File::create(mentions_path)?)?;
-            }
-            "toml" => serialize::to_toml(&tx, &self.output_path)?,
-            _ => unreachable!(),
-        }
+        serialize::issues_to_csv(&tx, File::create(issues_path)?)?;
+        serialize::entries_to_csv(&tx, File::create(entries_path)?)?;
+        serialize::mentions_to_csv(&tx, File::create(mentions_path)?)?;
 
         tx.commit()?;
 
@@ -342,7 +293,7 @@ impl Extrude {
 #[derive(Debug, Clap)]
 pub struct Publish {
     /// Cache path
-    #[clap(long, value_name = "path", default_value = "./bulletin.db")]
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
 }
 

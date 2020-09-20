@@ -4,7 +4,7 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use super::{entry, issue, Entry, Issue, Status};
+use super::{entry, issue, Status};
 use crate::Error;
 use rusqlite::{Connection, Transaction, NO_PARAMS};
 use std::include_str;
@@ -36,27 +36,6 @@ pub fn bootstrap(conn: &Connection) -> Result<(), Error> {
     Ok(())
 }
 
-/// Stores an issue to the storage.
-///
-/// If the information is already there, it ignores it. For example, if the given issue has 6
-/// entries but the storage already has 5 of them it will store the new entry and not fail.
-///
-/// If everything is already in the store, it is effectively a noop.
-pub fn store_issue(tx: &Transaction, issue: &Issue) -> Result<(), Error> {
-    insert_issue(tx, &issue)?;
-
-    for entry in issue.entries() {
-        insert_entry(tx, issue.id(), &entry)?;
-
-        let mentions = extract_links(&entry.comment());
-        for mention in mentions {
-            insert_mention(tx, &[&mention, &entry.url()])?;
-        }
-    }
-
-    Ok(())
-}
-
 pub fn store_issue_record(tx: &Transaction, issue: &issue::Record) -> Result<(), Error> {
     let mut stmt = tx.prepare(
         r#"
@@ -68,21 +47,6 @@ pub fn store_issue_record(tx: &Transaction, issue: &issue::Record) -> Result<(),
     let values: [&dyn rusqlite::ToSql; 5] = [
         &issue.id,
         &issue.publication_date,
-        &issue.description,
-        &issue.title,
-        &issue.status,
-    ];
-
-    stmt.execute(&values)?;
-
-    Ok(())
-}
-
-fn insert_issue(tx: &Transaction, issue: &Issue) -> Result<(), Error> {
-    let mut stmt = tx.prepare("INSERT OR IGNORE INTO bulletin_issue VALUES (?, ?, ?, ?, ?)")?;
-    let values: [&dyn rusqlite::ToSql; 5] = [
-        &issue.id,
-        &issue.date,
         &issue.description,
         &issue.title,
         &issue.status,
@@ -354,21 +318,6 @@ pub fn delete_entry(tx: &Transaction, entry_url: &str) -> Result<(), Error> {
     )?;
 
     stmt.execute(&[entry_url])?;
-
-    Ok(())
-}
-
-fn insert_entry(tx: &Transaction, issue_id: &str, entry: &Entry) -> Result<(), Error> {
-    let mut stmt = tx.prepare("INSERT OR IGNORE INTO bulletin_entry VALUES (?, ?, ?, ?, ?)")?;
-    let values: [&dyn rusqlite::ToSql; 5] = [
-        &entry.url,
-        &entry.title,
-        &entry.comment,
-        &entry.content_type,
-        &issue_id,
-    ];
-
-    stmt.execute(&values)?;
 
     Ok(())
 }

@@ -13,6 +13,4 @@ pub(crate) mod status;
 pub(crate) mod storage;
 
 pub use content_type::ContentType;
-pub use entry::Entry;
-pub use issue::Issue;
 pub use status::Status;

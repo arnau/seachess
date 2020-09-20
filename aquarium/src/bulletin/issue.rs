@@ -4,7 +4,7 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use super::{Entry, Status};
+use super::Status;
 use crate::Error;
 use chrono::prelude::*;
 use rusqlite::types::{FromSql, FromSqlError, FromSqlResult, ToSql, ToSqlOutput, ValueRef};
@@ -100,31 +100,6 @@ impl ToSql for Id {
     }
 }
 
-#[derive(Clone, Debug, Deserialize, Serialize)]
-pub struct Issue {
-    pub(crate) id: String,
-    #[serde(deserialize_with = "parse_date_string", serialize_with = "ser_date")]
-    pub(crate) date: String,
-    pub(crate) title: String,
-    #[serde(rename(serialize = "introduction", deserialize = "introduction"))]
-    pub(crate) description: String,
-    pub(crate) status: Status,
-    #[serde(rename = "type")]
-    pub(crate) _type: String,
-    #[serde(rename = "links")]
-    pub(crate) entries: Vec<Entry>,
-}
-
-impl Issue {
-    pub fn id(&self) -> &str {
-        &self.id
-    }
-
-    pub fn entries(&self) -> &Vec<Entry> {
-        &self.entries
-    }
-}
-
 /// Represents an issue record in the storage.
 #[derive(Clone, Debug, Deserialize, Serialize)]
 pub struct Record {
@@ -162,23 +137,6 @@ where
     let date = NaiveDate::parse_from_str(&value.to_string(), "%Y-%m-%d").unwrap();
 
     Ok(date)
-}
-
-fn parse_date_string<'de, D>(deserializer: D) -> Result<String, D::Error>
-where
-    D: serde::Deserializer<'de>,
-{
-    let value = toml::Value::deserialize(deserializer)?;
-
-    Ok(value.to_string())
-}
-
-fn ser_date<S>(value: &str, serializer: S) -> Result<S::Ok, S::Error>
-where
-    S: serde::Serializer,
-{
-    let date = toml::value::Datetime::from_str(value).unwrap();
-    date.serialize(serializer)
 }
 
 #[cfg(test)]
