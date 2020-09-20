@@ -69,6 +69,10 @@ issue_id = ""
         if let Some(value) = Editor::new().extension(".toml").edit(template)? {
             let entry: entry::Record = toml::from_str(&value)?;
 
+            if storage::count_issue_entries(&tx, &entry.issue_id)? == 6 {
+                return Err(Error::LockedIssue(entry.issue_id.to_string()));
+            }
+
             add_new_entry(&tx, entry)?;
         } else {
             return Ok(Achievement::Cancelled);
@@ -80,22 +84,37 @@ issue_id = ""
     }
 }
 
-fn add_new_entry(tx: &Transaction, entry: entry::Record) -> Result<Achievement, Error> {
+/// Checks the integrity of the entry record.
+fn check_entry(tx: &Transaction, entry: &entry::Record) -> Result<(), Error> {
     if entry.url.is_empty() {
-        return Err(Error::BadUrl(entry.url));
+        return Err(Error::BadUrl(entry.url.clone()));
     }
 
     if storage::entry_exists(&tx, &entry.url)? {
-        return Err(Error::UrlExists(entry.url));
+        return Err(Error::UrlExists(entry.url.clone()));
     };
 
+    Ok(())
+}
+
+/// Gets an existing issue or builds a new one from the given entry.
+fn issue_from_entry(tx: &Transaction, entry: &entry::Record) -> Result<issue::Record, Error> {
     if !storage::issue_exists(&tx, &entry.issue_id)? {
         storage::store_issue_record(&tx, &issue::Record::new(entry.issue_id.clone()))?;
     }
 
-    let issue = storage::get_issue(&tx, &entry.issue_id)?;
+    Ok(storage::get_issue(&tx, &entry.issue_id)?)
+}
 
-    if issue.status != Status::Draft {
+/// Adds the given entry to the storage.
+///
+/// It fails when the issue is published.
+fn add_new_entry(tx: &Transaction, entry: entry::Record) -> Result<Achievement, Error> {
+    check_entry(tx, &entry)?;
+
+    let issue = issue_from_entry(tx, &entry)?;
+
+    if issue.status == Status::Published {
         return Err(Error::LockedIssue(entry.issue_id.to_string()));
     }
 
