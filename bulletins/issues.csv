@@ -2,68 +2,37 @@ id,publication_date,title,description,status
 2020-W02,2020-01-12,Issue 2020-W02,"This is the first issue of the Seachess bulletin, where I share the things
 that caught my attention this week.
 ",published
-2020-W03,2020-01-19,Issue 2020-W03,"These are the things that caught my attention this week.
-",published
-2020-W04,2020-01-25,Issue 2020-W04,"These are the things that caught my attention this week.
-",published
-2020-W05,2020-02-02,Issue 2020-W05,"These are the things that caught my attention this week.
-",published
-2020-W06,2020-02-09,Issue 2020-W06,"These are the things that caught my attention this week.
-",published
-2020-W07,2020-02-16,Issue 2020-W07,"These are the things that caught my attention this week.
-",published
-2020-W08,2020-02-23,Issue 2020-W08,"These are the things that caught my attention this week.
-",published
-2020-W09,2020-03-01,Issue 2020-W09,"These are the things that caught my attention this week.
-",published
-2020-W10,2020-03-08,Issue 2020-W10,"These are the things that caught my attention this week.
-",published
-2020-W11,2020-03-15,Issue 2020-W11,"These are the things that caught my attention this week.
-",published
-2020-W12,2020-03-22,Issue 2020-W12,"These are the things that caught my attention this week.
-",published
-2020-W13,2020-03-29,Issue 2020-W13,"These are the things that caught my attention this week.
-",published
-2020-W14,2020-04-05,Issue 2020-W14,"These are the things that caught my attention this week.
-",published
-2020-W15,2020-04-12,Issue 2020-W15,"These are the things that caught my attention this week.
-",published
-2020-W16,2020-04-19,Issue 2020-W16,"These are the things that caught my attention this week.
-",published
-2020-W17,2020-04-26,Issue 2020-W17,"These are the things that caught my attention this week.
-",published
-2020-W18,2020-05-03,Issue 2020-W18,"These are the things that caught my attention this week.
-",published
-2020-W19,2020-05-10,Issue 2020-W19,"These are the things that caught my attention this week.
-",published
-2020-W20,2020-05-17,Issue 2020-W20,"These are the things that caught my attention this week.
-",published
-2020-W21,2020-05-24,Issue 2020-W21,"These are the things that caught my attention this week.
-",published
-2020-W22,2020-05-31,Issue 2020-W22,"These are the things that caught my attention this week.
-",published
-2020-W23,2020-06-07,Issue 2020-W23,"These are the things that caught my attention this week.
-",published
-2020-W24,2020-06-14,Issue 2020-W24,"These are the things that caught my attention this week.
-",published
-2020-W25,2020-06-21,Issue 2020-W25,"These are the things that caught my attention this week.
-",published
-2020-W26,2020-06-28,Issue 2020-W26,"These are the things that caught my attention this week.
-",published
-2020-W27,2020-07-05,Issue 2020-W27,"These are the things that caught my attention this week.
-",published
-2020-W28,2020-07-12,Issue 2020-W28,"These are the things that caught my attention this week.
-",published
-2020-W29,2020-07-19,Issue 2020-W29,"These are the things that caught my attention this week.
-",published
-2020-W30,2020-07-26,Issue 2020-W30,"These are the things that caught my attention this week.
-",published
-2020-W31,2020-08-02,Issue 2020-W31,"These are the things that caught my attention this week.
-",published
-2020-W32,2020-08-09,Issue 2020-W32,"These are the things that caught my attention this week.
-",published
-2020-W33,2020-08-16,Issue 2020-W33,"These are the things that caught my attention this week.
-",published
+2020-W03,2020-01-19,Issue 2020-W03,"This week has been about Git, Compiler explorer, Sqlite across Docker, a markdown editor and a tool to build themes for your editor.",published
+2020-W04,2020-01-25,Issue 2020-W04,"This week has been trade-offs, a fancy dictionary, a typography, and some Rust.",published
+2020-W05,2020-02-02,Issue 2020-W05,"This week has been about Rust, a knowledge database, OLAP cubes, security issues with CSS and techniques for fuzzy matching.",published
+2020-W06,2020-02-09,Issue 2020-W06,"This week has been about Rust, a game like tetris, statistics of your codebase and WebAssembly.",published
+2020-W07,2020-02-16,Issue 2020-W07,"This week has been about software evolution, nix, Docker and some recommendations for keeping a changelog.",published
+2020-W08,2020-02-23,Issue 2020-W08,"This week has been about floating point numbers, testing in production, privacy, security and personal workflows.",published
+2020-W09,2020-03-01,Issue 2020-W09,"This week has been about yaml issues, a runtime in Rust, plugin-based systems, prolog, WebAssemby and web components.",published
+2020-W10,2020-03-08,Issue 2020-W10,"This week has been about Rust, the sad story of time, Git flows, the Brave scam, computational notebooks and how to organise your system.",published
+2020-W11,2020-03-15,Issue 2020-W11,"This week has been about the history of the URL, SQL, hiring practices, managing Python dependencies and Nix.",published
+2020-W12,2020-03-22,Issue 2020-W12,"This week has been about graphical command line interfaces, agile practices, a tool to manage colours, Github practices and remote work.",published
+2020-W13,2020-03-29,Issue 2020-W13,"This week has been about Rust, manipulating JSON, Security issues with Zoom, Pandas and SQLite and databases worth looking into.",published
+2020-W14,2020-04-05,Issue 2020-W14,"This week has been about cross platform GUIs, Git flows, software architecture, postgresql and search engines.",published
+2020-W15,2020-04-12,Issue 2020-W15,"This week has been about PostGIS, Rust error handling, Git flows, Elm issues, Google Analytics and illustrations.",published
+2020-W16,2020-04-19,Issue 2020-W16,"This week has been about endianness, Git, agile practices, observability and illustrations.",published
+2020-W17,2020-04-26,Issue 2020-W17,"This week has been about architecture strategy, mindmap tools, Rust and WebAssembly.",published
+2020-W18,2020-05-03,Issue 2020-W18,"This week has been about degeneracy, a syntax highlighter for diffs, Rust and AWS Lambdas, driving change and a catalogue of public APIs.",published
+2020-W19,2020-05-10,Issue 2020-W19,"This week has been about product iterations, a programming language, convolutional neural networks, time sadness and a particular font.",published
+2020-W20,2020-05-17,Issue 2020-W20,"This week has been about time-series compression algorithms, Git over gRPC, Python and Rust and securing Firefox.",published
+2020-W21,2020-05-24,Issue 2020-W21,"This week has been about database schemas, WebAssembly, error handling in Rust, database versioning and floating point errors.",published
+2020-W22,2020-05-31,Issue 2020-W22,"This week has been about user experience in the terminal, JSON management, an alternative to Electron and reified UIs.",published
+2020-W23,2020-06-07,Issue 2020-W23,"This week has been about perceptual hash algorithms, a mathematical notation, Zsh, maze algorithms and the SQLite anniversary.",published
+2020-W24,2020-06-14,Issue 2020-W24,"This week has been about Jupyter for SQLite, tacit knowledge, Git, UTF-8 and flat UIs.",published
+2020-W25,2020-06-21,Issue 2020-W25,"This week has been about AI, BPMN, a sed alternative, bullshit as a social practice and smart pointers in Rust.",published
+2020-W26,2020-06-28,Issue 2020-W26,"This week has been about Rust and CSV, JWT mistakes, Graph and tree traversals, Nix and Python, a language made for WebAssembly and parallelism in SQLite.",published
+2020-W27,2020-07-05,Issue 2020-W27,"This week has been about JIT compilers, domain models, a pixel editor, pagination in SQL and ARM vs x86.",published
+2020-W28,2020-07-12,Issue 2020-W28,"This week has been about CSS layouts, user tracking, linear thinking and a programming language for educational purposes.",published
+2020-W29,2020-07-19,Issue 2020-W29,"This week has been about predictive database queries, sqlite for Git, eventual consistency, datalog and property testing.",published
+2020-W30,2020-07-26,Issue 2020-W30,"This week has been about statistics in China, proquints, property-based testing, speeding multiplications and syntax highlighting for your editor.",published
+2020-W31,2020-08-02,Issue 2020-W31,"This week has been about JQ, alacritty, interactive system diagrams and query systems in Rust.",published
+2020-W32,2020-08-09,Issue 2020-W32,"This week has been about nix, data validation, CRDTs, the pre-mortem technique, NLP beyond English and responsive compilers.",published
+2020-W33,2020-08-16,Issue 2020-W33,"This week has been about a Git reimplementation, Git for data, the struggles of Mozilla, a dictionary, geospatial information in SQLite and futures with slime.",published
 2020-W34,2020-08-23,Issue 2020-W34,"This week I got back into the Nu shell, kept digging into CRDTs, got closure
 with Mozilla's XUL story and considered the perils of AR for our personal
 privacy.
