@@ -23,6 +23,7 @@ enum Subcommand {
     Load(Load),
     Remove(Remove),
     Publish(Publish),
+    Show(Show),
 }
 
 /// Manages bulletins
@@ -41,6 +42,7 @@ impl Cmd {
             Subcommand::Load(cmd) => cmd.run(),
             Subcommand::Remove(cmd) => cmd.run(),
             Subcommand::Publish(cmd) => cmd.run(),
+            Subcommand::Show(cmd) => cmd.run(),
         }
     }
 }
@@ -321,6 +323,42 @@ impl Publish {
         }
 
         tx.commit()?;
+
+        Ok(Achievement::Done)
+    }
+}
+
+/// Shows the given issue.
+#[derive(Debug, Clap)]
+pub struct Show {
+    /// Cache path
+    #[clap(long, value_name = "path", default_value = CACHE_PATH)]
+    cache_path: PathBuf,
+    #[clap(value_name = "id")]
+    issue_id: issue::Id,
+}
+
+impl Show {
+    pub fn run(&self) -> Result<Achievement, Error> {
+        let mut conn = storage::connect(&self.cache_path)?;
+        let tx = conn.transaction()?;
+
+        let issue = storage::get_issue(&tx, &self.issue_id)
+            .map_err(|_| Error::Unknown("No issue found for the given id.".into()))?;
+        let entries = storage::get_issue_entries(&tx, &issue.id)?;
+
+        let mut value = issue.description.clone();
+
+        for entry in entries {
+            value.push_str(&format!(
+                "\n\n# {}\n\nURL: {}\n\n{}\n",
+                entry.title, entry.url, entry.comment
+            ));
+        }
+
+        tx.commit()?;
+
+        println!("{}", value);
 
         Ok(Achievement::Done)
     }
