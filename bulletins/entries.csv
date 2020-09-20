@@ -682,3 +682,10 @@ actors and capability providers.",text,2020-W37
 https://ahelwer.ca/post/2020-04-15-probabilistic-distsys/,How do you reason about a probabilistic distributed system?,"An article about the implications of designing distributed systems for probabilistic consensus protocols.
 
 Even if distributed systems is not your thing, [PRISM](https://www.prismmodelchecker.org) the probabilistic model checker is worth a look.",text,2020-W37
+https://sequoia-pgp.org/,Sequoia PGP,A command line interface and library implementing OpenPGP in Rust.,text,2020-W38
+https://kroki.io/,Kroki,"A service that unifies a large set of engines for textual diagrams under the
+same API.",text,2020-W38
+https://foundation.mozilla.org/en/initiatives/data-futures/,Data Futures,A study on data governance aiming to identify alternatives to the current monopolies.,text,2020-W38
+https://distill.pub/2020/communicating-with-interactive-articles/,Communicating with Interactive Articles,An interactive article about communicating with interactive articles.,text,2020-W38
+https://m.signalvnoise.com/options-not-roadmaps/,"Options, Not Roadmaps",An article explaining an alternative to roadmaps.,text,2020-W38
+https://www.alexmurrell.co.uk/articles/the-forecasting-fallacy,The forecasting fallacy,An article showcasing the aberrant accuracy of professional predictors.,text,2020-W38
