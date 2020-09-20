@@ -10,7 +10,7 @@ name = "aq"
 
 [dependencies]
 chrono = { version = "0.4", features = ["serde"] }
-clap = "=3.0.0-beta.1"
+clap = "=3.0.0-beta.2"
 csv = "1.1"
 dialoguer = "0.6.2"
 indicatif = "0.15.0"

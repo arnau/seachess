@@ -14,7 +14,7 @@ pub struct Cmd {
     /// Path to write the output SVG.
     #[clap(
         long,
-        short = "o",
+        short = 'o',
         value_name = "path",
         default_value = "./src/assets/logo.svg"
     )]

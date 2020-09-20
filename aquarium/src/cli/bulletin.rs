@@ -211,7 +211,7 @@ fn select_entry(tx: &Transaction) -> Result<entry::Record, Error> {
 #[derive(Debug, Clap)]
 pub struct Load {
     /// Path to write the resulting bulletin data.
-    #[clap(long, short = "i", value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
+    #[clap(long, short = 'i', value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     input_path: PathBuf,
 
     /// Cache path
@@ -267,7 +267,7 @@ pub struct Extrude {
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
     /// Path to write the resulting bulletin data.
-    #[clap(long, short = "o", value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
+    #[clap(long, short = 'o', value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     output_path: PathBuf,
 }
 
