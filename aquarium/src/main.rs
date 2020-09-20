@@ -11,6 +11,7 @@ use aquarium::cli;
 #[derive(Debug, Clap)]
 enum Subcommand {
     Logo(cli::logo::Cmd),
+    #[clap(alias = "b")]
     Bulletin(cli::bulletin::Cmd),
 }
 
