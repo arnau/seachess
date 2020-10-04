@@ -698,3 +698,11 @@ https://tratt.net/laurie/blog/entries/which_parsing_approach.html,Which Parsing 
 If you enjoyed it, “[Challenging LR Parsing](https://rust-analyzer.github.io//blog/2020/09/16/challeging-LR-parsing.html)”
 is a great response in the context of parsers that need tolerance to errors such as syntax highlighters and IDEs.",text,2020-W39
 https://wiredforge.com/blog/sqlite-parser-pt-1/index.html,SQLite File Parser Pt. 1: The Header,A tutorial walking through a Rust implementation of a SQLite file format parser.,text,2020-W39
+https://vimacapp.com/,Vimium for MacOS,An application to move around MacOS with the keyboard a-la Vim.,text,2020-W40
+https://research.swtch.com/qart,QArt Codes,An article on how QR codes work and how to exploit its tolerance to errors to embed images in them.,text,2020-W40
+https://docs.greatexpectations.io/,Great Expectations,A tool to harness testing for data pipelines.,text,2020-W40
+https://go-compression.github.io/,The Hitchhiker’s Guide to Compression,"A guide on compression algorithms. The interactive section, once complete, will be an excellent place to get an intuition on how each algorithm work.",text,2020-W40
+https://jupytext.readthedocs.io/,Jupytext,"A tool to save [Jupyter notebooks](https://jupyter.org/) as extended Markdown or marked Python, R, Julia scripts.
+
+[Deepnote](https://deepnote.com/) might interest you if you are after a collaborative notebook experience.",text,2020-W40
+https://www.dbcrossbar.org/,dbcrossbar,"A tool to copy tabular data between databases, CSV files and cloud storage.",text,2020-W40
