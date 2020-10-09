@@ -11,6 +11,7 @@ import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import dayjs from 'dayjs'
 
+import Md from'../components/md'
 import Link from '../components/link'
 import Heading from '../components/heading'
 import Page from '../components/page'
@@ -68,7 +69,7 @@ function Bulletins({location, data}) {
                   </Link>
                 </TableCell>
                 <TableCell className={classes.date}><PublicationDate date={node.publication_date}/></TableCell>
-                <TableCell>{node.description}</TableCell>
+                <TableCell><Md raw={node.description} /></TableCell>
               </TableRow>
             ))}
           </TableBody>

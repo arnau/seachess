@@ -4,13 +4,10 @@ import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 
-import markdown from 'remark-parse'
-import rehype2react from 'rehype-react'
-import remark2rehype from 'remark-rehype'
 import sanitizeHtml from 'sanitize-html'
-import unified from 'unified'
 import GithubSlugger from 'github-slugger'
 
+import Md from'../components/md'
 import Layout from '../components/layout'
 import Meta from '../components/meta'
 import MetaNote from '../components/metanote'
@@ -50,11 +47,6 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const processor = unified()
-  .use(markdown)
-  .use(remark2rehype)
-  .use(rehype2react, { createElement: React.createElement })
-
 
 function Bulletin({location, data}) {
   const classes = useStyles()
@@ -79,14 +71,13 @@ function Bulletin({location, data}) {
           <Subscription />
 
           <Typography component="p" className={classes.excerpt}>
-            {description}
+            <Md raw={description} />
           </Typography>
           <hr />
 
           <div property="articleBody">
             {
               links.map(({ node }) => {
-                const comment = processor.processSync(node.comment)
                 const doctype = node.content_type == 'text'
                   ? ''
                   : <span className={classes.doctype}>{node.content_type}</span>
@@ -98,7 +89,7 @@ function Bulletin({location, data}) {
                       {doctype}
                     </Typography>
                     <Typography component="div">
-                      {comment.contents}
+                      <Md raw={node.comment} />
                     </Typography>
                     <hr />
                   </div>
