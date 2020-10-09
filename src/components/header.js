@@ -33,15 +33,13 @@ const useStyles = makeStyles(theme => ({
 
 function Brand({ classes, title }) {
   return (
-    <React.Fragment>
-      <Typography variant="h6" component="span" color="inherit"
-        className={classes.group}>
-        <Link to="/" className={classes.link}>
-          <SeaEye />
-          <span className="brand-text">{title}</span>
-        </Link>
-      </Typography>
-    </React.Fragment>
+    <Typography variant="h6" component="span" color="inherit"
+      className={classes.group}>
+      <Link to="/" className={classes.link}>
+        <SeaEye />
+        <span className="brand-text">{title}</span>
+      </Link>
+    </Typography>
   )
 }
 
@@ -54,7 +52,7 @@ function Header({ location, siteTitle }) {
   const classes = useStyles()
 
   return (
-    <AppBar position="fixed" color="default" elevation={0} className={classes.root}>
+    <AppBar position="static" color="default" elevation={0} className={classes.root}>
       <Container maxWidth="md">
         <Toolbar variant="dense" disableGutters={true}>
           <Brand classes={classes} title={siteTitle} />

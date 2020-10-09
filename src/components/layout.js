@@ -16,8 +16,6 @@ import theme from '../theme'
 
 const useStyles = makeStyles(theme => ({
   wrapper: {
-    marginTop: theme.spacing(6),
-    // backgroundColor: theme.palette.background.main,
     backgroundColor: '#FAFAFA',
   },
   links: {
