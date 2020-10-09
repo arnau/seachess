@@ -4,7 +4,7 @@ author: arnau
 id: dive-into-csvw
 title: Dive into CSV on the Web
 type: note
-status: draft
+status: published
 tags:
   - csv
   - rdf
