@@ -706,3 +706,13 @@ https://jupytext.readthedocs.io/,Jupytext,"A tool to save [Jupyter notebooks](ht
 
 [Deepnote](https://deepnote.com/) might interest you if you are after a collaborative notebook experience.",text,2020-W40
 https://www.dbcrossbar.org/,dbcrossbar,"A tool to copy tabular data between databases, CSV files and cloud storage.",text,2020-W40
+https://blog.logrocket.com/supercharge-your-electron-apps-with-rust/,Supercharge your Electron apps with Rust,A tutorial on using Rust to build a library callable from Electron.,text,2020-W41
+https://www.youtube.com/watch?v=x7drE24geUw,CRDTs: The Hard Parts,A talk on CRDTs and the challenges currently unsolved to make them usable outside research.,video,2020-W41
+https://www.nngroup.com/articles/pdf-unfit-for-human-consumption/,"PDF: Still Unfit for Human Consumption, 20 Years Later","An article with the results of the research on the usability of PDF files for online reading.
+
+Unsurprisingly, the gist of it is:
+
+> Do not use PDFs to present digital content that could and should otherwise be a web page.",text,2020-W41
+https://rdambrosio016.github.io/rust/2020/09/18/pure-ast-based-linting-sucks.html,Pure AST based linting sucks,An article on the issues of implementing a linter using abstract syntax trees (ASTs).,text,2020-W41
+http://www.saraadkins.com/portfolio.html#letsgo,Lets Go,An algorithmic step sequencer and melody generator based on a live game of Go.,text,2020-W41
+https://airbnb.io/visx/,visx,A collection of visualization primitives for React.,text,2020-W41
