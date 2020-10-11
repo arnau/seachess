@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent'
 import Paper from '@material-ui/core/Paper'
 import Typography from '@material-ui/core/Typography'
 
+import Md from'../components/md'
 import ExcerptNote from '../components/excerptnote'
 import Heading from '../components/heading'
 import Page from '../components/page'
@@ -62,7 +63,7 @@ function Index({location, data}) {
             href={node.slug}
             date={node.publication_date}
             author={settings.author.name}>
-            <p dangerouslySetInnerHTML={{ __html: node.description }} />
+            <p><Md raw={node.description} /></p>
           </ExcerptNote>
         )
       }
