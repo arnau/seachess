@@ -716,3 +716,14 @@ Unsurprisingly, the gist of it is:
 https://rdambrosio016.github.io/rust/2020/09/18/pure-ast-based-linting-sucks.html,Pure AST based linting sucks,An article on the issues of implementing a linter using abstract syntax trees (ASTs).,text,2020-W41
 http://www.saraadkins.com/portfolio.html#letsgo,Lets Go,An algorithmic step sequencer and melody generator based on a live game of Go.,text,2020-W41
 https://airbnb.io/visx/,visx,A collection of visualization primitives for React.,text,2020-W41
+https://wireflow.co/,Wireflow,A tool to create flow diagrams to represent websites and applications.,text,2020-W42
+http://worrydream.com/#!/LearnableProgramming,Learnable Programming,An essay on how to approach teaching how to program through criticising an online service as it was back in 2012.,text,2020-W42
+https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989,Data Organization in Spreadsheets,"An article with the view that spreadsheets should be only considered for data entry and storage and avoided other matters such as analysis. It offers as well uncontroversial advice on how to organise and tidy your tabular data.
+
+You might also be interested in the [horror stories](http://www.eusprig.org/horror-stories.htm) from the European Spreadsheet Risk Interest Group.",text,2020-W42
+https://www.osohq.com/post/polar-adventure,Polar Adventure: A text-based adventure game written in Polar,"An article on using Polar, an embedded logic programming language, for making
+a game. [Polar](https://github.com/osohq/oso) looks like a very interesting
+project to extend your program with logic rules to encode complex policy rules
+in a terse way.",text,2020-W42
+https://programminghistorian.org/,The Programming Historian,"A collection of tutorials to help learn digital tools, techniques and workflows to facilitate research and teaching.",text,2020-W42
+https://www.tweag.io/blog/2020-08-12-poetry2nix/,Developing Python with Poetry & Poetry2nix: Reproducible flexible Python environments,An article on how to set up a reliable Python environment with Poetry and Nix.,text,2020-W42
