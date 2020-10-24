@@ -727,3 +727,13 @@ project to extend your program with logic rules to encode complex policy rules
 in a terse way.",text,2020-W42
 https://programminghistorian.org/,The Programming Historian,"A collection of tutorials to help learn digital tools, techniques and workflows to facilitate research and teaching.",text,2020-W42
 https://www.tweag.io/blog/2020-08-12-poetry2nix/,Developing Python with Poetry & Poetry2nix: Reproducible flexible Python environments,An article on how to set up a reliable Python environment with Poetry and Nix.,text,2020-W42
+https://www.visidata.org/,VisiData,A tool to work with tabular data in the terminal.,text,2020-W43
+https://restoreprivacy.com/firefox-privacy/,Firefox Privacy – The Complete How-To Guide,A list of recommendations to tweak your Firefox configuration to improve on privacy.,text,2020-W43
+https://www.youtube.com/watch?v=2BHV1p2QzNw,LDflex: a Read/Write Linked Data Abstraction for Front-End Web Developers,"A video on why the Semantic Web has failed to attract developers and a proposal to fix that.
+
+Although LDflex looks like an attempt on the right direction in order to popularise the web of data, it still fails to prevent RDF primitives such as URIs and namespaces leaking into higher abstractions.",video,2020-W43
+https://deislabs.io/posts/introducing-wagi-easiest-way-to-build-webassembly-microservices/,Introducing WAGI: The Easiest Way to Build WebAssembly Microservices,"An article on WAGI, an experiment to use WebAssemby on microserivce architectures applying some classic ideas from CGI.",text,2020-W43
+https://sw.kovidgoyal.net/kitty/,Kitty,"A terminal emulator capable of displaying images. This terminal has replaced my previous setup of Alacritty, iTerm and tmux.
+
+The [combination of Kitty with data visualisation tools](https://sw.kovidgoyal.net/kitty/integrations.html#system-and-data-visualisation-tools) is worth playing with.",text,2020-W43
+https://capiche.com/e/markdown-history,The story behind Markdown,A tale on the roots Markdown grew from.,text,2020-W43
