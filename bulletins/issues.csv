@@ -43,3 +43,5 @@ id,publication_date,title,description,status
 I also published [Dive into CSV on the Web](https://www.seachess.net/notes/dive-into-csvw) as part of my research on how to publish CSV with enough contextual information.",published
 2020-W42,2020-10-18,Issue 2020-W42,"This week has been about teaching how to program, tutorials for researchers, flow diagrams, spreadsheet horrorshow and some python with nix.",published
 2020-W43,2020-10-21,Issue 2020-W43,"This week has been about the origins of Markdown, WAGI, Firefox and privacy, Kitty, Visidata and LDflex.",published
+2020-W44,2020-10-26,Issue 2020-W44,"This week has been about Fourier transforms, binary file patterns, TerminusDB,
+and the history of PDF.",published

@@ -737,3 +737,10 @@ https://sw.kovidgoyal.net/kitty/,Kitty,"A terminal emulator capable of displayin
 
 The [combination of Kitty with data visualisation tools](https://sw.kovidgoyal.net/kitty/integrations.html#system-and-data-visualisation-tools) is worth playing with.",text,2020-W43
 https://capiche.com/e/markdown-history,The story behind Markdown,A tale on the roots Markdown grew from.,text,2020-W43
+https://corte.si/posts/visualisation/binvis/index.html,Visualizing binaries with space-filling curves,An article on a technique to visualise binary file patterns.,text,2020-W44
+http://www.jezzamon.com/fourier/index.html,An Interactive Introduction to Fourier Transforms,"A tutorial on Fourier transforms with examples on how are they applied to waves, epicycles and JPEGs.",text,2020-W44
+https://dmytri.dev/terminusdb-todoapp/,TerminusDB TodoMVC,"A tutorial on how to use [TerminusDB](https://terminusdb.com/) using the JavaScript SDK.
+With the trend of knowledge base, RDF triplestores have an opportunity to click with a wider audience.",text,2020-W44
+https://virtualddd.com/learning-ddd/,Virtual DDD,A collection of curated content on Domain Driven Development.,text,2020-W44
+https://www.vice.com/en/article/pam43n/why-the-pdf-is-secretly-the-worlds-most-important-file-format,Why the PDF Is Secretly the World's Most Important File Format,"An article telling the story of PDF, its ambition and how it turned out to be.",text,2020-W44
+https://embracethered.com/blog/posts/2020/husky-ai-image-rescaling-attacks/,Machine Learning Attack Series: Image Scaling Attacks,An article explaining an attack to tamper with a Machine Learning model.,text,2020-W44
