@@ -66,8 +66,8 @@ lets you down. Acknowledging this puts us in a good place to understand what
 CSVW is trying to help with.
 
 There are other attempts to solve the same problem such as the Frictionless
-Data Standard [Tabular Data Package][tabular-data-package] but I'll reserve my
-thoughts on other solutions for another time.
+Data Standard [Tabular Data Package][tabular-data-package]. Check my [Dive
+into Frictionless Data] for my take on it.
 
 
 ## Foundations
@@ -76,7 +76,7 @@ CSVW build on top of a few technical specifications, In this section I'll
 cover the ones I find most relevant for the complexity of CSVW.
 
 **[IETF RFC 4180][rfc4180]** is an attempt to formalise CSV. It aims to
-improve the expectations on tooling operate in this format.
+improve the expectations on tooling using this format.
 
 The RFC defines a couple of topics:
 
@@ -322,7 +322,7 @@ I'll have to dig into these some time soon.
 * [CSV on the Web Working Group Charter][csvw-charter].
 * [CSV on the Web: A Primer][csvw-primer]. February 2016.
 * [CSV on the Web: Use Cases and Requirements][csvw-ucr]. February 2016.
-* [CSVW Implementation Report][implementation-report]. October 2015. 
+* [CSVW Implementation Report][implementation-report]. October 2015.
 * [Generating JSON from Tabular Data on the Web][csv2json]. December 2015.
 * [Generating RDF from Tabular Data on the Web][csv2rdf]. December 2015.
 * [IETF RFC 4180][rfc4180]. Common Format and MIME Type for Comma-Separated Values (CSV) Files. October 2005.
@@ -358,3 +358,4 @@ I'll have to dig into these some time soon.
 [tabular-metadata]: https://www.w3.org/TR/2015/REC-tabular-metadata-20151217/
 [xmlschema]: http://www.w3.org/TR/xmlschema11-2/
 [tabular-data-package]: https://specs.frictionlessdata.io//tabular-data-package/
+[Dive into Frictionless Data]: /notes/dive-into-frictionlessdata
