@@ -744,3 +744,11 @@ With the trend of knowledge base, RDF triplestores have an opportunity to click 
 https://virtualddd.com/learning-ddd/,Virtual DDD,A collection of curated content on Domain Driven Development.,text,2020-W44
 https://www.vice.com/en/article/pam43n/why-the-pdf-is-secretly-the-worlds-most-important-file-format,Why the PDF Is Secretly the World's Most Important File Format,"An article telling the story of PDF, its ambition and how it turned out to be.",text,2020-W44
 https://embracethered.com/blog/posts/2020/husky-ai-image-rescaling-attacks/,Machine Learning Attack Series: Image Scaling Attacks,An article explaining an attack to tamper with a Machine Learning model.,text,2020-W44
+https://davidgerard.co.uk/blockchain/2020/11/05/calibre-epub-and-epubcheck-the-curse-of-editing-xhtml/,"Calibre, ePub and epubcheck: the curse of editing XHTML",An article on the horrors of building an ePub.,text,2020-W45
+https://people.kernel.org/monsieuricon/signed-git-pushes,Signed git pushes,An article introducing [signed git pushes](https://git-scm.com/docs/git-push#Documentation/git-push.txt---signedtruefalseif-asked) to record a transparency log for reliable auditing.,text,2020-W45
+https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/,Technical debt as a lack of understanding,An article arguing that refactoring is an exercise of reviewing your understanding of the codebase.,text,2020-W45
+https://github.com/atanunq/viu,Viu,"A tool to display images in the terminal. It is compatible with the Kitty graphics protocol but fallsback to lower half blocks for other terminals.
+
+I found some discrepancies with the ratios in comparison with Kitty's `icat` but it is substantially faster.",text,2020-W45
+https://yqnn.github.io/svg-path-editor/,SVG Path editor,"A tool to edit SVG paths in the browser. If you ever wanted to learn how paths work, this tool gives you the right environment to do so.",text,2020-W45
+https://productcoalition.com/product-thinking-vs-project-thinking-380692a2d4e,Product Thinking vs. Project Thinking,An article on the differences between project and product management. I would add to this that the funding/budgeting model can transform any well-intended product mananagement in a broken product management.,text,2020-W45
