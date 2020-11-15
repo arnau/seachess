@@ -752,3 +752,9 @@ https://github.com/atanunq/viu,Viu,"A tool to display images in the terminal. It
 I found some discrepancies with the ratios in comparison with Kitty's `icat` but it is substantially faster.",text,2020-W45
 https://yqnn.github.io/svg-path-editor/,SVG Path editor,"A tool to edit SVG paths in the browser. If you ever wanted to learn how paths work, this tool gives you the right environment to do so.",text,2020-W45
 https://productcoalition.com/product-thinking-vs-project-thinking-380692a2d4e,Product Thinking vs. Project Thinking,An article on the differences between project and product management. I would add to this that the funding/budgeting model can transform any well-intended product mananagement in a broken product management.,text,2020-W45
+https://www.gingerbill.org/article/2020/06/21/the-ownership-semantics-flaw/,The Fatal Flaw of Ownership Semantics,An article on the implications of Ownership Semantics' linear nature and the solutions based on indices/handlers.,text,2020-W46
+https://shunsukesaito.github.io/PIFuHD/,PIFuHD: Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization,An implementation in pytorch of a deep neural network model to extrude 3D human shapes from a single image.,text,2020-W46
+https://obsoletemedia.org/,Obsolete Media Museum,A collection of obsolete media formats.,text,2020-W46
+https://github.com/dabreegster/abstreet/,A/B Street,"A traffic simulator exploring how small changes affect the movement of drivers, cyclists and pedestrians.",text,2020-W46
+https://contractfortheweb.org/,Contract for the Web,An initiative by Tim Berners-Lee to try to make the online world safe and empowering for everyone.,text,2020-W46
+https://videoinu.com/blog/firefox-reader-view-heuristics/,How does Firefox's Reader View work?,An article analysing how the Reader View feature in Firefox works.,text,2020-W46
