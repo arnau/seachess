@@ -69,7 +69,7 @@ function Bulletins({location, data}) {
                   </Link>
                 </TableCell>
                 <TableCell className={classes.date}><PublicationDate date={node.publication_date}/></TableCell>
-                <TableCell><Md raw={node.description} /></TableCell>
+                <TableCell><Md raw={node.summary} /></TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -95,7 +95,7 @@ export const query = graphql`
           id
           slug
           publication_date
-          description
+          summary
         }
       }
     }

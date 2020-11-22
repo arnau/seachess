@@ -21,16 +21,14 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Issue implements Node @dontInfer {
       id: ID!
       publication_date : Date @dateformat
-      title: String!
-      status: String!
-      description: String!
+      summary: String!
       slug : String! @slug(base: "/bulletins")
     }
 
     type IssueEntry implements Node @dontInfer {
       url : ID!
       title : String!
-      comment : String!
+      summary: String!
       content_type : String!
       issue_id : String!
     }

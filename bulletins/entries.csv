@@ -1,4 +1,4 @@
-url,title,comment,content_type,issue_id
+url,title,summary,content_type,issue_id
 https://github.com/BLAKE3-team/BLAKE3,BLAKE3,"BLAKE3 is a new hashing algorithm substantially faster than BLAKE2 and SHA3.
 Also very interesting the way they use Merkle trees to allow incremental
 validation. See the [bao](https://github.com/oconnor663/bao) project for an

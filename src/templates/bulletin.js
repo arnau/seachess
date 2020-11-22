@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 function Bulletin({location, data}) {
   const classes = useStyles()
-  const { id, description, publication_date } = data.issue
+  const { id, summary, publication_date } = data.issue
   const title = `Issue ${id}`
   const { author } = data
   const links = data.links.edges
@@ -71,7 +71,7 @@ function Bulletin({location, data}) {
           <Subscription />
 
           <Typography component="p" className={classes.excerpt}>
-            <Md raw={description} />
+            <Md raw={summary} />
           </Typography>
           <hr />
 
@@ -89,7 +89,7 @@ function Bulletin({location, data}) {
                       {doctype}
                     </Typography>
                     <Typography component="div">
-                      <Md raw={node.comment} />
+                      <Md raw={node.summary} />
                     </Typography>
                     <hr />
                   </div>
@@ -122,7 +122,7 @@ export const query = graphql`
     issue(id: { eq: $id }) {
       id
       slug
-      description
+      summary
       publication_date
     }
 
@@ -131,7 +131,7 @@ export const query = graphql`
         node {
           url
           title
-          comment
+          summary
           content_type
           issue_id
         }

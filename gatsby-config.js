@@ -1,11 +1,11 @@
 var remark = require('remark')
 var html = require('remark-html')
 
-function bulletin_to_html({ id, description }, links) {
+function bulletin_to_html({ id, summary }, links) {
   const links_s = links.edges
     .filter(({ node }) => node.issue_id == id)
-    .map(({ node }) => `## [${node.title}](${node.url})\n${node.comment}\n`)
-  const md = `${description}\n${links_s.join('\n')}`
+    .map(({ node }) => `## [${node.title}](${node.url})\n${node.summary}\n`)
+  const md = `${summary}\n${links_s.join('\n')}`
   let result
 
   remark().use(html).process(md, (err, file) => {
@@ -61,7 +61,6 @@ module.exports = {
                   url: settings.url + edge.node.fields.slug,
                   guid: settings.url + edge.node.fields.slug,
                   copyright: settings.copyright,
-                  // custom_elements: [{ 'content:encoded': edge.node.html }],
                 })
               })
             },
@@ -109,7 +108,7 @@ module.exports = {
                       id
                       slug
                       publication_date
-                      description
+                      summary
                     }
                   }
                 }
@@ -118,7 +117,7 @@ module.exports = {
                     node {
                       url
                       title
-                      comment
+                      summary
                       issue_id
                     }
                   }
