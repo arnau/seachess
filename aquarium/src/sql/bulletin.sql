@@ -7,15 +7,13 @@
 CREATE TABLE IF NOT EXISTS bulletin_issue (
   id               text NOT NULL PRIMARY KEY,
   publication_date date NOT NULL,
-  description      text NOT NULL,
-  title            text NOT NULL,
-  status           text NOT NULL
+  summary          text NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS bulletin_entry (
   url          text NOT NULL PRIMARY KEY,
   title        text NOT NULL,
-  comment      text NOT NULL,
+  summary      text NOT NULL,
   content_type text NOT NULL,
   issue_id     text,
 

@@ -4,11 +4,12 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use crate::bulletin::{entry, issue, serialize, storage, Status};
+use crate::bulletin::{entry, issue, serialize, storage};
 use crate::{Achievement, Error};
 use clap::Clap;
 use dialoguer::{theme::ColorfulTheme, Editor, Select};
 use rusqlite::Transaction;
+use skim::prelude::*;
 use std::fs::File;
 use std::path::{Path, PathBuf};
 
@@ -61,20 +62,15 @@ impl Add {
         let template = r#"content_type = "text"
 title = ""
 url = ""
-comment = """
+summary = """
 
 
 
 """
-issue_id = ""
 "#;
 
         if let Some(value) = Editor::new().extension(".toml").edit(template)? {
             let entry: entry::Record = toml::from_str(&value)?;
-
-            if storage::count_issue_entries(&tx, &entry.issue_id)? == 6 {
-                return Err(Error::LockedIssue(entry.issue_id.to_string()));
-            }
 
             add_new_entry(&tx, entry)?;
         } else {
@@ -100,29 +96,11 @@ fn check_entry(tx: &Transaction, entry: &entry::Record) -> Result<(), Error> {
     Ok(())
 }
 
-/// Gets an existing issue or builds a new one from the given entry.
-fn issue_from_entry(tx: &Transaction, entry: &entry::Record) -> Result<issue::Record, Error> {
-    if !storage::issue_exists(&tx, &entry.issue_id)? {
-        storage::store_issue_record(&tx, &issue::Record::new(entry.issue_id.clone()))?;
-    }
-
-    Ok(storage::get_issue(&tx, &entry.issue_id)?)
-}
-
 /// Adds the given entry to the storage.
-///
-/// It fails when the issue is published.
 fn add_new_entry(tx: &Transaction, entry: entry::Record) -> Result<Achievement, Error> {
     check_entry(tx, &entry)?;
 
-    let issue = issue_from_entry(tx, &entry)?;
-
-    if issue.status == Status::Published {
-        return Err(Error::LockedIssue(entry.issue_id.to_string()));
-    }
-
     storage::store_entry_record(&tx, &entry)?;
-    storage::issue_next_state(&tx, &issue.id)?;
 
     Ok(Achievement::Done)
 }
@@ -139,7 +117,8 @@ impl Edit {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let entry = select_entry(&tx)?;
+        let unpublished = storage::get_unpublished(&tx)?;
+        let entry = select_entry(&unpublished)?;
         storage::delete_entry(&tx, &entry.url)?;
 
         let value = toml::to_string(&entry)?;
@@ -169,8 +148,8 @@ impl Remove {
     pub fn run(&self) -> Result<Achievement, Error> {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
-
-        let entry = select_entry(&tx)?;
+        let unpublished = storage::get_unpublished(&tx)?;
+        let entry = select_entry(&unpublished)?;
 
         storage::delete_entry(&tx, &entry.url)?;
 
@@ -180,16 +159,14 @@ impl Remove {
     }
 }
 
-fn select_entry(tx: &Transaction) -> Result<entry::Record, Error> {
-    let list = storage::get_unpublished(&tx)?;
-
+fn select_entry(list: &Vec<entry::Record>) -> Result<entry::Record, Error> {
     let idx = match list.len() {
         0 => return Err(Error::Unknown("No entries to edit.".to_string())),
         1 => 0,
         _ => {
             let list_s: Vec<String> = list
                 .iter()
-                .map(|record| format!("{}: {}", record.issue_id, record.title))
+                .map(|record| format!("{}", record.title))
                 .collect();
 
             if let Some(value) = Select::with_theme(&ColorfulTheme::default())
@@ -208,6 +185,32 @@ fn select_entry(tx: &Transaction) -> Result<entry::Record, Error> {
     let entry = list[idx].clone();
 
     Ok(entry)
+}
+
+fn select_entries(items: entry::Set) -> Result<Vec<entry::Record>, Error> {
+    let options = SkimOptionsBuilder::default()
+        .height(Some("100%"))
+        .multi(true)
+        .preview(Some(""))
+        .preview_window(Some("down:20%"))
+        .prompt(None)
+        .build()
+        .map_err(Error::Unknown)?;
+
+    let full_set = items.to_vec();
+    let selected_items: Vec<String> = Skim::run_with(&options, Some(items.into()))
+        .map(|out| out.selected_items)
+        .unwrap_or_else(|| Vec::new())
+        .iter()
+        .map(|item| item.output().into())
+        .collect();
+
+    let filtered_set = full_set
+        .into_iter()
+        .filter(|item| (&selected_items).contains(&item.url))
+        .collect();
+
+    Ok(filtered_set)
 }
 
 #[derive(Debug, Clap)]
@@ -297,6 +300,9 @@ pub struct Publish {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
+    /// Amount of entries to publish
+    #[clap(long, short = 'n', value_name = "n", default_value = "6")]
+    amount: usize,
 }
 
 impl Publish {
@@ -304,20 +310,32 @@ impl Publish {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let mut issue = storage::get_ready(&tx)
-            .map_err(|_| Error::Unknown("No issues found in a ready state.".into()))?;
-        let mut value = issue.description.clone();
-        let entries = storage::get_issue_entries(&tx, &issue.id)?;
+        let unpublished = storage::get_unpublished(&tx)?;
 
-        for entry in entries {
-            value.push_str(&format!("\n\n  * {}", entry.comment));
+        if unpublished.len() < self.amount {
+            return Err(Error::Unknown("Not enough entries to publish.".into()));
         }
 
-        if let Some(value) = Editor::new().extension(".md").edit(&value)? {
-            issue.description = value;
-            issue.status = Status::Published;
+        let entries = if unpublished.len() == self.amount {
+            unpublished
+        } else {
+            select_entries(entry::Set::new(unpublished))?
+        };
 
-            storage::update_issue(&tx, &issue)?;
+        if entries.len() < self.amount {
+            return Err(Error::Unknown("Not enough entries to publish.".into()));
+        }
+
+        let mut summary = String::new();
+
+        for entry in entries {
+            summary.push_str(&format!("\n\n  * {}", entry.summary));
+        }
+
+        if let Some(value) = Editor::new().extension(".md").edit(&summary)? {
+            let issue = issue::Record::new(issue::Id::default(), &value);
+
+            storage::store_issue_record(&tx, &issue)?;
         } else {
             return Ok(Achievement::Cancelled);
         }
@@ -347,12 +365,12 @@ impl Show {
             .map_err(|_| Error::Unknown("No issue found for the given id.".into()))?;
         let entries = storage::get_issue_entries(&tx, &issue.id)?;
 
-        let mut value = issue.description.clone();
+        let mut value = issue.summary.clone();
 
         for entry in entries {
             value.push_str(&format!(
                 "\n\n# {}\n\nURL: {}\n\n{}\n",
-                entry.title, entry.url, entry.comment
+                entry.title, entry.url, entry.summary
             ));
         }
 

@@ -4,7 +4,6 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use super::Status;
 use crate::Error;
 use chrono::prelude::*;
 use rusqlite::types::{FromSql, FromSqlError, FromSqlResult, ToSql, ToSqlOutput, ValueRef};
@@ -57,12 +56,9 @@ impl Serialize for Id {
 impl Default for Id {
     /// Defaults to the Sunday of today's week.
     fn default() -> Self {
-        let today = Utc::today();
-        let year = today.year();
-        let month = today.month();
-        let date = NaiveDate::from_isoywd(year, month, Weekday::Sun);
+        let date = Utc::today();
 
-        Id(date)
+        Id(date.naive_utc())
     }
 }
 
@@ -109,24 +105,17 @@ impl ToSql for Id {
 pub struct Record {
     pub id: Id,
     pub publication_date: String,
-    pub title: String,
-    pub description: String,
-    pub status: Status,
+    pub summary: String,
 }
 
 impl Record {
-    pub fn new(id: Id) -> Record {
-        // TODO: Should be derived at serialization
-        let title = format!("Issue {}", &id);
+    pub fn new(id: Id, summary: &str) -> Record {
         let publication_date = id.date().to_string();
 
         Record {
             id,
             publication_date,
-            title,
-            // TODO: Should be None
-            description: "".to_string(),
-            status: Status::Draft,
+            summary: summary.to_string(),
         }
     }
 }

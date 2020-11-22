@@ -4,7 +4,7 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use super::{entry, issue, Status};
+use super::{entry, issue};
 use crate::Error;
 use rusqlite::{Connection, Transaction, NO_PARAMS};
 use std::include_str;
@@ -40,44 +40,28 @@ pub fn store_issue_record(tx: &Transaction, issue: &issue::Record) -> Result<(),
     let mut stmt = tx.prepare(
         r#"
         INSERT OR IGNORE INTO bulletin_issue
-        (id, publication_date, description, title, status)
-        VALUES (?, ?, ?, ?, ?)
+        (id, publication_date, summary)
+        VALUES (?, ?, ?)
         "#,
     )?;
-    let values: [&dyn rusqlite::ToSql; 5] = [
-        &issue.id,
-        &issue.publication_date,
-        &issue.description,
-        &issue.title,
-        &issue.status,
-    ];
+    let values: [&dyn rusqlite::ToSql; 3] = [&issue.id, &issue.publication_date, &issue.summary];
 
     stmt.execute(&values)?;
 
     Ok(())
 }
 
-pub fn issue_exists(tx: &Transaction, id: &issue::Id) -> Result<bool, Error> {
-    let answer = tx.query_row(
-        r#"
-        SELECT EXISTS(
-            SELECT 1 FROM bulletin_issue
-            WHERE id = ?
-        )
-        "#,
-        &[id],
-        |row| row.get(0),
-    )?;
-
-    Ok(answer)
-}
-
 pub fn get_issue(tx: &Transaction, id: &issue::Id) -> Result<issue::Record, Error> {
     let mut stmt = tx.prepare(
         r#"
-        SELECT id, publication_date, title, description, status
-        FROM bulletin_issue
-        WHERE id = ?
+        SELECT
+            id,
+            publication_date,
+            summary
+        FROM
+            bulletin_issue
+        WHERE
+            id = ?
         "#,
     )?;
 
@@ -85,86 +69,27 @@ pub fn get_issue(tx: &Transaction, id: &issue::Id) -> Result<issue::Record, Erro
         Ok(issue::Record {
             id: row.get(0)?,
             publication_date: row.get(1)?,
-            title: row.get(2)?,
-            description: row.get(3)?,
-            status: row.get(4)?,
+            summary: row.get(2)?,
         })
     })?;
 
     Ok(issue)
 }
 
-/// Computes the next state for the given issue.
-///
-/// This basically means that:
-///
-/// * Draft - {6 entries} -> Ready
-/// * Ready - {publication_date} -> Published
-pub fn issue_next_state(tx: &Transaction, id: &issue::Id) -> Result<issue::Record, Error> {
-    let count = count_issue_entries(tx, id)?;
-
-    if count == 6 {
-        change_issue_status(tx, id, &Status::Ready)?;
-    }
-
-    get_issue(tx, id)
-}
-
-pub fn change_issue_status(tx: &Transaction, id: &issue::Id, status: &Status) -> Result<(), Error> {
-    let mut stmt = tx.prepare(
-        r#"
-        UPDATE bulletin_issue
-        SET status = ?
-        WHERE id = ?
-        "#,
-    )?;
-    let values: [&dyn rusqlite::ToSql; 2] = [status, id];
-    stmt.execute(&values)?;
-
-    Ok(())
-}
-
-pub fn update_issue(tx: &Transaction, issue: &issue::Record) -> Result<(), Error> {
-    let mut stmt = tx.prepare(
-        r#"
-        UPDATE bulletin_issue
-        SET
-            publication_date = ?,
-            description = ?,
-            title = ?,
-            status = ?
-        WHERE
-            id = ?
-        "#,
-    )?;
-
-    let values: [&dyn rusqlite::ToSql; 5] = [
-        &issue.publication_date,
-        &issue.description,
-        &issue.title,
-        &issue.status,
-        &issue.id,
-    ];
-
-    stmt.execute(&values)?;
-
-    Ok(())
-}
-
 pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
     let mut stmt = tx.prepare(
         r#"
         SELECT
-            e.url,
-            e.title,
-            e.comment,
-            e.content_type,
-            e.issue_id
-        FROM bulletin_issue AS i
-        JOIN bulletin_entry AS e
-            ON i.id = e.issue_id
-        WHERE i.status <> 'published'
-        ORDER BY issue_id, url
+            url,
+            title,
+            summary,
+            content_type
+        FROM
+            bulletin_entry
+        WHERE
+            issue_id IS NULL
+        ORDER BY
+            url
         "#,
     )?;
     let mut list = Vec::new();
@@ -172,9 +97,9 @@ pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
         Ok(entry::Record {
             url: row.get(0)?,
             title: row.get(1)?,
-            comment: row.get(2)?,
+            summary: row.get(2)?,
             content_type: row.get(3)?,
-            issue_id: row.get(4)?,
+            issue_id: None,
         })
     })?;
 
@@ -183,55 +108,6 @@ pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
     }
 
     Ok(list)
-}
-
-pub fn get_ready(tx: &Transaction) -> Result<issue::Record, Error> {
-    let mut stmt = tx.prepare(
-        r#"
-        SELECT id, publication_date, title, description, status
-        FROM bulletin_issue
-        WHERE status = 'ready'
-        "#,
-    )?;
-
-    let issue = stmt.query_row(NO_PARAMS, |row| {
-        Ok(issue::Record {
-            id: row.get(0)?,
-            publication_date: row.get(1)?,
-            title: row.get(2)?,
-            description: row.get(3)?,
-            status: row.get(4)?,
-        })
-    })?;
-
-    Ok(issue)
-}
-
-pub fn get_entry(tx: &Transaction, url: &str) -> Result<entry::Record, Error> {
-    let mut stmt = tx.prepare(
-        r#"
-        SELECT
-            url,
-            title,
-            comment,
-            content_type,
-            issue_id
-        FROM bulletin_entry
-        WHERE url = ?
-        "#,
-    )?;
-
-    let entry = stmt.query_row(&[url], |row| {
-        Ok(entry::Record {
-            url: row.get(0)?,
-            title: row.get(1)?,
-            comment: row.get(2)?,
-            content_type: row.get(3)?,
-            issue_id: row.get(4)?,
-        })
-    })?;
-
-    Ok(entry)
 }
 
 pub fn get_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<Vec<entry::Record>, Error> {
@@ -240,12 +116,16 @@ pub fn get_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<Vec<entry::
         SELECT
             url,
             title,
-            comment,
+            summary,
             content_type,
             issue_id
-        FROM bulletin_entry
-        WHERE issue_id = ?
-        ORDER BY issue_id, url
+        FROM
+            bulletin_entry
+        WHERE
+            issue_id = ?
+        ORDER BY
+            issue_id,
+            url
         "#,
     )?;
     let mut list = Vec::new();
@@ -253,7 +133,7 @@ pub fn get_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<Vec<entry::
         Ok(entry::Record {
             url: row.get(0)?,
             title: row.get(1)?,
-            comment: row.get(2)?,
+            summary: row.get(2)?,
             content_type: row.get(3)?,
             issue_id: row.get(4)?,
         })
@@ -266,39 +146,25 @@ pub fn get_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<Vec<entry::
     Ok(list)
 }
 
-pub fn count_issue_entries(tx: &Transaction, id: &issue::Id) -> Result<u32, Error> {
-    let count: u32 = tx.query_row(
-        r#"
-        SELECT count(*)
-        FROM bulletin_entry
-        WHERE issue_id = ?
-        "#,
-        &[id],
-        |row| row.get(0),
-    )?;
-
-    Ok(count)
-}
-
 pub fn store_entry_record(tx: &Transaction, entry: &entry::Record) -> Result<(), Error> {
     let mut stmt = tx.prepare(
         r#"
         INSERT OR IGNORE INTO bulletin_entry
-        (url, title, comment, content_type, issue_id)
+        (url, title, summary, content_type, issue_id)
         VALUES (?, ?, ?, ?, ?)
         "#,
     )?;
     let values: [&dyn rusqlite::ToSql; 5] = [
         &entry.url,
         &entry.title,
-        &entry.comment,
+        &entry.summary,
         &entry.content_type,
         &entry.issue_id,
     ];
 
     stmt.execute(&values)?;
 
-    let mentions = extract_links(&entry.comment);
+    let mentions = extract_links(&entry.summary);
     for mention in mentions {
         insert_mention(tx, &[&mention, &entry.url])?;
     }
