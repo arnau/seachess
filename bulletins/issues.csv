@@ -37,14 +37,14 @@ id,publication_date,title,description,status
 2020-W37,2020-09-13,Issue 2020-W37,"This week has been a mix of distributed systems, a database catalogue, graph visualisations, a game of bots, filesystems and WebAssembly systems.",published
 2020-W38,2020-09-20,Issue 2020-W38,"This week has been about interactive articles, data governance, diagrams, roadmaps, predictions and PGP.",published
 2020-W39,2020-09-27,Issue 2020-W39,"This week has been about anonymisation, state space models, sequence diagrams, cookie trackers and some bits on parsers.",published
-2020-W40,2020-09-28,Issue 2020-W40,"This week has been about testing data pipelines, compression algorithms, notebooks, QR codes and tabular data.",published
+2020-W40,2020-10-04,Issue 2020-W40,"This week has been about testing data pipelines, compression algorithms, notebooks, QR codes and tabular data.",published
 2020-W41,2020-10-11,Issue 2020-W41,"This week has been about melody generators, visualisation primitives, Rust and Electron, ASTs and CRDTs.
 
 I also published [Dive into CSV on the Web](https://www.seachess.net/notes/dive-into-csvw) as part of my research on how to publish CSV with enough contextual information.",published
 2020-W42,2020-10-18,Issue 2020-W42,"This week has been about teaching how to program, tutorials for researchers, flow diagrams, spreadsheet horrorshow and some python with nix.",published
-2020-W43,2020-10-21,Issue 2020-W43,"This week has been about the origins of Markdown, WAGI, Firefox and privacy, Kitty, Visidata and LDflex.",published
-2020-W44,2020-10-26,Issue 2020-W44,"This week has been about Fourier transforms, binary file patterns, TerminusDB,
+2020-W43,2020-10-25,Issue 2020-W43,"This week has been about the origins of Markdown, WAGI, Firefox and privacy, Kitty, Visidata and LDflex.",published
+2020-W44,2020-11-01,Issue 2020-W44,"This week has been about Fourier transforms, binary file patterns, TerminusDB,
 and the history of PDF.",published
-2020-W45,2020-11-07,Issue 2020-W45,"This week has been about refactoring, ePub, images in the terminal, git and SVG.",published
+2020-W45,2020-11-08,Issue 2020-W45,"This week has been about refactoring, ePub, images in the terminal, git and SVG.",published
 2020-W46,2020-11-15,Issue 2020-W46,"This week has been about a traffic simulator, obsolete media, 3D human shapes and ownership semantics.",published
-2020-W47,2020-11-16,Issue 2020-W47,"This week has been about notebooks in Julia, vim plugins, open street map, datasette and git.",published
+2020-W47,2020-11-22,Issue 2020-W47,"This week has been about notebooks in Julia, vim plugins, open street map, datasette and git.",published
