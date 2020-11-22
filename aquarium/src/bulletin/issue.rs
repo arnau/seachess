@@ -55,10 +55,14 @@ impl Serialize for Id {
 }
 
 impl Default for Id {
+    /// Defaults to the Sunday of today's week.
     fn default() -> Self {
-        let date = Utc::today();
+        let today = Utc::today();
+        let year = today.year();
+        let month = today.month();
+        let date = NaiveDate::from_isoywd(year, month, Weekday::Sun);
 
-        Id(date.naive_utc())
+        Id(date)
     }
 }
 
@@ -151,6 +155,15 @@ mod tests {
             let id = Id::from_str(&week)?;
 
             assert_eq!(id.to_string(), week);
+
+            Ok(())
+        }
+
+        #[test]
+        fn parse_default() -> Result<(), Error> {
+            let id = Id::default();
+
+            assert_eq!(id.date().weekday(), Weekday::Sun);
 
             Ok(())
         }
