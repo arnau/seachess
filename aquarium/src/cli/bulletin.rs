@@ -46,6 +46,7 @@ impl Cmd {
     }
 }
 
+/// Adds a new unpublished entry
 #[derive(Debug, Clap)]
 pub struct Add {
     /// Cache path
@@ -81,6 +82,7 @@ summary = """
     }
 }
 
+/// Edits an unpublished entry
 #[derive(Debug, Clap)]
 pub struct Edit {
     /// Cache path
@@ -113,6 +115,7 @@ impl Edit {
     }
 }
 
+/// Removes an unpublished entry
 #[derive(Debug, Clap)]
 pub struct Remove {
     /// Cache path
@@ -135,6 +138,7 @@ impl Remove {
     }
 }
 
+/// Loads raw bulletins in CSV into the cache
 #[derive(Debug, Clap)]
 pub struct Load {
     /// Path to write the resulting bulletin data.
@@ -166,6 +170,7 @@ impl Load {
     }
 }
 
+/// Exports the cache as CSV
 #[derive(Debug, Clap)]
 pub struct Extrude {
     /// Cache path
@@ -194,7 +199,7 @@ impl Extrude {
     }
 }
 
-/// Publishes the next issue if it's in a `Ready` state.
+/// Publishes the next issue if it's in a `Ready` state
 #[derive(Debug, Clap)]
 pub struct Publish {
     /// Cache path
@@ -246,7 +251,7 @@ impl Publish {
     }
 }
 
-/// Shows the given issue.
+/// Shows the given issue or the list of unpublished entries
 #[derive(Debug, Clap)]
 pub struct Show {
     /// Cache path
