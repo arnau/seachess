@@ -4,14 +4,12 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use crate::bulletin::{entry, issue, serialize, storage};
+use crate::bulletin::{self, entry, issue, serialize, storage};
 use crate::{Achievement, Error};
 use clap::Clap;
-use dialoguer::{theme::ColorfulTheme, Editor, Select};
-use rusqlite::Transaction;
-use skim::prelude::*;
+use dialoguer::Editor;
 use std::fs::File;
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 
 static CACHE_PATH: &str = "./cache.db";
 static CANONICAL_STORAGE_PATH: &str = "./bulletins/";
@@ -72,7 +70,7 @@ summary = """
         if let Some(value) = Editor::new().extension(".toml").edit(template)? {
             let entry: entry::Record = toml::from_str(&value)?;
 
-            add_new_entry(&tx, entry)?;
+            bulletin::add_new_entry(&tx, entry)?;
         } else {
             return Ok(Achievement::Cancelled);
         }
@@ -81,28 +79,6 @@ summary = """
 
         Ok(Achievement::Done)
     }
-}
-
-/// Checks the integrity of the entry record.
-fn check_entry(tx: &Transaction, entry: &entry::Record) -> Result<(), Error> {
-    if entry.url.is_empty() {
-        return Err(Error::BadUrl(entry.url.clone()));
-    }
-
-    if storage::entry_exists(&tx, &entry.url)? {
-        return Err(Error::UrlExists(entry.url.clone()));
-    };
-
-    Ok(())
-}
-
-/// Adds the given entry to the storage.
-fn add_new_entry(tx: &Transaction, entry: entry::Record) -> Result<Achievement, Error> {
-    check_entry(tx, &entry)?;
-
-    storage::store_entry_record(&tx, &entry)?;
-
-    Ok(Achievement::Done)
 }
 
 #[derive(Debug, Clap)]
@@ -118,7 +94,7 @@ impl Edit {
         let tx = conn.transaction()?;
 
         let unpublished = storage::get_unpublished(&tx)?;
-        let entry = select_entry(&unpublished)?;
+        let entry = bulletin::select_entry(&unpublished)?;
         storage::delete_entry(&tx, &entry.url)?;
 
         let value = toml::to_string(&entry)?;
@@ -126,7 +102,7 @@ impl Edit {
         if let Some(value) = Editor::new().extension(".toml").edit(&value)? {
             let entry: entry::Record = toml::from_str(&value)?;
 
-            add_new_entry(&tx, entry)?;
+            bulletin::add_new_entry(&tx, entry)?;
         } else {
             return Ok(Achievement::Cancelled);
         }
@@ -149,7 +125,7 @@ impl Remove {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
         let unpublished = storage::get_unpublished(&tx)?;
-        let entry = select_entry(&unpublished)?;
+        let entry = bulletin::select_entry(&unpublished)?;
 
         storage::delete_entry(&tx, &entry.url)?;
 
@@ -157,60 +133,6 @@ impl Remove {
 
         Ok(Achievement::Done)
     }
-}
-
-fn select_entry(list: &Vec<entry::Record>) -> Result<entry::Record, Error> {
-    let idx = match list.len() {
-        0 => return Err(Error::Unknown("No entries to edit.".to_string())),
-        1 => 0,
-        _ => {
-            let list_s: Vec<String> = list
-                .iter()
-                .map(|record| format!("{}", record.title))
-                .collect();
-
-            if let Some(value) = Select::with_theme(&ColorfulTheme::default())
-                .with_prompt("Select entry")
-                .default(0)
-                .items(&list_s)
-                .interact_opt()?
-            {
-                value
-            } else {
-                return Err(Error::Unknown("Cancelled operation".to_string()));
-            }
-        }
-    };
-
-    let entry = list[idx].clone();
-
-    Ok(entry)
-}
-
-fn select_entries(items: entry::Set) -> Result<Vec<entry::Record>, Error> {
-    let options = SkimOptionsBuilder::default()
-        .height(Some("100%"))
-        .multi(true)
-        .preview(Some(""))
-        .preview_window(Some("down:20%"))
-        .prompt(None)
-        .build()
-        .map_err(Error::Unknown)?;
-
-    let full_set = items.to_vec();
-    let selected_items: Vec<String> = Skim::run_with(&options, Some(items.into()))
-        .map(|out| out.selected_items)
-        .unwrap_or_else(|| Vec::new())
-        .iter()
-        .map(|item| item.output().into())
-        .collect();
-
-    let filtered_set = full_set
-        .into_iter()
-        .filter(|item| (&selected_items).contains(&item.url))
-        .collect();
-
-    Ok(filtered_set)
 }
 
 #[derive(Debug, Clap)]
@@ -234,36 +156,14 @@ impl Load {
         let issues_path = &self.input_path.join("issues.csv");
         let entries_path = &self.input_path.join("entries.csv");
 
-        process_csv_issues(&issues_path, &tx)?;
-        process_csv_entries(&entries_path, &tx)?;
+        bulletin::process_csv_issues(&issues_path, &tx)?;
+        bulletin::process_csv_entries(&entries_path, &tx)?;
 
         tx.commit()?;
         storage::disconnect(&conn)?;
 
         Ok(Achievement::Done)
     }
-}
-
-fn process_csv_issues(path: &Path, tx: &Transaction) -> Result<(), Error> {
-    let mut rdr = csv::Reader::from_path(path)?;
-
-    for result in rdr.deserialize() {
-        let issue: issue::Record = result?;
-        storage::store_issue_record(tx, &issue)?;
-    }
-
-    Ok(())
-}
-
-fn process_csv_entries(path: &Path, tx: &Transaction) -> Result<(), Error> {
-    let mut rdr = csv::Reader::from_path(path)?;
-
-    for result in rdr.deserialize() {
-        let entry: entry::Record = result?;
-        storage::store_entry_record(tx, &entry)?;
-    }
-
-    Ok(())
 }
 
 #[derive(Debug, Clap)]
@@ -319,7 +219,7 @@ impl Publish {
         let entries = if unpublished.len() == self.amount {
             unpublished
         } else {
-            select_entries(entry::Set::new(unpublished))?
+            bulletin::select_entries(entry::Set::new(unpublished))?
         };
 
         if entries.len() < self.amount {
