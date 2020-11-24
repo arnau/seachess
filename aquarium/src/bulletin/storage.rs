@@ -65,13 +65,15 @@ pub fn get_issue(tx: &Transaction, id: &issue::Id) -> Result<issue::Record, Erro
         "#,
     )?;
 
-    let issue = stmt.query_row(&[id], |row| {
-        Ok(issue::Record {
-            id: row.get(0)?,
-            publication_date: row.get(1)?,
-            summary: row.get(2)?,
+    let issue = stmt
+        .query_row(&[id], |row| {
+            Ok(issue::Record {
+                id: row.get(0)?,
+                publication_date: row.get(1)?,
+                summary: row.get(2)?,
+            })
         })
-    })?;
+        .map_err(|_| Error::Unknown("No issue found for the given id.".into()))?;
 
     Ok(issue)
 }

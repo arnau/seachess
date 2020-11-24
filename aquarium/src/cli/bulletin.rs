@@ -253,19 +253,23 @@ pub struct Show {
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
     cache_path: PathBuf,
     #[clap(value_name = "id")]
-    issue_id: issue::Id,
+    issue_id: Option<issue::Id>,
 }
 
 impl Show {
     pub fn run(&self) -> Result<Achievement, Error> {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
+        let mut value = String::new();
 
-        let issue = storage::get_issue(&tx, &self.issue_id)
-            .map_err(|_| Error::Unknown("No issue found for the given id.".into()))?;
-        let entries = storage::get_issue_entries(&tx, &issue.id)?;
+        let entries = if let Some(issue_id) = &self.issue_id {
+            let issue = storage::get_issue(&tx, issue_id)?;
+            value = issue.summary.clone();
 
-        let mut value = issue.summary.clone();
+            storage::get_issue_entries(&tx, &issue.id)?
+        } else {
+            storage::get_unpublished(&tx)?
+        };
 
         for entry in entries {
             value.push_str(&format!(
@@ -274,9 +278,8 @@ impl Show {
             ));
         }
 
-        tx.commit()?;
-
         println!("{}", value);
+        tx.commit()?;
 
         Ok(Achievement::Done)
     }
