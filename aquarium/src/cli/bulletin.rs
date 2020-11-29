@@ -4,7 +4,7 @@
 // This file may not be copied, modified, or distributed except
 // according to those terms.
 
-use crate::bulletin::{self, entry, issue, serialize, storage};
+use crate::bulletin::{self, entry, issue, serialize, storage, storage::Strategy};
 use crate::{Achievement, Error};
 use clap::Clap;
 use dialoguer::Editor;
@@ -49,9 +49,9 @@ impl Cmd {
 /// Adds a new unpublished entry
 #[derive(Debug, Clap)]
 pub struct Add {
-    /// Cache path
+    /// Cache path.
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
 }
 
 impl Add {
@@ -87,7 +87,7 @@ summary = """
 pub struct Edit {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
 }
 
 impl Edit {
@@ -95,7 +95,7 @@ impl Edit {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let unpublished = storage::get_unpublished(&tx)?;
+        let unpublished = bulletin::get_unpublished(&tx)?;
         let entry = bulletin::select_entry(&unpublished)?;
         storage::delete_entry(&tx, &entry.url)?;
 
@@ -120,14 +120,14 @@ impl Edit {
 pub struct Remove {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
 }
 
 impl Remove {
     pub fn run(&self) -> Result<Achievement, Error> {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
-        let unpublished = storage::get_unpublished(&tx)?;
+        let unpublished = bulletin::get_unpublished(&tx)?;
         let entry = bulletin::select_entry(&unpublished)?;
 
         storage::delete_entry(&tx, &entry.url)?;
@@ -147,7 +147,7 @@ pub struct Load {
 
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
 }
 
 impl Load {
@@ -175,7 +175,7 @@ impl Load {
 pub struct Extrude {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
     /// Path to write the resulting bulletin data.
     #[clap(long, short = 'o', value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     output_path: PathBuf,
@@ -204,7 +204,7 @@ impl Extrude {
 pub struct Publish {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
     /// Amount of entries to publish
     #[clap(long, short = 'n', value_name = "n", default_value = "6")]
     amount: usize,
@@ -215,35 +215,7 @@ impl Publish {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
 
-        let unpublished = storage::get_unpublished(&tx)?;
-
-        if unpublished.len() < self.amount {
-            return Err(Error::Unknown("Not enough entries to publish.".into()));
-        }
-
-        let entries = if unpublished.len() == self.amount {
-            unpublished
-        } else {
-            bulletin::select_entries(entry::Set::new(unpublished))?
-        };
-
-        if entries.len() < self.amount {
-            return Err(Error::Unknown("Not enough entries to publish.".into()));
-        }
-
-        let mut summary = String::new();
-
-        for entry in entries {
-            summary.push_str(&format!("\n\n  * {}", entry.summary));
-        }
-
-        if let Some(value) = Editor::new().extension(".md").edit(&summary)? {
-            let issue = issue::Record::new(issue::Id::default(), &value);
-
-            storage::store_issue_record(&tx, &issue)?;
-        } else {
-            return Ok(Achievement::Cancelled);
-        }
+        bulletin::publish_issue(&tx, self.amount)?;
 
         tx.commit()?;
 
@@ -256,7 +228,7 @@ impl Publish {
 pub struct Show {
     /// Cache path
     #[clap(long, value_name = "path", default_value = CACHE_PATH)]
-    cache_path: PathBuf,
+    cache_path: Strategy,
     #[clap(value_name = "id")]
     issue_id: Option<issue::Id>,
 }
@@ -273,7 +245,7 @@ impl Show {
 
             storage::get_issue_entries(&tx, &issue.id)?
         } else {
-            storage::get_unpublished(&tx)?
+            bulletin::get_unpublished(&tx)?
         };
 
         for entry in entries {

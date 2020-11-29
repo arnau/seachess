@@ -44,8 +44,8 @@ pub enum Error {
     BadUrl(String),
     #[error("serde {0}")]
     Serde(String),
-    #[error("locked issue {0}")]
-    LockedIssue(String),
+    #[error("Bulletin")]
+    Bulletin(BulletinError),
 }
 
 impl ser::Error for Error {
@@ -58,4 +58,12 @@ impl de::Error for Error {
     fn custom<T: Display>(msg: T) -> Self {
         Error::Serde(msg.to_string())
     }
+}
+
+#[derive(Error, Debug)]
+pub enum BulletinError {
+    #[error("Publication cancelled")]
+    PublicationCancelled,
+    #[error("Not enough entries to publish.")]
+    NotEnoughEntries,
 }

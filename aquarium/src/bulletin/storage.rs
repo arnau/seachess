@@ -8,11 +8,37 @@ use super::{entry, issue};
 use crate::Error;
 use rusqlite::{Connection, Transaction, NO_PARAMS};
 use std::include_str;
-use std::path::Path;
+use std::path::{Path, PathBuf};
+use std::str::FromStr;
+
+#[derive(Debug, PartialEq)]
+pub enum Strategy {
+    Memory,
+    Disk(PathBuf),
+}
+
+impl FromStr for Strategy {
+    type Err = &'static str;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            ":memory:" => Ok(Strategy::Memory),
+            s => {
+                let path = Path::new(s);
+                Ok(Strategy::Disk(path.into()))
+            }
+        }
+    }
+}
 
 /// Opens a SQLite database at the given path.
-pub fn connect(path: &Path) -> Result<Connection, Error> {
-    let conn = Connection::open(path)?;
+pub fn connect(strategy: &Strategy) -> Result<Connection, Error> {
+    let conn = match strategy {
+        Strategy::Memory => Connection::open_in_memory()?,
+        Strategy::Disk(path) => Connection::open(path)?,
+        // Connection::open_with_flags(path, OpenFlags::SQLITE_OPEN_READ_WRITE | OpenFlags::SQLITE_OPEN_CREATE)
+    };
+
     // conn.pragma_update(None, "foreign_keys", &"off")?;
     conn.pragma_update(None, "journal_mode", &"wal")?;
 
@@ -170,6 +196,24 @@ pub fn store_entry_record(tx: &Transaction, entry: &entry::Record) -> Result<(),
     for mention in mentions {
         insert_mention(tx, &[&mention, &entry.url])?;
     }
+
+    Ok(())
+}
+
+pub fn publish_entry(tx: &Transaction, url: &str, issue_id: &issue::Id) -> Result<(), Error> {
+    let mut stmt = tx.prepare(
+        r#"
+        UPDATE
+            bulletin_entry
+        SET
+            issue_id = ?
+        WHERE
+            url = ?
+        "#,
+    )?;
+    let values: [&dyn rusqlite::ToSql; 2] = [&issue_id, &url];
+
+    stmt.execute(&values)?;
 
     Ok(())
 }

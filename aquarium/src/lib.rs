@@ -11,4 +11,5 @@ pub mod error;
 pub mod logo;
 
 pub use achievement::Achievement;
+pub use error::BulletinError;
 pub use error::Error;

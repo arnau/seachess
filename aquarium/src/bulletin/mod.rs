@@ -15,7 +15,8 @@ pub(crate) mod storage;
 pub use content_type::ContentType;
 pub use status::Status;
 
-use crate::{Achievement, Error};
+use crate::{Achievement, BulletinError, Error};
+use dialoguer::Editor;
 use dialoguer::{theme::ColorfulTheme, Select};
 use rusqlite::Transaction;
 use skim::prelude::*;
@@ -99,6 +100,10 @@ pub fn select_entries(items: entry::Set) -> Result<Vec<entry::Record>, Error> {
     Ok(filtered_set)
 }
 
+pub fn get_unpublished(tx: &Transaction) -> Result<Vec<entry::Record>, Error> {
+    storage::get_unpublished(&tx)
+}
+
 pub fn process_csv_issues(path: &Path, tx: &Transaction) -> Result<(), Error> {
     let mut rdr = csv::Reader::from_path(path)?;
 
@@ -119,4 +124,104 @@ pub fn process_csv_entries(path: &Path, tx: &Transaction) -> Result<(), Error> {
     }
 
     Ok(())
+}
+
+/// Publishes the selected entries in a new issue.
+pub fn publish_issue(tx: &Transaction, amount: usize) -> Result<Achievement, Error> {
+    let entries = unpublished_entries(&tx, amount)?;
+    let summary = String::new();
+    let issue = build_unpublished_issue(summary, &entries)?;
+
+    publish_issue_and_entries(&tx, &issue, &entries)?;
+
+    Ok(Achievement::Done)
+}
+
+fn unpublished_entries(tx: &Transaction, amount: usize) -> Result<Vec<entry::Record>, Error> {
+    let unpublished = storage::get_unpublished(&tx)?;
+
+    if unpublished.len() < amount {
+        return Err(Error::Bulletin(BulletinError::NotEnoughEntries));
+    }
+
+    let entries = if unpublished.len() == amount {
+        unpublished
+    } else {
+        select_entries(entry::Set::new(unpublished))?
+    };
+
+    if entries.len() < amount {
+        return Err(Error::Bulletin(BulletinError::NotEnoughEntries));
+    }
+
+    Ok(entries)
+}
+
+fn build_unpublished_issue(
+    mut summary: String,
+    entries: &Vec<entry::Record>,
+) -> Result<issue::Record, Error> {
+    for entry in entries {
+        summary.push_str(&format!("\n\n  * {}", entry.summary));
+    }
+
+    if let Some(value) = Editor::new().extension(".md").edit(&summary)? {
+        Ok(issue::Record::new(issue::Id::default(), &value))
+    } else {
+        return Err(Error::Bulletin(BulletinError::PublicationCancelled));
+    }
+}
+
+fn publish_issue_and_entries(
+    tx: &Transaction,
+    issue: &issue::Record,
+    entries: &Vec<entry::Record>,
+) -> Result<(), Error> {
+    storage::store_issue_record(&tx, issue)?;
+
+    for entry in entries {
+        storage::publish_entry(&tx, &entry.url, &issue.id)?;
+    }
+
+    Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn make_entry(tx: &Transaction, url: &str) -> Result<(), Error> {
+        let entry = entry::Record {
+            url: url.to_string(),
+            title: "title".to_string(),
+            summary: "summary".to_string(),
+            content_type: ContentType::Text,
+            issue_id: None,
+        };
+
+        storage::store_entry_record(&tx, &entry)
+    }
+
+    #[test]
+    fn publish_issue() -> Result<(), Error> {
+        let issue_id = issue::Id::default();
+        let amount = 1;
+
+        let mut conn = storage::connect(&storage::Strategy::Memory)?;
+        storage::bootstrap(&conn)?;
+        let tx = conn.transaction()?;
+
+        make_entry(&tx, "first")?;
+
+        let entries = unpublished_entries(&tx, amount)?;
+        let issue = issue::Record::new(issue_id.clone(), "A summary");
+        publish_issue_and_entries(&tx, &issue, &entries)?;
+
+        let entries = storage::get_issue_entries(&tx, &issue_id)?;
+
+        assert_eq!(entries.len(), amount);
+
+        tx.commit()?;
+        Ok(())
+    }
 }
