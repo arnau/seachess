@@ -764,3 +764,11 @@ https://www.robinlinacre.com/command_control/,The Downfall of Command and Contro
 https://github.com/mbbill/undotree,Undotree,A plugin to navigate through the hierarchical tree of changes kept by Vim.,text,2020-W47
 https://joemorrison.medium.com/openstreetmap-is-having-a-moment-dcc7eef1bb01,OpenStreetMap is Having a Moment,"An article on how Apple, Amazon, Facebook and Microsoft are relying on OpenStreetMap as a critical piece of infrastructure.",text,2020-W47
 https://simonwillison.net/2020/Nov/14/personal-data-warehouses/,Personal Data Warehouses: Reclaiming Your Data,A talk from the Datasette author on how he uses it to manage his own personal data. A very good example of how to exploit SQLite.,video,2020-W47
+https://qqq.is/research/a-practical-guide-to-URI-encoding-and-URI-decoding,A practical guide to URI encoding and URI decoding,"A digested explanation of the [RFC3986](https://tools.ietf.org/html/rfc3986).
+
+A more forward-looking specification like the WhatWG [URL](https://url.spec.whatwg.org/) might be what you need though.",text,2020-W48
+https://rust-script.org/,rust-script,A tool to run Rust files and expressions as scripts without any setup or compilation step.,text,2020-W48
+https://dgl.cx/2020/06/sqlite-json-support,SQLite as a document database,An article showcasing how to use JSON blobs with virtual columns in SQLite.,text,2020-W48
+https://spectrum.ieee.org/biomedical/devices/turning-the-body-into-a-wire,Turning the Body Into a Wire,An article introducing the idea of IoB (Internet of Bodies) as a closed network to increase the security of wearable devices including health devices such as pacemakers.,text,2020-W48
+https://github.com/MonetDBSolutions/MonetDBe-Python,MonetDBe-Python,A Python package to work with an embedded version of the columnar database [MonetDB](https://www.monetdb.org/).,text,2020-W48
+https://github.com/dmtrKovalenko/odiff,ODIFF,A tool to genereate pixel-by-pixel image differentials.,text,2020-W48
