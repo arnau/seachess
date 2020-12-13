@@ -778,3 +778,9 @@ https://archivebox.io/,Archivebox,A self-hosted service to archive websites of y
 https://misinforeview.hks.harvard.edu/article/breaking-harmony-square-a-game-that-inoculates-against-political-misinformation/,Breaking Harmony Square: A game that “inoculates” against political misinformation,An article introducing the background and findings on a [research game](https://www.harmonysquare.game/) applying ideas from the inoculation theory to improve the player's resistance to politic misinformation.,text,2020-W49
 https://anonymousplanet.github.io/thgtoa/guide.html,The Hitchhiker’s Guide to Online Anonymity,A thorough guide to how to set yourself up for online anonymity. Not for the faint of heart.,text,2020-W49
 https://bbodi.github.io/notecalc3/,notecalc3,A notepad with a smart calculator built in.,text,2020-W49
+https://bitbashing.io/tex.html,TeX: A tale of two worlds,An article on Donald Knuth's work on TeX.,text,2020-W50
+https://clig.dev/,Command Line Interface Guidelines,"A guide to help you write better command-line programs, taking traditional UNIX principles and updating them for the modern day.",text,2020-W50
+https://www.hillelwayne.com/post/always-more-history/,There's Always More History,"An article answering the question 'Why Vim Uses hjkl', 'Why JavaScript months start from 0' and what these two have in common.",text,2020-W50
+https://github.com/rtosholdings/riptable,RipTable,"A library that enhances or replaces numpy, pandas, and includes high speed cross platform SDS file format.",text,2020-W50
+https://github.com/vincentdchan/PoloDB,PoloDB,An embedded JSON-based database with a MongoDB-like API writen in Rust and stores data in a single file a-la SQLite.,text,2020-W50
+https://github.com/nanotee/nvim-lua-guide,Getting started using Lua in Neovim,A guide to learn the basics of Lua and how to use it to drive Neovim.,text,2020-W50
