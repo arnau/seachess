@@ -784,3 +784,9 @@ https://www.hillelwayne.com/post/always-more-history/,There's Always More Histor
 https://github.com/rtosholdings/riptable,RipTable,"A library that enhances or replaces numpy, pandas, and includes high speed cross platform SDS file format.",text,2020-W50
 https://github.com/vincentdchan/PoloDB,PoloDB,An embedded JSON-based database with a MongoDB-like API writen in Rust and stores data in a single file a-la SQLite.,text,2020-W50
 https://github.com/nanotee/nvim-lua-guide,Getting started using Lua in Neovim,A guide to learn the basics of Lua and how to use it to drive Neovim.,text,2020-W50
+https://infovis.fh-potsdam.de/tutorials/,Information Visualization,A collection of lectures on the fundamentals of information visualisation.,text,2020-W51
+https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps/,Exploiting dynamic rendering engines to take control of web apps,"An article exploring an attack websites using the prerendering technique.""",text,2020-W51
+https://blog.acolyer.org/2020/12/14/entity-resolution/,An overview of end-to-end entity resolution for big data,An article analysing a paper on Entity Resoultion (ER) techniques.,text,2020-W51
+https://www.drivendata.co/blog/nbautoexport-jupyter-code-review/,Jupyter Notebooks and Code Reviews,An article exploring the use of [nbautoexport](https://github.com/drivendataorg/nbautoexport/) to improve the user experience of reviewing Jupyter notebook changes.,text,2020-W51
+https://pair.withgoogle.com/explorables/data-leak/,Why Some Models Leak Data,An article showcasing machine learning models that leak information inadvertently.,text,2020-W51
+https://caballerocoll.com/blog/bevy-chess-tutorial/,Chess game in Rust using Bevy,A tutorial to get started with the game engine [Bevy](https://bevyengine.org/).,text,2020-W51
