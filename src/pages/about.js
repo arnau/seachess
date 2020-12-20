@@ -34,11 +34,10 @@ function About({ location, data }) {
         }
       </ul>
 
-      <h2>Cookie usage</h2>
+      <h2>Privacy</h2>
 
-      <p>This website doesn't use cookies anymore. Originally it used Google
-        Analytics to gather minimal information on what routes were hit.</p>
-
+      <p>This website uses <a
+        href="https://panelbear.com/docs/what-we-collect/">Panel Bear</a> to collect anonymous usage.</p>
 
       <h2>What's up with this silly name</h2>
 

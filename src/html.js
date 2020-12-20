@@ -14,6 +14,8 @@ export default function HTML(props) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         {props.headComponents}
+        {/*-- Panelbear Analytics - We respect your privacy --*/}
+        <script async src="https://cdn.panelbear.com/analytics.js?site=HtfkzMZfG3Z"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
