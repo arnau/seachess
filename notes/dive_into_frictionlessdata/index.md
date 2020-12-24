@@ -265,7 +265,8 @@ need to know about the [Tabular Data Package] in one place. Things like this
 make the difference when choosing tools and standard practices.
 
 Even with the points raised in this note, the specifications look well thought
-through, built on well-known and current standards.
+through, built on well-known and current standards. The [Patterns] section
+deserves a mention, I really liked the idea and the content.
 
 If I were in need to publish CSV and had the need to choose a way to do it,
 [Frictionless Data] would be a strong candidate to consider.
@@ -296,6 +297,7 @@ If I were in need to publish CSV and had the need to choose a way to do it,
 [Frictionless Data]: https://frictionlessdata.io/
 [Tabular Data Package JSON Schema]: https://specs.frictionlessdata.io/schemas/tabular-data-package.json
 [Describing files inside a compressed file such as Zip]: https://specs.frictionlessdata.io/patterns/#describing-files-inside-a-compressed-file-such-as-zip
+[Patterns]: https://specs.frictionlessdata.io/patterns/
 
 [data-package-creator]: https://create.frictionlessdata.io/
 [goodtables]: http://try.goodtables.io/
