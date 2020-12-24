@@ -121,6 +121,10 @@ A descriptor provides:
 * The `profile` property with the value `tabular-data-package`.
 * Optionally, contextual annotations.
 
+The scripts are not well defined in the specification. Judging by what I've
+seen in the datasets in https://github.com/datasets/ they tend to be Python
+scripts to process the data and achieve the result stored in `data/`.
+
 
 ## Structural information
 
