@@ -19,7 +19,7 @@ specification to provide metadata for CSV files.
 The [Tabular Data Package] is a specification covering structural information,
 validation rules and contextual information.
 
-In this note I'll be assessing Frictionless [Tabular Data Package] under the
+In this note I'll be assessing Frictionless Tabular Data Package under the
 assumption that it is a reasonable choice for increasing the reliability of
 CSV data consumption. If you are in a rush, go straight to the [closing
 thoughts](#closing-thoughts).
@@ -27,7 +27,7 @@ thoughts](#closing-thoughts).
 
 ## Overview
 
-The [Tabular Data Package] is part of the [Frictionless Data] framework. It is
+The Tabular Data Package is part of the [Frictionless Data] framework. It is
 a profile (see the [Profiles] specification) built on top of [Data Package]
 and [Tabular Data Resource] which in turn is a profile that builds on top of
 [Data Resource], [Table Schema] and [CSV Dialect].
@@ -37,8 +37,8 @@ In a gist, this format is about:
 * Data files encoded as CSV (Comma-Separated Values).
 * A data descriptor as JSON.
 
-On that basis, it looks straightforward to publish a dataset using this format
-and fairly easy to consume.
+On that basis, it looks straightforward to publish and consume a dataset using
+this format.
 
 
 ## Context
@@ -53,13 +53,6 @@ Tabular Data Package is trying to help with.
 There are other attempts to solve the same problem such as [CSV on the Web].
 Check my [Dive into CSV on the Web] for my take on it.
 
-Note that the first reason the Tabular Data Package specification gives to
-support the choice of CSV is:
-
-> CSV is very simple – it is possibly the most simple data format
-
-Let's disagree and move on.
-
 
 ## Foundations
 
@@ -67,16 +60,16 @@ The Tabular Data Package builds on top of a few technical specifications. I'll
 cover the ones I find most relevant as potential points of friction for
 implementors, publishers and consumers.
 
-The [Tabular Data Resource] extends the [Data Resource] with:
+The Tabular Data Resource extends the [Data Resource] with:
 
-* [Table Schema] to describe the structural information for each CSV.
-* [CSV Dialect] to describe divergences from the [IETF RFC 4180].
+* Table Schema to describe the structural information for each CSV.
+* CSV Dialect to describe divergences from the [IETF RFC 4180].
 
 Note that the encoding is defined in the Tabular Data Resource instead of the
 CSV Dialect. And it is UTF-8 by default instead of the US-ASCII defined by the
 [IETF RFC 4180].
 
-The [Tabular Data Resource] allows for embedding data as JSON directly in the
+The Tabular Data Resource allows for embedding data as JSON directly in the
 descriptor file. This adds an extra level of complexity for a marginal
 benefit, I think. It would be good to have some use cases that frame choices
 like this one.
@@ -90,7 +83,7 @@ The specification does not cover any way to discover the data from the
 descriptor or viceversa. Maybe a paragraph suggesting the usage of the `Link`
 HTTP header ([IETF RFC 8288]) would suffice.
 
-Most of the time the specifications assume you are working locally and paths
+Most of the time the specification assumes you are working locally and paths
 are relative to the _root_ of the package. This probably means that _a
 package_ needs to be distributed in some sort of bundle like a zip file. In
 fact, there is a pattern [Describing files inside a compressed file such as Zip]
@@ -117,7 +110,7 @@ by [IETF RFC 4627] (and hopefully [IETF RFC 8259] as well).
 
 A descriptor provides:
 
-* The `resources` property with at least one [Tabular Data Resource].
+* The `resources` property with at least one Tabular Data Resource.
 * The `profile` property with the value `tabular-data-package`.
 * Optionally, contextual annotations.
 
@@ -129,13 +122,13 @@ scripts to process the data and achieve the result stored in `data/`.
 ## Structural information
 
 Structural attributes are the ones you would expect from any Data Definition
-Language (DDL). The [Tabular Data Resource] provides:
+Language (DDL). The Tabular Data Resource provides:
 
 * The `name` property to identify the dataset.
 * The `path` property to define the relative path to the CSV file.
-* The `schema` property following the [Table Schema].
+* The `schema` property following the Table Schema.
 * The `profile` property with the value `tabular-data-resource`.
-* The `dialect` property with the [CSV Dialect].
+* The `dialect` property with the CSV Dialect.
 * Optionally, the `encoding` property when the value is not UTF-8.
 * Optionally, the title, description, hash, licences, etc.
 * Optionally, the format (i.e.) "csv" and media type "text/csv".
@@ -180,7 +173,7 @@ bit of context on why these formats are important to have in the specificaiton
 but others didn't make the cut.
 
 The `number` type uses the lexical formatting of [XML Schema Decimal]. I can
-only wonder why this what chosen over other definitions like the one in JSON
+only wonder why this was chosen over other definitions like the one in JSON
 which is the one JSON Schema uses.
 
 The `bareNumber` property got me by surprise, I would've thought that would
@@ -245,7 +238,7 @@ are to comply with the Tabular Data Package.
 
 ## State of the art
 
-The team behind the [Frictionless Data] specifications maintain two reference
+The team behind the Frictionless Data specifications maintain two reference
 implementations:
 
 * [Python frictionless](https://github.com/frictionlessdata/frictionless-py)
@@ -264,8 +257,8 @@ Finally, there are other tools worth exploring:
 
 ## Closing thoughts
 
-The [Frictionless Data] website does a great job in putting everything you
-need to know about the [Tabular Data Package] in one place. Things like this
+The Frictionless Data website does a great job in putting everything you
+need to know about the Tabular Data Package in one place. Things like this
 make the difference when choosing tools and standard practices.
 
 Even with the points raised in this note, the specifications look well thought
@@ -273,7 +266,7 @@ through, built on well-known and current standards. The [Patterns] section
 deserves a mention, I really liked the idea and the content.
 
 If I were in need to publish CSV and had the need to choose a way to do it,
-[Frictionless Data] would be a strong candidate to consider.
+Frictionless Data would be a strong candidate to consider.
 
 
 ## Resources
