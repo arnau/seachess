@@ -54,72 +54,85 @@ There are other attempts to solve the same problem such as [CSV on the Web].
 Check my [Dive into CSV on the Web] for my take on it.
 
 
-## Foundations
+## The Package structure
 
-The Tabular Data Package builds on top of a few technical specifications. I'll
-cover the ones I find most relevant as potential points of friction for
-implementors, publishers and consumers.
+The Tabular Data Package package is defined in terms of a directory and its
+contents, extending the Data Package specification.
 
-The Tabular Data Resource extends the [Data Resource] with:
+The only requirement for a directory to be a Data Package is to contain the
+_descriptor_, a `datapackage.json` file.
 
-* Table Schema to describe the structural information for each CSV.
-* CSV Dialect to describe divergences from the [IETF RFC 4180].
-
-Note that the encoding is defined in the Tabular Data Resource instead of the
-CSV Dialect. And it is UTF-8 by default instead of the US-ASCII defined by the
-[IETF RFC 4180].
-
-The Tabular Data Resource allows for embedding data as JSON directly in the
-descriptor file. This adds an extra level of complexity for a marginal
-benefit, I think. It would be good to have some use cases that frame choices
-like this one.
-
-The specification (all of them in fact) say that the descriptor must be JSON
-as defined by [IETF RFC 4627] although it has been replaced by [IETF RFC
-8259]. Probably a negligible detail but implementors would benefit from
-clarity on this matter.
-
-The specification does not cover any way to discover the data from the
-descriptor or viceversa. Maybe a paragraph suggesting the usage of the `Link`
-HTTP header ([IETF RFC 8288]) would suffice.
-
-Most of the time the specification assumes you are working locally and paths
-are relative to the _root_ of the package. This probably means that _a
-package_ needs to be distributed in some sort of bundle like a zip file. In
-fact, there is a pattern [Describing files inside a compressed file such as Zip]
-that reinforces this.
-
-
-## Data Package
-
-The package consists of:
-
-* Metadata that describes the structure and contents of the package.
-* Resources such as data files that form the contents of the package.
-
-A data package is at its minimum, a directory containing a `datapackage.json`
-file. Optionally, it can contain:
+Optionally, it can contain:
 
 * A `README.md` (Markdown) file.
-* A `data/` directory for data files e.
+* A `data/` directory for CSV data files.
 * A `scripts/` directory for data processing scripts.
 * Files for data and scripts directly in the root directory.
 
-The _descriptor_, `datapackage.json`, must be a valid JSON object as defined
-by [IETF RFC 4627] (and hopefully [IETF RFC 8259] as well).
+The _descriptor_ is expected to have:
 
-A descriptor provides:
+* A `profile` property with the value `tabular-data-package`.
+* A `resources` property with at least one Tabular Data Resource.
+* Optionally, contextual annotations such as title, description, licence, sources, etc.
 
-* The `resources` property with at least one Tabular Data Resource.
-* The `profile` property with the value `tabular-data-package`.
-* Optionally, contextual annotations.
+Note that the scripts are not well defined in the specification. Based on what
+I've seen in the datasets in https://github.com/datasets/ scripts tend to be
+Python scripts to process the data and achieve the result stored in `data/`.
 
-The scripts are not well defined in the specification. Judging by what I've
-seen in the datasets in https://github.com/datasets/ they tend to be Python
-scripts to process the data and achieve the result stored in `data/`.
+
+## The descriptor
+
+This section collects my notes on general aspects of the descriptor.
+
+The descriptor must be a valid JSON object as defined by [IETF RFC 4627]. I'm
+unclear whether they expect compliance with IETF RFC 4627 or whether they
+haven't come around updating the reference to the newer [IETF RFC
+8259].
+
+The specification seems to assume that the descriptor will always be
+co-located with the data in the same file system. So I'm assuming that the
+distribution of a package needs to happen as a unit, for example as a zip
+file. The authors describe a pattern [Describing files inside a compressed
+file such as Zip] that reinforces this but is somewhat unclear by reading the
+specification alone.
+
+I would've welcomed a section describing ways of distribution and discovery,
+perhaps with a complementary way using a mechanism like `Link` HTTP header
+([IETF RFC 8288]).
+
+Finally, as an extension mechanism, any property not defined in the
+specification can be used but it is up to the publisher and consumer to agree
+on their meaning using a new profile that follows the [Profiles]
+specification. What is unclear to me is how a potential extension would be
+declared given that the `profile` type is predefined if you are to comply with
+the Tabular Data Package.
+
+
+## The resource
+
+This section collects my notes on general aspects of the Tabular Data Resource.
+
+The Tabular Data Package restricts the data format to CSV but the Tabular Data
+Resource allows for embedding data as JSON directly in the descriptor file.
+This adds an extra level of complexity when processing the package for a
+marginal benefit and opens the door to express non-tabular data in a package
+that is supposed to be rigid in this matter.
+
+The data in CSV is expected to follow the [IETF RFC 4180], except that instead
+of being prescriptive on most details, the specification adopts the [CSV
+Dialect] specification to be able to describe divergences such as the encoding
+which instead of being US-ASCII by default it is expected to be UTF-8, or the
+delimiter which by default is a comma but could be anything else. I see this
+as a good thing, it adds the tolerance required given the wide range of things
+out there claiming to be CSV.
 
 
 ## Structural information
+
+This section gives an overview of the structual properties from the Tabular
+Data Resource as well as my notes on matters like types and formats. In
+sumamry, the type system seems overly complicated but not rigid enough, it's
+my least favourite part of the specification.
 
 Structural attributes are the ones you would expect from any Data Definition
 Language (DDL). The Tabular Data Resource provides:
@@ -132,7 +145,6 @@ Language (DDL). The Tabular Data Resource provides:
 * Optionally, the `encoding` property when the value is not UTF-8.
 * Optionally, the title, description, hash, licences, etc.
 * Optionally, the format (i.e.) "csv" and media type "text/csv".
-
 
 The `schema` property in turn provides:
 
@@ -148,7 +160,8 @@ And each field provides:
 
 ### Types and formats
 
-According to the specification, types are based on the type set of [JSON Schema] but not quite. It says:
+According to the specification, types are based on the type set of [JSON
+Schema] but not quite. It says:
 
 > [...] with some additions and minor modifications (cf other type lists include
 > those in Elasticsearch types)
@@ -180,27 +193,28 @@ The `bareNumber` property got me by surprise, I would've thought that would
 fall under the string type. Types are complex business indeed.
 
 Both `object` and `array` are types that feel quite foreign to CSV. Maybe they
-are there because data can be inlined in the JSON descriptor? Maybe it's
-because they found GeoJSON and TopoJSON important. Your guess is as good as
-mine.
+are there because data can be inlined in the JSON descriptor? I would've
+preferred a single `json` type or a `json` format part of the `string` type.
+It would open the door to other formats such as `markdown`, `xml`, `html` to
+name a few.
 
-The `date` type and it's extended family is difficult to understand, they
-overlap with each other and feel redundant.
+The `date` type and its extended family is difficult to understand, they
+overlap with each other and feel redundant. For example, `time`, `datetime`,
+`year` and `yearmonth` can be described using the pattern form of the `format`
+property.
 
 The `duration` type might have its place but durations may vary in length
 depending on the point of origin, that's why the [ISO 8601] has the concept of
-time interval.
+time interval which allows to pin a duration to either a start or end date.
 
-I'll end this overly long section on types with a mention to the section “Rich
-Types”. The section squeezes in a mention to RDF via the `rdfType` property
-which allows to map to a RDF class. I haven't found a complementary way to map
-a field to a RDF property though. If you are in need of RDF, [CSV on the Web]
-seems like a more robust option to me. Perhaps instead of having `rdfType` in
-here, there is an opportunity to have a profile dedicated to RDF that could be
-mixed in?
+Finally, the “Rich Types” section adds a mention to RDF via the
+`rdfType` property which allows to map to a RDF class. In all honesty, it
+feels out of place in this specification. Instead of this partial way to map
+to RDF, a dedicated profile allowing to express both class and property
+mapping would be more useful.
 
 
-## Constraints
+### Constraints
 
 Constraints are a set of properties that allow expressing constraints on
 values beyond the type and format. Most of them are familiar and
@@ -223,19 +237,6 @@ instead of allowing strings as well but I don't have any comments on either
 mechanism.
 
 
-## Contextual annotations
-
-Contextual annotations cover a diverse set of needs such as licences,
-contributors, keywords, description of the package etc. Check the [Tabular
-Data Package JSON Schema] for the full list of optional properties.
-
-Any property not defined in the specification can be used but it is up to the
-publisher and consumer to agree on their meaning using a new profile that
-follows the [Profiles] specification. What is unclear to me is how a potential
-extension would be declared given that the `profile` type is predefined if you
-are to comply with the Tabular Data Package.
-
-
 ## State of the art
 
 The team behind the Frictionless Data specifications maintain two reference
@@ -245,7 +246,8 @@ implementations:
 * [JavaScript frictionless](https://github.com/frictionlessdata/goodtables-js)
 
 At the time of the review there were some broken links and confusion between
-_GoodTables_ and _Frictionless_. According to https://github.com/frictionlessdata/frictionless-py is a renaming exercise.
+_GoodTables_ and _Frictionless_. According to [Python frictionless] it is a
+renaming exercise.
 
 That said, the Python library looks like a reliable piece of software.
 
@@ -261,9 +263,13 @@ The Frictionless Data website does a great job in putting everything you
 need to know about the Tabular Data Package in one place. Things like this
 make the difference when choosing tools and standard practices.
 
-Even with the points raised in this note, the specifications look well thought
-through, built on well-known and current standards. The [Patterns] section
-deserves a mention, I really liked the idea and the content.
+The main concern I raise in this note is the lack of consistency when building
+on top of other specifications such as JSON or JSON Schema. The divergences
+make room for more clunky implementations which is undesirable.
+
+That said, the specifications look well thought through, built on well-known
+and current standards. The [Patterns] section deserves a mention, I really
+liked the idea and the content.
 
 If I were in need to publish CSV and had the need to choose a way to do it,
 Frictionless Data would be a strong candidate to consider.
