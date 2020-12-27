@@ -52,3 +52,6 @@ and the history of PDF."
 2020-W49,2020-12-06,"This week has been about online anonymity, self-hosted archives, differential datalog, a game on politic misinformation and a collection of analogies to explain technical terms."
 2020-W50,2020-12-13,"This week has been about TeX, better CLI UX and an embedded JSON database."
 2020-W51,2020-12-20,"This week has been about Entity Resolution techniques, a game using Bevy, information visualisation and leaking models."
+2020-W52,2020-12-27,"This week has been about point-free programming, hjson, a new terminal multiplexer and open data licenses.
+
+I also published [Dive into Frictionless Data](https://www.seachess.net/notes/dive-into-frictionlessdata) as part of my research on how to publish CSV with enough contextual information."
