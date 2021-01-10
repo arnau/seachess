@@ -798,3 +798,9 @@ https://github.com/austinjones/tab-rs,tab,"A config-driven terminal multiplexer 
 [How to write a Terminal Multiplexer with Rust, Async, and Actors - Part 2](https://implaustin.hashnode.dev/how-to-write-a-terminal-multiplexer-with-rust-async-and-actors-part-2) is a nice read if you are interested in its architecture and goals.",text,2020-W52
 http://xahlee.info/comp/point-free_programing.html,What's Point-free Programing? (point-free function syntax),"An article explaining point-free programming, currying, etc.",text,2020-W52
 https://github.com/Canop/broot,Broot,A tool to navigate directories from the terminal. It plays well with [Kitty](https://sw.kovidgoyal.net/kitty/) so image previews are rendered seamlessly.,text,2020-W52
+https://nolanlawson.com/2021/01/03/options-for-styling-web-components/,Options for styling web components,An article explaining the tradeoffs of styling Web Components.,text,2021-W01
+https://www.redblobgames.com/grids/hexagons/,Hexagon Grids,"A guide on how to make hexagonal grids, implement a coordinate system, distances and more.",text,2021-W01
+https://github.com/inukshuk/sqleton,sqleton,A command-line interface to visualise SQLite database schemas.,text,2021-W01
+https://github.com/erezsh/Preql,Preql,"An interpreted, relational programming language, that specializes in database queries.",text,2021-W01
+https://www.influxdata.com/blog/apache-arrow-parquet-flight-and-their-ecosystem-are-a-game-changer-for-olap/,"Apache Arrow, Parquet, Flight and Their Ecosystem are a Game Changer for OLAP","An article introducing Apache Arrow, how its components fit together and its overall maturity.",text,2021-W01
+https://napi.rs/,napi-rs,A library for building pre-compiled NodeJS addons in Rust.,text,2021-W01
