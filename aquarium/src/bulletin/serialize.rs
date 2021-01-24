@@ -89,6 +89,8 @@ pub fn mentions_to_csv<W: Write>(tx: &Transaction, writer: W) -> Result<(), Erro
             bulletin_mention AS m
         JOIN
             bulletin_entry AS e ON e.url = m.entry_url
+        WHERE
+            e.issue_id IS NOT NULL
         ORDER BY
             e.issue_id,
             mention_url;
