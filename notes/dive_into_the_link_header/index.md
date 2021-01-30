@@ -11,7 +11,7 @@ tags:
 ---
 
 This note describes my current understanding of the `Link` header as defined
-by the [IETF RFC8288](https://tools.ietf.org/html/rfc8288).
+by the [IETF RFC8288].
 
 <!-- end -->
 
@@ -47,7 +47,7 @@ digraph g {
 
 
 Building on that, let's define that `B`, the target, has a content type
-[[RFC2046](https://tools.ietf.org/html/rfc2046)] of `text/csv`:
+[[IETF RFC2046]] of `text/csv`:
 
 ```dot
 digraph g {
@@ -126,7 +126,7 @@ Another example with multiple links:
 ```
 
 Let's twist it a bit; when the param name ends in `*` the value
-should follow the [RFC8187](https://tools.ietf.org/html/rfc8187), for example
+should follow the [IETF RFC8187], for example
 `UTF-8'en'An%20example`. With that in mind we can extend the original ABNF as:
 
 ```abnf
@@ -275,9 +275,8 @@ other than the first one must be ignored. For example:
 Now, HTTP headers are not supposed to have characters other than a subset of
 the US-ASCII encoding so `title` values are quite limited. The way to escape
 from this limitation is using the `title*` param. It expects its value to
-follow the [IETF RFC8187](https://tools.ietf.org/html/rfc8187). In short, it
-encodes three values in one: encoding, language and the title encoded with
-[percent-encoding](https://tools.ietf.org/html/rfc3986#section-2.1).
+follow the [IETF RFC8187]. In short, it encodes three values in one: encoding,
+language and the title encoded with [percent-encoding].
 
 The syntax looks like:
 
@@ -319,8 +318,7 @@ The `hreflang` param hints the **target language** attribute. Multiple
 `hreflang` param hint that the target resource is available in these
 languages.
 
-The value is expected to conform to the [IETF
-RFC5646](https://tools.ietf.org/html/rfc5646) language tag.
+The value is expected to conform to the [IETF RFC5646] language tag.
 
 ```rfc8288
 </spoons/>; rel="chapter"; hreflang="de"; hreflang="en"
@@ -375,3 +373,10 @@ to the metadata with a `rel="describedby"`.
 * [IETF RFC8288](https://tools.ietf.org/html/rfc8288). Web linking.
 * [IANA relation type registry](https://www.iana.org/assignments/link-relations/link-relations.xhtml).
 * [W3C RDF 1.1](https://www.w3.org/TR/rdf11-concepts/).
+
+
+[IETF RFC8288]: https://tools.ietf.org/html/rfc8288
+[IETF RFC8187]: https://tools.ietf.org/html/rfc8187
+[IETF RFC2046]: https://tools.ietf.org/html/rfc2046
+[percent-encoding]: https://tools.ietf.org/html/rfc3986#section-2.1
+[IETF RFC5646]: https://tools.ietf.org/html/rfc5646
