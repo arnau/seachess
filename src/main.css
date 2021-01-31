@@ -53,6 +53,7 @@ nav > ul > li > a {
   min-width: 80px;
   padding: 12px 12px 6px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
 }
