@@ -31,3 +31,57 @@ th {
 td:first-child {
   border-right: 2px solid black;
 }
+
+
+/* Nav */
+
+nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-flex;
+}
+
+nav > ul > li > a {
+  color: black;
+  display: inline-block;
+  line-height: 1.75;
+  min-width: 80px;
+  padding: 12px 12px 6px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+nav > ul > li > a span {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+nav > ul > li > a span:hover::after {
+  content: " ";
+  min-width: 35%;
+  border-bottom: 2px solid #FF4477;
+}
+
+nav > ul > li > a[aria-selected="true"] span::after {
+  content: " ";
+  min-width: 35%;
+  border-bottom: 2px solid #0088FF;
+}
+
+/* Home: banner */
+.banner {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 1.1rem;
+}
+
+.banner > p {
+  padding: 16px;
+  margin: 0;
+}

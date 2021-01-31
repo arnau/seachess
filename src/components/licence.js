@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles'
+import { useStaticQuery, graphql } from 'gatsby'
 import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles(theme => ({
@@ -12,12 +13,22 @@ const useStyles = makeStyles(theme => ({
 
 function Licence() {
   const classes = useStyles()
+  const { settings } = useStaticQuery(graphql`
+    query Licence {
+      settings {
+        licence {
+          name
+          url
+        }
+      }
+    }
+  `)
 
   return (
     <Typography component="p" variant="body2" className={classes.root}>
         Licensed under a <a
         rel="license"
-        href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        href={settings.licence.url}>{settings.licence.name}</a>.
     </Typography>
   )
 }

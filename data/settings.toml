@@ -4,6 +4,22 @@ description = "Notes, drawings and other activity from Arnau Siches"
 url = "https://www.seachess.net"
 copyright = "2020, Arnau Siches"
 
+[licence]
+url = "http://creativecommons.org/licenses/by-nc/4.0/"
+name = "Creative Commons Attribution-NonCommercial 4.0 International License"
+
+[[navigation]]
+url = "/notes/"
+label = "Notes"
+
+[[navigation]]
+url = "/sketches/"
+label = "Sketches"
+
+[[navigation]]
+url = "/bulletins/"
+label = "Bulletins"
+
 [author]
 id = "arnau"
 name = "Arnau Siches"

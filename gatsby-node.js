@@ -56,13 +56,25 @@ exports.createSchemaCustomization = ({ actions }) => {
       url: String
     }
 
+    type Licence {
+      name: String!
+      url: String!
+    }
+
+    type Navigation {
+      label: String!
+      url: String!
+    }
+
     type Settings implements Node @dontInfer {
       title: String!
       description: String
       url: String
       author: Author
       copyright: String
+      licence: Licence
       tools: [Tool]
+      navigation: [Navigation]
     }
 
     type Author implements Node @childOf(types: ["Settings", "Sketch"]) {

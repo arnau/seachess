@@ -44,15 +44,12 @@ function Index({location, data}) {
 
   return (
     <Page location={location.pathname} title="Home">
-      <Paper variant="outlined">
-        <CardContent>
-          <Typography>
-            <strong>Seachess</strong> is where I publish my <Link
-              to="/notes/">notes</Link> and <Link to="/sketches/">sketches</Link>.
-            Check out the <Link to="/about/">about</Link> to know more about me.
-          </Typography>
-        </CardContent>
-      </Paper>
+      <div className="banner">
+        <p>
+          <strong>Seachess</strong> is where I publish my <a href="/notes/">notes</a> and <a href="/sketches/">sketches</a>.
+          Check out the <a href="/about/">about</a> to know more about me.
+        </p>
+      </div>
 
       <Heading>Recent</Heading>
 
