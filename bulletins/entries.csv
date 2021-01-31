@@ -816,3 +816,9 @@ https://www.sqlfluff.com/,SQLfluff,A command-line tool to lint SQL.,text,2021-W0
 https://nodes.io/,Nodes,A tool to explore ideas with visual flow programming.,text,2021-W03
 https://boris-marinov.github.io/category-theory-illustrated/,Category Theory Illustrated,A book on Category Theory from a non-mathematical point of view.,text,2021-W03
 https://writing.kemitchell.com/2021/01/21/Open-Source-Discrimination.html,Open Source is Discrimination,"An article on the changes in meaning of 'open' in open source licensing, discrimination, oppression and discernment.",text,2021-W03
+https://aftix.xyz/home/bacon/,Scientific Computing in Rust,"An article introducing [bacon-sci](https://github.com/aftix/bacon), a [SciPy](https://www.scipy.org/) replacement in Rust.",text,2021-W04
+https://sr.ht/~gpanders/ijq/,ijq,An interactive version of jq to query JSON from the command-line.,text,2021-W04
+https://cacm.acm.org/magazines/2021/2/250085-a-review-of-the-semantic-web-field/fulltext,A Review of the Semantic Web Field,An article describing the timeline since early 2000s on the semantic web research field.,text,2021-W04
+https://staticsitegenerators.net/,Static Site Generators,A collection of static site generators. Similar and yet different from [Jamstack Site Generators]](https://jamstack.org/generators/).,text,2021-W04
+https://github.com/jerryscript-project/jerryscript,JerryScript,A lightweight JavaScript engine for resource-constrained devices such as microcontrollers. It can run on devices with less than 64 KB of RAM and less than 200 KB of flash memory.,text,2021-W04
+http://doc.replicated.cc/%5EWiki/strictmark.sm,StrictMark: rational Markdown,A specification for a strict subset of Markdown aiming to implement all features with the shortest formal grammar possible.,text,2021-W04
