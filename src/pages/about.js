@@ -19,8 +19,9 @@ function About({ location, data }) {
 
       <p>You can find some of my other activity in {' '}
         <Link href={settings.author.github.url}>GitHub</Link>, {' '}
-        <Link href={settings.author.keybase.url}>Keybase</Link> and {' '}
-        <Link href={settings.author.twitter.url}>Twitter</Link>.</p>
+        <Link href={settings.author.keybase.url}>Keybase</Link>, {' '}
+        <Link href={settings.author.twitter.url}>Twitter</Link> and {' '}
+        <Link href={settings.author.mastodon.url}>Mastodon</Link>.</p>
 
       <h2>About this website</h2>
       <p>This website works thanks to the impressive work done by many people

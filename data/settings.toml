@@ -10,6 +10,7 @@ name = "Arnau Siches"
 github = {id = "github", name = "@arnau", url = "https://github.com/arnau"}
 twitter = {id = "twitter", name = "@arnau_siches", url = "https://www.twitter.com/arnau_siches"}
 keybase = {id = "keybase", name = "@arnau", url = "https://keybase.io/arnau"}
+mastodon = {id = "mastodon", name = "@arnau", url = "https://mastodon.xyz/@arnau"}
 
 [[tools]]
 id = "gatsby"
