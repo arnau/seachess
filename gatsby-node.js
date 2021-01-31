@@ -49,6 +49,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       url: String
     }
 
+    type Account {
+      id: ID!
+      service_name: String!
+      name: String!
+      url: String
+    }
+
     type Settings implements Node @dontInfer {
       title: String!
       description: String
@@ -61,9 +68,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type Author implements Node @childOf(types: ["Settings", "Sketch"]) {
       id: ID!
       name: String!
-      github: Tool
-      twitter: Tool
-      keybase: Tool
+      accounts: [Account]
     }
   `
 

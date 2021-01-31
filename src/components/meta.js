@@ -14,7 +14,10 @@ function Meta({ description, meta, title }) {
           description
           author {
             name
-            twitter { name }
+            accounts {
+              id
+              name
+            }
           }
         }
       }
@@ -22,10 +25,11 @@ function Meta({ description, meta, title }) {
   )
 
   const metaDescription = description || settings.description
+  const twitter = settings.author.accounts.find(({id}) => id == 'twitter')
   const metadata = {
     description: metaDescription,
     'twitter:card': 'summary',
-    'twitter:creator': settings.author.twitter.name,
+    'twitter:creator': twitter.name,
     'og:title': title,
     'og:description': metaDescription,
   }

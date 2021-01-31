@@ -13,15 +13,18 @@ function About({ location, data }) {
   return (
     <Page location={location.pathname} title="About">
       <Heading>About</Heading>
-      <p>My name is Arnau Siches; this website is the place where I put some of my <Link
-        to="/notes/">notes</Link> and <Link
-        to="/sketches/">sketches</Link>.</p>
+      <p>Hi, I'm Arnau Siches; this website is the place where I put some of my <Link
+        to="/notes/">notes</Link>, <Link
+        to="/sketches/">sketches</Link> and where I keep record of the <Link
+        to="/bulletins/">bulletins</Link> I send every week to my subscribers.</p>
 
-      <p>You can find some of my other activity in {' '}
-        <Link href={settings.author.github.url}>GitHub</Link>, {' '}
-        <Link href={settings.author.keybase.url}>Keybase</Link>, {' '}
-        <Link href={settings.author.twitter.url}>Twitter</Link> and {' '}
-        <Link href={settings.author.mastodon.url}>Mastodon</Link>.</p>
+      <p>You can find some of my other activity in</p>
+      <ul>
+        {
+          settings.author.accounts.map(account => <li key={account.id}><Link
+            href={account.url}>{account.service_name}</Link></li>)
+        }
+      </ul>
 
       <h2>About this website</h2>
       <p>This website works thanks to the impressive work done by many people
@@ -40,16 +43,6 @@ function About({ location, data }) {
       <p>This website uses <a
         href="https://panelbear.com/docs/what-we-collect/">Panel Bear</a> to collect anonymous usage.</p>
 
-      <h2>What's up with this silly name</h2>
-
-      <p>
-        <strong>seachess</strong> kind of sounds like my surname <strong>siches</strong> and well, {' '}
-          I like silly names. Previous incarnations of this website had other silly names: {' '}
-        <code>artnau.com</code>, {' '}
-        <code>arenoic.net</code>, {' '}
-        <code>esbudellat.net</code> and {' '}
-        <code>spoontaneous.net</code>.
-      </p>
     </Page>
   )
 }
@@ -68,16 +61,9 @@ export const query = graphql`
       title
       author {
         name
-        github {
-          name
-          url
-        }
-        twitter {
-          name
-          url
-        }
-        keybase {
-          name
+        accounts {
+          id
+          service_name
           url
         }
       }
@@ -86,6 +72,7 @@ export const query = graphql`
         name
         url
       }
+
     }
   }
 `

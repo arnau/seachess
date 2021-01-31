@@ -7,10 +7,37 @@ copyright = "2020, Arnau Siches"
 [author]
 id = "arnau"
 name = "Arnau Siches"
-github = {id = "github", name = "@arnau", url = "https://github.com/arnau"}
-twitter = {id = "twitter", name = "@arnau_siches", url = "https://www.twitter.com/arnau_siches"}
-keybase = {id = "keybase", name = "@arnau", url = "https://keybase.io/arnau"}
-mastodon = {id = "mastodon", name = "@arnau", url = "https://mastodon.xyz/@arnau"}
+
+[[author.accounts]]
+id = "github"
+service_name = "Github"
+name = "@arnau"
+url = "https://github.com/arnau"
+
+[[author.accounts]]
+id = "gitlab"
+service_name = "Gitlab"
+name = "@arnau"
+url = "https://gitlab.com/arnau"
+
+[[author.accounts]]
+id = "twitter"
+service_name = "Twitter"
+name = "@arnau_siches"
+url = "https://www.twitter.com/arnau_siches"
+
+[[author.accounts]]
+id = "keybase"
+service_name = "Keybase"
+name = "@arnau"
+url = "https://keybase.io/arnau"
+
+[[author.accounts]]
+id = "mastodon"
+service_name = "Mastodon"
+name = "@arnau"
+url = "https://mastodon.xyz/@arnau"
+
 
 [[tools]]
 id = "gatsby"
