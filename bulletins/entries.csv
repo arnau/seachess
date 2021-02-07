@@ -822,3 +822,11 @@ https://cacm.acm.org/magazines/2021/2/250085-a-review-of-the-semantic-web-field/
 https://staticsitegenerators.net/,Static Site Generators,A collection of static site generators. Similar and yet different from [Jamstack Site Generators]](https://jamstack.org/generators/).,text,2021-W04
 https://github.com/jerryscript-project/jerryscript,JerryScript,A lightweight JavaScript engine for resource-constrained devices such as microcontrollers. It can run on devices with less than 64 KB of RAM and less than 200 KB of flash memory.,text,2021-W04
 http://doc.replicated.cc/%5EWiki/strictmark.sm,StrictMark: rational Markdown,A specification for a strict subset of Markdown aiming to implement all features with the shortest formal grammar possible.,text,2021-W04
+https://if50.substack.com/p/introduction,50 Years of Text Games,An article introducing an ongoing series on the history of text-based games.,text,2021-W05
+https://asdf-vm.com/,asdf,"A tool to manage multiple runtime versions for Node.js, Python, Ruby, Elixir and more.
+
+If you happen to use MacOS and Python, this helps avoid the mess you can get into by using Python installed with [Homebrew](https://brew.sh/).",text,2021-W05
+https://neilmitchell.blogspot.com/2020/11/turing-incomplete-languages.html,Turing Incomplete Languages,An article on the downsides of Turing incomplete languages.,text,2021-W05
+https://www.flagsmith.com/podcast/05-heather-meeker-oss-capital,"Interview with Heather Meeker: Founding Partner, OSS Capital",An interview on software licensing. An interesting opinion to listen to if you've been following the drama Elastic vs Amazon.,text,2021-W05
+https://supunkavinda.blog/disqus,"Disqus, the dark commenting system",An article analysing Disqus and the consequences of trusting the service.,text,2021-W05
+https://sheltered-objections.blogspot.com/2021/02/i-have-been-listening-regularly-for-few.html,The Skeptics guide to Artificial Intelligence,An article aiming to bring some perspective on the meaning of intelligence in “Artificial Intelligence”.,text,2021-W05
