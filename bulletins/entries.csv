@@ -830,3 +830,9 @@ https://neilmitchell.blogspot.com/2020/11/turing-incomplete-languages.html,Turin
 https://www.flagsmith.com/podcast/05-heather-meeker-oss-capital,"Interview with Heather Meeker: Founding Partner, OSS Capital",An interview on software licensing. An interesting opinion to listen to if you've been following the drama Elastic vs Amazon.,text,2021-W05
 https://supunkavinda.blog/disqus,"Disqus, the dark commenting system",An article analysing Disqus and the consequences of trusting the service.,text,2021-W05
 https://sheltered-objections.blogspot.com/2021/02/i-have-been-listening-regularly-for-few.html,The Skeptics guide to Artificial Intelligence,An article aiming to bring some perspective on the meaning of intelligence in “Artificial Intelligence”.,text,2021-W05
+https://browser.engineering/,Web Browser Engineering,A book on how web browsers work by building a simple web browser in Python.,text,2021-W06
+https://www.noemamag.com/the-thoughts-the-civilized-keep/,The Thoughts The Civilized Keep,"An article on unthinking intelligence, machines and humans. A reflection on the current improvements in the artificial intelligence.",text,2021-W06
+https://robotmoon.com/ssh-tunnels/,A visual guide to SSH tunnels,An article illustrating the common use cases for using SSH tunnels.,text,2021-W06
+https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610,"Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies",An article explaining the history of the Dependency Confusion attack and the principles behind it.,text,2021-W06
+https://icyphox.sh/blog/nvim-lua/,Configuring Neovim using Lua,An article exploring the unstable Lua interface to configure Neovim.,text,2021-W06
+https://litestream.io/blog/why-i-built-litestream/,Why I Built Litestream,A tool to replicate SQLite databases to Amazon S3.,text,2021-W06
