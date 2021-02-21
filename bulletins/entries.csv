@@ -836,3 +836,9 @@ https://robotmoon.com/ssh-tunnels/,A visual guide to SSH tunnels,An article illu
 https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610,"Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies",An article explaining the history of the Dependency Confusion attack and the principles behind it.,text,2021-W06
 https://icyphox.sh/blog/nvim-lua/,Configuring Neovim using Lua,An article exploring the unstable Lua interface to configure Neovim.,text,2021-W06
 https://litestream.io/blog/why-i-built-litestream/,Why I Built Litestream,A tool to replicate SQLite databases to Amazon S3.,text,2021-W06
+https://www.joshwcomeau.com/animation/css-transitions/,An Interactive Guide to CSS Transitions,A tutorial laying out the fundamental concepts to understand how CSS transitions work.,text,2021-W07
+https://archive.org/details/softwarelibrary_msdos_games,Software Library: MS-DOS Games,A collection of playable MS-DOS Games.,text,2021-W07
+https://radu-matei.com/blog/practical-guide-to-wasm-memory/,A practical guide to WebAssembly memory,An article diving into WebAssembly memory management.,text,2021-W07
+https://david-peter.de/cube-composer/,Cube composer,A puzzle game to learn the fundamentals of functional programming.,text,2021-W07
+https://cuelang.org/,CUE Data Constraint Language,"A data constraint language which aims to simplify tasks involving defining and using data. It is a superset of JSON, allowing users familiar with JSON to get started quickly.",text,2021-W07
+https://www.mint-lang.com/,Mint,A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/).,text,2021-W07
