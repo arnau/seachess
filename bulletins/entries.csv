@@ -842,3 +842,13 @@ https://radu-matei.com/blog/practical-guide-to-wasm-memory/,A practical guide to
 https://david-peter.de/cube-composer/,Cube composer,A puzzle game to learn the fundamentals of functional programming.,text,2021-W07
 https://cuelang.org/,CUE Data Constraint Language,"A data constraint language which aims to simplify tasks involving defining and using data. It is a superset of JSON, allowing users familiar with JSON to get started quickly.",text,2021-W07
 https://www.mint-lang.com/,Mint,A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/).,text,2021-W07
+https://shkspr.mobi/blog/2017/03/kyli-because-it-is-superior-to-json/,KYLI – because it is superior to JSON,An article exploring an alternative format to JSON using control characters instead of braces and commas. A fun read!,text,2021-W08
+https://medium.com/the-polyglot-programmer/what-would-sqlite-look-like-if-written-in-rust-part-1-4a84196c217d,What would SQLite look like if written in Rust?,A series aiming to unserstand how SQLite works by writting a clone in Rust.,text,2021-W08
+https://utteranc.es/,utterances,A widget built on top of Github issues to add a comment system in your website.,text,2021-W08
+https://netflixtechblog.com/beyond-rest-1b76f7c20ef6,Beyond REST: Rapid Development with GraphQL Microservices,"An article showcasing how Netflix uses GraphQL for prototyping services with a enterpise data architecture lens.
+
+The narrative of having a single graph for the whole enterprise is far from new, but it might be more successful than the RDF, SPARQL, Linked Data fragments pile of complexity. Or, a step towards the promised land of flexibility that Linked Data has been aiming to provide since forever.
+
+The [Principled GraphQL](https://principledgraphql.com/) is a good complementary read.",text,2021-W08
+https://choubey.gitbook.io/internals-of-deno/,The Internals of Deno,A book on how [Deno](https://deno.land/) works.,text,2021-W08
+https://www.ledger.com/academy/what-are-nft,What are Non-Fungible Tokens (NFT)?,"An article explaining what are NFTs, fungibe digital assets and more. Spoiler: blockchain rabbithole.",text,2021-W08
