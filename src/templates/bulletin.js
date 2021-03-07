@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-
-import sanitizeHtml from 'sanitize-html'
+import { stripHtml } from 'string-strip-html'
 import GithubSlugger from 'github-slugger'
 
 import Md from'../components/md'
@@ -58,7 +57,7 @@ function Bulletin({location, data}) {
   return (
     <Layout location="/bulletins/">
       <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
-        <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
+        <Meta title={stripHtml(title).result} />
         <div>
           <MetaNote date={publication_date} author={author.name} className={classes.metanote} />
 

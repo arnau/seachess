@@ -54,15 +54,15 @@ function Index({location, data}) {
       <Heading>Recent</Heading>
 
       {
-        data.bulletin.edges.map(({ node }) =>
-          <ExcerptNote key={node.id}
+        data.bulletin.edges.map(({ node }) => {
+          return <ExcerptNote key={node.id}
             title={`Issue ${node.id}`}
             href={node.slug}
             date={node.publication_date}
             author={settings.author.name}>
-            <p><Md raw={node.description} /></p>
+            <Md raw={node.summary} />
           </ExcerptNote>
-        )
+        })
       }
       <Group data={data.notes.edges} settings={settings} />
 

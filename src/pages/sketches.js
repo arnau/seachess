@@ -6,6 +6,7 @@ import Gallery from 'react-photo-gallery'
 import Link from '../components/link'
 import Page from '../components/page'
 import Heading from '../components/heading'
+import { getSrc, getSrcSet } from 'gatsby-plugin-image'
 
 function Thumbnail({ photo, margin, key }) {
   const imgStyle = { margin: margin, display: 'block' }
@@ -35,7 +36,12 @@ function List({ set }) {
   return (
     <Gallery
       photos={set.map(({ node }) => {
-        const { src, srcSet, sizes, aspectRatio } = node.image.childImageSharp.fluid
+        const src = getSrc(node.image)
+        const srcSet = getSrcSet(node.image)
+        const image = node.image.childImageSharp.gatsbyImageData
+        const { width, height } = image
+        const aspectRatio = width / height
+        const sizes = image.images.fallback.sizes
 
         return ({
           id: node.id,
@@ -85,9 +91,7 @@ export const query = graphql`
           caption
           image {
             childImageSharp {
-              fluid(fit: CONTAIN, maxWidth: 250) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: CONSTRAINED, breakpoints: 250)
             }
           }
         }

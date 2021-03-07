@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
 import rehypeReact from 'rehype-react'
-import sanitizeHtml from 'sanitize-html'
+import { stripHtml } from 'string-strip-html'
 
 import Layout from '../components/layout'
 import Licence from '../components/licence'
@@ -39,7 +39,7 @@ function Note({location, data}) {
   return (
     <Layout location="/notes/">
       <article className={classes.root} resource={location.pathname} typeof="BlogPosting">
-        <Meta title={sanitizeHtml(title, {allowedTags: [], allowedAttributes: {}})} />
+        <Meta title={stripHtml(title).result} />
         <div>
           <MetaNote date={meta.date} author={meta.author.name} className={classes.metanote} />
 

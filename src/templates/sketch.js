@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
-import Img from 'gatsby-image'
+import { GatsbyImage, getSrc } from 'gatsby-plugin-image'
 
 import Link from '../components/link'
 import Licence from '../components/licence'
@@ -89,9 +89,11 @@ const useStyles = makeStyles(theme => ({
 function Sketch({ data }) {
   const classes = useStyles()
   const { settings, sketch }= data
-  const { fluid, fixed } = sketch.image.childImageSharp
-  const width = fluid.aspectRatio > 1 ? 'lg' : 'md'
-  const url = settings.url + fixed.src
+  const image = sketch.image.childImageSharp.gatsbyImageData
+  const { width, height } = image
+  const aspectRatio = width / height
+  const maxwidth = aspectRatio > 1 ? 'lg' : 'md'
+  const url = settings.url + getSrc(sketch.image)
   const date = dayjs(sketch.date).format('MMMM D, YYYY')
 
   const meta = {
@@ -102,11 +104,11 @@ function Sketch({ data }) {
   }
 
   return (
-    <Layout location="/sketches/" maxWidth={width}>
+    <Layout location="/sketches/" maxWidth={maxwidth}>
       <Meta title={sketch.caption} meta={ meta } />
       <div className={classes.root}>
         <MetaSketch tools={sketch.tools} date={sketch.date} className={classes.meta} />
-        <Img alt={sketch.caption} fluid={fluid} />
+        <GatsbyImage alt={sketch.caption} image={data.sketch.image.childImageSharp.gatsbyImageData} />
         <Licence />
       </div>
     </Layout>
@@ -133,13 +135,7 @@ export const query = graphql`
       }
       image {
         childImageSharp {
-          fixed(fit: COVER, width: 300) {
-            src
-          }
-          fluid(fit: CONTAIN, maxWidth: 1216) {
-            ...GatsbyImageSharpFluid
-            originalImg
-          }
+          gatsbyImageData(layout: CONSTRAINED, breakpoints: 1216)
         }
       }
     }
