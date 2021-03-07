@@ -852,3 +852,13 @@ The narrative of having a single graph for the whole enterprise is far from new,
 The [Principled GraphQL](https://principledgraphql.com/) is a good complementary read.",text,2021-W08
 https://choubey.gitbook.io/internals-of-deno/,The Internals of Deno,A book on how [Deno](https://deno.land/) works.,text,2021-W08
 https://www.ledger.com/academy/what-are-nft,What are Non-Fungible Tokens (NFT)?,"An article explaining what are NFTs, fungibe digital assets and more. Spoiler: blockchain rabbithole.",text,2021-W08
+https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/,Server-sent events: a simple way to stream events from a server,An article introducing [server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html).,text,2021-W09
+https://github.com/mkhan45/CalcuLaTeX,CalcuLaTeX,A calculator using to LaTeX expressions.,text,2021-W09
+https://dev.to/jh3y/css-in-3d-learning-to-think-in-cubes-instead-of-boxes-4ank,CSS in 3D: Learning to think in Cubes Instead of Boxes,A tutorial on how to use cuboids to approach 3D CSS.,text,2021-W09
+https://www.ordnancesurvey.co.uk/newsroom/blog/useful-tools-for-web-mapping,Useful Tools For Web Mapping,"An article recommending tools to get started with web spatial mapping (collect, manipulate, analyse, store, access and visualise).
+
+The recommended sources are limited to their own offering for the UK but the rest of sections are worthwile regardless of where you are located.
+
+If you are intersted in the UK geodata infrastructure you might find [Address Matters](https://storymaps.arcgis.com/stories/2e8445a7f0714973826e60a823224326) insightful.",text,2021-W09
+https://dvc.org/,DVC,A Python layer on top of Git to version control for machine learning projects.,text,2021-W09
+https://toolbox.hyperisland.com/,Hyperisland Toolbox,A resource kit to apply creative collaboration in your team or organization.,text,2021-W09
