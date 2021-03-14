@@ -862,3 +862,15 @@ The recommended sources are limited to their own offering for the UK but the res
 If you are intersted in the UK geodata infrastructure you might find [Address Matters](https://storymaps.arcgis.com/stories/2e8445a7f0714973826e60a823224326) insightful.",text,2021-W09
 https://dvc.org/,DVC,A Python layer on top of Git to version control for machine learning projects.,text,2021-W09
 https://toolbox.hyperisland.com/,Hyperisland Toolbox,A resource kit to apply creative collaboration in your team or organization.,text,2021-W09
+https://github.com/roapi/roapi,ROAPI,"A tool to create read-only APIs for static datasets from a range of sources such as Google Spreadsheets, Airtable, files or S3. The result can be queried using SQL, GraphQL and REST.
+
+The project is still in it's early days but shows lots of promise in the greenfield of static APIs.",text,2021-W10
+https://avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html,Finding Mona Lisa in the Game of Life,An article on the experiment of recreating a low-fidelity version of a picture using the game of life automata.,text,2021-W10
+https://benschmidt.org/post/2020-01-15/2020-01-15-webgpu/,Javascript and the next decade of data programming,"An article arguing the reasons why JavaScript seems to be in a good position in the data programming space.
+
+The article conflates 'data programming' with 'data visualisation' and the speed of JavaScript with serialisation formats like ApacheArrow (as opposed to GeoJSON). Putting that aside, it's a nice read that shows the pervasiveness of the Web stack as the universal display.",text,2021-W10
+https://www.quantamagazine.org/new-algorithm-breaks-speed-limit-for-solving-linear-equations-20210308/,New Algorithm Breaks Speed Limit for Solving Linear Equations,An article on a new algorithm that uses random seeds to solve linear equations iteratively faster than with matrix multiplication.,text,2021-W10
+https://www.stelayordanova.com/blog/the-violin-plot/,The Violin Plot,"An article explaining how to use violin plots. Although it uses the Flourish service all the way it provides a couple of alternatives for tools such as d3.js, matplotlib, etc.",text,2021-W10
+https://nesslabs.com/what-gets-measured-gets-managed,The fallacy of “what gets measured gets managed”,"An article digging the likely origins of a misattributed quote from Peter Drucker and a quick reflection on why what the quote suggests can harm your organisation.
+
+I don't think this article says anything particularly new but it is short and sharp. I'm probably biased given that recently I have had to do performance reviews and get into the [Theory of Change](https://www.theoryofchange.org/what-is-theory-of-change/).",text,2021-W10
