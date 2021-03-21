@@ -874,3 +874,11 @@ https://www.stelayordanova.com/blog/the-violin-plot/,The Violin Plot,"An article
 https://nesslabs.com/what-gets-measured-gets-managed,The fallacy of “what gets measured gets managed”,"An article digging the likely origins of a misattributed quote from Peter Drucker and a quick reflection on why what the quote suggests can harm your organisation.
 
 I don't think this article says anything particularly new but it is short and sharp. I'm probably biased given that recently I have had to do performance reviews and get into the [Theory of Change](https://www.theoryofchange.org/what-is-theory-of-change/).",text,2021-W10
+https://amplication.com/,Amplication,"A development tool to develop low-code Node.js applications. The generated server exposes a GraphQL API and the generated client uses React with Apollo.
+
+The tool is in alpha but looking promising already.",text,2021-W11
+https://www.aleksandrhovhannisyan.com/blog/why-i-dont-like-tailwind-css/,Why I Don't Like Tailwind CSS,An article with an in-depth analysis on why Tailwind CSS is not delivering what promises and actually makes it worse.,text,2021-W11
+https://www.amzi.com/articles/prolog_under_the_hood.htm,Prolog Under the Hood,An article describing how Prolog works so you gain the right intuitions. Hint: It's not about logic programming but unification and backtracking.,text,2021-W11
+https://datasciencejuliahackers.com/,Data Science in Julia for Hackers,"A book with a gentle introduction to how to use [Julia](https://julialang.org/) on Bayesian statistics, forecasting, machine learning, etc.",text,2021-W11
+https://dev.to/bornfightcompany/using-google-sheets-as-a-simple-database-with-papa-parse-2k7o,Using Google Sheets as a simple database with Papa Parse,A quick tutorial on using Google Sheets as a CSV data source. This tutorial uses JavaScript and Vue but it's easily translatable to any other technical stack.,text,2021-W11
+https://dev.to/georgedoescode/a-generative-svg-starter-kit-5cm1,A Generative SVG Starter Kit,A tutorial on generative art using [SVG.js](https://svgjs.com/). A great step by step to get started on computer-based generative art.,text,2021-W11
