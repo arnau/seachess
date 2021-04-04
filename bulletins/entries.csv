@@ -888,3 +888,13 @@ https://antonz.org/sqlite-is-not-a-toy-database/,SQLite is not a toy database,An
 https://www.movable-type.co.uk/scripts/latlong.html,"Calculate distance, bearing and more between Latitude/Longitude points",A tutorial presenting a variety of calculations for latitude/longitude points with formulas and JavaScript code examples included.,text,2021-W12
 https://sq.io/,Sq,"A tool to inspect, query, join, import, and export data. Like [jq](https://stedolan.github.io/jq/) but for relational data, whether that data is in a document or database.",text,2021-W12
 https://ianthehenry.com/posts/getting-drunk-with-datalog/,Getting Drunk with Datalog,A tutorial on getting started with Datalog.,text,2021-W12
+https://excavating.ai/,The Politics of Images in Machine Learning Training Sets,An essay on the impact of the intentional or unintentional choices made while composing training sets on the results of a Machine Learning model. Although it centres in visual recognition the fundamental reality of taxonomies being an arbitrary slicing of reality for a very narrow context can be seen everywhere.,text,2021-W13
+https://wezfurlong.org/wezterm/,Wezterm,"A GPU-accelerated terminal emulator written in Rust with multiplex terminal panes, tabs and windows a-la tmux.
+
+Wezterm is comparable to [Kitty](https://sw.kovidgoyal.net/kitty/) in terms of features. A compelling difference is the choice of using Lua for the configuration instead of a custom language.",text,2021-W13
+https://github.com/bartveneman/wallace-cli,Wallace CLI,A tool to analyse CSS from the terminal. Also interesting for complementary analysis: [Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/) and [CSS Specificity Graph Generator](https://jonassebastianohlsson.com/specificity-graph/),text,2021-W13
+https://blog.bitsrc.io/using-gpu-to-improve-javascript-performance-e5a41c2e129b,Using GPU to Improve JavaScript Performance,A tutorial on [GPU.js](https://gpu.rocks/) to speed things up on both the Web and Nodejs.,text,2021-W13
+https://blog.nelhage.com/post/some-opinionated-sql-takes/,Some opinionated thoughts on SQL databases,"An article analysing the downsides of SQL databases. A mix of issues with SQL itself, the query planner, type systems and of course migrations.",text,2021-W13
+https://rory.bio/posts/git-plan/,Is there a better git workflow for context switching?,"An article exploring a version-controlled workflow to reduce the friction of the single-task mindset that tooling like Git encourage.
+
+Although the idea sounds interesting, I'm not convinced it is a real problem or that the proposed solution actually mitigates anything without the missing self-discipline that causes the original problem.",text,2021-W13
