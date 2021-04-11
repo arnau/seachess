@@ -842,59 +842,21 @@ https://radu-matei.com/blog/practical-guide-to-wasm-memory/,A practical guide to
 https://david-peter.de/cube-composer/,Cube composer,A puzzle game to learn the fundamentals of functional programming.,text,2021-W07
 https://cuelang.org/,CUE Data Constraint Language,"A data constraint language which aims to simplify tasks involving defining and using data. It is a superset of JSON, allowing users familiar with JSON to get started quickly.",text,2021-W07
 https://www.mint-lang.com/,Mint,A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/).,text,2021-W07
-https://shkspr.mobi/blog/2017/03/kyli-because-it-is-superior-to-json/,KYLI – because it is superior to JSON,An article exploring an alternative format to JSON using control characters instead of braces and commas. A fun read!,text,2021-W08
-https://medium.com/the-polyglot-programmer/what-would-sqlite-look-like-if-written-in-rust-part-1-4a84196c217d,What would SQLite look like if written in Rust?,A series aiming to unserstand how SQLite works by writting a clone in Rust.,text,2021-W08
-https://utteranc.es/,utterances,A widget built on top of Github issues to add a comment system in your website.,text,2021-W08
-https://netflixtechblog.com/beyond-rest-1b76f7c20ef6,Beyond REST: Rapid Development with GraphQL Microservices,"An article showcasing how Netflix uses GraphQL for prototyping services with a enterpise data architecture lens.
+https://github.com/elkowar/pipr,Pipr,A tool to interactively write shell pipelines.,text,2021-W14
+https://obsidian.md/,Obsidian,"An offline-first knowledge base tool on top of a folder of Markdown files.
 
-The narrative of having a single graph for the whole enterprise is far from new, but it might be more successful than the RDF, SPARQL, Linked Data fragments pile of complexity. Or, a step towards the promised land of flexibility that Linked Data has been aiming to provide since forever.
+I've been using this tool for the last few months and although it's still not a mature tool it has become my main tool to manage my knowledge base both at home and at work.
 
-The [Principled GraphQL](https://principledgraphql.com/) is a good complementary read.",text,2021-W08
-https://choubey.gitbook.io/internals-of-deno/,The Internals of Deno,A book on how [Deno](https://deno.land/) works.,text,2021-W08
-https://www.ledger.com/academy/what-are-nft,What are Non-Fungible Tokens (NFT)?,"An article explaining what are NFTs, fungibe digital assets and more. Spoiler: blockchain rabbithole.",text,2021-W08
-https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/,Server-sent events: a simple way to stream events from a server,An article introducing [server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html).,text,2021-W09
-https://github.com/mkhan45/CalcuLaTeX,CalcuLaTeX,A calculator using to LaTeX expressions.,text,2021-W09
-https://dev.to/jh3y/css-in-3d-learning-to-think-in-cubes-instead-of-boxes-4ank,CSS in 3D: Learning to think in Cubes Instead of Boxes,A tutorial on how to use cuboids to approach 3D CSS.,text,2021-W09
-https://www.ordnancesurvey.co.uk/newsroom/blog/useful-tools-for-web-mapping,Useful Tools For Web Mapping,"An article recommending tools to get started with web spatial mapping (collect, manipulate, analyse, store, access and visualise).
+That said, I couldn't use it without a few plugins to enhance it:
 
-The recommended sources are limited to their own offering for the UK but the rest of sections are worthwile regardless of where you are located.
+- [Dataview](https://github.com/blacksmithgu/obsidian-dataview), to query the knowledge base and display results as tables or lists.
+- [Mind Map](https://github.com/lynchjames/obsidian-mind-map), to display a mind map out of a Markdown structure.
+- [Sliding Panes](https://github.com/deathau/sliding-panes-obsidian), to stack open panes on the side.
+- [Minimal Settings](https://github.com/kepano/obsidian-minimal-settings), to tweak the interface to be less noisy.
+- [Metatable](https://github.com/arnau/obsidian-metatable), to display the full frontmatter.",text,2021-W14
+https://amifloced.org/,Am I FLoCed?,"A service to check whether Google is tracking you yet. Google is running a Chrome ""origin trial"" to test out an experimental new tracking feature called Federated Learning of Cohorts (aka ""FLoC"").",text,2021-W14
+https://www.codeinwp.com/blog/css-grid-tutorial-layout/,The Ultimate CSS Grid Tutorial for Beginners,A tutorial to get started with CSS Grids.,text,2021-W14
+https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/,Macros in Rust: A tutorial with examples,A tutorial covering all there is about macros in Rust.,text,2021-W14
+https://github.com/tinysearch/tinysearch,tinysearch,"A lightweight full-text search engine to for static websites written in Rust and compiled to WebAssembly.
 
-If you are intersted in the UK geodata infrastructure you might find [Address Matters](https://storymaps.arcgis.com/stories/2e8445a7f0714973826e60a823224326) insightful.",text,2021-W09
-https://dvc.org/,DVC,A Python layer on top of Git to version control for machine learning projects.,text,2021-W09
-https://toolbox.hyperisland.com/,Hyperisland Toolbox,A resource kit to apply creative collaboration in your team or organization.,text,2021-W09
-https://github.com/roapi/roapi,ROAPI,"A tool to create read-only APIs for static datasets from a range of sources such as Google Spreadsheets, Airtable, files or S3. The result can be queried using SQL, GraphQL and REST.
-
-The project is still in it's early days but shows lots of promise in the greenfield of static APIs.",text,2021-W10
-https://avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html,Finding Mona Lisa in the Game of Life,An article on the experiment of recreating a low-fidelity version of a picture using the game of life automata.,text,2021-W10
-https://benschmidt.org/post/2020-01-15/2020-01-15-webgpu/,Javascript and the next decade of data programming,"An article arguing the reasons why JavaScript seems to be in a good position in the data programming space.
-
-The article conflates 'data programming' with 'data visualisation' and the speed of JavaScript with serialisation formats like ApacheArrow (as opposed to GeoJSON). Putting that aside, it's a nice read that shows the pervasiveness of the Web stack as the universal display.",text,2021-W10
-https://www.quantamagazine.org/new-algorithm-breaks-speed-limit-for-solving-linear-equations-20210308/,New Algorithm Breaks Speed Limit for Solving Linear Equations,An article on a new algorithm that uses random seeds to solve linear equations iteratively faster than with matrix multiplication.,text,2021-W10
-https://www.stelayordanova.com/blog/the-violin-plot/,The Violin Plot,"An article explaining how to use violin plots. Although it uses the Flourish service all the way it provides a couple of alternatives for tools such as d3.js, matplotlib, etc.",text,2021-W10
-https://nesslabs.com/what-gets-measured-gets-managed,The fallacy of “what gets measured gets managed”,"An article digging the likely origins of a misattributed quote from Peter Drucker and a quick reflection on why what the quote suggests can harm your organisation.
-
-I don't think this article says anything particularly new but it is short and sharp. I'm probably biased given that recently I have had to do performance reviews and get into the [Theory of Change](https://www.theoryofchange.org/what-is-theory-of-change/).",text,2021-W10
-https://amplication.com/,Amplication,"A development tool to develop low-code Node.js applications. The generated server exposes a GraphQL API and the generated client uses React with Apollo.
-
-The tool is in alpha but looking promising already.",text,2021-W11
-https://www.aleksandrhovhannisyan.com/blog/why-i-dont-like-tailwind-css/,Why I Don't Like Tailwind CSS,An article with an in-depth analysis on why Tailwind CSS is not delivering what promises and actually makes it worse.,text,2021-W11
-https://www.amzi.com/articles/prolog_under_the_hood.htm,Prolog Under the Hood,An article describing how Prolog works so you gain the right intuitions. Hint: It's not about logic programming but unification and backtracking.,text,2021-W11
-https://datasciencejuliahackers.com/,Data Science in Julia for Hackers,"A book with a gentle introduction to how to use [Julia](https://julialang.org/) on Bayesian statistics, forecasting, machine learning, etc.",text,2021-W11
-https://dev.to/bornfightcompany/using-google-sheets-as-a-simple-database-with-papa-parse-2k7o,Using Google Sheets as a simple database with Papa Parse,A quick tutorial on using Google Sheets as a CSV data source. This tutorial uses JavaScript and Vue but it's easily translatable to any other technical stack.,text,2021-W11
-https://dev.to/georgedoescode/a-generative-svg-starter-kit-5cm1,A Generative SVG Starter Kit,A tutorial on generative art using [SVG.js](https://svgjs.com/). A great step by step to get started on computer-based generative art.,text,2021-W11
-https://dev.l1x.be/posts/2021/03/08/compressing-data-with-parquet/,Compressing data with Parquet,An article explaining the benefits of using Parquet instead of SQLite to distribute large datasets with a high columnar repetition. A short demonstration of why columnar formats are a better choice for certain types of datasets.,text,2021-W12
-https://github.com/glideapps/glide-data-grid,Glide Data Grid,"A React library to render an editable table using Canvas. Although it claims to scale to millions of rows, it says nothing about the price you pay in lack of accessibility.",text,2021-W12
-https://antonz.org/sqlite-is-not-a-toy-database/,SQLite is not a toy database,An article showcasing the top features SQLite has to offer to support everyday data wrangling. Even more useful now with the Math functions included in [version 3.35.0](https://sqlite.org/releaselog/3_35_0.html).,text,2021-W12
-https://www.movable-type.co.uk/scripts/latlong.html,"Calculate distance, bearing and more between Latitude/Longitude points",A tutorial presenting a variety of calculations for latitude/longitude points with formulas and JavaScript code examples included.,text,2021-W12
-https://sq.io/,Sq,"A tool to inspect, query, join, import, and export data. Like [jq](https://stedolan.github.io/jq/) but for relational data, whether that data is in a document or database.",text,2021-W12
-https://ianthehenry.com/posts/getting-drunk-with-datalog/,Getting Drunk with Datalog,A tutorial on getting started with Datalog.,text,2021-W12
-https://excavating.ai/,The Politics of Images in Machine Learning Training Sets,An essay on the impact of the intentional or unintentional choices made while composing training sets on the results of a Machine Learning model. Although it centres in visual recognition the fundamental reality of taxonomies being an arbitrary slicing of reality for a very narrow context can be seen everywhere.,text,2021-W13
-https://wezfurlong.org/wezterm/,Wezterm,"A GPU-accelerated terminal emulator written in Rust with multiplex terminal panes, tabs and windows a-la tmux.
-
-Wezterm is comparable to [Kitty](https://sw.kovidgoyal.net/kitty/) in terms of features. A compelling difference is the choice of using Lua for the configuration instead of a custom language.",text,2021-W13
-https://github.com/bartveneman/wallace-cli,Wallace CLI,A tool to analyse CSS from the terminal. Also interesting for complementary analysis: [Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/) and [CSS Specificity Graph Generator](https://jonassebastianohlsson.com/specificity-graph/),text,2021-W13
-https://blog.bitsrc.io/using-gpu-to-improve-javascript-performance-e5a41c2e129b,Using GPU to Improve JavaScript Performance,A tutorial on [GPU.js](https://gpu.rocks/) to speed things up on both the Web and Nodejs.,text,2021-W13
-https://blog.nelhage.com/post/some-opinionated-sql-takes/,Some opinionated thoughts on SQL databases,"An article analysing the downsides of SQL databases. A mix of issues with SQL itself, the query planner, type systems and of course migrations.",text,2021-W13
-https://rory.bio/posts/git-plan/,Is there a better git workflow for context switching?,"An article exploring a version-controlled workflow to reduce the friction of the single-task mindset that tooling like Git encourage.
-
-Although the idea sounds interesting, I'm not convinced it is a real problem or that the proposed solution actually mitigates anything without the missing self-discipline that causes the original problem.",text,2021-W13
+[WebAssembly Search Tools for Static Sites](https://healeycodes.com/webassembly-search-tools-for-static-websites/) might be interesting if you want to check other options.",text,2021-W14
