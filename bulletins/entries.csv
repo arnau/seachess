@@ -860,3 +860,9 @@ https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/,Macros in Ru
 https://github.com/tinysearch/tinysearch,tinysearch,"A lightweight full-text search engine to for static websites written in Rust and compiled to WebAssembly.
 
 [WebAssembly Search Tools for Static Sites](https://healeycodes.com/webassembly-search-tools-for-static-websites/) might be interesting if you want to check other options.",text,2021-W14
+https://spreadprivacy.com/block-floc-with-duckduckgo/,"Use the DuckDuckGo Extension to Block FLoC, Google’s New Tracking Method in Chrome",A Chrome extension to block Google from exploiting you. Or stop using Chrome.,text,2021-W15
+https://www.focalboard.com/,Focalboard,"A tool to manage work across individuals and teams. An open source, self-hosted or desktop alternative to [Notion](https://www.notion.so/), [Asana](https://asana.com/) and [Trello](https://trello.com/).",text,2021-W15
+https://github.com/apache/incubator-age,Apache AGE,A PostgreSQL extension that adds graph database functionality. It supports among other things the [openCypher](https://www.opencypher.org/) query language,text,2021-W15
+https://component.gallery/,Component Gallery,A collection of interface components from real-world design systems.,text,2021-W15
+https://github.com/elixir-nx/livebook,Livebook,"A web application for writing interactive code notebooks in Elixir. It allows for multiple users working at the same time, sequential evaluation for higher reproducibility and notebooks are persisted in _livemd_, yet another flavour of Markdown.",text,2021-W15
+https://github.com/marcpaq/b1fipl,A Bestiary of Single-File Implementations of Programming Languages,A collection of tiny programming languages great for learning how to implement one.,text,2021-W15
