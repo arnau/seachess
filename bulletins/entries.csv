@@ -866,3 +866,14 @@ https://github.com/apache/incubator-age,Apache AGE,A PostgreSQL extension that a
 https://component.gallery/,Component Gallery,A collection of interface components from real-world design systems.,text,2021-W15
 https://github.com/elixir-nx/livebook,Livebook,"A web application for writing interactive code notebooks in Elixir. It allows for multiple users working at the same time, sequential evaluation for higher reproducibility and notebooks are persisted in _livemd_, yet another flavour of Markdown.",text,2021-W15
 https://github.com/marcpaq/b1fipl,A Bestiary of Single-File Implementations of Programming Languages,A collection of tiny programming languages great for learning how to implement one.,text,2021-W15
+https://apis.guru/openapi-directory/,OpenAPI Directory,A machine-readable collection of REST APIs with convergence into OpenAPI 3.0.,text,2021-W16
+https://github.com/bigH/git-fuzzy,git-fuzzy,A tool to work with [Git](https://git-scm.com/) interactively leveraging [fzf](https://github.com/junegunn/fzf).,text,2021-W16
+https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html,Misinformation about Permissions Policy and FLoC,"An article on the subtleties of opt-out approach on Google's tracking system.
+
+> Here’s how not to opt-in to Google’s FLoC:
+>
+> * Don't load untrusted third-party content that might get classified as an ad (only applies during the origin trial)
+> * Don't call document.interestCohort(), and don’t load third-party scripts that might call it either.",text,2021-W16
+https://eclecticlight.co/2021/04/22/can-you-trust-floating-point-arithmetic-on-apple-silicon/,Can you trust floating-point arithmetic on Apple Silicon?,An article looking into three well-known calculations from the _Handbook of Floating-Point Arithmetic_ using [Swift](https://swift.org/) on an [Apple M1](https://en.wikipedia.org/wiki/Apple_M1) and comparing with the previous Intel-based results.,text,2021-W16
+https://world.hey.com/joaoqalves/disasters-i-ve-seen-in-a-microservices-world-a9137a51,Disasters I've seen in a microservices world,An article reflecting on fundamental problems derived from ignoring the inherent complexity of distributed systems.,text,2021-W16
+https://www.tremor.rs/,Tremor,An event processing system for unstructured data. A Rust based replacement for [Logstash](https://www.elastic.co/logstash) and [Telegraf](https://github.com/influxdata/telegraf).,text,2021-W16
