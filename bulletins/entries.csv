@@ -914,7 +914,7 @@ https://github.com/codenotary/immudb,immudb,An immutable database with built-in 
 https://svgfilters.com/,SVG Filters,A servcie to build complex SVG filters.,text,2021-W22
 https://orhun.dev/blog/introducing-gpg-tui/,"Introducing gpg-tui, a Terminal User Interface for GnuPG",An article on a new interactive tool to manage GPG keys.,text,2021-W22
 https://github.com/jtpio/jupyterlite,JupyterLite,A JupyterLab distribution that runs entirely in the browser via WebAssembly.,text,2021-W22
-https://ingrids.space/posts/why-distributed-systems-dont-work/,"hy Decentralised Applications Don’t Work,An article reflecting on decentralised applications","An article on the deception of distributed systems. Interesting thoughts on email, the Web, blockchain and Git.",text,2021-W22
+https://ingrids.space/posts/why-distributed-systems-dont-work/,"Why Decentralised Applications Don’t Work,An article reflecting on decentralised applications","An article on the deception of distributed systems. Interesting thoughts on email, the Web, blockchain and Git.",text,2021-W22
 https://www.rfc-editor.org/rfc/rfc9000.html,QUIC: A UDP-Based Multiplexed and Secure Transport,"The QUIC specification has been on the works for almost a decade but it's now reaching concensus.
 Now might be a good time to start experimenting with HTTP/3 with [your HTTP client of choice](https://developers.cloudflare.com/http3/).",text,2021-W22
 https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md,RESTful API in Sync & Async Rust,A tutorial showing two ways to approach the development an HTTP API in Rust.,text,2021-W22
