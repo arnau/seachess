@@ -928,3 +928,11 @@ https://tryapl.org/,Try APL,"An interactive tutorial to learn [APL](https://en.w
 
 If you've had previous exposure to [R](https://www.r-project.org/) you might find it oddly familiar. APL influenced [S](https://en.wikipedia.org/wiki/S_(programming_language)) after all.",text,2021-W23
 https://www.photopea.com/,Photopea,"A web tool to edit PSD, Sketch, Gimp and more. Poses as an alternative to Photoshop.",text,2021-W23
+https://www.fastcompany.com/90635776/the-twisted-psychology-of-browser-tabs-and-why-we-cant-get-rid-of-them,The twisted psychology of browser tabs—and why we can’t get rid of them,An article exploring the potential reasons for the tab hoarding phenomenon.,text,2021-W24
+https://deps.dev/,Open Source Insights,"A service to understand the direct and transitive dependencies in your software products. Shows known security alerts, licences and more for Npm packages, Go modules, Maven artifacts and Cargo crates.",text,2021-W24
+https://github.com/yarrow/zet,Zet,"A command-line tool to operate on files as sets of lines. A good companion when in need to quickly find the intersection, difference, etc in two or more files.",text,2021-W24
+https://www.jakobmeier.ch/blogging/Untapped-Rust.html,Untapped potential in Rust's type system,An article reflecting on the meaning of ‘type’ in a programming language and exploring the potential of type reflection in Rust.,text,2021-W24
+https://humansofdata.atlan.com/2021/06/rise-metadata-lake/,The Rise of the Metadata Lake,"An article doubling down on metadata. Intentionally or not, it gives an overview on the trends and buzzwords around data. The only missing one seems to be “data virtualisation”.
+
+Make sure to re-read [Metacrap: Putting the torch to seven straw-men of the meta-utopia](https://people.well.com/user/doctorow/metacrap.htm) to cool down your excitement.",text,2021-W24
+https://ssir.org/articles/entry/burnout_from_an_organizational_perspective,Burnout From an Organizational Perspective,"An article on the causes of burnout, looks into how to measure it and external factors that may increase it.",text,2021-W24
