@@ -944,3 +944,9 @@ https://grain-lang.org/,Grain,"A programming language targeting WebAssemlby. The
 https://raphlinus.github.io/ui/druid/2019/11/22/reactive-ui.html,Towards a unified theory of reactive UI,An article exploring the trade-offs of tree manipulation for building user interfaces.,text,2021-W25
 https://hightouch.io/blog/exploring-data-lineage-with-open-lineage/,Exploring Data Lineage with OpenLineage,"An article introducing OpenLineage, an initiative to standardise data lineage for systems such as Spark or Airflow.",text,2021-W25
 https://vitalik.ca/general/2021/06/18/verkle.html,Verkle trees,"An article introducing Verkle trees, a more efficient version of Merkle trees for large datasets.",text,2021-W25
+https://github.com/ducaale/xh,xh,A CLI tool to make HTTP requests heavily inspired by HTTPie without the burden of Python.,text,2021-W26
+https://tectonic-typesetting.github.io/,Tectonic,"A self-contained TeX/LaTeX engine with automatic pulling for new LaTeX packages. By far, it's the least painful way to compile LaTeX documents I found.",text,2021-W26
+https://unqlite.org/,Unqlite,An in-process document store with single-file approach a-la SQLite.,text,2021-W26
+https://d3fend.mitre.org/,d3fend,"A knowledge base of cybersecurity countermeasures. Also worth checking out [ATT&CK](https://attack.mitre.org/), a knowledge base of adversary tactics and techniques based on real-world observations.",text,2021-W26
+https://writing.kemitchell.com/2018/01/06/CLAs-Are-Not-a-Sham.html,CLAs are Not a Sham,"An article on Contributor License Agreements (CLA), copyright and their impact on open source.",text,2021-W26
+https://darker.ink/writings/Towards-richer-colors-on-the-Web,Towards richer colors on the Web,An article on the the current colour space limitations in the Web architecture and the plans to change that.,text,2021-W26
