@@ -950,3 +950,21 @@ https://unqlite.org/,Unqlite,An in-process document store with single-file appro
 https://d3fend.mitre.org/,d3fend,"A knowledge base of cybersecurity countermeasures. Also worth checking out [ATT&CK](https://attack.mitre.org/), a knowledge base of adversary tactics and techniques based on real-world observations.",text,2021-W26
 https://writing.kemitchell.com/2018/01/06/CLAs-Are-Not-a-Sham.html,CLAs are Not a Sham,"An article on Contributor License Agreements (CLA), copyright and their impact on open source.",text,2021-W26
 https://darker.ink/writings/Towards-richer-colors-on-the-Web,Towards richer colors on the Web,An article on the the current colour space limitations in the Web architecture and the plans to change that.,text,2021-W26
+https://epilys.github.io/bibliothecula/notekeeping.html,Using sqlite3 as a notekeeping document graph with automatic reference indexing,A tutorial on how to take advantage of SQLite to keep your notes organised and with full-search built-in.,text,2021-W27
+https://www.darktable.org/,darktable,An open source tool to manage photography workflows to manage digital negatives and development of raw images.,text,2021-W27
+https://github.com/mrbbot/miniflare,miniflare,"A tool to simulate [CloudFlare Workers] locally and offline.
+
+[CloudFlare Workers]: https://workers.cloudflare.com/",text,2021-W27
+https://github.com/aergoio/litetree,LiteTree,"A modified version of SQLite to support branches a-la Git.
+
+You can find my selection of SQLite resources in [Some SQLite], similar to [Awesome lists] but using the [Tabular Data Package].
+
+[Some SQLite]: https://github.com/arnau/some-sqlite/
+[Awesome lists]: https://github.com/sindresorhus/awesome
+[Tabular Data Package]: https://specs.frictionlessdata.io/tabular-data-package/",text,2021-W27
+https://orta.io/notes/js/pnpm-succeeds-yarn-1,pnpm,"An article looking into [pnpm], an alternative to [npm] and [Yarn] claiming to be faster and more efficient.
+
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[Yarn]: https://yarnpkg.com/",text,2021-W27
+https://scattered-thoughts.net/writing/against-sql/,Against SQL,An article arguing why SQL is a dead end and what should the next relational query language learn from modern programming languages and the success of query languages such as GraphQL.,text,2021-W27
