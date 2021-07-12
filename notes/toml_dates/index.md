@@ -119,13 +119,13 @@ So a simple enough option is to 1) implement your type and 2) implement the Serd
 
 ```rust
 use anyhow::Result;
-use chrono::NativeDate;
+use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 
 
 #[derive(Copy, Clone, PartialEq)]
-struct Date(NativeDate);
+struct Date(NaiveDate);
 
 impl<'de> Deserialize<'de> for Date {
     fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
@@ -208,13 +208,13 @@ The previous implementation works well as long as you only care about TOML but w
 ```rust
 
 use anyhow::Result;
-use chrono::NativeDate;
+use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use serde::de::{self, Visitor};
 use std::str::FromStr;
 
 #[derive(Copy, Clone, PartialEq)]
-struct Date(NativeDate);
+struct Date(NaiveDate);
 
 impl FromStr for Date {
     type Err = anyhow::Error;
