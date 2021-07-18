@@ -968,3 +968,11 @@ https://orta.io/notes/js/pnpm-succeeds-yarn-1,pnpm,"An article looking into [pnp
 [npm]: https://www.npmjs.com/
 [Yarn]: https://yarnpkg.com/",text,2021-W27
 https://scattered-thoughts.net/writing/against-sql/,Against SQL,An article arguing why SQL is a dead end and what should the next relational query language learn from modern programming languages and the success of query languages such as GraphQL.,text,2021-W27
+https://taplo.tamasfe.dev/,Taplo,"A toolkit to work with [TOML]. Includes a validator based on JSON schema, formatting and targets WebAssembly as well as Rust.
+
+[TOML]: https://toml.io/",text,2021-W28
+https://lock.cmpxchg8b.com/passmgrs.html,Password Managers,An article looking into the security weaknesses typically found on password managers integrating with a web browser.,text,2021-W28
+https://type-scale.com/,Type scale,A tool to calculate and visualise type scales for the Web.,text,2021-W28
+https://blog.syncinc.so/events-not-webhooks,"Give me /events, not webhooks",An article exploring the shortcomings of webhooks and how an events endpoint with a changelog can help mitigate them.,text,2021-W28
+https://github.com/prathyvsh/pl-catalog,Programming Languages for Enthusiasts,A collection of not-so-mainstream programming languages and environments.,text,2021-W28
+https://www.strategicstructures.com/?p=2246,Personal Knowledge Graphs,A presentation on personal knowledge graphs their connection to the semantic web and the advent of note-taking apps.,video,2021-W28
