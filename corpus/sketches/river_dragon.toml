@@ -1,0 +1,10 @@
+type = "sketch"
+id = "river-dragon"
+title = "River dragon"
+asset = "river_dragon.jpg"
+author = "arnau"
+publication_date = 2019-07-27
+tools = [
+  "ipadpro",
+  "procreate",
+]

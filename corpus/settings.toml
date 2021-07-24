@@ -1,0 +1,16 @@
+type = "settings"
+id = "main"
+title = "Seachess"
+description = "Notes, drawings and other activity from Arnau Siches"
+url = "https://www.seachess.net"
+copyright = "2019-2021, Arnau Siches"
+navigation = [
+  "notes",
+  "sketches",
+  "bulletins",
+  "projects",
+]
+
+[licence]
+url = "http://creativecommons.org/licenses/by-nc/4.0/"
+name = "Creative Commons Attribution-NonCommercial 4.0 International License"

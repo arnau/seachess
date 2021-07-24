@@ -1,0 +1,10 @@
+type = "sketch"
+id = "hairy-beast"
+title = "Hairy beast"
+asset = "hairy_beast.jpg"
+author = "arnau"
+publication_date = 2014-10-16
+tools = [
+  "ipad2",
+  "procreate",
+]

@@ -1,0 +1,10 @@
+type = "sketch"
+id = "mistery-novel"
+title = "Mistery novel"
+asset = "mistery_novel.jpg"
+author = "arnau"
+publication_date = 2014-01-01
+tools = [
+  "ipad2",
+  "procreate",
+]

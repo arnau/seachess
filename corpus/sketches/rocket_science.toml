@@ -1,0 +1,10 @@
+type = "sketch"
+id = "rocket-science"
+title = "Rocket science"
+asset = "rocket_science.jpg"
+author = "arnau"
+publication_date = 2014-02-21
+tools = [
+  "ipad2",
+  "procreate",
+]

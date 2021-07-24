@@ -1,0 +1,20 @@
+base_url = "https://127.0.0.1:1111"
+compile_sass = true
+build_search_index = true
+
+generate_feed = true
+feed_filename = "rss.xml"
+feed_limit = 10
+
+[markdown]
+highlight_code = true
+highlight_theme = "zenburn"
+external_links_no_follow = true
+external_links_no_referrer = true
+
+[slugify]
+paths = "off"
+
+
+[extra]
+# Put all your custom variables here

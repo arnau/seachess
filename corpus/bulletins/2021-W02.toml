@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W02"
+publication_date = 2021-01-17
+summary = "This week has been about colours, NLP, design patterns in Rust, taking notes and SQLite encryption."
+
+[[entries]]
+url = "https://rust-unofficial.github.io/patterns/"
+title = "Rust Design Patterns"
+summary = "A collection of design patterns to solve known problems in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://calcolor.co/"
+title = "calcolor"
+summary = "A service to inspect and learn about colours."
+content_type = "text"
+
+[[entries]]
+url = "https://www.zetetic.net/sqlcipher/"
+title = "SQLCipher"
+summary = "A SQLite extension adding on-the-fly encryption, tamper detection, strong key derivation and memory sanitisation."
+content_type = "text"
+
+[[entries]]
+url = "https://www.scotthyoung.com/blog/2021/01/11/how-to-take-notes/"
+title = "How to take notes"
+summary = "An article exploring ways to take notes that help achieve a goal. Although it targets _students_ it can easily transfer to taking notes in a meeting."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/jalammar/ecco"
+title = "Ecco"
+summary = "A Python library for explaining Natural Language Processing models using interactive visualizations."
+content_type = "text"
+
+[[entries]]
+url = "https://www.philippflenker.com/hecto/"
+title = "Hecto: Build your own text editor in Rust"
+summary = "A tutorial on how to build a text editor in Rust."
+content_type = "text"

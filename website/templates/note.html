@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block page_meta %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@arnau">
+  <meta property="og:url" content="{{ get_url(path=current_path) }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+{% endblock page_meta %}
+
+{% block content %}
+
+<article class="note">
+  <h1>
+    {{ page.extra.title | markdown(inline=true) | safe }}
+  </h1>
+
+  <div class="metablock">
+    {{ macros::signature(stamp=page.date, author_name=page.extra.author.name) }}
+    {# macros::feedback_link(title=page.title, kind="note") #}
+  </div>
+
+  {{ page.extra.summary | markdown() | safe }}
+
+  {{ macros::toc(table=page.toc) }}
+
+  {{ page.content | safe }}
+</article>
+
+{% endblock content %}

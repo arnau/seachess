@@ -1,0 +1,10 @@
+type = "sketch"
+id = "seasurfer"
+title = "Seasurfer"
+asset = "seasurfer.jpg"
+author = "arnau"
+publication_date = 2019-08-02
+tools = [
+  "ipadpro",
+  "procreate",
+]

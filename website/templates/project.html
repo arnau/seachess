@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+
+{% block content %}
+
+
+<h1>
+  {{ page.extra.title | markdown(inline=true) | safe }}
+</h1>
+
+{{ page.extra.summary | markdown() | safe }}
+
+{% set card = page.extra %}
+<table class="card">
+  <tbody>
+    <tr scope="row">
+      <th>status</th>
+      <td><span class="status-{{ card.status }}">{{ card.status }}</span></td>
+    </tr>
+    {% if "source_url" in card %}
+    <tr scope="row">
+      <th>source</th>
+      <td><a href="{{ card.source_url }}">{{ card.source_url }}</a></td>
+    </tr>
+    {% endif %}
+    <tr scope="row">
+      <th>start date</th>
+      <td>{{ macros::stamp_date(stamp=card.start_date) }}</td>
+    </tr>
+    {% if "end_date" in card %}
+    <tr scope="row">
+      <th>end date</th>
+      <td>{{ macros::stamp_date(stamp=card.start_date) }}</td>
+    </tr>
+    {% endif %}
+  </tbody>
+</table>
+
+{{ page.content | safe }}
+
+{% endblock content %}

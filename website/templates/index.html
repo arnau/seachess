@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+
+{{ section.content | safe }}
+
+<section>
+  <h1>Latest updates</h1>
+  {% for update in section.extra.latest_updates %}
+    <section class="update">
+      <h2><a href="{{ update.path }}">{{ update.title | markdown(inline=true) | safe }}</a></h2>
+      {{ macros::published_on(stamp=update.date) }}
+      {% if 'summary' in update %}
+        {{ update.summary | markdown() | safe }}
+      {% endif %}
+      {% if update.section == "sketches" %}
+        {% set page = get_page(path = update.section ~ "/" ~ update.id ~ "/index.md")  %}
+
+        {% set asset_path = page.assets[0]  %}
+        <a href="{{ page.path }}">
+        <img
+          style="object-fit: cover; opacity: 1;"
+          decoding="async"
+          src="{{ resize_image(path=asset_path, width=295, height=190, op="fill") }}"
+          alt="{{ page.title }}">
+        </a>
+
+      {% endif %}
+    </section>
+  {% endfor %}
+</section>
+
+{% endblock content %}

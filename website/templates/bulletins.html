@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ section.description }}{% endblock description %}
+
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+
+{{ macros::subscription_form() }}
+
+
+{% set sub_paths = section.subsections %}
+{% set current_bulletin = get_section(path=sub_paths[0]) %}
+
+<section>
+  <h2>Issues from {{ current_bulletin.title }}</h2>
+
+  {% for page in current_bulletin.pages %}
+  <section class="excerpt">
+    <h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
+
+    {{ macros::published_on(stamp=page.date) }}
+
+    {{ page.content | safe }}
+  </section>
+
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Historic</h2>
+  <ul>
+  {% for s in sub_paths %}
+    {% set sub = get_section(path=s) %}
+    {% if loop.index != 1 %}
+    <li><a href="{{ sub.path }}">{{ sub.pages | length }} issues from {{ sub.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</section>
+{% endblock content %}

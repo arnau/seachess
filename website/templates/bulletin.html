@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+
+{% block content %}
+
+<h1>Issue {{ page.title }}</h1>
+
+{{ macros::published_on(stamp=page.date) }}
+{{ macros::subscription_form() }}
+
+{{ page.content | safe }}
+
+<div class="bulletin">
+{% for entry in page.extra.entries %}
+  <section class="bulletin-entry">
+    <h2 id="{{ entry.slug }}">{{ macros::anchor(id = entry.slug) }} <a href="{{ entry.url }}">{{ entry.title }}</a>{% if entry.content_type != "text" %} (<span>{{ entry.content_type}}</span>){% endif %}</h2>
+    {{ entry.summary | markdown() | safe }}
+  </section>
+{% endfor %}
+</div>
+
+{% endblock content %}

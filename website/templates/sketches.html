@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ section.description }}{% endblock description %}
+
+
+{% block content %}
+<h1>
+  {{ section.title }}
+</h1>
+
+{{ section.content | safe }}
+
+<ul class="gallery">
+  {% for page in section.pages %}
+    {% set asset_path = page.assets[0]  %}
+    <li>
+    <a href="{{ page.path }}">
+    <img
+      style="object-fit: cover; opacity: 1;"
+      decoding="async"
+      src="{{ resize_image(path=asset_path, width=295, height=190, op="fill") }}"
+      alt="{{ page.title }}">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}

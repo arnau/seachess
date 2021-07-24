@@ -1,0 +1,10 @@
+type = "sketch"
+id = "bald-man"
+title = "Bald man"
+asset = "bald_man.png"
+author = "arnau"
+publication_date = 2019-08-03
+tools = [
+  "ipadpro",
+  "sketches",
+]

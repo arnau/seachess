@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ section.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ section.description }}{% endblock description %}
+
+
+{% block content %}
+
+<h1>
+  {{ section.title }}
+</h1>
+
+{{ section.content | safe }}
+
+{% for page in section.pages %}
+<section class="excerpt">
+  <h2><a href="{{ page.path }}">{{ page.extra.title | markdown(inline=true) | safe }}</a></h2>
+
+  {{ macros::published_on(stamp=page.date) }}
+
+  {{ page.extra.summary | markdown() | safe }}
+
+</section>
+{% endfor %}
+
+{% endblock content %}

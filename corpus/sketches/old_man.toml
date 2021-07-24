@@ -1,0 +1,10 @@
+type = "sketch"
+id = "old-man"
+title = "Old man"
+asset = "old_man.jpg"
+author = "arnau"
+publication_date = 2014-10-15
+tools = [
+  "ipad2",
+  "procreate",
+]

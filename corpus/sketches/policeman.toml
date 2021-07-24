@@ -1,0 +1,10 @@
+type = "sketch"
+id = "policeman"
+title = "Policeman"
+asset = "policeman.jpg"
+author = "arnau"
+publication_date = 2014-02-20
+tools = [
+  "ipad2",
+  "procreate"
+]

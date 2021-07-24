@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
+{% block description %}{{ page.description }}{% endblock description %}
+{% block page_meta %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@arnau">
+  <meta property="og:url" content="{{ get_url(path=current_path) }}">
+  <meta property="og:type" content="image">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+{% endblock page_meta %}
+
+{% block content %}
+
+<h1>
+  {{ page.title }}
+</h1>
+
+<div class="metablock">
+  {{ macros::signature(stamp=page.date, author_name=page.extra.author.name) }}
+  <div class="tools">
+    <p>Tools:</p>
+    <ul>
+      {% for tool in page.extra.tools %}
+      <li>
+        {% if 'url' in tool %}
+        <a href="{{ tool.url }}">{{ tool.name }}</a>
+        {% else %}
+        <span>{{ tool.name }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{{ page.content | safe }}
+
+{% set asset_path = page.assets[0]  %}
+<picture>
+  <img
+      style="object-fit: cover; opacity: 1;"
+      decoding="async"
+      src="{{ resize_image(path=asset_path, width=900, op="fit_width") }}"
+      alt=""
+    >
+</picture>
+
+
+{% endblock content %}

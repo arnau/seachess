@@ -1,0 +1,10 @@
+type = "sketch"
+id = "furry-dragon"
+title = "Furry dragon"
+asset = "furry_dragon.jpg"
+author = "arnau"
+publication_date = 2019-08-06
+tools = [
+  "ipadpro",
+  "procreate",
+]

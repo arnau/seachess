@@ -1,0 +1,10 @@
+type = "sketch"
+id = "bw-happy-dragon"
+title = "Happy dragon"
+asset = "bw_happy_dragon.jpg"
+author = "arnau"
+publication_date = 2019-10-16
+tools = [
+  "ipadpro",
+  "procreate",
+]

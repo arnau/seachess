@@ -1,0 +1,10 @@
+type = "sketch"
+id = "pink-dragon"
+title = "Pink dragon"
+asset = "pink_dragon.jpg"
+author = "arnau"
+publication_date = 2014-03-15
+tools = [
+  "ipad2",
+  "progreate",
+]

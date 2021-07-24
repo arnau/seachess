@@ -1,0 +1,10 @@
+type = "sketch"
+id = "chinese-dragon"
+title = "Chinese dragon"
+asset = "chinese_dragon.jpg"
+author = "arnau"
+publication_date = 2014-10-15
+tools = [
+  "ipad2",
+  "procreate",
+]
