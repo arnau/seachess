@@ -982,3 +982,13 @@ https://github.com/quickwit-inc/quickwit/,Quickwit,A distributed search engine d
 https://blog.knoldus.com/hosting-wasm-modules-in-rust-easily-using-wasmi/,Hosting wasm modules in Rust easily using ‘wasmi’,"A short tutorial on how to get started with WebAssembly modules in rust using [wasmi](https://crates.io/crates/wasmi), a WebAssembly interpreter.",text,2021-W29
 https://github.com/out-of-cheese-error/gooseberry,Gooseberry,A tool to manage [Hypothesis](https://hypothes.is/) annotations from the command line.,text,2021-W29
 https://unixsheikh.com/articles/the-terminal-the-console-and-the-shell-what-are-they.html,"The terminal, the console and the shell - what are they?",An article on the history of day-to-day computer related terms such as _terminal_ or _console_.,text,2021-W29
+https://viralinstruction.com/posts/badjulia/,What's bad about Julia,"An article going into the bad parts of [Julia](https://julialang.org/) according to the author. The first one, compile time latency is quite something:
+
+> What's happening is that Julia is compiling the code needed for its REPL and its integration with your editor.
+> This ""runtime"" compilation causes the lag we call compile time latency. [...] A small script [...] may have a 2 second latency, even if the computation itself takes microseconds.
+> [...] When using Python or Rust, you may be used to running some tests from command line, modifying a source file in the editor [...]. This workflow is not feasible in Julia - instead, you are essentially forced to into _REPL driven development_ [...]",text,2021-W30
+https://github.com/revolist/revogrid,revogrid,"A library to manage large grids with rich and customisable cell values and with the ability to use different rendering options such as React, Vue, Svelte, and more.",text,2021-W30
+https://github.com/doyensec/electronegativity,Electronegativity,A tool to identify misconfigurations and security anti-patterns in Electron applications.,text,2021-W30
+https://www.youtube.com/watch?v=EVRf708-zq4&t=3s,Damn GraphQL - Defending and Attacking APIs,A talk on what to consider when securing a GraphQL API.,video,2021-W30
+https://blog.openreplay.com/everything-you-ever-wanted-to-know-about-webrtc,Everything You Ever Wanted to Know About WebRTC,An article diving into the fundamentals of the Web Real-Time Communication APIs.,text,2021-W30
+https://thenewstack.io/rust-and-webassembly-serverless-functions-in-vercel/,Rust and WebAssembly Serverless Functions in Vercel,A tutorial on how to use WebAssembly in edge functions such as Vercel's Serverless Functions.,text,2021-W30
