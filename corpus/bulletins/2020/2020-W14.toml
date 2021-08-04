@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W14"
+publication_date = 2020-04-05
+summary = "This week has been about cross platform GUIs, Git flows, software architecture, postgresql and search engines."
+
+[[entries]]
+url = "https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb"
+title = "How the Creators of Git Do Branching"
+summary = "An article explaining the Git Workflow juxtaposed to the well known\n[GitFlow](https://nvie.com/posts/a-successful-git-branching-model/).\n\nBoth workflows assume a product with multiple releases in play. If you have a\nsingle-release situation like a simple web application, don't even bother."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.royalsloth.eu/posts/sad-state-of-cross-platform-gui-frameworks/"
+title = "Sad state of cross platform GUI frameworks"
+summary = "An overview of a handful of graphical user interface frameworks. Shows the\npoor state of the situation and puts in context the (well deserved) criticisms\n[Electron](https://www.electronjs.org/) tends to receive lately."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@rbranson/10-things-i-hate-about-postgresql-20dbab8c2791"
+title = "10 Things I Hate About PostgreSQL"
+summary = "An article with a healthy criticism to PostgreSQL. It ends with:\n\n> You should probably still use PostgreSQL and not something else for storing\ndata that you’d ideally like to, you know, keep around for some time."
+content_type = "text"
+
+[[entries]]
+url = "https://thomashartmann.dev/blog/on-generics-and-associated-types/"
+title = "On Generics and Associated Types"
+summary = "An article about when to use generics and associated types in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://martinfowler.com/articles/value-architectural-attribute.html"
+title = "The Elephant in the Architecture"
+summary = "An article on why technical (architectural) decisions need to be contrasted\nagainst business value."
+content_type = "text"
+
+[[entries]]
+url = "https://stork-search.net/"
+title = "Stork"
+summary = "A tool to offer a search function to a static site. A nice addition to the\n[JAMstack](https://jamstack.org/) toolbelt."
+content_type = "text"

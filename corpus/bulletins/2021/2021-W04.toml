@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W04"
+publication_date = 2021-01-31
+summary = "This week has been about StrictMark, bacon-sci, semantic web research, JerryScript and a collection of static site generators."
+
+[[entries]]
+url = "https://aftix.xyz/home/bacon/"
+title = "Scientific Computing in Rust"
+summary = "An article introducing [bacon-sci](https://github.com/aftix/bacon), a [SciPy](https://www.scipy.org/) replacement in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://sr.ht/~gpanders/ijq/"
+title = "ijq"
+summary = "An interactive version of jq to query JSON from the command-line."
+content_type = "text"
+
+[[entries]]
+url = "https://cacm.acm.org/magazines/2021/2/250085-a-review-of-the-semantic-web-field/fulltext"
+title = "A Review of the Semantic Web Field"
+summary = "An article describing the timeline since early 2000s on the semantic web research field."
+content_type = "text"
+
+[[entries]]
+url = "https://staticsitegenerators.net/"
+title = "Static Site Generators"
+summary = "A collection of static site generators. Similar and yet different from [Jamstack Site Generators]](https://jamstack.org/generators/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/jerryscript-project/jerryscript"
+title = "JerryScript"
+summary = "A lightweight JavaScript engine for resource-constrained devices such as microcontrollers. It can run on devices with less than 64 KB of RAM and less than 200 KB of flash memory."
+content_type = "text"
+
+[[entries]]
+url = "http://doc.replicated.cc/%5EWiki/strictmark.sm"
+title = "StrictMark: rational Markdown"
+summary = "A specification for a strict subset of Markdown aiming to implement all features with the shortest formal grammar possible."
+content_type = "text"

@@ -1,0 +1,49 @@
+type = "bulletin"
+id = "2021-W13"
+publication_date = 2021-04-04
+summary = "This week has been about GPU.js, the downsides of SQL, the politics in Machine Learning and Git workflows."
+
+
+[[entries]]
+title = "Using GPU to Improve JavaScript Performance"
+url = "https://blog.bitsrc.io/using-gpu-to-improve-javascript-performance-e5a41c2e129b"
+summary = "A tutorial on [GPU.js](https://gpu.rocks/) to speed things up on both the Web and Nodejs."
+content_type = "text"
+
+[[entries]]
+title = "Some opinionated thoughts on SQL databases"
+url = "https://blog.nelhage.com/post/some-opinionated-sql-takes/"
+summary = "An article analysing the downsides of SQL databases. A mix of issues with SQL itself, the query planner, type systems and of course migrations."
+content_type = "text"
+
+[[entries]]
+title = "The Politics of Images in Machine Learning Training Sets"
+url = "https://excavating.ai/"
+summary = "An essay on the impact of the intentional or unintentional choices made while composing training sets on the results of a Machine Learning model. Although it centres in visual recognition the fundamental reality of taxonomies being an arbitrary slicing of reality for a very narrow context can be seen everywhere."
+content_type = "text"
+
+[[entries]]
+title = "Wallace CLI"
+url = "https://github.com/bartveneman/wallace-cli"
+summary = "A tool to analyse CSS from the terminal. Also interesting for complementary analysis: [Specificity Visualizer](https://isellsoap.github.io/specificity-visualizer/) and [CSS Specificity Graph Generator](https://jonassebastianohlsson.com/specificity-graph/)"
+content_type = "text"
+
+[[entries]]
+title = "Is there a better git workflow for context switching?"
+url = "https://rory.bio/posts/git-plan/"
+summary = """
+An article exploring a version-controlled workflow to reduce the friction of the single-task mindset that tooling like Git encourage.
+
+Although the idea sounds interesting, I'm not convinced it is a real problem or that the proposed solution actually mitigates anything without the missing self-discipline that causes the original problem.
+"""
+content_type = "text"
+
+[[entries]]
+title = "Wezterm"
+url = "https://wezfurlong.org/wezterm/"
+summary = """
+A GPU-accelerated terminal emulator written in Rust with multiplex terminal panes, tabs and windows a-la tmux.
+
+Wezterm is comparable to [Kitty](https://sw.kovidgoyal.net/kitty/) in terms of features. A compelling difference is the choice of using Lua for the configuration instead of a custom language.
+"""
+content_type = "text"

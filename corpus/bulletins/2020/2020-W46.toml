@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W46"
+publication_date = 2020-11-15
+summary = "This week has been about a traffic simulator, obsolete media, 3D human shapes and ownership semantics."
+
+[[entries]]
+url = "https://www.gingerbill.org/article/2020/06/21/the-ownership-semantics-flaw/"
+title = "The Fatal Flaw of Ownership Semantics"
+summary = "An article on the implications of Ownership Semantics' linear nature and the solutions based on indices/handlers."
+content_type = "text"
+
+[[entries]]
+url = "https://shunsukesaito.github.io/PIFuHD/"
+title = "PIFuHD: Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization"
+summary = "An implementation in pytorch of a deep neural network model to extrude 3D human shapes from a single image."
+content_type = "text"
+
+[[entries]]
+url = "https://obsoletemedia.org/"
+title = "Obsolete Media Museum"
+summary = "A collection of obsolete media formats."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/dabreegster/abstreet/"
+title = "A/B Street"
+summary = "A traffic simulator exploring how small changes affect the movement of drivers, cyclists and pedestrians."
+content_type = "text"
+
+[[entries]]
+url = "https://contractfortheweb.org/"
+title = "Contract for the Web"
+summary = "An initiative by Tim Berners-Lee to try to make the online world safe and empowering for everyone."
+content_type = "text"
+
+[[entries]]
+url = "https://videoinu.com/blog/firefox-reader-view-heuristics/"
+title = "How does Firefox's Reader View work?"
+summary = "An article analysing how the Reader View feature in Firefox works."
+content_type = "text"

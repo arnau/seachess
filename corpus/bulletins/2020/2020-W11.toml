@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W11"
+publication_date = 2020-03-15
+summary = "This week has been about the history of the URL, SQL, hiring practices, managing Python dependencies and Nix."
+
+[[entries]]
+url = "https://www.nmattia.com/posts/2018-03-21-nix-reproducible-setup-linux-macos.html"
+title = "Nix: A Reproducible Setup for Linux and macOS"
+summary = "A nice and gentle introduction to Nix, the package manager. It helps with the\ntransition from more classic mental models such as Brew or Apt without being\nas dry as the Nix manual or the [Nix pills](https://nixos.org/nixos/nix-pills/index.html)."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@productivitypinata/i-got-99-problems-and-your-hiring-practices-are-all-of-them-cb1e6a5877ea"
+title = "I Got 99 Problems And Your Hiring Practices Are All Of Them (Part 1)"
+summary = "An article (part 1 of 6) reflecting on hiring practices that you should likely\nconsider if your role is to manage a team."
+content_type = "text"
+
+[[entries]]
+url = "https://python-poetry.org/"
+title = "Poetry"
+summary = "A tool to manage Python dependencies. It feels similar to\n[Pipenv](https://pipenv.pypa.io) in that makes working with virtual\nenvironments ergonomic. Poetry, though, lets you manage a package lifecycle\nwhilst Pipenv seems more application oriented.\n\nIt's nice to see the Python dependency management space coming out of the dark\nages of `pip`, `virtualenv`, `setup.py` and other horrors.\n\nYou might like reading [A deeper look into Pipenv and Poetry](https://frostming.com/2019/01-04/pipenv-poetry)\nfrom one of the collaborators of Pipenv."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.cloudflare.com/the-history-of-the-url/"
+title = "The history of the URL"
+summary = "A well narrated bit of history. Although a bit technical at times, it is\nindeed a must if you are interested in the early days of the Internet."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@maxsparr0w/performance-of-node-js-compared-to-actix-web-37f20810fb1a"
+title = "ExpressJS vs Actix-Web. It is exactly what you think"
+summary = "An article comparing Actix-Web (Rust) against ExpressJS (Node.js).\nUnsurprisingly, Actix is faster consumes less resources and takes advantage of\nmultiple CPU cores. As with any benchmark or comparison always read the fine\nprint to understand the tradeoffs and artificial conditions.\n\nIf you consider Rust for web server development have a look at\n[Are we web yet?](https://www.arewewebyet.org/) before making the decision. It\nmay or may not be the right time for your product to adopt Rust in this space."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.timescale.com/blog/why-sql-beating-nosql-what-this-means-for-future-of-data-time-series-database-348b777b847a/"
+title = "Why SQL is beating NoSQL, and what this means for the future of data"
+summary = "An article with a bit of history on the inception of SQL, its decline with the\nadvent of noSQL and its comeback."
+content_type = "text"

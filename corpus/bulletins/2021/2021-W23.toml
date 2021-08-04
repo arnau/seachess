@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W23"
+publication_date = 2021-06-13
+summary = "This week has been about FLoC privacy, matrix-based graphs, APL, Photopea and Lean."
+
+[[entries]]
+url = "https://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/"
+title = "The Natural Number Game"
+summary = "An interactive book showing how to use [Lean](https://github.com/leanprover/lean) to proof by induction natural numbers."
+content_type = "text"
+
+[[entries]]
+url = "https://www.softwareatscale.dev/p/guids-are-not-enough"
+title = "GUIDs Are Not The Only Answer"
+summary = "An article exploring some downsides of global unique identifierse and potential alternatives."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.mozilla.org/en/mozilla/privacy-analysis-of-floc/"
+title = "Privacy Analysis of FLoC"
+summary = "A summary of the [analysis of FLoC privacy](https://mozilla.github.io/ppa-docs/floc_report.pdf) conducted by Mozilla.\n\nIn short, FLoC is a bad idea. Does not protect from fingerprinting, general user tracking and countermeasures are insufficient. And although the analysis doesn't cover it, it's also a monopolistic move."
+content_type = "text"
+
+[[entries]]
+url = "https://lonami.dev/blog/graphs/"
+title = "Graphs"
+summary = "A short introduction to graphs using a matrix-based approach."
+content_type = "text"
+
+[[entries]]
+url = "https://tryapl.org/"
+title = "Try APL"
+summary = "An interactive tutorial to learn [APL](https://en.wikipedia.org/wiki/APL_(programming_language)).\n\nIf you've had previous exposure to [R](https://www.r-project.org/) you might find it oddly familiar. APL influenced [S](https://en.wikipedia.org/wiki/S_(programming_language)) after all."
+content_type = "text"
+
+[[entries]]
+url = "https://www.photopea.com/"
+title = "Photopea"
+summary = "A web tool to edit PSD, Sketch, Gimp and more. Poses as an alternative to Photoshop."
+content_type = "text"

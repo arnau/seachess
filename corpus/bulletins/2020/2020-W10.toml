@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W10"
+publication_date = 2020-03-08
+summary = "This week has been about Rust, the sad story of time, Git flows, the Brave scam, computational notebooks and how to organise your system."
+
+[[entries]]
+url = "https://caolan.uk/articles/time-disorder/"
+title = "Time Disorder"
+summary = "An article with a comprehensive warning against relying on timestamps for\nordering. May or may not apply to your current situation but time is messy and\nunderstanding why will help prevent unpleasant events.\n\nA pearl (of many) you will find in the article:\n\n> Jumps in time can cause problems, so services like ntpd often prefer to slow\ndown or speed up the system clock until it gradually approaches the correct\ntime (this is called 'slew' correction)."
+content_type = "text"
+
+[[entries]]
+url = "https://georgestocker.com/2020/03/04/please-stop-recommending-git-flow/"
+title = "Please stop recommending Git Flow!"
+summary = "A very much needed article around the hype of gitflow. If you use Git, you\nwon't regret reading it."
+content_type = "text"
+
+[[entries]]
+url = "https://caniuse.rs/"
+title = "Can I use (Rust)"
+summary = "A service to search for availability and stability of Rust features. Similar\nidea but simpler of the famous [caniuse](https://caniuse.com/) for web\nfeatures."
+content_type = "text"
+
+[[entries]]
+url = "https://rudism.com/the-brave-browser-is-brilliant/"
+title = "The Brave browser is brilliant"
+summary = "An article explaining the Brave “business model”. Some of us would call this a\nscam, judge by yourself.\n\nYou might also like this [complementary\nreading](https://github.com/lobsters/lobsters/issues/761)."
+content_type = "text"
+
+[[entries]]
+url = "https://web.eecs.utk.edu/~azh/pubs/Chattopadhyay2020CHI_NotebookPainpoints.pdf"
+title = "What’s Wrong with Computational Notebooks?"
+summary = "A paper describing a field study on the current computational notebook\nlandscape to identify pain points and improvement opportunities."
+content_type = "pdf"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=jdliXz70NtM"
+title = "Finding your service boundaries"
+summary = "A talk on how to organise your system (application, service, etc). Long but\nclearly shows how to apply DDD thinking to your system no matter the level of\nabstraction."
+content_type = "video"

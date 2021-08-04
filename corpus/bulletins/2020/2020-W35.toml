@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W35"
+publication_date = 2020-08-30
+summary = "This week some news in the WebAssembly space, a bit of software architecture, digging out the metacrap, productive porn and abusing gzip for fun."
+
+[[entries]]
+url = "https://stackoverflow.blog/2020/08/24/motoko-the-language-that-turns-the-web-into-a-computer/"
+title = "Motoko, a programming language for building directly on the internet"
+summary = "An article about the Internet Computer project and how Motoko was designed\nto support it using WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/bkolobara/lunatic-actor-based-webassembly-runtime-for-the-backend-36oj"
+title = "Lunatic: Actor based WebAssembly runtime for the backend"
+summary = "An article presenting a runtime written in Rust that works in an actor-based\nmodel similar to Erlang with the difference of each actor being a WebAssembly\ninstance with its own dedicated permissions."
+content_type = "text"
+
+[[entries]]
+url = "https://nocomplexity.com/documents/arplaybook/"
+title = "Architecture Playbook"
+summary = "A book on the different aspects of technical architecture (business, data,\nsoftware, etc)."
+content_type = "text"
+
+[[entries]]
+url = "https://people.well.com/user/doctorow/metacrap.htm"
+title = "Metacrap: Putting the torch to seven straw-men of the meta-utopia"
+summary = "A classic on the topic of metadata and its usefulness."
+content_type = "text"
+
+[[entries]]
+url = "https://nesslabs.com/productivity-porn"
+title = "Productivity porn"
+summary = "An article highlighting a couple of signs that are more about\nprocrastination than productivity.\n\nYou might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)\nfrom the same author."
+content_type = "text"
+
+[[entries]]
+url = "https://rushter.com/blog/gzip-indexing/"
+title = "How to turn an ordinary gzip archive into a database"
+summary = "An article about how to use the gzip concatenation feature to achieve random\naccess."
+content_type = "text"

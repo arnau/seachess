@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W23"
+publication_date = 2020-06-07
+summary = "This week has been about perceptual hash algorithms, a mathematical notation, Zsh, maze algorithms and the SQLite anniversary."
+
+[[entries]]
+url = "https://scriptingosx.com/2019/06/moving-to-zsh/"
+title = "Moving to zsh"
+summary = "A tutorial to get started with ZSH."
+content_type = "text"
+
+[[entries]]
+url = "https://www.jamisbuck.org/mazes/"
+title = "Maze Algorithms"
+summary = "A showcase of maze algorithms."
+content_type = "text"
+
+[[entries]]
+url = "https://www.sqlite.org/src/thisdayinhistory?today=2020-05-29"
+title = "SQLite turns 20"
+summary = "The timeline for SQLite, only showing the birth day (2020-05-29).\n\nBesides celebrating 20 years of existence of one of the most used databases,\nthis link shows an interesting feature of\n[Fossil](https://fossil-scm.org/home/doc/trunk/www/index.wiki) the version\ncontrol system used by SQLite, from the same authors, using SQLite as a\nstorage system."
+content_type = "text"
+
+[[entries]]
+url = "http://www.hackerfactor.com/blog/?/archives/432-Looks-Like-It.html"
+title = "Looks Like It"
+summary = "An article explaining the mechanics of a perceptual hash algorithm and how it\nhelps in finding similar images."
+content_type = "text"
+
+[[entries]]
+url = "https://www.serverlessops.io/blog/hello-serverless"
+title = "Hello Serverless"
+summary = "A series on how to approach serverless systems with AWS."
+content_type = "text"
+
+[[entries]]
+url = "https://penrose.ink/siggraph20"
+title = "Penrose: from mathematical notation to beautiful diagrams"
+summary = "A paper introducing Penrose, a mathematical notation that translates to one or\nmore visual representations."
+content_type = "text"

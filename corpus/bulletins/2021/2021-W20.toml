@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W20"
+publication_date = 2021-05-23
+summary = "This week has been about custom URL scheme security risk, a Python library for data analysis, monitoring and sensitive data detection, Electron security risks, Dataflow local notebooks, Flat Data and Wardley Maps."
+
+[[entries]]
+url = "https://onlinewardleymaps.com/"
+title = "Online Wardley Maps"
+summary = "A service to draw Wardley Maps using a text-based format a-la [Graphviz](https://graphviz.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://labs.bishopfox.com/tech-blog/reasonably-secure-electron"
+title = "Reasonably Secure Electron"
+summary = "An article on the security risks for [Electron](https://www.electronjs.org/) applications and how to mitigate them."
+content_type = "text"
+
+[[entries]]
+url = "https://fingerprintjs.com/blog/external-protocol-flooding/"
+title = "Exploiting custom protocol handlers for cross-browser tracking in Tor, Safari, Chrome and Firefox"
+summary = "An article on a vector of attack for desktop browsers using custom URL schemes to fingerprint and profile a user based on what they have installed in their computer."
+content_type = "text"
+
+[[entries]]
+url = "https://observablehq.com/@asg017/introducing-dataflow"
+title = "Introducing Dataflow, a self-hosted Observable Notebook Editor"
+summary = "An article on [Dataflow](https://github.com/asg017/dataflow), a local notebook tool compatible with [Observable](https://observablehq.com/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/capitalone/DataProfiler"
+title = "Data Profiler"
+summary = "A Python library designed to make data analysis, monitoring and sensitive data detection easy. The library identifies the schema, statistics, entities and more."
+content_type = "text"
+
+[[entries]]
+url = "https://octo.github.com/projects/flat-data"
+title = "Flat Data"
+summary = "A research project to explore the [git scrapping](https://simonwillison.net/2020/Oct/9/git-scraping/) pattern for bringing working datasets into GitHub repositories and versioning them."
+content_type = "text"

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W09"
+publication_date = 2020-03-01
+summary = "This week has been about yaml issues, a runtime in Rust, plugin-based systems, prolog, WebAssemby and web components."
+
+[[entries]]
+url = "https://open-wc.org/codelabs/basics/web-components.html"
+title = "Web Components codelab"
+summary = "A tutorial showing the features available with Web Components. Ideal if you\nhave done some web frontend development and want to get a sense of what Web\nComponents bring to the table."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/arcanis/plugin-systems-when-why-58pp"
+title = "Plugin systems - when & why?"
+summary = "An article reflecting on the experience of maintaining a plugin-based CLI\nversus a monolith CLI."
+content_type = "text"
+
+[[entries]]
+url = "https://bastion.rs/"
+title = "Bastion. Highly-available Distributed Fault-tolerant Runtime"
+summary = "A highly-available, fault-tolerant runtime system that provides an actor model\nwith supervision strategies. Like Erlang but in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://hacks.mozilla.org/2020/02/securing-firefox-with-webassembly/"
+title = "Securing Firefox with WebAssembly"
+summary = "An article briefly explaining the current methods used in Firefox to isolate\nexecution (sandboxing) and an extensive explanation of the new approach using\nwebassembly (wasi) compiled ahead of time."
+content_type = "text"
+
+[[entries]]
+url = "https://alexwlchan.net/2019/12/yaml-impossible/"
+title = "YAML impossible"
+summary = "A showcase of why you should never trust YAML, and should parse it with care\nand defensively."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/gilbert/write-a-user-permissions-system-in-5-lines-of-prolog-mof"
+title = "Write a User Permissions System in 5 lines of Prolog"
+summary = "An article showing the beauty of a rule-based programming language. Now that\nAI is in everyone's agenda, it's a great time to learn some Prolog and consider\nif perhaps that complex machinery you were thinking in building can be handled\nwith a few lines of Prolog."
+content_type = "text"

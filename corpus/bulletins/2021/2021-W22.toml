@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W22"
+publication_date = 2021-06-06
+summary = "This week has been about JupyterLba in the browser, distributed systems, interactive GPG management and QUIC."
+
+[[entries]]
+url = "https://svgfilters.com/"
+title = "SVG Filters"
+summary = "A servcie to build complex SVG filters."
+content_type = "text"
+
+[[entries]]
+url = "https://orhun.dev/blog/introducing-gpg-tui/"
+title = "Introducing gpg-tui, a Terminal User Interface for GnuPG"
+summary = "An article on a new interactive tool to manage GPG keys."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/jtpio/jupyterlite"
+title = "JupyterLite"
+summary = "A JupyterLab distribution that runs entirely in the browser via WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://ingrids.space/posts/why-distributed-systems-dont-work/"
+title = "Why Decentralised Applications Don’t Work,An article reflecting on decentralised applications"
+summary = "An article on the deception of distributed systems. Interesting thoughts on email, the Web, blockchain and Git."
+content_type = "text"
+
+[[entries]]
+url = "https://www.rfc-editor.org/rfc/rfc9000.html"
+title = "QUIC: A UDP-Based Multiplexed and Secure Transport"
+summary = "The QUIC specification has been on the works for almost a decade but it's now reaching concensus.\nNow might be a good time to start experimenting with HTTP/3 with [your HTTP client of choice](https://developers.cloudflare.com/http3/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/pretzelhammer/rust-blog/blob/master/posts/restful-api-in-sync-and-async-rust.md"
+title = "RESTful API in Sync & Async Rust"
+summary = "A tutorial showing two ways to approach the development an HTTP API in Rust."
+content_type = "text"

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W44"
+publication_date = 2020-11-01
+summary = "This week has been about Fourier transforms, binary file patterns, TerminusDB,\nand the history of PDF."
+
+[[entries]]
+url = "https://corte.si/posts/visualisation/binvis/index.html"
+title = "Visualizing binaries with space-filling curves"
+summary = "An article on a technique to visualise binary file patterns."
+content_type = "text"
+
+[[entries]]
+url = "http://www.jezzamon.com/fourier/index.html"
+title = "An Interactive Introduction to Fourier Transforms"
+summary = "A tutorial on Fourier transforms with examples on how are they applied to waves, epicycles and JPEGs."
+content_type = "text"
+
+[[entries]]
+url = "https://dmytri.dev/terminusdb-todoapp/"
+title = "TerminusDB TodoMVC"
+summary = "A tutorial on how to use [TerminusDB](https://terminusdb.com/) using the JavaScript SDK.\nWith the trend of knowledge base, RDF triplestores have an opportunity to click with a wider audience."
+content_type = "text"
+
+[[entries]]
+url = "https://virtualddd.com/learning-ddd/"
+title = "Virtual DDD"
+summary = "A collection of curated content on Domain Driven Development."
+content_type = "text"
+
+[[entries]]
+url = "https://www.vice.com/en/article/pam43n/why-the-pdf-is-secretly-the-worlds-most-important-file-format"
+title = "Why the PDF Is Secretly the World's Most Important File Format"
+summary = "An article telling the story of PDF, its ambition and how it turned out to be."
+content_type = "text"
+
+[[entries]]
+url = "https://embracethered.com/blog/posts/2020/husky-ai-image-rescaling-attacks/"
+title = "Machine Learning Attack Series: Image Scaling Attacks"
+summary = "An article explaining an attack to tamper with a Machine Learning model."
+content_type = "text"

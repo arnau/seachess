@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W49"
+publication_date = 2020-12-06
+summary = "This week has been about online anonymity, self-hosted archives, differential datalog, a game on politic misinformation and a collection of analogies to explain technical terms."
+
+[[entries]]
+url = "https://sidewaysdictionary.com/"
+title = "Sideways Dictionary"
+summary = "A collection of analogies to explain technical terms."
+content_type = "text"
+
+[[entries]]
+url = "https://chasewilson.dev/blog/intro-to-ddlog/"
+title = "Intro to DDlog"
+summary = "An article introducing the basics of [Differential Datalog](https://github.com/vmware/differential-datalog) and a hint of Differential Dataflow as its building block."
+content_type = "text"
+
+[[entries]]
+url = "https://archivebox.io/"
+title = "Archivebox"
+summary = "A self-hosted service to archive websites of your interest."
+content_type = "text"
+
+[[entries]]
+url = "https://misinforeview.hks.harvard.edu/article/breaking-harmony-square-a-game-that-inoculates-against-political-misinformation/"
+title = "Breaking Harmony Square: A game that “inoculates” against political misinformation"
+summary = "An article introducing the background and findings on a [research game](https://www.harmonysquare.game/) applying ideas from the inoculation theory to improve the player's resistance to politic misinformation."
+content_type = "text"
+
+[[entries]]
+url = "https://anonymousplanet.github.io/thgtoa/guide.html"
+title = "The Hitchhiker’s Guide to Online Anonymity"
+summary = "A thorough guide to how to set yourself up for online anonymity. Not for the faint of heart."
+content_type = "text"
+
+[[entries]]
+url = "https://bbodi.github.io/notecalc3/"
+title = "notecalc3"
+summary = "A notepad with a smart calculator built in."
+content_type = "text"

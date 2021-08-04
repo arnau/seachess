@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W19"
+publication_date = 2020-05-10
+summary = "This week has been about product iterations, a programming language, convolutional neural networks, time sadness and a particular font."
+
+[[entries]]
+url = "https://poloclub.github.io/cnn-explainer"
+title = "What is a Convolutional Neural Network?"
+summary = "An article introducing the concepts involved in a Convolutional Neural Network\n(CNN) and complemented with an interactive visualisation."
+content_type = "text"
+
+[[entries]]
+url = "https://gleam.run/"
+title = "Gleam"
+summary = "A programming language, statically typed and functional that compiles to\n[Erlang](https://www.erlang.org/) VM with interoperability with other BEAM\nlanguages such as [Elixir](https://elixir-lang.org/).\n\nThis week the team behind it has [released version 0.8](https://lpil.uk/blog/gleam-v0.8-released/)\nwith a noticeable improvement in developer experience."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.fullstory.com/suck-less-cycle"
+title = "Structured Wrongness With the Suck Less Cycle"
+summary = "An article describing a lifecycle to frame how to iterate on a product\nreliably.\n\n> Building great software is not about being perfect. It’s about reliably\n> making progress.\n\nIt's a better framed version of [“perfect is the enemy of\ngood”](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)\nhighlighting that although good enough is enough, the story doesn't end there.\n\nAfter all, “quality is relative” without a framework to assess what you have\ndone is just accepting you don't care about the result, you only care about\ngetting away with it."
+content_type = "text"
+
+[[entries]]
+url = "https://venam.nixers.net/blog/unix/2020/05/02/time-on-unix.html"
+title = "Time in Unix"
+summary = "An article that will challenge your trust on time and its implementation in\ncomputer systems.\n\n> […] in Unix time, each day is considered to be exactly 86400 SI seconds,\n> which would mean it should skew away from real UTC, and thus drifts away from\n> UT1 (mean time)."
+content_type = "text"
+
+[[entries]]
+url = "https://vole.wtf/scunthorpe-sans/"
+title = "Scunthorpe Sans"
+summary = "A font that censors bad language automatically."
+content_type = "text"
+
+[[entries]]
+url = "https://www.cybertec-postgresql.com/en/postgresql-count-made-fast/"
+title = "PostgreSQL count(*) made fast"
+summary = "An article about the quirks of Postgres' `count` function."
+content_type = "text"

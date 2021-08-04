@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W18"
+publication_date = 2020-05-03
+summary = "This week has been about degeneracy, a syntax highlighter for diffs, Rust and AWS Lambdas, driving change and a catalogue of public APIs."
+
+[[entries]]
+url = "https://github.com/dandavison/delta"
+title = "Delta"
+summary = "A syntax-highlighter for git and diff output."
+content_type = "text"
+
+[[entries]]
+url = "https://robertheaton.com/2020/04/27/how-does-a-tcp-reset-attack-work/"
+title = "How does a TCP Reset Attack work?"
+summary = "An article explaining the mechanics of a TCP reset attack. Apparently, one of\nthe techniques used by China's Great Firewall to enforce their censorship."
+content_type = "text"
+
+[[entries]]
+url = "https://public-apis.io/"
+title = "Public APIs"
+summary = "A collection of public HTTP API services categorised by topic.\n\nYou may also be interested in [Public API](https://public-apis.xyz/)."
+content_type = "text"
+
+[[entries]]
+url = "https://jamesmcm.github.io/blog/2020/04/19/data-engineering-with-rust-and-aws-lambda"
+title = "Data Ingestion with Rust and AWS Lambda"
+summary = "A tutorial of how to setup an AWS Lambda function with Rust, consuming\nspreadsheets from AWS S3.\n\nThe [Rusoto](https://github.com/rusoto/rusoto) project, although not yet 1.0,\nis already covering quite a few [AWS services](https://www.rusoto.org/supported-aws-services.html).\n\nThe [Amadeus](https://github.com/constellation-rs/amadeus) project is worth a\nlook as well if you are into data processing, ETL or analysis."
+content_type = "text"
+
+[[entries]]
+url = "https://adl.io/essays/degeneracy-code-and-innovation/"
+title = "Degeneracy, Code and Innovation"
+summary = "An article exploring the parallelisms of _degeneracy_, from\nbiology, applied to other situations like technical solutions, professional\ncareer, etc.\n\nIf you are like me, you'll have to ignore the bits that seem to imply that\nNature has some sort of intention or grand plan. Even with that, there are\nsome good seeds for thought in there.\n\n> Ever worked in a startup with a messy codebase everyone agrees has poor\n> architecture? In that startup, did the PM ever come up with an off-the-wall\n> idea—and instead of resistance, the team said, “actually… we just need to\n> tweak the X and bolt-on a Y, and we could do that pretty easily. It’ll be\n> ugly, but we can do it.”\n>\n> That first example is the anti-pattern Fisher is talking about. That second\n> example: unintentional degeneracy. Succeeding because of “bad” architecture,\n> not in spite of bad architecture."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@bocytko/driving-change-why-are-your-ideas-being-rejected-e2ab96227e40"
+title = "Driving change: why are your ideas being rejected?"
+summary = "An article about the factors that may prevent a proposal of improvement from\nbeing adopted."
+content_type = "text"

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W22"
+publication_date = 2020-05-31
+summary = "This week has been about user experience in the terminal, JSON management, an alternative to Electron and reified UIs."
+
+[[entries]]
+url = "https://geoman.io/leaflet-geoman"
+title = "Leaflet-Geoman"
+summary = "A tool to edit Leaflet geometries."
+content_type = "text"
+
+[[entries]]
+url = "https://mathvault.ca/math-glossary"
+title = "The Definitive Glossary of Higher Mathematical Jargon"
+summary = "A glossary of 106 terms related to mathematics."
+content_type = "text"
+
+[[entries]]
+url = "https://www.expressionsofchange.org/reification-of-interaction/"
+title = "CLIs are reified UIs"
+summary = "An article looking at the debate between Graphical User interfaces (GUIs) and\nCommand Line Interfaces (CLIs) from a different angle."
+content_type = "text"
+
+[[entries]]
+url = "http://karolis.koncevicius.lt/posts/fast_navigation_in_terminal_coming_full_cirlce/"
+title = "Fast Navigation in Terminal: Coming Full Circle"
+summary = "An article describing the author's experience trying to remove friction whilst\nnavigating directories."
+content_type = "text"
+
+[[entries]]
+url = "https://tauri.studio"
+title = "Tauri"
+summary = "A tool to build applications for the major desktop platforms.\n\nAlthough it is still early days, it aims to be a more efficient alternative to\nElectron."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ijl/orjson"
+title = "Orjson"
+summary = "A Python library written in Rust to manage JSON. The authors claim it is\nfaster and more correct than the way offered by the standard library."
+content_type = "text"

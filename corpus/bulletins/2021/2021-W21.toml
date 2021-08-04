@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W21"
+publication_date = 2021-05-30
+summary = "This week has been about Node.js on the browser, an immutable database, hiding SPARQL behind GraphQL, anothe python package manager and a cli game."
+
+[[entries]]
+url = "https://blog.stackblitz.com/posts/introducing-webcontainers/"
+title = "Introducing WebContainers: Run Node.js natively in your browser"
+summary = "An article introducing a solution to run fully operational Node.js environments in a browser using WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://pdm.fming.dev/"
+title = "PDM"
+summary = "A Python package manager similar to [npm](https://www.npmjs.com/) claiming to be better than [Pipienv](https://pipenv.pypa.io/) and [Poetry](https://python-poetry.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/facundoolano/rpg-cli"
+title = "rpg-cli"
+summary = "A command-line interface based game where your filesystem is the dungeon. Like using `cd` but with enemies you need to deal with."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/dbcls/grasp"
+title = "Grasp"
+summary = "A tool to hide a SPARQL endpoint behind GraphQL API."
+content_type = "text"
+
+[[entries]]
+url = "https://www.exaptive.com/blog/einstellung-effect-0"
+title = "Einstellung Effect: What You Already Know Can Hurt You"
+summary = "An article on the phenomenon where preexisting knowledge prevents us from finding an optimal solution."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/codenotary/immudb"
+title = "immudb"
+summary = "An immutable database with built-in cryptographic proof and verification that can be used either as a key-value store or as a relational SQL-based database."
+content_type = "text"

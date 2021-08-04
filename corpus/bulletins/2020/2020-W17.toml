@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W17"
+publication_date = 2020-04-26
+summary = "This week has been about architecture strategy, mindmap tools, Rust and WebAssembly."
+
+[[entries]]
+url = "https://webassembly.studio/"
+title = "Webassembly studio"
+summary = "An online tool to explore and learn Webassembly. Allows projects in C, Rust,\nTypescript and more."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78"
+title = "Things I Wished More Developers Knew About Databases"
+summary = "An article touching upon seventeen topics worth paying more attention to\nwhilst working with databases."
+content_type = "text"
+
+[[entries]]
+url = "https://joshondesign.com/2020/03/10/rust_minibrowser"
+title = "Building a Rust Web Browser"
+summary = "A series of articles on how the author is progressing in his mini webbrowser\nproject."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.thepete.net/blog/2019/12/09/delivering-on-an-architecture-strategy/"
+title = "Delivering on an architecture strategy"
+summary = "An article highlighting fundamental practices in a multi-discipline _product_\nteam and where a technical and an architectural strategy play their part.\n\nThere is a bit I dislike though, the categorisation of people as either\n\"doers\" or \"dreamers\". It is oversimplistic and gives a blank check to certain\ntype of people that _think_ they are doing their part by just dreaming\nunrealistic half-baked ideas."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/gera2ld/markmap-lib"
+title = "Markmap"
+summary = "A tool to plot mindmaps out of Markdown."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/denisidoro/navi"
+title = "Navi"
+summary = "An interactive cheatsheet tool for the command-line and application launchers."
+content_type = "text"

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W28"
+publication_date = 2020-07-12
+summary = "This week has been about CSS layouts, user tracking, linear thinking and a programming language for educational purposes."
+
+[[entries]]
+url = "https://nesslabs.com/cobra-effect"
+title = "The Cobra Effect: how linear thinking leads to unintended consequences"
+summary = "An article about the Cobra effect and some ideas on how to avoid it when\nmaking decisions."
+content_type = "text"
+
+[[entries]]
+url = "https://untools.co/ladder-of-inference"
+title = "Ladder of inference"
+summary = "A technique to methodically challenge your thinking in order to improve in\nyour decision making."
+content_type = "text"
+
+[[entries]]
+url = "https://www.pyret.org/"
+title = "Pyret"
+summary = "A programming language designed specifically for educational purposes."
+content_type = "text"
+
+[[entries]]
+url = "https://levelup.gitconnected.com/no-cookies-no-problem-using-etags-for-user-tracking-3e745544176b"
+title = "No Cookies, No Problem — Using ETags For User Tracking"
+summary = "An article reminding us that when we say “cookies” we mean “any means you use\nto track user behaviour”."
+content_type = "text"
+
+[[entries]]
+url = "https://1linelayouts.glitch.me/"
+title = "1-Line Layouts"
+summary = "A showcase of CSS layouts using either flexbox or grid."
+content_type = "text"
+
+[[entries]]
+url = "https://vscodium.com/"
+title = "Free/Libre Open Source Software Binaries of VSCode"
+summary = "An binary distribution of the VSCode editor without the MicroSoft telemetry\nand licensed as MIT instead of the [MS non-FLOSS licence](https://code.visualstudio.com/license)."
+content_type = "text"

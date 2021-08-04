@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W14"
+publication_date = 2021-04-11
+summary = "This week has been about Google tracking, Rust macros, WebAssembly search engines, CSS Grids and Obsidian."
+
+[[entries]]
+url = "https://github.com/elkowar/pipr"
+title = "Pipr"
+summary = "A tool to interactively write shell pipelines."
+content_type = "text"
+
+[[entries]]
+url = "https://obsidian.md/"
+title = "Obsidian"
+summary = "An offline-first knowledge base tool on top of a folder of Markdown files.\n\nI've been using this tool for the last few months and although it's still not a mature tool it has become my main tool to manage my knowledge base both at home and at work.\n\nThat said, I couldn't use it without a few plugins to enhance it:\n\n- [Dataview](https://github.com/blacksmithgu/obsidian-dataview), to query the knowledge base and display results as tables or lists.\n- [Mind Map](https://github.com/lynchjames/obsidian-mind-map), to display a mind map out of a Markdown structure.\n- [Sliding Panes](https://github.com/deathau/sliding-panes-obsidian), to stack open panes on the side.\n- [Minimal Settings](https://github.com/kepano/obsidian-minimal-settings), to tweak the interface to be less noisy.\n- [Metatable](https://github.com/arnau/obsidian-metatable), to display the full frontmatter."
+content_type = "text"
+
+[[entries]]
+url = "https://amifloced.org/"
+title = "Am I FLoCed?"
+summary = "A service to check whether Google is tracking you yet. Google is running a Chrome \"origin trial\" to test out an experimental new tracking feature called Federated Learning of Cohorts (aka \"FLoC\")."
+content_type = "text"
+
+[[entries]]
+url = "https://www.codeinwp.com/blog/css-grid-tutorial-layout/"
+title = "The Ultimate CSS Grid Tutorial for Beginners"
+summary = "A tutorial to get started with CSS Grids."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/"
+title = "Macros in Rust: A tutorial with examples"
+summary = "A tutorial covering all there is about macros in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tinysearch/tinysearch"
+title = "tinysearch"
+summary = "A lightweight full-text search engine to for static websites written in Rust and compiled to WebAssembly.\n\n[WebAssembly Search Tools for Static Sites](https://healeycodes.com/webassembly-search-tools-for-static-websites/) might be interesting if you want to check other options."
+content_type = "text"

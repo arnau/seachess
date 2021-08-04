@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W07"
+publication_date = 2021-02-21
+summary = "This week has been about MS-DOS games, a data constraint language, a functional puzzle game, WebAssembly memory management and CSS transitions."
+
+[[entries]]
+url = "https://www.joshwcomeau.com/animation/css-transitions/"
+title = "An Interactive Guide to CSS Transitions"
+summary = "A tutorial laying out the fundamental concepts to understand how CSS transitions work."
+content_type = "text"
+
+[[entries]]
+url = "https://archive.org/details/softwarelibrary_msdos_games"
+title = "Software Library: MS-DOS Games"
+summary = "A collection of playable MS-DOS Games."
+content_type = "text"
+
+[[entries]]
+url = "https://radu-matei.com/blog/practical-guide-to-wasm-memory/"
+title = "A practical guide to WebAssembly memory"
+summary = "An article diving into WebAssembly memory management."
+content_type = "text"
+
+[[entries]]
+url = "https://david-peter.de/cube-composer/"
+title = "Cube composer"
+summary = "A puzzle game to learn the fundamentals of functional programming."
+content_type = "text"
+
+[[entries]]
+url = "https://cuelang.org/"
+title = "CUE Data Constraint Language"
+summary = "A data constraint language which aims to simplify tasks involving defining and using data. It is a superset of JSON, allowing users familiar with JSON to get started quickly."
+content_type = "text"
+
+[[entries]]
+url = "https://www.mint-lang.com/"
+title = "Mint"
+summary = "A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/)."
+content_type = "text"

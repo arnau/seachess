@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W05"
+publication_date = 2020-02-02
+summary = "This week has been about Rust, a knowledge database, OLAP cubes, security issues with CSS and techniques for fuzzy matching."
+
+[[entries]]
+url = "https://terminusdb.com/"
+title = "TerminusDB"
+summary = "A graph database focused on knowledge graph representation. The new\nversion, 1.1, introduces a new storage system with revision control à la git.\nIn their words:\n\n> We adopt a delta encoding approach to updates (‘like git, but for data’)\nwhich provides the whole suite of revision control features: branch, merge,\nsquash, rollback, blame, and time-travel facilitating CI/CD approaches on\ndata.\n\nIn almost fifteen years with an on-and-off relationship with RDF, TerminusDB\nis the first database that I try that doesn't force you to manage all the\ncomplexity typically associated with RDF. I believe they have found a\nplausible abstraction for people that want to work with graphs without\ninvesting in the guts and bowels of RDF."
+content_type = "text"
+
+[[entries]]
+url = "https://beepb00p.xyz/unnecessary-db.html"
+title = "Against unnecessary databases"
+summary = "A comprehensive list of trade-offs on the topic of maintaining a local copy of\nremote data you don't own (or rather, you may own but you don't control)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense"
+title = "Stealing data with CSS: Attack and Defense"
+summary = "CSS Exfil is a method to let an attacker steal targeted data using _CSS\nalone_.\n\nMike Gualtieri explains in detail how the attack works and provides extensions\nfor Firefox and Chrome to mitigate it."
+content_type = "text"
+
+[[entries]]
+url = "https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/"
+title = "An Overview of Fuzzy Name Matching Techniques"
+summary = "This article goes through a couple of methods and their strengths and\nweaknesses to match names."
+content_type = "text"
+
+[[entries]]
+url = "https://pingcap.com/blog/rust-compilation-model-calamity/"
+title = "The Rust Compilation Model Calamity"
+summary = "This is the first part of a series of articles explaining what trade-offs make\nRust be slow at compile time. The short and oversimplified answer is: fast run\ntime and strong safe guarantees."
+content_type = "text"
+
+[[entries]]
+url = "https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/"
+title = "The Rise and Fall of the OLAP Cube"
+summary = "This article may interest you in two ways. if you are not familiar with the\nconcepts of OLTP and OLAP it will serve as a lightweight introduction;\notherwise it will serve to understand why OLAP cubes are less relevant than\nthey were a decade ago."
+content_type = "text"

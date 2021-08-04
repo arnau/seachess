@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W50"
+publication_date = 2020-12-13
+summary = "This week has been about TeX, better CLI UX and an embedded JSON database."
+
+[[entries]]
+url = "https://bitbashing.io/tex.html"
+title = "TeX: A tale of two worlds"
+summary = "An article on Donald Knuth's work on TeX."
+content_type = "text"
+
+[[entries]]
+url = "https://clig.dev/"
+title = "Command Line Interface Guidelines"
+summary = "A guide to help you write better command-line programs, taking traditional UNIX principles and updating them for the modern day."
+content_type = "text"
+
+[[entries]]
+url = "https://www.hillelwayne.com/post/always-more-history/"
+title = "There's Always More History"
+summary = "An article answering the question 'Why Vim Uses hjkl', 'Why JavaScript months start from 0' and what these two have in common."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rtosholdings/riptable"
+title = "RipTable"
+summary = "A library that enhances or replaces numpy, pandas, and includes high speed cross platform SDS file format."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/vincentdchan/PoloDB"
+title = "PoloDB"
+summary = "An embedded JSON-based database with a MongoDB-like API writen in Rust and stores data in a single file a-la SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/nanotee/nvim-lua-guide"
+title = "Getting started using Lua in Neovim"
+summary = "A guide to learn the basics of Lua and how to use it to drive Neovim."
+content_type = "text"

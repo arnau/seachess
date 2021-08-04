@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W25"
+publication_date = 2021-06-27
+summary = "This week has been about poisoning machine learning models, transforming formats into SQLite, the Grain language, OpenLineage and Verkle trees."
+
+[[entries]]
+url = "https://github.com/thombashi/sqlitebiter"
+title = "sqlitebiter"
+summary = "A tool to tranform CSV, Excel, HTML, JSON and more to SQLite databases.\n\nYou can find my selection of SQLite resources in [Some SQLite](https://github.com/arnau/some-sqlite/), similar to [Awesome lists](https://github.com/sindresorhus/awesome) but using the [Tabular Data Package](https://specs.frictionlessdata.io/tabular-data-package/)."
+content_type = "text"
+
+[[entries]]
+url = "https://arxiv.org/pdf/2106.08970.pdf"
+title = "Sleeper Agent: Scalable Hidden Trigger Backdoors for Neural Networks Trained from Scratch"
+summary = "A paper on a method to poison machine learning models with a hidden trigger, harder to detect than normal methods tampering with training data."
+content_type = "pdf"
+
+[[entries]]
+url = "https://grain-lang.org/"
+title = "Grain"
+summary = "A programming language targeting WebAssemlby. The language syntax shows the influence from Reason/OCaml, the language used for the compiler."
+content_type = "text"
+
+[[entries]]
+url = "https://raphlinus.github.io/ui/druid/2019/11/22/reactive-ui.html"
+title = "Towards a unified theory of reactive UI"
+summary = "An article exploring the trade-offs of tree manipulation for building user interfaces."
+content_type = "text"
+
+[[entries]]
+url = "https://hightouch.io/blog/exploring-data-lineage-with-open-lineage/"
+title = "Exploring Data Lineage with OpenLineage"
+summary = "An article introducing OpenLineage, an initiative to standardise data lineage for systems such as Spark or Airflow."
+content_type = "text"
+
+[[entries]]
+url = "https://vitalik.ca/general/2021/06/18/verkle.html"
+title = "Verkle trees"
+summary = "An article introducing Verkle trees, a more efficient version of Merkle trees for large datasets."
+content_type = "text"

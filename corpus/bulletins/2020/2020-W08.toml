@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W08"
+publication_date = 2020-02-23
+summary = "This week has been about floating point numbers, testing in production, privacy, security and personal workflows."
+
+[[entries]]
+url = "https://fabiensanglard.net/floating_point_visually_explained/"
+title = "Floating Point Visually Explained"
+summary = "A succinct article explaining the mechanics of floating point numbers."
+content_type = "text"
+
+[[entries]]
+url = "https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow"
+title = "How FZF and ripgrep improved my workflow"
+summary = "An article full of nice little snippets to take advantage of fzf and ripgrep.\nTwo of my must-have when I'm working in the terminal."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@inonst/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2"
+title = "A Deep Dive On The Most Critical API Vulnerability — BOLA (Broken Object Level Authorization)"
+summary = "An in-depth explanation about BOLA, an authorisation exploit you want to be on\ntop of if you are in the API business.\n\nIt has a gentle explanation for non-technical readers."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1"
+title = "Testing in production the safe way"
+summary = "An article that attempts to destigmatise the idea of “testing in production”\nby analysing the benefits and shortcomings of different stages such as\ndevelopment, test environment, deployment, release and post-release."
+content_type = "text"
+
+[[entries]]
+url = "https://rhg.dev/posts/elm-code-generation"
+title = "Elm code generation"
+summary = "An article that walks your through how to build a headless elm app running on\nNode.js."
+content_type = "text"
+
+[[entries]]
+url = "https://protonmail.com/blog/internet-of-things-privacy-iot-explained/"
+title = "The privacy risks of the Internet of Things"
+summary = "An article to make you think in how apparently harmless things could become an\nintrusion to your daily life. You may think you have nothing to hide but, are\nyou ok with letting others steal your information and monetise it?"
+content_type = "text"

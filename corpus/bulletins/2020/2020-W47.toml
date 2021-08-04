@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W47"
+publication_date = 2020-11-22
+summary = "This week has been about notebooks in Julia, vim plugins, open street map, datasette and git."
+
+[[entries]]
+url = "https://tekin.co.uk/2020/11/patterns-for-searching-git-revision-histories"
+title = "Why Git blame sucks for understanding WTF code (and what to use instead)"
+summary = "An article showing how to use `git log -S` to dig into a repository history given a known string. Besides the `-G` flag for regexes it is worth knowing [the -L flag](https://www.git-scm.com/docs/git-log#Documentation/git-log.txt--Lltfuncnamegtltfilegt)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/fonsp/Pluto.jl"
+title = "Pluto.jl"
+summary = "A notebook system written in [Julia](https://julialang.org/) from the ground up. Notebooks are stored as pure Julia code."
+content_type = "text"
+
+[[entries]]
+url = "https://www.robinlinacre.com/command_control/"
+title = "The Downfall of Command and Control Data Leadership"
+summary = "An article reflecting on the dangers of the narrative of solving the problems of an organisation by 'solving the data mess'. Half rant, half list of insights from experience."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mbbill/undotree"
+title = "Undotree"
+summary = "A plugin to navigate through the hierarchical tree of changes kept by Vim."
+content_type = "text"
+
+[[entries]]
+url = "https://joemorrison.medium.com/openstreetmap-is-having-a-moment-dcc7eef1bb01"
+title = "OpenStreetMap is Having a Moment"
+summary = "An article on how Apple, Amazon, Facebook and Microsoft are relying on OpenStreetMap as a critical piece of infrastructure."
+content_type = "text"
+
+[[entries]]
+url = "https://simonwillison.net/2020/Nov/14/personal-data-warehouses/"
+title = "Personal Data Warehouses: Reclaiming Your Data"
+summary = "A talk from the Datasette author on how he uses it to manage his own personal data. A very good example of how to exploit SQLite."
+content_type = "video"

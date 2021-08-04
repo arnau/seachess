@@ -179,19 +179,30 @@ pub struct Extrude {
     /// Path to write the resulting bulletin data.
     #[clap(long, short = 'o', value_name = "path", default_value = CANONICAL_STORAGE_PATH)]
     output_path: PathBuf,
+    #[clap(long, short = 't', default_value = "csv")]
+    output_type: String,
 }
 
 impl Extrude {
     pub fn run(&self) -> Result<Achievement, Error> {
         let mut conn = storage::connect(&self.cache_path)?;
         let tx = conn.transaction()?;
-        let issues_path = self.output_path.join("issues.csv");
-        let entries_path = self.output_path.join("entries.csv");
-        let mentions_path = self.output_path.join("mentions.csv");
 
-        serialize::issues_to_csv(&tx, File::create(issues_path)?)?;
-        serialize::entries_to_csv(&tx, File::create(entries_path)?)?;
-        serialize::mentions_to_csv(&tx, File::create(mentions_path)?)?;
+        match self.output_type.as_ref() {
+            "csv" => {
+                let issues_path = self.output_path.join("issues.csv");
+                let entries_path = self.output_path.join("entries.csv");
+                let mentions_path = self.output_path.join("mentions.csv");
+
+                serialize::issues_to_csv(&tx, File::create(issues_path)?)?;
+                serialize::entries_to_csv(&tx, File::create(entries_path)?)?;
+                serialize::mentions_to_csv(&tx, File::create(mentions_path)?)?;
+            }
+            "toml" => {
+                serialize::issues_to_toml(&tx, &self.output_path)?;
+            }
+            _ => unimplemented!(),
+        }
 
         tx.commit()?;
 

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W37"
+publication_date = 2020-09-13
+summary = "This week has been a mix of distributed systems, a database catalogue, graph visualisations, a game of bots, filesystems and WebAssembly systems."
+
+[[entries]]
+url = "https://halite.io/"
+title = "Halite"
+summary = "A game where participants have to write a bot in order to play.\n\nI found it via [Halite III Bot Development Kit in Rust](https://sgolem.com/halite-iii-bot-development-kit-in-rust)"
+content_type = "text"
+
+[[entries]]
+url = "https://dbdb.io/"
+title = "Database of databases"
+summary = "A catalogue of databases classified by licence, programming language and more."
+content_type = "text"
+
+[[entries]]
+url = "https://weinholt.se/articles/non-posix-filesystems/"
+title = "Non-POSIX file systems"
+summary = "An article about file systems and their history."
+content_type = "text"
+
+[[entries]]
+url = "https://g6.antv.vision"
+title = "G6 Graph Visualization Engine"
+summary = "A library in TypeScript to manage graph visualisations and analysis."
+content_type = "text"
+
+[[entries]]
+url = "https://wascc.dev"
+title = "waSCC"
+summary = "A dynamic, elastically scalable WebAssembly host runtime for securely connecting\nactors and capability providers."
+content_type = "text"
+
+[[entries]]
+url = "https://ahelwer.ca/post/2020-04-15-probabilistic-distsys/"
+title = "How do you reason about a probabilistic distributed system?"
+summary = "An article about the implications of designing distributed systems for probabilistic consensus protocols.\n\nEven if distributed systems is not your thing, [PRISM](https://www.prismmodelchecker.org) the probabilistic model checker is worth a look."
+content_type = "text"

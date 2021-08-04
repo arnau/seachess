@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W04"
+publication_date = 2020-01-25
+summary = "This week has been trade-offs, a fancy dictionary, a typography, and some Rust."
+
+[[entries]]
+url = "https://eunoia.world/"
+title = "Eunoia"
+summary = "A searchable directory of words that don't translate to English."
+content_type = "text"
+
+[[entries]]
+url = "https://www.jetbrains.com/lp/mono/"
+title = "Jetbrains"
+summary = "A monospaced typography designed for developers, with ligatures, well\ndifferentiated symbols and more."
+content_type = "text"
+
+[[entries]]
+url = "https://marmelab.com/react-admin/"
+title = "React Admin"
+summary = "A frontend Framework for building admin applications running in the browser,\non top of REST/GraphQL APIs, using ES6, React and Material Design."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/"
+title = "Trade-offs under pressure"
+summary = "This is the first part of a digested walkthrough of the paper [Trade-offs\nunder pressure: heuristics and observations of teams resolving internet\nservice\noutages](https://lup.lub.lu.se/student-papers/search/publication/8084520),\nAllspaw, Masters thesis, Lund University, 2015.\n\nIf the topic doesn't catch your attention, have a tour around their archives;\n[The morning paper](https://blog.acolyer.org/) is a remarkable place to find\ninteresting papers on a wide range of topics."
+content_type = "text"
+
+[[entries]]
+url = "https://www.theguild.nl/when-elixirs-performance-becomes-rust-y/"
+title = "When Elixir's performance becomes Rust-y"
+summary = "An article about how to use Rust with Elixir using\n[rustler](https://github.com/rusterlium/rustler), a library to create Erlang\nNIF functions in Rust.\n\nWorth remembering that\n[Discord also does this mix](https://blog.discordapp.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=s19G6n0UjsM"
+title = "Rust at speed: building a fast, concurrent database"
+summary = "In this talk from early 2019, Jon Gjengset explains in a very succinctly\nmanner the idea behind Rust ownership and what is this `unsafe` thing in Rust\nall about. And of course, the database he is working on,\n[Noria](https://github.com/mit-pdos/noria) is the jewel of the talk."
+content_type = "video"

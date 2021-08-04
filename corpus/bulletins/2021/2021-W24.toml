@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W24"
+publication_date = 2021-06-20
+summary = "This week has been about managing software dependencies, files as sets, metadata management, tab hoarding and dynamic types in Rust."
+
+[[entries]]
+url = "https://www.fastcompany.com/90635776/the-twisted-psychology-of-browser-tabs-and-why-we-cant-get-rid-of-them"
+title = "The twisted psychology of browser tabs—and why we can’t get rid of them"
+summary = "An article exploring the potential reasons for the tab hoarding phenomenon."
+content_type = "text"
+
+[[entries]]
+url = "https://deps.dev/"
+title = "Open Source Insights"
+summary = "A service to understand the direct and transitive dependencies in your software products. Shows known security alerts, licences and more for Npm packages, Go modules, Maven artifacts and Cargo crates."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/yarrow/zet"
+title = "Zet"
+summary = "A command-line tool to operate on files as sets of lines. A good companion when in need to quickly find the intersection, difference, etc in two or more files."
+content_type = "text"
+
+[[entries]]
+url = "https://www.jakobmeier.ch/blogging/Untapped-Rust.html"
+title = "Untapped potential in Rust's type system"
+summary = "An article reflecting on the meaning of ‘type’ in a programming language and exploring the potential of type reflection in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://humansofdata.atlan.com/2021/06/rise-metadata-lake/"
+title = "The Rise of the Metadata Lake"
+summary = "An article doubling down on metadata. Intentionally or not, it gives an overview on the trends and buzzwords around data. The only missing one seems to be “data virtualisation”.\n\nMake sure to re-read [Metacrap: Putting the torch to seven straw-men of the meta-utopia](https://people.well.com/user/doctorow/metacrap.htm) to cool down your excitement."
+content_type = "text"
+
+[[entries]]
+url = "https://ssir.org/articles/entry/burnout_from_an_organizational_perspective"
+title = "Burnout From an Organizational Perspective"
+summary = "An article on the causes of burnout, looks into how to measure it and external factors that may increase it."
+content_type = "text"

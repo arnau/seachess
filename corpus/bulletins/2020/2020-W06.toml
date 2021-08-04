@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W06"
+publication_date = 2020-02-09
+summary = "This week has been about Rust, a game like tetris, statistics of your codebase and WebAssembly."
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=fh9WXPu0hw8"
+title = "Bringing WebAssembly out side the web with WASI"
+summary = "Lin Clark walks us through the ideas behind WebAssembly and how the result of\nit could lead to a more secure world.\n\nIf you rather read than watch, check her article\n[Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)"
+content_type = "video"
+
+[[entries]]
+url = "https://cfsamsonbooks.gitbook.io/epoll-kqueue-iocp-explained"
+title = "Epoll, Kqueue and IOCP explained with Rust"
+summary = "A web book on different methods to use different strategies for efficient high\nperformance I/O."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/wasm/strings-in-webassembly-wasm-57a05c1ea333"
+title = "Strings in WebAssembly (Wasm)"
+summary = "An in-depth explanation of how Strings work in WebAssembly, specifically how\nRust wasm-bindgen handles them."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f"
+title = "Why Discord is switching from Go to Rust"
+summary = "This is another sneak peek into how Discord is architected through a success\nstory using Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://dirk.rave.org/combinatris/"
+title = "Combinatris"
+summary = "A game like Tetris using [SKI\ncombinators](https://en.wikipedia.org/wiki/SKI_combinator_calculus) instead of\ncoloured blocks. This is a good excuse to learn how they work isn't it?"
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/XAMPPRocky/tokei"
+title = "Tokei"
+summary = "A tool that gives statistics about a codebase. It will show number of files,\ntotal lines, comments and blank lines grouped by language."
+content_type = "text"

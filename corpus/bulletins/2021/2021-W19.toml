@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W19"
+publication_date = 2021-05-16
+summary = "This week has been about bash scripts in JavaScript, a browser-based IDE, patterns for Web Components, a book on networks, visually programming machine learning and Zulip."
+
+[[entries]]
+url = "https://github.com/google/zx"
+title = "zx"
+summary = "A tool to write bash scripts in JavaScript."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/orchest/orchest"
+title = "Orchest"
+summary = "A browser-based IDE based on pipelines, isolated execution steps and notebooks."
+content_type = "text"
+
+[[entries]]
+url = "https://zulip.com/"
+title = "Zulip"
+summary = "A chat service with threads, topics, custom emojis with the possibility to run your own server.\n\nChat applications are popular and surprisingly difficult to get right. I currently use [Slack](https://slack.com/), [Keybase](https://keybase.io/), [Discord](https://discord.com/), [Telegram](https://telegram.org/), [Signal](https://www.signal.org/) and have been testing [Rocket](https://rocket.chat/), [Matrix](https://matrix.org/) and what not.\n\nAnd not a single one of them ticks all the boxes."
+content_type = "text"
+
+[[entries]]
+url = "https://kobra.dev/"
+title = "Kobra"
+summary = "A visual programming language for machine learning."
+content_type = "text"
+
+[[entries]]
+url = "https://github.github.io/catalyst/"
+title = "Catalyst"
+summary = "A set of patterns and techniques to work with Web Components. It won't solve inherent problems of design like not being able to de-register a custom element but definitely a good read if you plan to lean on Web Components for your web app or rich page."
+content_type = "text"
+
+[[entries]]
+url = "https://hpbn.co/"
+title = "High Performance Browser Networking"
+summary = "A book on types of networks (WiFi, 3G/4G), transport protocols (UDP, TCP, TLS), application protocols (HTTP) and Web APIs (XHR, WebSocket, WebRTC)."
+content_type = "text"

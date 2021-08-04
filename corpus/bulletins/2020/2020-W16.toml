@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W16"
+publication_date = 2020-04-19
+summary = "This week has been about endianness, Git, agile practices, observability and illustrations."
+
+[[entries]]
+url = "https://launchdarkly.com/blog/the-fallacy-of-move-fast-and-break-things/"
+title = "The Fallacy of Move Fast and Break Things"
+summary = "An article challenging the belief that increased velocity is a good thing in\nitself.\n\n> The problem is moving fast doesn't work across industries or for all teams.\nTo effectively move fast, you need processes in place to support the velocity.\nThe consequences of moving too fast and not being able to fix things when they\nbreak are high.\n\n[How to Make Things High-Quality](https://medium.com/the-year-of-the-looking-glass/how-to-make-things-high-quality-f466f875227d)\nis article somewhat related you might enjoy.\n\n> It’s a mistake to conflate success with shipping a large quantity of\nfeatures."
+content_type = "text"
+
+[[entries]]
+url = "https://vishalkapur.com/how-to-have-impact/"
+title = "How to have impact"
+summary = "An article that proposes an alternative approach to how to evaluate your work\nother than good intentions that may or may not end up in the intended impact.\n\nWhile reading it I couldn't shake out of my head the\n[Wardley Maps\nbook](https://medium.com/wardleymaps/on-being-lost-2ef5f05eb1ec)."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.yoshuawuyts.com/byte-ordered-stream-parsing/"
+title = "Byte Ordered Streams"
+summary = "An article with a nicely condensed description of endianness and how to deal\nwith byte streams in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://jeremykun.com/2020/01/14/the-communicative-value-of-using-git-well/"
+title = "The Communicative Value of Using Git Well"
+summary = "An article with a few considerations about how to improve the narrative of Git\nhistory.\n\nIf this topic resonates with you, [Literate\nGit](https://github.com/bennorth/literate-git) might catch your eye."
+content_type = "text"
+
+[[entries]]
+url = "https://www.yuvalrob.com"
+title = "Yuval Robicheck illustrations"
+summary = "A set of brilliant illustrations from Yuval Robicheck."
+content_type = "text"
+
+[[entries]]
+url = "https://thenewstack.io/observability-a-3-year-retrospective"
+title = "Observability — A 3-Year Retrospective"
+summary = "An article reflecting on the evolution of the techniques around understanding\nhow a system performs."
+content_type = "text"

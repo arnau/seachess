@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W26"
+publication_date = 2021-07-04
+summary = "This week has been about cybersecurity countermeasures, web colours, an alternative to HTTPie, an easy TeX/LaTeX, and in-process document store and CLAs in open source."
+
+[[entries]]
+url = "https://github.com/ducaale/xh"
+title = "xh"
+summary = "A CLI tool to make HTTP requests heavily inspired by HTTPie without the burden of Python."
+content_type = "text"
+
+[[entries]]
+url = "https://tectonic-typesetting.github.io/"
+title = "Tectonic"
+summary = "A self-contained TeX/LaTeX engine with automatic pulling for new LaTeX packages. By far, it's the least painful way to compile LaTeX documents I found."
+content_type = "text"
+
+[[entries]]
+url = "https://unqlite.org/"
+title = "Unqlite"
+summary = "An in-process document store with single-file approach a-la SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://d3fend.mitre.org/"
+title = "d3fend"
+summary = "A knowledge base of cybersecurity countermeasures. Also worth checking out [ATT&CK](https://attack.mitre.org/), a knowledge base of adversary tactics and techniques based on real-world observations."
+content_type = "text"
+
+[[entries]]
+url = "https://writing.kemitchell.com/2018/01/06/CLAs-Are-Not-a-Sham.html"
+title = "CLAs are Not a Sham"
+summary = "An article on Contributor License Agreements (CLA), copyright and their impact on open source."
+content_type = "text"
+
+[[entries]]
+url = "https://darker.ink/writings/Towards-richer-colors-on-the-Web"
+title = "Towards richer colors on the Web"
+summary = "An article on the the current colour space limitations in the Web architecture and the plans to change that."
+content_type = "text"

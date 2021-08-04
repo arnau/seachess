@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W36"
+publication_date = 2020-09-06
+summary = "This week you'll find a study on web privacy, data analysis techniques in Python, a particular spreadsheet and a taste of the future of WebAssembly."
+
+[[entries]]
+url = "https://github.com/pemistahl/grex"
+title = "Grex"
+summary = "A command-line tool to generate regular expressions from test cases."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/hoffstadt/DearPyGui"
+title = "Dear PyGui"
+summary = "A library in Python to draw GPU-accelerated graphical user interfaces."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/andmarti1424/sc-im"
+title = "SC-IM"
+summary = "A terminal-based spreadsheet with a Vim flavour."
+content_type = "text"
+
+[[entries]]
+url = "https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i"
+title = "Many models workflows in python: part i"
+summary = "An article porting Hadley Wickham's approach to data analysis to Python."
+content_type = "text"
+
+[[entries]]
+url = "https://bytecodealliance.org/articles/reference-types-in-wasmtime"
+title = "WebAssembly Reference Types in Wasmtime"
+summary = "An article explaining with examples the Reference Types proposal for\nWebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://www.usenix.org/conference/soups2020/presentation/bird"
+title = "Replication: Why We Still Can't Browse in Peace: On the Uniqueness and Reidentifiability of Web Browsing Histories"
+summary = "A paper analysing the privacy threat that browser history leakage impose to\nindividuals. This work replicates and extends the 2012 paper “Why Johnny Can't\nBrowse in Peace: On the Uniqueness of Web Browsing History Patterns”."
+content_type = "pdf"

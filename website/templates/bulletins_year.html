@@ -11,7 +11,7 @@
 {{ macros::subscription_form() }}
 
 
-{% for page in section.pages %}
+{% for page in section.pages | sort(attribute="date") | reverse %}
 <section class="excerpt">
   <h2><a href="{{ page.path }}">{{ page.title }}</a></h2>
 

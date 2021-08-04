@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W13"
+publication_date = 2020-03-29
+summary = "This week has been about Rust, manipulating JSON, Security issues with Zoom, Pandas and SQLite and databases worth looking into."
+
+[[entries]]
+url = "https://protonmail.com/blog/zoom-privacy-issues/"
+title = "Using Zoom? Here are the privacy issues you need to be aware of"
+summary = "An article warning on Zoom users on known shady practices done and offered by\nthe company. And a timely reminder that less than a year ago Zoom had a\nsecurity problem they neglected and approached with sloppiness.\n\nIf you need more convincing check these out, [Zoom iOS app sends data to\nFacebook](https://www.vice.com/en_us/article/k7e599/zoom-ios-app-sends-data-to-facebook-even-if-you-dont-have-a-facebook-account)\n, [Zoom needs to clean up its privacy act](https://blogs.harvard.edu/doc/2020/03/27/zoom/)\nand [More on Zoom and privacy](http://blogs.harvard.edu/doc/2020/03/28/more-zoom/)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.infoworld.com/article/3533410/9-offbeat-databases-worth-a-look.html"
+title = "9 offbeat databases worth a look"
+summary = "A list of less popular databases. I have a weakness for in-process databases\nlike SQLite so [DuckDB](https://www.duckdb.org/) is my choice out of these\nnine:\n\n> DuckDB is an embedded database designed to execute analytical SQL queries\nfast while embedded in another process.\n\nOk, it's not in the article but if embedded databases is of your interest,\ncheck out [Sled](https://github.com/spacejam/sled)."
+content_type = "text"
+
+[[entries]]
+url = "https://pythonspeed.com/articles/indexing-pandas-sqlite/"
+title = "Fast subsets of large datasets with Pandas and SQLite"
+summary = "An article explaining two strategies to manage large datasets with Pandas."
+content_type = "text"
+
+[[entries]]
+url = "https://matklad.github.io/2020/03/22/fast-simple-rust-interner.html"
+title = "Fast and Simple Rust Interner"
+summary = "A quick introduction to string interning in Rust. Most relevant if you are\ninterested in Rust and optimal data structures."
+content_type = "text"
+
+[[entries]]
+url = "https://anssi-fr.github.io/rust-guide/"
+title = "Secure Rust Guidelines"
+summary = "A book of guidelines for developing Rust applications in a secure manner."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/dskkato/rjo"
+title = "Rjo"
+summary = "A small utility to create JSON objects, written in Rust. The original tool is\n[Jo](https://github.com/jpmens/jo), written in C."
+content_type = "text"

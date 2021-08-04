@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W31"
+publication_date = 2020-08-02
+summary = "This week has been about JQ, alacritty, interactive system diagrams and query systems in Rust."
+
+[[entries]]
+url = "https://nullprogram.com/blog/2020/08/01/"
+title = "Conventions for Command Line Options"
+summary = "An article describing the classic conventions in Unix command line interfaces\nand some of the problems derived from deviating from them."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/alacritty/alacritty"
+title = "Alacritty"
+summary = "A terminal emulator, cross-platform and GPU accelerated. I've been following\nthis project for quite some time but now, with the new release, v0.5, I'm\nadopting it as my main terminal."
+content_type = "text"
+
+[[entries]]
+url = "https://ncase.me/loopy/"
+title = "Loopy"
+summary = "A tool to draw interactive system diagrams."
+content_type = "text"
+
+[[entries]]
+url = "https://codefaster.substack.com/p/mastering-jq-part-1-59c"
+title = "Mastering JQ: Part 1"
+summary = "An tutorial on the basics of how jq works."
+content_type = "text"
+
+[[entries]]
+url = "https://pnevyk.github.io/posts/query-system-in-rust/"
+title = "Writing a simple query system in Rust"
+summary = "An article explaining the rudiments of a query system pattern in Rust. A nice\nopportunity to see a basic application of Rust reflection capabilities."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sharkdp/hexyl"
+title = "Hexyl"
+summary = "A tool to view the hexadecimal representation of a file. Similar to `hexdump`\nbut with bytes coloured by category."
+content_type = "text"

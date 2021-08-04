@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W41"
+publication_date = 2020-10-11
+summary = "This week has been about melody generators, visualisation primitives, Rust and Electron, ASTs and CRDTs.\n\nI also published [Dive into CSV on the Web](https://www.seachess.net/notes/dive-into-csvw) as part of my research on how to publish CSV with enough contextual information."
+
+[[entries]]
+url = "https://blog.logrocket.com/supercharge-your-electron-apps-with-rust/"
+title = "Supercharge your Electron apps with Rust"
+summary = "A tutorial on using Rust to build a library callable from Electron."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=x7drE24geUw"
+title = "CRDTs: The Hard Parts"
+summary = "A talk on CRDTs and the challenges currently unsolved to make them usable outside research."
+content_type = "video"
+
+[[entries]]
+url = "https://www.nngroup.com/articles/pdf-unfit-for-human-consumption/"
+title = "PDF: Still Unfit for Human Consumption, 20 Years Later"
+summary = "An article with the results of the research on the usability of PDF files for online reading.\n\nUnsurprisingly, the gist of it is:\n\n> Do not use PDFs to present digital content that could and should otherwise be a web page."
+content_type = "text"
+
+[[entries]]
+url = "https://rdambrosio016.github.io/rust/2020/09/18/pure-ast-based-linting-sucks.html"
+title = "Pure AST based linting sucks"
+summary = "An article on the issues of implementing a linter using abstract syntax trees (ASTs)."
+content_type = "text"
+
+[[entries]]
+url = "http://www.saraadkins.com/portfolio.html#letsgo"
+title = "Lets Go"
+summary = "An algorithmic step sequencer and melody generator based on a live game of Go."
+content_type = "text"
+
+[[entries]]
+url = "https://airbnb.io/visx/"
+title = "visx"
+summary = "A collection of visualization primitives for React."
+content_type = "text"

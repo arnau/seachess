@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W29"
+publication_date = 2020-07-19
+summary = "This week has been about predictive database queries, sqlite for Git, eventual consistency, datalog and property testing."
+
+[[entries]]
+url = "https://www.hillelwayne.com/contract-examples/"
+title = "Finding Property Tests"
+summary = "An article explaining what property tests are and what are they good for.\n\nFrom the same author, [Property Testing with Complex\nInputs](https://www.hillelwayne.com/post/property-testing-complex-inputs/)\nexplores further the potential of property testing around generating test\ndata."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/augmentable-dev/gitqlite"
+title = "gitqlite"
+summary = "A tool to query [Git](https://git-scm.com/) repositories with SQL. Another\nexpression of SQLite's virtual tables."
+content_type = "text"
+
+[[entries]]
+url = "https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning"
+title = "Testing Firefox more efficiently with machine learning"
+summary = "An article on how Firefox is trying to improve the performance of their\ncontinuous integration by using machine learning to select the relevant subset\nof tests to run for a given change."
+content_type = "text"
+
+[[entries]]
+url = "https://petevilter.me/post/datalog-typechecking/"
+title = "Turning the IDE Inside Out with Datalog"
+summary = "An article exploring the potential benefits of using a Datalog to build an\nIntegrated Development Environment (IDE)."
+content_type = "text"
+
+[[entries]]
+url = "https://materialize.io/eventual-consistency-isnt-for-streaming/"
+title = "Eventual Consistency isn’t for Streaming"
+summary = "An article exploring the shortcomings of eventual consistency applied to\nstreaming systems."
+content_type = "text"
+
+[[entries]]
+url = "https://aito.ai/blog/could-predictive-database-queries-replace-machine-learning-models/"
+title = "Could predictive database queries replace machine learning models?"
+summary = "An article on how predictive queries give a different approach than other\npredictive methods. Let me pique your curiosity with a quote:\n\n> Predictive queries resemble normal database queries with the exception that\nthey provide predictions about the unknown, while the traditional database\nqueries provide facts about the known"
+content_type = "text"

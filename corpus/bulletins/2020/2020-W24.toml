@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W24"
+publication_date = 2020-06-14
+summary = "This week has been about Jupyter for SQLite, tacit knowledge, Git, UTF-8 and flat UIs."
+
+[[entries]]
+url = "https://untools.co/"
+title = "Tools for better thinking"
+summary = "A catalogue of techniques to aid analysing a problem with examples for each\ntechnique."
+content_type = "text"
+
+[[entries]]
+url = "https://octobus.net/blog/2020-06-05-not-everything-is-utf8.html"
+title = "Not everything is UTF-8"
+summary = "An article showing why programmers can't always afford to assume strings are\nUTF-8."
+content_type = "text"
+
+[[entries]]
+url = "https://www.nngroup.com/articles/flat-ui-less-attention-cause-uncertainty/"
+title = "Flat UI Elements Attract Less Attention and Cause Uncertainty"
+summary = "A study on the effectiveness of flat user interfaces."
+content_type = "text"
+
+[[entries]]
+url = "https://commoncog.com/blog/tacit-knowledge-is-a-real-thing/"
+title = "Why Tacit Knowledge is More Important Than Deliberate Practice"
+summary = "An article introducing the concept of “Tacit knowledge” and how it relates to\nNaturalistic Decision Making.\n\nYou may want to also consider\n[The Problems with Deliberate Practice](https://commoncog.com/blog/the-problems-with-deliberate-practice/) from the\nsame author."
+content_type = "text"
+
+[[entries]]
+url = "https://dropbox.tech/application/speeding-up-a-git-monorepo-at-dropbox-with--200-lines-of-code"
+title = "Speeding up a Git monorepo at Dropbox with <200 lines of code"
+summary = "An article about the journey Dropbox went through to improve their version\ncontrol system responsiveness and the overall developer experience."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.jupyter.org/a-jupyter-kernel-for-sqlite-9549c5dcf551"
+title = "A Jupyter kernel for SQLite"
+summary = "An article anouncing the [xeus-sqlite](https://xeus-sqlite.readthedocs.io)\nproject that will bring first-class SQLite interaction in Jupyter notebooks."
+content_type = "text"

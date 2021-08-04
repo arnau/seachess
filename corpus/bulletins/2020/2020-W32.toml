@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W32"
+publication_date = 2020-08-09
+summary = "This week has been about nix, data validation, CRDTs, the pre-mortem technique, NLP beyond English and responsive compilers."
+
+[[entries]]
+url = "https://ruder.io/nlp-beyond-english/"
+title = "Why You Should Do NLP Beyond English"
+summary = "An article highlighting the shortcomings in the current approach to natural\nlanguage processing and the risks that they carry."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=N6b44kMS6OM"
+title = "Responsive compilers"
+summary = "A talk introducing [Salsa](https://github.com/salsa-rs/salsa) and how Rust\nis trying to build an incremental compiler that works well with IDEs."
+content_type = "video"
+
+[[entries]]
+url = "https://lars.hupel.info/topics/crdt/01-intro/"
+title = "An introduction to Conflict-Free Replicated Data Types"
+summary = "A series introducing the foundations of Conflict-Free Replicated Data Types\n(CRDT) and how they reconcile data across a distributed system."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/pandera-dev/pandera"
+title = "Pandera"
+summary = "A library to validate data structures in [Pandas](https://pandas.pydata.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://ghedam.at/15978/an-introduction-to-nix-shell"
+title = "An introduction to nix-shell"
+summary = "An article explaining the basics of `nix-shell` as a reproducible development\nenvironment.\n\nIf the article leaves you with appetite for more, [nix.env](https://nix.dev/)\nshould be your next stop."
+content_type = "text"
+
+[[entries]]
+url = "https://nesslabs.com/pre-mortem-anticipate-failure-with-prospective-hindsight"
+title = "Pre-mortem: how to anticipate failure with prospective hindsight"
+summary = "An article explaining the pre-mortem technique and how it helps manage the\noptimism bias our team might have at the beginning of a project."
+content_type = "text"

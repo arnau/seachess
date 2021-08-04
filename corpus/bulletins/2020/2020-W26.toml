@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W26"
+publication_date = 2020-06-28
+summary = "This week has been about Rust and CSV, JWT mistakes, Graph and tree traversals, Nix and Python, a language made for WebAssembly and parallelism in SQLite."
+
+[[entries]]
+url = "https://www.skoumal.com/en/parallel-read-and-write-in-sqlite/"
+title = "Parallel read and write in SQLite"
+summary = "An article on how locks, journals and Work-Ahead Logs work in SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://thomazleite.com/posts/development-with-nix-python/"
+title = "Development with Nix: Python"
+summary = "A short tutorial on using Nix to harness Python dependency management."
+content_type = "text"
+
+[[entries]]
+url = "https://www.assemblyscript.org/"
+title = "A language made for WebAssembly"
+summary = "A programming language that takes a subset of TypeScript and targets\nWebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://r2c.dev/blog/2020/hardcoded-secrets-unverified-tokens-and-other-common-jwt-mistakes/"
+title = "Hardcoded secrets, unverified tokens, and other common JWT mistakes"
+summary = "An article analysing the security weaknesses of 2000 npm modules in their use\nof JWT (RFC 7519).\n\nMake sure to check [Semgrep](https://semgrep.live) a command-line\ntool for offline static analysis."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.burntsushi.net/csv/"
+title = "Rust and CSV parsing"
+summary = "An article on how to use and optimise reding and writing CSV. If you think CSV\nis simple, this article is for you.\n\nIf you are into CSV, check [BaDSV](https://github.com/RocketRace/badsv) for a\ntreat."
+content_type = "text"
+
+[[entries]]
+url = "https://sachanganesh.com/programming/graph-tree-traversals-in-rust/"
+title = "Graph & Tree Traversals in Rust"
+summary = "A tutorial on how to implement a tree data structure in Rust such that it can\nbe iterated and mutated. It's one of the nicest introductions to arena\nallocators I've seen so far."
+content_type = "text"

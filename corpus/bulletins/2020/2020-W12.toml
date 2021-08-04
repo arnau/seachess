@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2020-W12"
+publication_date = 2020-03-22
+summary = "This week has been about graphical command line interfaces, agile practices, a tool to manage colours, Github practices and remote work."
+
+[[entries]]
+url = "https://doriantaylor.com/agile-as-trauma"
+title = "Agile as trauma"
+summary = "An article reflecting on where Agile comes from and why some of the mantras\nare not always a good thing.\n\nSame topic, different angle is [Agile\nFluency](https://www.martinfowler.com/articles/agileFluency.html)."
+content_type = "text"
+
+[[entries]]
+url = "https://oduinn.com/2020/02/25/distributed-team-vs-remote-work-and-work-from-home/"
+title = "Distributed Team vs Remote Work, Virtual Work, Telework and Work From Home"
+summary = "An attempt to define and contextualise terminology around teams not working in\nthe same physical place."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.repl.it/clui"
+title = "CLUI: Building a Graphical Command Line"
+summary = "An article exploring what's next for user interfaces. Rich and interactive CLI\nis not new but the article has a twist worth paying attention to."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@catamphetamine/how-github-blocked-me-and-all-my-libraries-c32c61f061d3"
+title = "How GitHub blocked me (and all my libraries)"
+summary = "A tale of the dark side of Github. Ah! now Npm joins the party of ~~open~~\nrestricted source (https://blog.npmjs.org/post/612764866888007680/next-phase-montage)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sharkdp/pastel"
+title = "Pastel"
+summary = "A command-line tool to to generate, analyze, convert and manipulate colors.\nSome interfaces are a delight to use."
+content_type = "text"
+
+[[entries]]
+url = "https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine"
+title = "Rewriting the heart of our sync engine"
+summary = "An article from Dropbox explaining the problems they faced with their\nsynchronisation engine."
+content_type = "text"

@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W12"
+publication_date = 2021-03-28
+summary = "This week has been about Parquet, React grids, Datalog and calculations for latitude/longitude points."
+
+[[entries]]
+title = "SQLite is not a toy database"
+url = "https://antonz.org/sqlite-is-not-a-toy-database/"
+summary = "An article showcasing the top features SQLite has to offer to support everyday data wrangling. Even more useful now with the Math functions included in [version 3.35.0](https://sqlite.org/releaselog/3_35_0.html)."
+content_type = "text"
+
+[[entries]]
+title = "Compressing data with Parquet"
+url = "https://dev.l1x.be/posts/2021/03/08/compressing-data-with-parquet/"
+summary = "An article explaining the benefits of using Parquet instead of SQLite to distribute large datasets with a high columnar repetition. A short demonstration of why columnar formats are a better choice for certain types of datasets."
+content_type = "text"
+
+[[entries]]
+title = "Glide Data Grid"
+url = "https://github.com/glideapps/glide-data-grid"
+summary = "A React library to render an editable table using Canvas. Although it claims to scale to millions of rows, it says nothing about the price you pay in lack of accessibility."
+content_type = "text"
+
+[[entries]]
+title = "Getting Drunk with Datalog"
+url = "https://ianthehenry.com/posts/getting-drunk-with-datalog/"
+summary = "A tutorial on getting started with Datalog."
+content_type = "text"
+
+[[entries]]
+title = "Sq"
+url = "https://sq.io/"
+summary = "A tool to inspect, query, join, import, and export data. Like [jq](https://stedolan.github.io/jq/) but for relational data, whether that data is in a document or database."
+content_type = "text"
+
+[[entries]]
+title = "Calculate distance, bearing and more between Latitude/Longitude points"
+url = "https://www.movable-type.co.uk/scripts/latlong.html"
+summary = "A tutorial presenting a variety of calculations for latitude/longitude points with formulas and JavaScript code examples included."
+content_type = "text"

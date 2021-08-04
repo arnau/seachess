@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W06"
+publication_date = 2021-02-14
+summary = "This week has been about web browsers, neovim, dependency confusion, ssh tunnels and unthinking intelligence."
+
+[[entries]]
+url = "https://browser.engineering/"
+title = "Web Browser Engineering"
+summary = "A book on how web browsers work by building a simple web browser in Python."
+content_type = "text"
+
+[[entries]]
+url = "https://www.noemamag.com/the-thoughts-the-civilized-keep/"
+title = "The Thoughts The Civilized Keep"
+summary = "An article on unthinking intelligence, machines and humans. A reflection on the current improvements in the artificial intelligence."
+content_type = "text"
+
+[[entries]]
+url = "https://robotmoon.com/ssh-tunnels/"
+title = "A visual guide to SSH tunnels"
+summary = "An article illustrating the common use cases for using SSH tunnels."
+content_type = "text"
+
+[[entries]]
+url = "https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610"
+title = "Dependency Confusion: How I Hacked Into Apple, Microsoft and Dozens of Other Companies"
+summary = "An article explaining the history of the Dependency Confusion attack and the principles behind it."
+content_type = "text"
+
+[[entries]]
+url = "https://icyphox.sh/blog/nvim-lua/"
+title = "Configuring Neovim using Lua"
+summary = "An article exploring the unstable Lua interface to configure Neovim."
+content_type = "text"
+
+[[entries]]
+url = "https://litestream.io/blog/why-i-built-litestream/"
+title = "Why I Built Litestream"
+summary = "A tool to replicate SQLite databases to Amazon S3."
+content_type = "text"

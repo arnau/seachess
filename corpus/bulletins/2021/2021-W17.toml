@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W17"
+publication_date = 2021-05-02
+summary = "This week has been about CSS custom properties, structuring technical documentation, API security, an embedded document database, data analysis with SQL and a datalog to SQL compiler."
+
+[[entries]]
+url = "https://github.com/flipkart-incubator/Astra"
+title = "Astra"
+summary = "A tool to run security tests on REST APIs."
+content_type = "text"
+
+[[entries]]
+url = "https://diataxis.fr/"
+title = "Diátaxis"
+summary = "A framework aiming to aid with the problem of structuring technical documentation."
+content_type = "text"
+
+[[entries]]
+url = "https://hakibenita.com/sql-for-data-analysis"
+title = "Practical SQL for Data Analysis"
+summary = "A tutorial on how to use SQL instead of Pandas for efficient data analysis in Python. Although it focuses on PostgreSQL it is, with a few exceptions like linear regressions, straightforward to translate to other engines."
+content_type = "text"
+
+[[entries]]
+url = "https://css-tricks.com/a-complete-guide-to-custom-properties/"
+title = "A Complete Guide to Custom Properties"
+summary = "A tutorial aiming to cover all there is about CSS custom properties. Also food for thought on what is the line where it is excessive, unmaintainable and cluttered of incomprehensible global-ish variables."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/scottrogowski/mongita"
+title = "Mongita"
+summary = "A lightweight embedded document database implementing a subset of the MongoDB interface."
+content_type = "text"
+
+[[entries]]
+url = "https://logica.dev/"
+title = "Logica"
+summary = "A declarative logic programming language for data manipulation. It's a datalog to SQL compiler mainly targeted to Google BigQuery but with experimental support for PostgreSQL and SQLite."
+content_type = "text"

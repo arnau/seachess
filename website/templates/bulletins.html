@@ -16,7 +16,7 @@
 <section>
   <h2>Issues from {{ current_bulletin.title }}</h2>
 
-  {% for page in current_bulletin.pages %}
+  {% for page in current_bulletin.pages | sort(attribute="date") | reverse %}
   <section class="excerpt">
     <h3><a href="{{ page.path }}">{{ page.title }}</a></h3>
 
@@ -28,8 +28,8 @@
   {% endfor %}
 </section>
 
-<section>
-  <h2>Historic</h2>
+<section class="archive">
+  <h2>Archive</h2>
   <ul>
   {% for s in sub_paths %}
     {% set sub = get_section(path=s) %}
