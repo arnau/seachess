@@ -34,7 +34,7 @@ it shows great potential already so it is worth checking its evolution closely.
 
 ## Learning curve
 
-The learning curve is soft an steady. The [book][nu_book] does a great job at
+The learning curve is soft and steady. The [book][nu_book] does a great job at
 introducing concepts bit by bit and the [cookbook][nu_cookbook] is a good
 complement for ready to go recipes. In both cases though I found the examples
 slightly out of sync, consequence of the rapid evolution of Nu.
