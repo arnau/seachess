@@ -992,3 +992,11 @@ https://github.com/doyensec/electronegativity,Electronegativity,A tool to identi
 https://www.youtube.com/watch?v=EVRf708-zq4&t=3s,Damn GraphQL - Defending and Attacking APIs,A talk on what to consider when securing a GraphQL API.,video,2021-W30
 https://blog.openreplay.com/everything-you-ever-wanted-to-know-about-webrtc,Everything You Ever Wanted to Know About WebRTC,An article diving into the fundamentals of the Web Real-Time Communication APIs.,text,2021-W30
 https://thenewstack.io/rust-and-webassembly-serverless-functions-in-vercel/,Rust and WebAssembly Serverless Functions in Vercel,A tutorial on how to use WebAssembly in edge functions such as Vercel's Serverless Functions.,text,2021-W30
+https://hbr.org/2021/03/how-to-measure-burnout-accurately-and-ethically,How to Measure Burnout Accurately and Ethically,"An article on what is the Maslach Burnout Inventory (MBI), how it has been used (and misused).",text,2021-W31
+https://portswigger.net/research/http2,HTTP/2: The Sequel is Always Worse,A paper on the security flaws of HTTP/2 with comprehensive examples of how each attack works.,text,2021-W31
+https://matt-rickard.com/virgo-lang/,Virgo: a Graph-based Configuration Language,"An article introducing Virgo, a configuration language aiming to express direct acyclic graphs (DAGs) instead of trees (e.g. JSON, YAML).",text,2021-W31
+https://timharford.com/2021/07/the-tyranny-of-spreadsheets/,The tyranny of spreadsheets,"An article on the sloppy usage of spreadsheets with a bit of quiz history of its origins. A reminder that _easy to use_ does not equate to _properly used_.
+
+> [...] a tool like a Swiss Army knife for numbers, sitting in your digital back pocket. Any idiot could use it. And goodness, we did.",text,2021-W31
+https://observablehq.com/@sandravizmad/100_days_d3_dataviz,100 Days D3 Dataviz,A collection of tutorials to get the grips with [D3](https://d3js.org/) for data visualisation.,text,2021-W31
+https://djharper.dev/post/2020/12/26/executable-pngs/,Executable PNGs,An article exploring stenography as a way to make PNGs executable programs just for fun.,text,2021-W31
