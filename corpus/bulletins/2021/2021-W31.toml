@@ -1,0 +1,44 @@
+type = "bulletin"
+id = "2021-W31"
+publication_date = 2021-08-08
+summary = "This week has been about executable PNGs, burnout, a graph configuration language, D3 tutorials, HTTP/2 security and the tyranny spreadsheets."
+
+[[entries]]
+title = "Executable PNGs"
+url = "https://djharper.dev/post/2020/12/26/executable-pngs/"
+summary = "An article exploring stenography as a way to make PNGs executable programs just for fun."
+content_type = "text"
+
+[[entries]]
+title = "How to Measure Burnout Accurately and Ethically"
+url = "https://hbr.org/2021/03/how-to-measure-burnout-accurately-and-ethically"
+summary = "An article on what is the Maslach Burnout Inventory (MBI), how it has been used (and misused)."
+content_type = "text"
+
+[[entries]]
+title = "Virgo: a Graph-based Configuration Language"
+url = "https://matt-rickard.com/virgo-lang/"
+summary = "An article introducing Virgo, a configuration language aiming to express direct acyclic graphs (DAGs) instead of trees (e.g. JSON, YAML)."
+content_type = "text"
+
+[[entries]]
+title = "100 Days D3 Dataviz"
+url = "https://observablehq.com/@sandravizmad/100_days_d3_dataviz"
+summary = "A collection of tutorials to get the grips with [D3](https://d3js.org/) for data visualisation."
+content_type = "text"
+
+[[entries]]
+title = "HTTP/2: The Sequel is Always Worse"
+url = "https://portswigger.net/research/http2"
+summary = "A paper on the security flaws of HTTP/2 with comprehensive examples of how each attack works."
+content_type = "text"
+
+[[entries]]
+title = "The tyranny of spreadsheets"
+url = "https://timharford.com/2021/07/the-tyranny-of-spreadsheets/"
+summary = """
+An article on the sloppy usage of spreadsheets with a bit of quiz history of its origins. A reminder that _easy to use_ does not equate to _properly used_.
+
+> [...] a tool like a Swiss Army knife for numbers, sitting in your digital back pocket. Any idiot could use it. And goodness, we did.
+"""
+content_type = "text"
