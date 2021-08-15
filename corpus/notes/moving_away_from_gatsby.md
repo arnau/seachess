@@ -51,7 +51,7 @@ To a lesser extent, I wanted to minimise maintaining JavaScript code and favour 
 
 I looked into the state of static site generators in Rust. At the time of writing are [Zola], [Cobalt] and [mdBook].
 
-mdBook wasn't a good choice for my as I wanted more control over the HTML generation and wouldn't benefit from the book-oriented approach. Between Zola and Cobalt I chose Zola, mainly because the proposition and documentation felt better.
+mdBook wasn't a good choice for me as I wanted more control over the HTML generation and wouldn't benefit from the book-oriented approach. Between Zola and Cobalt I chose Zola, mainly because the proposition and documentation felt better.
 
 Zola's selling point is offering a single binary with everything included.
 Although this is quite an appealing idea, I knew it wouldn't tick all the boxes for me so I'm approaching as a two step process that should allow me to accomodate my taste but still benefit from lots that Zola has to offer.

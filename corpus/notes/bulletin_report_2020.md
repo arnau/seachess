@@ -17,73 +17,25 @@ An attempt to draw some insights from the publication of the weekly bulletins in
 
 Let's start with some general numbers to frame the rest of the report:
 
-<table>
-  <thead>
-    <tr>
-      <th>title</th>
-      <th>total</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Amount of resources read</td>
-      <td>1025</td>
-    </tr>
-    <tr>
-      <td>Amount of resources published</td>
-      <td>204</td>
-    </tr>
-    <tr>
-      <td>Amount of sources</td>
-      <td>32</td>
-    </tr>
-  </tbody>
-</table>
+|title|total|
+|-|-:|
+|Amount of resources read|1025|
+|Amount of resources published|204|
+|Amount of sources|32|
+
 
 Although each bulletin issue has 6 resources, the amount I read per week is higher. A summary:
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>weekly_amount</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>count</td>
-      <td>36.0</td>
-    </tr>
-    <tr>
-      <td>mean</td>
-      <td>28.5</td>
-    </tr>
-    <tr>
-      <td>std</td>
-      <td>7.6</td>
-    </tr>
-    <tr>
-      <td>min</td>
-      <td>14.0</td>
-    </tr>
-    <tr>
-      <td>25%</td>
-      <td>23.0</td>
-    </tr>
-    <tr>
-      <td>50%</td>
-      <td>28.0</td>
-    </tr>
-    <tr>
-      <td>75%</td>
-      <td>32.5</td>
-    </tr>
-    <tr>
-      <td>max</td>
-      <td>45.0</td>
-    </tr>
-  </tbody>
-</table>
+|metric|weekly_amount|
+|-|-:|
+|count|36.0|
+|mean|28.5|
+|std|7.6|
+|min|14.0|
+|25%|23.0|
+|50%|28.0|
+|75%|32.5|
+|max|45.0|
 
 
 ## Resources
@@ -335,59 +287,48 @@ bulletin:
 <table>
   <thead>
     <tr>
-      <th></th>
       <th>domain</th>
       <th>total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
       <td>github.com</td>
       <td>27</td>
     </tr>
     <tr>
-      <th>1</th>
       <td>www.youtube.com</td>
       <td>6</td>
     </tr>
     <tr>
-      <th>2</th>
       <td>nesslabs.com</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>3</th>
       <td>medium.com</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>4</th>
       <td>hacks.mozilla.org</td>
       <td>3</td>
     </tr>
     <tr>
-      <th>5</th>
       <td>www.nngroup.com</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>6</th>
       <td>www.hillelwayne.com</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>7</th>
       <td>untools.co</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>8</th>
       <td>r2c.dev</td>
       <td>2</td>
     </tr>
     <tr>
-      <th>9</th>
       <td>pair.withgoogle.com</td>
       <td>2</td>
     </tr>

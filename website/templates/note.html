@@ -24,9 +24,10 @@
     {# macros::feedback_link(title=page.title, kind="note") #}
   </div>
 
+  {{ macros::toc(table=page.toc) }}
+
   {{ page.extra.summary | markdown() | safe }}
 
-  {{ macros::toc(table=page.toc) }}
 
   {{ page.content | safe }}
 </article>

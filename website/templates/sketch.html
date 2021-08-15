@@ -39,11 +39,14 @@
 {{ page.content | safe }}
 
 {% set asset_path = page.assets[0]  %}
+{% set asset = resize_image(path=asset_path, width=800, op="fit_width") %}
 <picture>
   <img
       style="object-fit: cover; opacity: 1;"
       decoding="async"
-      src="{{ resize_image(path=asset_path, width=900, op="fit_width") }}"
+      src="/processed_images/{{ asset.static_path | split(pat="/") | last }}"
+      width="{{ asset.width }}"
+      height="{{ asset.height }}"
       alt=""
     >
 </picture>
