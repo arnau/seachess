@@ -100,13 +100,13 @@ preserve the information about historic changes.
 First, clone the `forest` repository to a dedicated copy to preserve the
 original `forest` intact:
 
-```
+```sh
 git clone forest pruned-forest
 ```
 
 Then, prepare the `garden`:
 
-```
+```sh
 cd garden
 git remote add pruned-forest ../pruned-forest
 git checkout -b apple-tree
@@ -123,7 +123,7 @@ branch.
 Now it's time to remove anything we don't want to preserve. We need to change
 the shape of `apple-tree`, our target directory, to our final needs.
 
-```
+```sh
 cd ../pruned-forest
 git rm -r apple-tree/forest-apple
 git commit -m "Remove Malus sieversii"
@@ -150,7 +150,7 @@ WARNING: git-filter-branch has a glut of gotchas generating mangled history
          set FILTER_BRANCH_SQUELCH_WARNING=1.
 ```
 
-```
+```sh
 # still in pruned-forest
 git filter-branch --subdirectory-filter apple-tree
 ```
@@ -168,7 +168,7 @@ pruned-forest
 
 Check the history with:
 
-```
+```sh
 git log --name-status --oneline
 ```
 
@@ -178,7 +178,7 @@ You'll see all commits that at some point affected any of the contents of
 Finally, we want to graft this into the `garden` inside an `apple-tree`
 directory so let's prepare it this way:
 
-```
+```sh
 # still in pruned-forest
 mkdir apple-tree
 git mv domestic-apple history.md apple-tree/
@@ -191,7 +191,7 @@ git commit -m "Move apple tree contents back inside an apple-tree directory"
 Last step. The `--allow-unrelated-histories` is the key to allow this kind of
 grafting to happen.
 
-```
+```sh
 cd ../garden
 git pull --allow-unrelated-histories pruned-forest master
 ```

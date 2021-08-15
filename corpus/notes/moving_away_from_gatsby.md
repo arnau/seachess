@@ -21,11 +21,9 @@ Back in 2019 I started once again my personal website. At the time I was interes
 
 Since then, my interests have shifted into other things which have made the points of friction with Gatsby and the way I chose to use it (e.g. plugins) not fun.
 
-**Cold builds can take up to 5 minutes**. In theory, Gatsby caching system would help spped things up but because at least once a week there are some dependency upgrades, the cache is never used. At the time of writing the build has 124 pages to handle.
+**Cold builds can take up to 5 minutes**. In theory, Gatsby caching system would help speed things up but because every time I have content updates there are also dependencies to upgrade, the cache is never used. At the time of writing the build has 124 pages to handle.
 
-**The migration from Gatsby 1 to Gatsby 2 was a pain**. Gatsby 3 is coming and I can't bear the thought of migrating.
-
-**[Material-UI] is too heavy for a simple website like mine**. It's normal for customisable tools to bloat a bit, nothing wrong with that, but it's time for me to go back to plain HTML with hand-made CSS.
+**[Material-UI] is too heavy for a website like mine**. It's normal for customisable tools to bloat things a bit, nothing wrong with that, but it's time for me to go back to plain HTML with hand-made CSS.
 
 **Takes 1.50 seconds to load the homepage**, up to 2 seconds to finish and requires 20 requests, where 9 of them are JavaScript and 5 are JSON.
 
@@ -54,21 +52,18 @@ I looked into the state of static site generators in Rust. At the time of writin
 mdBook wasn't a good choice for me as I wanted more control over the HTML generation and wouldn't benefit from the book-oriented approach. Between Zola and Cobalt I chose Zola, mainly because the proposition and documentation felt better.
 
 Zola's selling point is offering a single binary with everything included.
-Although this is quite an appealing idea, I knew it wouldn't tick all the boxes for me so I'm approaching as a two step process that should allow me to accomodate my taste but still benefit from lots that Zola has to offer.
-
+Although this is quite an appealing idea, I knew it wouldn't tick all the boxes for me so I approached the solution as a two step process such that I could have the source tailored to my needs.
 
 The process is as follows:
 
-- Write things in a convenient format depending on the task. E.g. notes are conventional yaml + markdown, bulletins are [TOML].
-- Transform everything into toml + markdown as required by Zola.
-- Let Zola do its job and trasform all that into HTML.
+- [Aquarium] takes the multiformat source and normalises it as a [SQLite] database.
+- Then, it outputs all resources in Zola's [TOML] + [Markdown] with all complementary information needed in the TOML `extra` section.
+- Finally, Zola takes Aquarium's output and outputs HTML and assets with fairly minimal templating logic.
 
-The implementation is slightly more involved. The first thing is to read every known source and store it in a normalised [SQLite] database.
-Then, query it to compose each Zola-ready file with a convenient set of metadata.
 
-For example, each sketch co-locates (denormalises) information about the author (me) and tools, bulletin issues are grouped by year. And of course, notes are preprocessed to transform blocks of code to generate diagrams.
+## Bumps in the road
 
-Originally I thought Zola would handle the RSS feed generation but found it more convenient to generate it in the previous step.
+As with anything custom built, dragons hide in each corner.
 
 
 ## The result
@@ -87,6 +82,9 @@ The less good things:
 - RSS is difficult to control with Zola, ended up building my own.
 - Code highlighting inlines styles. Not my choice.
 - Move away from React back into templates is not great.
+
+
+- HTML has been reduced 50% on average. Partly due to moving all CSS out of it but also by reducing the `div` soup that comes from Material-UI.
 
 
 ## Closing thoughts

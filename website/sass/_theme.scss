@@ -1,0 +1,63 @@
+pre {
+  margin: 2rem 0;
+}
+
+pre > code {
+  border-radius: 8px;
+  display: block;
+  overflow-y: auto;
+  padding: 1rem;
+
+  color: #fffcec;
+  background: #222;
+}
+
+code {
+  color: #c05;
+}
+
+code[class*="language-"] {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.z-comment {
+  color: #bbb;
+
+  .z-punctuation {
+    color: #999;
+  }
+}
+
+.z-punctuation {
+  color: lightyellow;
+}
+
+.z-path,
+.z-name {
+  color: #afecff;
+}
+
+.z-group {
+  color: lightcyan;
+
+ .z-punctuation {
+    color: lightyellow;
+  }
+}
+
+.z-type {
+  color: gold;
+}
+
+.z-keyword,
+.z-variable,
+.z-key {
+  color: #b1f4fe;
+}
+
+.z-datetime,
+.z-string {
+  color: #ffd894;
+}

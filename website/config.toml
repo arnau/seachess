@@ -8,7 +8,8 @@ generate_feed = false
 
 [markdown]
 highlight_code = true
-highlight_theme = "zenburn"
+# highlight_theme = "zenburn"
+highlight_theme = "css"
 external_links_no_follow = true
 external_links_no_referrer = true
 
