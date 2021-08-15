@@ -1000,3 +1000,9 @@ https://timharford.com/2021/07/the-tyranny-of-spreadsheets/,The tyranny of sprea
 > [...] a tool like a Swiss Army knife for numbers, sitting in your digital back pocket. Any idiot could use it. And goodness, we did.",text,2021-W31
 https://observablehq.com/@sandravizmad/100_days_d3_dataviz,100 Days D3 Dataviz,A collection of tutorials to get the grips with [D3](https://d3js.org/) for data visualisation.,text,2021-W31
 https://djharper.dev/post/2020/12/26/executable-pngs/,Executable PNGs,An article exploring stenography as a way to make PNGs executable programs just for fun.,text,2021-W31
+https://www.quirksmode.org/blog/archives/2021/08/breaking_the_we.html,Breaking the web forward,An article arguing that Chrome is the new IE in terms of monopolistic behaviour.,text,2021-W32
+https://fishdraw.glitch.me/,fishdraw,"A tool to generate fish drawings. It exports results as SVG, JSON and includes an option to export the drawing animation.",text,2021-W32
+https://theeffectbook.net/,The Effect,A book on causal inference with observational data. Goes from the design of research to the statistical tools to use to execute it.,text,2021-W32
+https://www.hydraecosystem.org/,Hydra ecosystem,"A collection of resources to work with Hydra, a documentation framework build on top of Linked Data principles for creating hypermedia REST APIs.",text,2021-W32
+https://holoviz.org/,HoloViz,A toolset for browser-based data visualisation in Python. Although it provides a fairly large set of functionality it has a good low-friction starting point and a decent set of tutorials.,text,2021-W32
+https://boyter.org/posts/bloom-filter/,"Bloom filters - Much, much more than a space efficient hashmap!",An article introducing the concept of a “bloom filter” and some obvious and not-so obvious applications.,text,2021-W32
