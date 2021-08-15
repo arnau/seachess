@@ -518,15 +518,15 @@ This exercise has shown me a few things I've done right and some others I
 should improve in 2021. The things to be improved are mostly about recording
 more information, for example I would've liked to answer the following:
 
-* How often do I find a resource and leave it for a while to read?
-* When so, how long does it take for me from finding it to reading it?
-* Is there any impact on my reading habits when I'm on leave?
+- How often do I find a resource and leave it for a while to read?
+- When so, how long does it take for me from finding it to reading it?
+- Is there any impact on my reading habits when I'm on leave?
 
 The things I've done well enough:
 
-* I recorded all resources I've read.
-* I keep all this data as a relational database (actually CSV loaded into SQLite).
-* I keep the bulletin data as a relational database (also CSV loaded into SQLite), so I can merge both databases.
-* I built a rudimentary CLI to manage my resources and another one to manage the bulletins. This makes a huge difference in keeping the management of all this  low friction.
+- I recorded all resources I've read.
+- I keep all this data as a relational database (actually CSV loaded into SQLite).
+- I keep the bulletin data as a relational database (also CSV loaded into SQLite), so I can merge both databases.
+- I built a rudimentary CLI to manage my resources and another one to manage the bulletins. This makes a huge difference in keeping the management of all this  low friction.
 
 Let's see how things change in 2021.

@@ -16,6 +16,10 @@
   {% block rss %}
     <link rel="alternate" type="application/rss+xml" title="Seachess feed (RSS)" href="/rss.xml">
   {% endblock %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 </head>
 <body>
   <a href="#content" class="skip-link">Skip to main content</a>
@@ -24,18 +28,18 @@
       <div class="brand">
         <a href="/"><img class="logo" src="/logo.svg" alt="" width="34">{{ settings.title }}</a>
       </div>
-      <div class="search-trigger">
-        <button>Search
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 46.553307 46.200966"
-            width="16"
-            version="1.1">
-            <desc></desc>
-            <g transform="translate(-29.461,-26.738)"><path d="m69.902 72.704-10.935-10.935c-2.997 1.961-6.579 3.111-10.444 3.111-10.539 0-19.062-8.542-19.062-19.081 0-10.519 8.522-19.061 19.062-19.061 10.521 0 19.06 8.542 19.06 19.061 0 3.679-1.036 7.107-2.828 10.011l11.013 11.011c0.583 0.567 0.094 1.981-1.076 3.148l-1.64 1.644c-1.17 1.167-2.584 1.656-3.15 1.091zm-8.653-26.905c0-7.033-5.695-12.727-12.727-12.727-7.033 0-12.745 5.694-12.745 12.727s5.712 12.745 12.745 12.745c7.032 0 12.727-5.711 12.727-12.745z" /></g>
-          </svg>
-        </button>
-      </div>
+      <!-- <div class="search-trigger"> -->
+      <!--   <button>Search -->
+      <!--     <svg -->
+      <!--       xmlns="http://www.w3.org/2000/svg" -->
+      <!--       viewBox="0 0 46.553307 46.200966" -->
+      <!--       width="16" -->
+      <!--       version="1.1"> -->
+      <!--       <desc></desc> -->
+      <!--       <g transform="translate(-29.461,-26.738)"><path d="m69.902 72.704-10.935-10.935c-2.997 1.961-6.579 3.111-10.444 3.111-10.539 0-19.062-8.542-19.062-19.081 0-10.519 8.522-19.061 19.062-19.061 10.521 0 19.06 8.542 19.06 19.061 0 3.679-1.036 7.107-2.828 10.011l11.013 11.011c0.583 0.567 0.094 1.981-1.076 3.148l-1.64 1.644c-1.17 1.167-2.584 1.656-3.15 1.091zm-8.653-26.905c0-7.033-5.695-12.727-12.727-12.727-7.033 0-12.745 5.694-12.745 12.727s5.712 12.745 12.745 12.745c7.032 0 12.727-5.711 12.727-12.745z" /></g> -->
+      <!--     </svg> -->
+      <!--   </button> -->
+      <!-- </div> -->
     </div>
     <!-- <div class="search-container"> -->
     <!--   <input id="search" type="search" placeholder="🔎 Search"> -->
@@ -77,8 +81,10 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="/elasticlunr.min.js"></script>
-  <script type="text/javascript" src="/search_index.en.js"></script>
-  <script type="text/javascript" src="/search.js"></script>
+  <script type="text/javascript" async src="/main.js"></script>
+  <script type="text/javascript" async src="https://cdn.panelbear.com/analytics.js?site=HtfkzMZfG3Z"></script>
+  <!-- <script type="text/javascript" src="/elasticlunr.min.js"></script> -->
+  <!-- <script type="text/javascript" src="/search_index.en.js"></script> -->
+  <!-- <script type="text/javascript" src="/search.js"></script> -->
 </body>
 </html>

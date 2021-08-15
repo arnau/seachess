@@ -18,11 +18,13 @@
         {% set page = get_page(path = update.section ~ "/" ~ update.id ~ "/index.md")  %}
 
         {% set asset_path = page.assets[0]  %}
+        {% set asset = resize_image(path=asset_path, width=295, height=190, op="fill") %}
         <a href="{{ page.path }}">
         <img
-          style="object-fit: cover; opacity: 1;"
           decoding="async"
-          src="{{ resize_image(path=asset_path, width=295, height=190, op="fill") }}"
+          src="/processed_images/{{ asset.static_path | split(pat="/") | last }}"
+          width="{{ asset.width }}"
+          height="{{ asset.height }}"
           alt="{{ page.title }}">
         </a>
 
