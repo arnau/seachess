@@ -3,6 +3,7 @@ cache.db
 website/public
 website/content
 processed_images
+website/static/rss.xml
 
 # old
 
