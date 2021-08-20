@@ -11,8 +11,6 @@ Something to manage “some“ collections.
 
 <!-- body -->
 
-## Why
-
 I find the [Awesome] lists quite a nice idea but managing and consuming them not so much beyond casual browsing.
 
 This is an attempt to address the issue by focusing on packaging the data in a consumable format i.e. [Tabular Data Package] and secondarily, display it as a `README.md` file in a similar vein as Awesome.
