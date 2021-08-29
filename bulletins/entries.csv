@@ -1015,3 +1015,9 @@ https://dev.to/tiemen/implementing-base64-from-scratch-in-rust-kb1,Implementing 
 https://peopleanalytics-regression-book.org/,Handbook of Regression Modeling in People Analytics,A book on practical inferential statistical modelling with exercises and examples in R.,text,2021-W33
 https://www.youtube.com/watch?v=aVwxzDHniEw,The beauty of Bézier curves,A video unpacking Bézier curves and their properties and uses.,video,2021-W33
 https://aeon.co/essays/a-biography-of-the-pixel-the-elementary-particle-of-pictures,Pixel: a biography,"An article on the history of the pixel. Fourier, Kotelnikov, the pixel squaring and more.",text,2021-W33
+https://dcic-world.org/,A Data-Centric Introduction to Computing,A book introducing the rudiments of Computer Science with a data-centric lens.,text,2021-W34
+https://depth-first.com/articles/2021/08/25/postgres-extensions-in-rust/,Postgres Extensions in Rust,An article introducing how to create a hello-world extension for Postgres in Rust.,text,2021-W34
+https://github.com/johnkerl/miller,Miller,"A tool like awk, sed, cut, join, and sort for data formats such as CSV, TSV, tabular JSON and positionally-indexed.",text,2021-W34
+https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/,Why are hyperlinks blue?,An article diving into the history of Web hyperlinks and its predecessors.,text,2021-W34
+https://nanosql.io/,nanoSQL,A database layer written in TypeScript with support for a large set of persistent storages.,text,2021-W34
+https://simonandrews.ca/articles/how-to-set-up-spf-dkim-dmarc,"I figured out how DMARC works, and it almost broke me","An article explaining how SPF, DKIM and DMARC work to mitigate email spoofing.",text,2021-W34
