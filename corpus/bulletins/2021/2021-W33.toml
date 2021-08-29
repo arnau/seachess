@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W33"
+publication_date = 2021-08-22
+summary = "This week has been about the history of the pixel, base64, inferential statistical modelling, a vim-like browser, the shortcomings of CSV and the beauty of Bézier curves."
+
+[[entries]]
+url = "https://www.bitsondisk.com/writing/2021/retire-the-csv/"
+title = "It's Time to Retire the CSV"
+summary = "An article ranting about the shortcomings of CSV. Although I don't believe the proposed way forward is remotely feasible, I share the frustration.\n\nAnd I deeply disagree with the “CSV is simple and readable by humans”. Some CSV can be simple, some can be readable but editing a wide CSV with lots of variations in their values (e.g. empty fields, double quotes, empty double quotes) makes it a nightmare to scan without the aid of a tool.\nFail to add the right amount of commas and the CSV will be broken."
+content_type = "text"
+
+[[entries]]
+url = "https://vieb.dev/"
+title = "Vieb"
+summary = "A web browser built on top of Electron offering a modal interface a-la Vim."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/tiemen/implementing-base64-from-scratch-in-rust-kb1"
+title = "Implementing Base64 from scratch in Rust"
+summary = "An article exploring the base64 algorithm in detail."
+content_type = "text"
+
+[[entries]]
+url = "https://peopleanalytics-regression-book.org/"
+title = "Handbook of Regression Modeling in People Analytics"
+summary = "A book on practical inferential statistical modelling with exercises and examples in R."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=aVwxzDHniEw"
+title = "The beauty of Bézier curves"
+summary = "A video unpacking Bézier curves and their properties and uses."
+content_type = "video"
+
+[[entries]]
+url = "https://aeon.co/essays/a-biography-of-the-pixel-the-elementary-particle-of-pictures"
+title = "Pixel: a biography"
+summary = "An article on the history of the pixel. Fourier, Kotelnikov, the pixel squaring and more."
+content_type = "text"
