@@ -7,7 +7,7 @@ source_url: https://github.com/arnau/some-thing/
 ---
 # Some Thing
 
-A tool to to manage “some“ collections.
+A tool to manage “some“ collections.
 
 <!-- body -->
 
