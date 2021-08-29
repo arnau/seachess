@@ -328,6 +328,12 @@ article.note .metablock {
 
 .figure {
   margin: 2rem 0;
+  overflow-y: auto;
+
+  svg {
+    margin: auto;
+    display: block;
+  }
 }
 
 blockquote {
