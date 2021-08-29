@@ -17,7 +17,7 @@ This note logs my thinking on moving Seachess from Gatsby to a custom system.
 
 ## The starting point
 
-Back in 2019 I started once again my personal website. At the time I was interested in [React], [GraphQL] and [Jamstack]. So [Gatsby] was the natural choice to build it.
+Back in 2019 I started, once again, my personal website. At the time I was interested in [React], [GraphQL] and [Jamstack]. So [Gatsby] was the natural choice to build it.
 
 Since then, my interests have shifted into other things which have made the points of friction with Gatsby and the way I chose to use it (e.g. plugins) not fun.
 
@@ -63,50 +63,55 @@ The process is as follows:
 
 ## Bumps in the road
 
-As with anything custom built, dragons hide in each corner.
+As with anything custom built, dragons hide in every corner.
+
+**Markdown to markdown transformation** turns out to be more brittle than anticipated. I use [Pulldown Cmark] which is a very nice to use event-based [Markdown] parser but not great for regenerating Markdown. In particular, I had to deal a great deal of attention to spaces when recomposing sentences and other structures in Markdown where spaces are significant. I'm sure I haven't caught all cases yet.
+
+**Parsing Graphviz's dot format in Rust is not great**. I haven't found any library that integrates with Graphviz in a smooth way so for the time being I call the `dot` command-line interface. Clunky. I'm considering alternatives like [Pikchr] or building a [Web Component] that handles that in the browser.
 
 
 ## The result
 
 The change has involved a fair amount of coding but the result ticks my goals.
 
-- Cold builds can take up to 30 seconds.
+- Cold builds don't take more than 30 seconds.
 - Takes 800 milliseconds to load the homepage. And up to 1.3 seconds to finish.
-- Requires 8 requests. 3 of them are JavaScript.
+- Requires 7 requests. 2 of them are JavaScript.
 - I have 19 direct dependencies. Which expands into a dependency tree of 176 nodes.
-
-The less good things:
-
-- Two binaries instead of just one.
-- The code to maintain by myself is larger.
-- RSS is difficult to control with Zola, ended up building my own.
-- Code highlighting inlines styles. Not my choice.
-- Move away from React back into templates is not great.
-
-xxx
-
 - HTML has been reduced 50% on average. Partly due to moving all CSS out of it but also by reducing the `div` soup that comes from Material-UI.
+
+
+The not-so good:
+
+- Two binaries instead of just one and an external dependency on dot.
+- The code to maintain by myself is larger and less flexible.
+- Moving away from React back into templates is not great. The JSX mental model suits me better.
+- Moving away from css-in-js is not great. CSS management, even with [SASS], is far from my ideal.
 
 
 ## Closing thoughts
 
-TODO
+Building my own thing will give me headaches down the line but right now it feels good. Having control of my data on my own terms aligns well with my priorities.
 
 
 
+[Aquarium]: /projects/aquarium
+[Cobalt]: https://cobalt-org.github.io/
 [CommonMark]: https://commonmark.org/
 [Gatsby]: https://www.gatsbyjs.com/
 [GraphQL]: https://graphql.org/
 [Jamstack]: https://jamstack.org/
 [Markdown]: https://en.wikipedia.org/wiki/Markdown
 [Material-UI]: https://material-ui.com/
+[Pikchr]: https://pikchr.org/
+[Pulldown Cmark]: https://crates.io/crates/pulldown-cmark
 [React]: https://reactjs.org/
 [Rust]: https://www.rust-lang.org/
+[SASS]: https://sass-lang.com/
 [SQLite]: https://sqlite.org/index.html
 [SVG]: https://en.wikipedia.org/wiki/Scalable_Vector_Graphics
 [TOML]: https://toml.io/
 [YAML]: https://yaml.org/
 [Zola]: https://www.getzola.org/
 [dot]: https://en.wikipedia.org/wiki/DOT_(graph_description_language)
-[Cobalt]: https://cobalt-org.github.io/
 [mdBook]: https://github.com/rust-lang/mdBook
