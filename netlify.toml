@@ -1,0 +1,13 @@
+[build]
+publish = "public"
+command = "make production"
+
+[build.environment]
+ZOLA_VERSION = "0.14.1"
+
+# The magic for deploying previews of branches.
+# We need to override the base url with whatever url Netlify assigns to our
+# preview site.  We do this using the Netlify environment variable
+# `$DEPLOY_PRIME_URL`.
+[context.deploy-preview]
+command = "BASE_URL=$DEPLOY_PRIME_URL make preview"
