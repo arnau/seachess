@@ -1,0 +1,10 @@
+type = "sketch"
+id = "bearded-man"
+title = "Bearded man"
+asset = "bearded_man.jpg"
+author = "arnau"
+publication_date = 2021-03-19
+tools = [
+  "ipadpro",
+  "procreate",
+]
