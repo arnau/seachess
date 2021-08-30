@@ -11,7 +11,9 @@ tags:
 ---
 # Moving away from Gatsby
 
-This note logs my thinking on moving Seachess from Gatsby to a custom system.
+This note logs my thinking on moving Seachess from [Gatsby] to a custom system.
+
+[Gatsby]: https://www.gatsbyjs.com/
 
 <!-- body -->
 
