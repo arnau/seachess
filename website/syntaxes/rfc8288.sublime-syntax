@@ -1,0 +1,25 @@
+%YAML 1.2
+---
+name: RFC8288
+file_extensions:
+  - rfc8288
+scope: source.rfc8288
+contexts:
+  main:
+    - match: '(<)([^>]+)(>)'
+      captures:
+        1: punctuation.definition.link.begin.rfc8288
+        2: variable.other.url.link.rfc8288
+        3: punctuation.definition.link.end.rfc8288
+    - match: ';'
+      scope: punctuation.separator.param.rfc8288
+    - match: '([^=]+)(=)([^";=]+)'
+      captures:
+        1: entity.name.param.rfc8288
+        2: keyword.operator.assignment.param.rfc8288
+        3: string.quoted.double.param.rfc8288
+    - match: '([^=]+)(=)("[^"]*")'
+      captures:
+        1: entity.name.param.rfc8288
+        2: keyword.operator.assignment.param.rfc8288
+        3: string.quoted.double.param.rfc8288

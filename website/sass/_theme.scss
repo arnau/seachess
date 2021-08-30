@@ -30,10 +30,6 @@ code[class*="language-"] {
   }
 }
 
-.z-punctuation {
-  color: lightyellow;
-}
-
 .z-path,
 .z-name {
   color: #afecff;
@@ -43,7 +39,7 @@ code[class*="language-"] {
   color: lightcyan;
 
  .z-punctuation {
-    color: lightyellow;
+    color: lightsalmon;
   }
 }
 
@@ -54,10 +50,27 @@ code[class*="language-"] {
 .z-keyword,
 .z-variable,
 .z-key {
-  color: #b1f4fe;
+  color: lightgoldenrodyellow;
 }
 
 .z-datetime,
 .z-string {
   color: #ffd894;
+}
+
+.z-punctuation {
+  color: lightsalmon;
+}
+
+.z-operator {
+  color: lightblue;
+}
+
+.z-key.z-name.z-http {
+  color: white;
+  background: #00648b;
+  display: inline-block;
+  padding: 0 0.8rem;
+  margin: 0.1rem 0;
+  border-radius: 4px;
 }
