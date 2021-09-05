@@ -24,7 +24,7 @@ content_type = "text"
 [[entries]]
 url = "https://podman.io/"
 title = "Podman"
-summary = "A tool for managing [OCI] containers and pods with and without root privileges.\n\nWith the recent news of [Docker Desktop moving to a different licensing model], I'm expecting to see more things like [Podman for MacOS].\n\n[Docker Desktop moving to different licensing model]: https://www.docker.com/pricing/faq\n[Podman for MacOS]: https://github.com/heyvito/podman-macos\n[OCI]: https://opencontainers.org/"
+summary = "A tool for managing [OCI] containers and pods with and without root privileges.\n\nWith the recent news of [Docker Desktop moving to a different licensing model], I'm expecting to see more things like [Podman for MacOS].\n\n[Docker Desktop moving to a different licensing model]: https://www.docker.com/pricing/faq\n[Podman for MacOS]: https://github.com/heyvito/podman-macos\n[OCI]: https://opencontainers.org/"
 content_type = "text"
 
 [[entries]]
