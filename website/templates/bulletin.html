@@ -3,6 +3,14 @@
 
 {% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
 {% block description %}{{ page.description }}{% endblock description %}
+{% block page_meta %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@arnau">
+  <meta property="og:url" content="{{ get_url(path=current_path) }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+{% endblock page_meta %}
 
 {% block content %}
 
