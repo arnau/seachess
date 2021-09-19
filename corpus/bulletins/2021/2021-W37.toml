@@ -1,7 +1,7 @@
 type = "bulletin"
 id = "2021-W37"
 publication_date = 2021-09-19
-summary = "This week has been about software licensing, macaroons, a file encrytion tool, CUBE CSS, anger management and the levels of reading."
+summary = "This week has been about software licensing, macaroons, a file encryption tool, CUBE CSS, anger management and the levels of reading."
 
 [[entries]]
 url = "https://github.com/FiloSottile/age"
