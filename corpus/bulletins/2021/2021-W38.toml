@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W38"
+publication_date = 2021-09-26
+summary = "This week has been about the bizarre world of timezones, the benefits of using Poetry in Python, an animation library in JavaScript, a report on data stewardship and a warning on Let's Encrypt root certificate."
+
+[[entries]]
+url = "https://scotthelme.co.uk/lets-encrypt-old-root-expiration/"
+title = "Let's Encrypt's Root Certificate is expiring!"
+summary = "An article on the potential consequences of the Let's Encrypt root certificate expiring given the amount of places that rely on it.\n\nFor reference, last September 9 Let's Encrypt said: “We have reached 2 billion certificates issued!”. My website is one among them.\n\nAs the article highlights, the problem is not on the websites that use Let's Encrypt necessarily, it has more to do with the fact that root certificates are trusted by devices (e.g. web browsers) and when they are not timely updated things break."
+content_type = "text"
+
+[[entries]]
+url = "https://cedaei.com/posts/python-poetry-pipx/"
+title = "Improving Python Dependency Management With pipx and Poetry"
+summary = "An article on the benefits of using [Poetry] to manage the dependencies of a Python project and a quick reason for [pipx].\n\n[Poetry]: https://python-poetry.org/\n[pipx]: https://pypa.github.io/pipx/"
+content_type = "text"
+
+[[entries]]
+url = "https://nickb.dev/blog/reality-check-for-cloudflare-wasm-workers-and-rust"
+title = "Reality check for Cloudflare Wasm Workers and Rust"
+summary = "An article exploring the implications of using WebAssembly for functions at the CDN level."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/AriaMinaei/theatre"
+title = "Theatre.js"
+summary = "An animation JavaScript library for high-fidelity motion graphics with an editor to help animate 3D objects, HTML/SVG with React and more."
+content_type = "text"
+
+[[entries]]
+url = "https://www.adalovelaceinstitute.org/report/participatory-data-stewardship/"
+title = "Participatory data stewardship"
+summary = "A report proposing a “framework for participatory data stewardship”, which rejects practices of data collection, storage, sharing and use in ways that are opaque or seek to manipulate people, in favour of practices that empower people to help inform, shape and – in some instances – govern their own data."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.scottlogic.com/2021/09/14/120-years-timezone.html"
+title = "Exploring 120 years of timezones"
+summary = "An article exposing the bizarre world of timezones and its disease, the daylight saving."
+content_type = "text"
