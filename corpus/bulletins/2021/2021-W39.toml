@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W39"
+publication_date = 2021-10-03
+summary = "This week has been about how to get a flat map of the Earth, Web3.Storage, a tool to view formatted CSV, an embedded graph database, an online SQLite playground and the impact of CSS on accessibility."
+
+[[entries]]
+url = "https://uselessdivs.com/blog/the-effect-of-css-on-screen-readers"
+title = "The effect of CSS on screen readers"
+summary = "An article exploring how certain CSS properties change behaviour on screen readers and the potential implications in terms of accessibility."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/dyedgreen/cqlite"
+title = "CQLite"
+summary = "An embedded graph database implemented in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://sqlime.org/"
+title = "SQLime"
+summary = "An online SQLite playground for debugging and sharing SQL snippets. Kinda like JSFiddle or CodePen, but for SQL instead of JavaScript."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/alexhallam/tv"
+title = "Tidy Viewer (tv)"
+summary = "A tool to view formatted CSV in the terminal."
+content_type = "text"
+
+[[entries]]
+url = "https://aeon.co/videos/there-are-many-ways-to-make-a-flat-map-of-the-world-each-of-them-a-unique-distortion"
+title = "The impossible map"
+summary = "A stop-motion video from 1947 showing different ways of getting a flat view of the world."
+content_type = "video"
+
+[[entries]]
+url = "https://filecoin.io/blog/posts/introducing-web3-storage/"
+title = "Introducing Web3.Storage: A simple interface for Filecoin storage"
+summary = "An article explaining the Protocol Labs's Web3.Storage architecture."
+content_type = "text"
