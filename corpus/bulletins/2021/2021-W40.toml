@@ -2,6 +2,7 @@ type = "bulletin"
 id = "2021-W40"
 publication_date = 2021-10-10
 summary = "This week has been about RDF storage trade-offs, JupyerLab desktop application, API mocking, threat mitigation from Web APIs, the effect of words in a conversation and the line of death in browsers."
+cookies_swallowed = 120
 
 [[entries]]
 url = "https://textslashplain.com/2017/01/14/the-line-of-death/"
