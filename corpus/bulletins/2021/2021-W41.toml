@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W41"
+publication_date = 2021-10-17
+summary = "This week has been about calculus, plugin systems, the trade-offs of Conda, an investigation on Amazon, animated data stories and a browser extension for ePUB."
+
+[[entries]]
+url = "https://nullderef.com/series/rust-plugins/"
+title = "Plugins in Rust"
+summary = "A series of articles exploring different ways to architect a plugin system in Rust and their trade-offs.\n\nIt has a very promising [range of options being considered](https://nullderef.com/blog/plugin-tech/), from FII to WebAssembly (WASI)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.epubread.com/"
+title = "EPUBReader"
+summary = "A browser extension for Firefox and Chrome to open EPub documents from disk or from a URL."
+content_type = "text"
+
+[[entries]]
+url = "https://pythonspeed.com/articles/conda-vs-pip/"
+title = "Pip vs Conda: an in-depth comparison of Python’s two packaging systems"
+summary = "An article explaining the trade-offs to consider when choosing Conda as a Python package manager."
+content_type = "text"
+
+[[entries]]
+url = "https://calculusmadeeasy.org/"
+title = "Calculus Made Easy"
+summary = "A book on calculus published in 1910 by Silvanus P. Thompson, considered a classic introduction to the subject."
+content_type = "text"
+
+[[entries]]
+url = "https://themarkup.org/amazons-advantage/2021/10/14/how-we-analyzed-amazons-treatment-of-its-brands-in-search-results"
+title = "How We Analyzed Amazon’s Treatment of Its “Brands” in Search Results"
+summary = "An article explaining the methodology for investigating whether Amazon favours its own products over competitors regardless of factors like rating or reviews."
+content_type = "text"
+
+[[entries]]
+url = "https://vizzuhq.com/"
+title = "Vizzu"
+summary = "A JavaScript library for animated data stories and visualisations."
+content_type = "text"
