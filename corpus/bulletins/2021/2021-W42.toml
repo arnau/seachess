@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W42"
+publication_date = 2021-10-24
+summary = "This week has been about securing APIs, an embedded document-oriented SQL database, a comments system powered by GitHub Discussions, Prolog in Rust, new standard HTTP headers for caching and a Make tutorial."
+
+[[entries]]
+url = "https://makefiletutorial.com/"
+title = "Makefile tutorial"
+summary = "A tutorial with practical recipies to get started with Make."
+content_type = "text"
+
+[[entries]]
+url = "https://genji.dev/"
+title = "Genji"
+summary = "A document-oriented, embedded, SQL database written in Go."
+content_type = "text"
+
+[[entries]]
+url = "https://httptoolkit.tech/blog/status-targeted-caching-headers/"
+title = "New HTTP standards for caching on the modern web"
+summary = "An article introducing two HTTP headers to standardise common CDN practices."
+content_type = "text"
+
+[[entries]]
+url = "https://expeditedsecurity.com/api-security-best-practices-megaguide/"
+title = "API Security Best Practices MegaGuide"
+summary = "A comprehensive guide on securing HTTP-based APIs."
+content_type = "text"
+
+[[entries]]
+url = "https://giscus.app/"
+title = "giscus"
+summary = "A comments system powered by GitHub Discussions allowing visitors to leave comments and reactions on a website."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mthom/scryer-prolog"
+title = "Scryer Prolog"
+summary = "An open source ISO Prolog implementation in Rust."
+content_type = "text"
