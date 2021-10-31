@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W43"
+publication_date = 2021-10-31
+summary = "This week has been about k-anonymity, computer networks, probabilistic logic programming, an analytical platform, an experimental query language and some thoughts on the forgetting curve."
+
+[[entries]]
+url = "https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity/"
+title = "Validating Leaked Passwords with k-Anonymity"
+summary = "An article explaining the thinking behind using [k-anonymity] and range search queries to reduce the amount of information required for a service such as [Have I Been Pwned].\n\n[k-anonymity]: https://en.wikipedia.org/wiki/K-anonymity\n[Have I Been Pwned]: https://haveibeenpwned.com/"
+content_type = "text"
+
+[[entries]]
+url = "https://book.systemsapproach.org/"
+title = "Computer Networks: A Systems Approach"
+summary = "A book on the rudiments of computer networks."
+content_type = "text"
+
+[[entries]]
+url = "https://dtai.cs.kuleuven.be/problog/index.html"
+title = "ProbLog"
+summary = "A tool that allows you to build programs that encode uncertainties that are present in each situation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/looker-open-source/malloy"
+title = "Malloy"
+summary = "An experimental language for describing data relationships and transformations. It attempts to provide higher expressivity than SQL whilst being able to compile down to SQL."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cube-js/cube.js"
+title = "Cube.js"
+summary = "An analytical API platform for building internal business intelligence tools. It has been designed to work with serverless data warehouses and query engines like Google BigQuery and AWS Athena."
+content_type = "text"
+
+[[entries]]
+url = "https://nesslabs.com/ebbinghaus-forgetting-curve"
+title = "The forgetting curve: the science of how fast we forget"
+summary = "An article looking into the forgetting curve and how to reduce the rate of forgetting."
+content_type = "text"
