@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W44"
+publication_date = 2021-11-07
+summary = "This week has been about managing data science projects, DuckDB in WebAssembly, the Helix editor, the security of Unicode in programming languages, 3D models and the inners of a terminal emulator."
+
+[[entries]]
+url = "https://duckdb.org/2021/10/29/duckdb-wasm.html"
+title = "DuckDB-Wasm: Efficient Analytical SQL in the Browser"
+summary = "An article introducing the WebAssembly version of DuckDB, an in-process analytical database."
+content_type = "text"
+
+[[entries]]
+url = "https://setpose.com/"
+title = "Set Pose"
+summary = "A tool to set a 3D model reference for drawing human poses."
+content_type = "text"
+
+[[entries]]
+url = "https://krebsonsecurity.com/2021/11/trojan-source-bug-threatens-the-security-of-all-code/"
+title = "‘Trojan Source’ Bug Threatens the Security of All Code"
+summary = "An article explaining the research done by Cambridge University on a set of attacks against Unicode that affect all programming languages."
+content_type = "text"
+
+[[entries]]
+url = "https://www.poor.dev/blog/terminal-anatomy/"
+title = "Anatomy of a Terminal Emulator"
+summary = "An article introducing how a terminal emulator currently works and how it interacts with the shell through the pty."
+content_type = "text"
+
+[[entries]]
+url = "https://docs.metaflow.org/"
+title = "Metaflow"
+summary = "A Python library for manageing data science projects."
+content_type = "text"
+
+[[entries]]
+url = "https://helix-editor.com/"
+title = "Helix"
+summary = "A text editor with a modal Vi-like experience written in Rust."
+content_type = "text"
