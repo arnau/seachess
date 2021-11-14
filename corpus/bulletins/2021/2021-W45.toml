@@ -30,7 +30,7 @@ content_type = "text"
 [[entries]]
 url = "https://github.com/Qiskit/retworkx"
 title = "retworkx"
-summary = "A Python library written in Rsut for general purpose graph manipulation."
+summary = "A Python library written in Rust for general purpose graph manipulation."
 content_type = "text"
 
 [[entries]]
