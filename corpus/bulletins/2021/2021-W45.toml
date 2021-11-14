@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W45"
+publication_date = 2021-11-14
+summary = "This week has been about interoperability between JSON parsers, an introduction to Unicode, a Python library for graph manipulation, the TypeScript type checker, options for writing Python extensions and patterns that lead to learned helplessness."
+
+[[entries]]
+url = "https://dmitripavlutin.com/what-every-javascript-developer-should-know-about-unicode/"
+title = "What every JavaScript developer should know about Unicode"
+summary = "An article introducing the basic concepts behind Unicode."
+content_type = "text"
+
+[[entries]]
+url = "https://jaked.org/blog/2021-09-07-Reconstructing-TypeScript-part-0"
+title = "Reconstructing TypeScript, part 0: intro and background"
+summary = "An article part of a series explaining how the TypeScript type checker works at its core by building a similar simpler language."
+content_type = "text"
+
+[[entries]]
+url = "https://pythonspeed.com/articles/rust-cython-python-extensions/"
+title = "Cython, Rust, and more: choosing a language for Python extensions"
+summary = "An article going through the possible options for writing Python extensions."
+content_type = "text"
+
+[[entries]]
+url = "https://bishopfox.com/blog/json-interoperability-vulnerabilities"
+title = "An Exploration of JSON Interoperability Vulnerabilities"
+summary = "An article exploring how differences in implementation in JSON parsers need to be considered in security threat modelling. The article [Parsing JSON is a Minefield](https://seriot.ch/projects/parsing_json.html) linked at the very end is also worthwhile."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Qiskit/retworkx"
+title = "retworkx"
+summary = "A Python library written in Rsut for general purpose graph manipulation."
+content_type = "text"
+
+[[entries]]
+url = "https://www.okayhq.com/blog/status-quo-is-so-hard-to-change-in-engineering-teams"
+title = "Why the status quo is so hard to change in engineering teams"
+summary = "An article on the patterns that can lead to learned helplessness and the effects of prolonged exposure to them."
+content_type = "text"
