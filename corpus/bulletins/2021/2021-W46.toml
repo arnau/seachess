@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W46"
+publication_date = 2021-11-21
+summary = "This week has been about statistical accuracy vs privacy protection, an open-source alternative to Notion, a parsing toolkit for Python, the International Components for Unicode, a book on Knowledge Graphs and a service to convert web pages into ePub."
+
+[[entries]]
+url = "https://txtpaper.com/"
+title = "txtpaper"
+summary = "A service to convert web pages into PDF, ePub, and Kindle (mobi) files."
+content_type = "text"
+
+[[entries]]
+url = "https://icu.unicode.org/"
+title = "ICU: International Components for Unicode"
+summary = "A set of C/C++ and Java libraries providing Unicode and Globalization support for software applications.\n\n[ICU4X](https://github.com/unicode-org/icu4x) is a more recent approach learning from ICU4C and ICU4J to solve internationalisation (i18n)."
+content_type = "text"
+
+[[entries]]
+url = "https://arxiv.org/pdf/1808.06303.pdf"
+title = "An Economic Analysis of Privacy Protection and Statistical Accuracy as Social Choices"
+summary = "A paper introducing an economic model attempting to address the dichotomy between statistical accuracy and privacy protection. In a gist:\n\n> The fundamental challenge posed in servicing this dual mandate is that as\n> more statistics are published with more accuracy, more privacy is lost."
+content_type = "pdf"
+
+[[entries]]
+url = "https://github.com/AppFlowy-IO/appflowy"
+title = "AppFlowy"
+summary = "An open-source alternative to Notion with full control of your data and customizations."
+content_type = "text"
+
+[[entries]]
+url = "https://kgbook.org/"
+title = "Knowledge Graphs"
+summary = "A book providing a thorough introduction to knowledge graphs as well as trying to get consensus on a definition for the term:\n\n> The definition of a “knowledge graph” remains contentious […].\n> Herein we adopt an inclusive definition, where we view a knowledge graph as\n> _a graph of data intended to accumulate and convey knowledge of the real world,\n> whose nodes represent entities of interest and whose edges represent relations between these entities_."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/lark-parser/lark"
+title = "Lark"
+summary = "A parsing toolkit for Python, built with a focus on ergonomics, performance and modularity."
+content_type = "text"
