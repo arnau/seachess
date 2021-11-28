@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W47"
+publication_date = 2021-11-28
+summary = "This week has been about open software licensing, WebAssembly for user-defined functions, a personal knowledge base, a Python type checker, confidential computing and an algorithm to merge rich-text changes."
+
+[[entries]]
+url = "https://gradientflow.com/get-ready-for-confidential-computing"
+title = "Get Ready For Confidential Computing"
+summary = "An article looking into tools to protect data while _in use_ instead of at rest or in transit."
+content_type = "text"
+
+[[entries]]
+url = "https://www.inkandswitch.com/peritext/"
+title = "Peritext"
+summary = "An article introducing an algorithm for rich-text collaboration focusing on asynchronous, local-first flows. In their words:\n\n> Peritext is a novel algorithm for merging versions of a rich-text document.\n> It is a Conflict-free Replicated Data Type (CRDT), guaranteeing that if two\n> users independently merge the same two versions, they will converge towards the\n> same result."
+content_type = "text"
+
+[[entries]]
+url = "https://blueoakcouncil.org/primer"
+title = "Open Software Licensing Primer"
+summary = "An article explaining the basics of licensing in the world of open software. Although it is framed under the US law, it still has value to get acquainted with terms like “intellectual property”, “copyright” or “patent”."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/beartype/beartype"
+title = "beartype"
+summary = "A Python runtime type checker using PEP-compliant type hints."
+content_type = "text"
+
+[[entries]]
+url = "https://dzone.com/articles/how-webassembly-powers-databases-building-udf-engine"
+title = "How WebAssembly Powers Databases: Building a UDF Engine With Wasm"
+summary = "An article showcasing why WebAssembly is a good fit for user-defined functions (UDF) to extend SQL engines."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Jermolene/TiddlyWiki5"
+title = "TiddlyWiki"
+summary = "A personal knowledge base manager that can be used as a single HTML."
+content_type = "text"
