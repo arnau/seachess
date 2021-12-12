@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2021-W49"
+publication_date = 2021-12-12
+summary = "This week has been about a lightweight search engine, a dive into containers, DNS propagation, a tool to visualise tidyverse, a reverse dictionary and pocket mass surveillance."
+
+[[entries]]
+url = "https://jvns.ca/blog/2021/12/06/dns-doesn-t-propagate/"
+title = "DNS “propagation” is actually caches expiring"
+summary = "An article explaining how DNS records get updated and the potential reasons for why it might take longer than expected."
+content_type = "text"
+
+[[entries]]
+url = "https://tidydatatutor.com/"
+title = "Tidy Data Tutor"
+summary = "A tool to visualise how data changes when transformed using [Tidyverse](https://www.tidyverse.org/).\n\n[Pandas Tutor](https://pandastutor.com/) is the equivalent in Python and [Pandas](https://pandas.pydata.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://wantwords.thunlp.org/"
+title = "Wantwords"
+summary = "A reverse dictionary to search words using partial definitions."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/prabhatsharma/zinc"
+title = "Zinc"
+summary = "A lightweight search engine written in Go compatible with Elasticsearch.\n\n> Zinc is a search engine that does full text indexing. It is a lightweight\n> alternative to Elasticsearch and runs in less than 100 MB of RAM."
+content_type = "text"
+
+[[entries]]
+url = "https://www.lightbluetouchpaper.org/2021/10/15/bugs-in-our-pockets/"
+title = "Bugs in our pockets?"
+summary = "An article introducing a paper analysing the options for mass surveillance using pocket devices."
+content_type = "text"
+
+[[entries]]
+url = "https://iximiuz.com/en/posts/container-learning-path/"
+title = "Learning Containers From The Bottom Up"
+summary = "An article diving into the ins and outs of containers, images and orchestrators. It also provides a comprehensive list of links to other articles to get deeper into each topic."
+content_type = "text"
