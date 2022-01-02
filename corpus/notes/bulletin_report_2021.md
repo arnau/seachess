@@ -109,7 +109,7 @@ This year I incorporated a few adhoc sources that I didn't record in
 - 'friends' for links provided by any friend.
 
 Another way of thinking about sources is to look at how often domains
-repeat. It's a weird one though given that a single domain don't
+repeat. It's a weird one though given that a single domain doesn't
 necessarily equate to a single publisher. Good examples of this are
 `github.com`, `youtube.com` or `medium.com`. In any case, see below the
 list of domains I read more than 4 times:
