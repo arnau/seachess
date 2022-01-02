@@ -10,8 +10,9 @@
 {{ macros::subscription_form() }}
 
 
-{% set sub_paths = section.subsections %}
-{% set current_bulletin = get_section(path=sub_paths[0]) %}
+{% set sub_paths = section.subsections | sort | reverse %}
+{% set current_sub_path = sub_paths | first %}
+{% set current_bulletin = get_section(path=sub_paths | first) %}
 
 <section>
   <header>
@@ -36,7 +37,7 @@
   <ul>
   {% for s in sub_paths %}
     {% set sub = get_section(path=s) %}
-    {% if loop.index != 1 %}
+    {% if s != current_sub_path %}
     <li><a href="{{ sub.path }}">{{ sub.pages | length }} issues from {{ sub.title }}</a></li>
     {% endif %}
   {% endfor %}
