@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W01"
+publication_date = 2022-01-09
+summary = "This week has been about the north star framework, organisational structure and technical debt, a low-code framework, Prince of Persia in the browser, a word guessing game and a low-level fantasy game console in WebAssembly."
+
+[[entries]]
+url = "https://princejs.com/"
+title = "Prince of Persia"
+summary = "The classic Prince of Persia running in the browser."
+content_type = "text"
+
+[[entries]]
+url = "https://wasm4.org/"
+title = "WASM-4"
+summary = "A low-level fantasy game console for building small games with WebAssembly.\nGame cartridges (ROMs) are small, self-contained .wasm files that can be built with any programming language that compiles to WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://bellmar.medium.com/hunting-tech-debt-via-org-charts-92df0b253145"
+title = "Hunting Tech Debt via Org Charts"
+summary = "An article using the structure of an organisation to understand what kind of technical debt exists and where to find it."
+content_type = "text"
+
+[[entries]]
+url = "https://lowdefy.com/"
+title = "Lowdefy"
+summary = "An open-source low-code framework to build web apps, admin panels, BI dashboards, workflows, and CRUD apps. Remember the XML fever? This is the same but with YAML. What could go wrong?"
+content_type = "text"
+
+[[entries]]
+url = "https://amplitude.com/north-star/"
+title = "North Star"
+summary = "A playbook explaining the North Star framework and how to adopt it."
+content_type = "text"
+
+[[entries]]
+url = "https://www.powerlanguage.co.uk/wordle/"
+title = "Wordle"
+summary = "A word guessing game."
+content_type = "text"
