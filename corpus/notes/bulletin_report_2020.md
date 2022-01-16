@@ -19,14 +19,14 @@ Let's start with some general numbers to frame the rest of the report:
 
 |title|total|
 |-|-:|
-|Amount of resources read|1025|
-|Amount of resources published|204|
-|Amount of sources|32|
+|Number of resources read|1025|
+|Number of resources published|204|
+|Number of sources|32|
 
 
-Although each bulletin issue has 6 resources, the amount I read per week is higher. A summary:
+Although each bulletin issue has 6 resources, the number I read per week is higher. A summary:
 
-|metric|weekly_amount|
+|metric|weekly_number|
 |-|-:|
 |count|36.0|
 |mean|28.5|
@@ -55,19 +55,19 @@ HTTPS:
   </thead>
   <tbody>
     <tr>
-      <td>Amount of resources published using HTTPS</td>
+      <td>Number of resources published using HTTPS</td>
       <td>198</td>
     </tr>
     <tr>
-      <td>Amount of resources read using HTTPS</td>
+      <td>Number of resources read using HTTPS</td>
       <td>1002</td>
     </tr>
     <tr>
-      <td>Amount of resources published using HTTP</td>
+      <td>Number of resources published using HTTP</td>
       <td>6</td>
     </tr>
     <tr>
-      <td>Amount of resources read using HTTP</td>
+      <td>Number of resources read using HTTP</td>
       <td>23</td>
     </tr>
   </tbody>

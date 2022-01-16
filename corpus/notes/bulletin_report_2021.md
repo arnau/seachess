@@ -20,16 +20,16 @@ Let's start with some general numbers to frame the rest of the report:
 
 | title                                             | total |
 |---------------------------------------------------|------:|
-| Amount of resources read                          | 1101  |
-| Amount of resources published                     | 306   |
-| Amount of sources                                 | 33    |
-| Amount of sources not used                        | 14    |
-| Amount of sources not used in published resources | 26    |
+| Number of resources read                          | 1101  |
+| Number of resources published                     | 306   |
+| Number of sources                                 | 33    |
+| Number of sources not used                        | 14    |
+| Number of sources not used in published resources | 26    |
 
-Although each bulletin issue has 6 resources, the amount I read per week
+Although each bulletin issue has 6 resources, the number I read per week
 is higher. A summary:
 
-| metric | weekly_amount |
+| metric | weekly_number |
 |--------|--------------:|
 | count  | 52.0          |
 | mean   | 21.2          |
@@ -52,10 +52,10 @@ split of resources by either HTTP or HTTPS:
 
 | title                                     | total |
 |-------------------------------------------|------:|
-| Amount of resources published using HTTPS | 305   |
-| Amount of resources read using HTTPS      | 1088  |
-| Amount of resources published using HTTP  | 1     |
-| Amount of resources read using HTTP       | 13    |
+| Number of resources published using HTTPS | 305   |
+| Number of resources read using HTTPS      | 1088  |
+| Number of resources published using HTTP  | 1     |
+| Number of resources read using HTTP       | 13    |
 
 
 I would've hoped that by 2021 we would've got rid of HTTP but there are
