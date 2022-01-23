@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W03"
+publication_date = 2022-01-23
+summary = "This week has been about GraphQL with JSON-LD, a new data serialisation framework, time coordination between Earth and Mars, analysing hand writing, dual licences in open source and a three-dimensional geometry processing."
+
+[[entries]]
+url = "https://github.com/rubensworks/graphql-ld.js/"
+title = "GraphQL-LD"
+summary = "A library bringing together GraphQL, JSON-LD and SPARQL."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/stepchowfun/typical/"
+title = "Typical: data interchange with algebraic data types"
+summary = "A data serialization framework where given a schema, Typical generates efficient serialization and deserialization code for various programming languages.\n\nThe main difference with other tools like [Protocol Buffers] and [Apache Thrift] is that Typical has a more modern type system based on algebraic data types, emphasizing a safer programming style with non-nullable types and exhaustive pattern matching.\"\n\n[Protocol Buffers]: https://developers.google.com/protocol-buffers/\n[Apache Thrift]: https://thrift.apache.org/"
+content_type = "text"
+
+[[entries]]
+url = "https://www.cs.cmu.edu/~kmcrane/Projects/DDG/"
+title = "Discrete Differential Geometry: An Applied Introduction"
+summary = "A course on three-dimensional geometry processing from complementary computational and mathematical points of view."
+content_type = "text"
+
+[[entries]]
+url = "https://writing.kemitchell.com/2022/01/21/MIT-for-Noncommercial.html"
+title = "MIT for Noncommercial is Broken"
+summary = "An article arguing that MIT does not work for dual-licensing (commercial, non-commercial)."
+content_type = "text"
+
+[[entries]]
+url = "https://jackschaedler.github.io/handwriting-recognition/"
+title = "Back to the Future of Hand Writing Recognition"
+summary = "An essay analysing the main features for building a handwriting recognition device following the GRAIL design from the 1960s."
+content_type = "text"
+
+[[entries]]
+url = "https://interconnected.org/home/2022/01/18/sols"
+title = "A meander through Martian minutes and the meaning of local time"
+summary = "An article reflecting on the impact of having to coordinate Earth and Mars times given that Mars has days approximately 39.5 minutes longer than Earth."
+content_type = "text"
