@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W04"
+publication_date = 2022-01-30
+summary = "This week has been about the gif format, desktop applications with Tauri, a pipeline-based query language, a WHATWG-compliant HTML5 tokeniser, a collection of SVG icons and the rules of changing the rules in blockchain."
+
+[[entries]]
+url = "https://github.com/max-sixty/prql"
+title = "PRQL"
+summary = "A pipeline-based query language more expressive than SQL and still declarative. Unlike SQL, it forms a logical pipeline of transformations, and supports abstractions such as variables and functions. It can be used with any database that uses SQL, since it transpiles to SQL."
+content_type = "text"
+
+[[entries]]
+url = "https://paulfrazee.medium.com/the-rules-to-make-the-rules-be0c3b9d92b6"
+title = "The rules to make the rules"
+summary = "An article reflecting on the politics involved in a blockchain ecosystem."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.darrien.dev/posts/you-dont-know-gif/"
+title = "You Don't Know Gif - An analysis of a gif file and some weird gif features"
+summary = "An article diving into the history of the gif file format and what it has to offer."
+content_type = "text"
+
+[[entries]]
+url = "https://iconoir.com/"
+title = "Iconoir"
+summary = "An open source collection of SVG icons."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/untitaker/html5gum"
+title = "html5gum"
+summary = "A WHATWG-compliant HTML5 tokenizer and tag soup parser."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/stevepryde/create-a-desktop-app-in-rust-using-tauri-and-yew-2bhe"
+title = "Create a desktop app in Rust using Tauri and Yew"
+summary = "A tutorial on building a desktop application using Tauri."
+content_type = "text"
