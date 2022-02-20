@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W07"
+publication_date = 2022-02-20
+summary = "This week has been about a React-like library in Rust, WebSockets vs Server-Sent Events, a language inspired by AWK, a language to compile down to regular expressions, the Alpha-Omega project and GraphQL authorisation patterns."
+
+[[entries]]
+url = "https://germano.dev/sse-websockets/"
+title = "Server-Sent Events: the alternative to WebSockets you should be using"
+summary = "An article looking into the limitations of WebSockets and considering Server-Sent Events as an alternative for asymmetric data flows."
+content_type = "text"
+
+[[entries]]
+url = "https://openssf.org/community/alpha-omega/"
+title = "Alpha-Omega Project"
+summary = "A project from [The Linux Foundation](https://www.linuxfoundation.org/) aiming to help critical open source projects identify and fix security vulnerabilities."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ezrosent/frawk"
+title = "Fawk"
+summary = "A small programming language inspired by AWK that can handle structured data such as CSV."
+content_type = "text"
+
+[[entries]]
+url = "https://www.osohq.com/post/graphql-authorization"
+title = "Authorization Patterns in GraphQL"
+summary = "An article exploring how to approach authorisation in GraphQL APIs."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/yoav-lavi/melody"
+title = "Melody"
+summary = "A language designed to compile to regular expressions aiming to be more readable and maintainable."
+content_type = "text"
+
+[[entries]]
+url = "https://dioxuslabs.com/"
+title = "Dioxus"
+summary = "A React-like library for building fast and portable user interfaces with Rust. Runs on the web, desktop and mobile."
+content_type = "text"
