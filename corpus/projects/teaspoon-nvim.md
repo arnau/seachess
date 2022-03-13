@@ -24,3 +24,4 @@ This time around instead of using Vimscript, I use [Lua] and [Lush], a colorsche
 [teaspoon.vim]: https://github.com/arnau/teaspoon.vim
 [stonespoon.vim]: https://github.com/arnau/stonespoon.vim
 [Lua]: https://www.lua.org/
+[Lush]: http://git.io/lush.nvim
