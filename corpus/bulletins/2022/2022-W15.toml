@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W15"
+publication_date = 2022-04-17
+summary = "This week has been about CI/CD security, Deno on edge static websites, procedural Chinese-like landscapes, a syntax-based diff tool, a technical publishing system and CSS layout modes."
+
+[[entries]]
+url = "https://deno.com/blog/a-whole-website-in-a-single-js-file"
+title = "A Whole Website in a Single JavaScript File"
+summary = "A tutorial on Deno for edge static websites."
+content_type = "text"
+
+[[entries]]
+url = "https://www.joshwcomeau.com/css/understanding-layout-algorithms/"
+title = "Understanding Layout Algorithms"
+summary = "An article exploring CSS from a layout point of view."
+content_type = "text"
+
+[[entries]]
+url = "https://cycode.com/blog/github-actions-vulnerabilities/"
+title = "How We Discovered Vulnerabilities in CI/CD Pipelines of Popular Open-Source Projects"
+summary = "An article showcasing the impact of misconfiguring CI/CD pipelines."
+content_type = "text"
+
+[[entries]]
+url = "https://quarto.org/"
+title = "Quarto"
+summary = "A scientific and technical publishing system built on [Pandoc](https://pandoc.org/). Accepts Markdown or [Jupyter](https://jupyter.org/) notebooks as well as dynamic content in [Python](https://www.python.org/), [R](https://www.r-project.org/) or [Julia](https://julialang.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Wilfred/difftastic"
+title = "Difftastic"
+summary = "An experimental diff tool that compares files based on their syntax."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/LingDong-/shan-shui-inf"
+title = "Shan Shui"
+summary = "Procedurally-generated vector-format infinitely-scrolling Chinese landscape."
+content_type = "text"
