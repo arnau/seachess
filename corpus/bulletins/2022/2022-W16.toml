@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W16"
+publication_date = 2022-04-24
+summary = "This week has been about a TPC tunnel tool, a painting tool, OpenAI, HTML images, SQL query analysis and the Chromium architecture."
+
+[[entries]]
+url = "https://medium.com/@emilymenonbender/on-nyt-magazine-on-ai-resist-the-urge-to-be-impressed-3d92fd9a0edd"
+title = "On NYT Magazine on AI: Resist the Urge to be Impressed"
+summary = "An article going through a NYT piece on OpenAI, and effectively ripping it apart, sometimes with obvious exasperation:\n\n> GPT-3 can’t “compose nonfiction”. Nonfiction by definition is factual writing about the world. But GPT-3 has no access to facts, only to strings in its training data.\n\nThe article serves as a good piece to help balance out all the hype around Artificial Intelligence."
+content_type = "text"
+
+[[entries]]
+url = "https://tokern.io/blog/open-source-sql-parsers/"
+title = "Open Source SQL Parsers"
+summary = "An article on using SQL queries as a source for observability or insight for future system optimisations."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/embed/K2QHdgAKP-s"
+title = "Life of a Pixel"
+summary = "A talk on the Chromium architecture, going from plain content (HTML, CSS, JS, images, etc), to rendering, layout computing, rastering and finally displaying pixels on the screen."
+content_type = "video"
+
+[[entries]]
+url = "https://krita.org/"
+title = "Kirta"
+summary = "An open source painting tool for concept art, textures, illustrations and comics."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ekzhang/bore"
+title = "Bore"
+summary = "A simple TCP tunnel in Rust that exposes local ports to a remote server, bypassing standard NAT connection firewalls."
+content_type = "text"
+
+[[entries]]
+url = "https://stackoverflow.blog/2022/03/28/picture-perfect-images-with-the-modern-element/"
+title = "Picture perfect images with the modern <img> element"
+summary = "An guide on how to make the most from images in HTML."
+content_type = "text"
