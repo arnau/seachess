@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W17"
+publication_date = 2022-05-01
+summary = "This week has been about code interviews, an embedded key-value store, TypeScript state machines, TypeScript spreadsheets, WebAssembly and a command-line tool for search and analytics."
+
+[[entries]]
+url = "https://freakingrectangle.wordpress.com/2022/04/15/how-to-freaking-hire-great-developers/"
+title = "How to Freaking Find Great Developers By Having Them Read Code"
+summary = "An article reflecting on code interviews and the benefits of reading code instead of writing it."
+content_type = "text"
+
+[[entries]]
+url = "https://zed.brimdata.io/docs/commands/zq/"
+title = "Zq"
+summary = "A command-line tool that uses the Zed language for pipeline-style search and analytics. zq can query a variety of data formats in files, over HTTP, or in S3 storage.\n\n[Introducing Zq](https://www.brimdata.io/blog/introducing-zq/) is explains why Zq exists and how it compares to [jq](https://stedolan.github.io/jq/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cberner/redb"
+title = "redb"
+summary = "A portable, high-performance, ACID, embedded key-value store written in Rust loosely inspired by [lmdb](https://www.symas.com/lmdb)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/chakra-ui/zag"
+title = "Zag"
+summary = "A TypeScript library for writing state machines to manage UI state. It offers integration with React, Vue and Solid out of the box."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ruilisi/fortune-sheet"
+title = "FortuneSheet"
+summary = "A TypeScript library implementing spreadsheet functionality equivalent to Google Sheets or MicroSoft Excel."
+content_type = "text"
+
+[[entries]]
+url = "https://harshal.sheth.io/2022/01/31/webassembly.html"
+title = "Pay attention to WebAssembly"
+summary = "An article making the case for WebAssembly as the technology to focus on."
+content_type = "text"
