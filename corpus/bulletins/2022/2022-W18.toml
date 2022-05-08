@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W18"
+publication_date = 2022-05-08
+summary = "This week has been about database identifiers, uncertainty in project management, a tool to run SQL on CSV, Python and WebAssembly, Datasette lite and CSS layers."
+
+[[entries]]
+url = "https://simonwillison.net/2022/May/4/datasette-lite/"
+title = "Datasette Lite: a server-side Python web application running in a browser"
+summary = "An article announcing a version of Datasette compiled to WebAssembly. The [example](https://lite.datasette.io/) linked in the article will give you a good idea of its possibilities."
+content_type = "text"
+
+[[entries]]
+url = "https://pyodide.org/"
+title = "Pyodide"
+summary = "A port of CPython to WebAssembly/Emscripten to use Python in the browser and Node.js."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/noborus/trdsql"
+title = "trdsql"
+summary = "A command-line tool that can execute SQL queries on CSV, LTSV, JSON and TBLN."
+content_type = "text"
+
+[[entries]]
+url = "https://www.bram.us/2021/09/15/the-future-of-css-cascade-layers-css-at-layer/"
+title = "The Future of CSS: Cascade Layers (CSS @layer)"
+summary = "An article on how the CSS `@layer` works and how it is expected to help managing the effects of the cascade."
+content_type = "text"
+
+[[entries]]
+url = "https://brandur.org/nanoglyphs/026-ids"
+title = "Identity Crisis: Sequence v. UUID as Primary Key"
+summary = "An article on the trade-offs beteween UUID and sequential integers as primary keys in a relational database. The article focuses on Postgres but it is mostly tranferable to other relational databases."
+content_type = "text"
+
+[[entries]]
+url = "https://erikbern.com/2022/04/05/sigma-driven-project-management-when-is-the-optimal-time-to-give-up.html"
+title = "σ-driven project management: when is the optimal time to give up?"
+summary = "An article superficially exploring project management approaches based on amount of uncertainty. Although I like the initial framing it lacks depth around variable uncertainty.\n\nParticulary on software projects it says:\n\n> Everyone's job is simultaneously building features and building tools that makes it easier to build features. We end up with layers and layers of abstractions, and each layer reduces the work we have to spend in the layer below. This is obviously great for productivity! It does however mean that software projects will be hard to estimate, and a lot of software projects will be abandoned.\n\nI agree in principle but lacks factors like the impact of abstractions in reduction of future flexibilty, internal or external rot (e.g. cutting corners, technical debt, world changing)."
+content_type = "text"
