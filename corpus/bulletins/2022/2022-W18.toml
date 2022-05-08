@@ -30,11 +30,11 @@ content_type = "text"
 [[entries]]
 url = "https://brandur.org/nanoglyphs/026-ids"
 title = "Identity Crisis: Sequence v. UUID as Primary Key"
-summary = "An article on the trade-offs beteween UUID and sequential integers as primary keys in a relational database. The article focuses on Postgres but it is mostly tranferable to other relational databases."
+summary = "An article on the trade-offs between UUID and sequential integers as primary keys in a relational database. The article focuses on Postgres but it is mostly transferable to other relational databases."
 content_type = "text"
 
 [[entries]]
 url = "https://erikbern.com/2022/04/05/sigma-driven-project-management-when-is-the-optimal-time-to-give-up.html"
 title = "σ-driven project management: when is the optimal time to give up?"
-summary = "An article superficially exploring project management approaches based on amount of uncertainty. Although I like the initial framing it lacks depth around variable uncertainty.\n\nParticulary on software projects it says:\n\n> Everyone's job is simultaneously building features and building tools that makes it easier to build features. We end up with layers and layers of abstractions, and each layer reduces the work we have to spend in the layer below. This is obviously great for productivity! It does however mean that software projects will be hard to estimate, and a lot of software projects will be abandoned.\n\nI agree in principle but lacks factors like the impact of abstractions in reduction of future flexibilty, internal or external rot (e.g. cutting corners, technical debt, world changing)."
+summary = "An article superficially exploring project management approaches based on amount of uncertainty. Although I like the initial framing it lacks depth around variable uncertainty.\n\nParticularly on software projects it says:\n\n> Everyone's job is simultaneously building features and building tools that makes it easier to build features. We end up with layers and layers of abstractions, and each layer reduces the work we have to spend in the layer below. This is obviously great for productivity! It does however mean that software projects will be hard to estimate, and a lot of software projects will be abandoned.\n\nI agree in principle but lacks factors like the impact of abstractions in reduction of future flexibility, internal or external rot (e.g. cutting corners, technical debt, world changing)."
 content_type = "text"
