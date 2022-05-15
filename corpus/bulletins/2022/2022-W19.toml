@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W19"
+publication_date = 2022-05-15
+summary = "This week has been about Cloudflare's edge database, SQLite as a persistence layer, a UI agnostic drag and drop library, a vector similarity search engine, a markdown-based toolchain and an interactive in-browser notebook."
+
+[[entries]]
+url = "https://github.com/dflex-js/dflex"
+title = "DFlex"
+summary = "A Drag-and-Drop library for JavaScript frameworks implementing an enhanced transformation mechanism to manipulate DOM elements."
+content_type = "text"
+
+[[entries]]
+url = "https://percival.ink/"
+title = "Percival"
+summary = "An interactive in-browser notebook for declarative data analysis and visualization. It combines compiled [Datalog](https://en.wikipedia.org/wiki/Datalog) queries with plotting libraries for the web.\n\n[Percival: a reactive language for exploratory data analysis and visualization](https://www.hytradboi.com/2022/percival-a-reactive-language-for-exploratory-data-analysis-and-visualization) is a 10 minute talk explaining the basics of the tool."
+content_type = "text"
+
+[[entries]]
+url = "https://markdoc.io/"
+title = "Markdoc"
+summary = "A Markdown-based syntax and toolchain for creating custom documentation sites."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/qdrant/qdrant"
+title = "Qdrant"
+summary = "A vector similarity search engine. It provides a production-ready service with an API to store, search, and manage points - vectors with an additional payload.. It makes it useful for all sorts of neural-network or semantic-based matching, faceted search, and other applications."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.cloudflare.com/introducing-d1/"
+title = "Announcing D1: our first SQL database"
+summary = "An article on the new relational database based on SQLite to complement their edge functions offering."
+content_type = "text"
+
+[[entries]]
+url = "https://fly.io/blog/all-in-on-sqlite-litestream/"
+title = "I'm All-In on Server-Side SQLite"
+summary = "An article on the value of using SQLite as the main persistence layer.\n\n> I think that for many applications – production applications, with large numbers of users and high availability requirements – SQLite has a better place, in the center of the stack, as the core of your data and persistence layer."
+content_type = "text"
