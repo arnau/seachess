@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W20"
+publication_date = 2022-05-22
+summary = "This week has been about the Codenames boardgame, an ISO8601 comparison, the colour violet, SQLite extensions in Rust, Youtube's database and a book on Open Source."
+
+[[entries]]
+url = "https://ijmacd.github.io/rfc3339-iso8601/"
+title = "RFC 3339 vs ISO 8601"
+summary = "A comparison between the date/time standard ISO 8601 and its most popular profile RFC 3339. It also allows comparing against HTML."
+content_type = "text"
+
+[[entries]]
+url = "https://codenames.game/"
+title = "Codenames online"
+summary = "An online version of the [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)) boardgame."
+content_type = "text"
+
+[[entries]]
+url = "https://un.curl.dev/"
+title = "Uncurled"
+summary = "A book on the lessons learned whilst running and maintaing Open Source projects by the author of [curl](https://curl.se/)."
+content_type = "text"
+
+[[entries]]
+url = "https://tech.marksblogg.com/youtube-database-procella.html"
+title = "YouTube's Database “Procella”"
+summary = "An article looking into Google's paper “Procella: Unifying serving and analytical data at YouTube”."
+content_type = "text"
+
+[[entries]]
+url = "https://ricardoanderegg.com/posts/extending-sqlite-with-rust/"
+title = "Extending SQLite with Rust"
+summary = "A tutorial on how to write a SQLite extension in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://psyche.co/ideas/why-it-took-us-thousands-of-years-to-see-the-colour-violet"
+title = "Why it took us thousands of years to see the colour violet"
+summary = "An article on the research done finding the colour violet in art."
+content_type = "text"
