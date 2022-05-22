@@ -18,7 +18,7 @@ content_type = "text"
 [[entries]]
 url = "https://un.curl.dev/"
 title = "Uncurled"
-summary = "A book on the lessons learned whilst running and maintaing Open Source projects by the author of [curl](https://curl.se/)."
+summary = "A book on the lessons learned whilst running and maintaining Open Source projects by the author of [curl](https://curl.se/)."
 content_type = "text"
 
 [[entries]]
