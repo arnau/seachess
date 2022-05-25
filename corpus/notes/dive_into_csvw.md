@@ -105,7 +105,7 @@ the `Content-Type` header.
 
 Related to HTTP, CSVW depends on a handful other specifications to handle
 discoverability such as [IETF RFC 8288][rfc8288], [IETF RFC 5785][rfc5785] and
-[IETF RFC 8288][rfc6570].
+[IETF RFC 6570][rfc6570].
 
 
 **[Resource Description Framework][rdf]** (RDF) is a requirement coming directly from
