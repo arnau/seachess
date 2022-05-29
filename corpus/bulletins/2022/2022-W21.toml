@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W21"
+publication_date = 2022-05-29
+summary = "This week has been about diffs in neovim, a file manager in Tauri, memory leaks in Rust, open telemetry, web accessibility of CSS units and product teams' differences."
+
+[[entries]]
+url = "https://github.com/sindrets/diffview.nvim"
+title = "Diffview"
+summary = "A neovim plugin to work with diffs for all modified files for any git rev."
+content_type = "text"
+
+[[entries]]
+url = "https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/"
+title = "The Surprising Truth About Pixels and Accessibility"
+summary = "A tutorial on when to use pixels or rem/em to maximise web accessibilty."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/spacedriveapp/spacedrive"
+title = "Spacedrive"
+summary = "A cross-platform file manager written with Rust and Tauri, powered by a virtual distributed filesystem (VDFS)."
+content_type = "text"
+
+[[entries]]
+url = "https://onesignal.com/blog/solving-memory-leaks-in-rust/"
+title = "Fixing Memory Leaks in Rust"
+summary = "An article on the journey of hunting a memory leak in a Rust distributed system.\n\n> Rust’s safety guarantees exist to protect us from invalid memory access, not resource starvation."
+content_type = "text"
+
+[[entries]]
+url = "https://www.svpg.com/product-vs-feature-teams/"
+title = "Product vs. Feature Teams"
+summary = "An article on the organisational differences between the different ways of working packaged under 'Product Team'."
+content_type = "text"
+
+[[entries]]
+url = "https://opentelemetry.io/"
+title = "OpenTelemetry"
+summary = "A collection of tools, APIs, and SDKs. Use it to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior."
+content_type = "text"
