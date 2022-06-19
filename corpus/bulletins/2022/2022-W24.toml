@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W24"
+publication_date = 2022-06-19
+summary = "This week has been about Gemini, a game on SQL, writing a Lua virtual machine, a tool to run offline web applications, a tutorial on pixel art and a memo on better UUIDs."
+
+[[entries]]
+url = "https://mystery.knightlab.com/"
+title = "SQL Murder Mystery"
+summary = "A game designed to be a self-directed lesson to learn SQL concepts and commands and a fun game for experienced SQL users to solve an intriguing crime."
+content_type = "text"
+
+[[entries]]
+url = "https://smoldungeon.com/pixel-art"
+title = "How to Make Pixel Art"
+summary = "A tutorial on how to create pixel art monster for a game."
+content_type = "text"
+
+[[entries]]
+url = "https://redbean.dev/"
+title = "Redbean"
+summary = "A tool to run offline web applications as a single zip file."
+content_type = "text"
+
+[[entries]]
+url = "https://geminiquickst.art/"
+title = "What is Gemini?"
+summary = "An introduction to Gemini, a way of using the Internet, separate from the World Wide Web, intended to be simpler and better at protecting privacy."
+content_type = "text"
+
+[[entries]]
+url = "https://www.ietf.org/id/draft-peabody-dispatch-new-uuid-format-03.html"
+title = "New UUID Formats"
+summary = "A memo proposing UUID versions 6, 7 and 8 addressing concerns such as poor database locality (UUIDv4) or privacy issues (UUIDv1)."
+content_type = "text"
+
+[[entries]]
+url = "https://notes.eatonphil.com/lua-in-rust.html"
+title = "Writing a minimal Lua implementation with a virtual machine from scratch in Rust"
+summary = "A tutorial on writing a Lua virtual machine in Rust."
+content_type = "text"
