@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W25"
+publication_date = 2022-06-26
+summary = "This week has been about SVG filters, an embeddable scripting engine, better Neovim folds, Markdown-like timeline diagrams, race conditions in React.js and the Open Metaverse initiative."
+
+[[entries]]
+url = "https://metaverse-standards.org/"
+title = "The Metaverse Standards Forum"
+summary = "An initiative to coordinate efforts towards interoperability for the Open Metaverse."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/coder-mike/microvium"
+title = "Microvium"
+summary = "A compact, embeddable scripting engine for applications and microcontrollers for executing programs written in a subset of the JavaScript language."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/kochrt/markwhen"
+title = "Markwhen"
+summary = "A tool to visualise a markdown-inspired text description as an interactive cascading timeline (a-la Gantt chart)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/kevinhwang91/nvim-ufo"
+title = "nvim-ufo"
+summary = "A plugin for Neovim to make folds look modern and and high performance."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.logrocket.com/complete-guide-using-css-filters-svgs/"
+title = "A complete guide to using CSS filters with SVGs"
+summary = "An article walking through all SVG filters available in SVG."
+content_type = "text"
+
+[[entries]]
+url = "https://maxrozen.com/race-conditions-fetching-data-react-with-useeffect"
+title = "Fixing Race Conditions in React with useEffect"
+summary = "An article showing two ways of preventing race conditions whilst using asynchronous data fetching."
+content_type = "text"
