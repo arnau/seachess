@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W28"
+publication_date = 2022-07-17
+summary = "This week has been about a no-code spreadsheet-y database, a distributed time series database, a tool to transform JSON to tabular relational formats, a tool to overlay a local environment with a cloud one, a service for browser devtool features and a DNS server with creative liberties."
+
+[[entries]]
+url = "https://baserow.io/"
+title = "Baserow"
+summary = "An no-code database service alternative to Airtable with a strong resemblance with a spreadsheet."
+content_type = "text"
+
+[[entries]]
+url = "https://www.canidev.tools/"
+title = "Can I DevTools?"
+summary = "A service similar to [Can I use](https://caniuse.com/) for comparing web browser devtool features."
+content_type = "text"
+
+[[entries]]
+url = "https://mirrord.dev/"
+title = "mirrord"
+summary = "An open-source tool that lets developers run local processes in the context of their cloud environment. It’s meant to provide the benefits of running your service on a cloud environment (e.g. staging) without actually going through the hassle of deploying it there, and without disrupting the environment by deploying untested code."
+content_type = "text"
+
+[[entries]]
+url = "https://www.dns.toys/"
+title = "DNS Toys"
+summary = "A DNS server that takes creative liberties with the DNS protocol to offer handy utilities and services that are easily accessible via the command line."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cnosdb/cnosdb"
+title = "CnosDB"
+summary = "A distributed time series database aiming for high performance, compression rate and availability."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/kindly/flatterer"
+title = "Flatterer"
+summary = "A tool to transform deeply nested JSON structures to tabular relational formats (CSV, Parquet, SQLite, XLSX). The [Flatterer announcement](https://medium.com/opendatacoop/announcing-flatterer-converting-structured-data-into-tabular-data-c4652eae27c9) gives a nice introduction to the tool and its ambitions."
+content_type = "text"
