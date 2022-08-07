@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W31"
+publication_date = 2022-08-07
+summary = "This week has been about logic inside databases, a unified interface for querying different databases and file formats, mailing list style PR code reviews, intercepting risky shell commands, a SQLite extension to reduce database size and WebAssembly in Confidential Computing."
+
+[[entries]]
+url = "https://github.com/danobi/prr"
+title = "Pull request review"
+summary = "A tool that brings mailing list style code reviews to Github PRs. This means offline reviews and inline comments."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cube2222/octosql"
+title = "OctoSQL"
+summary = "A command-line interface tool for querying different databases and file formats using SQL through a unified interface."
+content_type = "text"
+
+[[entries]]
+url = "https://brandur.org/fragments/code-database-vs-app"
+title = "Code in database vs. code in application"
+summary = "An article reflecting on the arguments for and against using stored procedures for business logic."
+content_type = "text"
+
+[[entries]]
+url = "https://phiresky.github.io/blog/2022/sqlite-zstd/"
+title = "sqlite-zstd"
+summary = "An article introducing a SQLite extension written in Rust to reduce the database size maintaining the ability to query using SQL."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/kaplanelad/shellfirm"
+title = "shellfirm"
+summary = "A tool that intercepts risky shell commands predefined by the user and prompts a small challenge to help prevent disasters you can't come back from."
+content_type = "text"
+
+[[entries]]
+url = "https://thenewstack.io/confidential-computing-with-webassembly/"
+title = "Confidential Computing with WebAssembly"
+summary = "An article on the use of WebAssembly for cryptographically-proven units of computation.\n\n> WebAssembly allows you to say, I’ve created a single application, and I can prove that that is exactly the application that’s running on all of these instances. Cryptographic proof. And that’s the big win.\n\nYou might also enjoy the [talk by on of the persons behind Enarx](https://www.youtube.com/watch?app=desktop&v=YNzDuiYMcnY&t=14034s)."
+content_type = "text"
