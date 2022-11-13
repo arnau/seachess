@@ -11,7 +11,7 @@ You can find some of my other activity in
 - [Gitlab](https://gitlab.com/arnau)
 - [Keybase](https://keybase.io/arnau)
 - [Mastodon](https://mastodon.xyz/@arnau)
-- [Twitter](https://www.twitter.com/arnau_siches)
+- ~~[Twitter](https://www.twitter.com/arnau_siches)~~
 
 
 ## About this website
