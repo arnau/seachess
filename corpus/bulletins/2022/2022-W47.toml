@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W47"
+publication_date = 2022-11-27
+summary = "This week has been about electricity production, Rice's theorem, Domain Specific Languages, harmless choices' consequences, plain-text diagrams and natural programming languages."
+
+[[entries]]
+url = "https://chreke.com/little-languages.html"
+title = "Little Languages Are The Future Of Programming"
+summary = "An article arguing that Domain Specific Languages (DSL) are the cornerstone to managing the increase in size of programs as well as their perceived complexity."
+content_type = "text"
+
+[[entries]]
+url = "https://www.cs.utexas.edu/users/EWD/transcriptions/EWD06xx/EWD667.html"
+title = "On the foolishness of “natural language programming”"
+summary = "A note by Edsger W. Dijkstra on the challenges of using natural programming languages instead of symbolic ones.\n\n> […] some people found error messages they couldn't ignore more annoying than wrong results, and, when judging the relative merits of programming languages, some still seem to equate \"the ease of programming\" with the ease of making undetected mistakes."
+content_type = "text"
+
+[[entries]]
+url = "https://text-to-diagram.com/"
+title = "Text to Diagram"
+summary = "A service to compare tools for writing diagrams in plain (ish) text."
+content_type = "text"
+
+[[entries]]
+url = "https://app.electricitymaps.com/"
+title = "Electricity maps"
+summary = "A service mapping the electricity production and consumption in the world."
+content_type = "text"
+
+[[entries]]
+url = "https://busy-beavers.tigyog.app/rice"
+title = "Rice's theorem"
+summary = "An interactive tutorial on Rice's theorem.\n\n> computers can’t decide anything interesting about your code’s input-output."
+content_type = "text"
+
+[[entries]]
+url = "https://ncase.me/polygons/"
+title = "Parable of polygons"
+summary = "An interactive tutorial on how harmless choices can make a harmful world."
+content_type = "text"
