@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2022-W49"
+publication_date = 2022-12-11
+summary = "This week has been about SQLite extensions in Rust, a Datalog library, an in-process property graph database, code execution visualisation, a SQL tutorial and a talk on a DSL for diagramming."
+
+[[entries]]
+url = "https://www.sqlteaching.com/"
+title = "SQL Teaching"
+summary = "An interactive tutorial on the rudiments of SQL. A keeper for when someone asks you “I want to learn SQL, where do I start?”."
+content_type = "text"
+
+[[entries]]
+url = "https://kuzudb.com/"
+title = "Kùzu"
+summary = "An in-process property graph database management system (GDBMS) built for query speed and scalability. It is optimized for handling complex join-heavy analytical workloads on very large graph databases."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=gT9Xu-ctNqI"
+title = "Diagrammar: Simply Make Interactive Diagrams"
+summary = "A talk on a DSL built for diagramming in a functional way."
+content_type = "video"
+
+[[entries]]
+url = "https://pythontutor.com/"
+title = "Learn Python, JavaScript, C, C++, and Java"
+summary = "A tool to learn Python, JavaScript, C, C++, and Java programming by visualizing code execution."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/asg017/sqlite-loadable-rs"
+title = "sqlite-loadable-rs"
+summary = "A tool for writing SQLite extensions in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ekzhang/crepe"
+title = "Crepe"
+summary = "A library for writing Datalog-like declarative logic programs in Rust."
+content_type = "text"
