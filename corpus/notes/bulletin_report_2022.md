@@ -28,7 +28,7 @@ As usual, let's start with some general numbers to frame the rest of the report.
 | Number of sources                                 | 33   | 53   |
 | Number of sources not used                        | 14   | 27   |
 
-This year I read substantially less than previous years likely due to changing jobs. I didn't realise I added 20 new sources to my weekly routine, I might should do some pruning, it's getting wild.
+This year I read substantially less than previous years likely due to changing jobs. I didn't realise I added 20 new sources to my weekly routine, I should do some pruning, it's getting wild.
 
 The numbers per week have dropped as expected although the maximum stays quite the same.
 
