@@ -22,7 +22,7 @@ summary = "A collection of public HTTP API services categorised by topic.\n\nYou
 content_type = "text"
 
 [[entries]]
-url = "https://jamesmcm.github.io/blog/2020/04/19/data-engineering-with-rust-and-aws-lambda"
+url = "https://jamesmcm.github.io/blog/data-engineering-with-rust-and-aws-lambda"
 title = "Data Ingestion with Rust and AWS Lambda"
 summary = "A tutorial of how to setup an AWS Lambda function with Rust, consuming\nspreadsheets from AWS S3.\n\nThe [Rusoto](https://github.com/rusoto/rusoto) project, although not yet 1.0,\nis already covering quite a few [AWS services](https://www.rusoto.org/supported-aws-services.html).\n\nThe [Amadeus](https://github.com/constellation-rs/amadeus) project is worth a\nlook as well if you are into data processing, ETL or analysis."
 content_type = "text"

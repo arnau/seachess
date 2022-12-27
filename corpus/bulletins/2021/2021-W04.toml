@@ -4,7 +4,7 @@ publication_date = 2021-01-31
 summary = "This week has been about StrictMark, bacon-sci, semantic web research, JerryScript and a collection of static site generators."
 
 [[entries]]
-url = "https://aftix.xyz/home/bacon/"
+url = "https://aftix.xyz/bacon/"
 title = "Scientific Computing in Rust"
 summary = "An article introducing [bacon-sci](https://github.com/aftix/bacon), a [SciPy](https://www.scipy.org/) replacement in Rust."
 content_type = "text"

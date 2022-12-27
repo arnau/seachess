@@ -4,7 +4,7 @@ publication_date = 2020-04-12
 summary = "This week has been about PostGIS, Rust error handling, Git flows, Elm issues, Google Analytics and illustrations."
 
 [[entries]]
-url = "https://drewdevault.com/2020/04/05/My-weird-branchless-git-workflow.html"
+url = "https://drewdevault.com/2020/04/06/My-weird-branchless-git-workflow.html"
 title = "My unorthodox, branchless git workflow"
 summary = "An article on working with Git without branches. An interesting contrast to\nlast week's [How the Creators of Git Do\nBranching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb)."
 content_type = "text"

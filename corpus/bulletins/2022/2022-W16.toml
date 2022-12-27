@@ -34,7 +34,7 @@ summary = "A simple TCP tunnel in Rust that exposes local ports to a remote serv
 content_type = "text"
 
 [[entries]]
-url = "https://stackoverflow.blog/2022/03/28/picture-perfect-images-with-the-modern-element/"
+url = "https://stackoverflow.blog/2022/12/27/picture-perfect-images-with-the-modern-element/"
 title = "Picture perfect images with the modern <img> element"
 summary = "An guide on how to make the most from images in HTML."
 content_type = "text"

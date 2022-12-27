@@ -28,13 +28,13 @@ summary = "An article introducing a series on state space models (SSM). Hidden M
 content_type = "text"
 
 [[entries]]
-url = "https://tratt.net/laurie/blog/entries/which_parsing_approach.html"
+url = "https://tratt.net/laurie/blog/2020/which_parsing_approach.html"
 title = "Which Parsing Approach?"
 summary = "An article explaining different parsing strategies and their trade-offs.\n\nIf you enjoyed it, “[Challenging LR Parsing](https://rust-analyzer.github.io//blog/2020/09/16/challeging-LR-parsing.html)”\nis a great response in the context of parsers that need tolerance to errors such as syntax highlighters and IDEs."
 content_type = "text"
 
 [[entries]]
-url = "https://wiredforge.com/blog/sqlite-parser-pt-1/index.html"
+url = "https://freemasen.com/blog/sqlite-parser-pt-1/index.html"
 title = "SQLite File Parser Pt. 1: The Header"
 summary = "A tutorial walking through a Rust implementation of a SQLite file format parser."
 content_type = "text"

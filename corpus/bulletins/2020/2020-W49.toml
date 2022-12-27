@@ -28,7 +28,7 @@ summary = "An article introducing the background and findings on a [research gam
 content_type = "text"
 
 [[entries]]
-url = "https://anonymousplanet.github.io/thgtoa/guide.html"
+url = "https://anonymousplanet.org/"
 title = "The Hitchhiker’s Guide to Online Anonymity"
 summary = "A thorough guide to how to set yourself up for online anonymity. Not for the faint of heart."
 content_type = "text"
