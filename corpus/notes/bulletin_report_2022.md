@@ -169,6 +169,34 @@ Rust stays as my main interest, tools over other kinds of resources as well and 
 
 For a second year, WebAssembly doesn't show often enough in the bulletin although it has been, with Rust, my main focus for years.
 
+## Link rot
+
+[Link rot](https://en.wikipedia.org/wiki/Link_rot) is the phenomenon of URLs ceasing to point to their originally targeted resource due to that resource being relocated to a new address or becoming permanently unavailable.
+
+| year | total |
+|------|------:|
+| 2020 | 10    |
+| 2021 | 5     |
+| 2022 | 4     |
+
+| decay_kind         | total |
+|--------------------|------:|
+| unavailable        | 5     |
+| security_issue     | 5     |
+| domain_change      | 3     |
+| permanent_redirect | 6     |
+
+- `unavailable` means the domain is no longer available and I couldn't find another place with the resource.
+- `security_issue` means there is some sort of issue with the TLS certificate, probably it's expired.
+- `domain_change` means the domain is no longer available but I found the resource in a new domain.
+- `permanent_redirect` means the resource was no longer in the expected URL but I found a different URL with the same domain.
+
+Out of 918 (306 resources per year), 19 have been neglected with 5 no longer working at all and 5 being in question.
+
+Although the rot is not massive, it's evidence of how naive was the idea of URLs being permanent identifiers forever. Forever is a long time.
+
+The good news is that I recovered 9 links which are now updated in the website version of the bulletin.
+
 
 ## Conclusions
 
