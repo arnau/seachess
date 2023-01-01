@@ -167,7 +167,7 @@ And the top 10 that where published in the bulletin:
 
 Rust stays as my main interest, tools over other kinds of resources as well and there is a noticeable shift from API to databases, SQLite in particular. Interestingly enough, my curated list of SQLite resources, [Some SQLite](https://github.com/arnau/some-sqlite) hasn't grown faster than in 2021.
 
-For a second year, WebAssembly doesn't show often enough in the bulletin although it has been, with Rust, my main focus for years.
+For a second year, WebAssembly doesn't show often enough in the bulletin although it has been, with Rust, my main foucus for years.
 
 ## Link rot
 
@@ -179,7 +179,7 @@ For a second year, WebAssembly doesn't show often enough in the bulletin althoug
 | 2021 | 5     |
 | 2022 | 4     |
 
-| decay_kind         | total |
+| rot_kind         | total |
 |--------------------|------:|
 | unavailable        | 5     |
 | security_issue     | 5     |
