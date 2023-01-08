@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W01"
+publication_date = 2023-01-08
+summary = "This week has been about reactive libraries mechanics, graph neural networks, reusable SQL with M4, TypeScript types from Rust, a command-line JSON viewer and web browsers user agent compatibility."
+
+[[entries]]
+url = "https://github.com/PaulJuliusMartinez/jless"
+title = "jless"
+summary = "A command-line JSON viewer designed for reading, exploring, and searching through JSON data."
+content_type = "text"
+
+[[entries]]
+url = "https://emiruz.com/post/2022-12-28-composable-sql/"
+title = "SQL + M4 = Composable SQL"
+summary = "An article exploring how to create reusable SQL expressions using M4 macros."
+content_type = "text"
+
+[[entries]]
+url = "https://miketaylr.com/posts/2022/12/how-the-IE-11-ua-string-broke-sites-in-firefox.html"
+title = "Remember when the IE 11 User-Agent forced Mozilla to freeze part of its User-Agent string (last week)"
+summary = "An article explaining the new twist on the bizarre world of the backwards-compatible Web."
+content_type = "text"
+
+[[entries]]
+url = "https://distill.pub/2021/gnn-intro/"
+title = "A Gentle Introduction to Graph Neural Networks"
+summary = "A tutorial on graph neural networks with interactive examples starting from the definition of graph data structures to the mechanics of a GNN model."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/modderme123/super-charging-fine-grained-reactive-performance-47ph"
+title = "Super Charging Fine-Grained Reactive Performance"
+summary = "An article explaining how reactive libraries work depending on whether they are lazy or eager."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Aleph-Alpha/ts-rs"
+title = "ts-rs"
+summary = "A Rust library to generate TypeScript type declarations from Rust types."
+content_type = "text"
