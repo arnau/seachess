@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W02"
+publication_date = 2023-01-15
+summary = "This week has been about WebAssembly User Defined Functions (UDF) in libSQL, a collection of failed projects, a collection of web fonts, a multi-clipboard tool, a collection of React components for 2D diagrams and a book on Rust atomics."
+
+[[entries]]
+url = "https://github.com/Slackadays/clipboard"
+title = "Clipboard"
+summary = "A terminal application to manage cut, copy and paste actions with multiple clipboards."
+content_type = "text"
+
+[[entries]]
+url = "https://collection.museumoffailure.com/"
+title = "Museum of Failure"
+summary = "A collection of failed projects."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.chiselstrike.com/webassembly-functions-for-your-sqlite-compatible-database-7e1ad95a2aa7"
+title = "WebAssembly functions for your SQLite-compatible database"
+summary = "An article introducing the addition of WebAssembly User Defined Functions (UDF) in [libSQL](https://libsql.org/), a SQLite fork."
+content_type = "text"
+
+[[entries]]
+url = "https://marabos.nl/atomics/"
+title = "Rust Atomics and Locks"
+summary = "A book with a free online version available diving into the building blocks of concurrency."
+content_type = "text"
+
+[[entries]]
+url = "https://mafs.dev"
+title = "Mafs"
+summary = "A collection of React components for building interactive 2D diagrams."
+content_type = "text"
+
+[[entries]]
+url = "https://fonts.bunny.net/"
+title = "Bunny Fonts"
+summary = "A collection of web fonts with zero-tracking and no-logging."
+content_type = "text"
