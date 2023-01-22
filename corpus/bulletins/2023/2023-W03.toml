@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W03"
+publication_date = 2023-01-22
+summary = "This week has been about float point numbers, an interaction net runtime, deep learning in Rust, data wrangling in Python and modem handshakes explained."
+
+[[entries]]
+url = "https://github.com/burn-rs/burn"
+title = "Burn"
+summary = "A deep learning framework written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://float.exposed/"
+title = "Float exposed"
+summary = "A service decomposing a floating point number into its meaningful parts allowing for changes to see how IEEE 754 arithmetics work."
+content_type = "text"
+
+[[entries]]
+url = "https://jvns.ca/blog/2023/01/13/examples-of-floating-point-problems/"
+title = "Examples of floating point problems"
+summary = "An article analysing common floating point number problems with a positive lens. You may also be interested in the followup [Examples of problems with integers](https://jvns.ca/blog/2023/01/18/examples-of-problems-with-integers/)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html"
+title = "The sound of the dialup, pictured"
+summary = "An article describing the handshake between two modems."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Kindelia/HVM"
+title = "High-order Virtual Machine (HVM)"
+summary = "A pure functional runtime that is lazy, non-garbage-collected and parallel. It uses [interaction nets](https://en.wikipedia.org/wiki/Interaction_nets) as model of computation."
+content_type = "text"
+
+[[entries]]
+url = "https://sedimental.org/cruising_through_data.html"
+title = "Cruising through complex data"
+summary = "An article introducing [Glom](https://github.com/mahmoud/glom), a Python libary to query and transform nested data structures. It offers a range of utilities such as path-based access, declarative transformations and specifications."
+content_type = "text"
