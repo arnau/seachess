@@ -36,5 +36,5 @@ content_type = "text"
 [[entries]]
 url = "https://medium.com/agileinsider/from-story-points-to-slam-dunks-planning-for-success-c3e067354d9b"
 title = "From Story Points to Slam Dunks — Planning for Success"
-summary = "An article proposing an alternative way communicate estimated effort instead of Story Points. Like most writings on the topic, it sidesteps the problem of communication with team outsiders (other teams, management, commercial, etc) which is fundamental to any successful estimation process. [How to plan?](https://kellanem.com/notes/how-to-plan) gives a broader perspective on planning."
+summary = "An article proposing an alternative way to communicate estimated effort instead of Story Points. Like most writings on the topic, it sidesteps the problem of communication with team outsiders (other teams, management, commercial, etc) which is fundamental to any successful estimation process. [How to plan?](https://kellanem.com/notes/how-to-plan) gives a broader perspective on planning."
 content_type = "text"
