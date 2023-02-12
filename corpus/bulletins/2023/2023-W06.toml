@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W06"
+publication_date = 2023-02-12
+summary = "This week has been about a multi-source query engine, a file-tree visualiser, a Rust magazine, GPT-3 prompt injections, a tutorial on fzf and Rust procedural macros."
+
+[[entries]]
+url = "https://github.com/solidiquis/erdtree"
+title = "erdtree"
+summary = "A multi-threaded file-tree visualizer and disk usage analyzer."
+content_type = "text"
+
+[[entries]]
+url = "https://simonwillison.net/2022/Sep/16/prompt-injection-solutions/"
+title = "I don’t know how to solve prompt injection"
+summary = "An article exploring the “prompt injection” vector of attack in tools like GPT-3."
+content_type = "text"
+
+[[entries]]
+url = "https://veykril.github.io/tlborm/"
+title = "Implementing i18n-format, a Rust procedural macro"
+summary = "A tutorial on writing procedural macros in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/obi1kenobi/trustfall"
+title = "trustfall"
+summary = "A query engine which able to query any data source or combination of data sources e.g. relational databases, GraphQL APIs, JSON, CSV, git."
+content_type = "text"
+
+[[entries]]
+url = "https://rustmagazine.org/"
+title = "Rust Magazine"
+summary = "A publication for the Rust programming language community."
+content_type = "text"
+
+[[entries]]
+url = "https://thevaluable.dev/practical-guide-fzf-example/"
+title = "A Practical Guide to fzf: Building a File Explorer"
+summary = "A tutorial on [fzf](https://github.com/junegunn/fzf), exploring its main features and looking into performance issues."
+content_type = "text"
