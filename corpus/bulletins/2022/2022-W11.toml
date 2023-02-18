@@ -12,7 +12,7 @@ content_type = "text"
 [[entries]]
 url = "https://github.com/RazrFalcon/cargo-bloat"
 title = "cargo-bloat"
-summary = "A tool to analyse what parts of a Rust executable take most of the space. Also worth having a loot at [Twiggy](https://github.com/rustwasm/twiggy) for a similar tool targeting WebAssembly."
+summary = "A tool to analyse what parts of a Rust executable take most of the space. Also worth having a look at [Twiggy](https://github.com/rustwasm/twiggy) for a similar tool targeting WebAssembly."
 content_type = "text"
 
 [[entries]]
