@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W07"
+publication_date = 2023-02-19
+summary = "This week has been about an iOS Mastodon application, a tool for inspecting large allocations in Rust, a tool to make Linux applications behave, Python's GIL, Go's proposal on telemetry and a deep dive on Rust and WebAssembly."
+
+[[entries]]
+url = "https://github.com/queer/boxxy"
+title = "Boxxy"
+summary = "A tool for forcing Linux applications to put their files and directories in the right place."
+content_type = "text"
+
+[[entries]]
+url = "https://surma.dev/things/rust-to-webassembly/"
+title = "Rust to WebAssembly the hard way"
+summary = "A deep dive into Rust targeting WebAssembly without the aid of wasm-bindgen."
+content_type = "text"
+
+[[entries]]
+url = "https://research.swtch.com/telemetry-intro"
+title = "Transparent Telemetry for Open-Source Projects"
+summary = "An article on the benefits of telemetry for open source projects by the Go team. Telemetry is a controversial topic and even more when it comes from a company like Google with a track record of doing the wrong thing regarding privacy.\n\n[The Go team wrote three articles describing the proposal and its strengths](https://research.swtch.com/telemetry) and also had a lengthy discussion in GitHub. Worth the time to understand both sides."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Dimillian/IceCubesApp"
+title = "IceCubesApp"
+summary = "An open source application for accessing the decentralized social network Mastodon in iOS."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/matt-kimball/allocscope"
+title = "allocscope"
+summary = "A tool for tracking down where the most large allocations are occurring in a C, C++ or Rust codebase."
+content_type = "text"
+
+[[entries]]
+url = "https://pythonspeed.com/articles/python-gil/"
+title = "When Python can’t thread: a deep-dive into the GIL’s impact"
+summary = "An article looking into Python's Global Interpreter Lock (GIL) and the consequences when using multiple threads.\n\nYou might also be interested in [Python’s multiprocessing performance problem](https://pythonspeed.com/articles/faster-multiprocessing-pickle/)."
+content_type = "text"
