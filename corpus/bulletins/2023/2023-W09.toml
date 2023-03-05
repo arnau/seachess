@@ -1,6 +1,6 @@
 type = "bulletin"
-id = "2023-W08"
-publication_date = 2023-02-26
+id = "2023-W09"
+publication_date = 2023-03-05
 summary = "This week has been about how the Internet works, prompt injection threats, fast SQLite indexing, an edge CMS, an in-memory database and trait references in Rust."
 
 [[entries]]
