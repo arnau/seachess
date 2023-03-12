@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W10"
+publication_date = 2023-03-12
+summary = "This week has been about incident management, a tool for managing JavaScript projects, a Rust actor framework inspired by Erlang, gradient descent in SQL, a toolset for interactive Markdown and a study of the Panopticon."
+
+[[entries]]
+url = "https://github.com/slawlor/ractor"
+title = "Ractor"
+summary = "A Rust actor framework inspired by Erlang's supervision model."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.pragmaticengineer.com/postmortem-best-practices/"
+title = "Incident Review and Postmortem Best Practices"
+summary = "An article looking into incident management, covering common incident handling practices, incident review practices, incident review practices of tomorrow, what tech can learn from incident handling in other industries and incident postmortem examples and templates."
+content_type = "text"
+
+[[entries]]
+url = "https://maxhalford.github.io/blog/ogd-in-sql/"
+title = "Online gradient descent written in SQL"
+summary = "An article exploring the idea of implementing an online gradient descent algorithm in SQL. The article advocates for bringing business logic into the database which is the opposite view of the last decade (or decades). Interesting challenge nonetheless."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/moonrepo/moon"
+title = "moon"
+summary = "A repository management, organization, orchestration, and notification tool for the web ecosystem, written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://www.myleszhang.org/2019/11/11/jeremy-bentham-panopticon-animation/"
+title = "Computer Model of Jeremy Bentham’s Panopticon"
+summary = "An article studying the 1790's Panopticon “perfect prison” approach as an architectural artefact for a surveillance society."
+content_type = "text"
+
+[[entries]]
+url = "https://myst-tools.org/"
+title = "MyST Markdown Tools"
+summary = "A set of tools extending Markdown for interactive documents."
+content_type = "text"
