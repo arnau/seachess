@@ -42,7 +42,7 @@ In other words, the extension should surface a virtual table constructor `toml()
 
 And for each TOML file, create a row in the virtual table with its contents serialised as JSON.
 
-A future iteration could allow passing the list of expected columns instead but this approach keeps things simple with a fix set of columns: `filename` and `value`.
+A future iteration could allow passing the list of expected columns instead but this approach keeps things simple with a fixed set of columns: `filename` and `value`.
 
 With that and the [JSON functions and operators](https://www.sqlite.org/json1.html) it is possible to query, normalise and manipulate the data freely.
 
@@ -73,7 +73,7 @@ CREATE TABLE x(
 );
 ```
 
-Indexes are to be built using the `best_index` method. I opted for a non-optimal but easy no-index situation so every query will to a full scan.
+Indexes are to be built using the `best_index` method. I opted for a non-optimal but easy no-index situation so every query runs a full scan.
 
 Finally, the `open` method takes care of initialising the cursor. In my implementation I read from disk and load into memory all data at this point.
 
