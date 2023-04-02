@@ -91,4 +91,4 @@ And that's it. sqlite-loadable takes care of the rest.
 
 It took me a while to realise that Rusqlite was not able to handle loadable extensions which was a bit frustrating. sqlite-loadable was great though. It is designed after Rusqlite which means that pretty much all the work I did initally was portable within an hour.
 
-That said, the fact that sqlite-loadable is an unstable large set of `unsafe` code makes me not recommend it for general use. It looks highly promissing though.
+That said, the fact that sqlite-loadable is an unstable large set of `unsafe` code makes me not recommend it for general use. It looks highly promising though.
