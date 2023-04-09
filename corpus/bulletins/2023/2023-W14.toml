@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W14"
+publication_date = 2023-04-09
+summary = "This week has been about networks and graphs with Gephi Lite, a JavaScript library for graph manipulation, a Python library for data validation, a Make-like build tool, the state of AI research, and WebAssembly tail call optimisation in V8."
+
+[[entries]]
+url = "https://github.com/gephi/gephi-lite"
+title = "Gephi Lite"
+summary = "An open-source web application to visualize and explore networks and graphs. A lighter version of [Gephi](https://gephi.org/)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/graphology/graphology"
+title = "Graphology"
+summary = "A JavaScript library for working with graphs providing a standard library with graph theory algorithms and layout algorithms."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/pydantic/pydantic"
+title = "Pydantic"
+summary = "A Python library for validating data using Python type hints."
+content_type = "text"
+
+[[entries]]
+url = "https://robotic.substack.com/p/behind-the-curtain-ai"
+title = "Behind the curtain: what it feels like to work in AI right now"
+summary = "An article on the state of AI research after the advent of ChatGPT.\n\n> It feels like the field is charging ahead with rapid progress on the technical side, where there is a down-the-line wall of safety and bias concerns that are very hard for small teams to comply with."
+content_type = "text"
+
+[[entries]]
+url = "https://v8.dev/blog/wasm-tail-call"
+title = "WebAssembly tail calls"
+summary = "An article explaining how V8 has implemented tail call optimisation for WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/zyedidia/knit"
+title = "Knit"
+summary = "A build tool inspired by Make and Plan9 Mk. It combines the a Make-like rules language with a Lua runtime."
+content_type = "text"
