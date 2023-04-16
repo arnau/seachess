@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W15"
+publication_date = 2023-04-16
+summary = "This week has been about a simplified Nix, fast lexers in Rust, accessible SolidJS, the London tube in 3D, a technical search engine, and headless mobile applications."
+
+[[entries]]
+url = "https://www.ianvisits.co.uk/articles/3d-maps-of-every-underground-station-ab-14630/"
+title = "3D maps of every Underground station"
+summary = "A collection of 3D maps of London's underground station corridors."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/maciejhirsz/logos"
+title = "Logos"
+summary = "A Rust library for creating fast lexers via expressive enums and callbacks per match."
+content_type = "text"
+
+[[entries]]
+url = "https://getfleek.dev/"
+title = "Fleek"
+summary = "An all-in-one management system built on top of Nix and Nix Home Manager. Instead of the Nix language it opts to use YAML."
+content_type = "text"
+
+[[entries]]
+url = "https://www.phind.com/"
+title = "Phind"
+summary = "A service for searching for technical solutions aided by AI.\n\n> [...] Unlike some other AI assistants, Phind pulls information from the internet and is always up to date. [...]"
+content_type = "text"
+
+[[entries]]
+url = "https://kobalte.dev/"
+title = "Kobalte"
+summary = "A UI toolkit for building accessible web applications and design systems with SolidJS."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=cWCZms92-1g"
+title = "iOS, Android and Web applications that share a single Rust core"
+summary = "A talk on approaching mobile applications with the headless paradigm."
+content_type = "text"
