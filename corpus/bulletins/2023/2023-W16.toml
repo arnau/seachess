@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W16"
+publication_date = 2023-04-23
+summary = "This week has been about data exfiltration in Python, WebAssembly in Python, Rust backing mobile applications, text minimaps, interactive graphics in JavaScript and load balancer strategies."
+
+[[entries]]
+url = "https://github.com/bytecodealliance/wasmtime-py"
+title = "Python WebAssembly runtime"
+summary = "A Python WebAssembly runtime featuring [WebAssembly components](https://github.com/WebAssembly/component-model)."
+content_type = "text"
+
+[[entries]]
+url = "https://samwho.dev/load-balancing/"
+title = "Load Balancing"
+summary = "An article on the ways a load balancer can distribute HTTP requests to a set of servers."
+content_type = "text"
+
+[[entries]]
+url = "https://pixijs.com/"
+title = "PixiJS"
+summary = "A rendering library aimed at creating interactive graphics (including games) abstracting away from the complexities of WebGL and browser and device compatibility."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/redbadger/crux"
+title = "Crux"
+summary = "A Rust framework to help architect applications with a reusable core across mobile (iOS, Android) and web."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.phylum.io/malicious-actors-use-unicode-support-in-python-to-evade-detection"
+title = "Malicious Actors Use Unicode Support in Python to Evade Detection"
+summary = "An article on a technique to exfiltrate sensitive data leveraging Python support for Unicode in identifiers."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/wfxr/code-minimap"
+title = "code-minimap"
+summary = "A command-line tool written in Rust for generating text minimaps a-la code editor sidebars. There's also an [integration with Vim](https://github.com/wfxr/minimap.vim)."
+content_type = "text"
