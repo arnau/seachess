@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W19"
+publication_date = 2023-05-14
+summary = "This week has been about RocksDB, emoji prompts, managing Python, querying binary files, prompt engineering and a tutorial on TLS."
+
+[[entries]]
+url = "https://artem.krylysov.com/blog/2023/04/19/how-rocksdb-works/"
+title = "How RocksDB works"
+summary = "An article on how RocksDB implements its Log-structured merge-tree."
+content_type = "text"
+
+[[entries]]
+url = "https://mitchellh.com/writing/prompt-engineering-vs-blind-prompting"
+title = "Prompt Engineering vs. Blind Prompting"
+summary = "An article on the basics of prompt engineering and how to approach learning it."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mitsuhiko/rye"
+title = "Rye"
+summary = "An experimental tool for managing Python projects written in Rust. Good to see it avoids relying on the default system Python which is usually a mess. [Python Standalone Builds](https://github.com/indygreg/python-build-standalone) is an interesting project to generate highly redistributable Python builds."
+content_type = "text"
+
+[[entries]]
+url = "https://emojiton.com/"
+title = "Emojiton"
+summary = "A service that translates prompts to emojis."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/wader/fq"
+title = "fq"
+summary = "A command-line interface tool for querying binary files. Designed to feel simlar to [jq](https://stedolan.github.io/jq/)."
+content_type = "text"
+
+[[entries]]
+url = "https://subtls.pages.dev/"
+title = "See this page fetch itself, byte by byte, over TLS"
+summary = "An interactive tutorial to see what happens in a TLS exchange, step by step."
+content_type = "text"
