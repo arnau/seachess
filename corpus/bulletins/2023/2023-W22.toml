@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W22"
+publication_date = 2023-06-04
+summary = "This week has been about bypassing paywalls, stored procedures in SQLite, a local meta search engine, merging tree-like structures, WASI on POSIX and a web bundler in Rust compatible with Webpack."
+
+[[entries]]
+url = "https://github.com/trailofbits/graphtage"
+title = "Graphtage"
+summary = "A command-line utility and underlying library for comparing and merging tree-like structures, such as JSON, XML, HTML, YAML, plist, and CSS files."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/neon-mmd/websurfx"
+title = "websurfx"
+summary = "A meta search engine that can run locally providing a secure search experience whilst maintaining user privacy."
+content_type = "text"
+
+[[entries]]
+url = "https://wasix.org/"
+title = "WASIX"
+summary = "An initiative to extend WASI to make it compatible enough with POSIX to enable running POSIX-compatible applications with it. It claims to keep backwards and forwards compatibility with WASI.\n\nYou might also be interested in the [background provided by Wasmer](https://wasmer.io/posts/announcing-wasix)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.rspack.dev/"
+title = "Rspack"
+summary = "A web bundler compatible with [Webpack](https://webpack.js.org/) plugins with out of the box support for TypeScript, JSX and CSS Modules to name a few."
+content_type = "text"
+
+[[entries]]
+url = "https://cgsql.dev/"
+title = "CG/SQL"
+summary = "A code generation system for SQLite for writing custom functions using stored procedures in a variant of Transact-SQL (T-SQL)."
+content_type = "text"
+
+[[entries]]
+url = "https://12ft.io/"
+title = "12ft"
+summary = "A service to bypass website paywalls using the same sources as the Google crawler."
+content_type = "text"
