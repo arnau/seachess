@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W23"
+publication_date = 2023-06-11
+summary = "This week has been about a system for consultations, speeding up Rust Docker builds, a curly Python dialect, the London tube in Git, a collection of CSS patterns and low-level WASM in TypeScript."
+
+[[entries]]
+url = "https://github.com/LukeMathWalker/cargo-chef"
+title = "cargo-chef"
+summary = "A cargo-subcommand to speed up Rust Docker builds using Docker layer caching."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/quarbby/london-git"
+title = "London Tube Map in Git Network"
+summary = "A script to generate a Git repository where the commit tree is a map of the\nLondon tube."
+content_type = "text"
+
+[[entries]]
+url = "https://www.zksecurity.xyz/blog/posts/wasmati/"
+title = "Wasmati"
+summary = "An article introducing Wasmati, a library to write low-level WebAssembly in TypeScript."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mathialo/bython"
+title = "Bython"
+summary = "A Python dialect with braces instead of indentation that transpiles to Python."
+content_type = "text"
+
+[[entries]]
+url = "https://smolcss.dev/"
+title = "smolCSS"
+summary = "A collection of CSS patterns for common layouts and components."
+content_type = "text"
+
+[[entries]]
+url = "https://compdemocracy.org/Polis/"
+title = "Polis"
+summary = "A system claiming to be for gathering, analysing and understanding what large groups of people think in their own words, enabled by advanced statistics and machine learning."
+content_type = "text"
