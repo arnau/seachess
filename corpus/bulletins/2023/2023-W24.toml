@@ -1,0 +1,58 @@
+type = "bulletin"
+id = "2023-W24"
+publication_date = 2023-06-18
+summary = "This week has been about a SurrealDB playground, PDF annotation in Obsidian, snapshot testing in Rust, the new EU AI Act, CSS blend modes and weaknesses in OOXML signatures."
+
+[[entries]]
+url = "https://www.kodingkitty.com/blog/blend-modes/"
+title = "Mastering CSS Blend Modes"
+summary = "An article introducing what is in offer in the [Candidate Recommendation for CSS blend modes](https://www.w3.org/TR/compositing-1/#propdef-background-blend-mode)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.usenix.org/system/files/sec23summer_235-rohlmann-prepub.pdf"
+title = "Every Signature is Broken: On the Insecurity of Microsoft Office's OOXML Signatures"
+summary = "A papers on the results of researching the integrity of Microsoft OOXML signatures including verification and forgery. Notice that the paper also says:\n\n> The vulnerabilities have been acknowledged by Microsoft. However, Microsoft has decided that the vulnerabilities do not require immediate attention."
+content_type = "pdf"
+
+[[entries]]
+url = "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence"
+title = "EU AI Act: first regulation on artificial intelligence"
+summary = """
+An article summarising the new EU AI Act and their risk classification for mitigating potential harm derived from AI. Don't get your hopes too high, the article does not define "AI" in any meaningful way. Their best is this:
+
+> No single definition of artificial intelligence is accepted by the scientific community and the term 'AI' is often used as a 'blanket term' for various computer applications based on different techniques, which exhibit capabilities commonly and currently associated with human intelligence.
+
+If you go a few levels into the EU Commission rabbithole you can find pearls like the definition in the [White Paper on Artificial Intelligence: a European approach to excellence and trust](https://commission.europa.eu/document/d2ec4039-c5be-423a-81ef-b9e44e79825b_en) (what a title right?).
+
+> Simply put, AI is a collection of technologies that combine data, algorithms and computing power.
+
+You can also follow the [A definition of Artificial Intelligence: main capabilities and scientific disciplines](https://wayback.archive-it.org/12090/20210620230405/https:/digital-strategy.ec.europa.eu/en/library/definition-artificial-intelligence-main-capabilities-and-scientific-disciplines) (don't bother, it's a 404).
+
+Ok, ok. They do say they want to have a specific definition for AI. They quote the following:
+
+> ...software that is developed with [specific] techniques and approaches [listed in Annex 1] and can, for a given set of human-defined objectives, generate outputs such as content, predictions, recommendations, or decisions influencing the environments they interact with.
+
+Still useless. The [Annex 1](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A52021PC0206) is yet another level of vagueness. It's funny if you don't think of the potential devastating consequences.
+
+Enough ranting. I'm sure I missed the important bit in this legal maze. Let me know if you find something remotely useful.
+"""
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/elias-sundqvist/obsidian-annotator"
+title = "Obsidian Annotator"
+summary = "An Obsidian plugin for annotating PDF and EPUB files. Based on how [hypothes.is](https://web.hypothes.is/) stores annotations but offline."
+content_type = "text"
+
+[[entries]]
+url = "https://insta.rs/"
+title = "Insta"
+summary = "A snapshot testing tool for Rust with a range of snapshot formats to choose from, decent diffs and interactive reviews."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/StarlaneStudios/Surrealist"
+title = "Surrealist"
+summary = "A playground for querying SurrealDB for the Browser and the Desktop."
+content_type = "text"
