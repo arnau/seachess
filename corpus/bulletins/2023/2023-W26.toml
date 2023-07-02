@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W26"
+publication_date = 2023-07-02
+summary = "This week has been about CSS Hue, a tool for code structural search, calling C++ from Rust, a block-based editor, a single data access layer library and memory allocation basics."
+
+[[entries]]
+url = "https://github.com/dtolnay/cxx"
+title = "CXX"
+summary = "A library providing a safe mechanism for calling C++ code from Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://opendal.apache.org/"
+title = "Apache OpenDAL"
+summary = "A library offering a single data access layer (DAL) for known storage protocols, object storage services, file storage services, key-value storage services and cache storage services."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ast-grep/ast-grep"
+title = "ast-grep"
+summary = "A command-line interface tool for code structural search, linting and rewriting."
+content_type = "text"
+
+[[entries]]
+url = "https://samwho.dev/memory-allocation/"
+title = "Memory Allocation"
+summary = "An article on the rudiments of memory allocation, how it works and the problems it attempts to solve."
+content_type = "text"
+
+[[entries]]
+url = "https://developer.mozilla.org/en-US/blog/learn-css-hues-colors-hsl/"
+title = "Learn how to use hue in CSS colors with HSL"
+summary = "An article introducing the CSS `hue()` function and how to use it to obtain colour palettes."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/toeverything/blocksuite"
+title = "BlockSuite"
+summary = "An embeddable block-based editor for general-purpose collaborative applications."
+content_type = "text"
