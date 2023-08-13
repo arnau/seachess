@@ -22,10 +22,18 @@ window.addEventListener("load", () => {
       const submitter = event.submitter;
       const action = submitter.form.action;
       const data = new FormData(submitter.form);
+      const xhr = new XMLHttpRequest();
 
-      fetch(action, { method: "POST", body: data, mode: "no-cors" })
-        .then(_ => handleSubscriptionSuccess(submitter))
-        .catch(_ => handleSubscriptionError(submitter.form));
+      xhr.addEventListener("load", _ => {
+        handleSubscriptionSuccess(submitter);
+      });
+
+      xhr.addEventListener("error", _ => {
+        handleSubscriptionError(submitter.form);
+      });
+
+      xhr.open("POST", action);
+      xhr.send(data);
     });
   }
 });
