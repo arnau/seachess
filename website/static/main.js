@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
       const action = submitter.form.action;
       const data = new FormData(submitter.form);
 
-      fetch(url, { method: "POST", body: data })
+      fetch(action, { method: "POST", body: data })
         .then(_ => handleSubscriptionSuccess(submitter))
         .catch(_ => handleSubscriptionError(submitter.form));
     });
