@@ -1,0 +1,4 @@
+Sitemap: https://www.seachess.net/sitemap.xml
+
+User-agent: GPTBot
+Disallow: /
