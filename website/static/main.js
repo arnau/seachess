@@ -23,7 +23,7 @@ window.addEventListener("load", () => {
       const action = submitter.form.action;
       const data = new FormData(submitter.form);
 
-      fetch(action, { method: "POST", body: data })
+      fetch(action, { method: "POST", body: data, mode: "cors" })
         .then(_ => handleSubscriptionSuccess(submitter))
         .catch(_ => handleSubscriptionError(submitter.form));
     });
