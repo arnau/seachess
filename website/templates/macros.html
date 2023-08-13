@@ -1,18 +1,15 @@
 {% macro feedback_link(title, kind="document") %}
 {% set body_intro = "Feedback on: " %}
 <p>
-  <a class="action" href="https://github.com/arnau/aquarium/issues/new?labels=feedback&title=Re:%20{{ title | urlencode }}&body={{body_intro | urlencode}}{{current_path}}">
+  <a class="action"
+    href="https://github.com/arnau/aquarium/issues/new?labels=feedback&title=Re:%20{{ title | urlencode }}&body={{body_intro | urlencode}}{{current_path}}">
     Feedback on this {{ kind }}
   </a>
 </p>
 {% endmacro feedback_link %}
 
 {% macro nav_item(path, label) %}
-<li
-  {% if current_path is starting_with(path) %}
-    class="active"
-  {% endif %}
->
+<li {% if current_path is starting_with(path) %} class="active" {% endif %}>
   <a href="{{path}}">{{label}}</a>
 </li>
 {% endmacro nav_item %}
@@ -23,51 +20,47 @@
 <details class="toc">
   <summary>Table of contents</summary>
   <ul>
-  {% for h1 in table %}
-      <li>
-          <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
-      </li>
-  {% endfor %}
+    {% for h1 in table %}
+    <li>
+      <a href="{{h1.permalink | safe}}">{{ h1.title }}</a>
+    </li>
+    {% endfor %}
   </ul>
 </details>
 {% endif %}
 {% endmacro toc %}
 
 {% macro stamp_date(stamp) %}
-  <time datetime="{{ stamp }}">{{ stamp | date(format="%B %e, %Y") }}</time>
+<time datetime="{{ stamp }}">{{ stamp | date(format="%B %e, %Y") }}</time>
 {% endmacro %}
 
 {% macro published_on(stamp) %}
-  <p class="slim-signature">Published on <span property="datePublished" content="{{ stamp }}">
+<p class="slim-signature">Published on <span property="datePublished" content="{{ stamp }}">
     <time datetime="{{ stamp }}">{{ stamp | date(format="%B %e, %Y") }}</time></span>
-  </p>
+</p>
 {% endmacro published_on %}
 
 {% macro signature(stamp, author_name) %}
-  <p class="signature">Published on <span property="datePublished" content="{{ stamp }}">
+<p class="signature">Published on <span property="datePublished" content="{{ stamp }}">
     <time datetime="{{ stamp }}">{{ stamp | date(format="%B %e, %Y") }}</time></span>
-    by <span property="creator">{{author_name}}</span>
-  </p>
+  by <span property="creator">{{author_name}}</span>
+</p>
 {% endmacro %}
 
 {% macro subscription_form() %}
 <div class="subscription-form">
-  <form action="https://app.mailerlite.com/webforms/submit/q2f6f6" method="post" autocomplete="off" data-code="q2f6f6">
-    <p><label for="bulletin-email">Subscribe to new issues of the bulletin via the <a href="/bulletins/rss.xml">RSS feed</a> or by email.</label></p>
-    <input
-      type="email"
-      aria-invalid="false"
-      id="bulletin-email"
-      name="fields[email]"
-      value=""
-      placeholder="Email">
+  <form action="https://assets.mailerlite.com/jsonp/530811/forms/95019768088626489/subscribe" method="post"
+    autocomplete="off" data-code="q2f6f6">
+    <p><label for="bulletin-email">Subscribe to new issues of the bulletin via the <a href="/bulletins/rss.xml">RSS
+          feed</a> or by email.</label></p>
+    <input type="email" aria-invalid="false" id="bulletin-email" name="fields[email]" value="" placeholder="Email">
     <input type="hidden" name="ml-submit" value="1">
     <button type="submit">
       {# TODO
-        <button tabindex="-1" type="submit" disabled>
-      #}
-      <span>Subscribe</span>
-    </button>
+      <button tabindex="-1" type="submit" disabled>
+        #}
+        <span>Subscribe</span>
+      </button>
   </form>
 </div>
 {% endmacro %}
