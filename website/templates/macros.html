@@ -49,18 +49,16 @@
 
 {% macro subscription_form() %}
 <div class="subscription-form">
-  <form action="https://assets.mailerlite.com/jsonp/530811/forms/95019768088626489/subscribe" method="post"
-    autocomplete="off" data-code="q2f6f6">
+  <form id="bulletin-form" action="https://assets.mailerlite.com/jsonp/530811/forms/95019768088626489/subscribe"
+    method="post" autocomplete="off">
     <p><label for="bulletin-email">Subscribe to new issues of the bulletin via the <a href="/bulletins/rss.xml">RSS
           feed</a> or by email.</label></p>
     <input type="email" aria-invalid="false" id="bulletin-email" name="fields[email]" value="" placeholder="Email">
     <input type="hidden" name="ml-submit" value="1">
+    <input type="hidden" name="anticsrf" value="true">
     <button type="submit">
-      {# TODO
-      <button tabindex="-1" type="submit" disabled>
-        #}
-        <span>Subscribe</span>
-      </button>
+      <span>Subscribe</span>
+    </button>
   </form>
 </div>
 {% endmacro %}
