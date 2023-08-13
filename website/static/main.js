@@ -4,7 +4,7 @@ function handleSubscriptionSuccess(submitter) {
   document.querySelector("#bulletin-email").disabled = true;
 }
 
-function handleSubsciptionError(form) {
+function handleSubscriptionError(form) {
   const errMsg = document.createElement("p");
   errMsg.textContent = "There seems to be an issue. Please try later.";
   errMsg.classList.add("error-message");
