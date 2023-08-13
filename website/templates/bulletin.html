@@ -4,12 +4,10 @@
 {% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
 {% block description %}{{ page.description }}{% endblock description %}
 {% block page_meta %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@arnau">
-  <meta property="og:url" content="{{ get_url(path=current_path) }}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ get_url(path=current_path) }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
 {% endblock page_meta %}
 
 {% block content %}
@@ -22,12 +20,13 @@
 {{ page.content | safe }}
 
 <div class="bulletin">
-{% for entry in page.extra.entries %}
+  {% for entry in page.extra.entries %}
   <section class="bulletin-entry">
-    <h2 id="{{ entry.slug }}">{{ macros::anchor(id = entry.slug) }} <a href="{{ entry.url }}">{{ entry.title }}</a>{% if entry.content_type != "text" %} (<span>{{ entry.content_type}}</span>){% endif %}</h2>
+    <h2 id="{{ entry.slug }}">{{ macros::anchor(id = entry.slug) }} <a href="{{ entry.url }}">{{ entry.title }}</a>{% if
+      entry.content_type != "text" %} (<span>{{ entry.content_type}}</span>){% endif %}</h2>
     {{ entry.summary | markdown() | safe }}
   </section>
-{% endfor %}
+  {% endfor %}
 </div>
 
 {% endblock content %}

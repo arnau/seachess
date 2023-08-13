@@ -4,12 +4,10 @@
 {% block title %}{{ page.title }} - {{ super() }}{% endblock title %}
 {% block description %}{{ page.description }}{% endblock description %}
 {% block page_meta %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@arnau">
-  <meta property="og:url" content="{{ get_url(path=current_path) }}">
-  <meta property="og:type" content="image">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ get_url(path=current_path) }}">
+<meta property="og:type" content="image">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
 {% endblock page_meta %}
 
 {% block content %}
@@ -38,17 +36,11 @@
 
 {{ page.content | safe }}
 
-{% set asset_path = page.assets[0]  %}
+{% set asset_path = page.assets[0] %}
 {% set asset = resize_image(path=asset_path, width=800, op="fit_width") %}
 <picture>
-  <img
-      style="object-fit: cover; opacity: 1;"
-      decoding="async"
-      src="/processed_images/{{ asset.static_path | split(pat="/") | last }}"
-      width="{{ asset.width }}"
-      height="{{ asset.height }}"
-      alt=""
-    >
+  <img style="object-fit: cover; opacity: 1;" decoding="async" src="/processed_images/{{ asset.static_path | split(pat="
+    /") | last }}" width="{{ asset.width }}" height="{{ asset.height }}" alt="">
 </picture>
 
 
