@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W33"
+publication_date = 2023-08-20
+summary = "This week has been about Jira from the terminal, GitHub integrations with Rust, Postgres replicated to SQLite, a collection of miniature programming languages, unused CSS and whether syntax highlighting helps or not."
+
+[[entries]]
+url = "https://purgecss.com/"
+title = "PrugeCSS"
+summary = "A tool to remove unused CSS from a project."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/xampprocky/octocrab"
+title = "Octocrab"
+summary = "A Rust library for building GitHub integrations and bots."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ankitpokhrel/jira-cli"
+title = "jira-cli"
+summary = "A tool to interact with Jira from the terminal."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/zknill/sqledge"
+title = "SQLedge"
+summary = "A tool to stream changes from Postges to SQLite so the database can run on the edge."
+content_type = "text"
+
+[[entries]]
+url = "https://www.linusakesson.net/programming/syntaxhighlighting/"
+title = "A case against syntax highlighting"
+summary = "An article arguing that syntax highlighting makes it harder for understanding what the code does."
+content_type = "text"
+
+[[entries]]
+url = "https://plzoo.andrej.com/"
+title = "The Programming Language Zoo"
+summary = "A collection of miniature programming languages written in OCaml which demonstrates various concepts and techniques used in programming language design and implementation. Each implementation is extensively annotated."
+content_type = "text"
