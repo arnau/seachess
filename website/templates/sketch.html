@@ -38,9 +38,11 @@
 
 {% set asset_path = page.assets[0] %}
 {% set asset = resize_image(path=asset_path, width=800, op="fit_width") %}
+{% set asset_static_path = asset.static_path | split(pat="/") | last %}
+
 <picture>
-  <img style="object-fit: cover; opacity: 1;" decoding="async" src="/processed_images/{{ asset.static_path | split(pat="
-    /") | last }}" width="{{ asset.width }}" height="{{ asset.height }}" alt="">
+  <img style="object-fit: cover; opacity: 1;" decoding="async" src="/processed_images/{{ asset_static_path }}"
+    width="{{ asset.width }}" height="{{ asset.height }}" alt="">
 </picture>
 
 
