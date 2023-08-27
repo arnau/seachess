@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W34"
+publication_date = 2023-08-27
+summary = "This week has been about incompetent nice people, CVEs rescored without proper explanations, a package manager for Conda, Google DRM to control the Web, styilish maps and a WebAssembly framework for serverless."
+
+[[entries]]
+url = "https://blog.glyph.im/2023/03/incompetent-but-nice-response.html"
+title = "A Response to Jacob Kaplan-Moss’s “Incompetent But Nice”"
+summary = "An article on what to do with a co-worker that is a nice person but incompetent at their job."
+content_type = "text"
+
+[[entries]]
+url = "https://daniel.haxx.se/blog/2023/08/26/cve-2020-19909-is-everything-that-is-wrong-with-cves/"
+title = "CVE-2020-19909 is everything that is wrong with CVEs"
+summary = "An article showcasing a problem with how NVD reviews and classifies CVE security vulnerabilities."
+content_type = "text"
+
+[[entries]]
+url = "https://grafcube.codeberg.page/blog/2023/08/06/web-drm-api.html"
+title = "Your choice of browser matters"
+summary = "An article spelling out yet another ill-intended attempt to keep their advertisement business profitable at the expense of the rest."
+content_type = "text"
+
+[[entries]]
+url = "https://workers.wasmlabs.dev/"
+title = "Wasm Workers Server"
+summary = "A WebAssembly framework to develop serverless applications and run them anywhere."
+content_type = "text"
+
+[[entries]]
+url = "https://prettymapp.streamlit.app/"
+title = "Prettymapp"
+summary = "A tool to create stylish maps from OpenStreetMap data."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/prefix-dev/pixi"
+title = "pixi"
+summary = "A multi-language package manager and workflow tool aiming to improve the experience of dealing with Conda packages for Python, C++ and R."
+content_type = "text"
