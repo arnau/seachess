@@ -1,7 +1,7 @@
 ---
 type: project
 id: obsidian-metatable
-status: ongoing
+status: archived
 start_date: 2021-03-07
 end_date: 2023-09-04
 source_url: https://github.com/arnau/obsidian-metatable
