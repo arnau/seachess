@@ -1,0 +1,10 @@
+type = "sketch"
+id = "self_portrait_2023"
+title = "Self-portrait"
+asset = "self_portrait_2023.jpg"
+author = "arnau"
+publication_date = 2023-09-16
+tools = [
+  "ipadpro",
+  "procreate",
+]
