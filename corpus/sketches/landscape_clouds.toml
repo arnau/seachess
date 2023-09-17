@@ -1,0 +1,10 @@
+type = "sketch"
+id = "landscape_clouds"
+title = "Clouds"
+asset = "landscape_clouds.jpg"
+author = "arnau"
+publication_date = 2023-09-04
+tools = [
+  "ipadpro",
+  "procreate",
+]
