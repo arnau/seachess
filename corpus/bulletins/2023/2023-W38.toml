@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W38"
+publication_date = 2023-09-24
+summary = "This week has been about Bun, a cleverer cd, shell pipelines in Rust, circles in printing, sustainability guidelines for the web and SQLite for multi-file documents."
+
+[[entries]]
+url = "https://github.com/ajeetdsouza/zoxide"
+title = "zoxide"
+summary = "An alternative to `cd` inspired by z and autojump."
+content_type = "text"
+
+[[entries]]
+url = "https://www.sqlite.org/affcase1.html"
+title = "What If OpenDocument Used SQLite?"
+summary = "An article exploring the benefits of using SQLite for encoding a multi-file document format."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j"
+title = "Bun hype. How we learned nothing from Yarn"
+summary = "An article ranting about the design choices made in [Bun](https://bun.sh/), a new JavaScript all-in-one runtime."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/oconnor663/duct.rs"
+title = "duct.rs"
+summary = "A Rust library for buidling pipelines with safer IO handling than a plain shell."
+content_type = "text"
+
+[[entries]]
+url = "https://w3c.github.io/sustyweb/"
+title = "Web Sustainability Guidelines (WSG) 1.0"
+summary = "A report covering a wide range of recommendations for making websites and products more sustainable."
+content_type = "text"
+
+[[entries]]
+url = "https://nibblestew.blogspot.com/2023/09/circles-do-not-exist.html"
+title = "Circles do not exist"
+summary = "An article on how, for printing, circles are just imperfect approximations using Bézier curves."
+content_type = "text"
