@@ -1,0 +1,10 @@
+type = "sketch"
+id = "old_man_2023"
+title = "Old man"
+asset = "old_man_2023.jpg"
+author = "arnau"
+publication_date = 2023-09-24
+tools = [
+  "ipadpro",
+  "procreate",
+]
