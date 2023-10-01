@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W39"
+publication_date = 2023-10-01
+summary = "This week has been about a logic-based programming language, an array and stack oriented programming language, Lua as a config language, a column-oriented analytical database, a CLI for taking screenshots of webpages and an alternative to Postman."
+
+[[entries]]
+url = "https://www.uiua.org/"
+title = "Uiua"
+summary = "A programming language that incorporates two of the less-common programming paradigms: array-oriented and stack-oriented.\n\n> An array-oriented language is one where the primary data structure is the array.\n> A stack-oriented language is one where all operations manipulate a global stack of values."
+content_type = "text"
+
+[[entries]]
+url = "http://picat-lang.org/"
+title = "Picat"
+summary = "A logic-based multi-paradigm programming language aimed for general-purpose applications. Picat is a rule-based language, in which predicates, functions, and actors are defined with pattern-matching rules. It also incorporates declarative language features for better productivity of software development, including explicit non-determinism, explicit unification, functions, list comprehensions, constraints, and tabling."
+content_type = "text"
+
+[[entries]]
+url = "https://boston.conman.org/2023/09/29.1"
+title = "YAML config file? Pain? Try Lua"
+summary = "An article showcasing Lua as a configuration language. If you are still fond of YAML, you might enjoy [noyaml](https://noyaml.com/)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.usebruno.com/"
+title = "Bruno"
+summary = "A tool for managing and interacting with APIs a-la Postman, using its own markup language to store information about API requests."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/pwnwriter/haylxon"
+title = "Haylxon"
+summary = "A tool to take screenshots of webpages using a headless chromium-based browser."
+content_type = "text"
+
+[[entries]]
+url = "https://clickhouse.com/"
+title = "ClickHouse"
+summary = "A column-oriented database optimised for real-time analytical queries. It offers a local option for quick consumption of CSV, Parquet including files stored in AWS S3."
+content_type = "text"
