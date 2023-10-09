@@ -14,15 +14,70 @@ Where I analyse how cookies are littering the world. For this exercise I'll be u
 
 <!-- body -->
 
-## Firefox storage
+## Exploring how Firefox stores cookies
 
-Cookies are stored in `cookies.sqlite` in the active profile. For example in MacOS:
+The [Profiles - Where Firefox stores your bookmarks, passwords and other user data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) is a good start to get to understand what is what.
 
+```nu
+ls
+| where type == 'file'
+| get name
+| group-by { path parse | get extension }
+| transpose extension value
+| where extension !~ '-(wal|shm)$'
+| insert count { |row| $row.value | length }
+| sort-by -r count
+| reject value
 ```
-~/Library/Application\ Support/Firefox/Profiles/{profile_id}/cookies.sqlite
+  
+```
+╭───┬───────────┬───────╮
+│ # │ extension │ count │
+├───┼───────────┼───────┤
+│ 0 │ json      │    18 │
+│ 1 │ sqlite    │    11 │
+│ 2 │ txt       │     6 │
+│ 3 │ db        │     3 │
+│ 4 │ mozlz4    │     1 │
+│ 5 │ js        │     1 │
+│ 6 │ ini       │     1 │
+│ 7 │ lz4       │     1 │
+╰───┴───────────┴───────╯
 ```
 
-This database only contains one table, `moz_cookies`, defined as:
+There are two places that are relevant for this analysis: `cookies.sqlite` and all databases that conform `storage/**/ls/data.sqlite`.
+
+Before exploring how data is layed out there is a detour that will help filter out non-casual browsing: the Multi-Account Containers add-on. 
+
+
+### Multi-Account Containers
+
+The [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) add-on lets you segregate cookies by container. Each container can be configured with an allowed list of domains so trusted websites can be kept separate from untrusted including casual browsing.
+
+This add-on stores some of its configuration in `containers.json` which looks something like:
+
+```json
+{
+  "identities": [
+    {
+      "userContextId": 6,
+      "name": "github"
+    },
+    {
+      "userContextId": 10,
+      "name": "google"
+    },
+    ...
+  ]
+}
+```
+
+Any unknown website will go into the default container which has no `userContextId`. This fact is what will help identify casual browsing from the rest.
+
+
+### The cookie database
+
+The `cookies.sqlite` database contains one table defined as:
 
 ```sql
 CREATE TABLE moz_cookies (
@@ -45,49 +100,7 @@ CREATE TABLE moz_cookies (
 )
 ```
 
-### Multi-Account Containers
-
-The [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) add-on lets you segregate cookies by container. Each container can be configured with an allowed list of domains. As a result, you can keep trusted websites in specific containers separate from pernicious ones like Facebook, Google and the like both isolated from any casual browsing littering like the dreadful Medium.
-
-This add-on stores some of its configuration in `containers.json`. Mine looks something like (removing some noise):
-
-```json
-{
-  "identities": [
-    {
-      "userContextId": 6,
-      "name": "github"
-    },
-    {
-      "userContextId": 8,
-      "name": "twitter"
-    },
-    {
-      "userContextId": 9,
-      "name": "bluesky"
-    },
-    {
-      "userContextId": 10,
-      "name": "google"
-    },
-    {
-      "userContextId": 11,
-      "name": "instagram"
-    },
-    {
-      "userContextId": 12,
-      "name": "mastodon"
-    },
-    ...
-  ]
-}
-```
-
-Effectively segregating the usual suspects in different buckets so harm is more difficult from the inside as well as from the outside. The majority of casual browsing goes into the default container which I regularly wipe. This bucketing also helps with ensuring I don't remove login related cookies from services I want to keep logged in during a session.
-
-### The `moz_cookies` table
-
-This table has every cookie recorded by Firefox and keeps track of the container using the `originAttributes` field.
+This table records the data you would expect from a cookie but it also tracks which container a cookie belongs to. The `originAttributes` field fulfils this purpose.
 
 ```nu
 open temp/cookies.sqlite
@@ -104,14 +117,13 @@ open temp/cookies.sqlite
 ╰──────────────────┴───────────────────╯
 ```
 
-In this case we can see that YouTube is contained in the Google bucket.
+This record shows how the host `.youtube.com` belongs to the container 10. A quick lookup to `containers.json` shows that 10 is the identifier for the container I use for Google.
 
 Websites not bound to a container have no `userContextId`.
 
 ```nu
 open temp/cookies.sqlite
-| query db "select * from moz_cookies"
-| select host originAttributes name
+| query db "select host, originAttributes, name from moz_cookies"
 | where originAttributes == ""
 | first
 ```
@@ -124,13 +136,15 @@ open temp/cookies.sqlite
 ╰──────────────────┴─────────────────────────────────────────────────────╯
 ```
 
-Finally, the `originAttributes` field can have a `partitionKey`, either alone or combined with a `userContextId`.
+The last bit that is relevant to know from the cookie database is that the `originAttributes` field can have a `partitionKey` either alone or combined with a `userContextId`. I won't be using it for this analysis but it's worth knowing that it exists and that it's the bit that allows you to connect a 3rd party cookie.
+
+For example, a 3rd party cookie for Youtube (container 10) will look like: 
 
 ```nu
 open temp/cookies.sqlite
 | query db "select * from moz_cookies"
 | select host originAttributes name
-| where originAttributes =~ "partitionKey"
+| where originAttributes =~ "userContainerId=10" and originAttributes =~ "partitionKey"
 | first
 ```
 
@@ -142,7 +156,7 @@ open temp/cookies.sqlite
 ╰──────────────────┴──────────────────────────────────────────────────────────╯
 ```
 
-### Local storage
+### The Local Storage database
 
 Not strictly cookies but definitely part of website littering. These are slightly more involved because storage is segregated per domain.
 
