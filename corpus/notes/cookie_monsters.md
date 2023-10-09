@@ -237,89 +237,79 @@ glob storage/default/**/ls/data.sqlite
 
 ### Data to analyse
 
-```nu
-ls temp/storage/
-| length
-```
-
-```
-57
-```
-
-### Top local storage litterers
+First, let's get a feel for the size of the data. I want to focus on casual browsing so I'll exclude any entry with a `userContextId`.
 
 ```nu
-ls temp/storage/
-| reject type modified
-| insert count { |row|
-    open $row.name
-    | query db "select count(key) as count from data"
-    |  get 0.count
-  }
-| update name { |row| $row.name | path basename }
-| sort-by -r count
-| where size >= 10KB
+open temp/cookies.sqlite
+| query db "select count(1) as cookies from moz_cookies where originAttributes not like '%userContextId%'"
+| insert local_storage (
+    ls temp/storage/
+    | where name !~ "userContextId"
+    | reduce -f 0 { |row, acc|
+         open $row.name
+         | query db "select count(1) as count from data"
+         | get 0.count | $in + $acc
+       }
+  )
 ```
 
 ```
-╭───┬──────────────────────────────────────────────────┬──────────┬───────╮
-│ # │                       name                       │   size   │ count │
-├───┼──────────────────────────────────────────────────┼──────────┼───────┤
-│ 0 │ https+++github.com^userContextId=6.sqlite        │ 139.3 KB │   189 │
-│ 1 │ https+++app.netlify.com^userContextId=6.sqlite   │  22.5 KB │    22 │
-│ 2 │ https+++www.eventbrite.co.uk.sqlite              │ 405.5 KB │    11 │
-│ 3 │ https+++www.fundingcircle.com.sqlite             │  10.2 KB │     7 │
-│ 4 │ https+++github.dev^userContextId=6.sqlite        │  10.2 KB │     7 │
-│ 5 │ https+++medium.com.sqlite                        │  18.4 KB │     6 │
-│ 6 │ https+++www.linkedin.com^userContextId=15.sqlite │  10.2 KB │     5 │
-│ 7 │ https+++meet.google.com^userContextId=10.sqlite  │  10.2 KB │     4 │
-│ 8 │ https+++en.wikipedia.org.sqlite                  │ 325.6 KB │     4 │
-╰───┴──────────────────────────────────────────────────┴──────────┴───────╯
+╭───┬─────────┬───────────────╮
+│ # │ cookies │ local_storage │
+├───┼─────────┼───────────────┤
+│ 0 │     116 │            93 │
+╰───┴─────────┴───────────────╯
 ```
 
-The good news are that the top offenders are mostly for services I have logged in and have given permission to store data. This leaves me with 2 offenders:
+With the queries below, we can see that less than half websites store just one cookie. Assuming all of them required one cookie to capture consent, this means that the majority of websites require cookies to operate properly. For some value of "operate properly".
+
+```nu
+open temp/cookies.sqlite
+| query db "select count(name) as value from moz_cookies where originAttributes not like '%userContextId%' group by host"
+| sort-by value
+| histogram value
+```
+
+```
+╭───┬───────┬───────┬──────────┬────────────┬─────────────────────────────────────────╮
+│ # │ value │ count │ quantile │ percentage │                frequency                │
+├───┼───────┼───────┼──────────┼────────────┼─────────────────────────────────────────┤
+│ 0 │     1 │    25 │     0.39 │ 39.06%     │ *************************************** │
+│ 1 │     2 │    15 │     0.23 │ 23.44%     │ ***********************                 │
+│ 2 │     4 │    10 │     0.16 │ 15.62%     │ ***************                         │
+│ 3 │     3 │     7 │     0.11 │ 10.94%     │ **********                              │
+│ 4 │     5 │     2 │     0.03 │ 3.12%      │ ***                                     │
+│ 5 │     7 │     2 │     0.03 │ 3.12%      │ ***                                     │
+│ 6 │     6 │     1 │     0.02 │ 1.56%      │ *                                       │
+│ 7 │     9 │     1 │     0.02 │ 1.56%      │ *                                       │
+│ 8 │    11 │     1 │     0.02 │ 1.56%      │ *                                       │
+╰───┴───────┴───────┴──────────┴────────────┴─────────────────────────────────────────╯
+```
+
+This part is more concerning. Most websites I visit for casual browsing are for reading an article they have published or to check their offering so it's hard to justify the need for local storage.
 
 ```nu
 ls temp/storage/
-| reject type modified
 | where name !~ "userContextId"
-| insert count { |row|
-    open $row.name
-    | query db "select count(key) as count from data"
-    |  get 0.count
-  }
-| update name { |row| $row.name | path basename }
-| sort-by count
-| where size >= 10KB
+| each { |row| open $row.name | query db "select count(key) as count from data" |  get 0.count }
+| sort
+| histogram
 ```
 
 ```
-╭───┬──────────────────────────────────────┬──────────┬───────╮
-│ # │                 name                 │   size   │ count │
-├───┼──────────────────────────────────────┼──────────┼───────┤
-│ 0 │ https+++www.eventbrite.co.uk.sqlite  │ 405.5 KB │    11 │
-│ 1 │ https+++medium.com.sqlite            │  18.4 KB │     6 │
-│ 2 │ https+++en.wikipedia.org.sqlite      │ 325.6 KB │     4 │
-╰───┴──────────────────────────────────────┴──────────┴───────╯
-```
-
-
-Ugh, 405.5KB for _what_? 18.4KB of unwanted data is dreadful but Eventbrite has managed to render Medium as not too nasty. Sigh.
-
-Also, Wikipedia storing 325.6KB where most of it is chunks of JavaScript. Just ugh. That's what happens when you look under the carpet.
-
-### Overall number of cookies
-
-```nu
-open temp/cookies.sqlite | query db "select count(1) as count from moz_cookies"
-```
-
-```
-╭───┬───────╮
-│ # │ count │
-├───┼───────┤
-│ 0 │   308 │
-╰───┴───────╯
+╭───┬───────┬───────┬──────────┬────────────┬───────────────────────────────────────────────╮
+│ # │ value │ count │ quantile │ percentage │                   frequency                   │
+├───┼───────┼───────┼──────────┼────────────┼───────────────────────────────────────────────┤
+│ 0 │     1 │    16 │     0.46 │ 45.71%     │ ********************************************* │
+│ 1 │     2 │     8 │     0.23 │ 22.86%     │ **********************                        │
+│ 2 │     4 │     3 │     0.09 │ 8.57%      │ ********                                      │
+│ 3 │     3 │     2 │     0.06 │ 5.71%      │ *****                                         │
+│ 4 │     6 │     2 │     0.06 │ 5.71%      │ *****                                         │
+│ 5 │     5 │     1 │     0.03 │ 2.86%      │ **                                            │
+│ 6 │     7 │     1 │     0.03 │ 2.86%      │ **                                            │
+│ 7 │     8 │     1 │     0.03 │ 2.86%      │ **                                            │
+│ 8 │    11 │     1 │     0.03 │ 2.86%      │ **                                            │
+╰───┴───────┴───────┴──────────┴────────────┴───────────────────────────────────────────────╯
 ```
 
 ###  Top cookie litterers
@@ -352,6 +342,39 @@ open temp/cookies.sqlite
 │ 9 │ www.researchgate.net │     2 │
 ╰───┴──────────────────────┴───────╯
 ```
+
+### Top local storage litterers
+
+With the following we can narrow down the websites storing more than 10KB for no apparent good reason.
+
+```nu
+ls temp/storage/
+| reject type modified
+| where name !~ "userContextId"
+| insert count { |row|
+    open $row.name
+    | query db "select count(key) as count from data"
+    |  get 0.count
+  }
+| update name { |row| $row.name | path basename }
+| sort-by count
+| where size >= 10KB
+```
+
+```
+╭───┬──────────────────────────────────────┬──────────┬───────╮
+│ # │                 name                 │   size   │ count │
+├───┼──────────────────────────────────────┼──────────┼───────┤
+│ 0 │ https+++www.eventbrite.co.uk.sqlite  │ 405.5 KB │    11 │
+│ 1 │ https+++medium.com.sqlite            │  18.4 KB │     6 │
+│ 2 │ https+++en.wikipedia.org.sqlite      │ 325.6 KB │     4 │
+╰───┴──────────────────────────────────────┴──────────┴───────╯
+```
+
+Eventbrite took me by surprise with these 405.5KB. I was expecting Medium to be at the very top but 18.4KB can't compare.
+
+Now, the Wikipedia storing 325.6KB is both surprising and concerning. Particularly because most of it seems to be chunks of JavaScript as if they were using local storage as a cache. A cache with no expiry date that is.
+
 
 ## Closing thoughts
 
