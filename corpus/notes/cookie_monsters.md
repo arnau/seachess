@@ -158,21 +158,21 @@ open temp/cookies.sqlite
 
 ### The Local Storage database
 
-Not strictly cookies but definitely part of website littering. These are slightly more involved because storage is segregated per domain.
-
-The filesystem in macos has a structure like:
+Not strictly cookies but definitely part of website littering. These are slightly more involved because storage is segregated per domain. The filesystem structure looks like:
 
 ```
 storage/default
 ├── https+++accounts.google.com^userContextId=10
-│  ├── ls
-│  │  └── data.sqlite
+│  └── ls
+│     └── data.sqlite
+.
+.
 └── https+++zellij.dev
    └── ls
       └── data.sqlite
 ```
 
-And each `data.sqlite` has two tables: `database` and `data`. `data` is defined as:
+Each `data.sqlite` database has two tables: `database` and `data`. `data` is what we are after so let's check its definition:
 
 ```sql
 CREATE TABLE data(
@@ -185,15 +185,17 @@ CREATE TABLE data(
 )
 ```
 
-We can have a peek at what data is stored in the `value` blob. In order to handle blobs we need to know its encoding and whether it's compressed using `conversion_type` and `compression_type`. 
+`key`, `value` and `last_access_time` are self-explanatory but the other three require a bit of digging. Based on my partial understanding after checking 
+[geko-dev](https://github.com/mozilla/gecko-dev/blob/abbea4195b00e82af2ae9abaafc31e4b4ec4f8c0/dom/localstorage/LSValue.h#L47) these fields mean the following:
 
-I haven't been able to find any documentation but a bit of diving into [geko-dev](https://github.com/mozilla/gecko-dev/blob/abbea4195b00e82af2ae9abaafc31e4b4ec4f8c0/dom/localstorage/LSValue.h#L47) suggests that:
+- `utf16_length` is the combined byte length of `key` and `value`. We don't need it.
+- `conversion_type` is either `0` or `1` and `1` means the data is encoded in UTF-8. This is my educated guess given that all my data is of type `1` and I've been able to decode it as UTF-8.
+- `compression_type` signals whether the value is compressed. 
+  - `0` means uncompressed. 
+  - `1` means compressed with [snappy](https://google.github.io/snappy/).
+  - `2`, is `CompressionType::NUM_TYPES`. I don't know what this type is for nor I have any data with it. I'll ignore it.
 
-- `0` signals the blob is uncompressed. 
-- `1` signals the blob is compressed with [snappy](https://google.github.io/snappy/).
-- `2`, is `CompressionType::NUM_TYPES` which I cannot decipher, and I don't seem to have any data of this type.
-
-For this one, I'm using [szip](https://crates.io/crates/szip), a CLI similar to `gzip` using the Snappy algorithm.
+To have a peek at the data stored in the `value` blob I'm using [szip](https://crates.io/crates/szip), a CLI similar to `gzip` using the Snappy algorithm.
 
 ```nu
 glob storage/default/**/data.sqlite
@@ -220,7 +222,7 @@ glob storage/default/**/data.sqlite
 
 ## Analysis
 
-Armed with this we can get on with the analysis of casual browsing littering. This analysis is just testing the waters for a session that lasted a few hours. I plan to collect snapshots at regular intervals to do a more meaningful analysis in a few months. 
+Armed with this we can get on with the analysis of casual browsing littering. This analysis is minimal given that I used data stored after a couple of hours of casual browsing. I plan to collect snapshots at regular intervals so I can do a more meaningful analysis in a few months time.
 
 To ensure I don't mess up my Firefox profile, let's copy of the relevant SQLite files into a `temp/` directory, flattening the structure of local storage a bit.
 
@@ -233,7 +235,7 @@ glob storage/default/**/ls/data.sqlite
   }
 ```
 
-### Overall number of local storage databases
+### Data to analyse
 
 ```nu
 ls temp/storage/
