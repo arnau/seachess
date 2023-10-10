@@ -8,11 +8,17 @@ tags:
   - nushell
   - analysis
 ---
-# Cookies analysis
+# Cookie monsters
 
 Where I analyse how cookies are littering the world. For this exercise I'll be using [Nushell](https://www.nushell.sh/) with a bit of SQL to wrangle with Firefox profile data.
 
 <!-- body -->
+
+Let me start by defining two terms I will be using during the analysis:
+
+- **cookie littering**: The act done by a website of storing **unsolicited information** like [browser cookies](https://en.wikipedia.org/wiki/HTTP_cookie) or any other form of [Web storage](https://en.wikipedia.org/wiki/Web_storage). This typically happens when doing some _casual browsing_, landing on a webpage and making the effort to reject all “non-essential cookies”. This includes the most pernicious webites that directly don't ask for consent, store **unsolicited information** first and then they let you know that consent is assumed if you use their website.
+- **casual browsing**: The act of landing on a website after following a link or putting a URL directly in the browser navigation bar. This excludes recurrent use of a website where you have an account with them.
+
 
 ## Exploring how Firefox stores cookies
 
@@ -45,7 +51,7 @@ ls
 ╰───┴───────────┴───────╯
 ```
 
-There are two places that are relevant for this analysis: `cookies.sqlite` and all databases that conform `storage/**/ls/data.sqlite`.
+There are two places that are relevant for this analysis: `cookies.sqlite` and all databases that conform to `storage/**/ls/data.sqlite`.
 
 Before exploring how data is layed out there is a detour that will help filter out non-casual browsing: the Multi-Account Containers add-on. 
 
@@ -136,9 +142,9 @@ open temp/cookies.sqlite
 ╰──────────────────┴─────────────────────────────────────────────────────╯
 ```
 
-The last bit that is relevant to know from the cookie database is that the `originAttributes` field can have a `partitionKey` either alone or combined with a `userContextId`. I won't be using it for this analysis but it's worth knowing that it exists and that it's the bit that allows you to connect a 3rd party cookie.
+The last bit that is relevant to know from the cookie database is that the `originAttributes` field can have a `partitionKey` either alone or combined with a `userContextId` which represents the domain of a 3rd party cookie.
 
-For example, a 3rd party cookie for Youtube (container 10) will look like: 
+For example, a 3rd party cookie for Youtube (container 10) would look like: 
 
 ```nu
 open temp/cookies.sqlite
@@ -158,7 +164,7 @@ open temp/cookies.sqlite
 
 ### The Local Storage database
 
-Not strictly cookies but definitely part of website littering. These are slightly more involved because storage is segregated per domain. The filesystem structure looks like:
+Not strictly cookies but definitely part of cookie littering. These are slightly more involved because storage is segregated per domain. The filesystem structure looks like:
 
 ```
 storage/default
@@ -207,9 +213,8 @@ glob storage/default/**/data.sqlite
 | flatten --all
 | where compression_type != 2
 | update value { |row|
-    # for some reason some empty values are casted as strings
-    if (($row.value | describe) == "string") {
-      $row.value
+    if ($row.value | is-empty)) {
+      null
     } else {
       match $row.compression_type {
         0 => { $row.value | decode utf-8 },
@@ -224,9 +229,11 @@ glob storage/default/**/data.sqlite
 
 Armed with this we can get on with the analysis of casual browsing littering. This analysis is minimal given that I used data stored after a couple of hours of casual browsing. I plan to collect snapshots at regular intervals so I can do a more meaningful analysis in a few months time.
 
-To ensure I don't mess up my Firefox profile, let's copy of the relevant SQLite files into a `temp/` directory, flattening the structure of local storage a bit.
+To ensure I don't mess up my Firefox profile, I copied the relevant SQLite files into a `temp/` directory, flattening the structure of local storage a bit.
 
 ```nu
+cp cookies.sqlite $temp
+
 glob storage/default/**/ls/data.sqlite 
 | where $it !~ "moz-extension"
 | each { |path|
