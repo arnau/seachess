@@ -1,7 +1,7 @@
 ---
 type: note
 id: cookie-monsters
-publication_date: 2023-10-08
+publication_date: 2023-10-14
 author: arnau
 tags:
   - cookie
@@ -10,7 +10,7 @@ tags:
 ---
 # Cookie monsters
 
-Where I analyse how cookies are littering the world. For this exercise I'll be using [Nushell](https://www.nushell.sh/) with a bit of SQL to wrangle with Firefox profile data.
+Where I analyse how cookies are littering the world. For this exercise I'll be using [Nushell](https://www.nushell.sh/) to wrangle with [Firefox Profile data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) enriched with data coming from the [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) add-on. 
 
 <!-- body -->
 
@@ -22,43 +22,58 @@ Let me start by defining two terms I will be using during the analysis:
 
 ## Exploring how Firefox stores cookies
 
-The [Profiles - Where Firefox stores your bookmarks, passwords and other user data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data) is a good start to get to understand what is what.
+Let's start with a glance to what kind of files are stored in the profile. I'm excluding some temporary and backup files to reduce noise.
+
 
 ```nu
-ls
+ls **/*
 | where type == 'file'
 | get name
 | group-by { path parse | get extension }
 | transpose extension value
-| where extension !~ '-(wal|shm)$'
+| where extension !~ '-(wal|shm)$' and extension !~ '(jsonlz4-.+|baklz4)$'
 | insert count { |row| $row.value | length }
 | sort-by -r count
 | reject value
 ```
   
 ```
-╭───┬───────────┬───────╮
-│ # │ extension │ count │
-├───┼───────────┼───────┤
-│ 0 │ json      │    18 │
-│ 1 │ sqlite    │    11 │
-│ 2 │ txt       │     6 │
-│ 3 │ db        │     3 │
-│ 4 │ mozlz4    │     1 │
-│ 5 │ js        │     1 │
-│ 6 │ ini       │     1 │
-│ 7 │ lz4       │     1 │
-╰───┴───────────┴───────╯
+╭────┬───────────┬───────╮
+│  # │ extension │ count │
+├────┼───────────┼───────┤
+│  0 │ final     │  1693 │
+│  1 │ sqlite    │   216 │
+│  2 │ jsonlz4   │   187 │
+│  3 │           │    91 │
+│  4 │ json      │    46 │
+│  5 │ txt       │    44 │
+│  6 │ xpi       │    10 │
+│  7 │ bin       │     3 │
+│  8 │ db        │     3 │
+│  9 │ dylib     │     2 │
+│ 10 │ mozlz4    │     2 │
+│ 11 │ marker    │     1 │
+│ 12 │ js        │     1 │
+│ 13 │ sig       │     1 │
+│ 14 │ info      │     1 │
+│ 15 │ ini       │     1 │
+│ 16 │ lz4       │     1 │
+╰────┴───────────┴───────╯
 ```
 
-There are two places that are relevant for this analysis: `cookies.sqlite` and all databases that conform to `storage/**/ls/data.sqlite`.
+There is a lot in a profile however this analysis only needs a tiny fraction of the files, namely:
 
-Before exploring how data is layed out there is a detour that will help filter out non-casual browsing: the Multi-Account Containers add-on. 
+- `cookies.sqlite` — Where the cookies are stored
+- `storage/**/ls/data.sqlite` — Where each local storage data is stored
+
+My current session has 77 databases matching `storage/**/ls/data.sqlite`.
 
 
 ### Multi-Account Containers
 
-The [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) add-on lets you segregate cookies by container. Each container can be configured with an allowed list of domains so trusted websites can be kept separate from untrusted including casual browsing.
+Before exploring how data is layed out, there is a detour that will help filter out non-casual browsing: the Multi-Account Containers add-on. 
+
+The [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) add-on lets you segregate cookies by container. Each container can be configured with an allowed list of domains so trusted and untrusted websites can be kept separate including casual browsing.
 
 This add-on stores some of its configuration in `containers.json` which looks something like:
 
@@ -78,7 +93,7 @@ This add-on stores some of its configuration in `containers.json` which looks so
 }
 ```
 
-Any unknown website will go into the default container which has no `userContextId`. This fact is what will help identify casual browsing from the rest.
+Any unknown website will go into the default container which has no `userContextId`. This fact is what will help identify and filter out non-casual browsing.
 
 
 ### The cookie database
@@ -106,7 +121,7 @@ CREATE TABLE moz_cookies (
 )
 ```
 
-This table records the data you would expect from a cookie but it also tracks which container a cookie belongs to. The `originAttributes` field fulfils this purpose.
+This table keeps the data you would expect from a cookie but it also tracks which container a cookie belongs to in the `originAttributes` field.
 
 ```nu
 open temp/cookies.sqlite
@@ -125,12 +140,12 @@ open temp/cookies.sqlite
 
 This record shows how the host `.youtube.com` belongs to the container 10. A quick lookup to `containers.json` shows that 10 is the identifier for the container I use for Google.
 
-Websites not bound to a container have no `userContextId`.
+Websites not bound to a container have no `userContextId`. The following query shows the main filter I'll be using to filter out non-casual browsing cookies.
 
 ```nu
 open temp/cookies.sqlite
 | query db "select host, originAttributes, name from moz_cookies"
-| where originAttributes == ""
+| where originAttributes !~ "userContainerId"
 | first
 ```
 
@@ -178,7 +193,7 @@ storage/default
       └── data.sqlite
 ```
 
-Each `data.sqlite` database has two tables: `database` and `data`. `data` is what we are after so let's check its definition:
+Within each `data.sqlite` database there is a `data` table:
 
 ```sql
 CREATE TABLE data(
@@ -227,7 +242,7 @@ glob storage/default/**/data.sqlite
 
 ## Analysis
 
-Armed with this we can get on with the analysis of casual browsing littering. This analysis is minimal given that I used data stored after a couple of hours of casual browsing. I plan to collect snapshots at regular intervals so I can do a more meaningful analysis in a few months time.
+Armed with this we can start the analysis of casual browsing littering. This analysis is minimal given that I used data stored after a couple of hours of casual browsing. I plan to collect snapshots of this data regularly so I can do a more meaningful analysis in a few months time.
 
 To ensure I don't mess up my Firefox profile, I copied the relevant SQLite files into a `temp/` directory, flattening the structure of local storage a bit.
 
@@ -241,8 +256,6 @@ glob storage/default/**/ls/data.sqlite
     cp $path $"($temp)/storage/($name).sqlite"
   }
 ```
-
-### Data to analyse
 
 First, let's get a feel for the size of the data. I want to focus on casual browsing so I'll exclude any entry with a `userContextId`.
 
@@ -264,36 +277,40 @@ open temp/cookies.sqlite
 ╭───┬─────────┬───────────────╮
 │ # │ cookies │ local_storage │
 ├───┼─────────┼───────────────┤
-│ 0 │     116 │            93 │
+│ 0 │      55 │            93 │
 ╰───┴─────────┴───────────────╯
 ```
 
-With the queries below, we can see that less than half websites store just one cookie. Assuming all of them required one cookie to capture consent, this means that the majority of websites require cookies to operate properly. For some value of "operate properly".
+With the queries below, we can see that about half websites store just one cookie. Assuming all of them required one cookie to capture consent, this means that the majority of websites require cookies to operate properly. For some value of "operate properly".
 
 ```nu
 open temp/cookies.sqlite
-| query db "select count(name) as value from moz_cookies where originAttributes not like '%userContextId%' group by host"
+| query db "select host, name, originAttributes from moz_cookies"
+| where originAttributes !~ "userContextId"
+| group-by { $in.host | str replace -r '^(?:\.|www\.)' '' }
+| transpose host value
+| update value { |row| $row.value | length }
 | sort-by value
 | histogram value
 ```
 
 ```
-╭───┬───────┬───────┬──────────┬────────────┬─────────────────────────────────────────╮
-│ # │ value │ count │ quantile │ percentage │                frequency                │
-├───┼───────┼───────┼──────────┼────────────┼─────────────────────────────────────────┤
-│ 0 │     1 │    25 │     0.39 │ 39.06%     │ *************************************** │
-│ 1 │     2 │    15 │     0.23 │ 23.44%     │ ***********************                 │
-│ 2 │     4 │    10 │     0.16 │ 15.62%     │ ***************                         │
-│ 3 │     3 │     7 │     0.11 │ 10.94%     │ **********                              │
-│ 4 │     5 │     2 │     0.03 │ 3.12%      │ ***                                     │
-│ 5 │     7 │     2 │     0.03 │ 3.12%      │ ***                                     │
-│ 6 │     6 │     1 │     0.02 │ 1.56%      │ *                                       │
-│ 7 │     9 │     1 │     0.02 │ 1.56%      │ *                                       │
-│ 8 │    11 │     1 │     0.02 │ 1.56%      │ *                                       │
-╰───┴───────┴───────┴──────────┴────────────┴─────────────────────────────────────────╯
+╭───┬───────┬───────┬──────────┬────────────┬─────────────────────────────────────────────────╮
+│ # │ value │ count │ quantile │ percentage │                    frequency                    │
+├───┼───────┼───────┼──────────┼────────────┼─────────────────────────────────────────────────┤
+│ 0 │     1 │    18 │     0.62 │ 62.07%     │ *********************************************** │
+│   │       │       │          │            │ ***************                                 │
+│ 1 │     2 │     5 │     0.17 │ 17.24%     │ *****************                               │
+│ 2 │     3 │     3 │     0.10 │ 10.34%     │ **********                                      │
+│ 3 │     5 │     1 │     0.03 │ 3.45%      │ ***                                             │
+│ 4 │     6 │     1 │     0.03 │ 3.45%      │ ***                                             │
+│ 5 │     7 │     1 │     0.03 │ 3.45%      │ ***                                             │
+╰───┴───────┴───────┴──────────┴────────────┴─────────────────────────────────────────────────╯
 ```
 
-This part is more concerning. Most websites I visit for casual browsing are for reading an article they have published or to check their offering so it's hard to justify the need for local storage.
+`value` in the table above means "number of cookies per host". `count` is the number of hosts with that number of cookies. Note that I haven't done any reconciliation to merge hosts that belong to the same domain. For example, `.wikipedia.org` and `en.wikipedia.org` are counted separately. Properly aggregating would probably yield a slightly more concerning picture.
+
+The histogram clearly shows cookie littering. Most websites I visit for casual browsing are for reading an article they have published or to check their offering so it's hard to justify any so-called “required cookies” beyond a single consent one.
 
 ```nu
 ls temp/storage/
@@ -319,6 +336,11 @@ ls temp/storage/
 ╰───┴───────┴───────┴──────────┴────────────┴───────────────────────────────────────────────╯
 ```
 
+`value` in the table above means “number of local storage entries per domain”. `count` is the number of domains with the same number of local storage entries.
+
+This whole table is hard to justify. Local storage for casual browsing is unnecessary and a waste for most circumstances.
+
+
 ###  Top cookie litterers
 
 ```nu
@@ -330,23 +352,18 @@ open temp/cookies.sqlite
 | insert count { |row| $row.value | length }
 | reject value
 | sort-by -r count
-| first 10
+| first 5
 ```
 
 ```
 ╭───┬──────────────────────┬───────╮
 │ # │         host         │ count │
 ├───┼──────────────────────┼───────┤
-│ 0 │ gap.co.uk            │    17 │
+│ 0 │ medium.com           │     7 │
 │ 1 │ phrase.com           │     7 │
-│ 2 │ medium.com           │     5 │
+│ 2 │ support.mozilla.org  │     3 │
 │ 3 │ paradedb.com         │     4 │
-│ 4 │ spacetimedb.com      │     3 │
-│ 5 │ login.wikimedia.org  │     2 │
-│ 6 │ en.wikipedia.org     │     2 │
-│ 7 │ howtogeek.com        │     2 │
-│ 8 │ sstatic.net          │     2 │
-│ 9 │ www.researchgate.net │     2 │
+│ 4 │ en.wikipedia.com     │     3 │
 ╰───┴──────────────────────┴───────╯
 ```
 
