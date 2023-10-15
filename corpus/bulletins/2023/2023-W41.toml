@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W41"
+publication_date = 2023-10-15
+summary = "This week has been about sketching ASCII art, mathematics notation, a JavaScript IDE, macOS containers, a CSS custom properties library and a distributed stream processing engine written in Rust."
+
+[[entries]]
+url = "https://www.arroyo.dev/"
+title = "Arroyo"
+summary = "A distributed stream processing engine written in Rust, designed to perform stateful computations on streams of data."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/charcoal-lang/Charcoal"
+title = "Charcoal"
+summary = "A language for sketching ASCII art."
+content_type = "text"
+
+[[entries]]
+url = "https://leporello.tech/"
+title = "Leporello.js"
+summary = "A JavaScript IDE designed with debugging and time travelling in mind, particularly when using a functional style."
+content_type = "text"
+
+[[entries]]
+url = "https://open-props.style/"
+title = "Open Props"
+summary = "A library of CSS custom properties aiming for a rapid and non-prescriptive development."
+content_type = "text"
+
+[[entries]]
+url = "https://jackrusher.com/pwl-2023/"
+title = "Geometry to algebra and back again"
+summary = "A talk about the evolution of mathematics notation. There is a transcript available."
+content_type = "video"
+
+[[entries]]
+url = "https://macoscontainers.org/"
+title = "macOS Containers"
+summary = "An experimental approach for running containerd compatible containers in macOS. You might want to have a look at the underlying machinery: [rund](https://github.com/macOScontainers/rund)"
+content_type = "text"
