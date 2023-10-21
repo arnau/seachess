@@ -214,7 +214,7 @@ CREATE TABLE data(
 - `compression_type` signals whether the value is compressed. 
   - `0` means uncompressed. 
   - `1` means compressed with [snappy](https://google.github.io/snappy/).
-  - `2`, is `CompressionType::NUM_TYPES`. I don't know what this type is for nor I have any data with it. I'll ignore it.
+  - `2`, is `CompressionType::NUM_TYPES`. <del datetime="2023-10-21">I don't know what this type is for nor I have any data with it. I'll ignore it</del> <ins datetime="2023-10-21">Seems to represent the number of types in the `CompressionType` enum so it should be safe to ignore it. Thanks Karl!</ins>.
 
 To have a peek at the data stored in the `value` blob I'm using [szip](https://crates.io/crates/szip), a CLI similar to `gzip` using the Snappy algorithm.
 
