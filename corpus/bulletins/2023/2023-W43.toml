@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W43"
+publication_date = 2023-10-29
+summary = "This week has been about the Actor pattern, converting video to GIF, a reverse proxy for NAT traversal, a specification for GPDR-like privacy, a London tube game and a criticism to Tailwind."
+
+[[entries]]
+url = "https://etorreborre.blog/turning-actors-inside-out"
+title = "Turning actors inside-out"
+summary = "An article exploring the tradeoffs of the Actor model pattern like erlang's."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rapiz1/rathole"
+title = "rathole"
+summary = "A reverse proxy for NAT traversal alternative to [frp](https://github.com/fatedier/frp) and [ngrok](https://github.com/inconshreveable/ngrok)."
+content_type = "text"
+
+[[entries]]
+url = "https://london.metro-memory.com/"
+title = "London Tube Memory Game"
+summary = "A game to test your memory on London tube station names."
+content_type = "text"
+
+[[entries]]
+url = "https://nuejs.org/blog/tailwind-vs-semantic-css/"
+title = "Tailwind CSS vs. Semantic CSS"
+summary = "An article comparing two websites with similar designs, one built using Tailwind and the other using “semantic” CSS and Nue server components. It looks into amount of HTML required, rendering speed, coupling and more."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ImageOptim/gifski/"
+title = "Gifski"
+summary = "A tool to convert video frames to GIF animations with efficient cross-frame palettes and temporal dithering."
+content_type = "text"
+
+[[entries]]
+url = "https://globalprivacycontrol.org/"
+title = "Global Privacy Control"
+summary = "A specification attempting to standardise a mechanism for Web users to request websites and services to not sell or share their personal information to third parties. The specification aims to align with legal frameworks such as GDPR.\n\nSimilar to previous attempts the use of this mechanism can be in detriment of the user's privacy due to increase of information available for fingerprinting."
+content_type = "text"
