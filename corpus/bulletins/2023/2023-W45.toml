@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W45"
+publication_date = 2023-11-12
+summary = "This week has been about the HTTP/2 Rapid Reset vulnerability, a paper on new contributors and vulnerabilities, a guide on jq, a monospaced font, a multi-tile format and TigerBeetle's rationale for using 128-bit integers for financial amounts."
+
+[[entries]]
+url = "https://tigerbeetle.com/blog/2023-09-19-64-bit-bank-balances-ought-to-be-enough-for-anybody/"
+title = "64-Bit Bank Balances ‘Ought to be Enough for Anybody’?"
+summary = "An article on the reasons why TigerBeetle moved from 64-bit integers to 128-bit integers for financial amounts and balances."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.cloudflare.com/zero-day-rapid-reset-http2-record-breaking-ddos-attack/"
+title = "HTTP/2 Zero-Day vulnerability results in record-breaking DDoS attacks"
+summary = "An article explainging the HTTP/2 Rapid Reset vulnerability."
+content_type = "text"
+
+[[entries]]
+url = "https://ishan.page/blog/2023-11-06-jq-by-example/"
+title = "The Ultimate Interactive JQ Guide"
+summary = "A comprehensive tutorial to grok [jq](https://jqlang.github.io/jq/) and its query language."
+content_type = "text"
+
+[[entries]]
+url = "https://monaspace.githubnext.com/"
+title = "monaspace"
+summary = "A monospaced family of fonts for code."
+content_type = "text"
+
+[[entries]]
+url = "https://cypherpunks.ca/~iang/pubs/gradingcurve-secdev23.pdf"
+title = "Grading on a Curve: How Rust can Facilitate New Contributors while Decreasing Vulnerabilities"
+summary = "A paper on the study done on the Oxidation project to infer whether Rust can help ease in new contributors to an open source codebase whilst mitigating the risk of introducing vulnerabilities. Notice that this study compares C/C++ and Rust."
+content_type = "pdf"
+
+[[entries]]
+url = "https://protomaps.com/"
+title = "Protomaps"
+summary = "A tile-based map storage format leveraging image pyramids and HTTP Range requests for storing everything in a single file."
+content_type = "text"
