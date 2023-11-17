@@ -279,7 +279,7 @@ jq -r '.items | map({(.name): (.price * 2)}) | add'
 
 In `nu` we do:
 
-```sh
+```nu
 '{"items": [{"name": "Apple", "price": 1}, {"name": "Banana", "price": 0.5}]}' 
 | from json
 | get items
@@ -441,9 +441,9 @@ First, I want to thank the author of [The Ultimate Interactive JQ Guide](https:/
 
 Over the years I've used `jq` sporadically, typically to quickly wrangle and inspect some unknown JSON. Due to that on/off interaction I have never managed to retain its syntax in my head for long so when using it for any non trivial operation I've had to invest a decent chunk of time to re-acquaint myself with it.
 
-On the other hand, Nushell fits nicely with my mental model so once I've learnt a command I can reuse it with little struggle.
+On the other hand, Nushell fits nicely with my mental model so once I've learnt a command I can reuse it with little effort.
 
-Both jq and Nushell are excellent tools but I found Nushell a better investment.
+Both jq and Nushell are excellent tools but I found Nushell to be a better investment.
 
 
 
