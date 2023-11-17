@@ -374,9 +374,9 @@ In `nu` we do:
 ```nu
 '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' 
 | from json
-| group-by category
-| transpose category value
-| update value { |row| $row.value.value | math sum }
+| group-by --to-table category
+| update items { |row| $row.items.value | math sum }
+| rename category sum
 ```
 
 ### Filtering after Aggregation
@@ -393,9 +393,9 @@ In `nu` we do:
 ```nu
 '[{"category": "A", "value": 10}, {"category": "B", "value": 20}, {"category": "A", "value": 5}]' 
 | from json
-| group-by category
-| transpose category value
-| update value { |row| $row.value.value | math sum }
+| group-by --to-table category
+| update items { |row| $row.items.value | math sum }
+| rename category value
 | where value > 17
 ```
 
@@ -430,9 +430,8 @@ In `nu` we do:
 ```nu
 '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]'
 | from json
-| group-by { $in // 5 * 5 }
-| transpose key value
-| each { |row| {bin: $row.value.0, count: ($row.value | length)} }
+| group-by --to-table { $in // 5 * 5 }
+| each { |row| {bin: $row.items.0, count: ($row.items | length)} }
 ```
 
 
