@@ -1,0 +1,40 @@
+type = "bulletin"
+id = "2023-W46"
+publication_date = 2023-11-19
+summary = "This week has been about custom Git diffs for SQLite, a data transformation framework, cross-platform applications with Flutter and Rust, web analytics using CSS, a regexd crossword and Web Components without Shadow DOM. "
+
+[[entries]]
+url = "https://github.com/TobikoData/sqlmesh"
+title = "sqlmesh"
+summary = "A data transformation framework enabling data workers to run and deploy data transformations written in SQL or Python."
+content_type = "text"
+
+[[entries]]
+url = "https://jimbly.github.io/regex-crossword/"
+title = "regex crossword"
+summary = "A regular expression based crossword."
+content_type = "text"
+
+[[entries]]
+url = "https://herman.bearblog.dev/how-bear-does-analytics-with-css/"
+title = "How Bear does analytics with CSS"
+summary = "A technique for collecting web analytics information using CSS to side-step AD blockers whilst keeping a degree of confidence bots are filtered out."
+content_type = "text"
+
+[[entries]]
+url = "https://garrit.xyz/posts/2023-11-01-tracking-sqlite-database-changes-in-git"
+title = "Tracking SQLite Database Changes in Git"
+summary = "An article on how to set up a custom diff strategy in Git for inspecting changes in SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://meyerweb.com/eric/thoughts/2023/11/01/blinded-by-the-light-dom/"
+title = "Blinded By the Light DOM"
+summary = "An article on using Web Components without the Shadow DOM.\n\nThe author displays passion against the Shadow DOM which is a bit surprising: I rather have the choice than not. I've found the Shadow DOM quite nice for building components that need to be resilient in unknown environments where CSS could leak in and break things."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cunarist/rinf"
+title = "Rinf"
+summary = "A framework for creating cross-platform applications using Flutter and Rust."
+content_type = "text"
