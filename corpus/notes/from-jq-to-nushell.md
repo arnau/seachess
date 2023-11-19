@@ -10,6 +10,8 @@ tags:
 ---
 # From jq to Nushell
 
+**This note has been superseded by the [jq vs Nushell cookbook](https://www.nushell.sh/cookbook/jq_v_nushell.html). Check it out!**
+
 Where I translate [The Ultimate Interactive JQ Guide](https://ishan.page/blog/2023-11-06-jq-by-example/) to [Nushell](https://ww.nushell.sh/).
 
 
