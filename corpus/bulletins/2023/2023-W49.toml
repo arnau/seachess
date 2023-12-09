@@ -1,0 +1,40 @@
+id = "2023-W49"
+publication_date = "2023-12-10"
+summary = "This week has been about a tool to explore regular expressions, an embeddable Scheme runtime, a query language for Git, a chess game in the terminal, a Service Workers server implementation and a programming language for scientific computations."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A service to explore regular expressions interactively with support for a diverse set of programming languages."
+title = "regular expressions 101"
+url = "https://regex101.com/"
+
+[[entries]]
+content_type = "text"
+summary = "An embeddable programming language designed as a Scheme dialect with strong influence from [Racket](https://racket-lang.org/)"
+title = "Steel"
+url = "https://github.com/mattwparas/steel"
+
+[[entries]]
+content_type = "text"
+summary = "A query language inspired by SQL targetting the git storage."
+title = "GQL - Git Query Language"
+url = "https://github.com/AmrDeveloper/GQL"
+
+[[entries]]
+content_type = "text"
+summary = "A chess game interface for the terminal. It does not provide a game engine."
+title = "chess-tui"
+url = "https://github.com/thomas-mauran/chess-tui"
+
+[[entries]]
+content_type = "text"
+summary = "A Service Workers server using the SpiderMonkey engine to execute JavaScript compatible with the [WinterCG](https://wintercg.org/) specification."
+title = "WinterJS"
+url = "https://github.com/wasmerio/winterjs"
+
+[[entries]]
+content_type = "text"
+summary = "A statically typed programming language for scientific computations with first class support for physical dimensions and units."
+title = "numbat"
+url = "https://numbat.dev"
