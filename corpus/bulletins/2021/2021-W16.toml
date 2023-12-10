@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2021-W16"
-publication_date = 2021-04-25
+publication_date = "2021-04-25"
 summary = "This week has been about an API collection, M1 floating point calculations, interactive Git, more on FLoC, complexity in distributed systems and an event processing system."
+type = "bulletin"
 
 [[entries]]
-url = "https://apis.guru/openapi-directory/"
-title = "OpenAPI Directory"
+content_type = "text"
 summary = "A machine-readable collection of REST APIs with convergence into OpenAPI 3.0."
-content_type = "text"
+title = "OpenAPI Directory"
+url = "https://apis.guru/openapi-directory/"
 
 [[entries]]
-url = "https://github.com/bigH/git-fuzzy"
-title = "git-fuzzy"
+content_type = "text"
 summary = "A tool to work with [Git](https://git-scm.com/) interactively leveraging [fzf](https://github.com/junegunn/fzf)."
-content_type = "text"
+title = "git-fuzzy"
+url = "https://github.com/bigH/git-fuzzy"
 
 [[entries]]
-url = "https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html"
+content_type = "text"
+summary = """
+An article on the subtleties of opt-out approach on Google's tracking system.
+
+> Here’s how not to opt-in to Google’s FLoC:
+>
+> * Don't load untrusted third-party content that might get classified as an ad (only applies during the origin trial)
+> * Don't call document.interestCohort(), and don’t load third-party scripts that might call it either."""
 title = "Misinformation about Permissions Policy and FLoC"
-summary = "An article on the subtleties of opt-out approach on Google's tracking system.\n\n> Here’s how not to opt-in to Google’s FLoC:\n>\n> * Don't load untrusted third-party content that might get classified as an ad (only applies during the origin trial)\n> * Don't call document.interestCohort(), and don’t load third-party scripts that might call it either."
-content_type = "text"
+url = "https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html"
 
 [[entries]]
-url = "https://eclecticlight.co/2021/04/22/can-you-trust-floating-point-arithmetic-on-apple-silicon/"
-title = "Can you trust floating-point arithmetic on Apple Silicon?"
+content_type = "text"
 summary = "An article looking into three well-known calculations from the _Handbook of Floating-Point Arithmetic_ using [Swift](https://swift.org/) on an [Apple M1](https://en.wikipedia.org/wiki/Apple_M1) and comparing with the previous Intel-based results."
-content_type = "text"
+title = "Can you trust floating-point arithmetic on Apple Silicon?"
+url = "https://eclecticlight.co/2021/04/22/can-you-trust-floating-point-arithmetic-on-apple-silicon/"
 
 [[entries]]
-url = "https://world.hey.com/joaoqalves/disasters-i-ve-seen-in-a-microservices-world-a9137a51"
-title = "Disasters I've seen in a microservices world"
+content_type = "text"
 summary = "An article reflecting on fundamental problems derived from ignoring the inherent complexity of distributed systems."
-content_type = "text"
+title = "Disasters I've seen in a microservices world"
+url = "https://world.hey.com/joaoqalves/disasters-i-ve-seen-in-a-microservices-world-a9137a51"
 
 [[entries]]
-url = "https://www.tremor.rs/"
-title = "Tremor"
-summary = "An event processing system for unstructured data. A Rust based replacement for [Logstash](https://www.elastic.co/logstash) and [Telegraf](https://github.com/influxdata/telegraf)."
 content_type = "text"
+summary = "An event processing system for unstructured data. A Rust based replacement for [Logstash](https://www.elastic.co/logstash) and [Telegraf](https://github.com/influxdata/telegraf)."
+title = "Tremor"
+url = "https://www.tremor.rs/"

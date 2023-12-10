@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2020-W48"
-publication_date = 2020-11-29
+publication_date = "2020-11-29"
 summary = "This week has been about SQLite virtual columns, MonetDB, image diffs, URLs and the Internet of Bodies."
+type = "bulletin"
 
 [[entries]]
-url = "https://qqq.is/research/a-practical-guide-to-URI-encoding-and-URI-decoding"
+content_type = "text"
+summary = """
+A digested explanation of the [RFC3986](https://tools.ietf.org/html/rfc3986).
+
+A more forward-looking specification like the WhatWG [URL](https://url.spec.whatwg.org/) might be what you need though."""
 title = "A practical guide to URI encoding and URI decoding"
-summary = "A digested explanation of the [RFC3986](https://tools.ietf.org/html/rfc3986).\n\nA more forward-looking specification like the WhatWG [URL](https://url.spec.whatwg.org/) might be what you need though."
-content_type = "text"
+url = "https://qqq.is/research/a-practical-guide-to-URI-encoding-and-URI-decoding"
 
 [[entries]]
-url = "https://rust-script.org/"
-title = "rust-script"
+content_type = "text"
 summary = "A tool to run Rust files and expressions as scripts without any setup or compilation step."
-content_type = "text"
+title = "rust-script"
+url = "https://rust-script.org/"
 
 [[entries]]
-url = "https://dgl.cx/2020/06/sqlite-json-support"
-title = "SQLite as a document database"
+content_type = "text"
 summary = "An article showcasing how to use JSON blobs with virtual columns in SQLite."
-content_type = "text"
+title = "SQLite as a document database"
+url = "https://dgl.cx/2020/06/sqlite-json-support"
 
 [[entries]]
-url = "https://spectrum.ieee.org/biomedical/devices/turning-the-body-into-a-wire"
-title = "Turning the Body Into a Wire"
+content_type = "text"
 summary = "An article introducing the idea of IoB (Internet of Bodies) as a closed network to increase the security of wearable devices including health devices such as pacemakers."
-content_type = "text"
+title = "Turning the Body Into a Wire"
+url = "https://spectrum.ieee.org/biomedical/devices/turning-the-body-into-a-wire"
 
 [[entries]]
-url = "https://github.com/MonetDBSolutions/MonetDBe-Python"
-title = "MonetDBe-Python"
+content_type = "text"
 summary = "A Python package to work with an embedded version of the columnar database [MonetDB](https://www.monetdb.org/)."
-content_type = "text"
+title = "MonetDBe-Python"
+url = "https://github.com/MonetDBSolutions/MonetDBe-Python"
 
 [[entries]]
-url = "https://github.com/dmtrKovalenko/odiff"
-title = "ODIFF"
-summary = "A tool to genereate pixel-by-pixel image differentials."
 content_type = "text"
+summary = "A tool to genereate pixel-by-pixel image differentials."
+title = "ODIFF"
+url = "https://github.com/dmtrKovalenko/odiff"

@@ -1,40 +1,66 @@
-type = "bulletin"
 id = "2020-W33"
-publication_date = 2020-08-16
+publication_date = "2020-08-16"
 summary = "This week has been about a Git reimplementation, Git for data, the struggles of Mozilla, a dictionary, geospatial information in SQLite and futures with slime."
+type = "bulletin"
 
 [[entries]]
-url = "https://locallyoptimistic.com/post/git-for-data-not-a-silver-bullet"
+content_type = "text"
+summary = """
+An article reflecting on [The Rise of
+DataOps](https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4)
+and describing a more classic append-only log approach to deal with how data
+changes over time and keep enough reproducibility guarantees."""
 title = "Git for Data: Not a Silver Bullet"
-summary = "An article reflecting on [The Rise of\nDataOps](https://towardsdatascience.com/the-rise-of-dataops-from-the-ashes-of-data-governance-da3e0c3ac2c4)\nand describing a more classic append-only log approach to deal with how data\nchanges over time and keep enough reproducibility guarantees."
-content_type = "text"
+url = "https://locallyoptimistic.com/post/git-for-data-not-a-silver-bullet"
 
 [[entries]]
-url = "https://medium.com/young-coder/mozilla-the-greatest-tech-company-left-behind-9e912098a0e1"
+content_type = "text"
+summary = """
+An article reflecting on the impact of the recent layoffs in Mozilla.
+
+You might also be interested in [Web browsers need to stop](https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html),
+a short rant on the state of web browsers in 2020.
+
+Finally, [Open Standards are simple](https://portal.mozz.us/gemini/ebc.li/posts/open-standards-are-simple.gmi)
+is a somewhat related article making a few interesting points on the effects
+of complexity in openness."""
 title = "Mozilla: The Greatest Tech Company Left Behind"
-summary = "An article reflecting on the impact of the recent layoffs in Mozilla.\n\nYou might also be interested in [Web browsers need to stop](https://drewdevault.com/2020/08/13/Web-browsers-need-to-stop.html),\na short rant on the state of web browsers in 2020.\n\nFinally, [Open Standards are simple](https://portal.mozz.us/gemini/ebc.li/posts/open-standards-are-simple.gmi)\nis a somewhat related article making a few interesting points on the effects\nof complexity in openness."
-content_type = "text"
+url = "https://medium.com/young-coder/mozilla-the-greatest-tech-company-left-behind-9e912098a0e1"
 
 [[entries]]
-url = "https://github.com/Byron/gitoxide"
+content_type = "text"
+summary = """
+A reimplementation of Git written in Rust. It is still not feature complete
+but the foundations are already there."""
 title = "gitoxide"
-summary = "A reimplementation of Git written in Rust. It is still not feature complete\nbut the foundations are already there."
-content_type = "text"
+url = "https://github.com/Byron/gitoxide"
 
 [[entries]]
-url = "https://onelook.com/"
-title = "One look"
+content_type = "text"
 summary = "A dictionary search with partial word search."
-content_type = "text"
+title = "One look"
+url = "https://onelook.com/"
 
 [[entries]]
-url = "https://www.growbyginkgo.com/2020/07/15/beyond-smart-rocks/"
+content_type = "text"
+summary = """
+An article touching on possible replacements for our current computers and in
+particular on the potential of slime."""
 title = "Beyond Smart Rocks"
-summary = "An article touching on possible replacements for our current computers and in\nparticular on the potential of slime."
-content_type = "text"
+url = "https://www.growbyginkgo.com/2020/07/15/beyond-smart-rocks/"
 
 [[entries]]
-url = "https://www.geopackage.org/"
-title = "GeoPackage"
-summary = "A format to structure geospatial information in SQLite.\n\nA couple of weeks back I played with the UK geospatial information which\ncrystallised in [Addresspack](https://github.com/arnau/addresspack) which is a\ntool to transform the odd format Ordnance Survey provides to a ready to use\nSQLite database.\n\nThe good news is that now they are improving and starting to offer data in\nGeoPackage which, besides using SQLite, defines a particular way to lay the\ngeospatial data."
 content_type = "text"
+summary = """
+A format to structure geospatial information in SQLite.
+
+A couple of weeks back I played with the UK geospatial information which
+crystallised in [Addresspack](https://github.com/arnau/addresspack) which is a
+tool to transform the odd format Ordnance Survey provides to a ready to use
+SQLite database.
+
+The good news is that now they are improving and starting to offer data in
+GeoPackage which, besides using SQLite, defines a particular way to lay the
+geospatial data."""
+title = "GeoPackage"
+url = "https://www.geopackage.org/"

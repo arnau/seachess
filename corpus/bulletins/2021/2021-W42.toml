@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W42"
-publication_date = 2021-10-24
+publication_date = "2021-10-24"
 summary = "This week has been about securing APIs, an embedded document-oriented SQL database, a comments system powered by GitHub Discussions, Prolog in Rust, new standard HTTP headers for caching and a Make tutorial."
+type = "bulletin"
 
 [[entries]]
-url = "https://makefiletutorial.com/"
-title = "Makefile tutorial"
+content_type = "text"
 summary = "A tutorial with practical recipes to get started with Make."
-content_type = "text"
+title = "Makefile tutorial"
+url = "https://makefiletutorial.com/"
 
 [[entries]]
-url = "https://genji.dev/"
-title = "Genji"
+content_type = "text"
 summary = "A document-oriented, embedded, SQL database written in Go."
-content_type = "text"
+title = "Genji"
+url = "https://genji.dev/"
 
 [[entries]]
-url = "https://httptoolkit.tech/blog/status-targeted-caching-headers/"
-title = "New HTTP standards for caching on the modern web"
+content_type = "text"
 summary = "An article introducing two HTTP headers to standardise common CDN practices."
-content_type = "text"
+title = "New HTTP standards for caching on the modern web"
+url = "https://httptoolkit.tech/blog/status-targeted-caching-headers/"
 
 [[entries]]
-url = "https://expeditedsecurity.com/api-security-best-practices-megaguide/"
-title = "API Security Best Practices MegaGuide"
+content_type = "text"
 summary = "A comprehensive guide on securing HTTP-based APIs."
-content_type = "text"
+title = "API Security Best Practices MegaGuide"
+url = "https://expeditedsecurity.com/api-security-best-practices-megaguide/"
 
 [[entries]]
-url = "https://giscus.app/"
-title = "giscus"
+content_type = "text"
 summary = "A comments system powered by GitHub Discussions allowing visitors to leave comments and reactions on a website."
-content_type = "text"
+title = "giscus"
+url = "https://giscus.app/"
 
 [[entries]]
-url = "https://github.com/mthom/scryer-prolog"
-title = "Scryer Prolog"
-summary = "An open source ISO Prolog implementation in Rust."
 content_type = "text"
+summary = "An open source ISO Prolog implementation in Rust."
+title = "Scryer Prolog"
+url = "https://github.com/mthom/scryer-prolog"

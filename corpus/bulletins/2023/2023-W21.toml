@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W21"
-publication_date = 2023-05-28
+publication_date = "2023-05-28"
 summary = "This week has been about a tool to generate flamegraphs, debugging asynchronous Rust, a technical debt classification, electronic music rudiments, a spreadsheet-like tool supporting Python and a programming language with manual memory management and Python-like syntax."
+type = "bulletin"
 
 [[entries]]
-url = "https://yakshalang.github.io/"
-title = "Yaksha"
+content_type = "text"
 summary = "A programming language with Python syntax and manual memory management that compiles down to C99."
-content_type = "text"
+title = "Yaksha"
+url = "https://yakshalang.github.io/"
 
 [[entries]]
-url = "https://learningmusic.ableton.com/index.html"
-title = "Get started making music"
+content_type = "text"
 summary = "A tutorial on how to make electronic music covering basic sounds, beats, tempo, chords and more."
-content_type = "text"
+title = "Get started making music"
+url = "https://learningmusic.ableton.com/index.html"
 
 [[entries]]
-url = "https://technology.riotgames.com/news/taxonomy-tech-debt"
-title = "A taxonomy of tech debt"
+content_type = "text"
 summary = "An article classifying technical debt using a few metrics for better evaluation on what to address first."
-content_type = "text"
+title = "A taxonomy of tech debt"
+url = "https://technology.riotgames.com/news/taxonomy-tech-debt"
 
 [[entries]]
-url = "https://github.com/flamegraph-rs/flamegraph"
-title = "cargo-flamegraph"
+content_type = "text"
 summary = "A tool to profile a running process and generate a flamegraph in SVG for the result."
-content_type = "text"
+title = "cargo-flamegraph"
+url = "https://github.com/flamegraph-rs/flamegraph"
 
 [[entries]]
-url = "https://github.com/tokio-rs/console"
-title = "tokio-console"
+content_type = "text"
 summary = "A tool for diagnosing and debugging asynchronous Rust programs."
-content_type = "text"
+title = "tokio-console"
+url = "https://github.com/tokio-rs/console"
 
 [[entries]]
-url = "https://www.quadratichq.com/"
-title = "Quadratic"
-summary = "A spreadsheet-like tool with an infinite grid and supporting formulas and Python."
 content_type = "text"
+summary = "A spreadsheet-like tool with an infinite grid and supporting formulas and Python."
+title = "Quadratic"
+url = "https://www.quadratichq.com/"

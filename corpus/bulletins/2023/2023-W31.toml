@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W31"
-publication_date = 2023-08-06
+publication_date = "2023-08-06"
 summary = "This week has been about Lua multi-values, the Fennel language, the Wing Cloud language, a keyboard customiser for MacOS, the history of Unicode and how to use semicolons in English."
+type = "bulletin"
 
 [[entries]]
-url = "https://karabiner-elements.pqrs.org/"
-title = "Karabiner-Elements"
+content_type = "text"
 summary = "A MacOS tool to customise the keyboard."
-content_type = "text"
+title = "Karabiner-Elements"
+url = "https://karabiner-elements.pqrs.org/"
 
 [[entries]]
-url = "https://fennel-lang.org/"
-title = "Fennel"
+content_type = "text"
 summary = "A programming language from the Lisp family designed to transpile down to Lua with minimal overhead."
-content_type = "text"
+title = "Fennel"
+url = "https://fennel-lang.org/"
 
 [[entries]]
-url = "https://benaiah.me/posts/everything-you-didnt-want-to-know-about-lua-multivals/"
-title = "Everything You Didn’t Want to Know About Lua’s Multi-Values"
+content_type = "text"
 summary = "An article diving into the odness of multi-values in Lua."
-content_type = "text"
+title = "Everything You Didn’t Want to Know About Lua’s Multi-Values"
+url = "https://benaiah.me/posts/everything-you-didnt-want-to-know-about-lua-multivals/"
 
 [[entries]]
-url = "https://github.com/winglang/wing"
-title = "Winglang"
+content_type = "text"
 summary = "A programming language designed for the cloud. It aims to enable building distributed systems that leverage cloud services by combining infrastructure and application code in a unified programming model. Programs can be executed locally using a fully-functional simulator, or deployed to a cloud provider."
-content_type = "text"
+title = "Winglang"
+url = "https://github.com/winglang/wing"
 
 [[entries]]
-url = "https://theoatmeal.com/comics/semicolon"
-title = "How to use a semicolon"
+content_type = "text"
 summary = "A cheatsheet on how to use semicolons in English."
-content_type = "text"
+title = "How to use a semicolon"
+url = "https://theoatmeal.com/comics/semicolon"
 
 [[entries]]
-url = "https://mcilloni.ovh/2023/07/23/unicode-is-hard/"
-title = "Unicode is harder than you think"
-summary = "An article on how Unicode came about and the consequences of its evolution."
 content_type = "text"
+summary = "An article on how Unicode came about and the consequences of its evolution."
+title = "Unicode is harder than you think"
+url = "https://mcilloni.ovh/2023/07/23/unicode-is-hard/"

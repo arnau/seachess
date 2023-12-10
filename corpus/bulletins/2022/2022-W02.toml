@@ -1,40 +1,53 @@
-type = "bulletin"
 id = "2022-W02"
-publication_date = 2022-01-16
+publication_date = "2022-01-16"
 summary = "This week has been about a knowledge graph querying library, a retro game engine, a text-based requirements management tool, defensive CSS, a minimalist graphical editor and a take on web3."
+type = "bulletin"
 
 [[entries]]
-url = "https://minimator.app/"
+content_type = "text"
+summary = """
+A minimalist graphical editor.
+All drawings are made of lines in a grid based canvas. The lines are limited to vertical and horizontal lines, and quarter circles."""
 title = "Minimator"
-summary = "A minimalist graphical editor.\nAll drawings are made of lines in a grid based canvas. The lines are limited to vertical and horizontal lines, and quarter circles."
-content_type = "text"
+url = "https://minimator.app/"
 
 [[entries]]
-url = "https://moxie.org/2022/01/07/web3-first-impressions.html"
+content_type = "text"
+summary = """
+An article assessing what web3 means and how its so claimed distributed principle might not be so distributed after all.
+
+> Given the history of why web1 became web2, what seems strange to me about
+> web3 is that technologies like ethereum have been built with many of the same
+> implicit trappings as web1. To make these technologies usable, the space is
+> consolidating around… platforms. Again. People who will run servers for you,
+> and iterate on the new functionality that emerges. Infura, OpenSea, Coinbase,
+> Etherscan."""
 title = "My first impressions of web3"
-summary = "An article assessing what web3 means and how its so claimed distributed principle might not be so distributed after all.\n\n> Given the history of why web1 became web2, what seems strange to me about\n> web3 is that technologies like ethereum have been built with many of the same\n> implicit trappings as web1. To make these technologies usable, the space is\n> consolidating around… platforms. Again. People who will run servers for you,\n> and iterate on the new functionality that emerges. Infura, OpenSea, Coinbase,\n> Etherscan."
-content_type = "text"
+url = "https://moxie.org/2022/01/07/web3-first-impressions.html"
 
 [[entries]]
-url = "https://ishadeed.com/article/defensive-css/"
-title = "Defensive CSS"
+content_type = "text"
 summary = "An article with a set of CSS patterns to prevent well-known issues."
-content_type = "text"
+title = "Defensive CSS"
+url = "https://ishadeed.com/article/defensive-css/"
 
 [[entries]]
-url = "https://github.com/strictdoc-project/strictdoc/"
+content_type = "text"
+summary = """
+A text-based (strict-doc) requirements management tool written in Python designed to co-locate requirements with implementation.
+
+It is a fork from [Doorstop](https://github.com/doorstop-dev/doorstop/) which you might be interested in if you don't have enough YAML in your life."""
 title = "StrictDoc"
-summary = "A text-based (strict-doc) requirements management tool written in Python designed to co-locate requirements with implementation.\n\nIt is a fork from [Doorstop](https://github.com/doorstop-dev/doorstop/) which you might be interested in if you don't have enough YAML in your life."
-content_type = "text"
+url = "https://github.com/strictdoc-project/strictdoc/"
 
 [[entries]]
-url = "https://github.com/comunica/comunica/"
-title = "Comunica"
+content_type = "text"
 summary = "A knowledge graph querying library and command-line interface in TypeScript using SPARQL."
-content_type = "text"
+title = "Comunica"
+url = "https://github.com/comunica/comunica/"
 
 [[entries]]
-url = "https://github.com/kitao/pyxel/"
-title = "Pyxel"
-summary = "A retro game engine for Python. Inspired by [PICO-8](https://www.lexaloffle.com/pico-8.php) and TIC-80."
 content_type = "text"
+summary = "A retro game engine for Python. Inspired by [PICO-8](https://www.lexaloffle.com/pico-8.php) and TIC-80."
+title = "Pyxel"
+url = "https://github.com/kitao/pyxel/"

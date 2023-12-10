@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W42"
-publication_date = 2023-10-22
+publication_date = "2023-10-22"
 summary = "This week has been about digital content provenance, buffers and ropes, a gunzip tutorial, a CPU profiler, design choices of LSP and a Pi service."
+type = "bulletin"
 
 [[entries]]
-url = "https://matklad.github.io/2023/10/12/lsp-could-have-been-better.html"
-title = "LSP could have been better"
+content_type = "text"
 summary = "An article looking into the design choices done in the Language Server Protocol (LSP)."
-content_type = "text"
+title = "LSP could have been better"
+url = "https://matklad.github.io/2023/10/12/lsp-could-have-been-better.html"
 
 [[entries]]
-url = "https://www.mypiday.com/"
-title = "My Pi Day"
+content_type = "text"
 summary = "A service to find a date within the first 10,000,000 digits of the number Pi."
-content_type = "text"
+title = "My Pi Day"
+url = "https://www.mypiday.com/"
 
 [[entries]]
-url = "https://contentcredentials.org/"
+content_type = "text"
+summary = """
+An initiative claiming to offer a provenance mechanism for digital content to help fight misinformation. It uses the [Content Authenticity Initiative](https://contentauthenticity.org/) standard for verifiable provenance.
+
+The website is thin in details and it's backed up by common actors pro-DRM such as Adobe or MicroSoft."""
 title = "content credentials"
-summary = "An initiative claiming to offer a provenance mechanism for digital content to help fight misinformation. It uses the [Content Authenticity Initiative](https://contentauthenticity.org/) standard for verifiable provenance.\n\nThe website is thin in details and it's backed up by common actors pro-DRM such as Adobe or MicroSoft."
-content_type = "text"
+url = "https://contentcredentials.org/"
 
 [[entries]]
-url = "https://github.com/TechHara/gunzip"
-title = "Gunzip"
+content_type = "text"
 summary = "An implementation of the Gunzip decompression algorithm in Rust documented for educational purposes. It also provides a series of tutorials showing the implementation incrementally."
-content_type = "text"
+title = "Gunzip"
+url = "https://github.com/TechHara/gunzip"
 
 [[entries]]
-url = "https://github.com/mstange/samply/"
-title = "Samply"
+content_type = "text"
 summary = "A command line CPU profiler which uses the [Firefox profiler](https://profiler.firefox.com) as its UI. At the moment it runs on macOS and Linux."
-content_type = "text"
+title = "Samply"
+url = "https://github.com/mstange/samply/"
 
 [[entries]]
-url = "https://coredumped.dev/2023/08/09/text-showdown-gap-buffers-vs-ropes/"
-title = "Text showdown: Gap Buffers vs Ropes"
-summary = "An article comparing Emacs-like gap buffers and multiple Rust implementations of the Ropes data structure for handling text editing."
 content_type = "text"
+summary = "An article comparing Emacs-like gap buffers and multiple Rust implementations of the Ropes data structure for handling text editing."
+title = "Text showdown: Gap Buffers vs Ropes"
+url = "https://coredumped.dev/2023/08/09/text-showdown-gap-buffers-vs-ropes/"

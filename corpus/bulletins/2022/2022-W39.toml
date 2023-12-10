@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W39"
-publication_date = 2022-10-02
+publication_date = "2022-10-02"
 summary = "This week has been about a tool for rapid note management, a tool for shell history management, a streaming database for real-time applications, a hierarchical note taking application, trigonometry using turns instead of radians and a paper comparing state machine patterns."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.computerenhance.com/p/turns-are-better-than-radians"
-title = "Turns are Better than Radians"
+content_type = "text"
 summary = "An article looking into the common implementation of trigonometric functions in game engines and proposing an alternative using turns instead of radians."
-content_type = "text"
+title = "Turns are Better than Radians"
+url = "https://www.computerenhance.com/p/turns-are-better-than-radians"
 
 [[entries]]
-url = "https://www.hillside.net/plop/plop/plop2003/Papers/Adamczyk-State-Machine.pdf"
-title = "The Anthology of the Finite State Machine Design Patterns"
-summary = "A paper comparing different finite state machine designs with focus on flexibility and associated costs.\n\nYou might also like the list of [facts about state machines](https://github.com/cpressey/Facts-about-State-Machines)."
 content_type = "pdf"
+summary = """
+A paper comparing different finite state machine designs with focus on flexibility and associated costs.
+
+You might also like the list of [facts about state machines](https://github.com/cpressey/Facts-about-State-Machines)."""
+title = "The Anthology of the Finite State Machine Design Patterns"
+url = "https://www.hillside.net/plop/plop/plop2003/Papers/Adamczyk-State-Machine.pdf"
 
 [[entries]]
-url = "https://github.com/ellie/atuin"
-title = "Atuin"
+content_type = "text"
 summary = "A tool to manage the shell history using a SQLite database. It records additional context for your commands."
-content_type = "text"
+title = "Atuin"
+url = "https://github.com/ellie/atuin"
 
 [[entries]]
-url = "https://github.com/risingwavelabs/risingwave"
-title = "RisingWave"
+content_type = "text"
 summary = "A streaming database designed to reduce the complexity and cost of building real-time applications. It is able to ingest data from sources like Apache Kafka, Apache Pulsar, Amazon Kinesis, Redpanda, and materialized CDC sources."
-content_type = "text"
+title = "RisingWave"
+url = "https://github.com/risingwavelabs/risingwave"
 
 [[entries]]
-url = "https://github.com/zadam/trilium"
-title = "Trilium Notes"
+content_type = "text"
 summary = "A hierarchical note taking application with focus on building large personal knowledge bases."
-content_type = "text"
+title = "Trilium Notes"
+url = "https://github.com/zadam/trilium"
 
 [[entries]]
-url = "https://github.com/araekiel/jot"
-title = "Jot"
-summary = "A feature-stripped version of Obsidian focused on rapid note management through the terminal."
 content_type = "text"
+summary = "A feature-stripped version of Obsidian focused on rapid note management through the terminal."
+title = "Jot"
+url = "https://github.com/araekiel/jot"

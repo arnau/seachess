@@ -1,40 +1,55 @@
-type = "bulletin"
 id = "2021-W27"
-publication_date = 2021-07-11
+publication_date = "2021-07-11"
 summary = "This week has been about taking notes with SQLite, a SQLite with branches, a CloudFlare Worker simulator, pnpm and a criticism to SQL."
+type = "bulletin"
 
 [[entries]]
-url = "https://epilys.github.io/bibliothecula/notekeeping.html"
-title = "Using sqlite3 as a notekeeping document graph with automatic reference indexing"
+content_type = "text"
 summary = "A tutorial on how to take advantage of SQLite to keep your notes organised and with full-search built-in."
-content_type = "text"
+title = "Using sqlite3 as a notekeeping document graph with automatic reference indexing"
+url = "https://epilys.github.io/bibliothecula/notekeeping.html"
 
 [[entries]]
-url = "https://www.darktable.org/"
-title = "darktable"
+content_type = "text"
 summary = "An open source tool to manage photography workflows to manage digital negatives and development of raw images."
-content_type = "text"
+title = "darktable"
+url = "https://www.darktable.org/"
 
 [[entries]]
-url = "https://github.com/mrbbot/miniflare"
+content_type = "text"
+summary = """
+A tool to simulate [CloudFlare Workers] locally and offline.
+
+[CloudFlare Workers]: https://workers.cloudflare.com/"""
 title = "miniflare"
-summary = "A tool to simulate [CloudFlare Workers] locally and offline.\n\n[CloudFlare Workers]: https://workers.cloudflare.com/"
-content_type = "text"
+url = "https://github.com/mrbbot/miniflare"
 
 [[entries]]
-url = "https://github.com/aergoio/litetree"
+content_type = "text"
+summary = """
+A modified version of SQLite to support branches a-la Git.
+
+You can find my selection of SQLite resources in [Some SQLite], similar to [Awesome lists] but using the [Tabular Data Package].
+
+[Some SQLite]: https://github.com/arnau/some-sqlite/
+[Awesome lists]: https://github.com/sindresorhus/awesome
+[Tabular Data Package]: https://specs.frictionlessdata.io/tabular-data-package/"""
 title = "LiteTree"
-summary = "A modified version of SQLite to support branches a-la Git.\n\nYou can find my selection of SQLite resources in [Some SQLite], similar to [Awesome lists] but using the [Tabular Data Package].\n\n[Some SQLite]: https://github.com/arnau/some-sqlite/\n[Awesome lists]: https://github.com/sindresorhus/awesome\n[Tabular Data Package]: https://specs.frictionlessdata.io/tabular-data-package/"
-content_type = "text"
+url = "https://github.com/aergoio/litetree"
 
 [[entries]]
-url = "https://orta.io/notes/js/pnpm-succeeds-yarn-1"
+content_type = "text"
+summary = """
+An article looking into [pnpm], an alternative to [npm] and [Yarn] claiming to be faster and more efficient.
+
+[pnpm]: https://pnpm.io/
+[npm]: https://www.npmjs.com/
+[Yarn]: https://yarnpkg.com/"""
 title = "pnpm"
-summary = "An article looking into [pnpm], an alternative to [npm] and [Yarn] claiming to be faster and more efficient.\n\n[pnpm]: https://pnpm.io/\n[npm]: https://www.npmjs.com/\n[Yarn]: https://yarnpkg.com/"
-content_type = "text"
+url = "https://orta.io/notes/js/pnpm-succeeds-yarn-1"
 
 [[entries]]
-url = "https://scattered-thoughts.net/writing/against-sql/"
-title = "Against SQL"
-summary = "An article arguing why SQL is a dead end and what should the next relational query language learn from modern programming languages and the success of query languages such as GraphQL."
 content_type = "text"
+summary = "An article arguing why SQL is a dead end and what should the next relational query language learn from modern programming languages and the success of query languages such as GraphQL."
+title = "Against SQL"
+url = "https://scattered-thoughts.net/writing/against-sql/"

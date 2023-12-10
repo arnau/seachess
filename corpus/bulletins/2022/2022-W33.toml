@@ -1,40 +1,48 @@
-type = "bulletin"
 id = "2022-W33"
-publication_date = 2022-08-21
-summary = "This week has been about a Notion alternative, the strengths of SQLite, Redis in depth, a Python-compatible programming language, metrics for managing software development and \na platform for building applications out of WebAssembly code containers."
+publication_date = "2022-08-21"
+summary = """
+This week has been about a Notion alternative, the strengths of SQLite, Redis in depth, a Python-compatible programming language, metrics for managing software development and 
+a platform for building applications out of WebAssembly code containers."""
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/erg-lang/erg"
-title = "Erg"
+content_type = "text"
 summary = "A statically typed language that is Python-compatible written in Rust."
-content_type = "text"
+title = "Erg"
+url = "https://github.com/erg-lang/erg"
 
 [[entries]]
-url = "https://architecturenotes.co/redis/"
-title = "Redis Explained"
+content_type = "text"
 summary = "A deep technical dive into all things Redis. Covering various Redis topologies, data persistence and process forking."
-content_type = "text"
+title = "Redis Explained"
+url = "https://architecturenotes.co/redis/"
 
 [[entries]]
-url = "https://affine.pro/"
+content_type = "text"
+summary = """
+A knowledge base application for planing, sorting and creating. An open-source mixed alternative to Notion and Miro.
+
+There is a sidecar project that bundles [Affine as a desktop application](https://github.com/m1911star/affine-client/) using [Tauri](https://tauri.app/)."""
 title = "Affine"
-summary = "A knowledge base application for planing, sorting and creating. An open-source mixed alternative to Notion and Miro.\n\nThere is a sidecar project that bundles [Affine as a desktop application](https://github.com/m1911star/affine-client/) using [Tauri](https://tauri.app/)."
-content_type = "text"
+url = "https://affine.pro/"
 
 [[entries]]
-url = "https://antonz.org/sqlite-is-not-a-toy-database/"
-title = "SQLite is not a toy database"
+content_type = "text"
 summary = "An article highlighting the strengths of SQLite. It also mentions some extensions worth keeping around."
-content_type = "text"
+title = "SQLite is not a toy database"
+url = "https://antonz.org/sqlite-is-not-a-toy-database/"
 
 [[entries]]
-url = "https://wasmflow.com/"
+content_type = "text"
+summary = """
+A platform for building applications out of WebAssembly code containers. It orchestrates code and manages communication between dependencies. That code can exist as WebAssembly modules, external microservices, workers over a queue, or anything else that speaks the Wasmflow protocol.
+
+Wasmflow takes functional and flow-based concepts from projects like Erlang, Rx, FBP, and Haskell and combines them with concepts from Docker and Kubernetes."""
 title = "Wasmflow"
-summary = "A platform for building applications out of WebAssembly code containers. It orchestrates code and manages communication between dependencies. That code can exist as WebAssembly modules, external microservices, workers over a queue, or anything else that speaks the Wasmflow protocol.\n\nWasmflow takes functional and flow-based concepts from projects like Erlang, Rx, FBP, and Haskell and combines them with concepts from Docker and Kubernetes."
-content_type = "text"
+url = "https://wasmflow.com/"
 
 [[entries]]
-url = "https://holub.com/kpis-velocity-and-other-destructive-metrics/"
-title = "KPIs, Velocity, and Other Destructive Metrics"
-summary = "An article reflecting on metrics for managing software development."
 content_type = "text"
+summary = "An article reflecting on metrics for managing software development."
+title = "KPIs, Velocity, and Other Destructive Metrics"
+url = "https://holub.com/kpis-velocity-and-other-destructive-metrics/"

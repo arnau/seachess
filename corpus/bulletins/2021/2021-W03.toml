@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W03"
-publication_date = 2021-01-24
+publication_date = "2021-01-24"
 summary = "This week has been about category theory, exploring HTML from the command-line, a SQL linter, visual programming and the meaning of open source."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/Nukesor/pueue"
-title = "pueue"
+content_type = "text"
 summary = "A command-line task management tool for sequential and parallel execution of long-running tasks."
-content_type = "text"
+title = "pueue"
+url = "https://github.com/Nukesor/pueue"
 
 [[entries]]
-url = "https://github.com/ericchiang/pup"
-title = "pup"
+content_type = "text"
 summary = "A command-line tool to explore HTML documents using CSS selectors."
-content_type = "text"
+title = "pup"
+url = "https://github.com/ericchiang/pup"
 
 [[entries]]
-url = "https://www.sqlfluff.com/"
-title = "SQLfluff"
+content_type = "text"
 summary = "A command-line tool to lint SQL."
-content_type = "text"
+title = "SQLfluff"
+url = "https://www.sqlfluff.com/"
 
 [[entries]]
-url = "https://nodes.io/"
-title = "Nodes"
+content_type = "text"
 summary = "A tool to explore ideas with visual flow programming."
-content_type = "text"
+title = "Nodes"
+url = "https://nodes.io/"
 
 [[entries]]
-url = "https://boris-marinov.github.io/category-theory-illustrated/"
-title = "Category Theory Illustrated"
+content_type = "text"
 summary = "A book on Category Theory from a non-mathematical point of view."
-content_type = "text"
+title = "Category Theory Illustrated"
+url = "https://boris-marinov.github.io/category-theory-illustrated/"
 
 [[entries]]
-url = "https://writing.kemitchell.com/2021/01/21/Open-Source-Discrimination.html"
-title = "Open Source is Discrimination"
-summary = "An article on the changes in meaning of 'open' in open source licensing, discrimination, oppression and discernment."
 content_type = "text"
+summary = "An article on the changes in meaning of 'open' in open source licensing, discrimination, oppression and discernment."
+title = "Open Source is Discrimination"
+url = "https://writing.kemitchell.com/2021/01/21/Open-Source-Discrimination.html"

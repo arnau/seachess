@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2021-W05"
-publication_date = 2021-02-07
+publication_date = "2021-02-07"
 summary = "This week has been about asdf, text-based games, Turing incomplete languages, Disqus bad practices and software licensing."
+type = "bulletin"
 
 [[entries]]
-url = "https://if50.substack.com/p/introduction"
-title = "50 Years of Text Games"
+content_type = "text"
 summary = "An article introducing an ongoing series on the history of text-based games."
-content_type = "text"
+title = "50 Years of Text Games"
+url = "https://if50.substack.com/p/introduction"
 
 [[entries]]
-url = "https://asdf-vm.com/"
+content_type = "text"
+summary = """
+A tool to manage multiple runtime versions for Node.js, Python, Ruby, Elixir and more.
+
+If you happen to use MacOS and Python, this helps avoid the mess you can get into by using Python installed with [Homebrew](https://brew.sh/)."""
 title = "asdf"
-summary = "A tool to manage multiple runtime versions for Node.js, Python, Ruby, Elixir and more.\n\nIf you happen to use MacOS and Python, this helps avoid the mess you can get into by using Python installed with [Homebrew](https://brew.sh/)."
-content_type = "text"
+url = "https://asdf-vm.com/"
 
 [[entries]]
-url = "https://neilmitchell.blogspot.com/2020/11/turing-incomplete-languages.html"
-title = "Turing Incomplete Languages"
+content_type = "text"
 summary = "An article on the downsides of Turing incomplete languages."
-content_type = "text"
+title = "Turing Incomplete Languages"
+url = "https://neilmitchell.blogspot.com/2020/11/turing-incomplete-languages.html"
 
 [[entries]]
-url = "https://www.flagsmith.com/podcast/05-heather-meeker-oss-capital"
-title = "Interview with Heather Meeker: Founding Partner, OSS Capital"
+content_type = "text"
 summary = "An interview on software licensing. An interesting opinion to listen to if you've been following the drama Elastic vs Amazon."
-content_type = "text"
+title = "Interview with Heather Meeker: Founding Partner, OSS Capital"
+url = "https://www.flagsmith.com/podcast/05-heather-meeker-oss-capital"
 
 [[entries]]
-url = "https://supunkavinda.blog/disqus"
-title = "Disqus, the dark commenting system"
+content_type = "text"
 summary = "An article analysing Disqus and the consequences of trusting the service."
-content_type = "text"
+title = "Disqus, the dark commenting system"
+url = "https://supunkavinda.blog/disqus"
 
 [[entries]]
-url = "https://sheltered-objections.blogspot.com/2021/02/i-have-been-listening-regularly-for-few.html"
-title = "The Skeptics guide to Artificial Intelligence"
-summary = "An article aiming to bring some perspective on the meaning of intelligence in “Artificial Intelligence”."
 content_type = "text"
+summary = "An article aiming to bring some perspective on the meaning of intelligence in “Artificial Intelligence”."
+title = "The Skeptics guide to Artificial Intelligence"
+url = "https://sheltered-objections.blogspot.com/2021/02/i-have-been-listening-regularly-for-few.html"

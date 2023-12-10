@@ -1,40 +1,44 @@
-type = "bulletin"
 id = "2020-W39"
-publication_date = 2020-09-27
+publication_date = "2020-09-27"
 summary = "This week has been about anonymisation, state space models, sequence diagrams, cookie trackers and some bits on parsers."
+type = "bulletin"
 
 [[entries]]
-url = "https://themarkup.org/blacklight/2020/09/22/blacklight-tracking-advertisers-digital-privacy-sensitive-websites"
-title = "The High Privacy Cost of a “Free” Website"
+content_type = "text"
 summary = "An article on the risks of using services that cost no money. Cookies, fingerprinting, session recording and other horror stories."
-content_type = "text"
+title = "The High Privacy Cost of a “Free” Website"
+url = "https://themarkup.org/blacklight/2020/09/22/blacklight-tracking-advertisers-digital-privacy-sensitive-websites"
 
 [[entries]]
-url = "https://sequencediagram.org/"
-title = "Sequence diagram"
+content_type = "text"
 summary = "A service to draw UML sequence diagrams."
-content_type = "text"
+title = "Sequence diagram"
+url = "https://sequencediagram.org/"
 
 [[entries]]
-url = "https://pair.withgoogle.com/explorables/anonymization/"
-title = "How randomized response can help collect sensitive information responsibly"
+content_type = "text"
 summary = "An interactive article explaining a technique to reduce the risks of accidental deanonymisation."
-content_type = "text"
+title = "How randomized response can help collect sensitive information responsibly"
+url = "https://pair.withgoogle.com/explorables/anonymization/"
 
 [[entries]]
-url = "https://paschermayr.github.io/post/statespacemodels-1-a-primer-on-state-space-models/"
-title = "A Primer on State Space Models"
+content_type = "text"
 summary = "An article introducing a series on state space models (SSM). Hidden Markov Chains, Hidden Semi-Markov Chains and other beasts tamed with a few lines of [Julia](https://julialang.org/)."
-content_type = "text"
+title = "A Primer on State Space Models"
+url = "https://paschermayr.github.io/post/statespacemodels-1-a-primer-on-state-space-models/"
 
 [[entries]]
-url = "https://tratt.net/laurie/blog/2020/which_parsing_approach.html"
+content_type = "text"
+summary = """
+An article explaining different parsing strategies and their trade-offs.
+
+If you enjoyed it, “[Challenging LR Parsing](https://rust-analyzer.github.io//blog/2020/09/16/challeging-LR-parsing.html)”
+is a great response in the context of parsers that need tolerance to errors such as syntax highlighters and IDEs."""
 title = "Which Parsing Approach?"
-summary = "An article explaining different parsing strategies and their trade-offs.\n\nIf you enjoyed it, “[Challenging LR Parsing](https://rust-analyzer.github.io//blog/2020/09/16/challeging-LR-parsing.html)”\nis a great response in the context of parsers that need tolerance to errors such as syntax highlighters and IDEs."
-content_type = "text"
+url = "https://tratt.net/laurie/blog/2020/which_parsing_approach.html"
 
 [[entries]]
-url = "https://freemasen.com/blog/sqlite-parser-pt-1/index.html"
-title = "SQLite File Parser Pt. 1: The Header"
-summary = "A tutorial walking through a Rust implementation of a SQLite file format parser."
 content_type = "text"
+summary = "A tutorial walking through a Rust implementation of a SQLite file format parser."
+title = "SQLite File Parser Pt. 1: The Header"
+url = "https://freemasen.com/blog/sqlite-parser-pt-1/index.html"

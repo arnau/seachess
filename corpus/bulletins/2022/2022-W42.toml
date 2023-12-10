@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W42"
-publication_date = 2022-10-23
+publication_date = "2022-10-23"
 summary = "This week has been about risks of managing time in UTC, a library enhancing HTML, a Rust library for GUIs, a trust-based networks game, a catalogue of data visualisations and a book library."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/bigskysoftware/htmx"
-title = "htmx"
+content_type = "text"
 summary = "A JavaScript library enhancing HTML to build interactive user interfaces."
-content_type = "text"
+title = "htmx"
+url = "https://github.com/bigskysoftware/htmx"
 
 [[entries]]
-url = "https://github.com/fruiframework/frui"
-title = "Frui"
+content_type = "text"
 summary = "A Rust framework for building graphical user interfaces inspired by the Flutter architecture."
-content_type = "text"
+title = "Frui"
+url = "https://github.com/fruiframework/frui"
 
 [[entries]]
-url = "https://www.data-to-viz.com/"
-title = "From Data to Viz"
+content_type = "text"
 summary = "A website with a classification of chart types based on the data format. It comes in the form of a decision tree leading to a set of potentially appropriate visualizations to represent the dataset."
-content_type = "text"
+title = "From Data to Viz"
+url = "https://www.data-to-viz.com/"
 
 [[entries]]
-url = "https://ncase.me/trust/"
-title = "The evolution of trust"
+content_type = "text"
 summary = "A game aimed at explaining trust-based networks using game theory."
-content_type = "text"
+title = "The evolution of trust"
+url = "https://ncase.me/trust/"
 
 [[entries]]
-url = "https://openlibrary.org/"
-title = "Open Library"
+content_type = "text"
 summary = "A catalogue aiming to create one web page for every book ever published."
-content_type = "text"
+title = "Open Library"
+url = "https://openlibrary.org/"
 
 [[entries]]
-url = "https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/"
-title = "Storing UTC is not a silver bullet"
-summary = "An article aiming to provide a counterpoint to the common advice of managing time as much as possible in UTC.\n\n> I'm certainly not saying storing UTC is always the wrong thing to do, but it's not always the right thing to do either."
 content_type = "text"
+summary = """
+An article aiming to provide a counterpoint to the common advice of managing time as much as possible in UTC.
+
+> I'm certainly not saying storing UTC is always the wrong thing to do, but it's not always the right thing to do either."""
+title = "Storing UTC is not a silver bullet"
+url = "https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/"

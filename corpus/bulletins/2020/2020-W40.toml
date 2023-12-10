@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2020-W40"
-publication_date = 2020-10-04
+publication_date = "2020-10-04"
 summary = "This week has been about testing data pipelines, compression algorithms, notebooks, QR codes and tabular data."
+type = "bulletin"
 
 [[entries]]
-url = "https://vimacapp.com/"
-title = "Vimium for MacOS"
+content_type = "text"
 summary = "An application to move around MacOS with the keyboard a-la Vim."
-content_type = "text"
+title = "Vimium for MacOS"
+url = "https://vimacapp.com/"
 
 [[entries]]
-url = "https://research.swtch.com/qart"
-title = "QArt Codes"
+content_type = "text"
 summary = "An article on how QR codes work and how to exploit its tolerance to errors to embed images in them."
-content_type = "text"
+title = "QArt Codes"
+url = "https://research.swtch.com/qart"
 
 [[entries]]
-url = "https://docs.greatexpectations.io/"
-title = "Great Expectations"
+content_type = "text"
 summary = "A tool to harness testing for data pipelines."
-content_type = "text"
+title = "Great Expectations"
+url = "https://docs.greatexpectations.io/"
 
 [[entries]]
-url = "https://go-compression.github.io/"
-title = "The Hitchhiker’s Guide to Compression"
+content_type = "text"
 summary = "A guide on compression algorithms. The interactive section, once complete, will be an excellent place to get an intuition on how each algorithm work."
-content_type = "text"
+title = "The Hitchhiker’s Guide to Compression"
+url = "https://go-compression.github.io/"
 
 [[entries]]
-url = "https://jupytext.readthedocs.io/"
+content_type = "text"
+summary = """
+A tool to save [Jupyter notebooks](https://jupyter.org/) as extended Markdown or marked Python, R, Julia scripts.
+
+[Deepnote](https://deepnote.com/) might interest you if you are after a collaborative notebook experience."""
 title = "Jupytext"
-summary = "A tool to save [Jupyter notebooks](https://jupyter.org/) as extended Markdown or marked Python, R, Julia scripts.\n\n[Deepnote](https://deepnote.com/) might interest you if you are after a collaborative notebook experience."
-content_type = "text"
+url = "https://jupytext.readthedocs.io/"
 
 [[entries]]
-url = "https://www.dbcrossbar.org/"
-title = "dbcrossbar"
-summary = "A tool to copy tabular data between databases, CSV files and cloud storage."
 content_type = "text"
+summary = "A tool to copy tabular data between databases, CSV files and cloud storage."
+title = "dbcrossbar"
+url = "https://www.dbcrossbar.org/"

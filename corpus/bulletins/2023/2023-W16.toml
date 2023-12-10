@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W16"
-publication_date = 2023-04-23
+publication_date = "2023-04-23"
 summary = "This week has been about data exfiltration in Python, WebAssembly in Python, Rust backing mobile applications, text minimaps, interactive graphics in JavaScript and load balancer strategies."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/bytecodealliance/wasmtime-py"
-title = "Python WebAssembly runtime"
+content_type = "text"
 summary = "A Python WebAssembly runtime featuring [WebAssembly components](https://github.com/WebAssembly/component-model)."
-content_type = "text"
+title = "Python WebAssembly runtime"
+url = "https://github.com/bytecodealliance/wasmtime-py"
 
 [[entries]]
-url = "https://samwho.dev/load-balancing/"
-title = "Load Balancing"
+content_type = "text"
 summary = "An article on the ways a load balancer can distribute HTTP requests to a set of servers."
-content_type = "text"
+title = "Load Balancing"
+url = "https://samwho.dev/load-balancing/"
 
 [[entries]]
-url = "https://pixijs.com/"
-title = "PixiJS"
+content_type = "text"
 summary = "A rendering library aimed at creating interactive graphics (including games) abstracting away from the complexities of WebGL and browser and device compatibility."
-content_type = "text"
+title = "PixiJS"
+url = "https://pixijs.com/"
 
 [[entries]]
-url = "https://github.com/redbadger/crux"
-title = "Crux"
+content_type = "text"
 summary = "A Rust framework to help architect applications with a reusable core across mobile (iOS, Android) and web."
-content_type = "text"
+title = "Crux"
+url = "https://github.com/redbadger/crux"
 
 [[entries]]
-url = "https://blog.phylum.io/malicious-actors-use-unicode-support-in-python-to-evade-detection"
-title = "Malicious Actors Use Unicode Support in Python to Evade Detection"
+content_type = "text"
 summary = "An article on a technique to exfiltrate sensitive data leveraging Python support for Unicode in identifiers."
-content_type = "text"
+title = "Malicious Actors Use Unicode Support in Python to Evade Detection"
+url = "https://blog.phylum.io/malicious-actors-use-unicode-support-in-python-to-evade-detection"
 
 [[entries]]
-url = "https://github.com/wfxr/code-minimap"
-title = "code-minimap"
-summary = "A command-line tool written in Rust for generating text minimaps a-la code editor sidebars. There's also an [integration with Vim](https://github.com/wfxr/minimap.vim)."
 content_type = "text"
+summary = "A command-line tool written in Rust for generating text minimaps a-la code editor sidebars. There's also an [integration with Vim](https://github.com/wfxr/minimap.vim)."
+title = "code-minimap"
+url = "https://github.com/wfxr/code-minimap"

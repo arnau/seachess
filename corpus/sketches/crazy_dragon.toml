@@ -1,10 +1,7 @@
-type = "sketch"
-id = "crazy-dragon"
-title = "Crazy dragon"
 asset = "crazy_dragon.jpg"
 author = "arnau"
-publication_date = 2014-06-06
-tools = [
-  "ipad2",
-  "procreate",
-]
+id = "crazy-dragon"
+publication_date = "2014-06-06"
+title = "Crazy dragon"
+tools = ["ipad2", "procreate"]
+type = "sketch"

@@ -1,40 +1,59 @@
-type = "bulletin"
 id = "2020-W03"
-publication_date = 2020-01-19
+publication_date = "2020-01-19"
 summary = "This week has been about Git, Compiler explorer, Sqlite across Docker, a markdown editor and a tool to build themes for your editor."
+type = "bulletin"
 
 [[entries]]
-url = "https://stackedit.io/"
+content_type = "text"
+summary = """
+An open-source Markdown editor on the browser, as a library, extension or
+standalone."""
 title = "StackEdit"
-summary = "An open-source Markdown editor on the browser, as a library, extension or\nstandalone."
-content_type = "text"
+url = "https://stackedit.io/"
 
 [[entries]]
-url = "https://themer.dev/"
+content_type = "text"
+summary = """
+Web tool that takes a set of colors and generates themes for tools such as
+iTerm, Vim, VS Code, tmux and many more."""
 title = "Themer"
-summary = "Web tool that takes a set of colors and generates themes for tools such as\niTerm, Vim, VS Code, tmux and many more."
-content_type = "text"
+url = "https://themer.dev/"
 
 [[entries]]
-url = "https://www.alexdebrie.com/posts/dynamodb-no-bad-queries/"
+content_type = "text"
+summary = """
+This article explores in depth the DynamoDB tradeoffs in contrast with the
+relational database model and gives some insight in how to design your data
+when classic tools like SQL joins are not available."""
 title = "SQL, NoSQL, and Scale: How DynamoDB scales where relational databases don't"
-summary = "This article explores in depth the DynamoDB tradeoffs in contrast with the\nrelational database model and gives some insight in how to design your data\nwhen classic tools like SQL joins are not available."
-content_type = "text"
+url = "https://www.alexdebrie.com/posts/dynamodb-no-bad-queries/"
 
 [[entries]]
-url = "https://medium.com/@rbranson/sharing-sqlite-databases-across-containers-is-surprisingly-brilliant-bacb8d753054"
+content_type = "text"
+summary = """
+Segment shares their experience sharing SQLite database as a Docker volume
+leveraging [SQLite's Write-Ahead Logging (WAL)](https://www.sqlite.org/wal.html).
+
+If distributed SQLite sounds appealing to you don't miss [Rqlite](https://github.com/rqlite/rqlite)."""
 title = "Sharing a SQLite database across containers is surprisingly brilliant"
-summary = "Segment shares their experience sharing SQLite database as a Docker volume\nleveraging [SQLite's Write-Ahead Logging (WAL)](https://www.sqlite.org/wal.html).\n\nIf distributed SQLite sounds appealing to you don't miss [Rqlite](https://github.com/rqlite/rqlite)."
-content_type = "text"
+url = "https://medium.com/@rbranson/sharing-sqlite-databases-across-containers-is-surprisingly-brilliant-bacb8d753054"
 
 [[entries]]
-url = "https://github.com/wfxr/forgit"
+content_type = "text"
+summary = """
+A utility tool powered by [fzf](https://github.com/junegunn/fzf) for using git
+interactively."""
 title = "Forgit"
-summary = "A utility tool powered by [fzf](https://github.com/junegunn/fzf) for using git\ninteractively."
-content_type = "text"
+url = "https://github.com/wfxr/forgit"
 
 [[entries]]
-url = "https://godbolt.org/"
-title = "Godbolt: Compiler explorer"
-summary = "Web tool that lets you inspect the generated assembly from different\nprogramming languages such as Rust, Go or C++. The list is long.\n\nFollow the [Down the Stack: Compiled Rust Part\n1](https://blog.ryanlevick.com/down-the-stack-part-1/) article to get a gentle\nintroduction to x86-64 assembly using Godbolt."
 content_type = "text"
+summary = """
+Web tool that lets you inspect the generated assembly from different
+programming languages such as Rust, Go or C++. The list is long.
+
+Follow the [Down the Stack: Compiled Rust Part
+1](https://blog.ryanlevick.com/down-the-stack-part-1/) article to get a gentle
+introduction to x86-64 assembly using Godbolt."""
+title = "Godbolt: Compiler explorer"
+url = "https://godbolt.org/"

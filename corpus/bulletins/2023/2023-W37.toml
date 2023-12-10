@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W37"
-publication_date = 2023-09-17
+publication_date = "2023-09-17"
 summary = "This week has been about the 4-colour map theory, a cross-platform nantive GUI for Rust, a terminal file manager, an interactive Linux kernel map, the Odin programming language and a Unix timestamp clock."
+type = "bulletin"
 
 [[entries]]
-url = "https://odin-lang.org/"
-title = "Odin Programming Language"
+content_type = "text"
 summary = "A general-purpose programming language aiming to be an alternative to C. Similar in aim to [Zig](https://ziglang.org/)."
-content_type = "text"
+title = "Odin Programming Language"
+url = "https://odin-lang.org/"
 
 [[entries]]
-url = "https://aeon.co/videos/how-a-curious-question-about-colouring-maps-changed-mathematics-forever"
-title = "How a curious question about colouring maps changed mathematics forever"
-summary = "A video summarising how the attempt to prove the 4-colour map theory led to using computers to aid mathematicians validate or indeed generate proofs"
 content_type = "video"
+summary = "A video summarising how the attempt to prove the 4-colour map theory led to using computers to aid mathematicians validate or indeed generate proofs"
+title = "How a curious question about colouring maps changed mathematics forever"
+url = "https://aeon.co/videos/how-a-curious-question-about-colouring-maps-changed-mathematics-forever"
 
 [[entries]]
-url = "https://makelinux.github.io/kernel/map/"
-title = "Linux kernel map"
+content_type = "text"
 summary = "An interactive map of the Linux kernel, depicting interconnections between subsystems, functions and structures."
-content_type = "text"
+title = "Linux kernel map"
+url = "https://makelinux.github.io/kernel/map/"
 
 [[entries]]
-url = "https://retr0.id/stuff/2038/"
-title = "s32 unix clock"
+content_type = "text"
 summary = "A clock with four hands displaying the four bytes composing a 32-bit Unix timestamp. Can serve as a doomsday clock for the [2038 problem](https://en.wikipedia.org/wiki/Year_2038_problem)."
-content_type = "text"
+title = "s32 unix clock"
+url = "https://retr0.id/stuff/2038/"
 
 [[entries]]
-url = "https://github.com/sxyazi/yazi"
-title = "Yazi"
+content_type = "text"
 summary = "A terminal file manager aiming to provide an efficient, user-friendly, and customizable file management experience."
-content_type = "text"
+title = "Yazi"
+url = "https://github.com/sxyazi/yazi"
 
 [[entries]]
-url = "https://freyaui.dev/"
-title = "Freya"
-summary = "A cross-platform native GUI library for Rust, built on top of Dioxus and Skia as graphics library."
 content_type = "text"
+summary = "A cross-platform native GUI library for Rust, built on top of Dioxus and Skia as graphics library."
+title = "Freya"
+url = "https://freyaui.dev/"

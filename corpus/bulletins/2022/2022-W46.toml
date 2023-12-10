@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W46"
-publication_date = 2022-11-20
+publication_date = "2022-11-20"
 summary = "This week has been about better git revisions, creating videos with React, a procedural modelling application, JSON-based SQLite diffs, an Obsidian plugin for managing projects and a tool to track ML experiments."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/setzer22/blackjack"
-title = "Blackjack"
+content_type = "text"
 summary = "A procedural modelling application with a node-driven interface where operations compose to create a 3D mesh in a non-destructive way. Influenced by tools like Houdini or Blender."
-content_type = "text"
+title = "Blackjack"
+url = "https://github.com/setzer22/blackjack"
 
 [[entries]]
-url = "https://github.com/remotion-dev/remotion"
-title = "Remotion"
+content_type = "text"
 summary = "A framework for creating videos programmatically using React."
-content_type = "text"
+title = "Remotion"
+url = "https://github.com/remotion-dev/remotion"
 
 [[entries]]
-url = "https://github.com/simonw/sqlite-diffable"
+content_type = "text"
+summary = """
+A tool for transforming a SQLite database from and into JSON.
+
+It feels like a missed opportunity to align with standardisation efforts like [frictionless](https://frictionlessdata.io/)."""
 title = "sqlite-difftable"
-summary = "A tool for transforming a SQLite database from and into JSON.\n\nIt feels like a missed opportunity to align with standardisation efforts like [frictionless](https://frictionlessdata.io/)."
-content_type = "text"
+url = "https://github.com/simonw/sqlite-diffable"
 
 [[entries]]
-url = "https://blog.waleedkhan.name/bringing-revsets-to-git/"
-title = "Bringing revsets to Git"
+content_type = "text"
 summary = "An article introducing a query language for git revisions inspired by [Mercurial's revsets](https://www.mercurial-scm.org/repo/hg/help/revsets) aiming to be more expressive and consistent across commands."
-content_type = "text"
+title = "Bringing revsets to Git"
+url = "https://blog.waleedkhan.name/bringing-revsets-to-git/"
 
 [[entries]]
-url = "https://ploomber.io/blog/experiment-tracking/"
-title = "Who needs MLflow when you have SQLite?"
+content_type = "text"
 summary = "An article introducing [Ploomber](https://github.com/ploomber/ploomber), a tool based on SQLite to track and compare experiments."
-content_type = "text"
+title = "Who needs MLflow when you have SQLite?"
+url = "https://ploomber.io/blog/experiment-tracking/"
 
 [[entries]]
-url = "https://marcus.se.net/announcing-obsidian-projects/"
-title = "Obsidian Projects"
-summary = "A plugin for [Obsidian](https://obsidian.md) to view groups of notes as a table, kanban board or calendar."
 content_type = "text"
+summary = "A plugin for [Obsidian](https://obsidian.md) to view groups of notes as a table, kanban board or calendar."
+title = "Obsidian Projects"
+url = "https://marcus.se.net/announcing-obsidian-projects/"

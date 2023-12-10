@@ -1,40 +1,54 @@
-type = "bulletin"
 id = "2020-W02"
-publication_date = 2020-01-12
+publication_date = "2020-01-12"
 summary = "This is the first issue of the Seachess bulletin, where I share the things that caught my attention this week."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/BLAKE3-team/BLAKE3"
+content_type = "text"
+summary = """
+BLAKE3 is a new hashing algorithm substantially faster than BLAKE2 and SHA3.
+Also very interesting the way they use Merkle trees to allow incremental
+validation. See the [bao](https://github.com/oconnor663/bao) project for an
+application of it."""
 title = "BLAKE3"
-summary = "BLAKE3 is a new hashing algorithm substantially faster than BLAKE2 and SHA3.\nAlso very interesting the way they use Merkle trees to allow incremental\nvalidation. See the [bao](https://github.com/oconnor663/bao) project for an\napplication of it."
-content_type = "text"
+url = "https://github.com/BLAKE3-team/BLAKE3"
 
 [[entries]]
-url = "https://www.inkandswitch.com/local-first.html"
-title = "Local first: You own your data, in spite of the cloud"
+content_type = "text"
 summary = "Well articulated analysis on local first software, benefits and challenges."
-content_type = "text"
+title = "Local first: You own your data, in spite of the cloud"
+url = "https://www.inkandswitch.com/local-first.html"
 
 [[entries]]
-url = "https://musicforprogramming.net/"
-title = "Music for programming"
+content_type = "text"
 summary = "Curated music collection intended for prolonged intense concentration periods."
-content_type = "text"
+title = "Music for programming"
+url = "https://musicforprogramming.net/"
 
 [[entries]]
-url = "https://web.hypothes.is/"
+content_type = "text"
+summary = """
+Service built around the [Open Annotation](http://openannotation.org/)
+initiative which was the effort for the W3C specifications
+[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/),
+[Web Annotation Vocabulary](https://www.w3.org/TR/annotation-vocab/) and
+[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/)"""
 title = "Annotate the web, with anyone, anywhere"
-summary = "Service built around the [Open Annotation](http://openannotation.org/)\ninitiative which was the effort for the W3C specifications\n[Web Annotation Data Model](https://www.w3.org/TR/annotation-model/),\n[Web Annotation Vocabulary](https://www.w3.org/TR/annotation-vocab/) and\n[Web Annotation Protocol](https://www.w3.org/TR/annotation-protocol/)"
-content_type = "text"
+url = "https://web.hypothes.is/"
 
 [[entries]]
-url = "https://hackernoon.com/the-mvp-is-dead-long-live-the-rat-233d5d16ab02"
+content_type = "text"
+summary = """
+A bit old (2016) article about why the \"Riskiest Assumptions Test\" is a better
+tool for managing uncertainty in a project than the popular \"Minimum Viable
+Product\"."""
 title = "Riskiest Assumption Test. The MVP is dead, long live the RAT"
-summary = "A bit old (2016) article about why the \"Riskiest Assumptions Test\" is a better\ntool for managing uncertainty in a project than the popular \"Minimum Viable\nProduct\"."
-content_type = "text"
+url = "https://hackernoon.com/the-mvp-is-dead-long-live-the-rat-233d5d16ab02"
 
 [[entries]]
-url = "https://alpha.iodide.io/"
-title = "Iodide"
-summary = "Research tool from Mozilla exploring the use of WebAssembly to bring mature data\nanalysis tools such as Pandas to the browser."
 content_type = "text"
+summary = """
+Research tool from Mozilla exploring the use of WebAssembly to bring mature data
+analysis tools such as Pandas to the browser."""
+title = "Iodide"
+url = "https://alpha.iodide.io/"

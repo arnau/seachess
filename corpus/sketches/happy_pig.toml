@@ -1,10 +1,7 @@
-type = "sketch"
-id = "happy-pig"
-title = "Happy pig"
 asset = "happy_pig.jpg"
 author = "arnau"
-publication_date = 2013-01-01
-tools = [
-  "ipad2",
-  "procreate",
-]
+id = "happy-pig"
+publication_date = "2013-01-01"
+title = "Happy pig"
+tools = ["ipad2", "procreate"]
+type = "sketch"

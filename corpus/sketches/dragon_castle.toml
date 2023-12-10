@@ -1,10 +1,7 @@
-type = "sketch"
-id = "dragon-castle"
-title = "Dragon and castle"
 asset = "dragon_castle.jpg"
 author = "arnau"
-publication_date = 2014-03-10
-tools = [
-  "ipad2",
-  "procreate",
-]
+id = "dragon-castle"
+publication_date = "2014-03-10"
+title = "Dragon and castle"
+tools = ["ipad2", "procreate"]
+type = "sketch"

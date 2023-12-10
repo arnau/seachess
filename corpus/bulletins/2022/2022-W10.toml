@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W10"
-publication_date = 2022-03-13
+publication_date = "2022-03-13"
 summary = "This week has been about a diff tool for API specifications, a Lua code formatter, playing with undocumented APIs, a tool to visualise SHA256, how TLS works and a tool to inspect IEEE 754 floating point numbers."
+type = "bulletin"
 
 [[entries]]
-url = "https://sha256algorithm.com/"
-title = "SHA256 Algorithm"
+content_type = "text"
 summary = "A tool to visualise how the SHA256 algorithm works."
-content_type = "text"
+title = "SHA256 Algorithm"
+url = "https://sha256algorithm.com/"
 
 [[entries]]
-url = "https://www.h-schmidt.net/FloatConverter/IEEE754.html"
-title = "IEEE-754 Floating Point Converter"
+content_type = "text"
 summary = "A tool to convert between the decimal representation of numbers and the binary format used by modern CPUs (IEEE 754 floating point)."
-content_type = "text"
+title = "IEEE-754 Floating Point Converter"
+url = "https://www.h-schmidt.net/FloatConverter/IEEE754.html"
 
 [[entries]]
-url = "https://tls.ulfheim.net/"
-title = "The Illustrated TLS Connection"
+content_type = "text"
 summary = "A website explaining the mechanics of TLS."
-content_type = "text"
+title = "The Illustrated TLS Connection"
+url = "https://tls.ulfheim.net/"
 
 [[entries]]
-url = "https://github.com/JohnnyMorganz/StyLua"
-title = "StyLua"
+content_type = "text"
 summary = "A code formatter for Lua written in Rust."
-content_type = "text"
+title = "StyLua"
+url = "https://github.com/JohnnyMorganz/StyLua"
 
 [[entries]]
-url = "https://jvns.ca/blog/2022/03/10/how-to-use-undocumented-web-apis/"
-title = "How to use undocumented web APIs"
+content_type = "text"
 summary = "An article on how to discover and play around undocumented APIs."
-content_type = "text"
+title = "How to use undocumented web APIs"
+url = "https://jvns.ca/blog/2022/03/10/how-to-use-undocumented-web-apis/"
 
 [[entries]]
-url = "https://api-diff.io/"
-title = "API Diff"
-summary = "A tool to see the differences between two API specifications. Supported formats include OpenAPI, AsyncAPI, GraphQL, and GRPC."
 content_type = "text"
+summary = "A tool to see the differences between two API specifications. Supported formats include OpenAPI, AsyncAPI, GraphQL, and GRPC."
+title = "API Diff"
+url = "https://api-diff.io/"

@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W29"
-publication_date = 2022-07-24
+publication_date = "2022-07-24"
 summary = "This week has been about small Pull Requests, the Carbon programming language, a light markup inspired in Commonmark, a terminal file explorer, a crate for Neovim API and SQLite virtual tables in Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/mgunyho/tere"
-title = "tere"
+content_type = "text"
 summary = "A terminal file explorer. Aims to be a faster alternative to using `cd` and `ls` to browse folders in your terminal."
-content_type = "text"
+title = "tere"
+url = "https://github.com/mgunyho/tere"
 
 [[entries]]
-url = "https://github.com/noib3/nvim-oxi"
-title = "nvim-oxi"
+content_type = "text"
 summary = "A crate providing first-class Rust bindings to the API exposed by the Neovim terminal text editor."
-content_type = "text"
+title = "nvim-oxi"
+url = "https://github.com/noib3/nvim-oxi"
 
 [[entries]]
-url = "https://sergey.khabibullin.com/sqlite-extensions-in-rust/"
-title = "Extending SQLite with Rust to support Excel files as virtual tables"
+content_type = "text"
 summary = "An article showing how to use SQLite's virtual tables with Rust."
-content_type = "text"
+title = "Extending SQLite with Rust to support Excel files as virtual tables"
+url = "https://sergey.khabibullin.com/sqlite-extensions-in-rust/"
 
 [[entries]]
-url = "https://benjamincongdon.me/blog/2022/07/17/In-Praise-of-Stacked-PRs/"
-title = "In Praise of Stacked PRs"
+content_type = "text"
 summary = "An article on the practice of breaking up a large change into smaller, individually reviewable Pull Requests which can depend on each other, forming a direct acyclic graph."
-content_type = "text"
+title = "In Praise of Stacked PRs"
+url = "https://benjamincongdon.me/blog/2022/07/17/In-Praise-of-Stacked-PRs/"
 
 [[entries]]
-url = "https://github.com/carbon-language/carbon-lang"
+content_type = "text"
+summary = """
+An experimental programming language successor to C++.
+
+> Carbon is fundamentally a successor language approach, rather than an attempt to incrementally evolve C++. It is designed around interoperability with C++ as well as large-scale adoption and migration for existing C++ codebases and developers."""
 title = "Carbon language"
-summary = "An experimental programming language successor to C++.\n\n> Carbon is fundamentally a successor language approach, rather than an attempt to incrementally evolve C++. It is designed around interoperability with C++ as well as large-scale adoption and migration for existing C++ codebases and developers."
-content_type = "text"
+url = "https://github.com/carbon-language/carbon-lang"
 
 [[entries]]
-url = "https://github.com/jgm/djot"
-title = "Djot"
-summary = "A light markup syntax as a reaction of the challenges that Commonmark design decisions impose onto the parsing implementations. It also supports definition lists, footnotes, tables, several new kinds of inline formatting (insert, delete, highlight, superscript, subscript), math, smart punctuation, attributes that can be applied to any element, and generic containers for block-level, inline-level, and raw content."
 content_type = "text"
+summary = "A light markup syntax as a reaction of the challenges that Commonmark design decisions impose onto the parsing implementations. It also supports definition lists, footnotes, tables, several new kinds of inline formatting (insert, delete, highlight, superscript, subscript), math, smart punctuation, attributes that can be applied to any element, and generic containers for block-level, inline-level, and raw content."
+title = "Djot"
+url = "https://github.com/jgm/djot"

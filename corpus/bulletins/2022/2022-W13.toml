@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W13"
-publication_date = 2022-04-03
+publication_date = "2022-04-03"
 summary = "This week has been about JSON in SQLite, SQLite with Litestream, a code editor written in Rust, a typed dialect of Lua, RDF shape trees and distributed knowledge APIs."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/teal-language/tl"
-title = "Teal"
+content_type = "text"
 summary = "A typed dialect of Lua."
-content_type = "text"
+title = "Teal"
+url = "https://github.com/teal-language/tl"
 
 [[entries]]
-url = "https://shapetrees.org/"
+content_type = "text"
+summary = """
+A mechanism for declaring and operating over constellations of resource-oriented data structures.
+
+> Shape trees marry RDF vocabularies, shapes, and resources into \"little trees\" that provide machine to machine interoperability, combining them into concepts that humans can easily comprehend, such as medical records, notes, notebooks, calendars, and financial records."""
 title = "Shape trees"
-summary = "A mechanism for declaring and operating over constellations of resource-oriented data structures.\n\n> Shape trees marry RDF vocabularies, shapes, and resources into \"little trees\" that provide machine to machine interoperability, combining them into concepts that humans can easily comprehend, such as medical records, notes, notebooks, calendars, and financial records."
-content_type = "text"
+url = "https://shapetrees.org/"
 
 [[entries]]
-url = "https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/"
-title = "Reflections of knowledge"
+content_type = "text"
 summary = "An article describing the upcoming shift from API integration to data integration, why we assume the latter is the easier problem, and what it fundamentally means to channel abstract knowledge through concrete Web APIs."
-content_type = "text"
+title = "Reflections of knowledge"
+url = "https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/"
 
 [[entries]]
-url = "https://github.com/mcobzarenco/zee"
-title = "Zee"
+content_type = "text"
 summary = "A modern editor for the terminal written in Rust."
-content_type = "text"
+title = "Zee"
+url = "https://github.com/mcobzarenco/zee"
 
 [[entries]]
-url = "https://tailscale.com/blog/database-for-2022/"
-title = "A database for 2022"
+content_type = "text"
 summary = "An article on moving from [etcd](https://etcd.io/) to [SQLite](https://sqlite.org/) with [Litestream](https://litestream.io/) to adopt a single-file database with near-realtime replication."
-content_type = "text"
+title = "A database for 2022"
+url = "https://tailscale.com/blog/database-for-2022/"
 
 [[entries]]
-url = "https://christine.website/blog/sqlite-json-munge-2022-01-04"
-title = "Bashing JSON into Shape with SQLite"
-summary = "An article showcasing how to use JSON in SQLite leveraging triggers to automate data normalisation."
 content_type = "text"
+summary = "An article showcasing how to use JSON in SQLite leveraging triggers to automate data normalisation."
+title = "Bashing JSON into Shape with SQLite"
+url = "https://christine.website/blog/sqlite-json-munge-2022-01-04"

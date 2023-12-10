@@ -1,40 +1,52 @@
-type = "bulletin"
 id = "2020-W27"
-publication_date = 2020-07-05
+publication_date = "2020-07-05"
 summary = "This week has been about JIT compilers, domain models, a pixel editor, pagination in SQL and ARM vs x86."
+type = "bulletin"
 
 [[entries]]
-url = "https://rx.cloudhead.io/"
+content_type = "text"
+summary = """
+A pixel editor with a modal interface that allows you to create still and
+animated pixel art."""
 title = "rx: Modern and minimalist pixel editor"
-summary = "A pixel editor with a modal interface that allows you to create still and\nanimated pixel art."
-content_type = "text"
+url = "https://rx.cloudhead.io/"
 
 [[entries]]
-url = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
+content_type = "text"
+summary = """
+An article reflecting back on the 4 years the XI editor has been in
+development, from early ambitions to roadblockers and assumptions that turned
+out to be not quite right."""
 title = "xi-editor retrospective"
-summary = "An article reflecting back on the 4 years the XI editor has been in\ndevelopment, from early ambitions to roadblockers and assumptions that turned\nout to be not quite right."
-content_type = "text"
+url = "https://raphlinus.github.io/xi/2020/06/27/xi-retrospective.html"
 
 [[entries]]
-url = "https://use-the-index-luke.com/no-offset"
+content_type = "text"
+summary = """
+A classic article on the implications of paginating SQL using offset and the
+benefits of the alternative approach.
+
+I was revisiting this article to try to optimise a query on a large SQLite
+table (191 million records) but sadly SQLite does not implement `FETCH`."""
 title = "We need tool support for keyset pagination"
-summary = "A classic article on the implications of paginating SQL using offset and the\nbenefits of the alternative approach.\n\nI was revisiting this article to try to optimise a query on a large SQLite\ntable (191 million records) but sadly SQLite does not implement `FETCH`."
-content_type = "text"
+url = "https://use-the-index-luke.com/no-offset"
 
 [[entries]]
-url = "https://mkaszubowski.com/2020/06/24/decomposing-models-lifecycle.html"
+content_type = "text"
+summary = """
+An article analysing the anemic domain model and how to recover from it using
+the lifecycle of the data involved."""
 title = "Decomposing domain models based on lifecycles"
-summary = "An article analysing the anemic domain model and how to recover from it using\nthe lifecycle of the data involved."
-content_type = "text"
+url = "https://mkaszubowski.com/2020/06/24/decomposing-models-lifecycle.html"
 
 [[entries]]
-url = "https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/"
-title = "A crash course in just-in-time (JIT) compilers"
+content_type = "text"
 summary = "An article on interpreters, compilers and how just-in-time compilers work."
-content_type = "text"
+title = "A crash course in just-in-time (JIT) compilers"
+url = "https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/"
 
 [[entries]]
-url = "https://www.nickwilcox.com/blog/arm_vs_x86_memory_model/"
-title = "Examining ARM vs X86 Memory Models with Rust"
-summary = "An article exploring how ARM and x86 work."
 content_type = "text"
+summary = "An article exploring how ARM and x86 work."
+title = "Examining ARM vs X86 Memory Models with Rust"
+url = "https://www.nickwilcox.com/blog/arm_vs_x86_memory_model/"

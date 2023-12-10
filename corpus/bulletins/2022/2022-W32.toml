@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W32"
-publication_date = 2022-08-14
+publication_date = "2022-08-14"
 summary = "This week has been about a SQLite extension for querying HTML, a SQLite extension for reading line-based files, a Neovim plugin for Treesitter navigation, Trusted Execution Environments based on WebAssembly, a Markdown viewer and an article on Meta privacy attacks."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/asg017/sqlite-lines"
-title = "sqlite-lines"
+content_type = "text"
 summary = "A SQLite extension for reading large files line-by-line (NDJSON, logs, txt, etc.)"
-content_type = "text"
+title = "sqlite-lines"
+url = "https://github.com/asg017/sqlite-lines"
 
 [[entries]]
-url = "https://github.com/asg017/sqlite-html"
-title = "sqlite-html"
+content_type = "text"
 summary = "A SQLite extension for querying, manipulating, and creating HTML elements."
-content_type = "text"
+title = "sqlite-html"
+url = "https://github.com/asg017/sqlite-html"
 
 [[entries]]
-url = "https://github.com/enarx/enarx"
-title = "Enarx"
+content_type = "text"
 summary = "A command-line tool for running applications inside Trusted Execution Environments (TEEs) based on WebAssembly."
-content_type = "text"
+title = "Enarx"
+url = "https://github.com/enarx/enarx"
 
 [[entries]]
-url = "https://github.com/trimental/inlyne"
-title = "Inlyne"
+content_type = "text"
 summary = "A viewer for Markdown and HTML, GPU powered and browserless (no Electron, Tauri, etc)."
-content_type = "text"
+title = "Inlyne"
+url = "https://github.com/trimental/inlyne"
 
 [[entries]]
-url = "https://github.com/drybalka/tree-climber.nvim"
-title = "tree-climber.nvim"
+content_type = "text"
 summary = "A Neovim plugin for easy navigation around the syntax-tree produced by Treesitter that also works in comments and multi-language files."
-content_type = "text"
+title = "tree-climber.nvim"
+url = "https://github.com/drybalka/tree-climber.nvim"
 
 [[entries]]
-url = "https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser"
-title = "iOS Privacy: Instagram and Facebook can track anything you do on any website in their in-app browser"
-summary = "An article on the privacy attacks Meta uses in their iOS applications."
 content_type = "text"
+summary = "An article on the privacy attacks Meta uses in their iOS applications."
+title = "iOS Privacy: Instagram and Facebook can track anything you do on any website in their in-app browser"
+url = "https://krausefx.com/blog/ios-privacy-instagram-and-facebook-can-track-anything-you-do-on-any-website-in-their-in-app-browser"

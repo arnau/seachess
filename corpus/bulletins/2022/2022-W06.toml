@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W06"
-publication_date = 2022-02-13
+publication_date = "2022-02-13"
 summary = "This week has been about a service for arXiv content in HTML5, WebAssembly in Kubernetes, SQL fundamentals, challenges with highly distributed data, W3C WebTransport and information theory applied to Wordle."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=2yQIBZbKhdU"
-title = "W3C WebTransport Working Group Updates - October 2021"
+content_type = "video"
 summary = "A presentation on the new [W3C WebTransport API](https://w3c.github.io/webtransport/) and how it compares to existing ones like W3C WebRTC."
-content_type = "video"
+title = "W3C WebTransport Working Group Updates - October 2021"
+url = "https://www.youtube.com/watch?v=2yQIBZbKhdU"
 
 [[entries]]
-url = "https://sqlbolt.com/"
-title = "SQLBolt"
+content_type = "text"
 summary = "An interactive tutorial on the fundamentals of SQL."
-content_type = "text"
+title = "SQLBolt"
+url = "https://sqlbolt.com/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=v68zYyaEmEA"
-title = "Solving Wordle using information theory"
-summary = "A video working through solving Wordle whilst introducing some rudiments of information theory."
 content_type = "video"
+summary = "A video working through solving Wordle whilst introducing some rudiments of information theory."
+title = "Solving Wordle using information theory"
+url = "https://www.youtube.com/watch?v=v68zYyaEmEA"
 
 [[entries]]
-url = "https://www.rubensworks.net/blog/2022/01/21/querying-a-decentralized-web/"
-title = "Querying a Decentralized Web"
+content_type = "text"
 summary = "An article reflecting on the challenges ahead for working with highly distributed data."
-content_type = "text"
+title = "Querying a Decentralized Web"
+url = "https://www.rubensworks.net/blog/2022/01/21/querying-a-decentralized-web/"
 
 [[entries]]
-url = "https://krustlet.dev/"
+content_type = "text"
+summary = """
+A tool to run WebAssembly workloads natively on Kubernetes.
+
+The tutorial [Containerless! How to Run WebAssembly Workloads on Kubernetes with Rust](https://developer.okta.com/blog/2022/01/28/webassembly-on-kubernetes-with-rust) gives an alternative starting point if the official documentation is not enough."""
 title = "Krustlet"
-summary = "A tool to run WebAssembly workloads natively on Kubernetes.\n\nThe tutorial [Containerless! How to Run WebAssembly Workloads on Kubernetes with Rust](https://developer.okta.com/blog/2022/01/28/webassembly-on-kubernetes-with-rust) gives an alternative starting point if the official documentation is not enough."
-content_type = "text"
+url = "https://krustlet.dev/"
 
 [[entries]]
-url = "https://ar5iv.org/"
-title = "ar5iv"
-summary = "A web service offering HTML5 articles from arXiv.org. It's still quite flakey but promises a future with less PDF burden."
 content_type = "text"
+summary = "A web service offering HTML5 articles from arXiv.org. It's still quite flakey but promises a future with less PDF burden."
+title = "ar5iv"
+url = "https://ar5iv.org/"

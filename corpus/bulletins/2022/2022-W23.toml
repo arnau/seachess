@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W23"
-publication_date = 2022-06-12
+publication_date = "2022-06-12"
 summary = "This week has been about a tag-based file system, the Starlark configuration language, a React.js hook-based state-management solution, a talk on the Block Protocol, a service for placeholder images and a paper on exploiting techniques using images."
+type = "bulletin"
 
 [[entries]]
-url = "https://amoffat.github.io/supertag/"
-title = "Supertag"
+content_type = "text"
 summary = "A tag-based file system, written in Rust, that provides a unique view of your files by removing the hierarchy constraints typically imposed on files and folders."
-content_type = "text"
+title = "Supertag"
+url = "https://amoffat.github.io/supertag/"
 
 [[entries]]
-url = "https://picsum.photos/"
-title = "Lorem Picsum"
+content_type = "text"
 summary = "A service to quickly use placeholder images."
-content_type = "text"
+title = "Lorem Picsum"
+url = "https://picsum.photos/"
 
 [[entries]]
-url = "https://github.com/pmndrs/zustand"
-title = "zustand"
+content_type = "text"
 summary = "A barebones state-management solution for React.js using simplified flux principles and hooks."
-content_type = "text"
+title = "zustand"
+url = "https://github.com/pmndrs/zustand"
 
 [[entries]]
-url = "https://stegosploit.info/"
-title = "Stegosploit"
+content_type = "text"
 summary = "A paper discussing two techniques used for image based exploit delivery: Steganography and Polyglots."
-content_type = "text"
+title = "Stegosploit"
+url = "https://stegosploit.info/"
 
 [[entries]]
-url = "https://github.com/bazelbuild/starlark"
-title = "Starlark"
+content_type = "text"
 summary = "A reference implementation for Starlark, a configuration language. It is a dialect of Python, dynamically typed with first-class functions and garbage collection."
-content_type = "text"
+title = "Starlark"
+url = "https://github.com/bazelbuild/starlark"
 
 [[entries]]
-url = "https://maggieappleton.com/block-data"
-title = "The Block-Paved Path to Structured Data"
-summary = "A talk on the reasons and ambitions of the [Block Protocol](https://blockprotocol.org/)."
 content_type = "video"
+summary = "A talk on the reasons and ambitions of the [Block Protocol](https://blockprotocol.org/)."
+title = "The Block-Paved Path to Structured Data"
+url = "https://maggieappleton.com/block-data"

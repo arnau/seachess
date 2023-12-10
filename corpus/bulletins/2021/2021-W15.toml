@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W15"
-publication_date = 2021-04-18
+publication_date = "2021-04-18"
 summary = "This week has been about UI components, PostgreSQL as a graph, notebooks in Elixir, blocking Google tracking and a tool for managing your work."
+type = "bulletin"
 
 [[entries]]
-url = "https://spreadprivacy.com/block-floc-with-duckduckgo/"
-title = "Use the DuckDuckGo Extension to Block FLoC, Google’s New Tracking Method in Chrome"
+content_type = "text"
 summary = "A Chrome extension to block Google from exploiting you. Or stop using Chrome."
-content_type = "text"
+title = "Use the DuckDuckGo Extension to Block FLoC, Google’s New Tracking Method in Chrome"
+url = "https://spreadprivacy.com/block-floc-with-duckduckgo/"
 
 [[entries]]
-url = "https://www.focalboard.com/"
-title = "Focalboard"
+content_type = "text"
 summary = "A tool to manage work across individuals and teams. An open source, self-hosted or desktop alternative to [Notion](https://www.notion.so/), [Asana](https://asana.com/) and [Trello](https://trello.com/)."
-content_type = "text"
+title = "Focalboard"
+url = "https://www.focalboard.com/"
 
 [[entries]]
-url = "https://github.com/apache/incubator-age"
-title = "Apache AGE"
+content_type = "text"
 summary = "A PostgreSQL extension that adds graph database functionality. It supports among other things the [openCypher](https://www.opencypher.org/) query language"
-content_type = "text"
+title = "Apache AGE"
+url = "https://github.com/apache/incubator-age"
 
 [[entries]]
-url = "https://component.gallery/"
-title = "Component Gallery"
+content_type = "text"
 summary = "A collection of interface components from real-world design systems."
-content_type = "text"
+title = "Component Gallery"
+url = "https://component.gallery/"
 
 [[entries]]
-url = "https://github.com/elixir-nx/livebook"
-title = "Livebook"
+content_type = "text"
 summary = "A web application for writing interactive code notebooks in Elixir. It allows for multiple users working at the same time, sequential evaluation for higher reproducibility and notebooks are persisted in _livemd_, yet another flavour of Markdown."
-content_type = "text"
+title = "Livebook"
+url = "https://github.com/elixir-nx/livebook"
 
 [[entries]]
-url = "https://github.com/marcpaq/b1fipl"
-title = "A Bestiary of Single-File Implementations of Programming Languages"
-summary = "A collection of tiny programming languages great for learning how to implement one."
 content_type = "text"
+summary = "A collection of tiny programming languages great for learning how to implement one."
+title = "A Bestiary of Single-File Implementations of Programming Languages"
+url = "https://github.com/marcpaq/b1fipl"

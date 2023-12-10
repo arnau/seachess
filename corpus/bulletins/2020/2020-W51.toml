@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2020-W51"
-publication_date = 2020-12-20
+publication_date = "2020-12-20"
 summary = "This week has been about Entity Resolution techniques, a game using Bevy, information visualisation and leaking models."
+type = "bulletin"
 
 [[entries]]
-url = "https://infovis.fh-potsdam.de/tutorials/"
-title = "Information Visualization"
+content_type = "text"
 summary = "A collection of lectures on the fundamentals of information visualisation."
-content_type = "text"
+title = "Information Visualization"
+url = "https://infovis.fh-potsdam.de/tutorials/"
 
 [[entries]]
-url = "https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps/"
-title = "Exploiting dynamic rendering engines to take control of web apps"
+content_type = "text"
 summary = "An article exploring an attack websites using the prerendering technique.\""
-content_type = "text"
+title = "Exploiting dynamic rendering engines to take control of web apps"
+url = "https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps/"
 
 [[entries]]
-url = "https://blog.acolyer.org/2020/12/14/entity-resolution/"
-title = "An overview of end-to-end entity resolution for big data"
+content_type = "text"
 summary = "An article analysing a paper on Entity Resoultion (ER) techniques."
-content_type = "text"
+title = "An overview of end-to-end entity resolution for big data"
+url = "https://blog.acolyer.org/2020/12/14/entity-resolution/"
 
 [[entries]]
-url = "https://www.drivendata.co/blog/nbautoexport-jupyter-code-review/"
-title = "Jupyter Notebooks and Code Reviews"
+content_type = "text"
 summary = "An article exploring the use of [nbautoexport](https://github.com/drivendataorg/nbautoexport/) to improve the user experience of reviewing Jupyter notebook changes."
-content_type = "text"
+title = "Jupyter Notebooks and Code Reviews"
+url = "https://www.drivendata.co/blog/nbautoexport-jupyter-code-review/"
 
 [[entries]]
-url = "https://pair.withgoogle.com/explorables/data-leak/"
-title = "Why Some Models Leak Data"
+content_type = "text"
 summary = "An article showcasing machine learning models that leak information inadvertently."
-content_type = "text"
+title = "Why Some Models Leak Data"
+url = "https://pair.withgoogle.com/explorables/data-leak/"
 
 [[entries]]
-url = "https://caballerocoll.com/blog/bevy-chess-tutorial/"
-title = "Chess game in Rust using Bevy"
-summary = "A tutorial to get started with the game engine [Bevy](https://bevyengine.org/)."
 content_type = "text"
+summary = "A tutorial to get started with the game engine [Bevy](https://bevyengine.org/)."
+title = "Chess game in Rust using Bevy"
+url = "https://caballerocoll.com/blog/bevy-chess-tutorial/"

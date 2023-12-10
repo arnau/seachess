@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W34"
-publication_date = 2022-08-28
+publication_date = "2022-08-28"
 summary = "This week has been about the SQLite WAL format, a tool to search inside PDFs, graph visualisation with WebGL, an end-to-end database, best practices for webhooks and a Postgres playground."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/reaviz/reagraph"
-title = "Reagraph"
+content_type = "text"
 summary = "A high-performance network graph visualization built in WebGL for React."
-content_type = "text"
+title = "Reagraph"
+url = "https://github.com/reaviz/reagraph"
 
 [[entries]]
-url = "https://github.com/phiresky/ripgrep-all"
-title = "ripgrep-all"
+content_type = "text"
 summary = "A line-oriented search tool that allows you to use regex-based search in pdf, docx, sqlite, jpg, movie subtitles (mkv, mp4) and more."
-content_type = "text"
+title = "ripgrep-all"
+url = "https://github.com/phiresky/ripgrep-all"
 
 [[entries]]
-url = "https://webhooks.fyi/"
-title = "Webhooks.fyi"
+content_type = "text"
 summary = "A collection of webhook providers and best practices for providing and consuming webhooks."
-content_type = "text"
+title = "Webhooks.fyi"
+url = "https://webhooks.fyi/"
 
 [[entries]]
-url = "https://github.com/surrealdb/surrealdb"
+content_type = "text"
+summary = """
+An end-to-end cloud native database. It aims to reduce the development time of web applications by removing the need for most server-side components.
+
+It supports SQL querying from client devices, GraphQL, ACID transactions, WebSocket connections, structured and unstructured data, graph querying, full-text indexing, geospatial querying, and row-by-row permissions-based access."""
 title = "SurrealDB"
-summary = "An end-to-end cloud native database. It aims to reduce the development time of web applications by removing the need for most server-side components.\n\nIt supports SQL querying from client devices, GraphQL, ACID transactions, WebSocket connections, structured and unstructured data, graph querying, full-text indexing, geospatial querying, and row-by-row permissions-based access."
-content_type = "text"
+url = "https://github.com/surrealdb/surrealdb"
 
 [[entries]]
-url = "https://fly.io/blog/sqlite-internals-wal/"
-title = "How SQLite Scales Read Concurrency"
+content_type = "text"
 summary = "An article diving into the SQLite write-ahead log (WAL) format."
-content_type = "text"
+title = "How SQLite Scales Read Concurrency"
+url = "https://fly.io/blog/sqlite-internals-wal/"
 
 [[entries]]
-url = "https://www.crunchydata.com/developers/tutorials"
-title = "Postgres Playground"
-summary = "A collection of Postgres tutorials with a full in-browser Postgres."
 content_type = "text"
+summary = "A collection of Postgres tutorials with a full in-browser Postgres."
+title = "Postgres Playground"
+url = "https://www.crunchydata.com/developers/tutorials"

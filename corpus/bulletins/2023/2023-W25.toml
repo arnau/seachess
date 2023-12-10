@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W25"
-publication_date = 2023-06-25
+publication_date = "2023-06-25"
 summary = "This week has been about completion scripts from BNF, a lambda calculus repl, Rust Git hooks, the Kakoune editor, repurposing hardware and data abstractions."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.bkase.io/posts/data-abstraction"
-title = "Data Abstraction: Theory And Practice"
+content_type = "text"
 summary = "An article exploring abstraction through different languages' lens on interfaces."
-content_type = "text"
+title = "Data Abstraction: Theory And Practice"
+url = "https://www.bkase.io/posts/data-abstraction"
 
 [[entries]]
-url = "https://github.com/swellaby/rusty-hook"
-title = "rusty-hook"
+content_type = "text"
 summary = "A Rust library enabling Git hook configurable via a TOML file."
-content_type = "text"
+title = "rusty-hook"
+url = "https://github.com/swellaby/rusty-hook"
 
 [[entries]]
-url = "https://github.com/orsinium-labs/rlci"
-title = "Overly-documented Rust-powered Lambda Calculus interpreter"
+content_type = "text"
 summary = "A [Lambda Calculus](https://en.wikipedia.org/wiki/Lambda_calculus) implementation including a REPL, thoroughly documented."
-content_type = "text"
+title = "Overly-documented Rust-powered Lambda Calculus interpreter"
+url = "https://github.com/orsinium-labs/rlci"
 
 [[entries]]
-url = "https://github.com/adaszko/complgen"
-title = "complgen"
+content_type = "text"
 summary = "A tool to generate completion scripts from a BNF-like grammar."
-content_type = "text"
+title = "complgen"
+url = "https://github.com/adaszko/complgen"
 
 [[entries]]
-url = "https://permacomputing.net/"
+content_type = "text"
+summary = """
+A website on the idea of minimising waste by maximising hardware lifespans, minimising energy use and focusing on the use of available computational resources.
+
+If this topic interests you, [Build a cheap but fast home NAS system](https://www.danieldemmel.me/blog/build-a-cheap-but-fast-home-nas-system) might be of your interest."""
 title = "Permacomputing"
-summary = "A website on the idea of minimising waste by maximising hardware lifespans, minimising energy use and focusing on the use of available computational resources.\n\nIf this topic interests you, [Build a cheap but fast home NAS system](https://www.danieldemmel.me/blog/build-a-cheap-but-fast-home-nas-system) might be of your interest."
-content_type = "text"
+url = "https://permacomputing.net/"
 
 [[entries]]
-url = "https://kakoune.org/"
-title = "Kakoune"
-summary = "A modal editor with advanced text manipulation and extensible with plugins. [Helix](https://helix-editor.com/) is heavily influenced by it."
 content_type = "text"
+summary = "A modal editor with advanced text manipulation and extensible with plugins. [Helix](https://helix-editor.com/) is heavily influenced by it."
+title = "Kakoune"
+url = "https://kakoune.org/"

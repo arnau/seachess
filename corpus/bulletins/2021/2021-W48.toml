@@ -1,40 +1,45 @@
-type = "bulletin"
 id = "2021-W48"
-publication_date = 2021-12-05
+publication_date = "2021-12-05"
 summary = "This week has been about parametric curves and surfaces, a tool to manage Cloudflare workers with Deno, a replication extension for SQLite, a Markdown editor, an article on merge queues and a lightweight alternative to React."
+type = "bulletin"
 
 [[entries]]
-url = "https://denoflare.dev/"
-title = "Denoflare"
+content_type = "text"
 summary = "A tool to manage and deploy CloudFlare Workers using Deno."
-content_type = "text"
+title = "Denoflare"
+url = "https://denoflare.dev/"
 
 [[entries]]
-url = "https://www.solidjs.com/"
+content_type = "text"
+summary = """
+A declarative, efficient, and flexible JavaScript library for building user interfaces.
+
+> Solid follows the same philosophy as React with unidirectional data flow,
+> read/write segregation, and immutable interfaces. It however has a completely
+> different implementation that forgoes using a Virtual DOM."""
 title = "SolidJS"
-summary = "A declarative, efficient, and flexible JavaScript library for building user interfaces.\n\n> Solid follows the same philosophy as React with unidirectional data flow,\n> read/write segregation, and immutable interfaces. It however has a completely\n> different implementation that forgoes using a Virtual DOM."
-content_type = "text"
+url = "https://www.solidjs.com/"
 
 [[entries]]
-url = "https://kflansburg.com/posts/merge-queues/"
-title = "Merge Queues with Bors"
+content_type = "text"
 summary = "An article exploring the tradeoffs to consider when using “merge queues” in a version-controlled workflow."
-content_type = "text"
+title = "Merge Queues with Bors"
+url = "https://kflansburg.com/posts/merge-queues/"
 
 [[entries]]
-url = "https://engineering.backtrace.io/2021-12-02-verneuil-s3-backed-asynchronous-replication-for-sqlite/"
-title = "Verneuil: S3-backed asynchronous replication for SQLite"
+content_type = "text"
 summary = "An article announcing a SQLite extension to replicate databases to S3."
-content_type = "text"
+title = "Verneuil: S3-backed asynchronous replication for SQLite"
+url = "https://engineering.backtrace.io/2021-12-02-verneuil-s3-backed-asynchronous-replication-for-sqlite/"
 
 [[entries]]
-url = "https://ciechanow.ski/curves-and-surfaces/"
-title = "Curves and Surfaces"
+content_type = "text"
 summary = "A tutorial on how parametric curves and surfaces work with a gentle introduction of terminology along the way."
-content_type = "text"
+title = "Curves and Surfaces"
+url = "https://ciechanow.ski/curves-and-surfaces/"
 
 [[entries]]
-url = "https://github.com/marktext/marktext"
-title = "Marktext"
-summary = "A simple open-source markdown editor focused on speed and usability."
 content_type = "text"
+summary = "A simple open-source markdown editor focused on speed and usability."
+title = "Marktext"
+url = "https://github.com/marktext/marktext"

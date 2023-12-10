@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W14"
-publication_date = 2022-04-10
+publication_date = "2022-04-10"
 summary = "This week has been about Flow typing, CRDTs, Dagger and CUE, Monte Carlo forecasting, Clojure and using the relational model in UNIX-like pipes."
+type = "bulletin"
 
 [[entries]]
-url = "https://dagger.io/"
+content_type = "text"
+summary = """
+A toolkit for managing CI/CD pipelines with the ability to debug locally.
+
+I found particularly interesting the fact that instead of dreadful piles of YAML it uses [CUE](https://cuelang.org/)."""
 title = "Dagger"
-summary = "A toolkit for managing CI/CD pipelines with the ability to debug locally.\n\nI found particularly interesting the fact that instead of dreadful piles of YAML it uses [CUE](https://cuelang.org/)."
-content_type = "text"
+url = "https://dagger.io/"
 
 [[entries]]
-url = "https://www.maria.cloud/intro"
-title = "Learn Clojure with Shapes"
+content_type = "text"
 summary = "An interactive tutorial to learn the basics of Clojure."
-content_type = "text"
+title = "Learn Clojure with Shapes"
+url = "https://www.maria.cloud/intro"
 
 [[entries]]
-url = "https://relational-pipes.globalcode.info/v_0/index.xhtml"
-title = "Relational pipes"
+content_type = "text"
 summary = "An article exploring the idea of using the relational model for passing data through UNIX-like pipes."
-content_type = "text"
+title = "Relational pipes"
+url = "https://relational-pipes.globalcode.info/v_0/index.xhtml"
 
 [[entries]]
-url = "https://crdt.tech/"
-title = "Conflict-free Replicated Data Types"
+content_type = "text"
 summary = "A collection of resources on Conflict-free Replicated Data Types (CRDTs)."
-content_type = "text"
+title = "Conflict-free Replicated Data Types"
+url = "https://crdt.tech/"
 
 [[entries]]
-url = "https://ayazhafiz.com/articles/22/why-dont-more-languages-offer-flow-typing"
-title = "Why Don't More Languages Offer Flow Typing?"
+content_type = "text"
 summary = "An article introducing the concept of Flow Typing and how it compares to alternatives such as Algebraic Data Types (ADTs)."
-content_type = "text"
+title = "Why Don't More Languages Offer Flow Typing?"
+url = "https://ayazhafiz.com/articles/22/why-dont-more-languages-offer-flow-typing"
 
 [[entries]]
-url = "https://observablehq.com/@troymagennis/introduction-to-monte-carlo-forecasting"
-title = "Introduction to Monte Carlo Forecasting"
-summary = "An article on using the [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) to help estimate the effort of a task."
 content_type = "text"
+summary = "An article on using the [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method) to help estimate the effort of a task."
+title = "Introduction to Monte Carlo Forecasting"
+url = "https://observablehq.com/@troymagennis/introduction-to-monte-carlo-forecasting"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W50"
-publication_date = 2022-12-18
+publication_date = "2022-12-18"
 summary = "This week has been about a block-based editor, a JavaScript library for data visualisation, an MVCC SQLite extension, a web-based ePub reader, a tutorial on CSS Flexbox and a map of submarine cables."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.submarinecablemap.com/"
-title = "Submarine Cable Map"
+content_type = "text"
 summary = "A service mapping all submarine cables searchable by country, owner, etc."
-content_type = "text"
+title = "Submarine Cable Map"
+url = "https://www.submarinecablemap.com/"
 
 [[entries]]
-url = "https://github.com/f5/unovis"
-title = "Unovis"
+content_type = "text"
 summary = "A JavaScript library for data visualisation (e.g. creating charts, maps, network graphs) with support for React, Angular, Svelte, and plain TypeScript or JavaScript."
-content_type = "text"
+title = "Unovis"
+url = "https://github.com/f5/unovis"
 
 [[entries]]
-url = "https://github.com/losfair/mvsqlite"
-title = "mvSQLite"
+content_type = "text"
 summary = "A distributed, MVCC SQLite that runs on top of FoundationDB as a low-level VFS layer."
-content_type = "text"
+title = "mvSQLite"
+url = "https://github.com/losfair/mvsqlite"
 
 [[entries]]
-url = "https://github.com/YousefED/BlockNote"
-title = "BlockNote"
+content_type = "text"
 summary = "A \"Notion-style\" block-based extensible text editor built on top of Prosemirror and Tiptap."
-content_type = "text"
+title = "BlockNote"
+url = "https://github.com/YousefED/BlockNote"
 
 [[entries]]
-url = "https://www.flowoss.com/"
-title = "Flow"
+content_type = "text"
 summary = "An ePub reader that is open source and web browser based."
-content_type = "text"
+title = "Flow"
+url = "https://www.flowoss.com/"
 
 [[entries]]
-url = "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
-title = "An Interactive Guide to Flexbox"
-summary = "A tutorial aiming to help create a mental model for the CSS Flexbox layout mode."
 content_type = "text"
+summary = "A tutorial aiming to help create a mental model for the CSS Flexbox layout mode."
+title = "An Interactive Guide to Flexbox"
+url = "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"

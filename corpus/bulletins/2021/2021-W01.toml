@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W01"
-publication_date = 2021-01-10
+publication_date = "2021-01-10"
 summary = "This week has been about preql, sqlite, web component styling, apache arrow and hexagonal grids."
+type = "bulletin"
 
 [[entries]]
-url = "https://nolanlawson.com/2021/01/03/options-for-styling-web-components/"
-title = "Options for styling web components"
+content_type = "text"
 summary = "An article explaining the tradeoffs of styling Web Components."
-content_type = "text"
+title = "Options for styling web components"
+url = "https://nolanlawson.com/2021/01/03/options-for-styling-web-components/"
 
 [[entries]]
-url = "https://www.redblobgames.com/grids/hexagons/"
-title = "Hexagon Grids"
+content_type = "text"
 summary = "A guide on how to make hexagonal grids, implement a coordinate system, distances and more."
-content_type = "text"
+title = "Hexagon Grids"
+url = "https://www.redblobgames.com/grids/hexagons/"
 
 [[entries]]
-url = "https://github.com/inukshuk/sqleton"
-title = "sqleton"
+content_type = "text"
 summary = "A command-line interface to visualise SQLite database schemas."
-content_type = "text"
+title = "sqleton"
+url = "https://github.com/inukshuk/sqleton"
 
 [[entries]]
-url = "https://github.com/erezsh/Preql"
-title = "Preql"
+content_type = "text"
 summary = "An interpreted, relational programming language, that specializes in database queries."
-content_type = "text"
+title = "Preql"
+url = "https://github.com/erezsh/Preql"
 
 [[entries]]
-url = "https://www.influxdata.com/blog/apache-arrow-parquet-flight-and-their-ecosystem-are-a-game-changer-for-olap/"
-title = "Apache Arrow, Parquet, Flight and Their Ecosystem are a Game Changer for OLAP"
+content_type = "text"
 summary = "An article introducing Apache Arrow, how its components fit together and its overall maturity."
-content_type = "text"
+title = "Apache Arrow, Parquet, Flight and Their Ecosystem are a Game Changer for OLAP"
+url = "https://www.influxdata.com/blog/apache-arrow-parquet-flight-and-their-ecosystem-are-a-game-changer-for-olap/"
 
 [[entries]]
-url = "https://napi.rs/"
-title = "napi-rs"
-summary = "A library for building pre-compiled NodeJS addons in Rust."
 content_type = "text"
+summary = "A library for building pre-compiled NodeJS addons in Rust."
+title = "napi-rs"
+url = "https://napi.rs/"

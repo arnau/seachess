@@ -1,40 +1,52 @@
-type = "bulletin"
 id = "2020-W30"
-publication_date = 2020-07-26
+publication_date = "2020-07-26"
 summary = "This week has been about statistics in China, proquints, property-based testing, speeding multiplications and syntax highlighting for your editor."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.logrocket.com/property-based-testing-in-rust-with-proptest/"
-title = "Property-based testing in Rust with Proptest"
+content_type = "text"
 summary = "A tutorial on property-based testing in Rust."
-content_type = "text"
+title = "Property-based testing in Rust with Proptest"
+url = "https://blog.logrocket.com/property-based-testing-in-rust-with-proptest/"
 
 [[entries]]
-url = "https://arxiv.org/html/0901.4016"
+content_type = "text"
+summary = """
+An article defining a way to generate identifiers that are readable and
+opaque. An attractive alternative to hexadecimal identifiers."""
 title = "A Proposal for Proquints: Identifiers that are Readable, Spellable, and Pronounceable"
-summary = "An article defining a way to generate identifiers that are readable and\nopaque. An attractive alternative to hexadecimal identifiers."
-content_type = "text"
+url = "https://arxiv.org/html/0901.4016"
 
 [[entries]]
-url = "https://aeon.co/essays/the-dream-of-total-information-became-a-nightmare-in-postwar-china"
+content_type = "text"
+summary = """
+An article narrating the relationship between statistics and China in the
+1950's."""
 title = "Counting China"
-summary = "An article narrating the relationship between statistics and China in the\n1950's."
-content_type = "text"
+url = "https://aeon.co/essays/the-dream-of-total-information-became-a-nightmare-in-postwar-china"
 
 [[entries]]
-url = "https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/"
+content_type = "text"
+summary = """
+An article about the speed of the multiplication operation and how it
+is a fundamental limit for more advanced problem solving in computers."""
 title = "Mathematicians Discover the Perfect Way to Multiply"
-summary = "An article about the speed of the multiplication operation and how it\nis a fundamental limit for more advanced problem solving in computers."
-content_type = "text"
+url = "https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/"
 
 [[entries]]
-url = "https://wiki.js.org/"
+content_type = "text"
+summary = """
+An application to run your own wiki with an extensive set of extensions. It's
+still in early development and missing some of the more interesting features
+but definitely a tool to keep an eye on."""
 title = "Wiki.js"
-summary = "An application to run your own wiki with an extensive set of extensions. It's\nstill in early development and missing some of the more interesting features\nbut definitely a tool to keep an eye on."
-content_type = "text"
+url = "https://wiki.js.org/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=Jes3bD6P0To"
-title = "Tree-sitter - a new parsing system for programming tools"
-summary = "A talk on a new (2018) approach to syntax highlighting in the Atom editor and\nthe potential of using tree syntaxes with an accessible API to that tree to\noperate on it from the editor."
 content_type = "video"
+summary = """
+A talk on a new (2018) approach to syntax highlighting in the Atom editor and
+the potential of using tree syntaxes with an accessible API to that tree to
+operate on it from the editor."""
+title = "Tree-sitter - a new parsing system for programming tools"
+url = "https://www.youtube.com/watch?v=Jes3bD6P0To"

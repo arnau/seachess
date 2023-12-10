@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W34"
-publication_date = 2021-08-29
+publication_date = "2021-08-29"
 summary = "This week has been about hyperlinks, Postgres extensions in Rust, Miller, nanoSQL and DMARC."
+type = "bulletin"
 
 [[entries]]
-url = "https://dcic-world.org/"
-title = "A Data-Centric Introduction to Computing"
+content_type = "text"
 summary = "A book introducing the rudiments of Computer Science with a data-centric lens."
-content_type = "text"
+title = "A Data-Centric Introduction to Computing"
+url = "https://dcic-world.org/"
 
 [[entries]]
-url = "https://depth-first.com/articles/2021/08/25/postgres-extensions-in-rust/"
-title = "Postgres Extensions in Rust"
+content_type = "text"
 summary = "An article introducing how to create a hello-world extension for Postgres in Rust."
-content_type = "text"
+title = "Postgres Extensions in Rust"
+url = "https://depth-first.com/articles/2021/08/25/postgres-extensions-in-rust/"
 
 [[entries]]
-url = "https://github.com/johnkerl/miller"
-title = "Miller"
+content_type = "text"
 summary = "A tool like awk, sed, cut, join, and sort for data formats such as CSV, TSV, tabular JSON and positionally-indexed."
-content_type = "text"
+title = "Miller"
+url = "https://github.com/johnkerl/miller"
 
 [[entries]]
-url = "https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/"
-title = "Why are hyperlinks blue?"
+content_type = "text"
 summary = "An article diving into the history of Web hyperlinks and its predecessors."
-content_type = "text"
+title = "Why are hyperlinks blue?"
+url = "https://blog.mozilla.org/en/internet-culture/deep-dives/why-are-hyperlinks-blue/"
 
 [[entries]]
-url = "https://nanosql.io/"
-title = "nanoSQL"
+content_type = "text"
 summary = "A database layer written in TypeScript with support for a large set of persistent storages."
-content_type = "text"
+title = "nanoSQL"
+url = "https://nanosql.io/"
 
 [[entries]]
-url = "https://simonandrews.ca/articles/how-to-set-up-spf-dkim-dmarc"
-title = "I figured out how DMARC works, and it almost broke me"
-summary = "An article explaining how SPF, DKIM and DMARC work to mitigate email spoofing."
 content_type = "text"
+summary = "An article explaining how SPF, DKIM and DMARC work to mitigate email spoofing."
+title = "I figured out how DMARC works, and it almost broke me"
+url = "https://simonandrews.ca/articles/how-to-set-up-spf-dkim-dmarc"

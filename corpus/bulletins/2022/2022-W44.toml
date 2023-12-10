@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W44"
-publication_date = 2022-11-06
+publication_date = "2022-11-06"
 summary = "This week has been about CSS Color 4, the VS Code legal minefield, MDN in markdown, a typesetting system, enhanced reactive documents and the Unix time."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.inkandswitch.com/potluck/"
-title = "Potluck"
+content_type = "text"
 summary = "An article on the findings on dynamic documents as personal software where the focus is enriching documents from plain documents to interactive applications."
-content_type = "text"
+title = "Potluck"
+url = "https://www.inkandswitch.com/potluck/"
 
 [[entries]]
-url = "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl"
-title = "OKLCH in CSS: why we moved from RGB and HSL"
+content_type = "text"
 summary = "An article explaining the benefits of the new OKLCH colour space defined in CSS Color 4."
-content_type = "text"
+title = "OKLCH in CSS: why we moved from RGB and HSL"
+url = "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl"
 
 [[entries]]
-url = "https://sile-typesetter.org/"
-title = "Sile"
+content_type = "text"
 summary = "A typesetting system borrowing ideas and algorithms from TeX and graphical systems like InDesign."
-content_type = "text"
+title = "Sile"
+url = "https://sile-typesetter.org/"
 
 [[entries]]
-url = "https://openwebdocs.org/content/posts/markdown-conversion/"
-title = "MDN => Markdown"
+content_type = "text"
 summary = "An article on the reasons for MDN to move their source from HTML to Markdown."
-content_type = "text"
+title = "MDN => Markdown"
+url = "https://openwebdocs.org/content/posts/markdown-conversion/"
 
 [[entries]]
-url = "https://www.netmeister.org/blog/epoch.html"
+content_type = "text"
+summary = """
+An article on the foundations of the Unix time and its flaws.
+
+> the original Unix epoch was 1971-01-01T00:00:00. What timezone, you ask? Well, it sure wasn't \"UTC\", because that didn't replace GMT as the standard time until 1972. Secondly, note that time was measured in 1/60ths of a second, not in seconds. Why would that be?"""
 title = "Time is an illusion, Unix time doubly so..."
-summary = "An article on the foundations of the Unix time and its flaws.\n\n> the original Unix epoch was 1971-01-01T00:00:00. What timezone, you ask? Well, it sure wasn't \"UTC\", because that didn't replace GMT as the standard time until 1972. Secondly, note that time was measured in 1/60ths of a second, not in seconds. Why would that be?"
-content_type = "text"
+url = "https://www.netmeister.org/blog/epoch.html"
 
 [[entries]]
-url = "https://ghuntley.com/fracture/"
-title = "Visual Studio Code is designed to fracture"
-summary = "An article on the alternatives (forks) to Visual Studio Code and the legal minefield designed by MicroSoft."
 content_type = "text"
+summary = "An article on the alternatives (forks) to Visual Studio Code and the legal minefield designed by MicroSoft."
+title = "Visual Studio Code is designed to fracture"
+url = "https://ghuntley.com/fracture/"

@@ -1,40 +1,67 @@
-type = "bulletin"
 id = "2020-W19"
-publication_date = 2020-05-10
+publication_date = "2020-05-10"
 summary = "This week has been about product iterations, a programming language, convolutional neural networks, time sadness and a particular font."
+type = "bulletin"
 
 [[entries]]
-url = "https://poloclub.github.io/cnn-explainer"
+content_type = "text"
+summary = """
+An article introducing the concepts involved in a Convolutional Neural Network
+(CNN) and complemented with an interactive visualisation."""
 title = "What is a Convolutional Neural Network?"
-summary = "An article introducing the concepts involved in a Convolutional Neural Network\n(CNN) and complemented with an interactive visualisation."
-content_type = "text"
+url = "https://poloclub.github.io/cnn-explainer"
 
 [[entries]]
-url = "https://gleam.run/"
+content_type = "text"
+summary = """
+A programming language, statically typed and functional that compiles to
+[Erlang](https://www.erlang.org/) VM with interoperability with other BEAM
+languages such as [Elixir](https://elixir-lang.org/).
+
+This week the team behind it has [released version 0.8](https://lpil.uk/blog/gleam-v0.8-released/)
+with a noticeable improvement in developer experience."""
 title = "Gleam"
-summary = "A programming language, statically typed and functional that compiles to\n[Erlang](https://www.erlang.org/) VM with interoperability with other BEAM\nlanguages such as [Elixir](https://elixir-lang.org/).\n\nThis week the team behind it has [released version 0.8](https://lpil.uk/blog/gleam-v0.8-released/)\nwith a noticeable improvement in developer experience."
-content_type = "text"
+url = "https://gleam.run/"
 
 [[entries]]
-url = "https://blog.fullstory.com/suck-less-cycle"
+content_type = "text"
+summary = """
+An article describing a lifecycle to frame how to iterate on a product
+reliably.
+
+> Building great software is not about being perfect. It’s about reliably
+> making progress.
+
+It's a better framed version of [“perfect is the enemy of
+good”](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)
+highlighting that although good enough is enough, the story doesn't end there.
+
+After all, “quality is relative” without a framework to assess what you have
+done is just accepting you don't care about the result, you only care about
+getting away with it."""
 title = "Structured Wrongness With the Suck Less Cycle"
-summary = "An article describing a lifecycle to frame how to iterate on a product\nreliably.\n\n> Building great software is not about being perfect. It’s about reliably\n> making progress.\n\nIt's a better framed version of [“perfect is the enemy of\ngood”](https://en.wikipedia.org/wiki/Perfect_is_the_enemy_of_good)\nhighlighting that although good enough is enough, the story doesn't end there.\n\nAfter all, “quality is relative” without a framework to assess what you have\ndone is just accepting you don't care about the result, you only care about\ngetting away with it."
-content_type = "text"
+url = "https://blog.fullstory.com/suck-less-cycle"
 
 [[entries]]
-url = "https://venam.nixers.net/blog/unix/2020/05/02/time-on-unix.html"
+content_type = "text"
+summary = """
+An article that will challenge your trust on time and its implementation in
+computer systems.
+
+> […] in Unix time, each day is considered to be exactly 86400 SI seconds,
+> which would mean it should skew away from real UTC, and thus drifts away from
+> UT1 (mean time)."""
 title = "Time in Unix"
-summary = "An article that will challenge your trust on time and its implementation in\ncomputer systems.\n\n> […] in Unix time, each day is considered to be exactly 86400 SI seconds,\n> which would mean it should skew away from real UTC, and thus drifts away from\n> UT1 (mean time)."
-content_type = "text"
+url = "https://venam.nixers.net/blog/unix/2020/05/02/time-on-unix.html"
 
 [[entries]]
-url = "https://vole.wtf/scunthorpe-sans/"
-title = "Scunthorpe Sans"
+content_type = "text"
 summary = "A font that censors bad language automatically."
-content_type = "text"
+title = "Scunthorpe Sans"
+url = "https://vole.wtf/scunthorpe-sans/"
 
 [[entries]]
-url = "https://www.cybertec-postgresql.com/en/postgresql-count-made-fast/"
-title = "PostgreSQL count(*) made fast"
-summary = "An article about the quirks of Postgres' `count` function."
 content_type = "text"
+summary = "An article about the quirks of Postgres' `count` function."
+title = "PostgreSQL count(*) made fast"
+url = "https://www.cybertec-postgresql.com/en/postgresql-count-made-fast/"

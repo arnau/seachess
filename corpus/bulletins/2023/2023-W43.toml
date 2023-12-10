@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W43"
-publication_date = 2023-10-29
+publication_date = "2023-10-29"
 summary = "This week has been about the Actor pattern, converting video to GIF, a reverse proxy for NAT traversal, a specification for GPDR-like privacy, a London tube game and a criticism to Tailwind."
+type = "bulletin"
 
 [[entries]]
-url = "https://etorreborre.blog/turning-actors-inside-out"
-title = "Turning actors inside-out"
+content_type = "text"
 summary = "An article exploring the tradeoffs of the Actor model pattern like erlang's."
-content_type = "text"
+title = "Turning actors inside-out"
+url = "https://etorreborre.blog/turning-actors-inside-out"
 
 [[entries]]
-url = "https://github.com/rapiz1/rathole"
-title = "rathole"
+content_type = "text"
 summary = "A reverse proxy for NAT traversal alternative to [frp](https://github.com/fatedier/frp) and [ngrok](https://github.com/inconshreveable/ngrok)."
-content_type = "text"
+title = "rathole"
+url = "https://github.com/rapiz1/rathole"
 
 [[entries]]
-url = "https://london.metro-memory.com/"
-title = "London Tube Memory Game"
+content_type = "text"
 summary = "A game to test your memory on London tube station names."
-content_type = "text"
+title = "London Tube Memory Game"
+url = "https://london.metro-memory.com/"
 
 [[entries]]
-url = "https://nuejs.org/blog/tailwind-vs-semantic-css/"
-title = "Tailwind CSS vs. Semantic CSS"
+content_type = "text"
 summary = "An article comparing two websites with similar designs, one built using Tailwind and the other using “semantic” CSS and Nue server components. It looks into amount of HTML required, rendering speed, coupling and more."
-content_type = "text"
+title = "Tailwind CSS vs. Semantic CSS"
+url = "https://nuejs.org/blog/tailwind-vs-semantic-css/"
 
 [[entries]]
-url = "https://github.com/ImageOptim/gifski/"
-title = "Gifski"
+content_type = "text"
 summary = "A tool to convert video frames to GIF animations with efficient cross-frame palettes and temporal dithering."
-content_type = "text"
+title = "Gifski"
+url = "https://github.com/ImageOptim/gifski/"
 
 [[entries]]
-url = "https://globalprivacycontrol.org/"
-title = "Global Privacy Control"
-summary = "A specification attempting to standardise a mechanism for Web users to request websites and services to not sell or share their personal information to third parties. The specification aims to align with legal frameworks such as GDPR.\n\nSimilar to previous attempts the use of this mechanism can be in detriment of the user's privacy due to increase of information available for fingerprinting."
 content_type = "text"
+summary = """
+A specification attempting to standardise a mechanism for Web users to request websites and services to not sell or share their personal information to third parties. The specification aims to align with legal frameworks such as GDPR.
+
+Similar to previous attempts the use of this mechanism can be in detriment of the user's privacy due to increase of information available for fingerprinting."""
+title = "Global Privacy Control"
+url = "https://globalprivacycontrol.org/"

@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W40"
-publication_date = 2022-10-09
+publication_date = "2022-10-09"
 summary = "This week has been about brute-force access to ZIP files, distributed SQLite solutions, Git garbage collection and neovim UI for messages."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.blog/2022-09-13-scaling-gits-garbage-collection/"
-title = "Scaling Git’s garbage collection"
+content_type = "text"
 summary = "An article on the mechanics of Git's garbage collection and the idea of cruft packs to improve it."
-content_type = "text"
+title = "Scaling Git’s garbage collection"
+url = "https://github.blog/2022-09-13-scaling-gits-garbage-collection/"
 
 [[entries]]
-url = "https://libsql.org/"
+content_type = "text"
+summary = """
+An open source, open contribution fork of SQLite aiming to evolve it to suit use cases beyond what SQLite was originally designed for.
+
+[SQLite: QEMU all over again?](https://glaubercosta-11125.medium.com/sqlite-qemu-all-over-again-aedad19c9a1c) gives a bit more context on the whys for this initiative."""
 title = "libsql"
-summary = "An open source, open contribution fork of SQLite aiming to evolve it to suit use cases beyond what SQLite was originally designed for.\n\n[SQLite: QEMU all over again?](https://glaubercosta-11125.medium.com/sqlite-qemu-all-over-again-aedad19c9a1c) gives a bit more context on the whys for this initiative."
-content_type = "text"
+url = "https://libsql.org/"
 
 [[entries]]
-url = "https://github.com/chiselstrike/chiselstore"
-title = "ChiselStore"
+content_type = "text"
 summary = "An embeddable, distributed SQLite for Rust, powered by Little Raft."
-content_type = "text"
+title = "ChiselStore"
+url = "https://github.com/chiselstrike/chiselstore"
 
 [[entries]]
-url = "https://dqlite.io/"
-title = "dqlite"
+content_type = "text"
 summary = "A fast, embedded, persistent SQL database with Raft consensus that is perfect for fault-tolerant IoT and Edge devices."
-content_type = "text"
+title = "dqlite"
+url = "https://dqlite.io/"
 
 [[entries]]
-url = "https://github.com/folke/noice.nvim"
-title = "Noice"
+content_type = "text"
 summary = "A highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu."
-content_type = "text"
+title = "Noice"
+url = "https://github.com/folke/noice.nvim"
 
 [[entries]]
-url = "https://agourlay.github.io/brute-forcing-protected-zip-rust/"
-title = "Brute forcing protected ZIP archives in Rust"
-summary = "An article walking through the architecture of a command line interface to access the contents of a password protected ZIP archive."
 content_type = "text"
+summary = "An article walking through the architecture of a command line interface to access the contents of a password protected ZIP archive."
+title = "Brute forcing protected ZIP archives in Rust"
+url = "https://agourlay.github.io/brute-forcing-protected-zip-rust/"

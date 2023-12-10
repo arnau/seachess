@@ -1,40 +1,50 @@
-type = "bulletin"
 id = "2021-W35"
-publication_date = 2021-09-05
+publication_date = "2021-09-05"
 summary = "This week has been about Firefox containers, a DSL for binary structures, a PIC implementation, API security issues, Podman containers, and a toolkit to develop graphical interfaces."
+type = "bulletin"
 
 [[entries]]
-url = "https://kaitai.io/"
-title = "Kaitai Struct"
+content_type = "text"
 summary = "A compiler and domain specific language to describe binary data structures and generate parsers on different target languages."
-content_type = "text"
+title = "Kaitai Struct"
+url = "https://kaitai.io/"
 
 [[entries]]
-url = "https://pikchr.org/"
-title = "Pikchr"
+content_type = "text"
 summary = "A library to parse and render [PIC](https://en.wikipedia.org/wiki/PIC_(markup_language))-like markup. It's particularly designed for technical diagrams embedded in Markdown."
-content_type = "text"
+title = "Pikchr"
+url = "https://pikchr.org/"
 
 [[entries]]
-url = "https://sixtyfps.io/"
-title = "Sixty FPS"
+content_type = "text"
 summary = "A toolkit to develop graphical interfaces for embedded devices and desktop applications. It supports Rust, C++ and JavaScript runtimes but offers a common DSL to describe the interface."
-content_type = "text"
+title = "Sixty FPS"
+url = "https://sixtyfps.io/"
 
 [[entries]]
-url = "https://podman.io/"
+content_type = "text"
+summary = """
+A tool for managing [OCI] containers and pods with and without root privileges.
+
+With the recent news of [Docker Desktop moving to a different licensing model], I'm expecting to see more things like [Podman for MacOS].
+
+[Docker Desktop moving to a different licensing model]: https://www.docker.com/pricing/faq
+[Podman for MacOS]: https://github.com/heyvito/podman-macos
+[OCI]: https://opencontainers.org/"""
 title = "Podman"
-summary = "A tool for managing [OCI] containers and pods with and without root privileges.\n\nWith the recent news of [Docker Desktop moving to a different licensing model], I'm expecting to see more things like [Podman for MacOS].\n\n[Docker Desktop moving to a different licensing model]: https://www.docker.com/pricing/faq\n[Podman for MacOS]: https://github.com/heyvito/podman-macos\n[OCI]: https://opencontainers.org/"
-content_type = "text"
+url = "https://podman.io/"
 
 [[entries]]
-url = "https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"
+content_type = "text"
+summary = """
+A Firefox add-on to keep websites in different isolated boxes. It let's you assign particular websites to dedicated containers which in combination with something like the [Cookie Quick Manager] will help keep lurkers like Google a bit more in check.
+
+[Cookie Quick Manager]: https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/"""
 title = "Firefox Multi-Account Containers"
-summary = "A Firefox add-on to keep websites in different isolated boxes. It let's you assign particular websites to dedicated containers which in combination with something like the [Cookie Quick Manager] will help keep lurkers like Google a bit more in check.\n\n[Cookie Quick Manager]: https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/"
-content_type = "text"
+url = "https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/"
 
 [[entries]]
-url = "https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/"
-title = "How to Hack APIs in 2021"
-summary = "An article on common issues and mitigations on API security."
 content_type = "text"
+summary = "An article on common issues and mitigations on API security."
+title = "How to Hack APIs in 2021"
+url = "https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W28"
-publication_date = 2023-07-16
+publication_date = "2023-07-16"
 summary = "This week has been about SQLite synchronisation, interactive widgets with DuckDB, a game with lasers and chess pieces, prototyping with Rust and Python, a web application framework driven by SQL and a library for diagramming in JavaScript."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/mycelial/mycelite"
-title = "Mycelite"
+content_type = "text"
 summary = "A SQLite extension allowing change synchronisation between SQLite instances."
-content_type = "text"
+title = "Mycelite"
+url = "https://github.com/mycelial/mycelite"
 
 [[entries]]
-url = "https://www.jointjs.com/"
-title = "JointJS"
+content_type = "text"
 summary = "A library for diagramming in JavaScript with an extensive set of widgets. Notice that the open source version has a smaller set of features."
-content_type = "text"
+title = "JointJS"
+url = "https://www.jointjs.com/"
 
 [[entries]]
-url = "https://playlaser.xyz/"
-title = "Laser"
+content_type = "text"
 summary = "A game based on a Chess board with an unusual set of rules."
-content_type = "text"
+title = "Laser"
+url = "https://playlaser.xyz/"
 
 [[entries]]
-url = "https://pythonspeed.com/articles/easiest-rust-python/"
-title = "The easiest way to speed up Python with Rust"
+content_type = "text"
 summary = "An article on protyping in Rust with a quick way to import it as a Python library. The article also covers some performance mistakes and how to avoid them."
-content_type = "text"
+title = "The easiest way to speed up Python with Rust"
+url = "https://pythonspeed.com/articles/easiest-rust-python/"
 
 [[entries]]
-url = "https://github.com/uwdata/mosaic"
-title = "Mosaic"
+content_type = "text"
 summary = "A JavaScript library to build interactive views for exploring datasets efficiently by using DuckDB behind the scenes."
-content_type = "text"
+title = "Mosaic"
+url = "https://github.com/uwdata/mosaic"
 
 [[entries]]
-url = "https://sql.ophir.dev/"
-title = "SQLPage"
-summary = "A web application framework for creating websites writing plain SQL queries."
 content_type = "text"
+summary = "A web application framework for creating websites writing plain SQL queries."
+title = "SQLPage"
+url = "https://sql.ophir.dev/"

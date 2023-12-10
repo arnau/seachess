@@ -1,40 +1,76 @@
-type = "bulletin"
 id = "2020-W15"
-publication_date = 2020-04-12
+publication_date = "2020-04-12"
 summary = "This week has been about PostGIS, Rust error handling, Git flows, Elm issues, Google Analytics and illustrations."
+type = "bulletin"
 
 [[entries]]
-url = "https://drewdevault.com/2020/04/06/My-weird-branchless-git-workflow.html"
+content_type = "text"
+summary = """
+An article on working with Git without branches. An interesting contrast to
+last week's [How the Creators of Git Do
+Branching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb)."""
 title = "My unorthodox, branchless git workflow"
-summary = "An article on working with Git without branches. An interesting contrast to\nlast week's [How the Creators of Git Do\nBranching](https://hackernoon.com/how-the-creators-of-git-do-branches-e6fcc57270fb)."
-content_type = "text"
+url = "https://drewdevault.com/2020/04/06/My-weird-branchless-git-workflow.html"
 
 [[entries]]
-url = "https://plausible.io/blog/remove-google-analytics"
+content_type = "text"
+summary = """
+An article to help you consider alternatives to Google Analytics.
+
+Although the article has good content, keep in mind Plausible is a competitor
+of Google Analytics. That said, [Plausible have their code
+open](https://github.com/plausible-insights/plausible) so it's a plus in
+transparency."""
 title = "Why you should stop using Google Analytics on your website"
-summary = "An article to help you consider alternatives to Google Analytics.\n\nAlthough the article has good content, keep in mind Plausible is a competitor\nof Google Analytics. That said, [Plausible have their code\nopen](https://github.com/plausible-insights/plausible) so it's a plus in\ntransparency."
-content_type = "text"
+url = "https://plausible.io/blog/remove-google-analytics"
 
 [[entries]]
-url = "https://www.blackillustrations.com/"
+content_type = "text"
+summary = """
+A set of illustrations for free (or anything you think is the right price). In
+their words:
+
+> There just isn't a lot of diversity in design.  People of color are often
+underrepresented in illustrations, lacking in the design process and often go
+unseen in visuals across the internet."""
 title = "Black illustrations"
-summary = "A set of illustrations for free (or anything you think is the right price). In\ntheir words:\n\n> There just isn't a lot of diversity in design.  People of color are often\nunderrepresented in illustrations, lacking in the design process and often go\nunseen in visuals across the internet."
-content_type = "text"
+url = "https://www.blackillustrations.com/"
 
 [[entries]]
-url = "https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/"
+content_type = "text"
+summary = """
+An article with lots of reasons why you might not want to invest in Elm. This
+in particular is what made me stop considering Elm as a worthwhile option
+around the time 0.19 was released:
+
+> They do not say “Why don’t you just”, they say “You must just” — despite not
+knowing anything about the rest of the project-specific constraints that you
+are taking into account and couldn’t explain — and then they build that
+opinion into the compiler itself.
+
+Even if you don't care about Elm, it's a good article to reflect on open
+source and governance."""
 title = "Why I'm leaving Elm"
-summary = "An article with lots of reasons why you might not want to invest in Elm. This\nin particular is what made me stop considering Elm as a worthwhile option\naround the time 0.19 was released:\n\n> They do not say “Why don’t you just”, they say “You must just” — despite not\nknowing anything about the rest of the project-specific constraints that you\nare taking into account and couldn’t explain — and then they build that\nopinion into the compiler itself.\n\nEven if you don't care about Elm, it's a good article to reflect on open\nsource and governance."
-content_type = "text"
+url = "https://lukeplant.me.uk/blog/posts/why-im-leaving-elm/"
 
 [[entries]]
-url = "https://boats.gitlab.io/blog/post/failure-to-fehler/"
+content_type = "text"
+summary = """
+An article on error handling in Rust by the author of
+[failure](https://crates.io/crates/failure) and
+[fehler](https://crates.io/crates/fehler).
+
+From the same author, worth a read [A brief apology of Ok-Wrapping](https://boats.gitlab.io/blog/post/why-ok-wrapping/)."""
 title = "From failure to Fehler"
-summary = "An article on error handling in Rust by the author of\n[failure](https://crates.io/crates/failure) and\n[fehler](https://crates.io/crates/fehler).\n\nFrom the same author, worth a read [A brief apology of Ok-Wrapping](https://boats.gitlab.io/blog/post/why-ok-wrapping/)."
-content_type = "text"
+url = "https://boats.gitlab.io/blog/post/failure-to-fehler/"
 
 [[entries]]
-url = "https://blog.rebased.pl/2020/04/07/why-you-probably-dont-need-postgis.html"
-title = "Why you (probably) don't need PostGIS"
-summary = "An article with a handful of ways you can avoid using PostGIS by taking\nadvantage of Postgres features and lightweight extensions.\n\nIt links to [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index),\na spatial extension for SQLite."
 content_type = "text"
+summary = """
+An article with a handful of ways you can avoid using PostGIS by taking
+advantage of Postgres features and lightweight extensions.
+
+It links to [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index),
+a spatial extension for SQLite."""
+title = "Why you (probably) don't need PostGIS"
+url = "https://blog.rebased.pl/2020/04/07/why-you-probably-dont-need-postgis.html"

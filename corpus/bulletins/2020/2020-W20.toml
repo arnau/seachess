@@ -1,40 +1,51 @@
-type = "bulletin"
 id = "2020-W20"
-publication_date = 2020-05-17
+publication_date = "2020-05-17"
 summary = "This week has been about time-series compression algorithms, Git over gRPC, Python and Rust and securing Firefox."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.timescale.com/blog/time-series-compression-algorithms-explained/"
-title = "Time-series compression algorithms, explained"
+content_type = "text"
 summary = "An article that walks through a set of techniques to store more in less space."
-content_type = "text"
+title = "Time-series compression algorithms, explained"
+url = "https://blog.timescale.com/blog/time-series-compression-algorithms-explained/"
 
 [[entries]]
-url = "https://github.com/indygreg/PyOxidizer"
+content_type = "text"
+summary = """
+A tool for packaging and distributing Python applications.
+
+Produces self-contained binaries like [PyInstaller](https://github.com/pyinstaller/pyinstaller)."""
 title = "PyOxidizer"
-summary = "A tool for packaging and distributing Python applications.\n\nProduces self-contained binaries like [PyInstaller](https://github.com/pyinstaller/pyinstaller)."
-content_type = "text"
+url = "https://github.com/indygreg/PyOxidizer"
 
 [[entries]]
-url = "https://encore.dev/blog/git-clone-grpc"
+content_type = "text"
+summary = """
+An article about how to run Git over gRPC instead of HTTP or SSH by building a
+custom [git remote helper](https://git-scm.com/docs/gitremote-helpers)."""
 title = "Git clone over gRPC"
-summary = "An article about how to run Git over gRPC instead of HTTP or SSH by building a\ncustom [git remote helper](https://git-scm.com/docs/gitremote-helpers)."
-content_type = "text"
+url = "https://encore.dev/blog/git-clone-grpc"
 
 [[entries]]
-url = "https://keys.pub"
+content_type = "text"
+summary = """
+A tool for managing keys for encryption and signing.
+
+Similar to [Keybase](https://keybase.io/) tech stack (from a former Keybase
+employee) but open source."""
 title = "Keys.pub"
-summary = "A tool for managing keys for encryption and signing.\n\nSimilar to [Keybase](https://keybase.io/) tech stack (from a former Keybase\nemployee) but open source."
-content_type = "text"
+url = "https://keys.pub"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=AkYDsiRVqno"
-title = "Why software architects fail – and what to do about it"
-summary = "A talk that brilliantly identifies the archetypes of developers / architects."
 content_type = "video"
+summary = "A talk that brilliantly identifies the archetypes of developers / architects."
+title = "Why software architects fail – and what to do about it"
+url = "https://www.youtube.com/watch?v=AkYDsiRVqno"
 
 [[entries]]
-url = "https://hacks.mozilla.org/2020/04/fuzzing-with-webidl/"
-title = "Fuzzing Firefox with WebIDL"
-summary = "An article introducing the main concepts of fuzz testing and how the Firefox\nteam uses it to identify bugs."
 content_type = "text"
+summary = """
+An article introducing the main concepts of fuzz testing and how the Firefox
+team uses it to identify bugs."""
+title = "Fuzzing Firefox with WebIDL"
+url = "https://hacks.mozilla.org/2020/04/fuzzing-with-webidl/"

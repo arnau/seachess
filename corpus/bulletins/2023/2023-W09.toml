@@ -1,53 +1,52 @@
-type = "bulletin"
 id = "2023-W09"
-publication_date = 2023-03-05
+publication_date = "2023-03-05"
 summary = "This week has been about how the Internet works, prompt injection threats, fast SQLite indexing, an edge CMS, an in-memory database and trait references in Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://explained-from-first-principles.com/internet/"
-title = "The Internet explained from first principles"
+content_type = "text"
 summary = """
 An article explaining how the Internet works in low-entry technical terms.
 """
-content_type = "text"
+title = "The Internet explained from first principles"
+url = "https://explained-from-first-principles.com/internet/"
 
 [[entries]]
-url = "https://greshake.github.io/"
-title = "Indirect Prompt Injection Threats"
+content_type = "text"
 summary = """
 An article summarising the paper [More than you've asked for: A Comprehensive Analysis of Novel Prompt Injection Threats to Application-Integrated Large Language Models](https://arxiv.org/abs/2302.12173) where they explore how Large Language Models (LLM) can be attacked to produce malicious content or override the original instructions.
 """
-content_type = "text"
+title = "Indirect Prompt Injection Threats"
+url = "https://greshake.github.io/"
 
 [[entries]]
-url = "https://github.com/siara-cc/sqlite_blaster"
-title = "SQLite Index Blaster"
+content_type = "text"
 summary = """
 A SQLite library providing an API for creating huge SQLite indexes for millions of records much faster than the official SQLite library by leaving out crash recovery.
 """
-content_type = "text"
+title = "SQLite Index Blaster"
+url = "https://github.com/siara-cc/sqlite_blaster"
 
 [[entries]]
-url = "https://github.com/microfeed/microfeed"
-title = "microfeed"
+content_type = "text"
 summary = """
 A content management system (CMS) built on Cloudflare's [Pages](https://pages.cloudflare.com/), [R2](https://www.cloudflare.com/en-gb/products/r2/),[D1](https://developers.cloudflare.com/d1/) and [Zero Trust](https://www.cloudflare.com/en-gb/products/zero-trust/).
 """
-content_type = "text"
+title = "microfeed"
+url = "https://github.com/microfeed/microfeed"
 
 [[entries]]
-url = "https://github.com/Rustixir/darkbird"
-title = "DarkBird"
+content_type = "text"
 summary = """
 A document-oriented, real-time, in-memory database optimized for fast document retrieval.
 """
-content_type = "text"
+title = "DarkBird"
+url = "https://github.com/Rustixir/darkbird"
 
 [[entries]]
-url = "https://www.judy.co.uk/blog/rust-traits-and-references/"
-title = "Rust Trait Implementations and References"
+content_type = "text"
 summary = """
 An article on the subtleties of implementing traits for references in Rust.
 """
-content_type = "text"
-
+title = "Rust Trait Implementations and References"
+url = "https://www.judy.co.uk/blog/rust-traits-and-references/"

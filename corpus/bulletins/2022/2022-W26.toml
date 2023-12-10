@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W26"
-publication_date = 2022-07-03
+publication_date = "2022-07-03"
 summary = "This week has been about how relational databases work, exploiting serverless computing at the edge, Git's new file system monitoring, an embeddable ebook reader application, a tool to find broken links in text sources and the erotics of infographics."
+type = "bulletin"
 
 [[entries]]
-url = "https://architecturenotes.co/things-you-should-know-about-databases/"
-title = "Things You Should Know About Databases"
+content_type = "text"
 summary = "An introduction to how relational databases work."
-content_type = "text"
+title = "Things You Should Know About Databases"
+url = "https://architecturenotes.co/things-you-should-know-about-databases/"
 
 [[entries]]
-url = "https://blog.christophetd.fr/abusing-cloudflare-workers/"
-title = "MitM at the Edge: Abusing Cloudflare Workers"
+content_type = "text"
 summary = "An article exploring ways to leverage Cloudflare Workers for offensive purposes that are made possible by the “serverless computing at the edge” model."
-content_type = "text"
+title = "MitM at the Edge: Abusing Cloudflare Workers"
+url = "https://blog.christophetd.fr/abusing-cloudflare-workers/"
 
 [[entries]]
-url = "https://github.com/koreader/koreader"
-title = "KOreader"
+content_type = "text"
 summary = "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
-content_type = "text"
+title = "KOreader"
+url = "https://github.com/koreader/koreader"
 
 [[entries]]
-url = "https://www.gawker.com/media/the-erotics-of-infographics"
+content_type = "text"
+summary = """
+An essay on the abuse of infographics. It takes a bit to build up but it gets there, eventually.
+
+> Data journalism’s masturbatory indulgence of infographics lays bare an all-consuming fetishization of data."""
 title = "Hard Data: The Erotics of Infographics"
-summary = "An essay on the abuse of infographics. It takes a bit to build up but it gets there, eventually.\n\n> Data journalism’s masturbatory indulgence of infographics lays bare an all-consuming fetishization of data."
-content_type = "text"
+url = "https://www.gawker.com/media/the-erotics-of-infographics"
 
 [[entries]]
-url = "https://github.com/lycheeverse/lychee"
-title = "Lychee"
+content_type = "text"
 summary = "A tool to find broken links and mail addresses inside Markdown, HTML, reStructuredText, or other text sources."
-content_type = "text"
+title = "Lychee"
+url = "https://github.com/lycheeverse/lychee"
 
 [[entries]]
-url = "https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/"
-title = "Improve Git monorepo performance with a file system monitor"
-summary = "An article on the new file system monitor flag `fsmonitor` to improve the user experience when using Git with large codebases."
 content_type = "text"
+summary = "An article on the new file system monitor flag `fsmonitor` to improve the user experience when using Git with large codebases."
+title = "Improve Git monorepo performance with a file system monitor"
+url = "https://github.blog/2022-06-29-improve-git-monorepo-performance-with-a-file-system-monitor/"

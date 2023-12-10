@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W29"
-publication_date = 2021-07-25
+publication_date = "2021-07-25"
 summary = "This week has been about tech vs data, WebAssembly modules with wasmi, optimising a graph visualisation, Hypothesis annotation management, a distributed search engine and a bit of history on terminals and consoles."
+type = "bulletin"
 
 [[entries]]
-url = "https://benn.substack.com/p/analytics-is-at-a-crossroads"
-title = "Analytics is at a crossroads"
+content_type = "text"
 summary = "An article surfacing the frustration created by looking at data analysis as a subfield of technical engineering."
-content_type = "text"
+title = "Analytics is at a crossroads"
+url = "https://benn.substack.com/p/analytics-is-at-a-crossroads"
 
 [[entries]]
-url = "https://cprimozic.net/blog/speeding-up-webcola-with-webassembly/"
-title = "Speeding Up the Webcola Graph Viz Library with Rust + WebAssembly"
+content_type = "text"
 summary = "An article diving into the journey of optimising a 400+ node graph visualisation using WebAssembly."
-content_type = "text"
+title = "Speeding Up the Webcola Graph Viz Library with Rust + WebAssembly"
+url = "https://cprimozic.net/blog/speeding-up-webcola-with-webassembly/"
 
 [[entries]]
-url = "https://github.com/quickwit-inc/quickwit/"
-title = "Quickwit"
+content_type = "text"
 summary = "A distributed search engine designed for high reliability built on top of [Tantivy](https://github.com/tantivy-search/tantivy)."
-content_type = "text"
+title = "Quickwit"
+url = "https://github.com/quickwit-inc/quickwit/"
 
 [[entries]]
-url = "https://blog.knoldus.com/hosting-wasm-modules-in-rust-easily-using-wasmi/"
-title = "Hosting wasm modules in Rust easily using ‘wasmi’"
+content_type = "text"
 summary = "A short tutorial on how to get started with WebAssembly modules in rust using [wasmi](https://crates.io/crates/wasmi), a WebAssembly interpreter."
-content_type = "text"
+title = "Hosting wasm modules in Rust easily using ‘wasmi’"
+url = "https://blog.knoldus.com/hosting-wasm-modules-in-rust-easily-using-wasmi/"
 
 [[entries]]
-url = "https://github.com/out-of-cheese-error/gooseberry"
-title = "Gooseberry"
+content_type = "text"
 summary = "A tool to manage [Hypothesis](https://hypothes.is/) annotations from the command line."
-content_type = "text"
+title = "Gooseberry"
+url = "https://github.com/out-of-cheese-error/gooseberry"
 
 [[entries]]
-url = "https://unixsheikh.com/articles/the-terminal-the-console-and-the-shell-what-are-they.html"
-title = "The terminal, the console and the shell - what are they?"
-summary = "An article on the history of day-to-day computer related terms such as _terminal_ or _console_."
 content_type = "text"
+summary = "An article on the history of day-to-day computer related terms such as _terminal_ or _console_."
+title = "The terminal, the console and the shell - what are they?"
+url = "https://unixsheikh.com/articles/the-terminal-the-console-and-the-shell-what-are-they.html"

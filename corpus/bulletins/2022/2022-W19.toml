@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2022-W19"
-publication_date = 2022-05-15
+publication_date = "2022-05-15"
 summary = "This week has been about Cloudflare's edge database, SQLite as a persistence layer, a UI agnostic drag and drop library, a vector similarity search engine, a markdown-based toolchain and an interactive in-browser notebook."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/dflex-js/dflex"
-title = "DFlex"
+content_type = "text"
 summary = "A Drag-and-Drop library for JavaScript frameworks implementing an enhanced transformation mechanism to manipulate DOM elements."
-content_type = "text"
+title = "DFlex"
+url = "https://github.com/dflex-js/dflex"
 
 [[entries]]
-url = "https://percival.ink/"
+content_type = "text"
+summary = """
+An interactive in-browser notebook for declarative data analysis and visualization. It combines compiled [Datalog](https://en.wikipedia.org/wiki/Datalog) queries with plotting libraries for the web.
+
+[Percival: a reactive language for exploratory data analysis and visualization](https://www.hytradboi.com/2022/percival-a-reactive-language-for-exploratory-data-analysis-and-visualization) is a 10 minute talk explaining the basics of the tool."""
 title = "Percival"
-summary = "An interactive in-browser notebook for declarative data analysis and visualization. It combines compiled [Datalog](https://en.wikipedia.org/wiki/Datalog) queries with plotting libraries for the web.\n\n[Percival: a reactive language for exploratory data analysis and visualization](https://www.hytradboi.com/2022/percival-a-reactive-language-for-exploratory-data-analysis-and-visualization) is a 10 minute talk explaining the basics of the tool."
-content_type = "text"
+url = "https://percival.ink/"
 
 [[entries]]
-url = "https://markdoc.io/"
-title = "Markdoc"
+content_type = "text"
 summary = "A Markdown-based syntax and toolchain for creating custom documentation sites."
-content_type = "text"
+title = "Markdoc"
+url = "https://markdoc.io/"
 
 [[entries]]
-url = "https://github.com/qdrant/qdrant"
-title = "Qdrant"
+content_type = "text"
 summary = "A vector similarity search engine. It provides a production-ready service with an API to store, search, and manage points - vectors with an additional payload.. It makes it useful for all sorts of neural-network or semantic-based matching, faceted search, and other applications."
-content_type = "text"
+title = "Qdrant"
+url = "https://github.com/qdrant/qdrant"
 
 [[entries]]
-url = "https://blog.cloudflare.com/introducing-d1/"
-title = "Announcing D1: our first SQL database"
+content_type = "text"
 summary = "An article on the new relational database based on SQLite to complement their edge functions offering."
-content_type = "text"
+title = "Announcing D1: our first SQL database"
+url = "https://blog.cloudflare.com/introducing-d1/"
 
 [[entries]]
-url = "https://fly.io/blog/all-in-on-sqlite-litestream/"
-title = "I'm All-In on Server-Side SQLite"
-summary = "An article on the value of using SQLite as the main persistence layer.\n\n> I think that for many applications – production applications, with large numbers of users and high availability requirements – SQLite has a better place, in the center of the stack, as the core of your data and persistence layer."
 content_type = "text"
+summary = """
+An article on the value of using SQLite as the main persistence layer.
+
+> I think that for many applications – production applications, with large numbers of users and high availability requirements – SQLite has a better place, in the center of the stack, as the core of your data and persistence layer."""
+title = "I'm All-In on Server-Side SQLite"
+url = "https://fly.io/blog/all-in-on-sqlite-litestream/"

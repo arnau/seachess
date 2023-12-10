@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W09"
-publication_date = 2022-03-06
+publication_date = "2022-03-06"
 summary = "This week has been about a WebAssembly-based fantasy console, data-centric applications, switching to Neovim and Lua, the data-mesh architecture, the relational model for building UIs and a series of exercises to learn Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://sharksforarms.dev/posts/neovim-rust/"
-title = "Neovim and Rust"
+content_type = "text"
 summary = "An article on configuring Neovim for working with Rust with an IDE-like experience. It uses Vimscript but it's fairly easy to port to Lua. The [Neovim Lua guide](https://github.com/nanotee/nvim-lua-guide) is a handy companion in this case."
-content_type = "text"
+title = "Neovim and Rust"
+url = "https://sharksforarms.dev/posts/neovim-rust/"
 
 [[entries]]
-url = "https://riffle.systems/essays/prelude/"
-title = "Building data-centric apps with a reactive relational database"
+content_type = "text"
 summary = "An essay on building data-centric applications as queries taking inspiration from the [local-first architecture](https://www.inkandswitch.com/local-first/)."
-content_type = "text"
+title = "Building data-centric apps with a reactive relational database"
+url = "https://riffle.systems/essays/prelude/"
 
 [[entries]]
-url = "https://www.scattered-thoughts.net/writing/relational-ui/"
-title = "A UI library for a relational language"
+content_type = "text"
 summary = "An article exploring ways to reduce the impedance of transforming from a relational model to a tree-based model typically found in user interfaces."
-content_type = "text"
+title = "A UI library for a relational language"
+url = "https://www.scattered-thoughts.net/writing/relational-ui/"
 
 [[entries]]
-url = "https://exoticorn.github.io/microw8/"
-title = "MicroW8"
+content_type = "text"
 summary = "A fantasy console for running tiny games in WebAssembly inspired by TIC-80, WASM-4 and PICO-8."
-content_type = "text"
+title = "MicroW8"
+url = "https://exoticorn.github.io/microw8/"
 
 [[entries]]
-url = "https://www.sotr.blog/"
-title = "Shaking off the Rust"
+content_type = "text"
 summary = "A series of exercises to learn Rust."
-content_type = "text"
+title = "Shaking off the Rust"
+url = "https://www.sotr.blog/"
 
 [[entries]]
-url = "https://www.datamesh-architecture.com/"
-title = "Data Mesh Architecture"
-summary = "A reference on the Data Mesh architecture from an engineering perspective."
 content_type = "text"
+summary = "A reference on the Data Mesh architecture from an engineering perspective."
+title = "Data Mesh Architecture"
+url = "https://www.datamesh-architecture.com/"

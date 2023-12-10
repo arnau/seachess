@@ -1,41 +1,40 @@
-type = "bulletin"
 id = "2021-W09"
-publication_date = 2021-03-07
+publication_date = "2021-03-07"
 summary = "This week has been about cuboids in CSS, machine learning version control, server-sent and web spatial mapping."
+type = "bulletin"
 
 [[entries]]
+content_type = "text"
+summary = "A tutorial on how to use cuboids to approach 3D CSS."
 title = "CSS in 3D: Learning to think in Cubes Instead of Boxes"
 url = "https://dev.to/jh3y/css-in-3d-learning-to-think-in-cubes-instead-of-boxes-4ank"
-summary = "A tutorial on how to use cuboids to approach 3D CSS."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A Python layer on top of Git to version control for machine learning projects."
 title = "DVC"
 url = "https://dvc.org/"
-summary = "A Python layer on top of Git to version control for machine learning projects."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A calculator using to LaTeX expressions."
 title = "CalcuLaTeX"
 url = "https://github.com/mkhan45/CalcuLaTeX"
-summary = "A calculator using to LaTeX expressions."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "An article introducing [server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html)."
 title = "Server-sent events: a simple way to stream events from a server."
 url = "https://jvns.ca/blog/2021/01/12/day-36--server-sent-events-are-cool--and-a-fun-bug/"
-summary = "An article introducing [server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html)."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A resource kit to apply creative collaboration in your team or organization."
 title = "Hyperisland Toolbox"
 url = "https://toolbox.hyperisland.com/"
-summary = "A resource kit to apply creative collaboration in your team or organization."
-content_type = "text"
 
 [[entries]]
-title = "Useful Tools For Web Mapping"
-url = "https://www.ordnancesurvey.co.uk/newsroom/blog/useful-tools-for-web-mapping"
+content_type = "text"
 summary = """
 An article recommending tools to get started with web spatial mapping (collect, manipulate, analyse, store, access and visualise).
 
@@ -43,4 +42,5 @@ The recommended sources are limited to their own offering for the UK but the res
 
 If you are intersted in the UK geodata infrastructure you might find [Address Matters](https://storymaps.arcgis.com/stories/2e8445a7f0714973826e60a823224326) insightful.
 """
-content_type = "text"
+title = "Useful Tools For Web Mapping"
+url = "https://www.ordnancesurvey.co.uk/newsroom/blog/useful-tools-for-web-mapping"

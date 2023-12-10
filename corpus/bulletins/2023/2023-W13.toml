@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W13"
-publication_date = 2023-04-02
+publication_date = "2023-04-02"
 summary = "This week has been about the Janet language, the bicycle movement, a tool for analysing security risks, a typesetting system, and a talk on data-oriented design."
+type = "bulletin"
 
 [[entries]]
-url = "https://janet-lang.org/"
-title = "Janet"
+content_type = "text"
 summary = "An embeddable functional and imperative programming language in less than 1MB. From the same author of [Fennel](https://fennel-lang.org/)."
-content_type = "text"
+title = "Janet"
+url = "https://janet-lang.org/"
 
 [[entries]]
-url = "https://janet.guide/"
-title = "Janet for Mortals"
+content_type = "text"
 summary = "An online book on [Janet](https://janet-lang.org/). It covers a large set of topics including metaprogramming, concurrency and embedding."
-content_type = "text"
+title = "Janet for Mortals"
+url = "https://janet.guide/"
 
 [[entries]]
-url = "https://github.com/typst/typst"
-title = "typst"
+content_type = "text"
 summary = "A new markup-based typesetting system designed to be as powerful as LaTeX."
-content_type = "text"
+title = "typst"
+url = "https://github.com/typst/typst"
 
 [[entries]]
-url = "https://github.com/bearer/bearer"
-title = "Bearer"
+content_type = "text"
 summary = "A tool to analyse and prioritise security risks and vulnerabilities impacting JavaScript and Ruby."
-content_type = "text"
+title = "Bearer"
+url = "https://github.com/bearer/bearer"
 
 [[entries]]
-url = "https://ciechanow.ski/bicycle/"
-title = "Bicycle"
+content_type = "text"
 summary = "An interactive article explaining the principles behind the movement and integrity of a bicycle."
-content_type = "text"
+title = "Bicycle"
+url = "https://ciechanow.ski/bicycle/"
 
 [[entries]]
-url = "https://vimeo.com/649009599"
-title = "Practical DOD"
-summary = "A talk by the creator of [Zig](https://ziglang.org/) on data-oriented design and its benefits reducing memory footprint."
 content_type = "video"
+summary = "A talk by the creator of [Zig](https://ziglang.org/) on data-oriented design and its benefits reducing memory footprint."
+title = "Practical DOD"
+url = "https://vimeo.com/649009599"

@@ -1,40 +1,54 @@
-type = "bulletin"
 id = "2020-W08"
-publication_date = 2020-02-23
+publication_date = "2020-02-23"
 summary = "This week has been about floating point numbers, testing in production, privacy, security and personal workflows."
+type = "bulletin"
 
 [[entries]]
-url = "https://fabiensanglard.net/floating_point_visually_explained/"
-title = "Floating Point Visually Explained"
+content_type = "text"
 summary = "A succinct article explaining the mechanics of floating point numbers."
-content_type = "text"
+title = "Floating Point Visually Explained"
+url = "https://fabiensanglard.net/floating_point_visually_explained/"
 
 [[entries]]
-url = "https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow"
+content_type = "text"
+summary = """
+An article full of nice little snippets to take advantage of fzf and ripgrep.
+Two of my must-have when I'm working in the terminal."""
 title = "How FZF and ripgrep improved my workflow"
-summary = "An article full of nice little snippets to take advantage of fzf and ripgrep.\nTwo of my must-have when I'm working in the terminal."
-content_type = "text"
+url = "https://sidneyliebrand.io/blog/how-fzf-and-ripgrep-improved-my-workflow"
 
 [[entries]]
-url = "https://medium.com/@inonst/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2"
+content_type = "text"
+summary = """
+An in-depth explanation about BOLA, an authorisation exploit you want to be on
+top of if you are in the API business.
+
+It has a gentle explanation for non-technical readers."""
 title = "A Deep Dive On The Most Critical API Vulnerability — BOLA (Broken Object Level Authorization)"
-summary = "An in-depth explanation about BOLA, an authorisation exploit you want to be on\ntop of if you are in the API business.\n\nIt has a gentle explanation for non-technical readers."
-content_type = "text"
+url = "https://medium.com/@inonst/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2"
 
 [[entries]]
-url = "https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1"
+content_type = "text"
+summary = """
+An article that attempts to destigmatise the idea of “testing in production”
+by analysing the benefits and shortcomings of different stages such as
+development, test environment, deployment, release and post-release."""
 title = "Testing in production the safe way"
-summary = "An article that attempts to destigmatise the idea of “testing in production”\nby analysing the benefits and shortcomings of different stages such as\ndevelopment, test environment, deployment, release and post-release."
-content_type = "text"
+url = "https://medium.com/@copyconstruct/testing-in-production-the-safe-way-18ca102d0ef1"
 
 [[entries]]
-url = "https://rhg.dev/posts/elm-code-generation"
+content_type = "text"
+summary = """
+An article that walks your through how to build a headless elm app running on
+Node.js."""
 title = "Elm code generation"
-summary = "An article that walks your through how to build a headless elm app running on\nNode.js."
-content_type = "text"
+url = "https://rhg.dev/posts/elm-code-generation"
 
 [[entries]]
-url = "https://protonmail.com/blog/internet-of-things-privacy-iot-explained/"
-title = "The privacy risks of the Internet of Things"
-summary = "An article to make you think in how apparently harmless things could become an\nintrusion to your daily life. You may think you have nothing to hide but, are\nyou ok with letting others steal your information and monetise it?"
 content_type = "text"
+summary = """
+An article to make you think in how apparently harmless things could become an
+intrusion to your daily life. You may think you have nothing to hide but, are
+you ok with letting others steal your information and monetise it?"""
+title = "The privacy risks of the Internet of Things"
+url = "https://protonmail.com/blog/internet-of-things-privacy-iot-explained/"

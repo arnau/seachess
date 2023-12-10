@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W12"
-publication_date = 2022-03-27
+publication_date = "2022-03-27"
 summary = "This week has been about robust Bash scripts, a meta configuration language, quirks of React.js hooks, a language to create music, a rules engine in Clojure and a tool to learn about passwords."
+type = "bulletin"
 
 [[entries]]
-url = "https://melrōse.org/"
-title = "Melrōse, a language to program and play music"
+content_type = "text"
 summary = "A language and a tool to create and listen to music interactively. The language uses musical primitives (note, sequence, chord) and many functions (map, group, transpose) that can be used to create more complex patterns, loops and tracks."
-content_type = "text"
+title = "Melrōse, a language to program and play music"
+url = "https://melrōse.org/"
 
 [[entries]]
-url = "https://www.passwordmonster.com/"
-title = "PasswordMonster"
+content_type = "text"
 summary = "A tool to learn about password best practices and common mistakes."
-content_type = "text"
+title = "PasswordMonster"
+url = "https://www.passwordmonster.com/"
 
 [[entries]]
-url = "https://labs.factorialhr.com/posts/hooks-considered-harmful"
-title = "Hooks Considered Harmful"
+content_type = "text"
 summary = "An article diving into the quirks of React.js hooks."
-content_type = "text"
+title = "Hooks Considered Harmful"
+url = "https://labs.factorialhr.com/posts/hooks-considered-harmful"
 
 [[entries]]
-url = "https://jsonnet.org/"
-title = "Jsonnet"
+content_type = "text"
 summary = "A meta configuration language shaped as a JSON superset (adding variables, conditionals, functions, and more) targeting the generation of configuration formats like INI, JSON, YAML or shellscript."
-content_type = "text"
+title = "Jsonnet"
+url = "https://jsonnet.org/"
 
 [[entries]]
-url = "http://redsymbol.net/articles/unofficial-bash-strict-mode/"
-title = "Use Bash Strict Mode (Unless You Love Debugging)"
+content_type = "text"
 summary = "A set of guidelines for writing more robust Bash scripts."
-content_type = "text"
+title = "Use Bash Strict Mode (Unless You Love Debugging)"
+url = "http://redsymbol.net/articles/unofficial-bash-strict-mode/"
 
 [[entries]]
-url = "https://www.clara-rules.org/"
-title = "Clara"
-summary = "A forward-chaining rules engine implemented in Clojure. It supports truth maintenance, session druability and reasoning over collections of facts."
 content_type = "text"
+summary = "A forward-chaining rules engine implemented in Clojure. It supports truth maintenance, session druability and reasoning over collections of facts."
+title = "Clara"
+url = "https://www.clara-rules.org/"

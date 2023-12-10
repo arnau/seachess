@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W20"
-publication_date = 2022-05-22
+publication_date = "2022-05-22"
 summary = "This week has been about the Codenames boardgame, an ISO8601 comparison, the colour violet, SQLite extensions in Rust, Youtube's database and a book on Open Source."
+type = "bulletin"
 
 [[entries]]
-url = "https://ijmacd.github.io/rfc3339-iso8601/"
-title = "RFC 3339 vs ISO 8601"
+content_type = "text"
 summary = "A comparison between the date/time standard ISO 8601 and its most popular profile RFC 3339. It also allows comparing against HTML."
-content_type = "text"
+title = "RFC 3339 vs ISO 8601"
+url = "https://ijmacd.github.io/rfc3339-iso8601/"
 
 [[entries]]
-url = "https://codenames.game/"
-title = "Codenames online"
+content_type = "text"
 summary = "An online version of the [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)) boardgame."
-content_type = "text"
+title = "Codenames online"
+url = "https://codenames.game/"
 
 [[entries]]
-url = "https://un.curl.dev/"
-title = "Uncurled"
+content_type = "text"
 summary = "A book on the lessons learned whilst running and maintaining Open Source projects by the author of [curl](https://curl.se/)."
-content_type = "text"
+title = "Uncurled"
+url = "https://un.curl.dev/"
 
 [[entries]]
-url = "https://tech.marksblogg.com/youtube-database-procella.html"
-title = "YouTube's Database “Procella”"
+content_type = "text"
 summary = "An article looking into Google's paper “Procella: Unifying serving and analytical data at YouTube”."
-content_type = "text"
+title = "YouTube's Database “Procella”"
+url = "https://tech.marksblogg.com/youtube-database-procella.html"
 
 [[entries]]
-url = "https://ricardoanderegg.com/posts/extending-sqlite-with-rust/"
-title = "Extending SQLite with Rust"
+content_type = "text"
 summary = "A tutorial on how to write a SQLite extension in Rust."
-content_type = "text"
+title = "Extending SQLite with Rust"
+url = "https://ricardoanderegg.com/posts/extending-sqlite-with-rust/"
 
 [[entries]]
-url = "https://psyche.co/ideas/why-it-took-us-thousands-of-years-to-see-the-colour-violet"
-title = "Why it took us thousands of years to see the colour violet"
-summary = "An article on the research done finding the colour violet in art."
 content_type = "text"
+summary = "An article on the research done finding the colour violet in art."
+title = "Why it took us thousands of years to see the colour violet"
+url = "https://psyche.co/ideas/why-it-took-us-thousands-of-years-to-see-the-colour-violet"

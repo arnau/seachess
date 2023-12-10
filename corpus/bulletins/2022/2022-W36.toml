@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W36"
-publication_date = 2022-09-11
+publication_date = "2022-09-11"
 summary = "This week has been about GitHistory, CSS performance in the shadow DOM, a static search library, the design of A4, the risks of WebAssembly and time based passwords."
+type = "bulletin"
 
 [[entries]]
-url = "https://zserge.com/posts/one-time-passwords/"
-title = "How do One-Time passwords work?"
+content_type = "text"
 summary = "An article explaining the ins and outs of time based passwords."
-content_type = "text"
+title = "How do One-Time passwords work?"
+url = "https://zserge.com/posts/one-time-passwords/"
 
 [[entries]]
-url = "https://pagefind.app/"
-title = "Pagefind"
+content_type = "text"
 summary = "A fully static search library that aims to perform well on large sites."
-content_type = "text"
+title = "Pagefind"
+url = "https://pagefind.app/"
 
 [[entries]]
-url = "https://www.fermyon.com/blog/risks-of-webassembly"
-title = "The Risks of WebAssembly"
+content_type = "text"
 summary = "An article with a critical view on the current state of WebAssembly and what to do about it."
-content_type = "text"
+title = "The Risks of WebAssembly"
+url = "https://www.fermyon.com/blog/risks-of-webassembly"
 
 [[entries]]
-url = "https://scilogs.spektrum.de/hlf/why-a4-the-mathematical-beauty-of-paper-size/"
-title = "Why A4? – The Mathematical Beauty of Paper Size"
+content_type = "text"
 summary = "An article on the design of the A4 paper format (ISO 216)."
-content_type = "text"
+title = "Why A4? – The Mathematical Beauty of Paper Size"
+url = "https://scilogs.spektrum.de/hlf/why-a4-the-mathematical-beauty-of-paper-size/"
 
 [[entries]]
-url = "https://githistory.xyz/"
-title = "Git History"
+content_type = "text"
 summary = "A service to navigate through changes on a file hosted in GitHub, GitLab or BitBucket."
-content_type = "text"
+title = "Git History"
+url = "https://githistory.xyz/"
 
 [[entries]]
-url = "https://nolanlawson.com/2022/06/22/style-scoping-versus-shadow-dom-which-is-fastest/"
-title = "Style scoping versus shadow DOM: which is fastest?"
-summary = "An article looking (further) into the performance of CSS scoped via shadow DOM."
 content_type = "text"
+summary = "An article looking (further) into the performance of CSS scoped via shadow DOM."
+title = "Style scoping versus shadow DOM: which is fastest?"
+url = "https://nolanlawson.com/2022/06/22/style-scoping-versus-shadow-dom-which-is-fastest/"

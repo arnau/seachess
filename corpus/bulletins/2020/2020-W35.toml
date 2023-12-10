@@ -1,40 +1,54 @@
-type = "bulletin"
 id = "2020-W35"
-publication_date = 2020-08-30
+publication_date = "2020-08-30"
 summary = "This week some news in the WebAssembly space, a bit of software architecture, digging out the metacrap, productive porn and abusing gzip for fun."
+type = "bulletin"
 
 [[entries]]
-url = "https://stackoverflow.blog/2020/08/24/motoko-the-language-that-turns-the-web-into-a-computer/"
+content_type = "text"
+summary = """
+An article about the Internet Computer project and how Motoko was designed
+to support it using WebAssembly."""
 title = "Motoko, a programming language for building directly on the internet"
-summary = "An article about the Internet Computer project and how Motoko was designed\nto support it using WebAssembly."
-content_type = "text"
+url = "https://stackoverflow.blog/2020/08/24/motoko-the-language-that-turns-the-web-into-a-computer/"
 
 [[entries]]
-url = "https://dev.to/bkolobara/lunatic-actor-based-webassembly-runtime-for-the-backend-36oj"
+content_type = "text"
+summary = """
+An article presenting a runtime written in Rust that works in an actor-based
+model similar to Erlang with the difference of each actor being a WebAssembly
+instance with its own dedicated permissions."""
 title = "Lunatic: Actor based WebAssembly runtime for the backend"
-summary = "An article presenting a runtime written in Rust that works in an actor-based\nmodel similar to Erlang with the difference of each actor being a WebAssembly\ninstance with its own dedicated permissions."
-content_type = "text"
+url = "https://dev.to/bkolobara/lunatic-actor-based-webassembly-runtime-for-the-backend-36oj"
 
 [[entries]]
-url = "https://nocomplexity.com/documents/arplaybook/"
+content_type = "text"
+summary = """
+A book on the different aspects of technical architecture (business, data,
+software, etc)."""
 title = "Architecture Playbook"
-summary = "A book on the different aspects of technical architecture (business, data,\nsoftware, etc)."
-content_type = "text"
+url = "https://nocomplexity.com/documents/arplaybook/"
 
 [[entries]]
-url = "https://people.well.com/user/doctorow/metacrap.htm"
-title = "Metacrap: Putting the torch to seven straw-men of the meta-utopia"
+content_type = "text"
 summary = "A classic on the topic of metadata and its usefulness."
-content_type = "text"
+title = "Metacrap: Putting the torch to seven straw-men of the meta-utopia"
+url = "https://people.well.com/user/doctorow/metacrap.htm"
 
 [[entries]]
-url = "https://nesslabs.com/productivity-porn"
+content_type = "text"
+summary = """
+An article highlighting a couple of signs that are more about
+procrastination than productivity.
+
+You might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)
+from the same author."""
 title = "Productivity porn"
-summary = "An article highlighting a couple of signs that are more about\nprocrastination than productivity.\n\nYou might also enjoy [Planning fallacy](https://nesslabs.com/planning-fallacy)\nfrom the same author."
-content_type = "text"
+url = "https://nesslabs.com/productivity-porn"
 
 [[entries]]
-url = "https://rushter.com/blog/gzip-indexing/"
-title = "How to turn an ordinary gzip archive into a database"
-summary = "An article about how to use the gzip concatenation feature to achieve random\naccess."
 content_type = "text"
+summary = """
+An article about how to use the gzip concatenation feature to achieve random
+access."""
+title = "How to turn an ordinary gzip archive into a database"
+url = "https://rushter.com/blog/gzip-indexing/"

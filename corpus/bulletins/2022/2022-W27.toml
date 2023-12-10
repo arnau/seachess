@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W27"
-publication_date = 2022-07-10
+publication_date = "2022-07-10"
 summary = "This week has been about abusing PDF XML Forms, a new JavaScript runtime in Zig, a paper on organising digital files, a Deno full stack web framework, a SQLite extension for Excel and a batteries-included backend."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/x2bool/xlite"
-title = "XLite"
+content_type = "text"
 summary = "A SQLite extension to query Excel (.xlsx, .xls, .ods) files as virtual tables."
-content_type = "text"
+title = "XLite"
+url = "https://github.com/x2bool/xlite"
 
 [[entries]]
-url = "https://blog.fraktal.fi/two-faces-of-the-same-pdf-document-17e7a15522a0"
-title = "Two faces of a same PDF document"
+content_type = "text"
 summary = "An article presenting a way to abuse PDF XML Forms Architecture (XFA) fallback content to display malicious documents when the PDF reader does not support XFA."
-content_type = "text"
+title = "Two faces of a same PDF document"
+url = "https://blog.fraktal.fi/two-faces-of-the-same-pdf-document-17e7a15522a0"
 
 [[entries]]
-url = "https://bun.sh/"
-title = "Bun"
+content_type = "text"
 summary = "An JavaScript runtime with integrated bundling and transpilation able to run both JavaScript and TypeScript. Built with [Zig](https://ziglang.org/)."
-content_type = "text"
+title = "Bun"
+url = "https://bun.sh/"
 
 [[entries]]
-url = "https://dl.acm.org/doi/10.1145/221296.221307"
-title = "Finding and reminding: file organization from the desktop"
+content_type = "text"
 summary = "A paper summarizing two independent studies of the ways users organize and find files on their computers. The first study (Barreau 1995) investigated information organization practices among users of DOS, Windows and OS/2. The second study (Nardi, Anderson and Erickson 1995), examined the finding and filing practices of Macintosh users. There were more similarities in the two studies than differences."
-content_type = "text"
+title = "Finding and reminding: file organization from the desktop"
+url = "https://dl.acm.org/doi/10.1145/221296.221307"
 
 [[entries]]
-url = "https://fresh.deno.dev/"
-title = "Fresh"
+content_type = "text"
 summary = "A full stack web framework for JavaScript and TypeScript. At its core, it is a combination of a routing framework and templating engine that renders pages on demand, on the server. In addition to this just-in-time (JIT) rendering on the server, it also provides an interface for rendering components on the client for maximum interactivity. The framework uses Preact and JSX for rendering and templating on both the server and the client."
-content_type = "text"
+title = "Fresh"
+url = "https://fresh.deno.dev/"
 
 [[entries]]
-url = "https://pocketbase.io/"
-title = "PocketBase"
-summary = "An open source backend consisting of embedded database (SQLite) with realtime subscriptions, built-in users management, convenient dashboard UI and simple REST-ish API."
 content_type = "text"
+summary = "An open source backend consisting of embedded database (SQLite) with realtime subscriptions, built-in users management, convenient dashboard UI and simple REST-ish API."
+title = "PocketBase"
+url = "https://pocketbase.io/"

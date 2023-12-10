@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W07"
-publication_date = 2021-02-21
+publication_date = "2021-02-21"
 summary = "This week has been about MS-DOS games, a data constraint language, a functional puzzle game, WebAssembly memory management and CSS transitions."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.joshwcomeau.com/animation/css-transitions/"
-title = "An Interactive Guide to CSS Transitions"
+content_type = "text"
 summary = "A tutorial laying out the fundamental concepts to understand how CSS transitions work."
-content_type = "text"
+title = "An Interactive Guide to CSS Transitions"
+url = "https://www.joshwcomeau.com/animation/css-transitions/"
 
 [[entries]]
-url = "https://archive.org/details/softwarelibrary_msdos_games"
-title = "Software Library: MS-DOS Games"
+content_type = "text"
 summary = "A collection of playable MS-DOS Games."
-content_type = "text"
+title = "Software Library: MS-DOS Games"
+url = "https://archive.org/details/softwarelibrary_msdos_games"
 
 [[entries]]
-url = "https://radu-matei.com/blog/practical-guide-to-wasm-memory/"
-title = "A practical guide to WebAssembly memory"
+content_type = "text"
 summary = "An article diving into WebAssembly memory management."
-content_type = "text"
+title = "A practical guide to WebAssembly memory"
+url = "https://radu-matei.com/blog/practical-guide-to-wasm-memory/"
 
 [[entries]]
-url = "https://david-peter.de/cube-composer/"
-title = "Cube composer"
+content_type = "text"
 summary = "A puzzle game to learn the fundamentals of functional programming."
-content_type = "text"
+title = "Cube composer"
+url = "https://david-peter.de/cube-composer/"
 
 [[entries]]
-url = "https://cuelang.org/"
-title = "CUE Data Constraint Language"
+content_type = "text"
 summary = "A data constraint language which aims to simplify tasks involving defining and using data. It is a superset of JSON, allowing users familiar with JSON to get started quickly."
-content_type = "text"
+title = "CUE Data Constraint Language"
+url = "https://cuelang.org/"
 
 [[entries]]
-url = "https://www.mint-lang.com/"
-title = "Mint"
-summary = "A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/)."
 content_type = "text"
+summary = "A programming language for writing single page applications. Heavily influenced by [Elm](https://elm-lang.org/) but non-functional and writen in [Crystal](https://crystal-lang.org/)."
+title = "Mint"
+url = "https://www.mint-lang.com/"

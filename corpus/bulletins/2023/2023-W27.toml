@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W27"
-publication_date = 2023-07-09
+publication_date = "2023-07-09"
 summary = "This week has been about SQLite on Postgres protocol, an IRC desktop application, relational joins, checkmate patterns, a statically typed configuration language and a carbon footprint calculator."
+type = "bulletin"
 
 [[entries]]
-url = "https://lichess.org/@/Avetik_ChessMood/blog/the-complete-checkmate-patterns-list-with-examples/g3A73qZq"
-title = "The Complete Checkmate Patterns List (with examples)"
+content_type = "text"
 summary = "A collection of checkmate patterns with interactive studies to solve."
-content_type = "text"
+title = "The Complete Checkmate Patterns List (with examples)"
+url = "https://lichess.org/@/Avetik_ChessMood/blog/the-complete-checkmate-patterns-list-with-examples/g3A73qZq"
 
 [[entries]]
-url = "https://nickel-lang.org/"
-title = "Nickel"
+content_type = "text"
 summary = "A statically typed configuration language able to translate to JSON and XML."
-content_type = "text"
+title = "Nickel"
+url = "https://nickel-lang.org/"
 
 [[entries]]
-url = "https://www.imagecarbon.com/"
-title = "Image Carbon"
+content_type = "text"
 summary = "A service claiming it calculates the carbon footprint for a given website by anaysing images."
-content_type = "text"
+title = "Image Carbon"
+url = "https://www.imagecarbon.com/"
 
 [[entries]]
-url = "https://blog.turso.tech/sqlite-based-databases-on-the-postgres-protocol-yes-we-can-358e61171d65"
-title = "SQLite-based databases on the postgres protocol? Yes we can!"
+content_type = "text"
 summary = "An article on the new [sqld](https://github.com/libsql/sqld) from the [libsql](https://github.com/libsql/libsql) SQLite fork which lets you share a SQLite-compatible database using the Postgres protocol."
-content_type = "text"
+title = "SQLite-based databases on the postgres protocol? Yes we can!"
+url = "https://blog.turso.tech/sqlite-based-databases-on-the-postgres-protocol-yes-we-can-358e61171d65"
 
 [[entries]]
-url = "https://github.com/squidowl/halloy/"
-title = "Halloy"
+content_type = "text"
 summary = "An IRC desktop application written in Rust using [Iced](https://github.com/iced-rs/iced)."
-content_type = "text"
+title = "Halloy"
+url = "https://github.com/squidowl/halloy/"
 
 [[entries]]
-url = "https://justinjaffray.com/joins-13-ways/"
-title = "Joins 13 Ways"
-summary = "An article looking at relational joins with different perspectives."
 content_type = "text"
+summary = "An article looking at relational joins with different perspectives."
+title = "Joins 13 Ways"
+url = "https://justinjaffray.com/joins-13-ways/"

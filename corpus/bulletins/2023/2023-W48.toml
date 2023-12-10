@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W48"
-publication_date = 2023-12-03
+publication_date = "2023-12-03"
 summary = "This week has been about Rust lifetimes expansion, a formatter and linter for JavaScript, an argument completions generator, an LS_COLORS generator, a parser combinator library, the timezone proposal from the Barcelona Declaration on Time Policies working group."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/sharkdp/vivid"
-title = "Vivid"
+content_type = "text"
 summary = "A generator for the `LS_COLORS` environment variable that controls the colorised output of `ls` and similar tools."
-content_type = "text"
+title = "Vivid"
+url = "https://github.com/sharkdp/vivid"
 
 [[entries]]
-url = "https://github.com/rsteube/carapace-bin"
-title = "Carapace"
+content_type = "text"
 summary = "A tool to generate argument completion for common CLI tools across multiple POSIX and non-POSIX shells."
-content_type = "text"
+title = "Carapace"
+url = "https://github.com/rsteube/carapace-bin"
 
 [[entries]]
-url = "https://timeuse.barcelona/projects/permanent-time-zones-eu/"
-title = "Proposal on implementing permanent time zones in the European Union"
+content_type = "text"
 summary = "Proposal from the Barcelona Declaration on Time Policies working group. In short, they are asking the European Union to normalise timezones aligned with solar time in bands similar to the ones we already have but crucially, they request the abolishment of clock changes."
-content_type = "text"
+title = "Proposal on implementing permanent time zones in the European Union"
+url = "https://timeuse.barcelona/projects/permanent-time-zones-eu/"
 
 [[entries]]
-url = "https://github.com/winnow-rs/winnow"
-title = "Winnow"
+content_type = "text"
 summary = "A parser combinator library in Rust. If you are interested in how it compares to other parsers have a look at the [rosseta-rs](https://github.com/rosetta-rs/parse-rosetta-rs)."
-content_type = "text"
+title = "Winnow"
+url = "https://github.com/winnow-rs/winnow"
 
 [[entries]]
-url = "https://blog.m-ou.se/super-let/"
-title = "Rust temporary lifetimes and “super let”"
+content_type = "text"
 summary = "An article introducing a new idea for improving the experience with Rust lifetimes. It provides an introduction to lifetimes framed as design choices."
-content_type = "text"
+title = "Rust temporary lifetimes and “super let”"
+url = "https://blog.m-ou.se/super-let/"
 
 [[entries]]
-url = "https://github.com/biomejs/biome"
-title = "Biome"
-summary = "A fast formatter and linter for JavaScript, TypeScript aiming cover what you would expect from Prettier and ESLint."
 content_type = "text"
+summary = "A fast formatter and linter for JavaScript, TypeScript aiming cover what you would expect from Prettier and ESLint."
+title = "Biome"
+url = "https://github.com/biomejs/biome"

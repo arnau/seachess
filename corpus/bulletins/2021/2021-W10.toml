@@ -1,52 +1,52 @@
-type = "bulletin"
 id = "2021-W10"
-publication_date = 2021-03-14
+publication_date = "2021-03-14"
 summary = "This week has been about game of life experiments, JavaScript for data programming, static APIs and violin plots."
+type = "bulletin"
 
 [[entries]]
+content_type = "text"
+summary = "An article on the experiment of recreating a low-fidelity version of a picture using the game of life automata."
 title = "Finding Mona Lisa in the Game of Life"
 url = "https://avinayak.github.io/algorithms/programming/2021/02/19/finding-mona-lisa-in-the-game-of-life.html"
-summary = "An article on the experiment of recreating a low-fidelity version of a picture using the game of life automata."
-content_type = "text"
 
 [[entries]]
-title = "Javascript and the next decade of data programming"
-url = "https://benschmidt.org/post/2020-01-15/2020-01-15-webgpu/"
+content_type = "text"
 summary = """
 An article arguing the reasons why JavaScript seems to be in a good position in the data programming space.
 
 The article conflates 'data programming' with 'data visualisation' and the speed of JavaScript with serialisation formats like ApacheArrow (as opposed to GeoJSON). Putting that aside, it's a nice read that shows the pervasiveness of the Web stack as the universal display.
 """
-content_type = "text"
+title = "Javascript and the next decade of data programming"
+url = "https://benschmidt.org/post/2020-01-15/2020-01-15-webgpu/"
 
 [[entries]]
-title = "ROAPI"
-url = "https://github.com/roapi/roapi"
+content_type = "text"
 summary = """
 A tool to create read-only APIs for static datasets from a range of sources such as Google Spreadsheets, Airtable, files or S3. The result can be queried using SQL, GraphQL and REST.
 
 The project is still in it's early days but shows lots of promise in the greenfield of static APIs.
 """
-content_type = "text"
+title = "ROAPI"
+url = "https://github.com/roapi/roapi"
 
 [[entries]]
-title = "The fallacy of “what gets measured gets managed”"
-url = "https://nesslabs.com/what-gets-measured-gets-managed"
+content_type = "text"
 summary = """
 An article digging the likely origins of a misattributed quote from Peter Drucker and a quick reflection on why what the quote suggests can harm your organisation.
 
 I don't think this article says anything particularly new but it is short and sharp. I'm probably biased given that recently I have had to do performance reviews and get into the [Theory of Change](https://www.theoryofchange.org/what-is-theory-of-change/).
 """
-content_type = "text"
+title = "The fallacy of “what gets measured gets managed”"
+url = "https://nesslabs.com/what-gets-measured-gets-managed"
 
 [[entries]]
+content_type = "text"
+summary = "An article on a new algorithm that uses random seeds to solve linear equations iteratively faster than with matrix multiplication."
 title = "New Algorithm Breaks Speed Limit for Solving Linear Equations"
 url = "https://www.quantamagazine.org/new-algorithm-breaks-speed-limit-for-solving-linear-equations-20210308/"
-summary = "An article on a new algorithm that uses random seeds to solve linear equations iteratively faster than with matrix multiplication."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "An article explaining how to use violin plots. Although it uses the Flourish service all the way it provides a couple of alternatives for tools such as d3.js, matplotlib, etc."
 title = "The Violin Plot"
 url = "https://www.stelayordanova.com/blog/the-violin-plot/"
-summary = "An article explaining how to use violin plots. Although it uses the Flourish service all the way it provides a couple of alternatives for tools such as d3.js, matplotlib, etc."
-content_type = "text"

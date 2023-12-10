@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W35"
-publication_date = 2023-09-03
+publication_date = "2023-09-03"
 summary = "This week has been about a Web Component for math formulas, a Clojure language on top of LLVM, a Git command-palette, measuring developer productivity, the impact of Copilot and a offline maps application."
+type = "bulletin"
 
 [[entries]]
-url = "https://organicmaps.app/"
-title = "Organic Maps: Offline Hike, Bike, Trails and Navigation"
+content_type = "text"
 summary = "A maps mobile application with offline maps based on OpenStreetMap data."
-content_type = "text"
+title = "Organic Maps: Offline Hike, Bike, Trails and Navigation"
+url = "https://organicmaps.app/"
 
 [[entries]]
-url = "https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity"
-title = "Measuring developer productivity? A response to McKinsey"
+content_type = "text"
 summary = "An article providing a counter-point to the [Yes, you can measure software developer productivity](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/yes-you-can-measure-software-developer-productivity) from McKinsey."
-content_type = "text"
+title = "Measuring developer productivity? A response to McKinsey"
+url = "https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity"
 
 [[entries]]
-url = "https://ntietz.com/blog/changing-my-relationship-with-github-copilot/"
-title = "Changing my relationship with GitHub Copilot"
+content_type = "text"
 summary = "An article reflecting on the impact of aiding tools such as Copilot, LSP or even syntax highlighting."
-content_type = "text"
+title = "Changing my relationship with GitHub Copilot"
+url = "https://ntietz.com/blog/changing-my-relationship-with-github-copilot/"
 
 [[entries]]
-url = "https://github.com/jank-lang/jank"
-title = "The jank programming language"
+content_type = "text"
 summary = "A programming language aiming to be compatible with Clojure but hosted by LLVM and interoperable with C++."
-content_type = "text"
+title = "The jank programming language"
+url = "https://github.com/jank-lang/jank"
 
 [[entries]]
-url = "https://github.com/m1guelpf/commit"
-title = "commit"
+content_type = "text"
 summary = "A command-palette style Git application built with Tauri."
-content_type = "text"
+title = "commit"
+url = "https://github.com/m1guelpf/commit"
 
 [[entries]]
-url = "https://cortexjs.io/mathlive/"
-title = "Mathlive"
-summary = "A Web Component for editing math formulas using LaTeX commands."
 content_type = "text"
+summary = "A Web Component for editing math formulas using LaTeX commands."
+title = "Mathlive"
+url = "https://cortexjs.io/mathlive/"

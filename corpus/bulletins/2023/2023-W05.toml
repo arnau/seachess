@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W05"
-publication_date = 2023-02-05
+publication_date = "2023-02-05"
 summary = "This week has been about shipping pre-built Rust binaries, an alternative to asdf, an alternative to Git, a 12-bit colour palette, a recursive game of life and the Quite Ok Image format."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.axo.dev/2023/02/cargo-dist"
-title = "Release Engineering Is Exhausting So Here's cargo-dist"
+content_type = "text"
 summary = "An article introducing [`cargo-dist`](https://github.com/axodotdev/cargo-dist/) for shipping pre-built Rust applications."
-content_type = "text"
+title = "Release Engineering Is Exhausting So Here's cargo-dist"
+url = "https://blog.axo.dev/2023/02/cargo-dist"
 
 [[entries]]
-url = "https://oimo.io/works/life/"
-title = "Life universe"
+content_type = "text"
 summary = "A game of life implementing game of life."
-content_type = "text"
+title = "Life universe"
+url = "https://oimo.io/works/life/"
 
 [[entries]]
-url = "https://iamkate.com/data/12-bit-rainbow/"
-title = "The 12-bit rainbow palette"
+content_type = "text"
 summary = "A 12-bit colour palette based on perception of hue, chrome and luminance."
-content_type = "text"
+title = "The 12-bit rainbow palette"
+url = "https://iamkate.com/data/12-bit-rainbow/"
 
 [[entries]]
-url = "https://github.com/jdxcode/rtx"
-title = "rtx"
+content_type = "text"
 summary = "A polyglot runtime manager written in Rust that uses [asdf](https://github.com/asdf-vm/asdf) plugins under the hood."
-content_type = "text"
+title = "rtx"
+url = "https://github.com/jdxcode/rtx"
 
 [[entries]]
-url = "https://github.com/martinvonz/jj"
-title = "Jujutsu VCS"
+content_type = "text"
 summary = "A Git-compatible distributed version control system using Git's data model with a UX inspired by Mercurial, Pijul and Darcs."
-content_type = "text"
+title = "Jujutsu VCS"
+url = "https://github.com/martinvonz/jj"
 
 [[entries]]
-url = "https://qoiformat.org/"
-title = "The Quite OK Image Format"
-summary = "An image format with lossless compression to PNG similar sizes whilst providing faster encoding (claim 20x-50x) and faster decoding (claim 3x-4x)."
 content_type = "text"
+summary = "An image format with lossless compression to PNG similar sizes whilst providing faster encoding (claim 20x-50x) and faster decoding (claim 3x-4x)."
+title = "The Quite OK Image Format"
+url = "https://qoiformat.org/"

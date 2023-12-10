@@ -1,25 +1,27 @@
-type = "bulletin"
 id = "2023-W24"
-publication_date = 2023-06-18
+publication_date = "2023-06-18"
 summary = "This week has been about a SurrealDB playground, PDF annotation in Obsidian, snapshot testing in Rust, the new EU AI Act, CSS blend modes and weaknesses in OOXML signatures."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.kodingkitty.com/blog/blend-modes/"
-title = "Mastering CSS Blend Modes"
-summary = "An article introducing what is in offer in the [Candidate Recommendation for CSS blend modes](https://www.w3.org/TR/compositing-1/#propdef-background-blend-mode)."
 content_type = "text"
+summary = "An article introducing what is in offer in the [Candidate Recommendation for CSS blend modes](https://www.w3.org/TR/compositing-1/#propdef-background-blend-mode)."
+title = "Mastering CSS Blend Modes"
+url = "https://www.kodingkitty.com/blog/blend-modes/"
 
 [[entries]]
-url = "https://www.usenix.org/system/files/sec23summer_235-rohlmann-prepub.pdf"
-title = "Every Signature is Broken: On the Insecurity of Microsoft Office's OOXML Signatures"
-summary = "A papers on the results of researching the integrity of Microsoft OOXML signatures including verification and forgery. Notice that the paper also says:\n\n> The vulnerabilities have been acknowledged by Microsoft. However, Microsoft has decided that the vulnerabilities do not require immediate attention."
 content_type = "pdf"
+summary = """
+A papers on the results of researching the integrity of Microsoft OOXML signatures including verification and forgery. Notice that the paper also says:
+
+> The vulnerabilities have been acknowledged by Microsoft. However, Microsoft has decided that the vulnerabilities do not require immediate attention."""
+title = "Every Signature is Broken: On the Insecurity of Microsoft Office's OOXML Signatures"
+url = "https://www.usenix.org/system/files/sec23summer_235-rohlmann-prepub.pdf"
 
 [[entries]]
-url = "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence"
-title = "EU AI Act: first regulation on artificial intelligence"
+content_type = "text"
 summary = """
-An article summarising the new EU AI Act and their risk classification for mitigating potential harm derived from AI. Don't get your hopes too high, the article does not define "AI" in any meaningful way. Their best is this:
+An article summarising the new EU AI Act and their risk classification for mitigating potential harm derived from AI. Don't get your hopes too high, the article does not define \"AI\" in any meaningful way. Their best is this:
 
 > No single definition of artificial intelligence is accepted by the scientific community and the term 'AI' is often used as a 'blanket term' for various computer applications based on different techniques, which exhibit capabilities commonly and currently associated with human intelligence.
 
@@ -37,22 +39,23 @@ Still useless. The [Annex 1](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri
 
 Enough ranting. I'm sure I missed the important bit in this legal maze. Let me know if you find something remotely useful.
 """
-content_type = "text"
+title = "EU AI Act: first regulation on artificial intelligence"
+url = "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence"
 
 [[entries]]
-url = "https://github.com/elias-sundqvist/obsidian-annotator"
-title = "Obsidian Annotator"
+content_type = "text"
 summary = "An Obsidian plugin for annotating PDF and EPUB files. Based on how [hypothes.is](https://web.hypothes.is/) stores annotations but offline."
-content_type = "text"
+title = "Obsidian Annotator"
+url = "https://github.com/elias-sundqvist/obsidian-annotator"
 
 [[entries]]
-url = "https://insta.rs/"
-title = "Insta"
+content_type = "text"
 summary = "A snapshot testing tool for Rust with a range of snapshot formats to choose from, decent diffs and interactive reviews."
-content_type = "text"
+title = "Insta"
+url = "https://insta.rs/"
 
 [[entries]]
-url = "https://github.com/StarlaneStudios/Surrealist"
-title = "Surrealist"
-summary = "A playground for querying SurrealDB for the Browser and the Desktop."
 content_type = "text"
+summary = "A playground for querying SurrealDB for the Browser and the Desktop."
+title = "Surrealist"
+url = "https://github.com/StarlaneStudios/Surrealist"

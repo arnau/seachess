@@ -1,10 +1,7 @@
-type = "sketch"
-id = "sleepy-dragon"
-title = "Sleepy dragon"
 asset = "sleepy_dragon.jpg"
 author = "arnau"
-publication_date = 2019-10-22
-tools = [
-  "ipadpro",
-  "procreate",
-]
+id = "sleepy-dragon"
+publication_date = "2019-10-22"
+title = "Sleepy dragon"
+tools = ["ipadpro", "procreate"]
+type = "sketch"

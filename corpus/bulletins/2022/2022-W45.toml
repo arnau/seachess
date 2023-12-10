@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2022-W45"
-publication_date = 2022-11-13
+publication_date = "2022-11-13"
 summary = "This week has been about a curated list of Rust libraries, REPL driven development, a Datalog database, a tool to transform HTML to SVG, an RSS reader and Neovim plugins in Lua."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/cozodb/cozo"
-title = "Cozo"
+content_type = "text"
 summary = "A general-purpose, transactional, relational database that uses Datalog for query, is embeddable, focused on graph data and algorithms. It provides bindings for Python, NodeJS and Java besides native Rust embedding."
-content_type = "text"
+title = "Cozo"
+url = "https://github.com/cozodb/cozo"
 
 [[entries]]
-url = "https://github.com/zhanglun/lettura"
+content_type = "text"
+summary = """
+A desktop application to organise and read RSS sources.
+
+Now that [Twitter is struggling](https://blog.pragmaticengineer.com/cruel-changes-at-twitter/) RSS might have a comeback. Maybe it's [Mastodon](https://joinmastodon.org/)'s time ([Debirdify](https://pruvisto.org/debirdify/)). Or maybe [Tribel](https://www.tribel.com/), or [Cohost](https://cohost.org/), or… Bumpy times."""
 title = "Lettura"
-summary = "A desktop application to organise and read RSS sources.\n\nNow that [Twitter is struggling](https://blog.pragmaticengineer.com/cruel-changes-at-twitter/) RSS might have a comeback. Maybe it's [Mastodon](https://joinmastodon.org/)'s time ([Debirdify](https://pruvisto.org/debirdify/)). Or maybe [Tribel](https://www.tribel.com/), or [Cohost](https://cohost.org/), or… Bumpy times."
-content_type = "text"
+url = "https://github.com/zhanglun/lettura"
 
 [[entries]]
-url = "https://zignar.net/2022/11/06/structuring-neovim-lua-plugins/"
-title = "Structuring Neovim Lua plugins"
+content_type = "text"
 summary = "A tutorial on how Neovim plugins work and the different ways to organise them."
-content_type = "text"
+title = "Structuring Neovim Lua plugins"
+url = "https://zignar.net/2022/11/06/structuring-neovim-lua-plugins/"
 
 [[entries]]
-url = "https://blog.fogus.me/2022/11/10/the-one-about-lisp-interactivity/"
+content_type = "text"
+summary = """
+An article on the REPL driven development style in the lisp family languages.
+
+The author is clearly in favour of this type of development but links to a few other articles that can help balance their view."""
 title = "The one about Lisp interactivity"
-summary = "An article on the REPL driven development style in the lisp family languages.\n\nThe author is clearly in favour of this type of development but links to a few other articles that can help balance their view."
-content_type = "text"
+url = "https://blog.fogus.me/2022/11/10/the-one-about-lisp-interactivity/"
 
 [[entries]]
-url = "https://blessed.rs/"
-title = "Blessed.rs"
+content_type = "text"
 summary = "A collection of Rust libraries and tools to fill in the missing bits from the standard library."
-content_type = "text"
+title = "Blessed.rs"
+url = "https://blessed.rs/"
 
 [[entries]]
-url = "https://github.com/vercel/satori"
-title = "Satori"
-summary = "A TypeScript library to convert HTML and CSS to SVG."
 content_type = "text"
+summary = "A TypeScript library to convert HTML and CSS to SVG."
+title = "Satori"
+url = "https://github.com/vercel/satori"

@@ -1,40 +1,49 @@
-type = "bulletin"
 id = "2023-W36"
-publication_date = 2023-09-10
+publication_date = "2023-09-10"
 summary = "This week has been about a tool for colour selection, a jq clone, Nix Flakes, Matrix shortcomings, the Oil shell and a video on curl."
+type = "bulletin"
 
 [[entries]]
-url = "https://journal.platonic.systems/nix-flake-architecture-in-practice/"
-title = "Nix Flake Architecture in Practice"
+content_type = "text"
 summary = "A tutorial using a how to use Nix Flakes to build a Vim plugin to showcase how Nix Flakes help with sandboxed development."
-content_type = "text"
+title = "Nix Flake Architecture in Practice"
+url = "https://journal.platonic.systems/nix-flake-architecture-in-practice/"
 
 [[entries]]
-url = "https://github.com/01mf02/jaq"
-title = "jaq"
+content_type = "text"
 summary = "A clone of `jq`, the JSON data processing tool."
-content_type = "text"
+title = "jaq"
+url = "https://github.com/01mf02/jaq"
 
 [[entries]]
-url = "https://0to255.com/"
-title = "0to255"
+content_type = "text"
 summary = "A colour tool for finding lighter and darker colors based on a selected base colour."
-content_type = "text"
+title = "0to255"
+url = "https://0to255.com/"
 
 [[entries]]
-url = "https://telegra.ph/why-not-matrix-08-07"
+content_type = "text"
+summary = """
+An article arguing that [Matrix](https://matrix.org/) is not fit for purpose. This is my favourite:
+
+> the entire matrix api surface is http and json. […] the federation api also uses http and json and also tries to be cryptographically secure. for signing events and requests to work, matrix expects the json to be in canonical form, except the spec doesn’t actually define what the canonical json form is strictly […]
+
+And continues with
+
+> […] turns out that matrix homeservers written in different languages have json interoperability issues, so you might just get random events or requests that fail signature checks between different types of matrix servers […]
+
+“JSON interoperability” should be considered an oxymoron."""
 title = "why not matrix?"
-summary = "An article arguing that [Matrix](https://matrix.org/) is not fit for purpose. This is my favourite:\n\n> the entire matrix api surface is http and json. […] the federation api also uses http and json and also tries to be cryptographically secure. for signing events and requests to work, matrix expects the json to be in canonical form, except the spec doesn’t actually define what the canonical json form is strictly […]\n\nAnd continues with\n\n> […] turns out that matrix homeservers written in different languages have json interoperability issues, so you might just get random events or requests that fail signature checks between different types of matrix servers […]\n\n“JSON interoperability” should be considered an oxymoron."
-content_type = "text"
+url = "https://telegra.ph/why-not-matrix-08-07"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=V5vZWHP-RqU"
-title = "Mastering the curl command line"
-summary = "A video on [curl](https://curl.se/) by its maintainer. If 3.5 hours is too much, you might find in [Mastering curl: interactive text guide](https://antonz.org/mastering-curl/) a good substitution."
 content_type = "video"
+summary = "A video on [curl](https://curl.se/) by its maintainer. If 3.5 hours is too much, you might find in [Mastering curl: interactive text guide](https://antonz.org/mastering-curl/) a good substitution."
+title = "Mastering the curl command line"
+url = "https://www.youtube.com/watch?v=V5vZWHP-RqU"
 
 [[entries]]
-url = "https://www.oilshell.org/"
-title = "Oils"
-summary = "A UNIX shell (two in one actually: OSH, YSH), aiming to improve [GNU Bash](https://www.gnu.org/software/bash/) whilst keeping backwards compatibility."
 content_type = "text"
+summary = "A UNIX shell (two in one actually: OSH, YSH), aiming to improve [GNU Bash](https://www.gnu.org/software/bash/) whilst keeping backwards compatibility."
+title = "Oils"
+url = "https://www.oilshell.org/"

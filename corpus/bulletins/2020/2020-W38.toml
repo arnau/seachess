@@ -1,40 +1,42 @@
-type = "bulletin"
 id = "2020-W38"
-publication_date = 2020-09-20
+publication_date = "2020-09-20"
 summary = "This week has been about interactive articles, data governance, diagrams, roadmaps, predictions and PGP."
+type = "bulletin"
 
 [[entries]]
-url = "https://sequoia-pgp.org/"
-title = "Sequoia PGP"
+content_type = "text"
 summary = "A command line interface and library implementing OpenPGP in Rust."
-content_type = "text"
+title = "Sequoia PGP"
+url = "https://sequoia-pgp.org/"
 
 [[entries]]
-url = "https://kroki.io/"
+content_type = "text"
+summary = """
+A service that unifies a large set of engines for textual diagrams under the
+same API."""
 title = "Kroki"
-summary = "A service that unifies a large set of engines for textual diagrams under the\nsame API."
-content_type = "text"
+url = "https://kroki.io/"
 
 [[entries]]
-url = "https://foundation.mozilla.org/en/initiatives/data-futures/"
-title = "Data Futures"
+content_type = "text"
 summary = "A study on data governance aiming to identify alternatives to the current monopolies."
-content_type = "text"
+title = "Data Futures"
+url = "https://foundation.mozilla.org/en/initiatives/data-futures/"
 
 [[entries]]
-url = "https://distill.pub/2020/communicating-with-interactive-articles/"
-title = "Communicating with Interactive Articles"
+content_type = "text"
 summary = "An interactive article about communicating with interactive articles."
-content_type = "text"
+title = "Communicating with Interactive Articles"
+url = "https://distill.pub/2020/communicating-with-interactive-articles/"
 
 [[entries]]
-url = "https://m.signalvnoise.com/options-not-roadmaps/"
-title = "Options, Not Roadmaps"
+content_type = "text"
 summary = "An article explaining an alternative to roadmaps."
-content_type = "text"
+title = "Options, Not Roadmaps"
+url = "https://m.signalvnoise.com/options-not-roadmaps/"
 
 [[entries]]
-url = "https://www.alexmurrell.co.uk/articles/the-forecasting-fallacy"
-title = "The forecasting fallacy"
-summary = "An article showcasing the aberrant accuracy of professional predictors."
 content_type = "text"
+summary = "An article showcasing the aberrant accuracy of professional predictors."
+title = "The forecasting fallacy"
+url = "https://www.alexmurrell.co.uk/articles/the-forecasting-fallacy"

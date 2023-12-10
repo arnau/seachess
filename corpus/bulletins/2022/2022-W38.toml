@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W38"
-publication_date = 2022-09-25
+publication_date = "2022-09-25"
 summary = "This week has been about patterns in Rust, a TypeScript schema validation library, JavaScript memory leaks, JSON visualisation, a modern regular expression language and the data-driven cargo cult."
+type = "bulletin"
 
 [[entries]]
-url = "https://pomsky-lang.org/"
-title = "Pomsky"
+content_type = "text"
 summary = "A portable, modern regular expression language."
-content_type = "text"
+title = "Pomsky"
+url = "https://pomsky-lang.org/"
 
 [[entries]]
-url = "https://github.com/facebookincubator/memlab"
-title = "memlab"
+content_type = "text"
 summary = "An end-to-end testing and analysis framework for finding JavaScript memory leaks and optimization opportunities."
-content_type = "text"
+title = "memlab"
+url = "https://github.com/facebookincubator/memlab"
 
 [[entries]]
-url = "https://github.com/colinhacks/zod"
-title = "Zod"
+content_type = "text"
 summary = "A TypeScript-first schema declaration and validation library enabling type-checking at runtime."
-content_type = "text"
+title = "Zod"
+url = "https://github.com/colinhacks/zod"
 
 [[entries]]
-url = "https://jsoncrack.com/"
-title = "JSON Crack"
+content_type = "text"
 summary = "A tool to visualise JSON as an interactive graph."
-content_type = "text"
+title = "JSON Crack"
+url = "https://jsoncrack.com/"
 
 [[entries]]
-url = "https://dev.to/ivancernja/patterns-with-rust-types-3233"
-title = "Design Patterns with Rust Types"
+content_type = "text"
 summary = "An article introducing patterns and tricks to take advantage of Rust's type system for clean and safe code."
-content_type = "text"
+title = "Design Patterns with Rust Types"
+url = "https://dev.to/ivancernja/patterns-with-rust-types-3233"
 
 [[entries]]
-url = "https://twitchard.github.io/posts/2022-08-26-metrics-schmetrics.html"
-title = "Be good-argument-driven, not data-driven"
-summary = "An article on the abuse of the “data-driven” cargo cult."
 content_type = "text"
+summary = "An article on the abuse of the “data-driven” cargo cult."
+title = "Be good-argument-driven, not data-driven"
+url = "https://twitchard.github.io/posts/2022-08-26-metrics-schmetrics.html"

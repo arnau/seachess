@@ -1,10 +1,7 @@
-type = "sketch"
-id = "mobster"
-title = "Mobster"
 asset = "mobster.jpg"
 author = "arnau"
-publication_date = 2014-01-15
-tools = [
-  "ipad2",
-  "procreate",
-]
+id = "mobster"
+publication_date = "2014-01-15"
+title = "Mobster"
+tools = ["ipad2", "procreate"]
+type = "sketch"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W30"
-publication_date = 2022-07-31
+publication_date = "2022-07-31"
 summary = "This week has been about JSON-LD framing, Adaptive Radix Trees in DuckDB, SQLite storage, stacked-diff workflows with GitHub, safe SVGs and Livebook Desktop."
+type = "bulletin"
 
 [[entries]]
-url = "https://livebook.dev/"
-title = "Livebook Desktop"
+content_type = "text"
 summary = "A desktop shell application for running Livebook notebooks."
-content_type = "text"
+title = "Livebook Desktop"
+url = "https://livebook.dev/"
 
 [[entries]]
-url = "https://fly.io/blog/sqlite-internals-btree/"
-title = "SQLite Internals: Pages & B-trees"
+content_type = "text"
 summary = "An article diving into how SQLite stores data on disk."
-content_type = "text"
+title = "SQLite Internals: Pages & B-trees"
+url = "https://fly.io/blog/sqlite-internals-btree/"
 
 [[entries]]
-url = "https://duckdb.org/2022/07/27/art-storage.html"
-title = "Persistent Storage of Adaptive Radix Trees in DuckDB"
+content_type = "text"
 summary = "An article introducing Adaptive Radix Trees (ART) and how DuckDB uses them as persisted indexes to enforce constraints and to speed up query filters."
-content_type = "text"
+title = "Persistent Storage of Adaptive Radix Trees in DuckDB"
+url = "https://duckdb.org/2022/07/27/art-storage.html"
 
 [[entries]]
-url = "https://github.com/cloudflare/svg-hush"
-title = "svg-hush"
+content_type = "text"
 summary = "A tool to make arbitrary SVG files as benign and safe to serve as images in other common Web file formats."
-content_type = "text"
+title = "svg-hush"
+url = "https://github.com/cloudflare/svg-hush"
 
 [[entries]]
-url = "https://getcord.github.io/spr/"
-title = "spr"
+content_type = "text"
 summary = "A command line tool for using a stacked-diff workflow with GitHub."
-content_type = "text"
+title = "spr"
+url = "https://getcord.github.io/spr/"
 
 [[entries]]
-url = "http://blog.sparna.fr/2022/07/20/clean-json-ld-from-rdf-using-framing/"
-title = "Clean JSON(-LD) from RDF using Framing"
-summary = "An article introducing JSON-LD framing to automate the production of RDF-free JSON whilst keeping JSON-LD compatibility."
 content_type = "text"
+summary = "An article introducing JSON-LD framing to automate the production of RDF-free JSON whilst keeping JSON-LD compatibility."
+title = "Clean JSON(-LD) from RDF using Framing"
+url = "http://blog.sparna.fr/2022/07/20/clean-json-ld-from-rdf-using-framing/"

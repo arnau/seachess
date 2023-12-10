@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W15"
-publication_date = 2023-04-16
+publication_date = "2023-04-16"
 summary = "This week has been about a simplified Nix, fast lexers in Rust, accessible SolidJS, the London tube in 3D, a technical search engine, and headless mobile applications."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.ianvisits.co.uk/articles/3d-maps-of-every-underground-station-ab-14630/"
-title = "3D maps of every Underground station"
+content_type = "text"
 summary = "A collection of 3D maps of London's underground station corridors."
-content_type = "text"
+title = "3D maps of every Underground station"
+url = "https://www.ianvisits.co.uk/articles/3d-maps-of-every-underground-station-ab-14630/"
 
 [[entries]]
-url = "https://github.com/maciejhirsz/logos"
-title = "Logos"
+content_type = "text"
 summary = "A Rust library for creating fast lexers via expressive enums and callbacks per match."
-content_type = "text"
+title = "Logos"
+url = "https://github.com/maciejhirsz/logos"
 
 [[entries]]
-url = "https://getfleek.dev/"
-title = "Fleek"
+content_type = "text"
 summary = "An all-in-one management system built on top of Nix and Nix Home Manager. Instead of the Nix language it opts to use YAML."
-content_type = "text"
+title = "Fleek"
+url = "https://getfleek.dev/"
 
 [[entries]]
-url = "https://www.phind.com/"
+content_type = "text"
+summary = """
+A service for searching for technical solutions aided by AI.
+
+> [...] Unlike some other AI assistants, Phind pulls information from the internet and is always up to date. [...]"""
 title = "Phind"
-summary = "A service for searching for technical solutions aided by AI.\n\n> [...] Unlike some other AI assistants, Phind pulls information from the internet and is always up to date. [...]"
-content_type = "text"
+url = "https://www.phind.com/"
 
 [[entries]]
-url = "https://kobalte.dev/"
-title = "Kobalte"
+content_type = "text"
 summary = "A UI toolkit for building accessible web applications and design systems with SolidJS."
-content_type = "text"
+title = "Kobalte"
+url = "https://kobalte.dev/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=cWCZms92-1g"
-title = "iOS, Android and Web applications that share a single Rust core"
-summary = "A talk on approaching mobile applications with the headless paradigm."
 content_type = "video"
+summary = "A talk on approaching mobile applications with the headless paradigm."
+title = "iOS, Android and Web applications that share a single Rust core"
+url = "https://www.youtube.com/watch?v=cWCZms92-1g"

@@ -1,44 +1,44 @@
-type = "bulletin"
 id = "2021-W11"
-publication_date = 2021-03-21
+publication_date = "2021-03-21"
 summary = "This week has been about low-code in Node.js, Julia and Bayesian statistics, generative art with SVG and Prolog."
+type = "bulletin"
 
-[[entries]] 
-title = "Amplication"
-url = "https://amplication.com/"
+[[entries]]
+content_type = "text"
 summary = """
 A development tool to develop low-code Node.js applications. The generated server exposes a GraphQL API and the generated client uses React with Apollo.
 
 The tool is in alpha but looking promising already.
 """
-content_type = "text"
+title = "Amplication"
+url = "https://amplication.com/"
 
 [[entries]]
+content_type = "text"
+summary = "A book with a gentle introduction to how to use [Julia](https://julialang.org/) on Bayesian statistics, forecasting, machine learning, etc."
 title = "Data Science in Julia for Hackers"
 url = "https://datasciencejuliahackers.com/"
-summary = "A book with a gentle introduction to how to use [Julia](https://julialang.org/) on Bayesian statistics, forecasting, machine learning, etc."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A quick tutorial on using Google Sheets as a CSV data source. This tutorial uses JavaScript and Vue but it's easily translatable to any other technical stack."
 title = "Using Google Sheets as a simple database with Papa Parse"
 url = "https://dev.to/bornfightcompany/using-google-sheets-as-a-simple-database-with-papa-parse-2k7o"
-summary = "A quick tutorial on using Google Sheets as a CSV data source. This tutorial uses JavaScript and Vue but it's easily translatable to any other technical stack."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A tutorial on generative art using [SVG.js](https://svgjs.com/). A great step by step to get started on computer-based generative art."
 title = "A Generative SVG Starter Kit"
 url = "https://dev.to/georgedoescode/a-generative-svg-starter-kit-5cm1"
-summary = "A tutorial on generative art using [SVG.js](https://svgjs.com/). A great step by step to get started on computer-based generative art."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "An article with an in-depth analysis on why Tailwind CSS is not delivering what promises and actually makes it worse."
 title = "Why I Don't Like Tailwind CSS"
 url = "https://www.aleksandrhovhannisyan.com/blog/why-i-dont-like-tailwind-css/"
-summary = "An article with an in-depth analysis on why Tailwind CSS is not delivering what promises and actually makes it worse."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "An article describing how Prolog works so you gain the right intuitions. Hint: It's not about logic programming but unification and backtracking."
 title = "Prolog Under the Hood"
 url = "https://www.amzi.com/articles/prolog_under_the_hood.htm"
-summary = "An article describing how Prolog works so you gain the right intuitions. Hint: It's not about logic programming but unification and backtracking."
-content_type = "text"

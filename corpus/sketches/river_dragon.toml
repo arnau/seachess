@@ -1,10 +1,7 @@
-type = "sketch"
-id = "river-dragon"
-title = "River dragon"
 asset = "river_dragon.jpg"
 author = "arnau"
-publication_date = 2019-07-27
-tools = [
-  "ipadpro",
-  "procreate",
-]
+id = "river-dragon"
+publication_date = "2019-07-27"
+title = "River dragon"
+tools = ["ipadpro", "procreate"]
+type = "sketch"

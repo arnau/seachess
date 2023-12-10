@@ -1,40 +1,45 @@
-type = "bulletin"
 id = "2022-W43"
-publication_date = 2022-10-30
+publication_date = "2022-10-30"
 summary = "This week has been about big data, a SQLite vulnerability, GIFs as code, Kubernetes in the desktop, a JavaScript bundler in Rust and readline shortcuts."
+type = "bulletin"
 
 [[entries]]
-url = "https://turbo.build/"
-title = "Turbopack"
+content_type = "text"
 summary = "An incremental bundler and build system optimized for JavaScript and TypeScript, written in Rust."
-content_type = "text"
+title = "Turbopack"
+url = "https://turbo.build/"
 
 [[entries]]
-url = "https://github.com/charmbracelet/vhs"
-title = "vhs"
+content_type = "text"
 summary = "A command-line tool to write terminal GIFs as code."
-content_type = "text"
+title = "vhs"
+url = "https://github.com/charmbracelet/vhs"
 
 [[entries]]
-url = "https://blog.trailofbits.com/2022/10/25/sqlite-vulnerability-july-2022-library-api/"
+content_type = "text"
+summary = """
+An article on a security vulnerability found in SQLite that has been present since October 2000. It is fairly difficult to exploit it due the amount of conditions that need to align
+
+> On vulnerable systems, CVE-2022-35737 is exploitable when large string inputs are passed to the SQLite implementations of the printf functions and when the format string contains the %Q, %q, or %w format substitution types.
+
+Note that \"large string\" means \"billions of bytes are used in a string\", and also it's only achivable when using such input as an argument in the C API."""
 title = "Stranger Strings: An exploitable flaw in SQLite"
-summary = "An article on a security vulnerability found in SQLite that has been present since October 2000. It is fairly difficult to exploit it due the amount of conditions that need to align\n\n> On vulnerable systems, CVE-2022-35737 is exploitable when large string inputs are passed to the SQLite implementations of the printf functions and when the format string contains the %Q, %q, or %w format substitution types.\n\nNote that \"large string\" means \"billions of bytes are used in a string\", and also it's only achivable when using such input as an argument in the C API."
-content_type = "text"
+url = "https://blog.trailofbits.com/2022/10/25/sqlite-vulnerability-july-2022-library-api/"
 
 [[entries]]
-url = "https://berthub.eu/articles/posts/big-data-storage/"
-title = "Big Data Storage"
+content_type = "text"
 summary = "An article on how to store, process and transfer large amounts of data in a reliable manner."
-content_type = "text"
+title = "Big Data Storage"
+url = "https://berthub.eu/articles/posts/big-data-storage/"
 
 [[entries]]
-url = "https://rancherdesktop.io/"
-title = "Rancher Desktop"
+content_type = "text"
 summary = "An open-source desktop application for Mac, Windows and Linux for running Kubernetes and container management."
-content_type = "text"
+title = "Rancher Desktop"
+url = "https://rancherdesktop.io/"
 
 [[entries]]
-url = "https://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline"
-title = "Keyboard Shortcuts every Command Line Hacker should know about GNU Readline"
-summary = "An article on the shortcuts to know to navigate most interactive *nix shells."
 content_type = "text"
+summary = "An article on the shortcuts to know to navigate most interactive *nix shells."
+title = "Keyboard Shortcuts every Command Line Hacker should know about GNU Readline"
+url = "https://www.masteringemacs.org/article/keyboard-shortcuts-every-command-line-hacker-should-know-about-gnu-readline"

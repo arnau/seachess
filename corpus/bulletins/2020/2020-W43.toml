@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2020-W43"
-publication_date = 2020-10-25
+publication_date = "2020-10-25"
 summary = "This week has been about the origins of Markdown, WAGI, Firefox and privacy, Kitty, Visidata and LDflex."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.visidata.org/"
-title = "VisiData"
+content_type = "text"
 summary = "A tool to work with tabular data in the terminal."
-content_type = "text"
+title = "VisiData"
+url = "https://www.visidata.org/"
 
 [[entries]]
-url = "https://restoreprivacy.com/firefox-privacy/"
-title = "Firefox Privacy – The Complete How-To Guide"
+content_type = "text"
 summary = "A list of recommendations to tweak your Firefox configuration to improve on privacy."
-content_type = "text"
+title = "Firefox Privacy – The Complete How-To Guide"
+url = "https://restoreprivacy.com/firefox-privacy/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=2BHV1p2QzNw"
-title = "LDflex: a Read/Write Linked Data Abstraction for Front-End Web Developers"
-summary = "A video on why the Semantic Web has failed to attract developers and a proposal to fix that.\n\nAlthough LDflex looks like an attempt on the right direction in order to popularise the web of data, it still fails to prevent RDF primitives such as URIs and namespaces leaking into higher abstractions."
 content_type = "video"
+summary = """
+A video on why the Semantic Web has failed to attract developers and a proposal to fix that.
+
+Although LDflex looks like an attempt on the right direction in order to popularise the web of data, it still fails to prevent RDF primitives such as URIs and namespaces leaking into higher abstractions."""
+title = "LDflex: a Read/Write Linked Data Abstraction for Front-End Web Developers"
+url = "https://www.youtube.com/watch?v=2BHV1p2QzNw"
 
 [[entries]]
-url = "https://deislabs.io/posts/introducing-wagi-easiest-way-to-build-webassembly-microservices/"
-title = "Introducing WAGI: The Easiest Way to Build WebAssembly Microservices"
+content_type = "text"
 summary = "An article on WAGI, an experiment to use WebAssemby on microserivce architectures applying some classic ideas from CGI."
-content_type = "text"
+title = "Introducing WAGI: The Easiest Way to Build WebAssembly Microservices"
+url = "https://deislabs.io/posts/introducing-wagi-easiest-way-to-build-webassembly-microservices/"
 
 [[entries]]
-url = "https://sw.kovidgoyal.net/kitty/"
+content_type = "text"
+summary = """
+A terminal emulator capable of displaying images. This terminal has replaced my previous setup of Alacritty, iTerm and tmux.
+
+The [combination of Kitty with data visualisation tools](https://sw.kovidgoyal.net/kitty/integrations.html#system-and-data-visualisation-tools) is worth playing with."""
 title = "Kitty"
-summary = "A terminal emulator capable of displaying images. This terminal has replaced my previous setup of Alacritty, iTerm and tmux.\n\nThe [combination of Kitty with data visualisation tools](https://sw.kovidgoyal.net/kitty/integrations.html#system-and-data-visualisation-tools) is worth playing with."
-content_type = "text"
+url = "https://sw.kovidgoyal.net/kitty/"
 
 [[entries]]
-url = "https://capiche.com/e/markdown-history"
-title = "The story behind Markdown"
-summary = "A tale on the roots Markdown grew from."
 content_type = "text"
+summary = "A tale on the roots Markdown grew from."
+title = "The story behind Markdown"
+url = "https://capiche.com/e/markdown-history"

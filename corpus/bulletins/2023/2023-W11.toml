@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W11"
-publication_date = 2023-03-19
+publication_date = "2023-03-19"
 summary = "This week has been about translating C to Rust, a graphical font editor, an alternative to Parquet, a WASM Markdown parser, Lua in Neovim and AI Animation."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.hillelwayne.com/post/task-runner-neovim/"
-title = "A Neovim Task Runner in 30 lines of Lua"
+content_type = "text"
 summary = "A quick tutorial to get going with Lua in Neovim."
-content_type = "text"
+title = "A Neovim Task Runner in 30 lines of Lua"
+url = "https://www.hillelwayne.com/post/task-runner-neovim/"
 
 [[entries]]
-url = "https://c2rust.com/"
-title = "C2Rust"
+content_type = "text"
 summary = "A tool able to translate most C modules into semantically equivalent Rust code."
-content_type = "text"
+title = "C2Rust"
+url = "https://c2rust.com/"
 
 [[entries]]
-url = "https://github.com/epilys/gerb"
-title = "gerb"
+content_type = "text"
 summary = "A graphical font editor using GTK and Rust."
-content_type = "text"
+title = "gerb"
+url = "https://github.com/epilys/gerb"
 
 [[entries]]
-url = "https://github.com/eto-ai/lance"
-title = "Lance"
+content_type = "text"
 summary = "A columnar data format aiming for high-performance random access (it claims 100 times faster than Parquet) targeting search engines and feature stores. It's compatible with Pandas, Polars, DuckDB, Apache Arrow and more."
-content_type = "text"
+title = "Lance"
+url = "https://github.com/eto-ai/lance"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=xm7BwEsdVbQ"
-title = "Disney Animator REACTS to AI Animation!"
-summary = "A reflection on the so-called AI Animation by a 35-year professional in classic animation from Disney."
 content_type = "video"
+summary = "A reflection on the so-called AI Animation by a 35-year professional in classic animation from Disney."
+title = "Disney Animator REACTS to AI Animation!"
+url = "https://www.youtube.com/watch?v=xm7BwEsdVbQ"
 
 [[entries]]
-url = "https://github.com/rodneylab/parsedown"
-title = "Parsedown"
-summary = "A lightweight Markdown transformer into HTML written in Rust and compiled as WebAssembly."
 content_type = "text"
+summary = "A lightweight Markdown transformer into HTML written in Rust and compiled as WebAssembly."
+title = "Parsedown"
+url = "https://github.com/rodneylab/parsedown"

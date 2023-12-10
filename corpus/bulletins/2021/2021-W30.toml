@@ -1,40 +1,45 @@
-type = "bulletin"
 id = "2021-W30"
-publication_date = 2021-08-01
+publication_date = "2021-08-01"
 summary = "This week has been about WebRTC, Electron security, WebAssembly at the edge, securing GraphQL and the bad parts of Julia."
+type = "bulletin"
 
 [[entries]]
-url = "https://viralinstruction.com/posts/badjulia/"
+content_type = "text"
+summary = """
+An article going into the bad parts of [Julia](https://julialang.org/) according to the author. The first one, compile time latency is quite something:
+
+> What's happening is that Julia is compiling the code needed for its REPL and its integration with your editor.
+> This \"runtime\" compilation causes the lag we call compile time latency. [...] A small script [...] may have a 2 second latency, even if the computation itself takes microseconds.
+> [...] When using Python or Rust, you may be used to running some tests from command line, modifying a source file in the editor [...]. This workflow is not feasible in Julia - instead, you are essentially forced to into _REPL driven development_ [...]"""
 title = "What's bad about Julia"
-summary = "An article going into the bad parts of [Julia](https://julialang.org/) according to the author. The first one, compile time latency is quite something:\n\n> What's happening is that Julia is compiling the code needed for its REPL and its integration with your editor.\n> This \"runtime\" compilation causes the lag we call compile time latency. [...] A small script [...] may have a 2 second latency, even if the computation itself takes microseconds.\n> [...] When using Python or Rust, you may be used to running some tests from command line, modifying a source file in the editor [...]. This workflow is not feasible in Julia - instead, you are essentially forced to into _REPL driven development_ [...]"
-content_type = "text"
+url = "https://viralinstruction.com/posts/badjulia/"
 
 [[entries]]
-url = "https://github.com/revolist/revogrid"
-title = "revogrid"
+content_type = "text"
 summary = "A library to manage large grids with rich and customisable cell values and with the ability to use different rendering options such as React, Vue, Svelte, and more."
-content_type = "text"
+title = "revogrid"
+url = "https://github.com/revolist/revogrid"
 
 [[entries]]
-url = "https://github.com/doyensec/electronegativity"
-title = "Electronegativity"
+content_type = "text"
 summary = "A tool to identify misconfigurations and security anti-patterns in Electron applications."
-content_type = "text"
+title = "Electronegativity"
+url = "https://github.com/doyensec/electronegativity"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=EVRf708-zq4&t=3s"
-title = "Damn GraphQL - Defending and Attacking APIs"
-summary = "A talk on what to consider when securing a GraphQL API."
 content_type = "video"
+summary = "A talk on what to consider when securing a GraphQL API."
+title = "Damn GraphQL - Defending and Attacking APIs"
+url = "https://www.youtube.com/watch?v=EVRf708-zq4&t=3s"
 
 [[entries]]
-url = "https://blog.openreplay.com/everything-you-ever-wanted-to-know-about-webrtc"
-title = "Everything You Ever Wanted to Know About WebRTC"
+content_type = "text"
 summary = "An article diving into the fundamentals of the Web Real-Time Communication APIs."
-content_type = "text"
+title = "Everything You Ever Wanted to Know About WebRTC"
+url = "https://blog.openreplay.com/everything-you-ever-wanted-to-know-about-webrtc"
 
 [[entries]]
-url = "https://thenewstack.io/rust-and-webassembly-serverless-functions-in-vercel/"
-title = "Rust and WebAssembly Serverless Functions in Vercel"
-summary = "A tutorial on how to use WebAssembly in edge functions such as Vercel's Serverless Functions."
 content_type = "text"
+summary = "A tutorial on how to use WebAssembly in edge functions such as Vercel's Serverless Functions."
+title = "Rust and WebAssembly Serverless Functions in Vercel"
+url = "https://thenewstack.io/rust-and-webassembly-serverless-functions-in-vercel/"

@@ -1,40 +1,66 @@
-type = "bulletin"
 id = "2020-W34"
-publication_date = 2020-08-23
+publication_date = "2020-08-23"
 summary = "This week I got back into the Nu shell, kept digging into CRDTs, got closure with Mozilla's XUL story and considered the perils of AR for our personal privacy."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/"
+content_type = "text"
+summary = """
+An article explaining the optimisations you can apply to CRDT structures to
+keep their resource consumption in check."""
 title = "Are CRDTs suitable for shared editing?"
-summary = "An article explaining the optimisations you can apply to CRDT structures to\nkeep their resource consumption in check."
-content_type = "text"
+url = "https://blog.kevinjahns.de/are-crdts-suitable-for-shared-editing/"
 
 [[entries]]
-url = "https://www.nushell.sh"
+content_type = "text"
+summary = """
+A shell that focuses on structured data manipulation instead of raw streams. A
+snippet to give you a taste:
+
+```
+nu> ls | sort-by size
+────┬────────────────────────────────────┬──────┬────────┬─────────────
+ #  │ name                               │ type │ size   │ modified
+────┼────────────────────────────────────┼──────┼────────┼─────────────
+  0 │ ./seachess/bulletins/2020-W34.toml │ File │  764 B │ 4 mins ago
+  1 │ ./seachess/bulletins/2020-W22.toml │ File │ 1.5 KB │ 3 days ago
+...
+```"""
 title = "Nu shell"
-summary = "A shell that focuses on structured data manipulation instead of raw streams. A\nsnippet to give you a taste:\n\n```\nnu> ls | sort-by size\n────┬────────────────────────────────────┬──────┬────────┬─────────────\n #  │ name                               │ type │ size   │ modified\n────┼────────────────────────────────────┼──────┼────────┼─────────────\n  0 │ ./seachess/bulletins/2020-W34.toml │ File │  764 B │ 4 mins ago\n  1 │ ./seachess/bulletins/2020-W22.toml │ File │ 1.5 KB │ 3 days ago\n...\n```"
-content_type = "text"
+url = "https://www.nushell.sh"
 
 [[entries]]
-url = "https://mssv.net/2020/08/16/digital-sight-management-and-the-mystery-of-the-missing-amazon-receipts/"
+content_type = "text"
+summary = """
+An article about the future of wearable AR and the impact on corporations
+that base their strength in amassing data."""
 title = "Digital Sight Management, and the Mystery of the Missing Amazon Receipts"
-summary = "An article about the future of wearable AR and the impact on corporations\nthat base their strength in amassing data."
-content_type = "text"
+url = "https://mssv.net/2020/08/16/digital-sight-management-and-the-mystery-of-the-missing-amazon-receipts/"
 
 [[entries]]
-url = "https://github.com/opensource9ja/danfojs"
+content_type = "text"
+summary = """
+A library in JavaScript for high-performance for manipulating structured data
+akin to [Pandas](https://pandas.pydata.org) in Python."""
 title = "danfo.js"
-summary = "A library in JavaScript for high-performance for manipulating structured data\nakin to [Pandas](https://pandas.pydata.org) in Python."
-content_type = "text"
+url = "https://github.com/opensource9ja/danfojs"
 
 [[entries]]
-url = "https://yoric.github.io/post/why-did-mozilla-remove-xul-addons/"
+content_type = "text"
+summary = """
+An article about the history of the Firefox extension model. If you where into
+XUL back in the day, it might give you some closure."""
 title = "Why Did Mozilla Remove XUL Add-ons?"
-summary = "An article about the history of the Firefox extension model. If you where into\nXUL back in the day, it might give you some closure."
-content_type = "text"
+url = "https://yoric.github.io/post/why-did-mozilla-remove-xul-addons/"
 
 [[entries]]
-url = "https://jmap.io/"
-title = "JMAP"
-summary = "A standard for mail. An attempt to be a replacement for IMAP based on HTTPS\nand JSON although not restricted to either.\n\nIt has been published as two internet standards:\n[RFC8620](https://tools.ietf.org/html/rfc8620) and\n[RFC8621](https://tools.ietf.org/html/rfc8621)"
 content_type = "text"
+summary = """
+A standard for mail. An attempt to be a replacement for IMAP based on HTTPS
+and JSON although not restricted to either.
+
+It has been published as two internet standards:
+[RFC8620](https://tools.ietf.org/html/rfc8620) and
+[RFC8621](https://tools.ietf.org/html/rfc8621)"""
+title = "JMAP"
+url = "https://jmap.io/"

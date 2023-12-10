@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W05"
-publication_date = 2022-02-06
+publication_date = "2022-02-06"
 summary = "This week has been about a block protocol specification, the fair-clause model, an event sourcing framework, Gitless git, tree-sitter linting and a visual novel engine."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/thalo-rs/thalo"
-title = "Thalo"
+content_type = "text"
 summary = "An event sourcing framework for building microservices in Rust."
-content_type = "text"
+title = "Thalo"
+url = "https://github.com/thalo-rs/thalo"
 
 [[entries]]
-url = "https://peppe.rs/posts/lightweight_linting/"
-title = "Lightweight Linting"
+content_type = "text"
 summary = "An introduction to tree-sitter and its DSL for querying its lossless AST."
-content_type = "text"
+title = "Lightweight Linting"
+url = "https://peppe.rs/posts/lightweight_linting/"
 
 [[entries]]
-url = "https://blockprotocol.org/"
-title = "Block Protocol"
+content_type = "text"
 summary = "A protocol specification aiming to standardise the content management system editor building blocks."
-content_type = "text"
+title = "Block Protocol"
+url = "https://blockprotocol.org/"
 
 [[entries]]
-url = "https://gitless.com/"
-title = "Gitless"
+content_type = "text"
 summary = "A version control system built on top of Git and thus compatible with Git aiming to have a straightforward commit workflow, independent branches and a friendly command-line interface."
-content_type = "text"
+title = "Gitless"
+url = "https://gitless.com/"
 
 [[entries]]
-url = "https://www.renpy.org/"
-title = "Ren'Py"
+content_type = "text"
 summary = "A visual novel engine allowing the use of words, images, and sounds to tell interactive stories."
-content_type = "text"
+title = "Ren'Py"
+url = "https://www.renpy.org/"
 
 [[entries]]
-url = "https://faircode.io/"
-title = "Fair-Code"
-summary = "A software distribution model aiming to be an evolution of Open Source. If you find it too vague, you might want to read [The Commons Clause](https://commonsclause.com/) instead.\n\nAs with anything related to licensing, find a trusted source with legal knowledge so you understand the implications. Predators are lurking: [A Bug in Early Creative Commons Licenses Has Enabled a New Breed of Superpredator](https://doctorow.medium.com/a-bug-in-early-creative-commons-licenses-has-enabled-a-new-breed-of-superpredator-5f6360713299)."
 content_type = "text"
+summary = """
+A software distribution model aiming to be an evolution of Open Source. If you find it too vague, you might want to read [The Commons Clause](https://commonsclause.com/) instead.
+
+As with anything related to licensing, find a trusted source with legal knowledge so you understand the implications. Predators are lurking: [A Bug in Early Creative Commons Licenses Has Enabled a New Breed of Superpredator](https://doctorow.medium.com/a-bug-in-early-creative-commons-licenses-has-enabled-a-new-breed-of-superpredator-5f6360713299)."""
+title = "Fair-Code"
+url = "https://faircode.io/"

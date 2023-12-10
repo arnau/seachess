@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W32"
-publication_date = 2023-08-13
+publication_date = "2023-08-13"
 summary = "This week has been about the Red Book of data management, animations in WebAssembly, an embeddable relational database, Machine Learning in Rust, a tool to compress in many formats and a memory for the creator of Vim."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.erk.dev/posts/anifont/"
-title = "BadAppleFont"
+content_type = "text"
 summary = "An article exploring how to embed an animation into a font using WebAssembly."
-content_type = "text"
+title = "BadAppleFont"
+url = "https://blog.erk.dev/posts/anifont/"
 
 [[entries]]
-url = "https://github.com/ouch-org/ouch"
-title = "Ouch!"
+content_type = "text"
 summary = "A command-line tool for compressing/decompressing in different formats."
-content_type = "text"
+title = "Ouch!"
+url = "https://github.com/ouch-org/ouch"
 
 [[entries]]
-url = "https://j11g.com/2023/08/07/the-legacy-of-bram-moolenaar/"
-title = "The Legacy of Bram Moolenaar"
+content_type = "text"
 summary = "An article-eulogy for the creator of [Vim](https://www.vim.org/) who recently passed away."
-content_type = "text"
+title = "The Legacy of Bram Moolenaar"
+url = "https://j11g.com/2023/08/07/the-legacy-of-bram-moolenaar/"
 
 [[entries]]
-url = "http://www.redbook.io/index.html"
-title = "Readings in Database Systems"
+content_type = "text"
 summary = "A book, commonly known as “Red Book” on research on the field of data management. Available in HTML and PDF."
-content_type = "text"
+title = "Readings in Database Systems"
+url = "http://www.redbook.io/index.html"
 
 [[entries]]
-url = "https://github.com/huggingface/candle"
-title = "Candle"
+content_type = "text"
 summary = "A minimalist ML framework for Rust aiming to make serverless inference possible. The syntax is designed to look and feel similar to PyTorch whilst avoiding Python and its limitations all together."
-content_type = "text"
+title = "Candle"
+url = "https://github.com/huggingface/candle"
 
 [[entries]]
-url = "https://github.com/clockworklabs/SpacetimeDB"
-title = "SpacetimeDB"
-summary = "An embeddable relational database with the ability to run the application logic side by side; as they put it: “fancy stored procedures”."
 content_type = "text"
+summary = "An embeddable relational database with the ability to run the application logic side by side; as they put it: “fancy stored procedures”."
+title = "SpacetimeDB"
+url = "https://github.com/clockworklabs/SpacetimeDB"

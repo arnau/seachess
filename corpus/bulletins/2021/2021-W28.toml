@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2021-W28"
-publication_date = 2021-07-18
+publication_date = "2021-07-18"
 summary = "This week has been about webhooks vs events, a collection of programming languages, password manager security, TOML validator, web type scales and personal knowledge graphs."
+type = "bulletin"
 
 [[entries]]
-url = "https://taplo.tamasfe.dev/"
+content_type = "text"
+summary = """
+A toolkit to work with [TOML]. Includes a validator based on JSON schema, formatting and targets WebAssembly as well as Rust.
+
+[TOML]: https://toml.io/"""
 title = "Taplo"
-summary = "A toolkit to work with [TOML]. Includes a validator based on JSON schema, formatting and targets WebAssembly as well as Rust.\n\n[TOML]: https://toml.io/"
-content_type = "text"
+url = "https://taplo.tamasfe.dev/"
 
 [[entries]]
-url = "https://lock.cmpxchg8b.com/passmgrs.html"
-title = "Password Managers"
+content_type = "text"
 summary = "An article looking into the security weaknesses typically found on password managers integrating with a web browser."
-content_type = "text"
+title = "Password Managers"
+url = "https://lock.cmpxchg8b.com/passmgrs.html"
 
 [[entries]]
-url = "https://type-scale.com/"
-title = "Type scale"
+content_type = "text"
 summary = "A tool to calculate and visualise type scales for the Web."
-content_type = "text"
+title = "Type scale"
+url = "https://type-scale.com/"
 
 [[entries]]
-url = "https://blog.syncinc.so/events-not-webhooks"
-title = "Give me /events, not webhooks"
+content_type = "text"
 summary = "An article exploring the shortcomings of webhooks and how an events endpoint with a changelog can help mitigate them."
-content_type = "text"
+title = "Give me /events, not webhooks"
+url = "https://blog.syncinc.so/events-not-webhooks"
 
 [[entries]]
-url = "https://github.com/prathyvsh/pl-catalog"
-title = "Programming Languages for Enthusiasts"
+content_type = "text"
 summary = "A collection of not-so-mainstream programming languages and environments."
-content_type = "text"
+title = "Programming Languages for Enthusiasts"
+url = "https://github.com/prathyvsh/pl-catalog"
 
 [[entries]]
-url = "https://www.strategicstructures.com/?p=2246"
-title = "Personal Knowledge Graphs"
-summary = "A presentation on personal knowledge graphs their connection to the semantic web and the advent of note-taking apps."
 content_type = "video"
+summary = "A presentation on personal knowledge graphs their connection to the semantic web and the advent of note-taking apps."
+title = "Personal Knowledge Graphs"
+url = "https://www.strategicstructures.com/?p=2246"

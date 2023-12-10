@@ -1,40 +1,47 @@
-type = "bulletin"
 id = "2021-W36"
-publication_date = 2021-09-12
+publication_date = "2021-09-12"
 summary = "This week has been about a tool to query a codebase, a strongly-typed document database, a tool to query HTML, Matrix privacy considerations, a paper classifying different types of biases and security concerns in GraphQL."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/losfair/RefineDB"
-title = "RefineDB"
+content_type = "text"
 summary = "A strongly-typed document database that runs on any transactional key-value store."
-content_type = "text"
+title = "RefineDB"
+url = "https://github.com/losfair/RefineDB"
 
 [[entries]]
-url = "https://mit-serc.pubpub.org/pub/potential-sources-of-harm-throughout-the-machine-learning-life-cycle/release/2"
-title = "Understanding Potential Sources of Harm throughout the Machine Learning Life Cycle"
+content_type = "text"
 summary = "A paper classifying sources of bias in predictive models and their potential effects on the results of the predictions."
-content_type = "text"
+title = "Understanding Potential Sources of Harm throughout the Machine Learning Life Cycle"
+url = "https://mit-serc.pubpub.org/pub/potential-sources-of-harm-throughout-the-machine-learning-life-cycle/release/2"
 
 [[entries]]
-url = "https://hackea.org/notas/matrix.html"
-title = "Matrix? No, thanks."
+content_type = "text"
 summary = "An article providing a few things to consider when assessing whether [Matrix](https://matrix.org/) protects their users' privacy or not."
-content_type = "text"
+title = "Matrix? No, thanks."
+url = "https://hackea.org/notas/matrix.html"
 
 [[entries]]
-url = "https://bytes.zone/posts/tree-grepper/"
+content_type = "text"
+summary = """
+An article showcasinng [tree-grepper], a tool to query a codebase using its AST instead of plain text.
+
+[tree-grepper]: https://github.com/BrianHicks/tree-grepper"""
 title = "tree-grepper"
-summary = "An article showcasinng [tree-grepper], a tool to query a codebase using its AST instead of plain text.\n\n[tree-grepper]: https://github.com/BrianHicks/tree-grepper"
-content_type = "text"
+url = "https://bytes.zone/posts/tree-grepper/"
 
 [[entries]]
-url = "https://github.com/mgdm/htmlq"
+content_type = "text"
+summary = """
+A tool to query HTML using CSS expressions inspired by [jq].
+
+
+[jq]: https://stedolan.github.io/jq/"""
 title = "htmlq"
-summary = "A tool to query HTML using CSS expressions inspired by [jq].\n\n\n[jq]: https://stedolan.github.io/jq/"
-content_type = "text"
+url = "https://github.com/mgdm/htmlq"
 
 [[entries]]
-url = "https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready"
-title = "The complete GraphQL Security Guide: Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready"
-summary = "An article diving into a set of security concerns to consider when implementing a GraphQL API."
 content_type = "text"
+summary = "An article diving into a set of security concerns to consider when implementing a GraphQL API."
+title = "The complete GraphQL Security Guide: Fixing the 13 most common GraphQL Vulnerabilities to make your API production ready"
+url = "https://wundergraph.com/blog/the_complete_graphql_security_guide_fixing_the_13_most_common_graphql_vulnerabilities_to_make_your_api_production_ready"

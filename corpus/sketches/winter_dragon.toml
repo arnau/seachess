@@ -1,10 +1,7 @@
-type = "sketch"
-id = "winter-dragon"
-title = "Winter dragon"
 asset = "winter_dragon.jpg"
 author = "arnau"
-publication_date = 2014-03-16
-tools = [
-  "ipad2",
-  "procreate",
-]
+id = "winter-dragon"
+publication_date = "2014-03-16"
+title = "Winter dragon"
+tools = ["ipad2", "procreate"]
+type = "sketch"

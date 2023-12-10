@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W17"
-publication_date = 2023-04-30
+publication_date = "2023-04-30"
 summary = "This week has been about the internals of databases, LLMs in Python, LLMs in Rust, a service offering pre-trained models, MVCC in Postgres and a tool to kill processes."
+type = "bulletin"
 
 [[entries]]
-url = "https://build-your-own.org/database/"
-title = "Build Your Own Database From Scratch"
+content_type = "text"
 summary = "A book diving into how persistence, indexing and concurrency work in a database. It walks through building a key-value store and a simple relational database."
-content_type = "text"
+title = "Build Your Own Database From Scratch"
+url = "https://build-your-own.org/database/"
 
 [[entries]]
-url = "https://huggingface.co/"
-title = "Hugging Face"
+content_type = "text"
 summary = "A service providing a large range of machine learning components such as models and datasets."
-content_type = "text"
+title = "Hugging Face"
+url = "https://huggingface.co/"
 
 [[entries]]
-url = "https://github.com/jkfran/killport"
-title = "killport"
+content_type = "text"
 summary = "A command-line tool for killing processes listening on specific ports."
-content_type = "text"
+title = "killport"
+url = "https://github.com/jkfran/killport"
 
 [[entries]]
-url = "https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most/"
-title = "The Part of PostgreSQL We Hate the Most"
+content_type = "text"
 summary = "An article on how PostgreSQL implements Multi-Version Concurrency Control (MVCC) and why it's problematic."
-content_type = "text"
+title = "The Part of PostgreSQL We Hate the Most"
+url = "https://ottertune.com/blog/the-part-of-postgresql-we-hate-the-most/"
 
 [[entries]]
-url = "https://github.com/hwchase17/langchain"
+content_type = "text"
+summary = """
+A Python library to assist in the development of applications using large language models (LLMs). It integrates with a couple of dozens of LLM providers (proprietary and open source) including OpenAI and Llama-cpp. [LangChain.js](https://github.com/hwchase17/langchainjs) is an equivalent implementation written in TypeScript.
+
+For a quick overview you might want to read this article instead: [Getting Started with LangChain](https://towardsdatascience.com/getting-started-with-langchain-a-beginners-guide-to-building-llm-powered-applications-95fc8898732c)"""
 title = "LangChain"
-summary = "A Python library to assist in the development of applications using large language models (LLMs). It integrates with a couple of dozens of LLM providers (proprietary and open source) including OpenAI and Llama-cpp. [LangChain.js](https://github.com/hwchase17/langchainjs) is an equivalent implementation written in TypeScript.\n\nFor a quick overview you might want to read this article instead: [Getting Started with LangChain](https://towardsdatascience.com/getting-started-with-langchain-a-beginners-guide-to-building-llm-powered-applications-95fc8898732c)"
-content_type = "text"
+url = "https://github.com/hwchase17/langchain"
 
 [[entries]]
-url = "https://github.com/sobelio/llm-chain/"
-title = "llm-chain"
-summary = "A collection of Rust libraries to work with Large Language Models (LLMs) more effectively. Supports prompt templates, prompt-chaining, enabling complex tasks that LLMs can't handle in a single step. It supports connecting to ChatGPT, LLaMa, Alpaca and more."
 content_type = "text"
+summary = "A collection of Rust libraries to work with Large Language Models (LLMs) more effectively. Supports prompt templates, prompt-chaining, enabling complex tasks that LLMs can't handle in a single step. It supports connecting to ChatGPT, LLaMa, Alpaca and more."
+title = "llm-chain"
+url = "https://github.com/sobelio/llm-chain/"

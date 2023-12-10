@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W29"
-publication_date = 2023-07-23
+publication_date = "2023-07-23"
 summary = "This week has been about a CLI for plain-text HTTP requests, a linter for Python imports, a chart library in Rust a software license against bigotry, WebGPU and Rust traits for data streams."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.brandons.me/blog/bufread-and-when-to-use-it"
-title = "Rust's BufRead, And When To Use It"
+content_type = "text"
 summary = "An article diving into Rust traits for reading streams of data."
-content_type = "text"
+title = "Rust's BufRead, And When To Use It"
+url = "https://www.brandons.me/blog/bufread-and-when-to-use-it"
 
 [[entries]]
-url = "https://github.com/seddonym/import-linter"
+content_type = "text"
+summary = """
+A tool to analyse and enforce rules on how Python codebase uses imports between packages.
+
+You might be interested in the article [Kraken Technologies: How we organise our very large Python monolith](https://blog.europython.eu/kraken-technologies-how-we-organize-our-very-large-pythonmonolith/) where they explain how they use this tool to manage a large application with 400 regular contributors."""
 title = "import-linter"
-summary = "A tool to analyse and enforce rules on how Python codebase uses imports between packages.\n\nYou might be interested in the article [Kraken Technologies: How we organise our very large Python monolith](https://blog.europython.eu/kraken-technologies-how-we-organize-our-very-large-pythonmonolith/) where they explain how they use this tool to manage a large application with 400 regular contributors."
-content_type = "text"
+url = "https://github.com/seddonym/import-linter"
 
 [[entries]]
-url = "https://oql.avris.it/"
-title = "Opinionated Queer License"
+content_type = "text"
 summary = "A software license with permisive rules (a la MIT) but with strong restrictions against bigotry or violent purposes. Beware that the author is not a lawyer."
-content_type = "text"
+title = "Opinionated Queer License"
+url = "https://oql.avris.it/"
 
 [[entries]]
-url = "https://github.com/yuankunzhang/charming"
-title = "Charming"
+content_type = "text"
 summary = "A chart rendering library using [Apache ECharts](https://echarts.apache.org/en/index.html). It can render to many formats and it can run in WebAssembly environments."
-content_type = "text"
+title = "Charming"
+url = "https://github.com/yuankunzhang/charming"
 
 [[entries]]
-url = "https://github.com/Orange-OpenSource/hurl"
-title = "Hurl"
+content_type = "text"
 summary = "A command-line tool to run HTTP requests defined in a plain text format."
-content_type = "text"
+title = "Hurl"
+url = "https://github.com/Orange-OpenSource/hurl"
 
 [[entries]]
-url = "https://surma.dev/things/webgpu/"
-title = "WebGPU — All of the cores, none of the canvas"
-summary = "An article on what is WebGPU and what it has to offer."
 content_type = "text"
+summary = "An article on what is WebGPU and what it has to offer."
+title = "WebGPU — All of the cores, none of the canvas"
+url = "https://surma.dev/things/webgpu/"

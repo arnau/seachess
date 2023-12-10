@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W26"
-publication_date = 2023-07-02
+publication_date = "2023-07-02"
 summary = "This week has been about CSS Hue, a tool for code structural search, calling C++ from Rust, a block-based editor, a single data access layer library and memory allocation basics."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/dtolnay/cxx"
-title = "CXX"
+content_type = "text"
 summary = "A library providing a safe mechanism for calling C++ code from Rust."
-content_type = "text"
+title = "CXX"
+url = "https://github.com/dtolnay/cxx"
 
 [[entries]]
-url = "https://opendal.apache.org/"
-title = "Apache OpenDAL"
+content_type = "text"
 summary = "A library offering a single data access layer (DAL) for known storage protocols, object storage services, file storage services, key-value storage services and cache storage services."
-content_type = "text"
+title = "Apache OpenDAL"
+url = "https://opendal.apache.org/"
 
 [[entries]]
-url = "https://github.com/ast-grep/ast-grep"
-title = "ast-grep"
+content_type = "text"
 summary = "A command-line interface tool for code structural search, linting and rewriting."
-content_type = "text"
+title = "ast-grep"
+url = "https://github.com/ast-grep/ast-grep"
 
 [[entries]]
-url = "https://samwho.dev/memory-allocation/"
-title = "Memory Allocation"
+content_type = "text"
 summary = "An article on the rudiments of memory allocation, how it works and the problems it attempts to solve."
-content_type = "text"
+title = "Memory Allocation"
+url = "https://samwho.dev/memory-allocation/"
 
 [[entries]]
-url = "https://developer.mozilla.org/en-US/blog/learn-css-hues-colors-hsl/"
-title = "Learn how to use hue in CSS colors with HSL"
+content_type = "text"
 summary = "An article introducing the CSS `hue()` function and how to use it to obtain colour palettes."
-content_type = "text"
+title = "Learn how to use hue in CSS colors with HSL"
+url = "https://developer.mozilla.org/en-US/blog/learn-css-hues-colors-hsl/"
 
 [[entries]]
-url = "https://github.com/toeverything/blocksuite"
-title = "BlockSuite"
-summary = "An embeddable block-based editor for general-purpose collaborative applications."
 content_type = "text"
+summary = "An embeddable block-based editor for general-purpose collaborative applications."
+title = "BlockSuite"
+url = "https://github.com/toeverything/blocksuite"

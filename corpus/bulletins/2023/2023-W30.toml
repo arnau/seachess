@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W30"
-publication_date = 2023-07-30
+publication_date = "2023-07-30"
 summary = "This week has been about a Rust code checker, portable maps with WebGPU, Apple's Private Access Tokens, Desktop Container Environments, a tool for MacOS automation with Lua and a high-level systems programming language."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/maplibre/maplibre-rs"
-title = "MapLibre"
+content_type = "text"
 summary = "A portable renderer for maps using WebGL or WebGPU."
-content_type = "text"
+title = "MapLibre"
+url = "https://github.com/maplibre/maplibre-rs"
 
 [[entries]]
-url = "https://github.com/Canop/bacon"
-title = "Bacon"
+content_type = "text"
 summary = "A tool to run Rust code checks in the background."
-content_type = "text"
+title = "Bacon"
+url = "https://github.com/Canop/bacon"
 
 [[entries]]
-url = "https://iximiuz.ck.page/posts/container-tools-tips-and-tricks-issue-4-digging-into-cross-platform-containers"
-title = "Digging into Cross-Platform Containers"
+content_type = "text"
 summary = "An article diving into how Desktop Container Environments (e.g. Docker Desktop, Rancher Desktop) deal with non-native architectures (e.g. AMD64 on an ARM64)."
-content_type = "text"
+title = "Digging into Cross-Platform Containers"
+url = "https://iximiuz.ck.page/posts/container-tools-tips-and-tricks-issue-4-digging-into-cross-platform-containers"
 
 [[entries]]
-url = "https://httptoolkit.com/blog/apple-private-access-tokens-attestation/"
-title = "Apple already shipped attestation on the web, and we barely noticed"
+content_type = "text"
 summary = "An article on Apple's [Private Access Tokens](https://developer.apple.com/news/?id=huqjyh7k) and the similarities with the controversial [Web Environment Integrity](https://github.com/RupertBenWiser/Web-Environment-Integrity) from Chromium (i.e. Google)."
-content_type = "text"
+title = "Apple already shipped attestation on the web, and we barely noticed"
+url = "https://httptoolkit.com/blog/apple-private-access-tokens-attestation/"
 
 [[entries]]
-url = "https://www.val-lang.dev/"
-title = "The Val programming language"
+content_type = "text"
 summary = "A programming language that leverages mutable value semantics and generic programming for high-level systems programming."
-content_type = "text"
+title = "The Val programming language"
+url = "https://www.val-lang.dev/"
 
 [[entries]]
-url = "https://www.hammerspoon.org/"
-title = "Hammerspoon"
-summary = "A tool for automation of macOS scripted with Lua."
 content_type = "text"
+summary = "A tool for automation of macOS scripted with Lua."
+title = "Hammerspoon"
+url = "https://www.hammerspoon.org/"

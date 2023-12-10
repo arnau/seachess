@@ -1,40 +1,44 @@
-type = "bulletin"
 id = "2021-W33"
-publication_date = 2021-08-22
+publication_date = "2021-08-22"
 summary = "This week has been about the history of the pixel, base64, inferential statistical modelling, a vim-like browser, the shortcomings of CSV and the beauty of Bézier curves."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.bitsondisk.com/writing/2021/retire-the-csv/"
+content_type = "text"
+summary = """
+An article ranting about the shortcomings of CSV. Although I don't believe the proposed way forward is remotely feasible, I share the frustration.
+
+And I deeply disagree with the “CSV is simple and readable by humans”. Some CSV can be simple, some can be readable but editing a wide CSV with lots of variations in their values (e.g. empty fields, double quotes, empty double quotes) makes it a nightmare to scan without the aid of a tool.
+Fail to add the right amount of commas and the CSV will be broken."""
 title = "It's Time to Retire the CSV"
-summary = "An article ranting about the shortcomings of CSV. Although I don't believe the proposed way forward is remotely feasible, I share the frustration.\n\nAnd I deeply disagree with the “CSV is simple and readable by humans”. Some CSV can be simple, some can be readable but editing a wide CSV with lots of variations in their values (e.g. empty fields, double quotes, empty double quotes) makes it a nightmare to scan without the aid of a tool.\nFail to add the right amount of commas and the CSV will be broken."
-content_type = "text"
+url = "https://www.bitsondisk.com/writing/2021/retire-the-csv/"
 
 [[entries]]
-url = "https://vieb.dev/"
-title = "Vieb"
+content_type = "text"
 summary = "A web browser built on top of Electron offering a modal interface a-la Vim."
-content_type = "text"
+title = "Vieb"
+url = "https://vieb.dev/"
 
 [[entries]]
-url = "https://dev.to/tiemen/implementing-base64-from-scratch-in-rust-kb1"
-title = "Implementing Base64 from scratch in Rust"
+content_type = "text"
 summary = "An article exploring the base64 algorithm in detail."
-content_type = "text"
+title = "Implementing Base64 from scratch in Rust"
+url = "https://dev.to/tiemen/implementing-base64-from-scratch-in-rust-kb1"
 
 [[entries]]
-url = "https://peopleanalytics-regression-book.org/"
-title = "Handbook of Regression Modeling in People Analytics"
+content_type = "text"
 summary = "A book on practical inferential statistical modelling with exercises and examples in R."
-content_type = "text"
+title = "Handbook of Regression Modeling in People Analytics"
+url = "https://peopleanalytics-regression-book.org/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=aVwxzDHniEw"
-title = "The beauty of Bézier curves"
-summary = "A video unpacking Bézier curves and their properties and uses."
 content_type = "video"
+summary = "A video unpacking Bézier curves and their properties and uses."
+title = "The beauty of Bézier curves"
+url = "https://www.youtube.com/watch?v=aVwxzDHniEw"
 
 [[entries]]
-url = "https://aeon.co/essays/a-biography-of-the-pixel-the-elementary-particle-of-pictures"
-title = "Pixel: a biography"
-summary = "An article on the history of the pixel. Fourier, Kotelnikov, the pixel squaring and more."
 content_type = "text"
+summary = "An article on the history of the pixel. Fourier, Kotelnikov, the pixel squaring and more."
+title = "Pixel: a biography"
+url = "https://aeon.co/essays/a-biography-of-the-pixel-the-elementary-particle-of-pictures"

@@ -1,40 +1,56 @@
-type = "bulletin"
 id = "2020-W06"
-publication_date = 2020-02-09
+publication_date = "2020-02-09"
 summary = "This week has been about Rust, a game like tetris, statistics of your codebase and WebAssembly."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=fh9WXPu0hw8"
-title = "Bringing WebAssembly out side the web with WASI"
-summary = "Lin Clark walks us through the ideas behind WebAssembly and how the result of\nit could lead to a more secure world.\n\nIf you rather read than watch, check her article\n[Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)"
 content_type = "video"
+summary = """
+Lin Clark walks us through the ideas behind WebAssembly and how the result of
+it could lead to a more secure world.
+
+If you rather read than watch, check her article
+[Standardizing WASI: A system interface to run WebAssembly outside the web](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)"""
+title = "Bringing WebAssembly out side the web with WASI"
+url = "https://www.youtube.com/watch?v=fh9WXPu0hw8"
 
 [[entries]]
-url = "https://cfsamsonbooks.gitbook.io/epoll-kqueue-iocp-explained"
+content_type = "text"
+summary = """
+A web book on different methods to use different strategies for efficient high
+performance I/O."""
 title = "Epoll, Kqueue and IOCP explained with Rust"
-summary = "A web book on different methods to use different strategies for efficient high\nperformance I/O."
-content_type = "text"
+url = "https://cfsamsonbooks.gitbook.io/epoll-kqueue-iocp-explained"
 
 [[entries]]
-url = "https://medium.com/wasm/strings-in-webassembly-wasm-57a05c1ea333"
+content_type = "text"
+summary = """
+An in-depth explanation of how Strings work in WebAssembly, specifically how
+Rust wasm-bindgen handles them."""
 title = "Strings in WebAssembly (Wasm)"
-summary = "An in-depth explanation of how Strings work in WebAssembly, specifically how\nRust wasm-bindgen handles them."
-content_type = "text"
+url = "https://medium.com/wasm/strings-in-webassembly-wasm-57a05c1ea333"
 
 [[entries]]
-url = "https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f"
+content_type = "text"
+summary = """
+This is another sneak peek into how Discord is architected through a success
+story using Rust."""
 title = "Why Discord is switching from Go to Rust"
-summary = "This is another sneak peek into how Discord is architected through a success\nstory using Rust."
-content_type = "text"
+url = "https://blog.discordapp.com/why-discord-is-switching-from-go-to-rust-a190bbca2b1f"
 
 [[entries]]
-url = "https://dirk.rave.org/combinatris/"
+content_type = "text"
+summary = """
+A game like Tetris using [SKI
+combinators](https://en.wikipedia.org/wiki/SKI_combinator_calculus) instead of
+coloured blocks. This is a good excuse to learn how they work isn't it?"""
 title = "Combinatris"
-summary = "A game like Tetris using [SKI\ncombinators](https://en.wikipedia.org/wiki/SKI_combinator_calculus) instead of\ncoloured blocks. This is a good excuse to learn how they work isn't it?"
-content_type = "text"
+url = "https://dirk.rave.org/combinatris/"
 
 [[entries]]
-url = "https://github.com/XAMPPRocky/tokei"
-title = "Tokei"
-summary = "A tool that gives statistics about a codebase. It will show number of files,\ntotal lines, comments and blank lines grouped by language."
 content_type = "text"
+summary = """
+A tool that gives statistics about a codebase. It will show number of files,
+total lines, comments and blank lines grouped by language."""
+title = "Tokei"
+url = "https://github.com/XAMPPRocky/tokei"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W40"
-publication_date = 2023-10-08
+publication_date = "2023-10-08"
 summary = "This week has been about the Border Gateway Protocol, a game for learning how to code, changesets for better PRs, a tool manager, an embeddable language in Rust and a compact tutorial on Unicode."
+type = "bulletin"
 
 [[entries]]
-url = "https://mitchellh.com/writing/github-changesets"
-title = "Reorient GitHub Pull Requests Around Changesets"
+content_type = "text"
 summary = "An article proposing the idea of “changeset” for a less painful experience with GitHub pull request workflows."
-content_type = "text"
+title = "Reorient GitHub Pull Requests Around Changesets"
+url = "https://mitchellh.com/writing/github-changesets"
 
 [[entries]]
-url = "https://tonsky.me/blog/unicode/"
-title = "The Absolute Minimum Every Software Developer Must Know About Unicode in 2023 (Still No Excuses!)"
+content_type = "text"
 summary = "A compact tutorial on Unicode to get a grip on it."
-content_type = "text"
+title = "The Absolute Minimum Every Software Developer Must Know About Unicode in 2023 (Still No Excuses!)"
+url = "https://tonsky.me/blog/unicode/"
 
 [[entries]]
-url = "https://blog.benjojo.co.uk/post/bgp-path-attributes-grave-error-handling"
-title = "Grave flaws in BGP Error handling"
+content_type = "text"
 summary = "An article on the weaknesses of the Border Gateway Protocol, the protocol that directs routing decisions between different ISP networks effectively holding the internet together."
-content_type = "text"
+title = "Grave flaws in BGP Error handling"
+url = "https://blog.benjojo.co.uk/post/bgp-path-attributes-grave-error-handling"
 
 [[entries]]
-url = "https://elaragame.com/"
-title = "Elara"
+content_type = "text"
 summary = "A game for learning how to code. It uses [Rhai](https://rhai.rs/) as the language of choice to walk you through programming concepts."
-content_type = "text"
+title = "Elara"
+url = "https://elaragame.com/"
 
 [[entries]]
-url = "https://rhai.rs/"
-title = "Rhai"
+content_type = "text"
 summary = "An embeddable to-use dynamic scripting language resembling Rust with some JavaScript in it. Builds for most common targets including no-std and WASM."
-content_type = "text"
+title = "Rhai"
+url = "https://rhai.rs/"
 
 [[entries]]
-url = "https://pkgx.sh/"
-title = "pkgx"
-summary = "A tool to manage other tools via shims. Feels an in-between Nix, a package manager and a version manager."
 content_type = "text"
+summary = "A tool to manage other tools via shims. Feels an in-between Nix, a package manager and a version manager."
+title = "pkgx"
+url = "https://pkgx.sh/"

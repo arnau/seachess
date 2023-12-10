@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W15"
-publication_date = 2022-04-17
+publication_date = "2022-04-17"
 summary = "This week has been about CI/CD security, Deno on edge static websites, procedural Chinese-like landscapes, a syntax-based diff tool, a technical publishing system and CSS layout modes."
+type = "bulletin"
 
 [[entries]]
-url = "https://deno.com/blog/a-whole-website-in-a-single-js-file"
-title = "A Whole Website in a Single JavaScript File"
+content_type = "text"
 summary = "A tutorial on Deno for edge static websites."
-content_type = "text"
+title = "A Whole Website in a Single JavaScript File"
+url = "https://deno.com/blog/a-whole-website-in-a-single-js-file"
 
 [[entries]]
-url = "https://www.joshwcomeau.com/css/understanding-layout-algorithms/"
-title = "Understanding Layout Algorithms"
+content_type = "text"
 summary = "An article exploring CSS from a layout point of view."
-content_type = "text"
+title = "Understanding Layout Algorithms"
+url = "https://www.joshwcomeau.com/css/understanding-layout-algorithms/"
 
 [[entries]]
-url = "https://cycode.com/blog/github-actions-vulnerabilities/"
-title = "How We Discovered Vulnerabilities in CI/CD Pipelines of Popular Open-Source Projects"
+content_type = "text"
 summary = "An article showcasing the impact of misconfiguring CI/CD pipelines."
-content_type = "text"
+title = "How We Discovered Vulnerabilities in CI/CD Pipelines of Popular Open-Source Projects"
+url = "https://cycode.com/blog/github-actions-vulnerabilities/"
 
 [[entries]]
-url = "https://quarto.org/"
-title = "Quarto"
+content_type = "text"
 summary = "A scientific and technical publishing system built on [Pandoc](https://pandoc.org/). Accepts Markdown or [Jupyter](https://jupyter.org/) notebooks as well as dynamic content in [Python](https://www.python.org/), [R](https://www.r-project.org/) or [Julia](https://julialang.org/)."
-content_type = "text"
+title = "Quarto"
+url = "https://quarto.org/"
 
 [[entries]]
-url = "https://github.com/Wilfred/difftastic"
-title = "Difftastic"
+content_type = "text"
 summary = "An experimental diff tool that compares files based on their syntax."
-content_type = "text"
+title = "Difftastic"
+url = "https://github.com/Wilfred/difftastic"
 
 [[entries]]
-url = "https://github.com/LingDong-/shan-shui-inf"
-title = "Shan Shui"
-summary = "Procedurally-generated vector-format infinitely-scrolling Chinese landscape."
 content_type = "text"
+summary = "Procedurally-generated vector-format infinitely-scrolling Chinese landscape."
+title = "Shan Shui"
+url = "https://github.com/LingDong-/shan-shui-inf"

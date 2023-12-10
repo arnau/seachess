@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W33"
-publication_date = 2023-08-20
+publication_date = "2023-08-20"
 summary = "This week has been about Jira from the terminal, GitHub integrations with Rust, Postgres replicated to SQLite, a collection of miniature programming languages, unused CSS and whether syntax highlighting helps or not."
+type = "bulletin"
 
 [[entries]]
-url = "https://purgecss.com/"
-title = "PrugeCSS"
+content_type = "text"
 summary = "A tool to remove unused CSS from a project."
-content_type = "text"
+title = "PrugeCSS"
+url = "https://purgecss.com/"
 
 [[entries]]
-url = "https://github.com/xampprocky/octocrab"
-title = "Octocrab"
+content_type = "text"
 summary = "A Rust library for building GitHub integrations and bots."
-content_type = "text"
+title = "Octocrab"
+url = "https://github.com/xampprocky/octocrab"
 
 [[entries]]
-url = "https://github.com/ankitpokhrel/jira-cli"
-title = "jira-cli"
+content_type = "text"
 summary = "A tool to interact with Jira from the terminal."
-content_type = "text"
+title = "jira-cli"
+url = "https://github.com/ankitpokhrel/jira-cli"
 
 [[entries]]
-url = "https://github.com/zknill/sqledge"
-title = "SQLedge"
+content_type = "text"
 summary = "A tool to stream changes from Postges to SQLite so the database can run on the edge."
-content_type = "text"
+title = "SQLedge"
+url = "https://github.com/zknill/sqledge"
 
 [[entries]]
-url = "https://www.linusakesson.net/programming/syntaxhighlighting/"
-title = "A case against syntax highlighting"
+content_type = "text"
 summary = "An article arguing that syntax highlighting makes it harder for understanding what the code does."
-content_type = "text"
+title = "A case against syntax highlighting"
+url = "https://www.linusakesson.net/programming/syntaxhighlighting/"
 
 [[entries]]
-url = "https://plzoo.andrej.com/"
-title = "The Programming Language Zoo"
-summary = "A collection of miniature programming languages written in OCaml which demonstrates various concepts and techniques used in programming language design and implementation. Each implementation is extensively annotated."
 content_type = "text"
+summary = "A collection of miniature programming languages written in OCaml which demonstrates various concepts and techniques used in programming language design and implementation. Each implementation is extensively annotated."
+title = "The Programming Language Zoo"
+url = "https://plzoo.andrej.com/"

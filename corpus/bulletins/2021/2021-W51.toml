@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W51"
-publication_date = 2021-12-26
+publication_date = "2021-12-26"
 summary = "This week has been about Jupyter games, CLI complexity, customisable UI with Python, a neural search engine, a tool for versioned JSON and CSV and a paper on the value of data."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/simonw/git-history"
-title = "git-history"
+content_type = "text"
 summary = "A tool to analyse JSON or CSV version controlled by Git."
-content_type = "text"
+title = "git-history"
+url = "https://github.com/simonw/git-history"
 
 [[entries]]
-url = "https://danluu.com/cli-complexity/"
-title = "The growth of command line options, 1979-Present"
+content_type = "text"
 summary = "An article analysing the reality of command line complexity and the 'do one thing and do it well' mantra."
-content_type = "text"
+title = "The growth of command line options, 1979-Present"
+url = "https://danluu.com/cli-complexity/"
 
 [[entries]]
-url = "https://www.reply.com/Documents/13903_img_The-valuation-of-data-as-an-asset.pdf"
-title = "the valuation of data as an asset: a Consumption-based Approach"
-summary = "A paper defining an economic model to assign value to data."
 content_type = "pdf"
+summary = "A paper defining an economic model to assign value to data."
+title = "the valuation of data as an asset: a Consumption-based Approach"
+url = "https://www.reply.com/Documents/13903_img_The-valuation-of-data-as-an-asset.pdf"
 
 [[entries]]
-url = "https://blog.jupyter.org/jupyter-games-cda20dc15a21"
-title = "Jupyter Games"
+content_type = "text"
 summary = "An article on how to build games with Jupyter and [Box2D](https://box2d.org/)."
-content_type = "text"
+title = "Jupyter Games"
+url = "https://blog.jupyter.org/jupyter-games-cda20dc15a21"
 
 [[entries]]
-url = "https://github.com/jina-ai/jina"
-title = "Jina"
+content_type = "text"
 summary = "A neural search framework to build deep learning search applications written in Python."
-content_type = "text"
+title = "Jina"
+url = "https://github.com/jina-ai/jina"
 
 [[entries]]
-url = "https://github.com/gradio-app/gradio"
-title = "Gradio"
-summary = "A Python library to create customizable UI components around machine learning models."
 content_type = "text"
+summary = "A Python library to create customizable UI components around machine learning models."
+title = "Gradio"
+url = "https://github.com/gradio-app/gradio"

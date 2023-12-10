@@ -1,40 +1,70 @@
-type = "bulletin"
 id = "2020-W05"
-publication_date = 2020-02-02
+publication_date = "2020-02-02"
 summary = "This week has been about Rust, a knowledge database, OLAP cubes, security issues with CSS and techniques for fuzzy matching."
+type = "bulletin"
 
 [[entries]]
-url = "https://terminusdb.com/"
+content_type = "text"
+summary = """
+A graph database focused on knowledge graph representation. The new
+version, 1.1, introduces a new storage system with revision control à la git.
+In their words:
+
+> We adopt a delta encoding approach to updates (‘like git, but for data’)
+which provides the whole suite of revision control features: branch, merge,
+squash, rollback, blame, and time-travel facilitating CI/CD approaches on
+data.
+
+In almost fifteen years with an on-and-off relationship with RDF, TerminusDB
+is the first database that I try that doesn't force you to manage all the
+complexity typically associated with RDF. I believe they have found a
+plausible abstraction for people that want to work with graphs without
+investing in the guts and bowels of RDF."""
 title = "TerminusDB"
-summary = "A graph database focused on knowledge graph representation. The new\nversion, 1.1, introduces a new storage system with revision control à la git.\nIn their words:\n\n> We adopt a delta encoding approach to updates (‘like git, but for data’)\nwhich provides the whole suite of revision control features: branch, merge,\nsquash, rollback, blame, and time-travel facilitating CI/CD approaches on\ndata.\n\nIn almost fifteen years with an on-and-off relationship with RDF, TerminusDB\nis the first database that I try that doesn't force you to manage all the\ncomplexity typically associated with RDF. I believe they have found a\nplausible abstraction for people that want to work with graphs without\ninvesting in the guts and bowels of RDF."
-content_type = "text"
+url = "https://terminusdb.com/"
 
 [[entries]]
-url = "https://beepb00p.xyz/unnecessary-db.html"
+content_type = "text"
+summary = """
+A comprehensive list of trade-offs on the topic of maintaining a local copy of
+remote data you don't own (or rather, you may own but you don't control)."""
 title = "Against unnecessary databases"
-summary = "A comprehensive list of trade-offs on the topic of maintaining a local copy of\nremote data you don't own (or rather, you may own but you don't control)."
-content_type = "text"
+url = "https://beepb00p.xyz/unnecessary-db.html"
 
 [[entries]]
-url = "https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense"
+content_type = "text"
+summary = """
+CSS Exfil is a method to let an attacker steal targeted data using _CSS
+alone_.
+
+Mike Gualtieri explains in detail how the attack works and provides extensions
+for Firefox and Chrome to mitigate it."""
 title = "Stealing data with CSS: Attack and Defense"
-summary = "CSS Exfil is a method to let an attacker steal targeted data using _CSS\nalone_.\n\nMike Gualtieri explains in detail how the attack works and provides extensions\nfor Firefox and Chrome to mitigate it."
-content_type = "text"
+url = "https://www.mike-gualtieri.com/posts/stealing-data-with-css-attack-and-defense"
 
 [[entries]]
-url = "https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/"
+content_type = "text"
+summary = """
+This article goes through a couple of methods and their strengths and
+weaknesses to match names."""
 title = "An Overview of Fuzzy Name Matching Techniques"
-summary = "This article goes through a couple of methods and their strengths and\nweaknesses to match names."
-content_type = "text"
+url = "https://www.rosette.com/blog/overview-fuzzy-name-matching-techniques/"
 
 [[entries]]
-url = "https://pingcap.com/blog/rust-compilation-model-calamity/"
+content_type = "text"
+summary = """
+This is the first part of a series of articles explaining what trade-offs make
+Rust be slow at compile time. The short and oversimplified answer is: fast run
+time and strong safe guarantees."""
 title = "The Rust Compilation Model Calamity"
-summary = "This is the first part of a series of articles explaining what trade-offs make\nRust be slow at compile time. The short and oversimplified answer is: fast run\ntime and strong safe guarantees."
-content_type = "text"
+url = "https://pingcap.com/blog/rust-compilation-model-calamity/"
 
 [[entries]]
-url = "https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/"
-title = "The Rise and Fall of the OLAP Cube"
-summary = "This article may interest you in two ways. if you are not familiar with the\nconcepts of OLTP and OLAP it will serve as a lightweight introduction;\notherwise it will serve to understand why OLAP cubes are less relevant than\nthey were a decade ago."
 content_type = "text"
+summary = """
+This article may interest you in two ways. if you are not familiar with the
+concepts of OLTP and OLAP it will serve as a lightweight introduction;
+otherwise it will serve to understand why OLAP cubes are less relevant than
+they were a decade ago."""
+title = "The Rise and Fall of the OLAP Cube"
+url = "https://www.holistics.io/blog/the-rise-and-fall-of-the-olap-cube/"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W18"
-publication_date = 2021-05-09
+publication_date = "2021-05-09"
 summary = "This week has been about a programming language for the Law, a collection of colour palettes, a terminal workspace, static web with SQLite and a collection of hand-drawn illustrations."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/zellij-org/zellij"
-title = "Zellij"
+content_type = "text"
 summary = "A terminal workspace with a layout system (a-la [tmux](https://github.com/tmux/tmux)) and a plugin system based on [WebAssembly](https://webassembly.org/)."
-content_type = "text"
+title = "Zellij"
+url = "https://github.com/zellij-org/zellij"
 
 [[entries]]
-url = "https://colorpalettes.earth/"
-title = "colorpalettes.earth"
+content_type = "text"
 summary = "A collection of colour palettes inspired from nature."
-content_type = "text"
+title = "colorpalettes.earth"
+url = "https://colorpalettes.earth/"
 
 [[entries]]
-url = "https://weareskribbl.com/"
-title = "Skribbl"
+content_type = "text"
 summary = "A collection of free hand-drawn illustrations."
-content_type = "text"
+title = "Skribbl"
+url = "https://weareskribbl.com/"
 
 [[entries]]
-url = "https://spidermonkey.dev/"
-title = "SpiderMonkey"
+content_type = "text"
 summary = "The JavaScript and WebAssembly engine used in Firefox. It can be embedded into C++ and Rust projects, and it can be run as a stand-alone shell."
-content_type = "text"
+title = "SpiderMonkey"
+url = "https://spidermonkey.dev/"
 
 [[entries]]
-url = "https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/"
-title = "Hosting SQLite databases on Github Pages"
+content_type = "text"
 summary = "An article on using a WebAssembly SQLite instance with [sql.js-httpvfs](https://github.com/phiresky/sql.js-httpvfs) to fetch and manipulate data in a 'static' (or rather, backend-less) web."
-content_type = "text"
+title = "Hosting SQLite databases on Github Pages"
+url = "https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/"
 
 [[entries]]
-url = "https://arxiv.org/pdf/2103.03198.pdf"
-title = "Catala"
-summary = "A paper introducing [Catala](https://github.com/CatalaLang/catala), a Programming Language for the Law specifically designed to allow a straightforward and systematic translation of statutory law into an executable implementation. Catala aims to bring together lawyers and programmers through a shared medium, which together they can understand, edit and evolve."
 content_type = "text"
+summary = "A paper introducing [Catala](https://github.com/CatalaLang/catala), a Programming Language for the Law specifically designed to allow a straightforward and systematic translation of statutory law into an executable implementation. Catala aims to bring together lawyers and programmers through a shared medium, which together they can understand, edit and evolve."
+title = "Catala"
+url = "https://arxiv.org/pdf/2103.03198.pdf"

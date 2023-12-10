@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2020-W49"
-publication_date = 2020-12-06
+publication_date = "2020-12-06"
 summary = "This week has been about online anonymity, self-hosted archives, differential datalog, a game on politic misinformation and a collection of analogies to explain technical terms."
+type = "bulletin"
 
 [[entries]]
-url = "https://sidewaysdictionary.com/"
-title = "Sideways Dictionary"
+content_type = "text"
 summary = "A collection of analogies to explain technical terms."
-content_type = "text"
+title = "Sideways Dictionary"
+url = "https://sidewaysdictionary.com/"
 
 [[entries]]
-url = "https://chasewilson.dev/blog/intro-to-ddlog/"
-title = "Intro to DDlog"
+content_type = "text"
 summary = "An article introducing the basics of [Differential Datalog](https://github.com/vmware/differential-datalog) and a hint of Differential Dataflow as its building block."
-content_type = "text"
+title = "Intro to DDlog"
+url = "https://chasewilson.dev/blog/intro-to-ddlog/"
 
 [[entries]]
-url = "https://archivebox.io/"
-title = "Archivebox"
+content_type = "text"
 summary = "A self-hosted service to archive websites of your interest."
-content_type = "text"
+title = "Archivebox"
+url = "https://archivebox.io/"
 
 [[entries]]
-url = "https://misinforeview.hks.harvard.edu/article/breaking-harmony-square-a-game-that-inoculates-against-political-misinformation/"
-title = "Breaking Harmony Square: A game that “inoculates” against political misinformation"
+content_type = "text"
 summary = "An article introducing the background and findings on a [research game](https://www.harmonysquare.game/) applying ideas from the inoculation theory to improve the player's resistance to politic misinformation."
-content_type = "text"
+title = "Breaking Harmony Square: A game that “inoculates” against political misinformation"
+url = "https://misinforeview.hks.harvard.edu/article/breaking-harmony-square-a-game-that-inoculates-against-political-misinformation/"
 
 [[entries]]
-url = "https://anonymousplanet.org/"
-title = "The Hitchhiker’s Guide to Online Anonymity"
+content_type = "text"
 summary = "A thorough guide to how to set yourself up for online anonymity. Not for the faint of heart."
-content_type = "text"
+title = "The Hitchhiker’s Guide to Online Anonymity"
+url = "https://anonymousplanet.org/"
 
 [[entries]]
-url = "https://bbodi.github.io/notecalc3/"
-title = "notecalc3"
-summary = "A notepad with a smart calculator built in."
 content_type = "text"
+summary = "A notepad with a smart calculator built in."
+title = "notecalc3"
+url = "https://bbodi.github.io/notecalc3/"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W22"
-publication_date = 2022-06-05
+publication_date = "2022-06-05"
 summary = "This week has been about 3D icons, testing colour combinations, Rust types, SVG grids, a JavaScript build tool and a React motion library."
+type = "bulletin"
 
 [[entries]]
-url = "https://vitejs.dev/"
-title = "Vite"
+content_type = "text"
 summary = "A frontend build tool that aims to improve the frontend development experience. It consists of two major parts: a dev server over native ES modules with Hot Module Replacement (HMR) and a build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production."
-content_type = "text"
+title = "Vite"
+url = "https://vitejs.dev/"
 
 [[entries]]
-url = "https://www.framer.com/motion/"
-title = "Framer Motion"
+content_type = "text"
 summary = "A motion library for React with a declarative interface."
-content_type = "text"
+title = "Framer Motion"
+url = "https://www.framer.com/motion/"
 
 [[entries]]
-url = "https://3dicons.co/"
-title = "3D icons"
+content_type = "text"
 summary = "A collection of 3D icons available in multiple formats including [Blender](https://www.blender.org/)."
-content_type = "text"
+title = "3D icons"
+url = "https://3dicons.co/"
 
 [[entries]]
-url = "https://fasterthanli.me/articles/the-curse-of-strong-typing"
-title = "The curse of strong typing"
+content_type = "text"
 summary = "A conversational article exploring the Rust type system with a climax point on smart pointers, and then well an async rabbi-thole."
-content_type = "text"
+title = "The curse of strong typing"
+url = "https://fasterthanli.me/articles/the-curse-of-strong-typing"
 
 [[entries]]
-url = "https://frontend.horse/articles/generative-grids/"
-title = "Creating Generative SVG Grids"
+content_type = "text"
 summary = "A tutorial on how to use SVG grids as the canvas for generative art."
-content_type = "text"
+title = "Creating Generative SVG Grids"
+url = "https://frontend.horse/articles/generative-grids/"
 
 [[entries]]
-url = "https://contrast-grid.eightshapes.com/"
-title = "Contrast Grid"
-summary = "A tool to test many foreground and background color combinations for compliance with WCAG 2.0 minimum contrast."
 content_type = "text"
+summary = "A tool to test many foreground and background color combinations for compliance with WCAG 2.0 minimum contrast."
+title = "Contrast Grid"
+url = "https://contrast-grid.eightshapes.com/"

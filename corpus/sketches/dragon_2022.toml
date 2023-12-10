@@ -1,10 +1,7 @@
-type = "sketch"
-id = "dragon-2022"
-title = "Dragon"
 asset = "dragon_2022.jpg"
 author = "arnau"
-publication_date = 2022-10-01
-tools = [
-  "ipadpro",
-  "procreate",
-]
+id = "dragon-2022"
+publication_date = "2022-10-01"
+title = "Dragon"
+tools = ["ipadpro", "procreate"]
+type = "sketch"

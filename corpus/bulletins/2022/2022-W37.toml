@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2022-W37"
-publication_date = 2022-09-18
+publication_date = "2022-09-18"
 summary = "This week has been about a terminal email client, a document language, a distributed SQLite replicator, a graphics editor, QR codes and new functions in Google Sheets."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.benlcollins.com/spreadsheets/new-functions-in-google-sheets-2022/"
-title = "New Functions In Google Sheets For 2022"
+content_type = "text"
 summary = "An article on the new programming capabilities introduced to Google Sheets in the form of named Functions and lambdas among others."
-content_type = "text"
+title = "New Functions In Google Sheets For 2022"
+url = "https://www.benlcollins.com/spreadsheets/new-functions-in-google-sheets-2022/"
 
 [[entries]]
-url = "https://github.com/kdl-org/kdl"
-title = "The KDL Document Language"
+content_type = "text"
 summary = "A document language with xml-like semantics meant to be used both as a serialization format and a configuration language, much like JSON, YAML, or XML."
-content_type = "text"
+title = "The KDL Document Language"
+url = "https://github.com/kdl-org/kdl"
 
 [[entries]]
-url = "https://git.meli.delivery/meli/meli"
+content_type = "text"
+summary = """
+A terminal email client with support for multiple accounts and Maildir, mbox, IMAP, etc.
+
+You might also want to check [Himalaya](https://github.com/soywod/himalaya)."""
 title = "Meli"
-summary = "A terminal email client with support for multiple accounts and Maildir, mbox, IMAP, etc.\n\nYou might also want to check [Himalaya](https://github.com/soywod/himalaya)."
-content_type = "text"
+url = "https://git.meli.delivery/meli/meli"
 
 [[entries]]
-url = "https://graphite.rs/"
-title = "Graphite"
+content_type = "text"
 summary = "A raster and vector 2D graphics editor powered by a node graph compositing engine providing a non-destructive editing experience."
-content_type = "text"
+title = "Graphite"
+url = "https://graphite.rs/"
 
 [[entries]]
-url = "https://typefully.com/DanHollick/qr-codes-T7tLlNi"
+content_type = "text"
+summary = """
+An article explaining how QR codes work.
+
+A couple of years ago I shared [QArt Codes](https://research.swtch.com/qart) that nicely complements the topic."""
 title = "QR codes"
-summary = "An article explaining how QR codes work.\n\nA couple of years ago I shared [QArt Codes](https://research.swtch.com/qart) that nicely complements the topic."
-content_type = "text"
+url = "https://typefully.com/DanHollick/qr-codes-T7tLlNi"
 
 [[entries]]
-url = "https://github.com/maxpert/marmot"
-title = "Marmot"
-summary = "A distributed SQLite replicator built on the Multi-Raft fault-tolerant consensus protocol."
 content_type = "text"
+summary = "A distributed SQLite replicator built on the Multi-Raft fault-tolerant consensus protocol."
+title = "Marmot"
+url = "https://github.com/maxpert/marmot"

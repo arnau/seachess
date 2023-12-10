@@ -1,40 +1,47 @@
-type = "bulletin"
 id = "2020-W42"
-publication_date = 2020-10-18
+publication_date = "2020-10-18"
 summary = "This week has been about teaching how to program, tutorials for researchers, flow diagrams, spreadsheet horrorshow and some python with nix."
+type = "bulletin"
 
 [[entries]]
-url = "https://wireflow.co/"
-title = "Wireflow"
+content_type = "text"
 summary = "A tool to create flow diagrams to represent websites and applications."
-content_type = "text"
+title = "Wireflow"
+url = "https://wireflow.co/"
 
 [[entries]]
-url = "http://worrydream.com/#!/LearnableProgramming"
-title = "Learnable Programming"
+content_type = "text"
 summary = "An essay on how to approach teaching how to program through criticising an online service as it was back in 2012."
-content_type = "text"
+title = "Learnable Programming"
+url = "http://worrydream.com/#!/LearnableProgramming"
 
 [[entries]]
-url = "https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989"
+content_type = "text"
+summary = """
+An article with the view that spreadsheets should be only considered for data entry and storage and avoided other matters such as analysis. It offers as well uncontroversial advice on how to organise and tidy your tabular data.
+
+You might also be interested in the [horror stories](http://www.eusprig.org/horror-stories.htm) from the European Spreadsheet Risk Interest Group."""
 title = "Data Organization in Spreadsheets"
-summary = "An article with the view that spreadsheets should be only considered for data entry and storage and avoided other matters such as analysis. It offers as well uncontroversial advice on how to organise and tidy your tabular data.\n\nYou might also be interested in the [horror stories](http://www.eusprig.org/horror-stories.htm) from the European Spreadsheet Risk Interest Group."
-content_type = "text"
+url = "https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989"
 
 [[entries]]
-url = "https://www.osohq.com/post/polar-adventure"
+content_type = "text"
+summary = """
+An article on using Polar, an embedded logic programming language, for making
+a game. [Polar](https://github.com/osohq/oso) looks like a very interesting
+project to extend your program with logic rules to encode complex policy rules
+in a terse way."""
 title = "Polar Adventure: A text-based adventure game written in Polar"
-summary = "An article on using Polar, an embedded logic programming language, for making\na game. [Polar](https://github.com/osohq/oso) looks like a very interesting\nproject to extend your program with logic rules to encode complex policy rules\nin a terse way."
-content_type = "text"
+url = "https://www.osohq.com/post/polar-adventure"
 
 [[entries]]
-url = "https://programminghistorian.org/"
-title = "The Programming Historian"
+content_type = "text"
 summary = "A collection of tutorials to help learn digital tools, techniques and workflows to facilitate research and teaching."
-content_type = "text"
+title = "The Programming Historian"
+url = "https://programminghistorian.org/"
 
 [[entries]]
-url = "https://www.tweag.io/blog/2020-08-12-poetry2nix/"
-title = "Developing Python with Poetry & Poetry2nix: Reproducible flexible Python environments"
-summary = "An article on how to set up a reliable Python environment with Poetry and Nix."
 content_type = "text"
+summary = "An article on how to set up a reliable Python environment with Poetry and Nix."
+title = "Developing Python with Poetry & Poetry2nix: Reproducible flexible Python environments"
+url = "https://www.tweag.io/blog/2020-08-12-poetry2nix/"

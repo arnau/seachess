@@ -1,40 +1,63 @@
-type = "bulletin"
 id = "2020-W04"
-publication_date = 2020-01-25
+publication_date = "2020-01-25"
 summary = "This week has been trade-offs, a fancy dictionary, a typography, and some Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://eunoia.world/"
-title = "Eunoia"
+content_type = "text"
 summary = "A searchable directory of words that don't translate to English."
-content_type = "text"
+title = "Eunoia"
+url = "https://eunoia.world/"
 
 [[entries]]
-url = "https://www.jetbrains.com/lp/mono/"
+content_type = "text"
+summary = """
+A monospaced typography designed for developers, with ligatures, well
+differentiated symbols and more."""
 title = "Jetbrains"
-summary = "A monospaced typography designed for developers, with ligatures, well\ndifferentiated symbols and more."
-content_type = "text"
+url = "https://www.jetbrains.com/lp/mono/"
 
 [[entries]]
-url = "https://marmelab.com/react-admin/"
+content_type = "text"
+summary = """
+A frontend Framework for building admin applications running in the browser,
+on top of REST/GraphQL APIs, using ES6, React and Material Design."""
 title = "React Admin"
-summary = "A frontend Framework for building admin applications running in the browser,\non top of REST/GraphQL APIs, using ES6, React and Material Design."
-content_type = "text"
+url = "https://marmelab.com/react-admin/"
 
 [[entries]]
-url = "https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/"
+content_type = "text"
+summary = """
+This is the first part of a digested walkthrough of the paper [Trade-offs
+under pressure: heuristics and observations of teams resolving internet
+service
+outages](https://lup.lub.lu.se/student-papers/search/publication/8084520),
+Allspaw, Masters thesis, Lund University, 2015.
+
+If the topic doesn't catch your attention, have a tour around their archives;
+[The morning paper](https://blog.acolyer.org/) is a remarkable place to find
+interesting papers on a wide range of topics."""
 title = "Trade-offs under pressure"
-summary = "This is the first part of a digested walkthrough of the paper [Trade-offs\nunder pressure: heuristics and observations of teams resolving internet\nservice\noutages](https://lup.lub.lu.se/student-papers/search/publication/8084520),\nAllspaw, Masters thesis, Lund University, 2015.\n\nIf the topic doesn't catch your attention, have a tour around their archives;\n[The morning paper](https://blog.acolyer.org/) is a remarkable place to find\ninteresting papers on a wide range of topics."
-content_type = "text"
+url = "https://blog.acolyer.org/2020/01/22/trade-offs-under-pressure-part-1/"
 
 [[entries]]
-url = "https://www.theguild.nl/when-elixirs-performance-becomes-rust-y/"
+content_type = "text"
+summary = """
+An article about how to use Rust with Elixir using
+[rustler](https://github.com/rusterlium/rustler), a library to create Erlang
+NIF functions in Rust.
+
+Worth remembering that
+[Discord also does this mix](https://blog.discordapp.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3)."""
 title = "When Elixir's performance becomes Rust-y"
-summary = "An article about how to use Rust with Elixir using\n[rustler](https://github.com/rusterlium/rustler), a library to create Erlang\nNIF functions in Rust.\n\nWorth remembering that\n[Discord also does this mix](https://blog.discordapp.com/using-rust-to-scale-elixir-for-11-million-concurrent-users-c6f19fc029d3)."
-content_type = "text"
+url = "https://www.theguild.nl/when-elixirs-performance-becomes-rust-y/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=s19G6n0UjsM"
-title = "Rust at speed: building a fast, concurrent database"
-summary = "In this talk from early 2019, Jon Gjengset explains in a very succinctly\nmanner the idea behind Rust ownership and what is this `unsafe` thing in Rust\nall about. And of course, the database he is working on,\n[Noria](https://github.com/mit-pdos/noria) is the jewel of the talk."
 content_type = "video"
+summary = """
+In this talk from early 2019, Jon Gjengset explains in a very succinctly
+manner the idea behind Rust ownership and what is this `unsafe` thing in Rust
+all about. And of course, the database he is working on,
+[Noria](https://github.com/mit-pdos/noria) is the jewel of the talk."""
+title = "Rust at speed: building a fast, concurrent database"
+url = "https://www.youtube.com/watch?v=s19G6n0UjsM"

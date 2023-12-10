@@ -1,40 +1,66 @@
-type = "bulletin"
 id = "2020-W21"
-publication_date = 2020-05-24
+publication_date = "2020-05-24"
 summary = "This week has been about database schemas, WebAssembly, error handling in Rust, database versioning and floating point errors."
+type = "bulletin"
 
 [[entries]]
-url = "https://dev.to/lampewebdev/writing-webassembly-in-rust-and-runing-it-in-deno-144j"
+content_type = "text"
+summary = """
+A tutorial to begin with Deno and Webassembly.
+
+[Deno](https://github.com/denoland/deno) is starting to get some traction in
+the Javascript space and With Webassembly it's an attractive combination.
+
+If you haven't read about Deno before, try this [Deno overview](https://blog.bitsrc.io/what-is-deno-and-will-it-replace-nodejs-a13aa1734a74).
+
+If you have, and you are into Typescript, check the rationale behind Deno's
+[TypeScript compiler in Rust](https://github.com/denoland/deno/issues/5432)."""
 title = "Writing WebAssembly in Rust and runing it in Deno!"
-summary = "A tutorial to begin with Deno and Webassembly.\n\n[Deno](https://github.com/denoland/deno) is starting to get some traction in\nthe Javascript space and With Webassembly it's an attractive combination.\n\nIf you haven't read about Deno before, try this [Deno overview](https://blog.bitsrc.io/what-is-deno-and-will-it-replace-nodejs-a13aa1734a74).\n\nIf you have, and you are into Typescript, check the rationale behind Deno's\n[TypeScript compiler in Rust](https://github.com/denoland/deno/issues/5432)."
-content_type = "text"
+url = "https://dev.to/lampewebdev/writing-webassembly-in-rust-and-runing-it-in-deno-144j"
 
 [[entries]]
-url = "https://www.johnbcoughlin.com/posts/floating-point-axiom/"
+content_type = "text"
+summary = """
+An article explaining the Fundamental Axiom of Floating Point Arithmetic and
+the effects in floating point computations."""
 title = "Taming Floating Point Error"
-summary = "An article explaining the Fundamental Axiom of Floating Point Arithmetic and\nthe effects in floating point computations."
-content_type = "text"
+url = "https://www.johnbcoughlin.com/posts/floating-point-axiom/"
 
 [[entries]]
-url = "https://www.dolthub.com/"
+content_type = "text"
+summary = """
+A service to host [dolt](https://github.com/liquidata-inc/dolt) repositories.
+
+Dolt is a relational database manager with version control backed in. It's
+still in an early stage (v0.17.0) but already looking promising."""
 title = "DoltHub"
-summary = "A service to host [dolt](https://github.com/liquidata-inc/dolt) repositories.\n\nDolt is a relational database manager with version control backed in. It's\nstill in an early stage (v0.17.0) but already looking promising."
-content_type = "text"
+url = "https://www.dolthub.com/"
 
 [[entries]]
-url = "https://nick.groenen.me/posts/rust-error-handling/"
+content_type = "text"
+summary = """
+An article that explains the rationale of approaching error handling
+differently for libraries than for applications in Rust. It showcases both
+approaches using [anyhow](https://crates.io/crates/anyhow) and
+[thiserror](https://crates.io/crates/thiserror).
+
+Beware of the performance hit of using anyhow though. The comment at the end
+explains the trade-off well."""
 title = "Structuring and handling errors in 2020"
-summary = "An article that explains the rationale of approaching error handling\ndifferently for libraries than for applications in Rust. It showcases both\napproaches using [anyhow](https://crates.io/crates/anyhow) and\n[thiserror](https://crates.io/crates/thiserror).\n\nBeware of the performance hit of using anyhow though. The comment at the end\nexplains the trade-off well."
-content_type = "text"
+url = "https://nick.groenen.me/posts/rust-error-handling/"
 
 [[entries]]
-url = "https://www.typography.com/blog/text-for-proofing-fonts"
+content_type = "text"
+summary = """
+An article discussing the actual usefulness of pangrams for font design and an
+alternative aiming to be more adequate for language-based singularities."""
 title = "Text for proofing fonts"
-summary = "An article discussing the actual usefulness of pangrams for font design and an\nalternative aiming to be more adequate for language-based singularities."
-content_type = "text"
+url = "https://www.typography.com/blog/text-for-proofing-fonts"
 
 [[entries]]
-url = "https://blog.datomic.com/2017/01/the-ten-rules-of-schema-growth.html"
-title = "The Ten Rules of Schema Growth"
-summary = "An article on database schema evolution and how to think about them in a\nnon-destructive way."
 content_type = "text"
+summary = """
+An article on database schema evolution and how to think about them in a
+non-destructive way."""
+title = "The Ten Rules of Schema Growth"
+url = "https://blog.datomic.com/2017/01/the-ten-rules-of-schema-growth.html"

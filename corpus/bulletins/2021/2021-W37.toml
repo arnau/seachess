@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2021-W37"
-publication_date = 2021-09-19
+publication_date = "2021-09-19"
 summary = "This week has been about software licensing, macaroons, a file encryption tool, CUBE CSS, anger management and the levels of reading."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/FiloSottile/age"
+content_type = "text"
+summary = """
+A tool written in Go for encrypting files to multiple recipients and passphrases.
+
+[Rage](https://github.com/str4d/rage) is an alternative implementation in Rust."""
 title = "Age"
-summary = "A tool written in Go for encrypting files to multiple recipients and passphrases.\n\n[Rage](https://github.com/str4d/rage) is an alternative implementation in Rust."
-content_type = "text"
+url = "https://github.com/FiloSottile/age"
 
 [[entries]]
-url = "https://piccalil.li/blog/cube-css/"
-title = "CUBE CSS"
+content_type = "text"
 summary = "An article introducing the [CUBE CSS](https://cube.fyi) methodology aiming to keep CSS maintainability in check."
-content_type = "text"
+title = "CUBE CSS"
+url = "https://piccalil.li/blog/cube-css/"
 
 [[entries]]
-url = "https://evancordell.com/posts/macaroons-101-contextual-confinement/"
-title = "Macaroons 101: Contextual Confinement"
+content_type = "text"
 summary = "An article on how macaroons, the bearer credentials, work."
-content_type = "text"
+title = "Macaroons 101: Contextual Confinement"
+url = "https://evancordell.com/posts/macaroons-101-contextual-confinement/"
 
 [[entries]]
-url = "https://psyche.co/guides/anger-is-a-potent-beneficial-force-if-used-in-the-right-way"
-title = "How to be angry"
+content_type = "text"
 summary = "An article on what is anger, what to do to understand it and how to use it in a useful way."
-content_type = "text"
+title = "How to be angry"
+url = "https://psyche.co/guides/anger-is-a-potent-beneficial-force-if-used-in-the-right-way"
 
 [[entries]]
-url = "https://www.thecuriousreader.in/features/reading-levels/"
-title = "The 4 Reading Levels: Different Ways To Read Different Books"
+content_type = "text"
 summary = "An article describing the four reading levels as defined by “How To Read A Book” (1940)."
-content_type = "text"
+title = "The 4 Reading Levels: Different Ways To Read Different Books"
+url = "https://www.thecuriousreader.in/features/reading-levels/"
 
 [[entries]]
-url = "https://commonsclause.com/"
-title = "The Commons Clause"
-summary = "A license condition that applies a narrow, minimal-form commercial restriction on top of an existing open source license. The combined text replaces the existing license, allowing all permissions of the original license to remain except the ability to \"Sell\" the software as defined in the text."
 content_type = "text"
+summary = "A license condition that applies a narrow, minimal-form commercial restriction on top of an existing open source license. The combined text replaces the existing license, allowing all permissions of the original license to remain except the ability to \"Sell\" the software as defined in the text."
+title = "The Commons Clause"
+url = "https://commonsclause.com/"

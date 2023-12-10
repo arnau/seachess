@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2022-W08"
-publication_date = 2022-02-27
+publication_date = "2022-02-27"
 summary = "This week has been about the SQL DIFF operator, Nix flakes, JupyterLab spreadsheets, browser privacy tests, graph-based ASTs, a reflection on Markdown."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.smashingmagazine.com/2022/02/thoughts-on-markdown/"
+content_type = "text"
+summary = """
+An article reflecting on almost 20 years of Markdown, whether it's original intent is (still) valid and what could be a way forward with a balanced set of features, extensibility and ease of entrance.
+
+I found the article initially thought-provoking but rapidly deriving into a niche solution for solving the author's employer problems. It completely ignores situations like offline-first, overemphasises the need for real-time collaborative experiences and ignores XML all together which is at the very least a precursor of [Portable Text](https://github.com/portabletext/portabletext), the solution he is pitching for."""
 title = "Thoughts On Markdown"
-summary = "An article reflecting on almost 20 years of Markdown, whether it's original intent is (still) valid and what could be a way forward with a balanced set of features, extensibility and ease of entrance.\n\nI found the article initially thought-provoking but rapidly deriving into a niche solution for solving the author's employer problems. It completely ignores situations like offline-first, overemphasises the need for real-time collaborative experiences and ignores XML all together which is at the very least a precursor of [Portable Text](https://github.com/portabletext/portabletext), the solution he is pitching for."
-content_type = "text"
+url = "https://www.smashingmagazine.com/2022/02/thoughts-on-markdown/"
 
 [[entries]]
-url = "https://christine.website/blog/nix-flakes-1-2022-02-21"
-title = "Nix Flakes: an introduction"
+content_type = "text"
 summary = "An article on Nix flakes covering its objective, basic setup to enable the feature whilst it's behind the experimental flag and a run-through of using them with the Go language."
-content_type = "text"
+title = "Nix Flakes: an introduction"
+url = "https://christine.website/blog/nix-flakes-1-2022-02-21"
 
 [[entries]]
-url = "https://github.com/mito-ds/monorepo"
-title = "Mito"
+content_type = "text"
 summary = "A JupyterLab plugin to edit Pandas dataframes as spreadsheets and generate Python code corresponding to each edit."
-content_type = "text"
+title = "Mito"
+url = "https://github.com/mito-ds/monorepo"
 
 [[entries]]
-url = "https://www.kurtlawrence.info/blog/type-inference-in-ogma-using-graphs"
-title = "Type inference in ogma using graphs"
+content_type = "text"
 summary = "An article exploring graph-based ASTs for partial compilation-based type inference. [ogma](https://github.com/kdr-aus/ogma), a scripting language for processing tabular data, is worth a look as well."
-content_type = "text"
+title = "Type inference in ogma using graphs"
+url = "https://www.kurtlawrence.info/blog/type-inference-in-ogma-using-graphs"
 
 [[entries]]
-url = "https://blog.marcua.net/2022/02/20/data-diffs-algorithms-for-explaining-what-changed-in-a-dataset.html"
-title = "Data diffs: Algorithms for explaining what changed in a dataset"
+content_type = "text"
 summary = "An article introducing the DIFF operator for relational databases to analyse changes in schema-aligned datasets."
-content_type = "text"
+title = "Data diffs: Algorithms for explaining what changed in a dataset"
+url = "https://blog.marcua.net/2022/02/20/data-diffs-algorithms-for-explaining-what-changed-in-a-dataset.html"
 
 [[entries]]
-url = "https://privacytests.org/"
-title = "Privacy Tests"
-summary = "An open-source initiative that subjects popular web browsers to a suite of automated tests designed to audit web browsers' privacy properties."
 content_type = "text"
+summary = "An open-source initiative that subjects popular web browsers to a suite of automated tests designed to audit web browsers' privacy properties."
+title = "Privacy Tests"
+url = "https://privacytests.org/"

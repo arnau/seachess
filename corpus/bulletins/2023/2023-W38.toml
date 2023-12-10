@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W38"
-publication_date = 2023-09-24
+publication_date = "2023-09-24"
 summary = "This week has been about Bun, a cleverer cd, shell pipelines in Rust, circles in printing, sustainability guidelines for the web and SQLite for multi-file documents."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/ajeetdsouza/zoxide"
-title = "zoxide"
+content_type = "text"
 summary = "An alternative to `cd` inspired by z and autojump."
-content_type = "text"
+title = "zoxide"
+url = "https://github.com/ajeetdsouza/zoxide"
 
 [[entries]]
-url = "https://www.sqlite.org/affcase1.html"
-title = "What If OpenDocument Used SQLite?"
+content_type = "text"
 summary = "An article exploring the benefits of using SQLite for encoding a multi-file document format."
-content_type = "text"
+title = "What If OpenDocument Used SQLite?"
+url = "https://www.sqlite.org/affcase1.html"
 
 [[entries]]
-url = "https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j"
-title = "Bun hype. How we learned nothing from Yarn"
+content_type = "text"
 summary = "An article ranting about the design choices made in [Bun](https://bun.sh/), a new JavaScript all-in-one runtime."
-content_type = "text"
+title = "Bun hype. How we learned nothing from Yarn"
+url = "https://dev.to/thejaredwilcurt/bun-hype-how-we-learned-nothing-from-yarn-2n3j"
 
 [[entries]]
-url = "https://github.com/oconnor663/duct.rs"
-title = "duct.rs"
+content_type = "text"
 summary = "A Rust library for buidling pipelines with safer IO handling than a plain shell."
-content_type = "text"
+title = "duct.rs"
+url = "https://github.com/oconnor663/duct.rs"
 
 [[entries]]
-url = "https://w3c.github.io/sustyweb/"
-title = "Web Sustainability Guidelines (WSG) 1.0"
+content_type = "text"
 summary = "A report covering a wide range of recommendations for making websites and products more sustainable."
-content_type = "text"
+title = "Web Sustainability Guidelines (WSG) 1.0"
+url = "https://w3c.github.io/sustyweb/"
 
 [[entries]]
-url = "https://nibblestew.blogspot.com/2023/09/circles-do-not-exist.html"
-title = "Circles do not exist"
-summary = "An article on how, for printing, circles are just imperfect approximations using Bézier curves."
 content_type = "text"
+summary = "An article on how, for printing, circles are just imperfect approximations using Bézier curves."
+title = "Circles do not exist"
+url = "https://nibblestew.blogspot.com/2023/09/circles-do-not-exist.html"

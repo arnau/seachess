@@ -1,40 +1,51 @@
-type = "bulletin"
 id = "2020-W25"
-publication_date = 2020-06-21
+publication_date = "2020-06-21"
 summary = "This week has been about AI, BPMN, a sed alternative, bullshit as a social practice and smart pointers in Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/chmln/sd"
+content_type = "text"
+summary = """
+A tool to replace [`sed`](https://linux.die.net/man/1/sed). It offers less
+backslashes and more familiar regular expressions."""
 title = "Intuitive find & replace CLI (sed alternative)"
-summary = "A tool to replace [`sed`](https://linux.die.net/man/1/sed). It offers less\nbackslashes and more familiar regular expressions."
-content_type = "text"
+url = "https://github.com/chmln/sd"
 
 [[entries]]
-url = "https://journals.sagepub.com/doi/10.1177/2631787720929704"
-title = "Playing the Bullshit Game: How Empty and Misleading Communication Takes Over Organizations"
+content_type = "text"
 summary = "A paper that argues that bullshit is a social practice."
-content_type = "text"
+title = "Playing the Bullshit Game: How Empty and Misleading Communication Takes Over Organizations"
+url = "https://journals.sagepub.com/doi/10.1177/2631787720929704"
 
 [[entries]]
-url = "https://blog.piekniewski.info/2020/06/08/ai-the-no-bullshit-approach/"
+content_type = "text"
+summary = """
+An article analysing the landscape of constructing computer programs and what
+are the shortcomings of the current hybrid approaches."""
 title = "AI - the no bullshit approach"
-summary = "An article analysing the landscape of constructing computer programs and what\nare the shortcomings of the current hybrid approaches."
-content_type = "text"
+url = "https://blog.piekniewski.info/2020/06/08/ai-the-no-bullshit-approach/"
 
 [[entries]]
-url = "https://www.youtube.com/watch?v=8O0Nt9qY_vo"
-title = "Crust of Rust: Smart Pointers and Interior Mutability"
-summary = "A video on the differences of different smart pointers in Rust such as `Cell`,\n`RefCell` and `Rc`."
 content_type = "video"
+summary = """
+A video on the differences of different smart pointers in Rust such as `Cell`,
+`RefCell` and `Rc`."""
+title = "Crust of Rust: Smart Pointers and Interior Mutability"
+url = "https://www.youtube.com/watch?v=8O0Nt9qY_vo"
 
 [[entries]]
-url = "https://mathtocode.com/"
-title = "Math to code"
+content_type = "text"
 summary = "An interactive tutorial to learn [NumPy](https://numpy.org/)."
-content_type = "text"
+title = "Math to code"
+url = "https://mathtocode.com/"
 
 [[entries]]
-url = "https://camunda.com/products/modeler/"
-title = "BPMN Modeler"
-summary = "A tool to create flow diagrams in [BPMN](https://www.omg.org/spec/BPMN/2.0/)\nbased on [bpmn-js](https://bpmn.io/)\n\nThe [tutorial](https://camunda.com/bpmn/) from the same people is much more\npalatable than the OMG specification."
 content_type = "text"
+summary = """
+A tool to create flow diagrams in [BPMN](https://www.omg.org/spec/BPMN/2.0/)
+based on [bpmn-js](https://bpmn.io/)
+
+The [tutorial](https://camunda.com/bpmn/) from the same people is much more
+palatable than the OMG specification."""
+title = "BPMN Modeler"
+url = "https://camunda.com/products/modeler/"

@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2023-W04"
-publication_date = 2023-01-29
+publication_date = "2023-01-29"
 summary = "This week has been about using NPM for non-javascript packages, the line of death pattern, story points and planning, rare Git commands, a pub/sub protocol and a new introduction to Nix."
+type = "bulletin"
 
 [[entries]]
-url = "https://blog.orhun.dev/packaging-rust-for-npm/"
+content_type = "text"
+summary = """
+An article exploring NPM for packaging and distributing generic binaries.
+
+> As long as you have the correct set of tools for executing a binary and packaging it, you're set. […] you can package anything and do anything when the package is installed/executed. That's why NPM is so dangerous!"""
 title = "Packaging Rust Applications for the NPM Registry"
-summary = "An article exploring NPM for packaging and distributing generic binaries.\n\n> As long as you have the correct set of tools for executing a binary and packaging it, you're set. […] you can package anything and do anything when the package is installed/executed. That's why NPM is so dangerous!"
-content_type = "text"
+url = "https://blog.orhun.dev/packaging-rust-for-npm/"
 
 [[entries]]
-url = "https://zero-to-nix.com/"
-title = "Zero to Nix"
+content_type = "text"
 summary = "An introduction to Nix aiming to be more gentle than the official documentation."
-content_type = "text"
+title = "Zero to Nix"
+url = "https://zero-to-nix.com/"
 
 [[entries]]
-url = "https://zenoh.io/"
-title = "Zenoh"
+content_type = "text"
 summary = "A pub/sub/query protocol unifying data in motion, data at rest and computations. It blends traditional pub/sub with geo distributed storage, queries and computations, while retaining a level of time and space efficiency."
-content_type = "text"
+title = "Zenoh"
+url = "https://zenoh.io/"
 
 [[entries]]
-url = "https://myme.no/posts/2023-01-22-git-commands-you-do-not-need.html"
-title = "Git Commands You Probably Do Not Need"
+content_type = "text"
 summary = "An article presenting some edge-case Git commands."
-content_type = "text"
+title = "Git Commands You Probably Do Not Need"
+url = "https://myme.no/posts/2023-01-22-git-commands-you-do-not-need.html"
 
 [[entries]]
-url = "https://emilymstark.com/2022/12/18/death-to-the-line-of-death.html"
-title = "The death of the line of death"
+content_type = "text"
 summary = "An article arguing that the classic line of death for trusted/untrusted UIs (e.g. web browser vs web content) is an outdated concept."
-content_type = "text"
+title = "The death of the line of death"
+url = "https://emilymstark.com/2022/12/18/death-to-the-line-of-death.html"
 
 [[entries]]
-url = "https://medium.com/agileinsider/from-story-points-to-slam-dunks-planning-for-success-c3e067354d9b"
-title = "From Story Points to Slam Dunks — Planning for Success"
-summary = "An article proposing an alternative way to communicate estimated effort instead of Story Points. Like most writings on the topic, it sidesteps the problem of communication with team outsiders (other teams, management, commercial, etc) which is fundamental to any successful estimation process. [How to plan?](https://kellanem.com/notes/how-to-plan) gives a broader perspective on planning."
 content_type = "text"
+summary = "An article proposing an alternative way to communicate estimated effort instead of Story Points. Like most writings on the topic, it sidesteps the problem of communication with team outsiders (other teams, management, commercial, etc) which is fundamental to any successful estimation process. [How to plan?](https://kellanem.com/notes/how-to-plan) gives a broader perspective on planning."
+title = "From Story Points to Slam Dunks — Planning for Success"
+url = "https://medium.com/agileinsider/from-story-points-to-slam-dunks-planning-for-success-c3e067354d9b"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W47"
-publication_date = 2023-11-26
+publication_date = "2023-11-26"
 summary = "This week has been about the notion of Pi, an API-driven dictionary, a small terminal-based editor, a programming language for concurrent software, Git concepts revisited and the Functional Source License."
+type = "bulletin"
 
 [[entries]]
-url = "https://jvns.ca/blog/2023/11/01/confusing-git-terminology/"
-title = "Confusing git terminology"
+content_type = "text"
 summary = "An article walking through a long list of Git concepts."
-content_type = "text"
+title = "Confusing git terminology"
+url = "https://jvns.ca/blog/2023/11/01/confusing-git-terminology/"
 
 [[entries]]
-url = "https://azeemba.com/posts/pi-in-other-universes.html"
-title = "π in Other Universes"
+content_type = "text"
 summary = "An article exploring the notion of circle (and thus Pi) when using non-Euclidean distances."
-content_type = "text"
+title = "π in Other Universes"
+url = "https://azeemba.com/posts/pi-in-other-universes.html"
 
 [[entries]]
-url = "https://github.com/rhysd/kiro-editor"
-title = "Kiro"
+content_type = "text"
 summary = "A small terminal-based editor."
-content_type = "text"
+title = "Kiro"
+url = "https://github.com/rhysd/kiro-editor"
 
 [[entries]]
-url = "https://dictionaryapi.dev/"
-title = "Free Dictionary API"
+content_type = "text"
 summary = "A service to query an English dictionary as an API."
-content_type = "text"
+title = "Free Dictionary API"
+url = "https://dictionaryapi.dev/"
 
 [[entries]]
-url = "https://lucumr.pocoo.org/2023/11/19/cathedral-and-bazaaar-licensing/"
-title = "FSL: A License For the Bazaar, Not the Cathedral"
+content_type = "text"
 summary = "An article on the new [Functional Source License (FSL)](https://fsl.software/) from Sentry, another attempt on making an Open Source model sustainable."
-content_type = "text"
+title = "FSL: A License For the Bazaar, Not the Cathedral"
+url = "https://lucumr.pocoo.org/2023/11/19/cathedral-and-bazaaar-licensing/"
 
 [[entries]]
-url = "https://inko-lang.org/"
-title = "Inko"
-summary = "A programming language aiming to ease building concurrent software without worrying about unpredictable performance, data races and runtime errors."
 content_type = "text"
+summary = "A programming language aiming to ease building concurrent software without worrying about unpredictable performance, data races and runtime errors."
+title = "Inko"
+url = "https://inko-lang.org/"

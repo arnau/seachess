@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W18"
-publication_date = 2023-05-07
+publication_date = "2023-05-07"
 summary = "This week has been about the internals of Pandas, internals of Deno KV, unsafe Rust vs Zig, useful errors in Rust, search and replace for Neovim and streaming statistics."
+type = "bulletin"
 
 [[entries]]
-url = "https://zackoverflow.dev/writing/unsafe-rust-vs-zig/"
-title = "When Zig is safer and faster than Rust"
+content_type = "text"
 summary = "An article comparing Rust and Zig in a situation where Rust would require lots of unsafe code. The article uses a bytecode interpreter to compare the two."
-content_type = "text"
+title = "When Zig is safer and faster than Rust"
+url = "https://zackoverflow.dev/writing/unsafe-rust-vs-zig/"
 
 [[entries]]
-url = "https://betterprogramming.pub/pandas-illustrated-the-definitive-visual-guide-to-pandas-c31fa921a43"
-title = "Pandas Illustrated: The Definitive Visual Guide to Pandas"
+content_type = "text"
 summary = "An article comparing what [Pandas](https://pandas.pydata.org/) has to offer and how it compares with using plain [Numpy](https://numpy.org/)."
-content_type = "text"
+title = "Pandas Illustrated: The Definitive Visual Guide to Pandas"
+url = "https://betterprogramming.pub/pandas-illustrated-the-definitive-visual-guide-to-pandas-c31fa921a43"
 
 [[entries]]
-url = "https://github.com/nvim-pack/nvim-spectre"
-title = "nvim-spectre"
+content_type = "text"
 summary = "A search and replace pane plugin for Neovim."
-content_type = "text"
+title = "nvim-spectre"
+url = "https://github.com/nvim-pack/nvim-spectre"
 
 [[entries]]
-url = "https://til.simonwillison.net/deno/deno-kv"
-title = "Deno KV"
+content_type = "text"
 summary = "An article exploring the new [Deno key-value store](https://deno.com/kv). Seems to be backed by SQLite locally and by FoundationDB in the Deno Land service."
-content_type = "text"
+title = "Deno KV"
+url = "https://til.simonwillison.net/deno/deno-kv"
 
 [[entries]]
-url = "https://nestedsoftware.com/2018/03/20/calculating-a-moving-average-on-streaming-data-5a7k.22879.html"
-title = "Calculating a Moving Average on Streaming Data"
+content_type = "text"
 summary = "A collection of articles on calculating statistics on a stream of data."
-content_type = "text"
+title = "Calculating a Moving Average on Streaming Data"
+url = "https://nestedsoftware.com/2018/03/20/calculating-a-moving-average-on-streaming-data-5a7k.22879.html"
 
 [[entries]]
-url = "https://sabrinajewson.org/blog/errors"
-title = "Modular Errors in Rust"
-summary = "An article on how to implement useful errors in Rust."
 content_type = "text"
+summary = "An article on how to implement useful errors in Rust."
+title = "Modular Errors in Rust"
+url = "https://sabrinajewson.org/blog/errors"

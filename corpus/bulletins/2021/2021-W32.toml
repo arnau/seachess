@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2021-W32"
-publication_date = 2021-08-15
+publication_date = "2021-08-15"
 summary = "This week has been about bloom filters, procedural fish drawings, data visualisation in Python, casual inference, and a bit on browser wars."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.quirksmode.org/blog/archives/2021/08/breaking_the_we.html"
-title = "Breaking the web forward"
+content_type = "text"
 summary = "An article arguing that Chrome is the new IE in terms of monopolistic behaviour."
-content_type = "text"
+title = "Breaking the web forward"
+url = "https://www.quirksmode.org/blog/archives/2021/08/breaking_the_we.html"
 
 [[entries]]
-url = "https://fishdraw.glitch.me/"
-title = "fishdraw"
+content_type = "text"
 summary = "A tool to generate fish drawings. It exports results as SVG, JSON and includes an option to export the drawing animation."
-content_type = "text"
+title = "fishdraw"
+url = "https://fishdraw.glitch.me/"
 
 [[entries]]
-url = "https://theeffectbook.net/"
-title = "The Effect"
+content_type = "text"
 summary = "A book on causal inference with observational data. Goes from the design of research to the statistical tools to use to execute it."
-content_type = "text"
+title = "The Effect"
+url = "https://theeffectbook.net/"
 
 [[entries]]
-url = "https://www.hydraecosystem.org/"
-title = "Hydra ecosystem"
+content_type = "text"
 summary = "A collection of resources to work with Hydra, a documentation framework build on top of Linked Data principles for creating hypermedia REST APIs."
-content_type = "text"
+title = "Hydra ecosystem"
+url = "https://www.hydraecosystem.org/"
 
 [[entries]]
-url = "https://holoviz.org/"
-title = "HoloViz"
+content_type = "text"
 summary = "A toolset for browser-based data visualisation in Python. Although it provides a fairly large set of functionality it has a good low-friction starting point and a decent set of tutorials."
-content_type = "text"
+title = "HoloViz"
+url = "https://holoviz.org/"
 
 [[entries]]
-url = "https://boyter.org/posts/bloom-filter/"
-title = "Bloom filters - Much, much more than a space efficient hashmap!"
-summary = "An article introducing the concept of a “bloom filter” and some obvious and not-so obvious applications."
 content_type = "text"
+summary = "An article introducing the concept of a “bloom filter” and some obvious and not-so obvious applications."
+title = "Bloom filters - Much, much more than a space efficient hashmap!"
+url = "https://boyter.org/posts/bloom-filter/"

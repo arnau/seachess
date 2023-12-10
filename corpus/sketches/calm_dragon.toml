@@ -1,12 +1,8 @@
-type = "sketch"
-id = "calm-dragon"
-title = "Calm dragon"
-summary = "Dragon head drawn with SketchBook's fountain pen  and colored with Sketches Pro's watercolor."
 asset = "calm_dragon.png"
 author = "arnau"
-publication_date = 2017-09-29
-tools = [
-  "ipadpro",
-  "sketchbook",
-  "sketches",
-]
+id = "calm-dragon"
+publication_date = "2017-09-29"
+summary = "Dragon head drawn with SketchBook's fountain pen  and colored with Sketches Pro's watercolor."
+title = "Calm dragon"
+tools = ["ipadpro", "sketchbook", "sketches"]
+type = "sketch"

@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W12"
-publication_date = 2023-03-26
+publication_date = "2023-03-26"
 summary = "This week has been about collations in databases, flaws in Linux processes, provenance for digital content, Amazon S3 as a local file system, the GPT hype and deceptive design patterns."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/awslabs/mountpoint-s3"
-title = "Mountpoint for Amazon S3"
+content_type = "text"
 summary = "A high-throughput file client for mounting an Amazon S3 bucket as a local file system."
-content_type = "text"
+title = "Mountpoint for Amazon S3"
+url = "https://github.com/awslabs/mountpoint-s3"
 
 [[entries]]
-url = "https://www.deceptive.design/"
-title = "Deceptive Design"
+content_type = "text"
 summary = "A collection of deceptive design patterns complemented with a hall of shame of websites implementing them."
-content_type = "text"
+title = "Deceptive Design"
+url = "https://www.deceptive.design/"
 
 [[entries]]
-url = "https://catern.com/process.html"
-title = "The Unix process API is unreliable and unsafe"
+content_type = "text"
 summary = "An article exploring the flaws in the Linux process API and suggesting improvements."
-content_type = "text"
+title = "The Unix process API is unreliable and unsafe"
+url = "https://catern.com/process.html"
 
 [[entries]]
-url = "https://contentauthenticity.org/"
-title = "Content Authenticity Initiative"
+content_type = "text"
 summary = "An initiative aiming to fight misinformation by defining a standard for verifiable provenance for digital content. Beware that this is an Adobe-led initiative and this company is famously pro DRM (Digital Rights Management) which is abusive on individuals' right to consume digital products legally purchased."
-content_type = "text"
+title = "Content Authenticity Initiative"
+url = "https://contentauthenticity.org/"
 
 [[entries]]
-url = "http://peter.eisentraut.org/blog/2023/03/14/how-collation-works"
-title = "How collation works"
+content_type = "text"
 summary = "An article introducing how the Default Unicode Collation Element Table (DUCET) sorting works."
-content_type = "text"
+title = "How collation works"
+url = "http://peter.eisentraut.org/blog/2023/03/14/how-collation-works"
 
 [[entries]]
-url = "https://rodneybrooks.com/what-will-transformers-transform/"
-title = "What Will Transformers Transform?"
-summary = "An article reflecting on the Generative Pre-trained Transformer models (GPTs) hype, their current flaws and some predictions."
 content_type = "text"
+summary = "An article reflecting on the Generative Pre-trained Transformer models (GPTs) hype, their current flaws and some predictions."
+title = "What Will Transformers Transform?"
+url = "https://rodneybrooks.com/what-will-transformers-transform/"

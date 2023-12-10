@@ -1,40 +1,53 @@
-type = "bulletin"
 id = "2021-W50"
-publication_date = 2021-12-19
+publication_date = "2021-12-19"
 summary = "This week has been about Jamstack jargon, a data generator in Rust, a self-contained HTTP server for files, a tool to organise image boards, a comparison between WebAssembly and Kubernetes and a paper on value-oriented and object-oriented programming languages."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.researchgate.net/publication/220177801_Values_and_Objects_in_Programming_Languages"
-title = "Values and Objects in Programming Languages"
-summary = "A paper on the differences between value-oriented an object-oriented programming languages. A must-read from 1982.\n\n> This paper attempts to elucidate the differences between values and objects\n> and argues that their proper discrimination can be a valuable aid to conquering\n> program complexity."
 content_type = "pdf"
+summary = """
+A paper on the differences between value-oriented an object-oriented programming languages. A must-read from 1982.
+
+> This paper attempts to elucidate the differences between values and objects
+> and argues that their proper discrimination can be a valuable aid to conquering
+> program complexity."""
+title = "Values and Objects in Programming Languages"
+url = "https://www.researchgate.net/publication/220177801_Values_and_Objects_in_Programming_Languages"
 
 [[entries]]
-url = "https://pureref.com/"
-title = "PureRef"
+content_type = "text"
 summary = "A tool to organise image boards for creative reference."
-content_type = "text"
+title = "PureRef"
+url = "https://pureref.com/"
 
 [[entries]]
-url = "https://github.com/svenstaro/miniserve"
-title = "miniserve"
+content_type = "text"
 summary = "A small, self-contained cross-platform CLI tool written in Rust to serve files via HTTP. For a long time I've been using [devd](https://github.com/cortesi/devd/) but now I'm switching to miniserve just because it's easier to install and keep up to date."
-content_type = "text"
+title = "miniserve"
+url = "https://github.com/svenstaro/miniserve"
 
 [[entries]]
-url = "https://wingolog.org/archives/2021/12/13/webassembly-the-new-kubernetes"
+content_type = "text"
+summary = """
+An article comparing WebAssembly and Kubernetes. I would say a better comparison would be with OCI containers which seems to be the conclusion as well:
+
+> I compare WebAssembly to K8s, but really it's more like processes and private
+> namespaces. So one answer to the question as initially posed is that no,
+> WebAssembly is not the next Kubernetes; that next thing is waiting to be built,
+> though I know of a few organizations that have started already.
+
+As noted in the comments, [Krustlet](https://github.com/krustlet/krustlet) is a project to keep an eye on."""
 title = "webassembly: the new kubernetes?"
-summary = "An article comparing WebAssembly and Kubernetes. I would say a better comparison would be with OCI containers which seems to be the conclusion as well:\n\n> I compare WebAssembly to K8s, but really it's more like processes and private\n> namespaces. So one answer to the question as initially posed is that no,\n> WebAssembly is not the next Kubernetes; that next thing is waiting to be built,\n> though I know of a few organizations that have started already.\n\nAs noted in the comments, [Krustlet](https://github.com/krustlet/krustlet) is a project to keep an eye on."
-content_type = "text"
+url = "https://wingolog.org/archives/2021/12/13/webassembly-the-new-kubernetes"
 
 [[entries]]
-url = "https://bejamas.io/blog/understanding-rendering-in-the-jamstack/"
-title = "Understanding Rendering in the Jamstack"
+content_type = "text"
 summary = "An article diving into the Jamstack jargon (SSR, ISR, DPR, DSG) and some recommendations for when it might be sensible to use one approach over the other."
-content_type = "text"
+title = "Understanding Rendering in the Jamstack"
+url = "https://bejamas.io/blog/understanding-rendering-in-the-jamstack/"
 
 [[entries]]
-url = "https://github.com/getsynth/synth"
-title = "Synth"
-summary = "A tool for generating realistic data using a declarative framework for specifying constraint based data generation."
 content_type = "text"
+summary = "A tool for generating realistic data using a declarative framework for specifying constraint based data generation."
+title = "Synth"
+url = "https://github.com/getsynth/synth"

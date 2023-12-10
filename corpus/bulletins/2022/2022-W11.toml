@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W11"
-publication_date = 2022-03-20
+publication_date = "2022-03-20"
 summary = "This week has been about Deno, a Rust code size profiler, a code editor written in Rust, an essay on digital economy, the C ABI and guidelines on threat modelling."
+type = "bulletin"
 
 [[entries]]
-url = "https://www.threatmodelingmanifesto.org/"
-title = "The threat modeling manifesto"
+content_type = "text"
 summary = "A set of high-level guidelines for applying the threat modelling methodology."
-content_type = "text"
+title = "The threat modeling manifesto"
+url = "https://www.threatmodelingmanifesto.org/"
 
 [[entries]]
-url = "https://github.com/RazrFalcon/cargo-bloat"
-title = "cargo-bloat"
+content_type = "text"
 summary = "A tool to analyse what parts of a Rust executable take most of the space. Also worth having a look at [Twiggy](https://github.com/rustwasm/twiggy) for a similar tool targeting WebAssembly."
-content_type = "text"
+title = "cargo-bloat"
+url = "https://github.com/RazrFalcon/cargo-bloat"
 
 [[entries]]
-url = "https://lapce.dev/"
-title = "Lapce"
+content_type = "text"
 summary = "A code editor written in Rust with an optional modal user interface (a-la Vim), tree-sitter syntax highlighting and a WASI-based plugin system."
-content_type = "text"
+title = "Lapce"
+url = "https://lapce.dev/"
 
 [[entries]]
-url = "https://medium.com/@jamestplunkett/the-fable-of-the-bees-if-the-bees-were-all-on-facebook-197726ffd38b"
-title = "What if the most important idea in economics no longer works?"
+content_type = "text"
 summary = "An essay on whether the Adam Smith's idea of how economy works can be applied in a digital world where the consumer is harmed by the product."
-content_type = "text"
+title = "What if the most important idea in economics no longer works?"
+url = "https://medium.com/@jamestplunkett/the-fable-of-the-bees-if-the-bees-were-all-on-facebook-197726ffd38b"
 
 [[entries]]
-url = "https://examples.deno.land/"
-title = "Deno by example"
+content_type = "text"
 summary = "A collection of examples for how to use Deno."
-content_type = "text"
+title = "Deno by example"
+url = "https://examples.deno.land/"
 
 [[entries]]
-url = "https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi"
-title = "To Save C, We Must Save ABI"
-summary = "An article on the C Application Binary Interface, its assumptions and quirks."
 content_type = "text"
+summary = "An article on the C Application Binary Interface, its assumptions and quirks."
+title = "To Save C, We Must Save ABI"
+url = "https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi"

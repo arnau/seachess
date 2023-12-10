@@ -1,40 +1,45 @@
-type = "bulletin"
 id = "2020-W36"
-publication_date = 2020-09-06
+publication_date = "2020-09-06"
 summary = "This week you'll find a study on web privacy, data analysis techniques in Python, a particular spreadsheet and a taste of the future of WebAssembly."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/pemistahl/grex"
-title = "Grex"
+content_type = "text"
 summary = "A command-line tool to generate regular expressions from test cases."
-content_type = "text"
+title = "Grex"
+url = "https://github.com/pemistahl/grex"
 
 [[entries]]
-url = "https://github.com/hoffstadt/DearPyGui"
-title = "Dear PyGui"
+content_type = "text"
 summary = "A library in Python to draw GPU-accelerated graphical user interfaces."
-content_type = "text"
+title = "Dear PyGui"
+url = "https://github.com/hoffstadt/DearPyGui"
 
 [[entries]]
-url = "https://github.com/andmarti1424/sc-im"
-title = "SC-IM"
+content_type = "text"
 summary = "A terminal-based spreadsheet with a Vim flavour."
-content_type = "text"
+title = "SC-IM"
+url = "https://github.com/andmarti1424/sc-im"
 
 [[entries]]
-url = "https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i"
-title = "Many models workflows in python: part i"
+content_type = "text"
 summary = "An article porting Hadley Wickham's approach to data analysis to Python."
-content_type = "text"
+title = "Many models workflows in python: part i"
+url = "https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i"
 
 [[entries]]
-url = "https://bytecodealliance.org/articles/reference-types-in-wasmtime"
+content_type = "text"
+summary = """
+An article explaining with examples the Reference Types proposal for
+WebAssembly."""
 title = "WebAssembly Reference Types in Wasmtime"
-summary = "An article explaining with examples the Reference Types proposal for\nWebAssembly."
-content_type = "text"
+url = "https://bytecodealliance.org/articles/reference-types-in-wasmtime"
 
 [[entries]]
-url = "https://www.usenix.org/conference/soups2020/presentation/bird"
-title = "Replication: Why We Still Can't Browse in Peace: On the Uniqueness and Reidentifiability of Web Browsing Histories"
-summary = "A paper analysing the privacy threat that browser history leakage impose to\nindividuals. This work replicates and extends the 2012 paper “Why Johnny Can't\nBrowse in Peace: On the Uniqueness of Web Browsing History Patterns”."
 content_type = "pdf"
+summary = """
+A paper analysing the privacy threat that browser history leakage impose to
+individuals. This work replicates and extends the 2012 paper “Why Johnny Can't
+Browse in Peace: On the Uniqueness of Web Browsing History Patterns”."""
+title = "Replication: Why We Still Can't Browse in Peace: On the Uniqueness and Reidentifiability of Web Browsing Histories"
+url = "https://www.usenix.org/conference/soups2020/presentation/bird"

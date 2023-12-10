@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W35"
-publication_date = 2022-09-04
+publication_date = "2022-09-04"
 summary = "This week has been about an experimental embedded JavaScript interpreter, a Python linter, a versioned filesystem for SQLite, imperative vs declarative, async Rust in Tauri and the pros and cons of no-code."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/sudeep9/mojo"
-title = "MojoFS"
+content_type = "text"
 summary = "A versioned filesystem for SQLite based on snapshots where old versions are immutable."
-content_type = "text"
+title = "MojoFS"
+url = "https://github.com/sudeep9/mojo"
 
 [[entries]]
-url = "https://github.com/charliermarsh/ruff"
-title = "ruff"
+content_type = "text"
 summary = "A Python linter written in Rust."
-content_type = "text"
+title = "ruff"
+url = "https://github.com/charliermarsh/ruff"
 
 [[entries]]
-url = "https://github.com/boa-dev/boa"
-title = "Boa"
+content_type = "text"
 summary = "An experimental JavaScript lexer, parser and interpreter written in Rust designed to be embeddable."
-content_type = "text"
+title = "Boa"
+url = "https://github.com/boa-dev/boa"
 
 [[entries]]
-url = "https://rfdonnelly.github.io/posts/tauri-async-rust-process/"
-title = "Tauri + Async Rust Process"
+content_type = "text"
 summary = "A tutorial on how to integrate an async Rust process into a Tauri application."
-content_type = "text"
+title = "Tauri + Async Rust Process"
+url = "https://rfdonnelly.github.io/posts/tauri-async-rust-process/"
 
 [[entries]]
-url = "https://leebriggs.co.uk/blog/2022/07/20/nobody-knows-what-declarative-is"
-title = "Why does nobody seem to know what imperative and declarative actually mean?"
+content_type = "text"
 summary = "An article trying to clarify imperative versus declarative in the context of infrastructure as code."
-content_type = "text"
+title = "Why does nobody seem to know what imperative and declarative actually mean?"
+url = "https://leebriggs.co.uk/blog/2022/07/20/nobody-knows-what-declarative-is"
 
 [[entries]]
-url = "https://www.arthurwu.com/posts/next-era-of-no-code"
-title = "The next era of no-code"
-summary = "An article analysing the pros and cons of the no-code and low-code approach."
 content_type = "text"
+summary = "An article analysing the pros and cons of the no-code and low-code approach."
+title = "The next era of no-code"
+url = "https://www.arthurwu.com/posts/next-era-of-no-code"

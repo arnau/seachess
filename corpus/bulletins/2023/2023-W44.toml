@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2023-W44"
-publication_date = 2023-11-05
+publication_date = "2023-11-05"
 summary = "This week has been about Signal’s new post-quantum protocol, an embedded programming language, an observability platform, PostgreSQL extensions in Rust, an introduction to LLM embeddings and Nginx extensions in Rust."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/pgcentralfoundation/pgrx"
-title = "pgrx"
+content_type = "text"
 summary = "A framework for building PostgreSQL extensions in Rust."
-content_type = "text"
+title = "pgrx"
+url = "https://github.com/pgcentralfoundation/pgrx"
 
 [[entries]]
-url = "https://www.nginx.com/blog/extending-nginx-with-rust-an-alternative-to-c/"
-title = "Extending NGINX with Rust (an Alternative to C)"
+content_type = "text"
 summary = "An article on how to write an extension for Nginx in Rust."
-content_type = "text"
+title = "Extending NGINX with Rust (an Alternative to C)"
+url = "https://www.nginx.com/blog/extending-nginx-with-rust-an-alternative-to-c/"
 
 [[entries]]
-url = "https://dascript.org/"
-title = "dascript"
+content_type = "text"
 summary = "An programming language with strong static typing designed for high performance embeddable language for C++ applications."
-content_type = "text"
+title = "dascript"
+url = "https://dascript.org/"
 
 [[entries]]
-url = "https://github.com/openobserve/openobserve"
-title = "openobserve"
+content_type = "text"
 summary = "An observability platform built for logs, metrics, traces and analytics aiming for a petabyte scale. It works as a drop-in replacement for Elasticsearch."
-content_type = "text"
+title = "openobserve"
+url = "https://github.com/openobserve/openobserve"
 
 [[entries]]
-url = "https://cryspen.com/post/pqxdh/"
-title = "An Analysis of Signal's PQXDH"
+content_type = "text"
 summary = "An article summarising the result of analysing the new post-quantum secure protocol designed by Signal."
-content_type = "text"
+title = "An Analysis of Signal's PQXDH"
+url = "https://cryspen.com/post/pqxdh/"
 
 [[entries]]
-url = "https://simonwillison.net/2023/Oct/23/embeddings/"
-title = "Embeddings: What they are and why they matter"
-summary = "An article introducing the concept of “embedding” in the context of large language models."
 content_type = "text"
+summary = "An article introducing the concept of “embedding” in the context of large language models."
+title = "Embeddings: What they are and why they matter"
+url = "https://simonwillison.net/2023/Oct/23/embeddings/"

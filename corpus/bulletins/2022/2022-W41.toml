@@ -1,40 +1,49 @@
-type = "bulletin"
 id = "2022-W41"
-publication_date = 2022-10-16
+publication_date = "2022-10-16"
 summary = "This week has been about Python dependency management, an embedded language for SQL in Python, a microservice framework with WebAssembly, a Kafka alternative, a tool for identifying unknown strings and generics in Zig."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/fermyon/spin"
-title = "Spin"
+content_type = "text"
 summary = "A framework for building, deploying, and running fast, secure, and composable cloud microservices with WebAssembly."
-content_type = "text"
+title = "Spin"
+url = "https://github.com/fermyon/spin"
 
 [[entries]]
-url = "https://github.com/swanandx/lemmeknow"
-title = "lemmeknow"
+content_type = "text"
 summary = "A tool for identifying mysterious text or to analyze hard-coded strings from captured network packets, malwares, etc."
-content_type = "text"
+title = "lemmeknow"
+url = "https://github.com/swanandx/lemmeknow"
 
 [[entries]]
-url = "https://blog.viraptor.info/post/python-dependency-management-difficulty-is-an-unhelpful-meme"
+content_type = "text"
+summary = """
+An article trying to clarify what is what in the Python development ecosystem.
+
+Although the article seems to try to demonstrate that Python dependency management is not that hard it actually reinforces the opposite."""
 title = "Python dependency management difficulty is an unhelpful meme"
-summary = "An article trying to clarify what is what in the Python development ecosystem.\n\nAlthough the article seems to try to demonstrate that Python dependency management is not that hard it actually reinforces the opposite."
-content_type = "text"
+url = "https://blog.viraptor.info/post/python-dependency-management-difficulty-is-an-unhelpful-meme"
 
 [[entries]]
-url = "https://typesanitizer.com/blog/zig-generics.html"
+content_type = "text"
+summary = """
+An article on how [Zig](https://ziglang.org/) generics work and their downsides.
+
+> Yes, you have more flexibility to do whatever you want, but the problem is that you have more flexibility to do whatever you want."""
 title = "Zig-style generics are not well-suited for most languages"
-summary = "An article on how [Zig](https://ziglang.org/) generics work and their downsides.\n\n> Yes, you have more flexibility to do whatever you want, but the problem is that you have more flexibility to do whatever you want."
-content_type = "text"
+url = "https://typesanitizer.com/blog/zig-generics.html"
 
 [[entries]]
-url = "https://github.com/ekzhang/inline-sql"
-title = "inline-sql"
+content_type = "text"
 summary = "A simple embedded language for running inline SQL in Python programs."
-content_type = "text"
+title = "inline-sql"
+url = "https://github.com/ekzhang/inline-sql"
 
 [[entries]]
-url = "https://github.com/redpanda-data/redpanda"
-title = "Redpanda"
-summary = "A streaming platform compatible with Kafka but faster and with the ability to use WebAssembly for data transformation. And without the need for Zookeeper or JVM.\n\nThe article [Redpanda vs Apache Kafka: A performance comparison (2022 update)](https://redpanda.com/blog/redpanda-vs-kafka-performance-benchmark) shows an interesting comparison."
 content_type = "text"
+summary = """
+A streaming platform compatible with Kafka but faster and with the ability to use WebAssembly for data transformation. And without the need for Zookeeper or JVM.
+
+The article [Redpanda vs Apache Kafka: A performance comparison (2022 update)](https://redpanda.com/blog/redpanda-vs-kafka-performance-benchmark) shows an interesting comparison."""
+title = "Redpanda"
+url = "https://github.com/redpanda-data/redpanda"

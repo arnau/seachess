@@ -1,40 +1,43 @@
-type = "bulletin"
 id = "2020-W45"
-publication_date = 2020-11-08
+publication_date = "2020-11-08"
 summary = "This week has been about refactoring, ePub, images in the terminal, git and SVG."
+type = "bulletin"
 
 [[entries]]
-url = "https://davidgerard.co.uk/blockchain/2020/11/05/calibre-epub-and-epubcheck-the-curse-of-editing-xhtml/"
-title = "Calibre, ePub and epubcheck: the curse of editing XHTML"
+content_type = "text"
 summary = "An article on the horrors of building an ePub."
-content_type = "text"
+title = "Calibre, ePub and epubcheck: the curse of editing XHTML"
+url = "https://davidgerard.co.uk/blockchain/2020/11/05/calibre-epub-and-epubcheck-the-curse-of-editing-xhtml/"
 
 [[entries]]
-url = "https://people.kernel.org/monsieuricon/signed-git-pushes"
-title = "Signed git pushes"
+content_type = "text"
 summary = "An article introducing [signed git pushes](https://git-scm.com/docs/git-push#Documentation/git-push.txt---signedtruefalseif-asked) to record a transparency log for reliable auditing."
-content_type = "text"
+title = "Signed git pushes"
+url = "https://people.kernel.org/monsieuricon/signed-git-pushes"
 
 [[entries]]
-url = "https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/"
-title = "Technical debt as a lack of understanding"
+content_type = "text"
 summary = "An article arguing that refactoring is an exercise of reviewing your understanding of the codebase."
-content_type = "text"
+title = "Technical debt as a lack of understanding"
+url = "https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/"
 
 [[entries]]
-url = "https://github.com/atanunq/viu"
+content_type = "text"
+summary = """
+A tool to display images in the terminal. It is compatible with the Kitty graphics protocol but fallsback to lower half blocks for other terminals.
+
+I found some discrepancies with the ratios in comparison with Kitty's `icat` but it is substantially faster."""
 title = "Viu"
-summary = "A tool to display images in the terminal. It is compatible with the Kitty graphics protocol but fallsback to lower half blocks for other terminals.\n\nI found some discrepancies with the ratios in comparison with Kitty's `icat` but it is substantially faster."
-content_type = "text"
+url = "https://github.com/atanunq/viu"
 
 [[entries]]
-url = "https://yqnn.github.io/svg-path-editor/"
-title = "SVG Path editor"
+content_type = "text"
 summary = "A tool to edit SVG paths in the browser. If you ever wanted to learn how paths work, this tool gives you the right environment to do so."
-content_type = "text"
+title = "SVG Path editor"
+url = "https://yqnn.github.io/svg-path-editor/"
 
 [[entries]]
-url = "https://productcoalition.com/product-thinking-vs-project-thinking-380692a2d4e"
-title = "Product Thinking vs. Project Thinking"
-summary = "An article on the differences between project and product management. I would add to this that the funding/budgeting model can transform any well-intended product mananagement in a broken product management."
 content_type = "text"
+summary = "An article on the differences between project and product management. I would add to this that the funding/budgeting model can transform any well-intended product mananagement in a broken product management."
+title = "Product Thinking vs. Project Thinking"
+url = "https://productcoalition.com/product-thinking-vs-project-thinking-380692a2d4e"

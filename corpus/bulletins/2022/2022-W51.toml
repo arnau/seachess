@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W51"
-publication_date = 2022-12-25
+publication_date = "2022-12-25"
 summary = "This week has been about dependency verification in Python, reversing redacted text, a SQL database library written in Rust, a SQLite extension set, embeddable storage solutions for building high-level databases and describing concrete syntax trees."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/nalgeon/sqlean"
-title = "SQLean"
+content_type = "text"
 summary = "A SQLite set of extensions covering topics like hashing functions, fuzzy string matching, user functions, math functions and more."
-content_type = "text"
+title = "SQLean"
+url = "https://github.com/nalgeon/sqlean"
 
 [[entries]]
-url = "https://rust-analyzer.github.io/blog/2020/10/24/introducing-ungrammar.html"
-title = "Introducing Ungrammar"
+content_type = "text"
 summary = "An article on a new formalism for describing concrete syntax trees."
-content_type = "text"
+title = "Introducing Ungrammar"
+url = "https://rust-analyzer.github.io/blog/2020/10/24/introducing-ungrammar.html"
 
 [[entries]]
-url = "https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html"
-title = "What's the big deal about key-value databases like FoundationDB and RocksDB?"
+content_type = "text"
 summary = "An article looking into embeddable storage solutions for building high-level databases."
-content_type = "text"
+title = "What's the big deal about key-value databases like FoundationDB and RocksDB?"
+url = "https://notes.eatonphil.com/whats-the-big-deal-about-key-value-databases.html"
 
 [[entries]]
-url = "https://0xda.de/blog/2022/12/a-not-so-unfortunate-sharp-edge-in-pipenv/"
-title = "A not so unfortunate sharp edge in Pipenv"
+content_type = "text"
 summary = "An article on the consequences of using a hash-based verification for dependencies in Python."
-content_type = "text"
+title = "A not so unfortunate sharp edge in Pipenv"
+url = "https://0xda.de/blog/2022/12/a-not-so-unfortunate-sharp-edge-in-pipenv/"
 
 [[entries]]
-url = "https://github.com/gluesql/gluesql"
-title = "GlueSQL"
+content_type = "text"
 summary = "A SQL database library written in Rust. It is designed to be either a building block for a new database or an embeddable SQL database using memory or disk."
-content_type = "text"
+title = "GlueSQL"
+url = "https://github.com/gluesql/gluesql"
 
 [[entries]]
-url = "https://bishopfox.com/blog/unredacter-tool-never-pixelation"
-title = "Never, Ever, Ever Use Pixelation for Redacting Text"
-summary = "An article showcasing how to reverse redacted text and the challenges pixelation impose on the process."
 content_type = "text"
+summary = "An article showcasing how to reverse redacted text and the challenges pixelation impose on the process."
+title = "Never, Ever, Ever Use Pixelation for Redacting Text"
+url = "https://bishopfox.com/blog/unredacter-tool-never-pixelation"

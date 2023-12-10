@@ -1,45 +1,46 @@
-type = "bulletin"
 id = "2021-W08"
-publication_date = 2021-02-28
+publication_date = "2021-02-28"
 summary = "This week has been about Deno, SQLite in Rust, GraphQL, JSON alternatives, NFTs and a comment system."
-
-[[entries]] 
-url = "https://choubey.gitbook.io/internals-of-deno/"
-title = "The Internals of Deno"
-summary = "A book on how [Deno](https://deno.land/) works."
-content_type = "text"
+type = "bulletin"
 
 [[entries]]
+content_type = "text"
+summary = "A book on how [Deno](https://deno.land/) works."
+title = "The Internals of Deno"
+url = "https://choubey.gitbook.io/internals-of-deno/"
+
+[[entries]]
+content_type = "text"
+summary = "A series aiming to unserstand how SQLite works by writting a clone in Rust."
 title = "What would SQLite look like if written in Rust?"
 url = "https://medium.com/the-polyglot-programmer/what-would-sqlite-look-like-if-written-in-rust-part-1-4a84196c217d"
-summary = "A series aiming to unserstand how SQLite works by writting a clone in Rust."
-content_type = "text"
 
 [[entries]]
-title = "Beyond REST: Rapid Development with GraphQL Microservices"
-url = "https://netflixtechblog.com/beyond-rest-1b76f7c20ef6"
-summary = """An article showcasing how Netflix uses GraphQL for prototyping services with a enterpise data architecture lens.
+content_type = "text"
+summary = """
+An article showcasing how Netflix uses GraphQL for prototyping services with a enterpise data architecture lens.
 
 The narrative of having a single graph for the whole enterprise is far from new, but it might be more successful than the RDF, SPARQL, Linked Data fragments pile of complexity. Or, a step towards the promised land of flexibility that Linked Data has been aiming to provide since forever.
 
 The [Principled GraphQL](https://principledgraphql.com/) is a good complementary read.
 """
-content_type = "text"
+title = "Beyond REST: Rapid Development with GraphQL Microservices"
+url = "https://netflixtechblog.com/beyond-rest-1b76f7c20ef6"
 
 [[entries]]
+content_type = "text"
+summary = "An article exploring an alternative format to JSON using control characters instead of braces and commas. A fun read!"
 title = "KYLI – because it is superior to JSON"
 url = "https://shkspr.mobi/blog/2017/03/kyli-because-it-is-superior-to-json/"
-summary = "An article exploring an alternative format to JSON using control characters instead of braces and commas. A fun read!"
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "A widget built on top of Github issues to add a comment system in your website."
 title = "utterances"
 url = "https://utteranc.es/"
-summary = "A widget built on top of Github issues to add a comment system in your website."
-content_type = "text"
 
 [[entries]]
+content_type = "text"
+summary = "An article explaining what are NFTs, fungibe digital assets and more. Spoiler: blockchain rabbithole."
 title = "What are Non-Fungible Tokens (NFT)?"
 url = "https://www.ledger.com/academy/what-are-nft"
-summary = "An article explaining what are NFTs, fungibe digital assets and more. Spoiler: blockchain rabbithole."
-content_type = "text"

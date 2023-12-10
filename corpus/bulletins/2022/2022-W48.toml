@@ -1,40 +1,40 @@
-type = "bulletin"
 id = "2022-W48"
-publication_date = 2022-12-04
+publication_date = "2022-12-04"
 summary = "This week has been about a Git-based bug tracker, graphs in Rust, a DSL for diagrams, SQLite CRDTs, a Git-compatible source control and a personal knowledge management in Deno."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/terrastruct/d2"
-title = "D2"
+content_type = "text"
 summary = "A domain-specific language for describing diagrams partially overlapping in scope with [Graphviz](https://graphviz.org/) and [Mermaid](https://mermaid-js.github.io/mermaid/)."
-content_type = "text"
+title = "D2"
+url = "https://github.com/terrastruct/d2"
 
 [[entries]]
-url = "https://github.com/MichaelMure/git-bug"
-title = "git-bug"
+content_type = "text"
 summary = "A bug tracker that embedded in git. Works as a plain git repository so it is distributed, offline-first and does not depend on vendors to operate."
-content_type = "text"
+title = "git-bug"
+url = "https://github.com/MichaelMure/git-bug"
 
 [[entries]]
-url = "https://sapling-scm.com/"
-title = "Sapling SCM"
+content_type = "text"
 summary = "A cross-platform Git-compatible source control system aiming to provide user-friendly interfaces as well as extreme scalability to deal with repositories containing many millions of files and many millions of commits."
-content_type = "text"
+title = "Sapling SCM"
+url = "https://sapling-scm.com/"
 
 [[entries]]
-url = "https://github.com/vlcn-io/cr-sqlite"
-title = "cr-sqlite"
+content_type = "text"
 summary = "A SQLite extension that adds CRDT and sync support to a pre-existing database such that multiple SQLite databases with the same schema can be reconciled."
-content_type = "text"
+title = "cr-sqlite"
+url = "https://github.com/vlcn-io/cr-sqlite"
 
 [[entries]]
-url = "https://silverbullet.md/"
-title = "Silver Bullet"
+content_type = "text"
 summary = "An extensible, open source, personal knowledge management application based on Markdown with life preview."
-content_type = "text"
+title = "Silver Bullet"
+url = "https://silverbullet.md/"
 
 [[entries]]
-url = "https://github.com/s1ck/graph"
-title = "Graph"
-summary = "A Rust library that provides a collection of high-performant graph algorithms designed to run efficiently on large-scale graphs with billions of nodes and edges."
 content_type = "text"
+summary = "A Rust library that provides a collection of high-performant graph algorithms designed to run efficiently on large-scale graphs with billions of nodes and edges."
+title = "Graph"
+url = "https://github.com/s1ck/graph"

@@ -1,41 +1,41 @@
-type = "bulletin"
-id = "2021-W40"
-publication_date = 2021-10-10
-summary = "This week has been about RDF storage trade-offs, JupyerLab desktop application, API mocking, threat mitigation from Web APIs, the effect of words in a conversation and the line of death in browsers."
 cookies_swallowed = 120
+id = "2021-W40"
+publication_date = "2021-10-10"
+summary = "This week has been about RDF storage trade-offs, JupyerLab desktop application, API mocking, threat mitigation from Web APIs, the effect of words in a conversation and the line of death in browsers."
+type = "bulletin"
 
 [[entries]]
-url = "https://textslashplain.com/2017/01/14/the-line-of-death/"
-title = "The Line of Death"
+content_type = "text"
 summary = "An article on the dangers of blurring the differences between the web browser UI and the web in display."
-content_type = "text"
+title = "The Line of Death"
+url = "https://textslashplain.com/2017/01/14/the-line-of-death/"
 
 [[entries]]
-url = "https://github.com/jupyterlab/jupyterlab_app"
-title = "JupyterLab App"
+content_type = "text"
 summary = "A desktop application for JupyterLab based on Electron."
-content_type = "text"
+title = "JupyterLab App"
+url = "https://github.com/jupyterlab/jupyterlab_app"
 
 [[entries]]
-url = "https://psyche.co/ideas/argue-better-by-signalling-your-receptiveness-with-these-words"
-title = "Argue better by signalling your receptiveness with these words"
+content_type = "text"
 summary = "An article on the study of how words can affect the outcome of a conversation."
-content_type = "text"
+title = "Argue better by signalling your receptiveness with these words"
+url = "https://psyche.co/ideas/argue-better-by-signalling-your-receptiveness-with-these-words"
 
 [[entries]]
-url = "https://jshelter.org/"
-title = "JShelter"
+content_type = "text"
 summary = "A browser extension to manage what Web APIs are available to websites to mitigate potential JavaScript threats."
-content_type = "text"
+title = "JShelter"
+url = "https://jshelter.org/"
 
 [[entries]]
-url = "https://github.com/stoplightio/prism"
-title = "Prism"
+content_type = "text"
 summary = "A set of packages for API mocking and contract testing with OpenAPI v2 (formerly known as Swagger) and OpenAPI v3.x."
-content_type = "text"
+title = "Prism"
+url = "https://github.com/stoplightio/prism"
 
 [[entries]]
-url = "https://arxiv.org/pdf/2102.13027.pdf"
-title = "A Survey of RDF Stores & SPARQL Engines for Querying Knowledge Graphs"
-summary = "A paper analysing storage trade-offs in RDF stores and SPARQL engines."
 content_type = "text"
+summary = "A paper analysing storage trade-offs in RDF stores and SPARQL engines."
+title = "A Survey of RDF Stores & SPARQL Engines for Querying Knowledge Graphs"
+url = "https://arxiv.org/pdf/2102.13027.pdf"

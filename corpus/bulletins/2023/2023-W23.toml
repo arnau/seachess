@@ -1,40 +1,42 @@
-type = "bulletin"
 id = "2023-W23"
-publication_date = 2023-06-11
+publication_date = "2023-06-11"
 summary = "This week has been about a system for consultations, speeding up Rust Docker builds, a curly Python dialect, the London tube in Git, a collection of CSS patterns and low-level WASM in TypeScript."
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/LukeMathWalker/cargo-chef"
-title = "cargo-chef"
+content_type = "text"
 summary = "A cargo-subcommand to speed up Rust Docker builds using Docker layer caching."
-content_type = "text"
+title = "cargo-chef"
+url = "https://github.com/LukeMathWalker/cargo-chef"
 
 [[entries]]
-url = "https://github.com/quarbby/london-git"
+content_type = "text"
+summary = """
+A script to generate a Git repository where the commit tree is a map of the
+London tube."""
 title = "London Tube Map in Git Network"
-summary = "A script to generate a Git repository where the commit tree is a map of the\nLondon tube."
-content_type = "text"
+url = "https://github.com/quarbby/london-git"
 
 [[entries]]
-url = "https://www.zksecurity.xyz/blog/posts/wasmati/"
-title = "Wasmati"
+content_type = "text"
 summary = "An article introducing Wasmati, a library to write low-level WebAssembly in TypeScript."
-content_type = "text"
+title = "Wasmati"
+url = "https://www.zksecurity.xyz/blog/posts/wasmati/"
 
 [[entries]]
-url = "https://github.com/mathialo/bython"
-title = "Bython"
+content_type = "text"
 summary = "A Python dialect with braces instead of indentation that transpiles to Python."
-content_type = "text"
+title = "Bython"
+url = "https://github.com/mathialo/bython"
 
 [[entries]]
-url = "https://smolcss.dev/"
-title = "smolCSS"
+content_type = "text"
 summary = "A collection of CSS patterns for common layouts and components."
-content_type = "text"
+title = "smolCSS"
+url = "https://smolcss.dev/"
 
 [[entries]]
-url = "https://compdemocracy.org/Polis/"
-title = "Polis"
-summary = "A system claiming to be for gathering, analysing and understanding what large groups of people think in their own words, enabled by advanced statistics and machine learning."
 content_type = "text"
+summary = "A system claiming to be for gathering, analysing and understanding what large groups of people think in their own words, enabled by advanced statistics and machine learning."
+title = "Polis"
+url = "https://compdemocracy.org/Polis/"

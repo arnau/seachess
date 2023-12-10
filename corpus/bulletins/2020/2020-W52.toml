@@ -1,40 +1,46 @@
-type = "bulletin"
 id = "2020-W52"
-publication_date = 2020-12-27
-summary = "This week has been about point-free programming, hjson, a new terminal multiplexer and open data licenses.\n\nI also published [Dive into Frictionless Data](https://www.seachess.net/notes/dive-into-frictionlessdata) as part of my research on how to publish CSV with enough contextual information."
+publication_date = "2020-12-27"
+summary = """
+This week has been about point-free programming, hjson, a new terminal multiplexer and open data licenses.
+
+I also published [Dive into Frictionless Data](https://www.seachess.net/notes/dive-into-frictionlessdata) as part of my research on how to publish CSV with enough contextual information."""
+type = "bulletin"
 
 [[entries]]
-url = "https://github.com/kivy/kivy"
-title = "Kivy"
+content_type = "text"
 summary = "A Python library to build cross-platform applications."
-content_type = "text"
+title = "Kivy"
+url = "https://github.com/kivy/kivy"
 
 [[entries]]
-url = "https://opendefinition.org/"
-title = "Open Definition"
+content_type = "text"
 summary = "A collection of licences for open data, open content and open knowledge."
-content_type = "text"
+title = "Open Definition"
+url = "https://opendefinition.org/"
 
 [[entries]]
-url = "https://dystroy.org/blog/hjson-in-broot/"
-title = "Why broot switched to Hjson for its configuration files"
+content_type = "text"
 summary = "An article overviewing a handful of formats for the purpose of writing application configuration files."
-content_type = "text"
+title = "Why broot switched to Hjson for its configuration files"
+url = "https://dystroy.org/blog/hjson-in-broot/"
 
 [[entries]]
-url = "https://github.com/austinjones/tab-rs"
+content_type = "text"
+summary = """
+A config-driven terminal multiplexer control tabs, command history, working directories, etc.
+
+[How to write a Terminal Multiplexer with Rust, Async, and Actors - Part 2](https://implaustin.hashnode.dev/how-to-write-a-terminal-multiplexer-with-rust-async-and-actors-part-2) is a nice read if you are interested in its architecture and goals."""
 title = "tab"
-summary = "A config-driven terminal multiplexer control tabs, command history, working directories, etc.\n\n[How to write a Terminal Multiplexer with Rust, Async, and Actors - Part 2](https://implaustin.hashnode.dev/how-to-write-a-terminal-multiplexer-with-rust-async-and-actors-part-2) is a nice read if you are interested in its architecture and goals."
-content_type = "text"
+url = "https://github.com/austinjones/tab-rs"
 
 [[entries]]
-url = "http://xahlee.info/comp/point-free_programing.html"
-title = "What's Point-free Programing? (point-free function syntax)"
+content_type = "text"
 summary = "An article explaining point-free programming, currying, etc."
-content_type = "text"
+title = "What's Point-free Programing? (point-free function syntax)"
+url = "http://xahlee.info/comp/point-free_programing.html"
 
 [[entries]]
-url = "https://github.com/Canop/broot"
-title = "Broot"
-summary = "A tool to navigate directories from the terminal. It plays well with [Kitty](https://sw.kovidgoyal.net/kitty/) so image previews are rendered seamlessly."
 content_type = "text"
+summary = "A tool to navigate directories from the terminal. It plays well with [Kitty](https://sw.kovidgoyal.net/kitty/) so image previews are rendered seamlessly."
+title = "Broot"
+url = "https://github.com/Canop/broot"
