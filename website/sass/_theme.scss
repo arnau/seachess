@@ -2,18 +2,19 @@ pre {
   margin: 2rem 0;
 }
 
-pre > code {
+pre>code {
   border-radius: 8px;
   display: block;
   overflow-y: auto;
   padding: 1rem;
 
   color: #fffcec;
-  background: #222;
+  background: #333;
 }
 
 code {
   color: #c05;
+  color: mediumvioletred;
 }
 
 code[class*="language-"] {
@@ -32,45 +33,51 @@ code[class*="language-"] {
 
 .z-path,
 .z-name {
-  color: #afecff;
+  color: pink;
 }
 
 .z-group {
-  color: lightcyan;
+  color: lightblue;
 
- .z-punctuation {
-    color: lightsalmon;
+  .z-punctuation {
+    color: pink;
   }
 }
 
-.z-type {
-  color: gold;
+.z-type,
+.z-function,
+.z-command {
+  color: pink;
 }
 
 .z-keyword,
 .z-variable,
 .z-key {
-  color: lightgoldenrodyellow;
+  color: lightblue;
 }
 
 .z-datetime,
 .z-string {
-  color: #ffd894;
+  color: lightyellow;
 }
 
 .z-punctuation {
-  color: lightsalmon;
+  color: lightyellow;
 }
 
 .z-operator {
-  color: lightblue;
+  color: lightyellow;
 }
 
 .z-key.z-name.z-http {
-  color: white;
-  background: #00648b;
+  color: #333;
+  background: pink;
   display: inline-block;
   padding: 0 0.8rem;
   margin: 0.1rem 0;
   border-radius: 4px;
+}
+
+.z-meta.z-nu {
+  color: lightyellow;
 }
