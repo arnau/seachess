@@ -1,4 +1,4 @@
-AQ_VERSION ?= v0.1.0
+AQ_VERSION ?= v0.1.3
 AQ ?= aquarium
 ARTIFACT_NAME ?= x86_64-unknown-linux-musl_aquarium
 
