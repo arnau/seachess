@@ -1,7 +1,7 @@
-id = "2023-W49"
-publication_date = "2023-12-10"
-summary = "This week has been about a tool to explore regular expressions, an embeddable Scheme runtime, a query language for Git, a chess game in the terminal, a Service Workers server implementation and a programming language for scientific computations."
 type = "bulletin"
+id = "2023-W49"
+publication_date = 2023-12-10
+summary = "This week has been about a tool to explore regular expressions, an embeddable Scheme runtime, a query language for Git, a chess game in the terminal, a Service Workers server implementation and a programming language for scientific computations."
 
 [[entries]]
 content_type = "text"
