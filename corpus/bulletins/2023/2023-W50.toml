@@ -1,0 +1,40 @@
+id = "2023-W50"
+publication_date = "2023-12-17"
+summary = "This week has been about the HTML input element, justifying technical tradeoffs, Canon TDD, offline-first SQLite replication, CRDTs in Rust and a Python library for loading data."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article diving into what makes the HTML `input` element unique."
+title = "The hidden depths of the input element"
+url = "https://www.htmhell.dev/adventcalendar/2023/8/"
+
+[[entries]]
+content_type = "text"
+summary = "An article offering a few ideas on how to manage the tradeoff of ground work for which is hard to demonstrate direct business value."
+title = "TBM 257: How to Make the Case for Slowing Down to Speed Up"
+url = "https://cutlefish.substack.com/p/tbm-257-how-to-make-case-for-slowing"
+
+[[entries]]
+content_type = "text"
+summary = "An article clarifying the meaning of Test Driven Development (TDD) and it's intended purpose."
+title = "Canon TDD"
+url = "https://tidyfirst.substack.com/p/canon-tdd?publication_id=256838&post_id=139601698"
+
+[[entries]]
+content_type = "text"
+summary = "An offline-first wrapper around SQLite designed to synchronize application state between users and devices."
+title = "SQLSync"
+url = "https://github.com/orbitinghail/sqlsync"
+
+[[entries]]
+content_type = "text"
+summary = "A CRDTs (Conflict-free Replicated Data Types) library for building local-first applications."
+title = "Loro"
+url = "https://github.com/loro-dev/loro"
+
+[[entries]]
+content_type = "text"
+summary = "A Python library for loading data from arbitrary sources."
+title = "data load tool (dlt)"
+url = "https://github.com/dlt-hub/dlt"
