@@ -1,0 +1,40 @@
+id = "2023-W51"
+publication_date = "2023-12-24"
+summary = "This week has been about the security of UUIDv7, a collection of neovim plugins, an introduction to how databases work, a collection of static analysis tools, package manager challenges and data-oriented design and the relational model."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article looking into the potential security weaknesses of UUIDv7."
+title = "Maybe We Don’t Need UUIDv7 After All"
+url = "https://lu.sagebl.eu/notes/maybe-we-dont-need-uuidv7/"
+
+[[entries]]
+content_type = "text"
+summary = "A collection of searchable Neovim plugins."
+title = "neovimcraft"
+url = "https://neovimcraft.com/"
+
+[[entries]]
+content_type = "text"
+summary = "An introduction to how databases work influenced by “Database Internals” by Alex Petrov and “Designing Data-Intensive Applications” by Martin Kleppmann."
+title = "Database Fundamentals"
+url = "https://tontinton.com/posts/database-fundementals/"
+
+[[entries]]
+content_type = "text"
+summary = "A collection of static analysis tools and linters for a large set of programming languages."
+title = "Analysis Tools"
+url = "https://analysis-tools.dev/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the challenges of implememnting a package manager."
+title = "Writing a package manager"
+url = "https://antonz.org/writing-package-manager/"
+
+[[entries]]
+content_type = "text"
+summary = "An article looking into [data oriented design](https://www.dataorienteddesign.com/dodbook/), [entity component systems](https://en.wikipedia.org/wiki/Entity_component_system) and the [relational model](https://en.wikipedia.org/wiki/Relational_model)."
+title = "Databases are the endgame for data-oriented design"
+url = "https://spacetimedb.com/blog/databases-and-data-oriented-design"
