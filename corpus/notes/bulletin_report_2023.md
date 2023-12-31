@@ -36,7 +36,7 @@ Let's start with some general numbers to frame the rest of the report.
 | 2022 | 649        | 306             | 27           | 22                |
 | 2023 | 447        | 294             | 19           | 17                |
 
-This year I've read less than last year, continuing the trend downwards. The proportion of between items read and items published is not great, I should reduce the amount of published items or increase my reading habits.
+This year I've read less than last year, continuing the trend downwards. The proportion between items read and items published is not great, I should reduce the amount of published items or increase my reading habits.
 
 | year | mean  | std  | min | max |
 | ---- | ----: | ---: | --: | --: |
@@ -60,7 +60,7 @@ I believe all web resources should be accessible via HTTPS. However, some places
 
 ## Sources
 
-My regular sources are where I find most of my readings. These are the top 10 sources and the total resources I found thanks to them. Note that the empty source signals either an ad-hoc source like following a link from another item.
+My regular sources are where I find most of my readings. These are the top 10 sources and the total items I found thanks to them. Note that the empty source signals either an ad-hoc source like following a link from another item.
 
 | source         | 2023 | 2022 | 2021 | 2020 |
 | -------------- | ---: | ---: | ---: | ---: |
@@ -81,7 +81,7 @@ The biggest change this year is that I stopped using Twitter and started using M
 | ------- | ---: | ---: | ---: | ---: |
 | twitter | 0    | 133  | 136  | 32   |
 
-In contrast with the top 10 sources for resources I chose for the bulletins:
+In contrast with the top 10 sources for items I chose for the bulletins:
 
 | source         | 2023 | 2022 | 2021 | 2020 |
 | -------------- | ---: | ---: | ---: | ---: |
@@ -123,7 +123,7 @@ Note that I'm excluding domains with 2 or less repetitons for practical reasons.
 | 124  | 1     | 0.33%      |
 
 
-These are the top 10 domains from resources published in the bulletin:
+These are the top 10 domains from items published in the bulletin:
 
 | domain            | 2023 | 2022 | 2021 | 2020 |
 | ----------------- | ---: | ---: | ---: | ---: |
@@ -187,4 +187,4 @@ For a third year in a row, WebAssembly doesn't show often enough in the bulletin
 
 ## Conclusions
 
-This year has been quite similar to 2022 in topics and sources (excluding the swap between Twitter and Mastodon). However I read substantially fewer resources than previous years. I have decided to reduce the number of links per issue from 6 to 4.
+This year has been quite similar to 2022 in topics and sources (excluding the swap between Twitter and Mastodon). However I read substantially fewer items than previous years. I have decided to reduce the number of links per issue from 6 to 4.
