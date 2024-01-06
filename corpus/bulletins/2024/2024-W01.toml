@@ -1,0 +1,28 @@
+id = "2024-W01"
+publication_date = "2024-01-07"
+summary = "This week has been about AWS Lambdas in Rust, the EU regulation to weaken encryption, Unicode and the Declaration of Human Rights and a terminal for the web."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A Cargo subcommand for working with AWS Lambdas in Rust."
+title = "Cargo Lambda"
+url = "https://www.cargo-lambda.info/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the implications of the EU regulation that would weaken HTTPS encryption such that spies can spy."
+title = "Article 45 Will Roll Back Web Security by 12 Years"
+url = "https://www.eff.org/deeplinks/2023/11/article-45-will-roll-back-web-security-12-years"
+
+[[entries]]
+content_type = "text"
+summary = "A project from Unicode aiming to translate the Universal Declaration of Human Rights (UDHR) in as many scripting languages as possible."
+title = "UDHR in Unicode"
+url = "https://unicode.org/udhr/index.html"
+
+[[entries]]
+content_type = "text"
+summary = "A front-end component written in TypeScript for building fully-featured terminals in web applications."
+title = "xterm.js"
+url = "https://github.com/xtermjs/xterm.js"
