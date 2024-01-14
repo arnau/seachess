@@ -1,0 +1,28 @@
+id = "2024-W02"
+publication_date = "2024-01-14"
+summary = "This week has been about the everything npm package, sourcecode visualisations, OCR in Rust and WebAssembly as a boundary abstraction."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article summarising the events that led to an npm package creating a Denial of Service (DoS) attack."
+title = "When “Everything” Becomes Too Much: The npm Package Chaos of 2024"
+url = "https://socket.dev/blog/when-everything-becomes-too-much"
+
+[[entries]]
+content_type = "text"
+summary = "A tool to generate visualisations from source controlled repositories in Git, Mercurial, Subversion and more."
+title = "Gource"
+url = "https://github.com/acaudwell/Gource/"
+
+[[entries]]
+content_type = "text"
+summary = "An Optical Character Recognition (OCR) library and command-line interface written in Rust."
+title = "Ocrs"
+url = "https://github.com/robertknight/ocrs"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing WebAssembly from a boundary abstraction point of view."
+title = "missing the point of webassembly"
+url = "https://wingolog.org/archives/2024/01/08/missing-the-point-of-webassembly"
