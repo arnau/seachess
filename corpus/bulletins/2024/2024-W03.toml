@@ -1,0 +1,28 @@
+id = "2024-W03"
+publication_date = "2024-01-21"
+summary = "This week has been about Python JIT, a CLI for backups, an essay on the Theory of Building and a paper proposing decoupling physical and logical boundaries in microservices."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article on how the just in time compilation in Python works."
+title = "Python 3.13 gets a JIT"
+url = "https://tonybaloney.github.io/posts/python-gets-a-jit.html"
+
+[[entries]]
+content_type = "text"
+summary = "A backup command-line interface for Linux, BSD, macOS and Windows."
+title = "restic"
+url = "https://restic.net/"
+
+[[entries]]
+content_type = "pdf"
+summary = "An essay from 1985 where the author argues that a program is not its source code but a shared mental construct that lives in the minds of the people who work on it."
+title = "Programming as Theory Building"
+url = "https://pablo.rauzy.name/dev/naur1985programming.pdf"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper proposing a methodology aiming to decouple logical boundaries from physical boundaries for microservice-based architectures."
+title = "Towards Modern Development of Cloud Applications"
+url = "https://dl.acm.org/doi/10.1145/3593856.3595909"
