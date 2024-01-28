@@ -1,0 +1,28 @@
+id = "2024-W04"
+publication_date = "2024-01-28"
+summary = "This week has been about HTMX and Web Components, the i sound in English, portable EPUBs and the Zed editor."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing Web Components, HTMX and how to go about combining the two."
+title = "HTMX and Web Components: a Perfect Match"
+url = "https://binaryigor.com/htmx-and-web-components-a-perfect-match.html"
+
+[[entries]]
+content_type = "video"
+summary = "A short video teaching the distinction of the i sounds in English by finding equivalents in French."
+title = "English short “ɪ” long “iː” made easy!"
+url = "https://www.youtube.com/watch?v=GNpbv7hJf6c"
+
+[[entries]]
+content_type = "text"
+summary = "An article exploring what prevents HTML (and EPUBs) to replace the PDF format as a portable document format."
+title = "Portable EPUBs"
+url = "https://willcrichton.net/notes/portable-epubs/"
+
+[[entries]]
+content_type = "text"
+summary = "A code editor with multi-user collaboration built-in written in Rust."
+title = "Zed"
+url = "https://zed.dev/"
