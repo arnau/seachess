@@ -1,0 +1,28 @@
+id = "2024-W05"
+publication_date = "2024-02-04"
+summary = "This week has been about a Unix-like kernel in Rust, an EPUB reader in WebAssembly, a collection of interactive tutorials and a flexible configuration language."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article on a Unix-like kernel and operating system written in Rust."
+title = "Maestro - Introduction"
+url = "https://blog.lenot.re/a/introduction"
+
+[[entries]]
+content_type = "text"
+summary = "An EPUB reader built to run either as an embeddable WebAssembly artefact or as a desktop (Tauri) application."
+title = "Bene"
+url = "https://github.com/nota-lang/bene/"
+
+[[entries]]
+content_type = "text"
+summary = "A collection of interactive learing material across many subjects including Mathematics, Chemistry or Philosophy."
+title = "Explorable Explanations"
+url = "https://explorabl.es/"
+
+[[entries]]
+content_type = "text"
+summary = "A configuration language for generating YAML, JSON or XML safely and flexibly."
+title = "Pkl language"
+url = "https://pkl-lang.org/"
