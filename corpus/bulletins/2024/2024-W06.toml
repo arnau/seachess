@@ -1,0 +1,32 @@
+id = "2024-W06"
+publication_date = "2024-02-11"
+summary = "This week has been about inclusive design, GitHub Copilot and code quality, implicit XML and a Python interpreter in Rust."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = """
+A collection of inclusive design principles.
+
+
+> These Inclusive Design Principles are about putting people first. It's about designing for the needs of people with permanent, temporary, situational, or changing disabilities — all of us really."""
+title = "Inclusive Design Principles"
+url = "https://inclusivedesignprinciples.org/"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper analysing the impact of GitHub Copilot on code quality and maintenance difficulty."
+title = "Coding on Copilot"
+url = "https://gitclear-public.s3.us-west-2.amazonaws.com/Coding-on-Copilot-2024-Developer-Research.pdf"
+
+[[entries]]
+content_type = "text"
+summary = "A language for describing the implicit structure of data, and a set of technologies for making that structure explicit as XML markup."
+title = "Invisible XML"
+url = "https://invisiblexml.org/"
+
+[[entries]]
+content_type = "text"
+summary = "A Python interpreter written in Rust. It can be embedded into Rust programs to use Python as a scripting language or it can be compiled down to WebAssembly."
+title = "RustPython"
+url = "https://rustpython.github.io/"
