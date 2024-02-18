@@ -1,0 +1,28 @@
+id = "2024-W07"
+publication_date = "2024-02-18"
+summary = "This week has been about cleaning Rust dependencies, a shell with structured data, the new JSR registry and a static site generator for dashboards."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A tool to detect and remove unused dependencies in Rust projects."
+title = "cargo-machete"
+url = "https://github.com/bnjbvr/cargo-machete"
+
+[[entries]]
+content_type = "text"
+summary = "An expression-based shell with built-in support for JSON, TOML, YAML and CSV."
+title = "Murex"
+url = "https://murex.rocks/"
+
+[[entries]]
+content_type = "text"
+summary = "An article reflecting on the new JavaScript/TypeScript package registry built by Deno."
+title = "JSR first impressions"
+url = "https://www.kitsonkelly.com/posts/jsr-first-impressions"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing a static site generator for building data applications, dashboards and reports."
+title = "Observable Framework"
+url = "https://observablehq.com/blog/observable-2-0"
