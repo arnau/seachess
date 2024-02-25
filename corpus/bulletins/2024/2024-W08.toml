@@ -1,0 +1,28 @@
+id = "2024-W08"
+publication_date = "2024-02-25"
+summary = "This week has been about the DevEx framework, a drop-in replacement for pip and a native JavaScript WebAssembly toolchain."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A package installer for Python aiming to be a drop-in replacement for pip."
+title = "uv: Python packaging in Rust"
+url = "https://astral.sh/blog/uv"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing the 1.0 release of Jco, a native Javascript WebAssembly toolchain and runtime built for WebAssembly Components and WASI."
+title = "Announcing Jco 1.0"
+url = "https://bytecodealliance.org/articles/jco-1.0"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper defining a high-level framework for understanding DevEx (Developer Experieence)."
+title = "DevEx: What Actually Drives Productivity"
+url = "https://queue.acm.org/detail.cfm?id=3595878"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper analysing the factors that drive DevEx (developer experience) and their impact."
+title = "DevEx in Action: A study of its tangible impacts"
+url = "https://dl.acm.org/doi/10.1145/3639443"
