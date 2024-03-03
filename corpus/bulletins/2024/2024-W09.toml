@@ -1,0 +1,28 @@
+id = "2024-W09"
+publication_date = "2024-03-03"
+summary = "This week has been about a self-hosted AI coding assistant, a SQL document database, einstein shapes and a lightweight Postgres in WebAssembly."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A self-hosted AI coding assistant built. With Tabby, every team can set up its own LLM-powered code completion server with ease. Notice that by default it collects usage stats but it can be switched off."
+title = "Tabby"
+url = "https://tabby.tabbyml.com/"
+
+[[entries]]
+content_type = "text"
+summary = "A SQL document database with immutable history written in Rust and Common Lisp."
+title = "Endatabas"
+url = "https://www.endatabas.com/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the discovery of tile shapes that can produce infinite patterns without repetition nor gaps."
+title = "Newfound Mathematical ‘Einstein’ Shape Creates a Never-Repeating Pattern"
+url = "https://www.scientificamerican.com/article/newfound-mathematical-einstein-shape-creates-a-never-repeating-pattern/"
+
+[[entries]]
+content_type = "text"
+summary = "A lightweight Postgres database built as WebAssembly, ready to be run in the browser, Node.js or Bun."
+title = "PGlite"
+url = "https://github.com/electric-sql/pglite"
