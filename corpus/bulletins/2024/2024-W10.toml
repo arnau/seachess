@@ -1,0 +1,28 @@
+id = "2024-W10"
+publication_date = "2024-03-10"
+summary = "This week has been about zero-copy deserialisation, columnar SQLite, a lightweight WebAssembly runtime and more Git tips and tricks."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A Rust library for generic zero-copy deserialisation."
+title = "rkyv"
+url = "https://github.com/rkyv/rkyv"
+
+[[entries]]
+content_type = "text"
+summary = "A SQLite extension enabling column-oriented storage to SQLite."
+title = "Stanchion"
+url = "https://github.com/dgllghr/stanchion"
+
+[[entries]]
+content_type = "text"
+summary = "An attempt to build a small (< 6k lines of code), portable and lightweight WebAssembly runtime."
+title = "TinyWasm"
+url = "https://github.com/explodingcamera/tinywasm"
+
+[[entries]]
+content_type = "video"
+summary = "A talk by Scott Chacon on Git Tips and Tricks. Some old, some new and a bit on monorepo optimisations."
+title = "So You Think You Know Git - FOSDEM 2024"
+url = "https://www.youtube.com/watch?v=aolI_Rz0ZqY"
