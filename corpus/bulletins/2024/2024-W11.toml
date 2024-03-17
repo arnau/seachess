@@ -1,0 +1,33 @@
+id = "2024-W11"
+publication_date = "2024-03-17"
+summary = "This week has been about optimising chess data, the Citation Style Language, Rust Flashcards and the Biscuit authorisation token."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article exploring how to optimise storing large quantities of Chess moves."
+title = "Compressing Chess Moves for Fun and Profit"
+url = "https://mbuffett.com/posts/compressing-chess-moves/"
+
+[[entries]]
+content_type = "text"
+summary = """
+An XML-based format to describe the formatting of citations, notes and bibliographies.
+
+The [Zotero Style Repository](https://www.zotero.org/styles/) is a great tool for finding either the style you are after or a good starting point for a new one.
+
+If editing XML by hand is not what you are after, there is a [Visual Editor](https://editor.citationstyles.org/visualEditor/) available."""
+title = "Citation Style Language"
+url = "https://citationstyles.org/"
+
+[[entries]]
+content_type = "text"
+summary = "A large flashcard deck to consolidate your Rust knowledge. It exports to Anki."
+title = "Rust Flashcards"
+url = "https://github.com/ad-si/Rust-Flashcards"
+
+[[entries]]
+content_type = "text"
+summary = "An authorization token with decentralized verification, offline attenuation and strong security policy enforcement based on a logic language."
+title = "Biscuit authorization"
+url = "https://www.biscuitsec.org/"
