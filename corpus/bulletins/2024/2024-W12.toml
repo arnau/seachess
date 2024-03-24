@@ -1,0 +1,28 @@
+id = "2024-W12"
+publication_date = "2024-03-24"
+summary = "This week has been about RSS in the terminal, Statistical Process Control, CSS button styles and an edge case for Python regular expressions."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A command-line tool to generate RSS feeds from web pages."
+title = "RSS Please"
+url = "https://rsspls.7bit.org/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the Statistical Process Control approach for operating a business."
+title = "Becoming Data Driven, From First Principles"
+url = "https://commoncog.com/becoming-data-driven-first-principles/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the use of `touch-action` and `user-select` to improve the user experience for buttons."
+title = "CSS Button Styles You Might Not Know"
+url = "https://dbushell.com/2024/03/10/css-button-styles-you-might-not-know/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the edge-cases for `$` in Python's regular expression implementation."
+title = "Regex character “$” doesn't mean “end-of-string”"
+url = "https://sethmlarson.dev/regex-%24-matches-end-of-string-or-newline"
