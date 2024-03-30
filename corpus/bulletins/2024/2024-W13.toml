@@ -1,0 +1,28 @@
+id = "2024-W13"
+publication_date = "2024-03-31"
+summary = "This week has been about a query language for source code, an in-memory data store compatible with Redis, a tool to inspect CSV and Redis controversial licence change."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A declarative query language for searching and modifying source code."
+title = "GritQL"
+url = "https://github.com/getgrit/gritql"
+
+[[entries]]
+content_type = "text"
+summary = "A simple, performant, and cost-efficient in-memory data store that  is fully compatible with Redis APIs."
+title = "Dragonfly"
+url = "https://www.dragonflydb.io/"
+
+[[entries]]
+content_type = "text"
+summary = "A command-line tool to inspect CSV files."
+title = "csvlens"
+url = "https://github.com/YS-L/csvlens"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the news of Redis moving to a non-free licence model and a bit of history to put it in perspective."
+title = "The race to replace Redis"
+url = "https://lwn.net/SubscriberLink/966631/4b519a536bfc7644/"
