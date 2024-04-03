@@ -18,7 +18,7 @@ This note captures my approach to interacting with my database of articles I've 
 
 Back in 2020 I started a weekly bulletin where I share a few links that I found interesting. The original data structure was a mixture of CSV and TOML and the way to interact with it was with a command-line tool I built specifically for this purpose. 
 
-In 2023 I adopted [Nushell] as my interactive shell of choice. After a while I found it a much better interaction than my handmade command-line tool, allowing me to interact not only with my original CSV and TOML files but with a larger set of data I have stored in a vaiety of formats.
+In 2023 I adopted [Nushell] as my interactive shell of choice. After a while I found it a much better interaction than my handmade command-line tool, allowing me to interact not only with my original CSV and TOML files but with a larger set of data I have stored in a variety of formats.
 
 This note describes the simple data model and the Nushell scripts I use to record my readings and the process of compiling a bulletin issue.
 
@@ -34,7 +34,7 @@ The fundamental concepts are:
 ### The _trail entry_
 
 - _date_. The day I read the resource.
-- _url_. The URL for the resource. Acts as the primary identified.
+- _url_. The URL for the resource. Acts as the primary identifier.
 - _title_. The name of the resource. Title of an article, paper or book, name of a tool, etc.
 - _summary_. The description of the resource. Typically my own take on the resource.
 - _source_. The place where I found the resource.
