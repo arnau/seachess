@@ -1,0 +1,28 @@
+id = "2024-W14"
+publication_date = "2024-04-06"
+summary = "This week has been about SQL and relational algebra, array languages and spreadsheets, a study on retry methods and a paper on impact of working from home."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article showcasing why SQL does not really translate to relational algebra."
+title = "Unexplanations: sql is syntactic sugar for relational algebra"
+url = "https://www.scattered-thoughts.net/writing/unexplanations-sql-is-syntactic-sugar-for-relational-algebra/"
+
+[[entries]]
+content_type = "text"
+summary = "An article reflecting on the trade-offs of spreadsheets by comparing them to array languages."
+title = "Array languages vs. the curse of the spreadsheet"
+url = "https://blog.dhsdevelopments.com/array-languages-vs"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive tutorial on software architecture for handling failed requests."
+title = "An interactive study of common retry methods"
+url = "https://encore.dev/blog/retries"
+
+[[entries]]
+content_type = "text"
+summary = "A paper on the research about whether Scrum practices affect project success while working from home during the lockdown period."
+title = "The impact of working from home on the success of Scrum projects: A multi-method study"
+url = "https://www.sciencedirect.com/science/article/pii/S0164121222002382"
