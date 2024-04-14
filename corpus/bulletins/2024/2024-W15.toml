@@ -1,0 +1,28 @@
+id = "2024-W15"
+publication_date = "2024-04-14"
+summary = "This week has been about an interactive jq editor, a tool to manipulate text based on tree-sitter, a portable package manager and a Terraform fork with an open licence."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive command-line tool designed for navigating and filtering JSON with a `jq` filter editor."
+title = "jnv"
+url = "https://github.com/ynqa/jnv"
+
+[[entries]]
+content_type = "text"
+summary = "A command-line tool, mix of `tr`, `sed`, `rg` and tree-sitter, to manipulate text."
+title = "srgn"
+url = "https://github.com/alexpovel/srgn"
+
+[[entries]]
+content_type = "text"
+summary = "A virtual environment and package manager allowing you control  environments and dependencies in a portable manner."
+title = "Flox"
+url = "https://github.com/flox/flox"
+
+[[entries]]
+content_type = "text"
+summary = "An open-sourced fork of [Terraform](https://www.terraform.io/) managed by the Linux Foundation."
+title = "OpenTofu"
+url = "https://opentofu.org/"
