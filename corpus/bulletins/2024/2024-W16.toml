@@ -1,0 +1,28 @@
+id = "2024-W16"
+publication_date = "2024-04-21"
+summary = "This week has been about a query engine for data processing, threads and async in Rust, an interactive tool for AWS S3 and a framework for career moves."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A distributed query engine for large-scale data processing in Python. Implemented in Rust."
+title = "Daft"
+url = "https://github.com/Eventual-Inc/Daft"
+
+[[entries]]
+content_type = "text"
+summary = "An article diving into the differences between threads and async in Rust."
+title = "Why choose async/await over threads?"
+url = "https://notgull.net/why-not-threads/"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive command-line tool to browse AWS S3 buckets."
+title = "STU"
+url = "https://github.com/lusingander/stu"
+
+[[entries]]
+content_type = "text"
+summary = "An article describing the way the author analyses her next career move."
+title = "Career Transitions: A Step-by-step Framework"
+url = "https://every.to/p/career-transitions-a-step-by-step-framework"
