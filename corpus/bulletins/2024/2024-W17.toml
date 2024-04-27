@@ -1,0 +1,28 @@
+id = "2024-W17"
+publication_date = "2024-04-28"
+summary = "This week has been about cleaning AWS resources, CSS color-scheme, Bevy and ECS and problems with game development in Rust."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A tool to help remove all dangling resources in an AWS environment."
+title = "aws-nuke"
+url = "https://github.com/rebuy-de/aws-nuke"
+
+[[entries]]
+content_type = "text"
+summary = "An article exploring the CSS `color-scheme` property and how it can help manage light/dark toggling with low effort."
+title = "Do you know color-scheme?"
+url = "https://sarajoy.dev/blog/color-scheme/"
+
+[[entries]]
+content_type = "video"
+summary = "A talk exploring the surface of how [Bevy](https://bevyengine.org/) is architected, its [ECS](https://en.wikipedia.org/wiki/Entity_component_system) implementation and its composable APIs."
+title = "Bevy: A case study in ergonomic Rust"
+url = "https://www.youtube.com/watch?v=CnoDOc6ML0Y"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the problems the author has found whilst building games in Rust."
+title = "Leaving Rust gamedev after 3 years"
+url = "https://loglog.games/blog/leaving-rust-gamedev/"
