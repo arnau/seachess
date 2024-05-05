@@ -1,0 +1,28 @@
+id = "2024-W18"
+publication_date = "2024-05-05"
+summary = "This week has been about 2D games in Rust, SQL windowing, an interactive cli for HTTP APIs and a Vite compatible alternative."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A Rust library for building 2D games."
+title = "Macroquad"
+url = "https://macroquad.rs/"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive tutorial about SQL grouping and windowing."
+title = "Modern SQL Window Function Questions"
+url = "https://www.windowfunctions.com/"
+
+[[entries]]
+content_type = "text"
+summary = "A terminal interactive application for interacting with HTTP APIs."
+title = "ATAC"
+url = "https://github.com/Julien-cpsn/ATAC"
+
+[[entries]]
+content_type = "text"
+summary = "A [Vite](https://vitejs.dev/) compatible web-building tool written in Rust. It's designed to be fast, and consistent across development and production workflows."
+title = "Farm"
+url = "https://github.com/farm-fe/farm"
