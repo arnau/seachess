@@ -1,0 +1,28 @@
+id = "2024-W19"
+publication_date = "2024-05-12"
+summary = "This week has been about an embeddings database, an interactive curl, plugins in WebAssembly and a Redis-compatible store on top of SQLite."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An open-source database for vector-search built for retrevial, filtering and management of embeddings."
+title = "LanceDB"
+url = "https://github.com/lancedb/lancedb"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive command-line tool for using [curl](https://curl.se/) to send HTTP requests."
+title = "CuTe"
+url = "https://github.com/PThorpe92/CuTE"
+
+[[entries]]
+content_type = "text"
+summary = "A framework for building and using plugins in WebAssembly across a range of programming languages with low friction."
+title = "Extism"
+url = "https://extism.org/"
+
+[[entries]]
+content_type = "text"
+summary = "A Redis-compatible key-value store on top of SQLite."
+title = "Redka"
+url = "https://github.com/nalgeon/redka"
