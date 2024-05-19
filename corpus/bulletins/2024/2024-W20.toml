@@ -1,0 +1,28 @@
+id = "2024-W20"
+publication_date = "2024-05-19"
+summary = "This week has been about a file format for web animations, double-entry accounting, a UI accessibility library and a programming language for the GPU."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An open-source file format that aggregates one or more [Lottie files](https://lottie.github.io/lottie-spec/) and their associated resources into a single ZIP file."
+title = "dotLottie"
+url = "https://dotlottie.io/"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing the fundamentals of accounting and double-entry bookkeeping."
+title = "Double-Entry Bookkeeping as a Directed Graph"
+url = "https://matheusportela.com/double-entry-bookkeeping-as-a-directed-graph"
+
+[[entries]]
+content_type = "text"
+summary = "A Rust library defining the foundational data schema and glue code to provide a cross-platform UI accessibility infrastructure."
+title = "AccessKit"
+url = "https://github.com/AccessKit/accesskit"
+
+[[entries]]
+content_type = "text"
+summary = "A high-level programming language focused on parallelism on top of GPUs."
+title = "Bend"
+url = "https://github.com/HigherOrderCO/Bend"
