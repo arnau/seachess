@@ -1,0 +1,28 @@
+id = "2024-W21"
+publication_date = "2024-05-26"
+summary = "This week has been about queueing strategies, binary processing in Rust, business rules and a web-based CAD application."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An interactive study of queueing strategies."
+title = "Queueing"
+url = "https://encore.dev/blog/queueing"
+
+[[entries]]
+content_type = "text"
+summary = "A Rust library aiming to provide a declarative approach to binary reading and writing."
+title = "Deku"
+url = "https://github.com/sharksforarms/deku"
+
+[[entries]]
+content_type = "text"
+summary = "A specification defining a vocabulary and rules for documenting the semantics of business vocabularies and business rules for the exchange of business vocabularies and business rules among organizations and between software tools."
+title = "Semantics Of Business Vocabulary And Business Rules"
+url = "https://www.omg.org/spec/SBVR/"
+
+[[entries]]
+content_type = "text"
+summary = "An offline-first CAD application running in a web browser with the primary use case of designing widgets for 3D printing."
+title = "CADmium"
+url = "https://github.com/CADmium-Co/CADmium"
