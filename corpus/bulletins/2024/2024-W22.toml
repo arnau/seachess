@@ -1,0 +1,28 @@
+id = "2024-W22"
+publication_date = "2024-06-02"
+summary = "This week has been about dragons, GraphQL, a CLI for interacting with CSV and MicroSoft Copilot+ Recall security."
+type = "bulletin"
+
+[[entries]]
+content_type = "video"
+summary = "A lecture on the probable roots of the idea of dragons."
+title = "Why be dragons? How massive, reptilian beasts entered our collective imagination"
+url = "https://aeon.co/videos/why-be-dragons-how-massive-reptilian-beasts-entered-our-collective-imagination"
+
+[[entries]]
+content_type = "text"
+summary = "An article listing the usual challenges of using GraphQL. Also worth checking the response [Why, after 8 years, I still like GraphQL sometimes in the right context](https://www.magiroux.com/eight-years-of-graphql)."
+title = "Why, after 6 years, I’m over GraphQL"
+url = "https://bessey.dev/blog/2024/05/24/why-im-over-graphql/"
+
+[[entries]]
+content_type = "text"
+summary = "A terminal-based application to view and query delimiter separated value formatted documents, such as CSV and TSV files."
+title = "Tabiew"
+url = "https://github.com/shshemi/tabiew"
+
+[[entries]]
+content_type = "text"
+summary = "An article looking into the new MicroSoft Copilot+ Recall feature, and the implications from a security point of view."
+title = "Stealing everything you’ve ever typed or viewed on your own Windows PC is now possible with two lines of code — inside the Copilot+ Recall disaster."
+url = "https://doublepulsar.com/recall-stealing-everything-youve-ever-typed-or-viewed-on-your-own-windows-pc-is-now-possible-da3e12e9465e"
