@@ -1,0 +1,28 @@
+id = "2024-W23"
+publication_date = "2024-06-09"
+summary = "This week has been about granular access controls, a DSL for math functions, Bevy with Ratatui and downsides of natural keys."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An open-source service for building granular access controls."
+title = "OpenFGA"
+url = "https://openfga.dev/"
+
+[[entries]]
+content_type = "text"
+summary = "An article on [MegaLibm](https://dl.acm.org/doi/10.1145/3632874), a DSL on top of Python for simplifying writing math function implementations."
+title = "A DSL for Implementing Math Functions"
+url = "https://blog.sigplan.org/2024/06/03/a-dsl-for-implementing-math-functions/"
+
+[[entries]]
+content_type = "text"
+summary = "A library for rendering a [Bevy](https://bevyengine.org/) application to the terminal using unicode halfblocks leveraging [Ratatui](https://github.com/ratatui-org/ratatui)."
+title = "bevy_ratatui_render"
+url = "https://github.com/cxreiff/bevy_ratatui_render"
+
+[[entries]]
+content_type = "text"
+summary = "An article reviewing the main quirks of natural keys in data modelling."
+title = "You'll regret using natural keys"
+url = "https://blog.ploeh.dk/2024/06/03/youll-regret-using-natural-keys/"
