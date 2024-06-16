@@ -1,0 +1,28 @@
+id = "2024-W24"
+publication_date = "2024-06-16"
+summary = "This week has been about affordable technical architecture, LLM teams for zero-day vulnerability exploitation, a tool for forced browsing and Cloudflare Workers with WebAssembly."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "A collection of laws to frame a sustainable technical architecture."
+title = "The frugal architect"
+url = "https://thefrugalarchitect.com/"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper showing a method where teams of LLM agents can exploit real-world, zero-day vulnerabilities."
+title = "Teams of LLM Agents can Exploit Zero-Day Vulnerabilities"
+url = "http://arxiv.org/abs/2406.01637"
+
+[[entries]]
+content_type = "text"
+summary = "A tool designed to perform [Forced Browsing](https://owasp.org/www-community/attacks/Forced_browsing). It uses brute force combined with a wordlist to search for unlinked content in target directories. These resources may store sensitive information about web applications and operational systems."
+title = "feroxbuster"
+url = "https://github.com/epi052/feroxbuster"
+
+[[entries]]
+content_type = "text"
+summary = "A 2-part article on how to use Cloudflare Workers with WebAssembly (via Rust) and Postgresql and the implications on latency."
+title = "Latency at the Edge with Rust/WebAssembly and Postgres: Part 1"
+url = "https://exograph.dev/blog/wasm-pg-explorations-1"
