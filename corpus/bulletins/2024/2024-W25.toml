@@ -1,0 +1,28 @@
+id = "2024-W25"
+publication_date = "2024-06-23"
+summary = "This week has been about the impact of interface design on LLMs, fault tolerant framework for Rust, py2wasm for compiling Python to WebAssembly and UUIDv7 in 24 languages."
+type = "bulletin"
+
+[[entries]]
+content_type = "pdf"
+summary = "A paper on the investigation of how interface design affects the performance of language model agents and a proposal for a system that facilitates LM agents to autonomously use computers to solve software engineering tasks."
+title = "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering"
+url = "http://arxiv.org/abs/2405.15793"
+
+[[entries]]
+content_type = "text"
+summary = "A framework for writing fault tolerant, highly scalable applications in Rust inspired by Erlang's OTP architecture."
+title = "Hydra"
+url = "https://github.com/dtzxporter/hydra"
+
+[[entries]]
+content_type = "text"
+summary = "An article introducing how to use py2wasm for compiling Python scripts to WebAssembly."
+title = "Announcing py2wasm: A Python to Wasm compiler"
+url = "https://wasmer.io/posts/py2wasm-a-python-to-wasm-compiler"
+
+[[entries]]
+content_type = "text"
+summary = "An article diving into UUIDv7 by implementing it in 24 programming languages."
+title = "UUIDv7 in 24 languages"
+url = "https://antonz.org/uuidv7/"
