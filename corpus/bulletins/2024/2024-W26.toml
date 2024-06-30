@@ -1,0 +1,28 @@
+id = "2024-W26"
+publication_date = "2024-06-30"
+summary = "This week has been about pragmatic Rust, the Polyfill.js threat, the new attack to end-to-end encryption and WebAseembly GC in Google Sheets."
+type = "bulletin"
+
+[[entries]]
+content_type = "text"
+summary = "An article providing tips for sidestepping common complexities by choosing the less-performant path."
+title = "The Mediocre Programmer's Guide to Rust"
+url = "https://www.hezmatt.org/~mpalmer/blog/2024/05/01/the-mediocre-programmers-guide-to-rust.html"
+
+[[entries]]
+content_type = "text"
+summary = "An article revealing that Polyfill.js, used extensively to support older web browsers, was taken over by a company that embedded malicious code in the JavaScript assets fetched from `cdn.polyfill.io`."
+title = "Polyfill supply chain attack hits 100K+ sites"
+url = "https://sansec.io/research/polyfill-supply-chain-attack"
+
+[[entries]]
+content_type = "pdf"
+summary = "An open letter raising awareness of the new attempt from the EU Parliament to compromise end-to-end encryption. This time they brand it as “upload moderation”."
+title = "New Branding, Same Scanning: “Upload Moderation” Undermines End-to-End Encryption."
+url = "https://signal.org/blog/pdfs/upload-moderation.pdf"
+
+[[entries]]
+content_type = "text"
+summary = "An article on the experience of implementing the [WebAssembly GC](https://github.com/WebAssembly/gc) extension to speed up Google Sheets."
+title = "Why Google Sheets ported its calculation worker from JavaScript to WasmGC"
+url = "https://web.dev/case-studies/google-sheets-wasmgc"
