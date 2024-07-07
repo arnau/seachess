@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W27"
+publication_date = "2024-07-07"
+summary = "This week has been about supply chain security for Rust, a primer on Relational Algebra, a terminal Tetris and the Grafana Loki S3 exploit."
+
+[[entries]]
+content_type = "text"
+summary = "An article on the supply chain security analysis done by the author against the top Rust libraries hosted in [crates.io](https://crates.io/). The article covers both the methodology used and the results."
+title = "999 crates of Rust on the wall"
+url = "https://lawngno.me/blog/2024/06/10/divine-provenance.html"
+
+[[entries]]
+content_type = "text"
+summary = "A tutorial introducing the rudiments of Relational Algebra."
+title = "Relational Algebra Primer"
+url = "https://www.relational-algebra.dev/ra-primer/introduction/"
+
+[[entries]]
+url = "https://github.com/shixinhuang99/sxtetris"
+title = "Sxtetris"
+summary = "A terminal Tetris game using [Ratatui](https://github.com/ratatui-org/ratatui)."
+content_type = "text"
+
+[[entries]]
+url = "https://grafana.com/blog/2024/06/27/grafana-security-update-grafana-loki-and-unintended-data-write-attempts-to-amazon-s3-buckets/"
+title = "Grafana security update: Grafana Loki and unintended data write attempts to Amazon S3 buckets"
+summary = "An article disclosing an now resolved exploit against Grafana Loki, detailing the vector of attack."
+content_type = "text"
