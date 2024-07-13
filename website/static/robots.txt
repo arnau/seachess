@@ -1,4 +1,12 @@
 Sitemap: https://www.seachess.net/sitemap.xml
 
 User-agent: GPTBot
+User-agent: Twitterbot
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: ClaudeBot
+User-agent: ImagesiftBot
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: FacebookBot
 Disallow: /
