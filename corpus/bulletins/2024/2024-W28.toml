@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W28"
+publication_date = "2024-07-14"
+summary = "This week has been about a WebAssembly unikernel, Git changelogs, innovation tokens and ChatGPT as a bullshit machine."
+
+[[entries]]
+content_type = "text"
+summary = "A unikernel for running WebAssembly applications compatible with WASI."
+title = "Mewz"
+url = "https://github.com/mewz-project/mewz"
+
+[[entries]]
+content_type = "text"
+summary = "A tool to generate changelogs from Git commits following [Conventional Commits](https://www.conventionalcommits.org/)."
+title = "git-cliff"
+url = "https://github.com/orhun/git-cliff"
+
+[[entries]]
+url = "https://blog.glyph.im/2024/07/against-innovation-tokens.html"
+title = "Against Innovation Tokens"
+summary = "An article on the misuse of the ideas explained in [Choose Boring Technology](https://mcfunley.com/choose-boring-technology) and the benefits of distinguishing between _innovation token_ and _boundary token_."
+content_type = "text"
+
+[[entries]]
+url = "https://link.springer.com/article/10.1007/s10676-024-09775-5"
+title = "ChatGPT is bullshit"
+summary = "A paper arguing that “AI halluciantions” in the context of large language models are better understood as bullshit in the sense explored by Frankfurt (On Bullshit, Princeton, 2005)."
+content_type = "pdf"
