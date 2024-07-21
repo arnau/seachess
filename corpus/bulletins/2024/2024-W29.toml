@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W29"
+publication_date = "2024-07-21"
+summary = "This week has been about the CrowdStruck meltdown, a Rollup replacement, an in-process OLTP database and an in-process Parquet merge engine."
+
+[[entries]]
+url = "https://www.wheresyoured.at/crowdstruck-2/"
+title = "CrowdStruck"
+summary = "An article summarising the global meltdown caused by CrowdStrike and MicroSoft."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rolldown/rolldown"
+title = "Rolldown"
+summary = "A JavaScript/TypeScript bundler written in Rust with a Rollup-compatible APIs and plugin interface."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/penberg/limbo"
+title = "Limbo"
+summary = "An in-process OLTP database management system, compatible with SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/danthegoodman1/icedb/"
+title = "IceDB"
+summary = "An in-process Parquet merge engine for data warehousing in S3 using only S3. No Spark, no JVM required. It's queryable by anything that understands parquet (e.g. DuckDB, ClickHouse, Pandas)."
+content_type = "text"
