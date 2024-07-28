@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W30"
+publication_date = "2024-07-28"
+summary = "This week has been about the smart game format, a tool to render go games, a Python profiler and accessing orphan commits via GitHub forks."
+
+[[entries]]
+url = "https://red-bean.com/sgf/sgf4.html"
+title = "Smart Game Format"
+summary = "The specification for the Smart Game Format (SGF FF[4]), the common format for recording [Go](https://en.wikipedia.org/wiki/Go_(game)) games."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/julianandrews/sgf-render/"
+title = "sgf-render"
+summary = "A command-line tool for visualising Go games in SVG or PNG from a SGF source."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/joerick/pyinstrument"
+title = "pyinstrument"
+summary = "A Python profiler to help identify the slow parts of the code."
+content_type = "text"
+
+[[entries]]
+url = "https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github"
+title = "Anyone can Access Deleted and Private Repository Data on GitHub"
+summary = "An article showcasing Cross Fork Object Reference (CFOR), an attack vector using the fact that GitHub allows accessing commits from deleted forks."
+content_type = "text"
