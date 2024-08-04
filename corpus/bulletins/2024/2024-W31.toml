@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W31"
+publication_date = "2024-08-04"
+summary = "This week has been hexagonal architecture in Rust, another web bundler, a web page bundler into a single HTML and a sneak peak on DuckDB memory management."
+
+[[entries]]
+content_type = "text"
+summary = "An article walking through how to apply the hexagonal architecture to a Rust-based web service."
+title = "Master hexagonal architecture in Rust"
+url = "https://www.howtocodeit.com/articles/master-hexagonal-architecture-rust"
+
+[[entries]]
+url = "https://makojs.dev/"
+title = "Mako"
+summary = "A web bundler for web applications, libraries and frameworks"
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Y2Z/monolith"
+title = "monolith"
+summary = "A tool to download and bundle a web page into a single HTML file."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2024/07/09/memory-management"
+title = "Memory Management in DuckDB"
+summary = "An article on the strategies [DuckDB](https://duckdb.org/) uses to be memory efficient."
+content_type = "text"
