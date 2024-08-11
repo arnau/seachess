@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W32"
+publication_date = "2024-08-11"
+summary = "This week has been about the fair source license, an executable specification language, git notes and a sql linter."
+
+[[entries]]
+url = "https://fair.io/"
+title = "Fair Source"
+summary = "A place defining the concept of Fair Source License, a set of licences aiming to be between open source and closed source."
+content_type = "text"
+
+[[entries]]
+url = "https://quint-lang.org/"
+title = "Quint"
+summary = "An executable specification language inspired by [TLA+](https://lamport.azurewebsites.net/tla/tla.html)."
+content_type = "text"
+
+[[entries]]
+url = "https://wouterj.nl/2024/08/git-notes"
+title = "Store Code Discussions in Git using Git Notes"
+summary = "An article introducing [Git notes](https://git-scm.com/docs/git-notes) and how they are used in the Symfony project."
+content_type = "text"
+
+[[entries]]
+url = "https://www.quary.dev/blog/sqruff-launch"
+title = "Translating sqlfluff to rust"
+summary = "An article on the reasons for creating [sqruff](https://github.com/quarylabs/sqruff), a rewrite of [sqlfluff](https://sqlfluff.com/) in Rust."
+content_type = "text"
