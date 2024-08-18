@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W33"
+publication_date = "2024-08-18"
+summary = "This week has been about overlapping shapes, fan-in messages with mpsc, the use of AI and a personal knowledge management language server."
+
+[[entries]]
+url = "https://computerwebsite.net/writing/gjk"
+title = "the Gilbert–Johnson–Keerthi algorithm explained as simply as possible"
+summary = "An article walking through an algorithm for determining whether two shapes overlap."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.digital-horror.com/blog/how-to-avoid-over-reliance-on-mpsc/"
+title = "Avoiding Over-Reliance on `mpsc` channels in Rust"
+summary = "An article comparing fan-in solutions using either mpsc or mutex in Rust for large amounts of incoming messages."
+content_type = "text"
+
+[[entries]]
+url = "https://nicholas.carlini.com/writing/2024/how-i-use-ai.html"
+title = "How I Use “AI”"
+summary = "An article where the author presents a collection of situations where they've used LLMs as an aiding tool."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Feel-ix-343/markdown-oxide"
+title = "markdown-oxide"
+summary = "A Language Server (LSP) for Markdown making the editor act as a Personal  Knowledge Management system (PKM). A compatible alternative to Obsidian."
+content_type = "text"
