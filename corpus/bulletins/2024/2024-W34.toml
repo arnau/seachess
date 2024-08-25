@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W34"
+publication_date = "2024-08-25"
+summary = "This week has been about full-text search in Postgres, a TUI for commit graphs, an IDE for data science and a view on migrating from Vim to Zed."
+
+[[entries]]
+url = "https://github.com/paradedb/paradedb"
+title = "ParadeDB"
+summary = "A full-text search and analytics database built on top of Postgres."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/lusingander/serie"
+title = "Serie"
+summary = "A TUI application that uses the terminal emulators' image display protocol to render commit graphs like `git log --graph --all`."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/posit-dev/positron"
+title = "Positron"
+summary = "An IDE for data science aiming to be an alternative to RStudio and VS Code for both R and Python."
+content_type = "text"
+
+[[entries]]
+url = "https://stevedylan.dev/posts/leaving-neovim-for-zed/"
+title = "Leaving Neovim for Zed"
+summary = "An article diving into the Zed editor and its strenghs compared to Neovim."
+content_type = "text"
