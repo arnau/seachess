@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W35"
+publication_date = "2024-09-01"
+summary = "This week has been about a flavour of SQL with reusable components, a Rust library for interacting with WebDriver, thoughts on moving away from serverless and a table format comparison."
+
+[[entries]]
+url = "https://github.com/google/zetasql"
+title = "ZetaSQL"
+summary = "A SQL language (grammar, types, data model, semantics, and function library) implementing parsing and analysis as reusable components. It is not itself a database or query engine. Instead, it's intended to be used by multiple engines, to provide consistent language and behavior (name resolution, type checking, implicit casting, etc.)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/jonhoo/fantoccini"
+title = "Fantoccini"
+summary = "A Rust library implementing a high-level API for programmatically interacting with web pages through [WebDriver](https://www.w3.org/TR/webdriver/)."
+content_type = "text"
+
+[[entries]]
+url = "https://choco.com/us/stories/life-at-choco/journey-to-kubernetes"
+title = "End of the Road for Lambda: Choco's Journey to Kubernetes"
+summary = "An article on the resaons for moving away from serverless and adopting Kubernetes instead."
+content_type = "text"
+
+[[entries]]
+url = "https://jack-vanlightly.com/blog/2024/8/13/table-format-comparisons-append-only-tables-and-incremental-reads"
+title = "Table format comparisons - Append-only tables and incremental reads"
+summary = "An article on the design and tradeoffs of append-only formats such as Apache Iceberg."
+content_type = "text"
