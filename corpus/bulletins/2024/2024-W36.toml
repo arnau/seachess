@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W36"
+publication_date = "2024-09-08"
+summary = "This week has been about a web browser on top of Servo, a hex puzzle, a game of blue and colouring Korean keystrokes."
+
+[[entries]]
+url = "https://github.com/versotile-org/verso"
+title = "Verso"
+summary = "A web browser built on top of the Servo web engine."
+content_type = "text"
+
+[[entries]]
+url = "https://playhex.org/"
+title = "PlayHex"
+summary = "A service implementing the [Hex game](http://www.mseymour.ca/hex_puzzle/)."
+content_type = "text"
+
+[[entries]]
+url = "https://ismy.blue/"
+title = "Is my blue your blue?"
+summary = "A playful website on the subjectiveness of blue and green."
+content_type = "text"
+
+[[entries]]
+url = "https://www.sam.today/blog/partial-jamo"
+title = "Coloring Korean Keystrokes: 11'172 Characters"
+summary = "An article on the intricacies of the Korean keyboard, Unicode, and OpenType needed to build a text coloring system. It gives a quick introduction to the Korean Hangul phonetic script."
+content_type = "text"
