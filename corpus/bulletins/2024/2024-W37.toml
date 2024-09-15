@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W37"
+publication_date = "2024-09-15"
+summary = "This week has been about inspecting processes, GPT-fabricated scientific papers, a terminal-based scratchpad and a capable HTML LSP."
+
+[[entries]]
+url = "https://github.com/dalance/procs"
+title = "Procs"
+summary = "A command-line tool for inspecting the running processes. Alternative to `ps`."
+content_type = "text"
+
+[[entries]]
+url = "https://misinforeview.hks.harvard.edu/article/gpt-fabricated-scientific-papers-on-google-scholar-key-features-spread-and-implications-for-preempting-evidence-manipulation/"
+title = "GPT-fabricated scientific papers on Google Scholar: Key features, spread, and implications for preempting evidence manipulation"
+summary = "An article on the influence of papers created with generative AI with the intent of misinformation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/jooaf/thoth"
+title = "Thoth"
+summary = "A terminal-based scratchpad for keeping track of your temporary scribbles."
+content_type = "text"
+
+[[entries]]
+url = "https://kristoff.it/blog/first-html-lsp/"
+title = "The First HTML LSP That Reports Syntax Errors"
+summary = "An article announcing a capable Language Server and formatter for HTML."
+content_type = "text"
