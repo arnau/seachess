@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W38"
+publication_date = "2024-09-22"
+summary = "This week has been about a du alternative, an Electron app container alternative, abstract strategy board games and the increase of stress with Scrum."
+
+[[entries]]
+url = "https://github.com/bootandy/dust"
+title = "Dust"
+summary = "A command line interface to display disk usage statistics. An alternative to `du`."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/thomastschurtschenthaler/electrico"
+title = "Electrico"
+summary = "An experimental alternative App Container for Electron Apps written on top of the cross-platform WebView rendering library Wry/Tauri. All JavaScript code is executed within embedded system-native Web Views. The Electron and Node APIs are emulated with corresponding Rust API calls. All communcation between the Web Views and Rust runs on synchronous and asynchronous XMLHttpRequests."
+content_type = "text"
+
+[[entries]]
+url = "https://play.abstractplay.com/games"
+title = "Abstract Play"
+summary = "A free service offering the ability to play strategy board games against other players in a non real-time fashion."
+content_type = "text"
+
+[[entries]]
+url = "https://rethinkingsoftware.substack.com/p/why-scrum-is-stressing-you-out"
+title = "Why Scrum is Stressing You Out"
+summary = "An article criticising the imposed cadence of delivery, arguing it's counterproductive, increases stress levels and thus it has an impact on health."
+content_type = "text"
