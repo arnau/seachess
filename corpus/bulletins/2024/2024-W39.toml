@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W39"
+publication_date = "2024-09-29"
+summary = "This week has been about PDF in the terminal, sound effects, a grid clock and Web Components and innovation."
+
+[[entries]]
+url = "https://github.com/itsjunetime/tdf"
+title = "tdf"
+summary = "An experimental terminal-based PDF viewer."
+content_type = "text"
+
+[[entries]]
+url = "https://sound-effects.bbcrewind.co.uk/"
+title = "BBC Sound Effects Archive"
+summary = "A collection of over 33,000 clips made by the BBC Radiophonic workshop, recordings from the Blitz in London, special effects made for BBC TV and Radio productions, as well as 15,000 recordings from the Natural History Unit archive."
+content_type = "text"
+
+[[entries]]
+url = "https://joshleeb.com/posts/gridclock.html"
+title = "Time as a Grid"
+summary = "An article showcasing an implementation of a [Grid clock](https://wiki.xxiivv.com/site/time.html)."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/ryansolid/web-components-are-not-the-future-48bh"
+title = "Web Components Are Not the Future"
+summary = "An article reflecting on the nature of Web Components and the implications of web standards in regards to innovation."
+content_type = "text"
