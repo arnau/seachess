@@ -1,0 +1,7 @@
+asset = "fake_portrait.jpg"
+author = "arnau"
+id = "fake_portrait"
+publication_date = "2024-10-01"
+title = "Fake portrait"
+tools = ["ipadpro", "procreate"]
+type = "sketch"
