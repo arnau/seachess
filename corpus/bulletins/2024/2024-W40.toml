@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W40"
+publication_date = "2024-10-06"
+summary = "This week has been about a new Docker GUI, visualising decision trees, struggling with OKRs and plotting graphs with nushell."
+
+[[entries]]
+url = "https://github.com/ropali/dockyard"
+title = "Dockyard"
+summary = "A Docker GUI client designed to simplify container management. Built with Rust + Tauri and React.js."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mljar/supertree"
+title = "supertree"
+summary = "A Python package designed to visualize decision trees in an interactive and user-friendly way within Jupyter Notebooks, Jupyter Lab, Google Colab, and any other notebooks that support HTML rendering."
+content_type = "text"
+
+[[entries]]
+url = "https://cutlefish.substack.com/p/tbm-309-zombie-practices-and-processes"
+title = "TBM 309: Zombie Practices and Processes"
+summary = "An article on OKRs and the struggle when used in a large organisation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/cptpiepmatz/nu-jupyter-kernel/tree/main/crates/nu_plugin_plotters"
+title = "nu_plugin_plotters"
+summary = "A nushell plugin to plot graphs in the terminal."
+content_type = "text"
