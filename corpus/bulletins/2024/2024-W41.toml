@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W41"
+publication_date = "2024-10-13"
+summary = "This week has been about two non-mainstream browsers, synthetic tabular data and HTTP feeds."
+
+[[entries]]
+url = "https://ladybird.org/"
+title = "Ladybird"
+summary = "A web browser with an independently built browser engine."
+content_type = "text"
+
+[[entries]]
+url = "https://floorp.app/"
+title = "Floorp"
+summary = "A web browser based on Mozilla Firefox but not affiliated with Mozilla."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sdv-dev/SDV"
+title = "Synthetic Data Vault"
+summary = "A Python library for creating tabular synthetic data. It uses a variety of machine learning algorithms to replicate patterns from real data."
+content_type = "text"
+
+[[entries]]
+url = "https://www.http-feeds.org/"
+title = "HTTP Feeds"
+summary = "A specification for implementing polling events over HTTP. HTTP feeds can be used to decouple systems asynchronously without message brokers, such as Kafka or RabbitMQ."
+content_type = "text"
