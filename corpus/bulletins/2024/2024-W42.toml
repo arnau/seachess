@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W42"
+publication_date = "2024-10-20"
+summary = "This week has been about displaying free maps, SQLite on top of Cloudflare Durable Objects, a Parquet replacement and OpenAI profitability."
+
+[[entries]]
+url = "https://openfreemap.org/"
+title = "OpenFreeMap"
+summary = "A service for displaying custom maps on your website and apps for free. It can either be self-hosted or use their public instance."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/brayden/starbasedb"
+title = "starbasedb"
+summary = "A database built on top of SQLite and Cloudflare Durable Objects."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/spiraldb/vortex"
+title = "Vortex"
+summary = "An extensible columnar file format with associated tools for working with compressed Apache Arrow arrays in-memory, on-disk, and over-the-wire. It aspires to be the successor of the Apache Parquet format by providing faster random access reads (100-200x faster) and scans (2-10x faster), while preserving approximately the same compression ratio and write throughput as Parquet with zstd. It is designed to support very wide tables (at least 10s of thousands of columns) and (eventually) on-device decompression on GPUs."
+content_type = "text"
+
+[[entries]]
+url = "https://www.wheresyoured.at/oai-business/"
+title = "OpenAI Is A Bad Business"
+summary = "An article on the OpenAI news to move into a for-profit organisation and its profitability as a business."
+content_type = "text"
