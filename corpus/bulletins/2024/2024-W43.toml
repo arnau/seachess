@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W43"
+publication_date = "2024-10-27"
+summary = "This week has been about an interactive programming environment for JavaScript, a CLI for wrapping text, misconceptions of the C4 model and an in-browser nootebook."
+
+[[entries]]
+url = "https://github.com/srcbookdev/srcbook"
+title = "Srcbook"
+summary = "An interactive programming envioronment for JavaScript and TypeScript. It can export to markdown and allows using [mermaid](https://mermaid.js.org/) for diagrams."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/wr7/refold"
+title = "refold"
+summary = "A command line tool for wrapping text, similar to unix fold. Unlike fold, refold will recombine lines before performing line-wrapping, and it will automatically detect line prefixes."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=mqoU2C-USP0"
+title = "The C4 Model – Misconceptions, Misuses & Mistakes"
+summary = "A talk by Simon Brown, creator of the C4 model, clarifying how to use the C4 model in an effective manner."
+content_type = "video"
+
+[[entries]]
+url = "https://github.com/gzuidhof/starboard-notebook"
+title = "Starboard Notebook"
+summary = "A cell-based notebook running in a Web Browser without any backend."
+content_type = "text"
