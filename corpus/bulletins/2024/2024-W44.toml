@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W44"
+publication_date = "2024-11-03"
+summary = "This week has been about a web browser engine library, practicing Rust, a command-line tool for project information and chaos theory applied to social sciences."
+
+[[entries]]
+url = "https://github.com/gosub-io/gosub-engine"
+title = "Gosub"
+summary = "A web browser engine as a standalone library, built in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/fnabinash/rust-practice"
+title = "Rust Practice"
+summary = "A collection of Rust exercises focusing on learning how to build production-grade command-line interface tools."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/o2sh/onefetch"
+title = "onefetch"
+summary = "A command-line tool to extract project information and code statistics for a local Git repository."
+content_type = "text"
+
+[[entries]]
+url = "https://aeon.co/essays/without-chaos-theory-social-science-will-never-understand-the-world"
+title = "The forces of chance"
+summary = "An article arguing that social sciences need to look at Chaos Theory toolset to improve their modelling ability."
+content_type = "text"
