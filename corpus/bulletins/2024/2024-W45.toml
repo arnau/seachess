@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W45"
+publication_date = "2024-11-10"
+summary = "This week has been about the macOS application sandbox, representing time, the Cloudflare Workers architecture and a GitHub Actions security assessment tool."
+
+[[entries]]
+url = "https://jhftss.github.io/A-New-Era-of-macOS-Sandbox-Escapes/"
+title = "A New Era of macOS Sandbox Escapes: Diving into an Overlooked Attack Surface and Uncovering 10+ New Vulnerabilities"
+summary = "An article diving into the surface attack for the MacOS application sandbox."
+content_type = "text"
+
+[[entries]]
+url = "https://geometrian.com/programming/reference/timestds/"
+title = "Time Standards Reference"
+summary = "An article diving into the messy art of measuring and representing time."
+content_type = "text"
+
+[[entries]]
+url = "https://shivangsnewsletter.com/p/why-doesnt-cloudflare-use-containers"
+title = "Why doesn't Cloudflare use containers in their Workers platform infrastructure?"
+summary = "An article diving into how Cloudflare operate workers using V8 and WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/woodruffw/zizmor"
+title = "Zizmor"
+summary = "A tool for finding security issues in GitHub Actions setups."
+content_type = "text"
