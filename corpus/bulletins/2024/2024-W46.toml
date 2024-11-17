@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W46"
+publication_date = "2024-11-17"
+summary = "This week has been about historised attributes in database design, a spreadsheet engine, AI energy consumption and tips for optimal Postgres usage."
+
+[[entries]]
+url = "https://kb.databasedesignbook.com/posts/historized-attributes-design/"
+title = "Historized attributes: systematic table design"
+summary = "An article working through the data modelling process to represent historical data."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ironcalc/IronCalc"
+title = "IronCalc"
+summary = "A work-in-progress spreadsheet engine and a set of tools to work with spreadsheets."
+content_type = "text"
+
+[[entries]]
+url = "https://www.slashgear.com/1696332/ai-image-generation-how-much-energy-used/"
+title = "Just How Much Energy Does Generating An AI Image Actually Use?"
+summary = "An article on the environmental impact of artificial intelligence."
+content_type = "text"
+
+[[entries]]
+url = "https://challahscript.com/what_i_wish_someone_told_me_about_postgres"
+title = "What I Wish Someone Told Me About Postgres"
+summary = "An article with a collection of recommendations for working with Postgres."
+content_type = "text"
