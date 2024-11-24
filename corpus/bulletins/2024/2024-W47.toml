@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W47"
+publication_date = "2024-11-24"
+summary = "This week has been about techical coherence, a fuzzy finder, ANSI sequences and TypeScript desktop applications."
+
+[[entries]]
+url = "https://jackdanger.com/technical-coherence/"
+title = "Technical Coherence"
+summary = "An article explaining the idea of Technical Coherence and how it can help structrue a software engineering function within an organisation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/alexpasmantier/television"
+title = "Television"
+summary = "A general purpose fuzzy finder Terminal User Interface (TUI) inspired by the [Neovim Telescope plugin](https://github.com/nvim-telescope/telescope.nvim)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/charmbracelet/sequin"
+title = "Sequin"
+summary = "A command-line tool to explain ANSI sequences. Useful for debugging CLIs and TUIs."
+content_type = "text"
+
+[[entries]]
+url = "https://electrobun.dev/"
+title = "Electrobun"
+summary = "A tool for building, updating, and shipping small cross-platform desktop applications written in TypeScript."
+content_type = "text"
