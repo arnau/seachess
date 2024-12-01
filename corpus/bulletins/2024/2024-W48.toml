@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W48"
+publication_date = "2024-12-01"
+summary = "This week has been about a log viewer, extracting metadata from unstructured content, Deno compile and threads vs async."
+
+[[entries]]
+url = "https://github.com/pamburus/hl"
+title = "hl"
+summary = "A log viewer and processor that translates JSON or logfmt logs into a human-readable output."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/yobix-ai/extractous"
+title = "Extractous"
+summary = "A solution for extracting content and metadata from document types such as PDF, Word, HTML, and many other formats."
+content_type = "text"
+
+[[entries]]
+url = "https://deno.com/blog/deno-compile-executable-programs"
+title = "Self-contained Executable Programs with Deno Compile"
+summary = "An article introducing a Deno feature to compile JavaScript/TypeScript applications into single-file executables."
+content_type = "text"
+
+[[entries]]
+url = "https://lucumr.pocoo.org/2024/11/18/threads-beat-async-await/"
+title = "Playground Wisdom: Threads Beat Async/Await"
+summary = "An article claiming that async/await is the wrong abstraction to have in a programming language."
+content_type = "text"
