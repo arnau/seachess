@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W49"
+publication_date = "2024-12-08"
+summary = "This week has been about statically-checked regular expressions, AI-assisted coding reflections, a SQL workbench leveraging DuckDB and a visualisations library for streaming datasets."
+
+[[entries]]
+url = "https://github.com/andrewbaxter/structre"
+title = "structre"
+summary = "A Rust library for building structs and enums from statically-checked regular expressions."
+content_type = "text"
+
+[[entries]]
+url = "https://addyo.substack.com/p/the-70-problem-hard-truths-about"
+title = "The 70% problem: Hard truths about AI-assisted coding"
+summary = "An article reflecting on the AI usage as a programming assistant."
+content_type = "text"
+
+[[entries]]
+url = "https://tobilg.com/using-duckdb-wasm-for-in-browser-data-engineering"
+title = "Using DuckDB-WASM for in-browser Data Engineering"
+summary = "An article explaining how [SQL Workbench](https://sql-workbench.com/) uses [DuckDB-WASM](https://duckdb.org/docs/api/wasm/overview.html)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/finos/perspective"
+title = "Perspective"
+summary = "An interactive analytics and data visualization component, well-suited for large and/or streaming datasets."
+content_type = "text"
