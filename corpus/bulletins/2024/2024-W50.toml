@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W50"
+publication_date = "2024-12-15"
+summary = "This week has been about SQLite with syntax highlighting, converting documents to markdown, a service that guesses your accent and a service analysing your photos."
+
+[[entries]]
+url = "https://github.com/dbcli/litecli"
+title = "litecli"
+summary = "A command-line client for SQLite with auto-completion and syntax highlighting."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/microsoft/markitdown"
+title = "MarkItDown"
+summary = "A Python library for converting PDF, MS Word, MS PowerPoint, MS Excel to markdown."
+content_type = "text"
+
+[[entries]]
+url = "https://start.boldvoice.com/accent-guesser"
+title = "The Accent Oracle"
+summary = "A service that guesses your accent with decent accuracy."
+content_type = "text"
+
+[[entries]]
+url = "https://theyseeyourphotos.com/"
+title = "They see your photos."
+summary = "An experimental service using Google Vision API to analyse the content of a photo."
+content_type = "text"
