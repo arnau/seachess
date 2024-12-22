@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2024-W51"
+publication_date = "2024-12-22"
+summary = "This week has been about curl and Rust, a Kubernetes spec explorer, a Kafka data explorer and a grammar checker for the editor."
+
+[[entries]]
+url = "https://daniel.haxx.se/blog/2024/12/21/dropping-hyper/"
+title = "Dropping hyper"
+summary = "An article on the reasons for Curl to drop Hyper, the Rust backend."
+content_type = "text"
+
+[[entries]]
+url = "https://kubespec.dev/"
+title = "Kubernetes Spec Explorer"
+summary = "A website for navigating the Kubernetes documentation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/MAIF/yozefu"
+title = "Yōzefu"
+summary = "An interactive terminal user interface (TUI) application for exploring data of a kafka cluster. It is an alternative tool to AKHQ, redpanda console or the kafka plugin for JetBrains IDEs."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Automattic/harper"
+title = "Harper"
+summary = "An English grammar checker that integrates with code editors via LSP."
+content_type = "text"
