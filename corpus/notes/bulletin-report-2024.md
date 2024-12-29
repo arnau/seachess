@@ -2,8 +2,7 @@
 type: note
 id: bulletin-report-2024
 publication_date: 2024-12-29
-author:
-  - arnau
+author: arnau
 tags:
   - bulletin
   - report
