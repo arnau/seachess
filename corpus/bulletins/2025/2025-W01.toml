@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W01"
+publication_date = "2025-01-05"
+summary = "This week has been about the Ghostty terminal emulator, a Postgres extension using DuckDB, a Pomodoro TUI application and a tool to manage LLM models locally."
+
+[[entries]]
+url = "https://github.com/ghostty-org/ghostty"
+title = "Ghostty"
+summary = "A terminal emulator that differentiates itself by being fast, feature-rich, and native."
+content_type = "text"
+
+[[entries]]
+url = "https://www.mooncake.dev/blog/pgmooncake-architecture"
+title = "pg_mooncake: Fast Analytics in Postgres with Columnstore Tables and DuckDB"
+summary = "A Postgres extension adding columnstore tables by embedding [DuckDB](https://duckdb.org/) as the execution engine. It supports transactional inserts, updates, and deletes, just like regular Postgres tables. Data is written with Delta Lake (and soon Iceberg) table metadata, allowing it to be queried outside of Postgres."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sectore/timr-tui"
+title = "timr-tui"
+summary = "An interactive tool to run a Pomodoro timer in the terminal."
+content_type = "text"
+
+[[entries]]
+url = "https://ollama.com/"
+title = "Ollama"
+summary = "A tool to run Llama 3.3, Phi 3, Mistral, Gemma 2, and other models locally."
+content_type = "text"
