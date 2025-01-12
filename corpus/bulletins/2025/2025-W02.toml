@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W02"
+publication_date = "2025-01-12"
+summary = "This week has been about a code snapshot generator, programming with LLMs, a faster Firefox setup and Orbit from Mozilla."
+
+[[entries]]
+url = "https://github.com/mistricky/CodeSnap"
+title = "CodeSnap"
+summary = "A tool written in Rust for generate code snapshots. It directly uses the graphic engine to generate snapshots without the need of browser-based rendering."
+content_type = "text"
+
+[[entries]]
+url = "https://crawshaw.io/blog/programming-with-llms"
+title = "How I program with LLMs"
+summary = "An article where the author reflects on what they get out of automated code assistants."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/yokoffing/Betterfox"
+title = "BetterFox"
+summary = "A Firefox `user.js` script to configure the browser for better performance and security."
+content_type = "text"
+
+[[entries]]
+url = "https://matduggan.com/review-of-orbit-by-mozilla/"
+title = "Review of Orbit by Mozilla"
+summary = "An article testing the potential of [Orbit](https://orbitbymozilla.com/), an AI service managed by Mozilla Corporation aiming to help summarise emails, documents, articles and videos."
+content_type = "text"
