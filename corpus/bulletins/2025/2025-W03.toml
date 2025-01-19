@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W03"
+publication_date = "2025-01-19"
+summary = "This week has been about a new build and command runner, the implications of opening links in new windows, a shell assistant tool and a tool for exploring large CSV files."
+
+[[entries]]
+url = "https://simonask.github.io/introducing-werk/"
+title = "Introducing Werk"
+summary = "An article justifying the need for, [werk](https://github.com/simonask/werk) a new build system and command runner alternative to make and [just](https://github.com/casey/just)."
+content_type = "text"
+
+[[entries]]
+url = "https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html"
+title = "Link Targets and 3.2.5"
+summary = "An article summarising the many reasons why you should never open links in new windows."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sigoden/aichat"
+title = "AIChat: All-in-one LLM CLI Tool"
+summary = "A command-line interface for interacting with with large language models as shell assistants."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/medialab/xan"
+title = "Xan"
+summary = "A command line tool that can process and preview large CSV files."
+content_type = "text"
