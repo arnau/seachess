@@ -365,13 +365,13 @@ copy film to 'star_wars_films.json' (format json, array true);
 
 Sometimes you might want to use DuckDB as a transient JSON processor, getting JSON in, processing and then getting it out can be done with what we have already seen:
 
-```sql
-'[{"a": 1, "b": [2, 3]}, {"a": 2, "b": [4, 5]}]' | duckdb -json -c "select a, unnest(b) as b from read_json('/dev/stdin')"
+```sh
+echo '[{"a": 1, "b": [2, 3]}, {"a": 2, "b": [4, 5]}]' | duckdb -json -c "select a, unnest(b) as b from read_json('/dev/stdin')"
 ```
 
 And to get things out
   
-```sql
+```sh
 duckdb -c "copy (select title, unnest(characters) as character from film) to '/dev/stdout' (format json, array true)" star_wars.db
 ```
 
