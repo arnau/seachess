@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W04"
+publication_date = "2025-01-26"
+summary = "This week has been about Git trailers, DDoS attacks with ChatGPT, the book-sorting algorithm and a tool to view markdown files."
+
+[[entries]]
+url = "https://alchemists.io/articles/git_trailers"
+title = "Git Trailers"
+summary = "An article showing how to leverage [Git trailers](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---trailerlttokengtltvaluegt) to add metadata to Git commits and tags."
+content_type = "text"
+
+[[entries]]
+url = "https://www.theregister.com/2025/01/19/openais_chatgpt_crawler_vulnerability/"
+title = "OpenAI's ChatGPT crawler can be tricked into DDoSing sites, answering your queries"
+summary = "An article explaining how a security researcher was able to use ChatGPT's `urls` parameter to flood with requests a single website."
+content_type = "text"
+
+[[entries]]
+url = "https://www.quantamagazine.org/new-book-sorting-algorithm-almost-reaches-perfection-20250124/"
+title = "New Book-Sorting Algorithm Almost Reaches Perfection"
+summary = "An article on the list labelling problem and the attempts to solve it as fast as possible."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/d0c-s4vage/lookatme"
+title = "lookatme"
+summary = "An interactive command-line interface tool to present markdown files."
+content_type = "text"
