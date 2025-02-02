@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W05"
+publication_date = "2025-02-02"
+summary = "This week has been about Rust interoperability, database query planners, JavaScript Temporal and a tool to manage templates."
+
+[[entries]]
+url = "https://tweedegolf.nl/en/interop"
+title = "Rust interop guide"
+summary = "A collection of articles introducing how to use Rust with other languages such as C, C++ or Python."
+content_type = "text"
+
+[[entries]]
+url = "https://www.scattered-thoughts.net/writing/the-missing-tier-for-query-compilers/"
+title = "The missing tier for query compilers"
+summary = "An article reflecting on the overhead database query planners currently add, the problems of vectorised interpreters and compiled queries for OLTP engines and how WebAssembly could be the answer."
+content_type = "text"
+
+[[entries]]
+url = "https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming/"
+title = "JavaScript Temporal is coming"
+summary = "An article introducing the new proposal for dealing with dates and time in JavaScript."
+content_type = "text"
+
+[[entries]]
+url = "https://copier.readthedocs.io/en/stable/"
+title = "Copier"
+summary = "A command-line interface tool for managing project templates."
+content_type = "text"
