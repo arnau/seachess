@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W06"
+publication_date = "2025-02-09"
+summary = "This week has been about the HTTP QUERY method, a spreadsheet-like interface for Postgres, Apple Silicon native virtual machines and the evolution of the database industry."
+
+[[entries]]
+url = "https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body/"
+title = "The HTTP QUERY Method"
+summary = "A specification defining a new HTTP method, `QUERY`, as a safe, idempotent request method that can carry request content."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/mathesar-foundation/mathesar"
+title = "Mathesar"
+summary = "A spreadsheet-like interface for viewing, editing and filtering Postgres data directly."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/trycua/lume"
+title = "Lume"
+summary = "A lightweight CLI and local API server to create, run and manage macOS and Linux virtual machines (VMs) natively on Apple Silicon."
+content_type = "text"
+
+[[entries]]
+url = "https://cacm.acm.org/research/50-years-of-queries/"
+title = "50 Years of Queries"
+summary = "An article on the evolution of the database industry and why the relational database concepts introduced by E. F. Codd have proven so resilient over several decades."
+content_type = "text"
