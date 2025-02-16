@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W07"
+publication_date = "2025-02-16"
+summary = "This week has been about a tool to visualise Kubernetes logs, a gRPC persistence layer, DuckDB's new windowing features and DuckDB windowing performance improvements."
+
+[[entries]]
+url = "https://github.com/GoogleCloudPlatform/khi"
+title = "Khi"
+summary = "A log visualization tool for Kubernetes clusters. It transforms vast quantities of logs into an interactive timeline view."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/buffdb/buffdb"
+title = "buffdb"
+summary = "A lightweight, high-performance persistence layer (SQLite, DuckDB, RocksDB) for gRPC written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/02/10/window-catchup"
+title = "Catching up with Windowing"
+summary = "An article on the new DuckDB features for working with windowing functions. The second part, [Flying Through Windows](https://duckdb.org/2025/02/14/window-flying), focuses on the performance improvements of the windowing functions."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/02/14/window-flying"
+title = "Flying Through Windows"
+summary = "An article on the recent DuckDB windowing performance improvements."
+content_type = "text"
