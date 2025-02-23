@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W08"
+publication_date = "2025-02-23"
+summary = "This week has been about free public domain audiobooks, four-digit PIN usage, the whoAMI AWS attack and fake scientific papers."
+
+[[entries]]
+url = "https://librivox.org/"
+title = "LibriVox"
+summary = "A collection of free public domain audiobooks."
+content_type = "text"
+
+[[entries]]
+url = "https://www.abc.net.au/news/2025-01-28/almost-one-in-ten-people-use-the-same-four-digit-pin/103946842"
+title = "Almost one in 10 people use the same four-digit PIN"
+summary = "An article on the analysis of 29 million four-digit pins from [Have I been Pwned?](https://haveibeenpwned.com/)."
+content_type = "text"
+
+[[entries]]
+url = "https://www.bleepingcomputer.com/news/security/whoami-attacks-give-hackers-code-execution-on-amazon-ec2-instances/"
+title = "whoAMI attacks give hackers code execution on Amazon EC2 instances"
+summary = "An article on a name confusion attack that allows access to an Amazon Web Services account to anyone that publishes an Amazon Machine Image (AMI) with a specific name. Amazon made a fix in September but the problem persists in environments where organizations fail to update the code."
+content_type = "text"
+
+[[entries]]
+url = "https://retractionwatch.com/2025/02/10/vegetative-electron-microscopy-fingerprint-paper-mill/"
+title = "As a nonsense phrase of shady provenance makes the rounds, Elsevier defends its use"
+summary = "An article on the increase of fake scientific papers and a tale of “vegetative electron microscopy”."
+content_type = "text"
