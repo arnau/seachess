@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W09"
+publication_date = "2025-03-02"
+summary = "This week has been about a tool for converting video, better deserialisation in Rust, an API driven email service and a collection of lectures for building databases."
+
+[[entries]]
+url = "https://handbrake.fr/"
+title = "Handbrake"
+summary = "A tool for converting video from nearly any format to a selection of modern, widely supported codecs."
+content_type = "text"
+
+[[entries]]
+url = "https://mainmatter.com/blog/2025/02/13/eserde/"
+title = "eserde: Don't stop at the first deserialization error"
+summary = "An article about `eserde`, a deserialiser built on top of serde, to provide better error reporting capabilities when deserializing API request bodies, configuration files and similar."
+content_type = "text"
+
+[[entries]]
+url = "https://resend.com/"
+title = "Resend"
+summary = "A service for sending emails with a focus on developer experience."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=APqWIjtzNGE"
+title = "Relational Model & Algebra (CMU Intro to Database Systems)"
+summary = "A collection of recorded lectures on the topic of building databases."
+content_type = "video"
