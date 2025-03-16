@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W11"
+publication_date = "2025-03-16"
+summary = "This week has been about an embeddable and distributed SQLite, ANSI escape codes, hiding text with Unicode and yaml-free infrastructure as code."
+
+[[entries]]
+url = "https://github.com/sebadob/hiqlite/"
+title = "Hiqlite"
+summary = "An embeddable SQLite database that can form a Raft cluster to provide strong consistency, high availability, replication, automatic leader fail-over and self-healing features."
+content_type = "text"
+
+[[entries]]
+url = "https://jvns.ca/blog/2025/03/07/escape-code-standards/"
+title = "Standards for ANSI escape codes"
+summary = "An article compiling a list of specifications for ANSI escape codes."
+content_type = "text"
+
+[[entries]]
+url = "https://paulbutler.org/2025/smuggling-arbitrary-data-through-an-emoji/"
+title = "Smuggling arbitrary data through an emoji"
+summary = "An article walking through how to use Unicode variation selectors to hide text in text."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/yokecd/yoke"
+title = "yoke"
+summary = "An infrastructure-as-code (IaC) package deployer relying on WebAssembly for higher control than JSON/YAML alternatives."
+content_type = "text"
