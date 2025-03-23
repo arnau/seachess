@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W12"
+publication_date = "2025-03-23"
+summary = "This week has been about a portable Prolog implementation, an interview assistant, an  offline-first text editor and exporting from DuckDB UI."
+
+[[entries]]
+url = "https://ciao-lang.org/"
+title = "Ciao"
+summary = "A portable Prolog implementation that can compile to WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ibttf/interview-coder"
+title = "Interview coder"
+summary = "An invisible desktop application designed to help with technical interviews without the interviewer noticing."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/suitenumerique/docs"
+title = "Docs"
+summary = "A collaborative, offline-first text editor designed to address common challenges in knowledge building and sharing. Built as an alternative to Notion, Outline or Confluence."
+content_type = "text"
+
+[[entries]]
+url = "https://rmoff.net/2025/03/19/exporting-notebooks-from-duckdb-ui/"
+title = "Exporting Notebooks from DuckDB UI"
+summary = "An article offering a bash script for extracting data from DuckDB's notebooks."
+content_type = "text"
