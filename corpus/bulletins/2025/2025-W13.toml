@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W13"
+publication_date = "2025-03-30"
+summary = "This week has been about the nature of reality, an S3 compatible object storage system, the vibe coding drama and a tool for tracking and visualising event data."
+
+[[entries]]
+url = "https://buster.substack.com/p/what-are-your-beliefs-about-the-nature"
+title = "What are your beliefs about the nature of reality?"
+summary = "A “choose your own adventure” style article to navigate the kinds of beliefs about the nature of reality."
+content_type = "text"
+
+[[entries]]
+url = "https://garagehq.deuxfleurs.fr/"
+title = "Garage"
+summary = "An open-source distributed object storage service, S3 compatible, tailored for self-hosting."
+content_type = "text"
+
+[[entries]]
+url = "https://annievella.com/posts/the-software-engineering-identity-crisis/"
+title = "The Software Engineering Identity Crisis"
+summary = "An article reacting to the “vibe coding” trend, and the impact of AI as a means to code solutions. If you are after a more visceral reaction, check [“Vibe Coding” vs Reality](https://cendyne.dev/posts/2025-03-19-vibe-coding-vs-reality.html) out."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/nafey/minimalytics"
+title = "Minimalytics"
+summary = "An analytics tool built on SQLite. Designed for resource-constrained environments, it provides a lightweight solution for tracking and visualizing event data with a minimal footprint."
+content_type = "text"
