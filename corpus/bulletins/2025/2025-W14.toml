@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W14"
+publication_date = "2025-04-06"
+summary = "This week has been about large refactors with LLMs, software development principles, a tool to enhance commit messages and a keyboard mapping visualiser."
+
+[[entries]]
+url = "https://medium.com/airbnb-engineering/accelerating-large-scale-test-migration-with-llms-9565c208023b"
+title = "Accelerating Large-Scale Test Migration with LLMs"
+summary = "An article on the approach of performing a large code migration using large language models as a supporting tool."
+content_type = "text"
+
+[[entries]]
+url = "https://hacker-laws.com/"
+title = "Hacker Laws"
+summary = "A collection of common principles, patterns and beliefs in Software development."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/andrewromanenco/cocommit"
+title = "Cocommit"
+summary = "A command-line tool to edit commit messages using an LLM."
+content_type = "text"
+
+[[entries]]
+url = "https://keymap-drawer.streamlit.app/"
+title = "Keymap drawer"
+summary = "A visualiser for keyboard keymaps."
+content_type = "text"
