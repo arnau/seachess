@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W15"
+publication_date = "2025-04-13"
+summary = "This week has been about a maze generator, a Lua package manager, a tools for partial replication and an article on why and how Graft works."
+
+[[entries]]
+url = "https://github.com/unrenamed/knossos"
+title = "Knossos"
+summary = "A Rust library and command-line tool for generating mazes either using ASCII or as images."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/nvim-neorocks/lux"
+title = "Lux"
+summary = "A package manager for Lua projects."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/orbitinghail/graft"
+title = "Graft"
+summary = "A tool for transactional page storage engine supporting lazy partial replication. Optimized for scale and cost over latency. Leverages object storage for durability."
+content_type = "text"
+
+[[entries]]
+url = "https://sqlsync.dev/posts/stop-syncing-everything/"
+title = "Stop syncing everything"
+summary = "An article introducing [Graft](https://github.com/orbitinghail/graft) via the use cases that drove its design."
+content_type = "text"
