@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W16"
+publication_date = "2025-04-20"
+summary = "This week has been about XML in Rust, a guide on configuring a Corne keyboard, an inexact calculator and Dockerfiles and terminal signals."
+
+[[entries]]
+url = "https://github.com/Paligo/xee"
+title = "Xee"
+summary = "An XML execution engine written in Rust with support for XPath 3.1 and XSLT 3.0."
+content_type = "text"
+
+[[entries]]
+url = "https://mattgemmell.scot/the-corne-keyboard/"
+title = "The Corne keyboard"
+summary = "An article on the principles guiding how to define layouts for the [Corne keyboard](https://github.com/foostan/crkbd)."
+content_type = "text"
+
+[[entries]]
+url = "https://filiph.github.io/unsure/"
+title = "Unsure Calculator"
+summary = "An article showcasing a calculator able to handle ranges as well as specific numbers."
+content_type = "text"
+
+[[entries]]
+url = "https://hynek.me/articles/docker-signals/"
+title = "Why Your Dockerized Application Isn’t Receiving Signals"
+summary = "An article on a few issues to be aware of when defining a Docker entrypoint."
+content_type = "text"
