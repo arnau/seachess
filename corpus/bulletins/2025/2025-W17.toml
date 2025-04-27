@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W17"
+publication_date = "2025-04-27"
+summary = "This week has been about a syntax highlighter, a headless web browser, a text search library and a peer-to-peer git solution."
+
+[[entries]]
+url = "https://shiki.style/"
+title = "Shiki"
+summary = "A syntax highlighter compileer leveraging TextMate grammars."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/lightpanda-io/browser"
+title = "Lightpanda Browser"
+summary = "A headless web browser compatible with Puppeteer."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/SeekStorm/SeekStorm"
+title = "SeekStorm"
+summary = "A full-text search library and server written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://radicle.xyz/"
+title = "Radicle"
+summary = "An open source, peer-to-peer code collaboration stack built on Git. Repositories are replicated across peers in a decentralized manner with artefacts such as issues co-located in the repository."
+content_type = "text"
