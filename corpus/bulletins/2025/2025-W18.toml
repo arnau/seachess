@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W18"
+publication_date = "2025-05-04"
+summary = "This week has been about building text editors, a reverse proxy with TLS management, code formatter parsers and issues with Github Actions."
+
+[[entries]]
+url = "https://prosemirror.net/"
+title = "ProseMirror"
+summary = "A library for building text editors. It is designed to bridge between plain markdown and more old-fashioned WYSIWYG editors."
+content_type = "text"
+
+[[entries]]
+url = "https://caddyserver.com/"
+title = "Caddy"
+summary = "An extensible reverse proxy with TLS certificate management built-in."
+content_type = "text"
+
+[[entries]]
+url = "https://mcyoung.xyz/2025/03/11/formatters/"
+title = "The Art of Formatting Code"
+summary = "An article diving into the requirements of a robust code formatting parser."
+content_type = "text"
+
+[[entries]]
+url = "https://www.feldera.com/blog/the-pain-that-is-github-actions"
+title = "The Pain That Is Github Actions"
+summary = "An article on the traps of using GitHub Actions as a continuous integration tool."
+content_type = "text"
