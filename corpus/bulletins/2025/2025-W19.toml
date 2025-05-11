@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W19"
+publication_date = "2025-05-11"
+summary = "This week has been about temporal analysis with DuckDb, software dependency attacks with LLMs, compiler target triples and a light use of ECS for non-games."
+
+[[entries]]
+url = "https://duckdb.org/2025/05/02/stream-windowing-functions"
+title = "Temporal Analysis with Stream Windowing Functions in DuckDB"
+summary = "An article on how to use sliding windows in DuckDB for detecting anomalies and trends."
+content_type = "text"
+
+[[entries]]
+url = "https://www.theregister.com/2025/04/12/ai_code_suggestions_sabotage_supply_chain/"
+title = "LLMs can't stop making up software dependencies and sabotaging everything"
+summary = "An article on the security issue derived from LLMs making up software package names."
+content_type = "text"
+
+[[entries]]
+url = "https://mcyoung.xyz/2025/04/14/target-triples/"
+title = "What the Hell Is a Target Triple?"
+summary = "An article on the history and meaning of compiler target triples."
+content_type = "text"
+
+[[entries]]
+url = "https://prideout.net/blog/layout_viewer/#progress-reporting-and-state-machine"
+title = "Rust on the web and an “ECS lite” architecture"
+summary = "An article exploring the ECS (Entity-Component-System) architecture for building a resposive UI."
+content_type = "text"
