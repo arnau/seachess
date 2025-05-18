@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W20"
+publication_date = "2025-05-18"
+summary = "This week has been about a Django fork, the UK training an AI model with patient data, a tool to enhance data wrangling with Pandas and a reactive Python notebook."
+
+[[entries]]
+url = "https://plainframework.com/"
+title = "Plain"
+summary = "A Python web framework, forked from [Django](https://www.djangoproject.com/) for building web applications."
+content_type = "text"
+
+[[entries]]
+url = "https://www.independent.co.uk/news/health/nhs-uk-data-ai-model-foresight-disease-b2746646.html"
+title = "New AI model uses NHS data to predict future disease and complications"
+summary = "An article on the use of “de-identified” medical data to train a large-language model for medical diagnosis."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/paddymul/buckaroo"
+title = "Buckaroo"
+summary = "A data wrangler assistant for Pandas dataframes in Jupyter aiming to simplify common data analysis tasks."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/marimo-team/marimo"
+title = "Marimo"
+summary = "A reactive Python notebook that is reproducible and Git-friendly."
+content_type = "text"
