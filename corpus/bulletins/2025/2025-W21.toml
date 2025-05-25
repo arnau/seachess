@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W21"
+publication_date = "2025-05-25"
+summary = "This week has been about prompt engineering, indexes for full text search, html head optimisations and a faster Python type checker."
+
+[[entries]]
+url = "https://www.kaggle.com/whitepaper-prompt-engineering"
+title = "Prompt Engineering"
+summary = "A whitepaper looking into LLM prompting techniques to identify tips, good practices and challenges."
+content_type = "pdf"
+
+[[entries]]
+url = "https://ohadravid.github.io/posts/2025-04-08-btrees-and-mental-models/"
+title = "BTrees, Inverted Indices, and a Model for Full Text Search"
+summary = "An article aiming to help build a mental model for Full Text Search engines as done in systems such as Elasticsearch or PostgreSQL."
+content_type = "text"
+
+[[entries]]
+url = "https://getoutofmyhead.dev/"
+title = "Get out of my `<head>`"
+summary = "A website dedicated to educate on how to write HTML metadata to improve speed, accessibility and be more environmentally friendly."
+content_type = "text"
+
+[[entries]]
+url = "https://pyrefly.org/"
+title = "Pyrefly"
+summary = "A Python type checker written in Rust claiming to be 10 times faster than [mypy](https://www.mypy-lang.org/)."
+content_type = "text"
