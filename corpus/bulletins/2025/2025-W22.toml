@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W22"
+publication_date = "2025-06-01"
+summary = "This week has been about a high-performance message queue, a tool to monitor internet traffic, technical documentation traits and a new lakehouse format aiming to better Apache Iceberg and Delta."
+
+[[entries]]
+url = "https://github.com/robustmq/robustmq"
+title = "RobustMQ"
+summary = "A high-performance message queue compatible with multiple mainstream message queue protocols such as MQTT, AMQP, Kafka, and more."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/GyulyVGC/sniffnet"
+title = "Sniffnet"
+summary = "A tool to monitor your internet traffic."
+content_type = "text"
+
+[[entries]]
+url = "https://rowsana.bearblog.dev/the-documentation-problem/"
+title = "The documentation problem in development"
+summary = "An article reflecting on the traits of good technical documentation."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/05/27/ducklake.html"
+title = "DuckLake: SQL as a Lakehouse Format"
+summary = "An article with an approachable introduction to the “Lakehouse” idea followed by how the DuckLake format can help preserving the essential traits of a data lake whilst avoiding the traps."
+content_type = "text"
