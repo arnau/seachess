@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W23"
+publication_date = "2025-06-08"
+summary = "This week has been about a tool for displaying documents in the terminal, a DuckDB extension for pub/sub, a paper proposing a benchmark for CSV and a tool built on SQLite for managing state in JavaScript."
+
+[[entries]]
+url = "https://github.com/Skardyy/mcat"
+title = "mcat"
+summary = "A command-line tool for displaying content from formats such as docx, csv, markdown, jpg, png and more. For images, it has compatibility with Kitty, iTerm, Sixel and ASCII."
+content_type = "text"
+
+[[entries]]
+url = "https://query.farm/duckdb_extension_radio.html"
+title = "Radio DuckDB Extension"
+summary = "A DuckDB extension adding the ability to interact with real-time event systems such as WebSocket and Redis Publish/Subscribe servers exposing a comprehensive set of SQL functions to interact with both received and sent messages."
+content_type = "text"
+
+[[entries]]
+url = "https://www.vldb.org/pvldb/vol16/p1870-vitagliano.pdf"
+title = "Pollock: A Data Loading Benchmark"
+summary = "A paper proposing a benchmark to assess the robustness of systems in loading data from non-standard CSV formats and with structural inconsistencies."
+content_type = "pdf"
+
+[[entries]]
+url = "https://github.com/livestorejs/livestore"
+title = "LiveStore"
+summary = "A state-management library built on top of SQLite."
+content_type = "text"
