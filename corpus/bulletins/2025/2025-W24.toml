@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W24"
+publication_date = "2025-06-15"
+summary = "This week has been about a simple Iceberg implementation, a datalake with Cloudflare and DuckDB, an approachable explanation of how LLMs work and a tool for writing books in Markdown."
+
+[[entries]]
+url = "https://github.com/boringdata/boring-catalog"
+title = "Boring Catalog"
+summary = "A Python library and CLI implementing Iceberg catalogs using a single JSON file."
+content_type = "text"
+
+[[entries]]
+url = "https://khaki.mov/posts/building-your-own-data-lake-with-cloudflare-the-hidden-alternative-to-enterprise-saas/"
+title = "Building Your Own Data Lake with Cloudflare: The Hidden Alternative to Enterprise SaaS"
+summary = "An article explainig in detail how to build a datalake using Cloudflare, DuckDB, Iceberg Catalogue and JSON."
+content_type = "text"
+
+[[entries]]
+url = "https://www.davidhaney.io/llms-will-not-replace-you/"
+title = "LLMs Will Not Replace You"
+summary = "An article with an approachable explanation to how LLMs typically work."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/crowdagger/crowbook"
+title = "Crowbook"
+summary = "A tool aiming to allow you to write a book in Markdown without worrying about formatting or typography."
+content_type = "text"
