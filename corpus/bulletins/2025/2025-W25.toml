@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W25"
+publication_date = "2025-06-22"
+summary = "This week has been about a SQLite extension for using remote storage via gRPC, a SQL mystery game, synthetic data in Python and a tool for moving data around."
+
+[[entries]]
+url = "https://github.com/danthegoodman1/gRPSQLite"
+title = "gRSPSQLite"
+summary = "A SQLite VFS for remote databases via gRPC for building distributed SQLite databases backed by any storage."
+content_type = "text"
+
+[[entries]]
+url = "https://www.sqlnoir.com/"
+title = "SQL Noir"
+summary = "A mystery game where you solve crimes by using SQL."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/bespokelabsai/curator"
+title = "Bespoke Curator"
+summary = "A Python library for creating synthetic data pipelines."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/bruin-data/ingestr"
+title = "Ingestr"
+summary = "A command-line tool to copy data from any source into any destination. Sources and destinations range from databases like Postgres or SQLite to platforms like Airtable, Assana or Snowflake."
+content_type = "text"
