@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W26"
+publication_date = "2025-06-29"
+summary = "This week has been about SQL t-strings in Python, a message queue for Rust, a data pipeline tool and a SQL parser and translator for Python."
+
+[[entries]]
+url = "https://github.com/pgjones/sql-tstring"
+title = "SQL-tString"
+summary = "A Python library enabling t-strings for building SQL queries with SQL injection protection."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/densumesh/broccoli"
+title = "Broccoli"
+summary = "A message queue system for Rust applications, designed as a Rust alternative to [Celery](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) with a Redis backedend."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/bruin-data/bruin"
+title = "Bruin"
+summary = "A data pipeline tool for data ingestion, data transformation with SQL & Python, and data quality assessment."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tobymao/sqlglot"
+title = "SQLGlot"
+summary = "A SQL parser that can be used to format SQL or translate between 29 different dialects (e.g. DuckDB, Presto/Trino, Spark)."
+content_type = "text"
