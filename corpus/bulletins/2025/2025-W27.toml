@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W27"
+publication_date = "2025-07-06"
+summary = "This week has been about schizophrenic ZIP files, a 2D graphics engine in Rust, an introduction to deterministic simulation testing and a review of the state of SSL."
+
+[[entries]]
+url = "https://hackarcana.com/article/yet-another-zip-trick"
+title = "Yet another ZIP trick"
+summary = "An article explaining how the schizophrenic ZIP work."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/linebender/vello"
+title = "Vello"
+summary = "A 2D graphics rendering engine written in Rust able to draw large 2D scenes with interactive or near-interactive performance."
+content_type = "text"
+
+[[entries]]
+url = "https://notes.eatonphil.com/2024-08-20-deterministic-simulation-testing.html"
+title = "What's the big deal about Deterministic Simulation Testing?"
+summary = "An article introducing Deterministic Simulation Testing (DST) as a testing strategy to get reliable results when dealing with distributed systems."
+content_type = "text"
+
+[[entries]]
+url = "https://www.haproxy.com/blog/state-of-ssl-stacks"
+title = "The State of SSL Stacks"
+summary = "An article assessing the trade-offs of the most popular SSL libraries."
+content_type = "text"
