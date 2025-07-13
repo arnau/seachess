@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W28"
+publication_date = "2025-07-13"
+summary = "This week has been about a Python HTTP server, a paper on impact of AI in developer productivity, how AI is changing developer hiring and a set of React components for data analytics."
+
+[[entries]]
+url = "https://github.com/emmett-framework/granian"
+title = "Granian"
+summary = "A Rust HTTP server for Python applications with support for HTTP 1 and 2 able to serve ASGI and WSGI applications."
+content_type = "text"
+
+[[entries]]
+url = "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+title = "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+summary = "A paper on an analysis on how early-2025 AI tools have affected the productivity of open-source developers working on their own codebases."
+content_type = "pdf"
+
+[[entries]]
+url = "https://www.finalroundai.com/blog/software-developer-skills-ctos-want-in-2025"
+title = "CTOs Reveal How AI Changed Software Developer Hiring in 2025"
+summary = "An article compiling a handful of takes from senior positions in regards to how AI has influenced their way of hiring sofware engineers."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/sqlrooms/sqlrooms"
+title = "SQLRooms"
+summary = "A set of building blocks for creating interactive data-analytics applications that can run entirely in the browser built with [DuckDB](https://duckdb.org/) and WebAssembly."
+content_type = "text"
