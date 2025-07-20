@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W29"
+publication_date = "2025-07-20"
+summary = "This week has been about a distributed database, computing midpoints, an Iceberg tool and a tale about AI tranformations."
+
+[[entries]]
+url = "https://github.com/terminusdb/terminusdb"
+title = "TerminusDB"
+summary = "A distributed database designed for building, sharing, versioning, and reasoning on structured data."
+content_type = "text"
+
+[[entries]]
+url = "https://hal.science/file/index/docid/576641/filename/computing-midpoint.pdf"
+title = "How do you compute the midpoint of an interval?"
+summary = "A paper reviewing several implementations for finding the midpoint of an interval with floating-point bounds and presenting common pitfalls."
+content_type = "pdf"
+
+[[entries]]
+url = "https://github.com/lakekeeper/lakekeeper"
+title = "Lakekeeper"
+summary = "A tool for exposing [Apache Iceberg](https://iceberg.apache.org/) datasets as REST APIs."
+content_type = "text"
+
+[[entries]]
+url = "https://www.groktop.us/duolingos-ai-first-disaster-a-cautionary-tale-of-what-happens-when-you-replace-rather-than-partner/"
+title = "Duolingo's $7B AI Disaster: Enterprise Lessons for AI Implementation"
+summary = "An article diving into Duolingo's AI transformation strategy providing opinions on why it backfired."
+content_type = "text"
