@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W30"
+publication_date = "2025-07-27"
+summary = "This week has been about the OpenCLI specification, a tree-sitter diff tool, the DBML specification and the SQLite WAL behaviour."
+
+[[entries]]
+url = "https://patriksvensson.se/posts/2025/07/introducing-open-cli"
+title = "Introducing OpenCLI"
+summary = "An article on the motivations behind the [OpenCLI](https://opencli.org/) specification."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/afnanenayet/diffsitter"
+title = "diffsitter"
+summary = "A tool based on tree-sitter's AST aiming to get better diffs by ignoring noise such as spacing."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/holistics/dbml"
+title = "DBML"
+summary = "A Database Markup Language (DBML) designed to define and document database structures."
+content_type = "text"
+
+[[entries]]
+url = "https://avi.im/blag/2025/sqlite-wal-checksum/"
+title = "PSA: SQLite WAL checksums fail silently and may lose data"
+summary = "An article on the SQLite WAL behaviour when it's corrupted."
+content_type = "text"
