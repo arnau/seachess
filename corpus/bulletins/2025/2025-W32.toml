@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W32"
+publication_date = "2025-08-10"
+summary = "This week has been about f-strings, mcp, webassembly in mcp and the issues with AI agents."
+
+[[entries]]
+url = "https://opensource.microsoft.com/blog/2025/08/06/introducing-wassette-webassembly-based-tools-for-ai-agents/"
+title = "Introducing Wassette: WebAssembly-based tools for AI agents"
+summary = "An article introducing a tool that allows you to run WebAssembly in a Model Context Protocol (MCP) system."
+content_type = "text"
+
+[[entries]]
+url = "https://fstrings.wtf/"
+title = "Python f-string quiz"
+summary = "A quiz testing your knowledge of Python formatted string literals."
+content_type = "text"
+
+[[entries]]
+url = "https://nordicapis.com/mcp-if-you-must-then-do-it-like-this/"
+title = "MCP: If You Must, Then Do It Like This…"
+summary = "An article on the Model Context Protocol (MCP) hype."
+content_type = "text"
+
+[[entries]]
+url = "https://utkarshkanwat.com/writing/betting-against-agents/"
+title = "Why I'm Betting Against AI Agents in 2025 (Despite Building Them)"
+summary = "An article reflecting on the economic implications and reliability of using AI agents."
+content_type = "text"
