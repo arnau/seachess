@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W33"
+publication_date = "2025-08-17"
+summary = "This week has been about a SVG optimiser, a markdown linter, an introduction to Jujutsu and a collection of AI product vulnerabilities."
+
+[[entries]]
+url = "https://github.com/noahbald/oxvg"
+title = "OXVG"
+summary = "A tool to optimise SVG written in Rust with the aim of being high-performant."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/akiomik/mado"
+title = "Mado"
+summary = "A markdown linter compatible with CommonMark."
+content_type = "text"
+
+[[entries]]
+url = "https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs"
+title = "Jujutsu For Busy Devs"
+summary = "A practical introduction to [Jujutsu](https://jj-vcs.github.io/jj/latest), a version control system compatible with Git."
+content_type = "text"
+
+[[entries]]
+url = "https://simonwillison.net/2025/Aug/15/the-summer-of-johann/"
+title = "The Summer of Johann: prompt injections as far as the eye can see"
+summary = "A collection of articles exposing serious vulnerabilities found in AI products."
+content_type = "text"
