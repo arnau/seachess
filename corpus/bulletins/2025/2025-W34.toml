@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W34"
+publication_date = "2025-08-24"
+summary = "This week has been about a turning maching language simulator, an conspiracy thriller game, a tool to convert raster to vector and maps with continents display true relative sizes."
+
+[[entries]]
+url = "https://rezigned.com/tur/"
+title = "Turing Machine Language Simulator"
+summary = "A web-based interactive visualisation illustraing how a turing machine language works."
+content_type = "text"
+
+[[entries]]
+url = "https://store.steampowered.com/app/1170570/The_Drifter/"
+title = "The Drifter"
+summary = "An indie adventure game with great pixel animation. Conspiracy thriller."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/visioncortex/vtracer"
+title = "VTracer"
+summary = "A tool to convert raster images (jpeg, png) into vector graphics (svg)."
+content_type = "text"
+
+[[entries]]
+url = "https://equal-earth.com/"
+title = "Equal earth"
+summary = "A map showing countries and continents at their true sizes relative to each other. For example, Africa appears 14 times larger than Greenland as it actually is."
+content_type = "text"
