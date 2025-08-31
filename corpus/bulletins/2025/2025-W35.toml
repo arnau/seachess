@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W35"
+publication_date = "2025-08-31"
+summary = "This week has been about a Rust HTTP server for Python, a quiz on email addresses, a retry library for Python and an article on cross-site request forgery in 2025."
+
+[[entries]]
+url = "https://github.com/emmett-framework/granian"
+title = "Granian"
+summary = "A Rust HTTP server for Python applications with support for HTTP 1 and 2 able to serve ASGI and WSGI applications."
+content_type = "text"
+
+[[entries]]
+url = "https://e-mail.wtf/"
+title = "Email is easy"
+summary = "A quiz testing your knowledge of Email address rules."
+content_type = "text"
+
+[[entries]]
+url = "https://tenacity.readthedocs.io/en/latest/"
+title = "Tenacity"
+summary = "A general-purpose Python library to simplify the task of adding retry behavior fallible tasks."
+content_type = "text"
+
+[[entries]]
+url = "https://words.filippo.io/csrf/"
+title = "Cross-Site Request Forgery"
+summary = "An article diving into the mechanics of a Cross-Site Request Forgery attack."
+content_type = "text"
