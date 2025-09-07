@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W36"
+publication_date = "2025-09-07"
+summary = "This week has been about a tool for validating GitHub actions, a CLI for viewing docx, a good introduction to the big O notation and an article on legibility in software organisatons."
+
+[[entries]]
+url = "https://github.com/bahdotsh/wrkflw/"
+title = "WRKFLW"
+summary = "A command-line tool for validating and executing GitHub Actions workflows locally, without requiring a full GitHub environment. It helps developers test their workflows directly on their machines before pushing changes to GitHub."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/bgreenwell/doxx"
+title = "Doxx"
+summary = "A terminal-based document viewer for docx documents."
+content_type = "text"
+
+[[entries]]
+url = "https://samwho.dev/big-o/"
+title = "Big O"
+summary = "An article introducing the concept of Big O as a way of describing the performance of a function over time."
+content_type = "text"
+
+[[entries]]
+url = "https://www.seangoedecke.com/seeing-like-a-software-company/"
+title = "Seeing like a software company"
+summary = "An article taking [Seeing like a state](https://files.libcom.org/files/Seeing%20Like%20a%20State%20-%20James%20C.%20Scott.pdf) as a starting point to explain how software companies behave when in pursue of visibility gains."
+content_type = "text"
