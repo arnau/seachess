@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W37"
+publication_date = "2025-09-14"
+summary = "This week has been about standalone Python applications, event-driven applications in Kubernetes, a Lean introduction and a CSS Engine."
+
+[[entries]]
+url = "https://github.com/ofek/pyapp"
+title = "PyApp"
+summary = "A tool for creating standalone Python applications."
+content_type = "text"
+
+[[entries]]
+url = "https://numaflow.numaproj.io/"
+title = "Numaflow"
+summary = "A Kubernetes-native, serverless platform for running scalable and reliable event-driven applications."
+content_type = "text"
+
+[[entries]]
+url = "https://overreacted.io/lean-for-javascript-developers/"
+title = "Lean for JavaScript Developers"
+summary = "An article introducing the basics of the [Lean](https://lean-lang.org/) proof assistant language."
+content_type = "text"
+
+[[entries]]
+url = "https://crates.io/crates/grimoire_css"
+title = "Grimoire CSS"
+summary = "A Rust library providing a flexible and performant CSS Engine."
+content_type = "text"
