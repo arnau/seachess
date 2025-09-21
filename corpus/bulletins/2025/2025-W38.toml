@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W38"
+publication_date = "2025-09-21"
+summary = "This week has been about asynchronous Rust, probabilistic linkage, an adventure game and tweaking rate limits."
+
+[[entries]]
+url = "https://without.boats/blog/let-futures-be-futures/"
+title = "Let futures be futures"
+summary = "An article revisiting the design of asynchronous Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://www.robinlinacre.com/intro_to_probabilistic_linkage/"
+title = "An Interactive Introduction to the Fellegi-Sunter Model for Data Linkage/Deduplication"
+summary = "An interactive tutorial to the theory of probabilistic record linkage and deduplication."
+content_type = "<Nothing>"
+
+[[entries]]
+url = "https://store.steampowered.com/app/569860/Thimbleweed_Park/"
+title = "Thimbleweed Park"
+summary = "An adventure game from the designers of Monkey Island with a similar style gameplay."
+content_type = "<Nothing>"
+
+[[entries]]
+url = "https://dotat.at/@/2025-09-14-ratelimit.html"
+title = "A few notes on ratelimiting"
+summary = "An article dipping into rate limiting tweaking."
+content_type = "<Nothing>"
