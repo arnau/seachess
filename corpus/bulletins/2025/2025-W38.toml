@@ -13,16 +13,16 @@ content_type = "text"
 url = "https://www.robinlinacre.com/intro_to_probabilistic_linkage/"
 title = "An Interactive Introduction to the Fellegi-Sunter Model for Data Linkage/Deduplication"
 summary = "An interactive tutorial to the theory of probabilistic record linkage and deduplication."
-content_type = "<Nothing>"
+content_type = "text"
 
 [[entries]]
 url = "https://store.steampowered.com/app/569860/Thimbleweed_Park/"
 title = "Thimbleweed Park"
 summary = "An adventure game from the designers of Monkey Island with a similar style gameplay."
-content_type = "<Nothing>"
+content_type = "text"
 
 [[entries]]
 url = "https://dotat.at/@/2025-09-14-ratelimit.html"
 title = "A few notes on ratelimiting"
 summary = "An article dipping into rate limiting tweaking."
-content_type = "<Nothing>"
+content_type = "text"
