@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W39"
+publication_date = "2025-09-28"
+summary = "This week has been about a proxy for intercepting and replaying traffic, a terminal-based network monitor, a text editor in Zig and a visualisation alternative to Venn diagrams."
+
+[[entries]]
+url = "https://www.mitmproxy.org/"
+title = "mitmproxy"
+summary = "A HTTPS proxy designed for intercepting, inspecting, modifying and replaying web traffic. It can be programmed with Python and is able to handle many types of messages including Protobuf, HTML and plain text."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/domcyrus/rustnet"
+title = "RustNet"
+summary = "A terminal-based cross-platform network monitoring tool with real-time visibiliy into network connections."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/neurocyte/flow"
+title = "Flow Control"
+summary = "A text editor written in Zig."
+content_type = "text"
+
+[[entries]]
+url = "https://upset.app/"
+title = "UpSet"
+summary = "A visualisation alternative to Venn diagrams aiming to support relationship analysis for intersecting sets at scale."
+content_type = "text"
