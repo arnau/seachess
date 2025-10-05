@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W40"
+publication_date = "2025-10-05"
+summary = "This week has been about self-contained Ruby applications, GitHub codeowners validation, a Ruby version manager and a reverse proxy with load balancing and WAF built-in."
+
+[[entries]]
+url = "https://www.tebako.org/"
+title = "Tebako"
+summary = "A tool to generate cross-platform self contained Ruby-based executables."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/dotanuki-labs/canopus"
+title = "canopus"
+summary = "A tool to validate GitHub codeowner files."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/spinel-coop/rv"
+title = "rv"
+summary = "A Ruby version manager written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://pingoo.io/"
+title = "Pingoo"
+summary = "A reverse proxy with built-in capabilities such as load balancing, service discovery, GeoIP, WAF and bot protection."
+content_type = "text"
