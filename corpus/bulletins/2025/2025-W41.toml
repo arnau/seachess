@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W41"
+publication_date = "2025-10-12"
+summary = "This week has been about a tool for analysing Git repos, an alternative to Docker compatible with Kubernetes, the chemistry of Cyanotypes and an image rendering engine."
+
+[[entries]]
+url = "https://github.com/bgricker/gitallica"
+title = "Gitallica"
+summary = "A terminal-based tool that performs temporal diff analysis of distributed version control logs to help you understand code evolution, identify risks, and optimize team workflows. Analyze churn patterns, code survival rates, and other engineering metrics to make data-driven decisions about your codebase health."
+content_type = "text"
+
+[[entries]]
+url = "https://r2cn.dev/blog/rkl-a-docker-like-command-line-interface-built-in-rust"
+title = "RKL: A Docker-like Command-line Interface Built in Rust"
+summary = "An article introducing RKL, a container orchestrator compatible with Kubernetes, and the challenges and design choices that led to the current implementation."
+content_type = "text"
+
+[[entries]]
+url = "https://www.acschemmatters-digital.org/acschemmatters/october_2024/MobilePagedArticle.action?articleId=2012044"
+title = "Cyanotypes: Chemistry in Blue"
+summary = "An article on the beginnings of the cyanotype technique and the mechanics of its chemistry."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/kane50613/takumi"
+title = "Takumi"
+summary = "An image rendering engine written in Rust with bindings for Node.js and WebAssembly."
+content_type = "text"
