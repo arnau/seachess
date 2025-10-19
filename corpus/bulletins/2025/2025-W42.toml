@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W42"
+publication_date = "2025-10-19"
+summary = "This week has been about handling CSV with DuckDB, the 2025 Lovelace report, a talk on DuckLake and the lakehouse challenges and the knowledge collapse amplified by GenAI."
+
+[[entries]]
+url = "https://motherduck.com/blog/taming-wild-csvs-with-duckdb-data-engineering/"
+title = "Taming Wild CSVs: Advanced DuckDB Techniques for Data Engineers"
+summary = "An article exploring the tools available in DuckDB to work with low quality CSV data."
+content_type = "text"
+
+[[entries]]
+url = "https://wearetechwomen.com/2025-lovelace-report/"
+title = "Unlocking £2-3.5 billion: The value of keeping women in tech"
+summary = "A report from the Lovelace Institute presenting their findings on the reasons why women have for leaving the communication and information industry in the UK."
+content_type = "pdf"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=z2GhznqtIz0"
+title = "DuckLake: Learning from Cloud Data Warehouses to Build a Robust “Lakehouse”"
+summary = "A talk introducing the evolution of storage in data warehouses, the path to lakehouses and how DuckLake plays a role in it."
+content_type = "text"
+
+[[entries]]
+url = "https://aeon.co/essays/generative-ai-has-access-to-a-small-slice-of-human-knowledge"
+title = "Generative AI has access to a small slice of human knowledge"
+summary = "An article reflecting on the knowledge collapse GenAI is provoking as a consequence of the amplification of the subset of human knowledge represented in the internet as well as the strong bias for some languages and cultural backgrounds."
+content_type = "text"
