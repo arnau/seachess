@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W43"
+publication_date = "2025-10-26"
+summary = "This week has been about the traps in Amazon Kindle, an alternative way to implement MCP services, AI wellfare and UUIDv7 shortcomings."
+
+[[entries]]
+url = "https://blog.pixelmelt.dev/kindle-web-drm/"
+title = "How I Reversed Amazon's Kindle Web Obfuscation Because Their App Sucked"
+summary = "An article on how the author got to read an e-book they bought at Amazon despite the company failure to provide a successful experience."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.cloudflare.com/code-mode/"
+title = "Code Mode: the better way to use MCP"
+summary = "An article exploring using a TypeScript API to let LLMs interact with MCP instead of the normal simplified tool approach."
+content_type = "text"
+
+[[entries]]
+url = "https://www.lawfaremedia.org/article/claude-s-right-to-die--the-moral-error-in-anthropic-s-end-chat-policy"
+title = "Claude’s Right to Die? The Moral Error in Anthropic’s End-Chat Policy"
+summary = "An article reflecting on the AI wellfare approach done by Anthropic reflected in new Claude models."
+content_type = "text"
+
+[[entries]]
+url = "https://brooker.co.za/blog/2025/10/22/uuidv7.html"
+title = "Fixing UUIDv7 (for database use-cases)"
+summary = "An article exploring the criticisms to UUIDv7 and what to do about them."
+content_type = "text"
