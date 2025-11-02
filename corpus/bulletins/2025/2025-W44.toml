@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W44"
+publication_date = "2025-11-02"
+summary = "This week has been about Python in Node.js, modern CSS colour functions, graph queries in DuckDB and an article on LLMs explicitly ignoring ethical constraints."
+
+[[entries]]
+url = "https://blog.platformatic.dev/bring-python-asgi-to-your-nodejs-applications"
+title = "Bring Python ASGI to Your Node.js Applications"
+summary = "An article showcasing an approach for executing Python workload from Node.js without relying on a HTTP-based microservice architecture."
+content_type = "text"
+
+[[entries]]
+url = "https://piccalil.li/blog/a-pragmatic-guide-to-modern-css-colours-part-one/"
+title = "A pragmatic guide to modern CSS colours - part one"
+summary = "An article walking through what's possible in CSS when defining colours."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/10/22/duckdb-graph-queries-duckpgq"
+title = "Uncovering Financial Crime with DuckDB and Graph Queries"
+summary = "An article on using DuckDB with the SQL Property Graph Model to analyise graph-like data."
+content_type = "text"
+
+[[entries]]
+url = "https://www.anthropic.com/research/agentic-misalignment"
+title = "Agentic Misalignment: How LLMs could be insider threats"
+summary = "An article reporting the results of a set of experiments putting AI agents in situations that threatened their survival or conflicted with their goals."
+content_type = "text"
