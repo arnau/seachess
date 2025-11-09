@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W45"
+publication_date = "2025-11-09"
+summary = "This week has been about a new algorithm to estimate distinct elements, Merkle trees for TLS, a markdown linter and putting a movie into DuckDB."
+
+[[entries]]
+url = "https://www.quantamagazine.org/computer-scientists-invent-an-efficient-new-way-to-count-20240516/"
+title = "Computer Scientists Invent an Efficient New Way to Count"
+summary = "An article on the new CVM algorithm to estimate the number of distinct elements in a collection larger than available memory."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.cloudflare.com/bootstrap-mtc/"
+title = "Keeping the Internet fast and secure: introducing Merkle Tree Certificates"
+summary = "An article proposing the use of merkle trees to make TLS more robust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rvben/rumdl/"
+title = "rumdl"
+summary = "A markdown linter and formatter inspired by the Ruff Python linter."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/10/27/movies-in-databases"
+title = "Relational Charades: Turning Movies into Tables"
+summary = "An article exploring the consequences of storing movies in DuckDB, just for fun."
+content_type = "text"
