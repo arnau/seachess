@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W46"
+publication_date = "2025-11-16"
+summary = "This week has been about a terminal-based note-taking application, design anti-patterns, a bibliography manager and structural regular expressions."
+
+[[entries]]
+url = "https://github.com/gluesql/glues"
+title = "Glues"
+summary = "A terminal-based note-taking application with flexible storage options. You can keep notes in memory, as individual files, using a redb database, using Git, or MongoDB."
+content_type = "text"
+
+[[entries]]
+url = "https://hallofshame.design/collection/"
+title = "Catalog of dark patterns"
+summary = "A collection of design anti-patterns."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/typst/hayagriva"
+title = "Hayagriva"
+summary = "A tool for managing bibliography including querying data and formatting reference lists and in-text citations."
+content_type = "text"
+
+[[entries]]
+url = "https://www.sminez.dev/match-it-again-sam/"
+title = "Match it again Sam"
+summary = "An article diving into structural regular expressions."
+content_type = "text"
