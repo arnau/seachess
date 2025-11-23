@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W47"
+publication_date = "2025-11-23"
+summary = "This week has been about a tool for viewing PDFs, a terminal-based application of utilities, a data format for LLMs and an article on open source, licensing and power structures."
+
+[[entries]]
+url = "https://github.com/vincent-uden/miro"
+title = "miro"
+summary = "A desktop application for viewing PDFs written in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/ksdme/ut"
+title = "ut"
+summary = "A terminal-based application offering a set of commonly-used tools in a single binary (e.g. UUIDv1-7 generation, regex tester, base64 encoder)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/johannschopplich/toon"
+title = "Token-Oriented Object Notation (TOON)"
+summary = "A compact format designed for passing structured data to Large Language Models with reduced token usage."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.muni.town/open-source-power/"
+title = "Open Source Power"
+summary = "An article looking into open source and the power dynamics in technology."
+content_type = "text"
