@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W48"
+publication_date = "2025-11-30"
+summary = "This week has been about a criticism to the Iceberg format, a colour palette web application, a puzzle game based on tle flipping and an article on engineering management skills."
+
+[[entries]]
+url = "https://www.database-doctor.com/posts/iceberg-is-wrong-2.html"
+title = "Iceberg, The Right Idea - The Wrong Spec"
+summary = "A two-part article analysing and criticising the [Apache Iceberg](https://iceberg.apache.org/) format."
+content_type = "text"
+
+[[entries]]
+url = "https://colorpalette.pro"
+title = "Colorpalette pro"
+summary = "A web application for mixing colours."
+content_type = "text"
+
+[[entries]]
+url = "https://unflipgame.com/"
+title = "Unflip"
+summary = "A puzzle game based on tile flipping."
+content_type = "text"
+
+[[entries]]
+url = "https://lethain.com/good-eng-mgmt-is-a-fad/"
+title = "Good engineering management is a fad"
+summary = "An article reflecting on how engineering management expectations have changed over the years."
+content_type = "text"
