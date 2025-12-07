@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W49"
+publication_date = "2025-12-07"
+summary = "This week has been about a library for exposing JSON schema to the Typescript runtime checker, a report diving into mass surveillance, a tool to compose data pipelines from APIs and an article looking into Cloudflare's incident time to resolution."
+
+[[entries]]
+url = "https://github.com/sinclairzx81/typebox"
+title = "TypeBox"
+summary = "A library for composing Json Schema structures that are resolved and cheked at runtime by TypeScript."
+content_type = "text"
+
+[[entries]]
+url = "https://mullvad.net/pdfs/Total_surveillance.pdf"
+title = "Total surveillance"
+summary = "A report on how mass surveillence works"
+content_type = "text"
+
+[[entries]]
+url = "https://steampipe.io/"
+title = "Steampipe"
+summary = "A tool exposing data sources (APIs, etc) via SQL."
+content_type = "text"
+
+[[entries]]
+url = "https://surfingcomplexity.blog/2025/11/27/fun-with-incident-data-and-statistical-process-control/"
+title = "Fun with incident data and statistical process control"
+summary = "An article exploring publicly available incident data time to resolution from Cloudflare to see if it is under statistical control."
+content_type = "text"
