@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W51"
+publication_date = "2025-12-21"
+summary = "This week has been about caching data in DuckDB, a DuckDB extension for caching, an article on the Linux boot process and an article on browser fingerprinting."
+
+[[entries]]
+url = "https://motherduck.com/blog/duckdb-olap-caching/"
+title = "Simplicity of a Database, but the Speed of a Cache: OLAP Caches for DuckDB"
+summary = "An article showing how to use DuckDB as a cache to speed up data analysis and visualisation."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/coginiti-dev/QuackStore"
+title = "QuackStore"
+summary = "A DuckDB extension to cache remote data locally."
+content_type = "text"
+
+[[entries]]
+url = "https://www.0xkato.xyz/linux-boot/"
+title = "The Linux Boot Process: From Power Button to Kernel"
+summary = "An article walking through the Linux boot process at high level."
+content_type = "text"
+
+[[entries]]
+url = "https://kevinboone.me/fingerprinting.html"
+title = "The privacy nightmare of browser fingerprinting"
+summary = "An article on the harm and reach of browser fingerprinting."
+content_type = "text"
