@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2025-W52"
+publication_date = "2025-12-28"
+summary = "This week has been about a WebAssembly version of Ghostty, KPI trees, data warehouse modelling and team goal setting."
+
+[[entries]]
+url = "https://github.com/coder/ghostty-web"
+title = "ghostty-web"
+summary = "A WebAssembly version of [Ghostty](https://ghostty.org/) compatible with xterm.js."
+content_type = "text"
+
+[[entries]]
+url = "https://www.petra-wille.com/blog/kpi-trees-how-to-bridge-the-gap-between-customer-behavior-product-metrics-and-company-goals"
+title = "KPI Trees: How to Bridge the Gap Between Customer Behavior, Product Metrics, and Company Goals"
+summary = "An introduction to KPI trees, what they help with and how to define them."
+content_type = "text"
+
+[[entries]]
+url = "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/"
+title = "Dimensional Modelling Techniques"
+summary = "A collection of extracts from The Data Warehouse Toolkit by Kimball."
+content_type = "text"
+
+[[entries]]
+url = "https://cutlefish.substack.com/p/tbm-305-stop-the-goal-cascade-madness"
+title = "TBM 305: Stop the (Goal) Cascade Madness"
+summary = "An article reflecting on team goal setting for delivery-centric teams."
+content_type = "text"
