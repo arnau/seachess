@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W01"
+publication_date = "2026-01-04"
+summary = "This week has been about a web application with typing exercises, a toolset for maths, a registry for reseach organisations and a markdown navigator."
+
+[[entries]]
+url = "https://monkeytype.com/"
+title = "monkeytype"
+summary = "A web application for testing your typing skills."
+content_type = "text"
+
+[[entries]]
+url = "https://www.geogebra.org/"
+title = "GeoGebra"
+summary = "A toolset for learning mathematics. From exploring functions and solve equations to explore geometric concepts."
+content_type = "text"
+
+[[entries]]
+url = "https://ror.org/"
+title = "Research organisation registry (ROR)"
+summary = "A community-led registry of persistent identifiers for research and funding organizations. It includes identifiers and metadata for more than 116,000 organizations and the data is licensed with CC0 and openly available via a REST API and data dump."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Epistates/treemd"
+title = "treemd"
+summary = "A terminal-based markdown navigator with structural navigation."
+content_type = "text"
