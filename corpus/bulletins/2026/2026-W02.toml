@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W02"
+publication_date = "2026-01-11"
+summary = "This week has been about the Git reftable format, a markup language for recipes, a Parquet-based embedded database and a single-node geospatial database."
+
+[[entries]]
+url = "https://about.gitlab.com/blog/a-beginners-guide-to-the-git-reftable-format/"
+title = "A beginner's guide to the Git reftable format"
+summary = "An article diving into the Git reftable format, an alternative to the files format for managing references in Git."
+content_type = "text"
+
+[[entries]]
+url = "https://cooklang.org/"
+title = "Cooklang"
+summary = "A markup language for writing recipes aiming to be understood by cooks and computers."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tonbo-io/tonbo"
+title = "Tonbo"
+summary = "An embedded database where data is stored as Parquet on S3, coordination happens through a manifest, and compute stays fully stateless."
+content_type = "text"
+
+[[entries]]
+url = "https://sedona.apache.org/"
+title = "SedonaDB"
+summary = "An open-source single-node analytical database engine with geospatial capabilities. It aims to deliver the fastest spatial analytics query speed and the most comprehensive function coverage available."
+content_type = "text"
