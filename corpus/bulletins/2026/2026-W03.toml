@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W03"
+publication_date = "2026-01-18"
+summary = "This week has been about a Rust web framework, a SQL-based social network, an article on Podman with Kubernetes and an article on measuring engineering ROI."
+
+[[entries]]
+url = "https://github.com/salvo-rs/salvo"
+title = "Salvo"
+summary = "A Rust web backend framework with support for HTTP1, HTTP2, HTTP3, WebSocket, OpenAPI and more."
+content_type = "text"
+
+[[entries]]
+url = "https://sqlnet.cc/"
+title = "SQLNet"
+summary = "A social network where you write SQL to do anything."
+content_type = "text"
+
+[[entries]]
+url = "https://www.plural.sh/blog/podman-kubernetes/"
+title = "Podman with Kubernetes: The Ultimate Guide"
+summary = "An article diving into the benefits of using Podman with Kubernetes for a better transition local to production."
+content_type = "text"
+
+[[entries]]
+url = "https://www.ctologic.pro/p/how-to-measure-engineering-roi"
+title = "The Hitchhiker’s Guide to Measuring Engineering ROI"
+summary = "An article on the challenges to connect business outcomes to engineering effort."
+content_type = "text"
