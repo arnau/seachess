@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W04"
+publication_date = "2026-01-25"
+summary = "This week has been about the specification for providing context to coding agents, a rant on SOLID from Clean Code, a criticism to using Git for package manager storage and an exploit leveraging Claude Cowork."
+
+[[entries]]
+url = "https://agents.md/"
+title = "AGENTS.md"
+summary = "An open format for providing context and instructions for coding agents."
+content_type = "text"
+
+[[entries]]
+url = "https://loup-vaillant.fr/articles/solid-bull"
+title = "A SOLID Load of Bull"
+summary = "An article ranting about the SOLID principles as described by the Clean Code book."
+content_type = "text"
+
+[[entries]]
+url = "https://nesbitt.io/2025/12/24/package-managers-keep-using-git-as-a-database.html"
+title = "Package managers keep using git as a database, it never works out"
+summary = "An article summarising examples of package managers failing to scale due to Git."
+content_type = "text"
+
+[[entries]]
+url = "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files"
+title = "Claude Cowork Exfiltrates Files"
+summary = "An article showing how an attacker could exploit a vulnerability in the new Claude Cowork AI agent by Anthropic."
+content_type = "text"
