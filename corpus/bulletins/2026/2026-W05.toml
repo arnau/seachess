@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W05"
+publication_date = "2026-02-01"
+summary = "This week has been about a terminal-based application for PostgreSQL, PDF forensics, a rant on overly complex frontend components and a reflection on the state of WebAssembly."
+
+[[entries]]
+url = "https://github.com/fcoury/tsql"
+title = "tsql"
+summary = "A terminal-based interactive application to work with PostgeSQL."
+content_type = "text"
+
+[[entries]]
+url = "https://hackerfactor.com/blog/index.php?/archives/1085-A-Typical-PDF.html"
+title = "A Typical PDF"
+summary = "An article looking into PDF from a forensic software stand, exploring what might be a normal PDF and what constitues an edit proof."
+content_type = "text"
+
+[[entries]]
+url = "https://paulmakeswebsites.com/writing/shadcn-radio-button/"
+title = "The Incredible Overcomplexity of the Shadcn Radio Button"
+summary = "An article ranting about component libraries not keeping things simple."
+content_type = "text"
+
+[[entries]]
+url = "https://emnudge.dev/blog/what-happened-to-webassembly/"
+title = "What Happened To WebAssembly"
+summary = "An article looking into the maturity of WebAssembly as of end of 2025."
+content_type = "text"
