@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W06"
+publication_date = "2026-02-08"
+summary = "This week has been about a terminal-based tool to inspect Parquet, an open specification for interacting with language models, a tool for solving constraiened optimisation problems and a book on web accessibility."
+
+[[entries]]
+url = "https://github.com/kaushiksrini/parqeye"
+title = "parqeye"
+summary = "A terminal-based interactive tool to inspect the contents and metadata of Parquet files."
+content_type = "text"
+
+[[entries]]
+url = "https://www.openresponses.org/"
+title = "Open Responses"
+summary = "An open-source specification comprised of a shared schema and a tooling layer that enables a unified experience for calling language models, streaming results, and composing agentic workflows—independent of provider."
+content_type = "text"
+
+[[entries]]
+url = "https://www.minizinc.org/"
+title = "MiniZinc"
+summary = "A tool to solve constrained optimisation problems."
+content_type = "text"
+
+[[entries]]
+url = "https://accessibilityforeveryone.site/"
+title = "Accessibility for Everyone"
+summary = "A free book on web accessiblity written in 2017. Still highly relevant."
+content_type = "text"
