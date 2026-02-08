@@ -1,7 +1,7 @@
 type = "bulletin"
 id = "2026-W06"
 publication_date = "2026-02-08"
-summary = "This week has been about a terminal-based tool to inspect Parquet, an open specification for interacting with language models, a tool for solving constraiened optimisation problems and a book on web accessibility."
+summary = "This week has been about a terminal-based tool to inspect Parquet, an open specification for interacting with language models, a tool for solving constrained optimisation problems and a book on web accessibility."
 
 [[entries]]
 url = "https://github.com/kaushiksrini/parqeye"
