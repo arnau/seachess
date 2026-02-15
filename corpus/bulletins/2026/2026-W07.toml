@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W07"
+publication_date = "2026-02-15"
+summary = "This week has been about controling coding agents, agent protocols, the CSS highlights API and streaming patterns with DuckDB."
+
+[[entries]]
+url = "https://zed.dev/blog/on-programming-with-agents"
+title = "On Programming with Agents"
+summary = "An article providing some advice on how to use coding agents effectively without loosing too much control."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/dr_hernani_costa/ai-agent-protocols-mcp-vs-a2a-vs-anp-vs-acp-4k98"
+title = "AI Agent Protocols: MCP vs A2A vs ANP vs ACP"
+summary = "A high-level comparison of the most known agent protocols as of beginning of 2026."
+content_type = "text"
+
+[[entries]]
+url = "https://pavi2410.com/blog/high-performance-syntax-highlighting-with-css-highlights-api/"
+title = "High-Performance Syntax Highlighting with CSS Highlights API"
+summary = "An article introducing the CSS Custom Highlight API which provides a way to style arbitrary text ranges without modifying the DOM structure."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2025/10/13/duckdb-streaming-patterns"
+title = "Streaming Patterns with DuckDB"
+summary = "An article looking into streaming analytics and how to leverage DuckDB in these scenarios."
+content_type = "text"
