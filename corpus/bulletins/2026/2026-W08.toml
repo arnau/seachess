@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W08"
+publication_date = "2026-02-22"
+summary = "This week has been about open table formats, tree-structured concurrency, RAG with DuckDB and correlated subqueries in SQLite."
+
+[[entries]]
+url = "https://emschwartz.me/short-circuiting-correlated-subqueries-in-sqlite/"
+title = "Short-Circuiting Correlated Subqueries in SQLite"
+summary = "A short article on how to shortcircuit SQL correlated queries when the parameters don't require it in a static way."
+content_type = "text"
+
+[[entries]]
+url = "https://motherduck.com/blog/obsidian-rag-duckdb-motherduck/"
+title = "Building an Obsidian RAG with DuckDB and MotherDuck"
+summary = "An article walking through how to build a simple Retrieval Augmented Generation (RAG) system on top of DuckDB to search through markdown content."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.yoshuawuyts.com/replacing-tasks-with-actors/"
+title = "Tree-Structured Concurrency II: Replacing Background Tasks With Actors"
+summary = "An article suggesting actors as a pattern to manage background tasks in a structured manner."
+content_type = "text"
+
+[[entries]]
+url = "https://jack-vanlightly.com/blog/2025/10/8/beyond-indexes-how-open-table-formats-optimize-query-performance"
+title = "Beyond Indexes: How Open Table Formats Optimize Query Performance"
+summary = "An article reflecting on the usefulness of indexes in non-RDBMS formats (eg Iceberg) and alternatives to help speed things up in the OLAP world."
+content_type = "text"
