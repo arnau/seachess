@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W09"
+publication_date = "2026-03-01"
+summary = "This week has been about a tool to compose SQL queries visually, a EU based hosting service, a tool to visualise SQLite file structure and an article on schema migrations."
+
+[[entries]]
+url = "https://github.com/dbgate/dbgate"
+title = "DbGate"
+summary = "A database manager (web or electron) with a visual query designer, schema diffs and more."
+content_type = "text"
+
+[[entries]]
+url = "https://www.statichost.eu/"
+title = "statichost"
+summary = "A hosting service for static websites located in Europe-based servers."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/QuadrupleA/sqlite-page-explorer"
+title = "SQLite Page Explorer"
+summary = "An application built in [redbean](https://redbean.dev) that lets you explore the structure of a SQLite database file."
+content_type = "text"
+
+[[entries]]
+url = "https://yorickpeterse.com/articles/building-a-better-and-scalable-system-for-data-migrations/"
+title = "Building a better and scalable system for data migrations"
+summary = "An article exploring the required properties for a robust database schema migration process."
+content_type = "text"
