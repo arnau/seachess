@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W10"
+publication_date = "2026-03-08"
+summary = "This week has been about a GPU-based SQL engine, a data format for database operations, a database diagramming editor and recommendations on how to harness LLMs down for a more effective coding experience."
+
+[[entries]]
+url = "https://www.sirius-db.com/"
+title = "Sirius"
+summary = "A GPU-based SQL engine that plugs into databases such as DuckDB via the [Substrait](https://substrait.io/) query format."
+content_type = "text"
+
+[[entries]]
+url = "https://substrait.io/"
+title = "Substrait"
+summary = "A format for describing compute operations on structured data designed for interoperability across different languages and systems."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/chartdb/chartdb/"
+title = "ChartDB"
+summary = "A web-based database diagramming editor."
+content_type = "text"
+
+[[entries]]
+url = "https://boristane.com/blog/how-i-use-claude-code/"
+title = "How I Use Claude Code"
+summary = "An article with a detailed explanation of how the author uses their LLM of choice guarding against pitfalls on risky or expensive steps."
+content_type = "text"
