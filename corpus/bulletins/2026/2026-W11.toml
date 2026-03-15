@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W11"
+publication_date = "2026-03-15"
+summary = "This week has been about a runtime manager, an embedded graph database, an article on LLM quality and expectations and a tutorial on git and email."
+
+[[entries]]
+url = "https://mise.jdx.dev/"
+title = "Mise"
+summary = "A manager for runtimes such as node and python like [asdf](https://asdf-vm.com/) combined with a [direnv](https://github.com/direnv/direnv)-like environment manager."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/LadybugDB/ladybug"
+title = "Ladybug"
+summary = "An embedded graph database optimised for handling analytical workloads on large databases. It offers a range of features out of the box such as Property Graph Data Model, Cypher query language, full text search, vector index, columnar disk-based storage, vectorized and factorized query processor and serializable ACID transactions."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.katanaquant.com/p/your-llm-doesnt-write-correct-code"
+title = "Your LLM Doesn't Write Correct Code. It Writes Plausible Code"
+summary = "An article on LLMs being [bullshit machines](https://link.springer.com/article/10.1007/s10676-024-09775-5) also when the generated code is functional."
+content_type = "text"
+
+[[entries]]
+url = "https://git-send-email.io/"
+title = "Learn to use email with git!"
+summary = "A step by step tutorial to get started using email for sending and receiving Git changes."
+content_type = "text"
