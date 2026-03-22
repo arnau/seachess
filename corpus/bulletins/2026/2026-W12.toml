@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W12"
+publication_date = "2026-03-22"
+summary = "This week has been about a Python library to use S3-compatible stores, the Connections puzzle on top of DuckDB, a Zed fork without AI and an article on the impact of AI on learning to code."
+
+[[entries]]
+url = "https://github.com/developmentseed/obstore"
+title = "obstore"
+summary = "A Python library to integrate with S3-compatible object stores."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tomjakubowski/connections.duckdb"
+title = "connections.duckdb"
+summary = "An implementation of the [New York Times Connections puzzle](https://www.nytimes.com/games/connections) using DuckDB and its repl."
+content_type = "text"
+
+[[entries]]
+url = "https://gram.liten.app/"
+title = "Gram"
+summary = "A fork of the [Zed code editor](https://zed.dev) without telemetry, AI assistant or collaboration features."
+content_type = "text"
+
+[[entries]]
+url = "https://www.anthropic.com/research/AI-assistance-coding-skills"
+title = "How AI assistance impacts the formation of coding skills"
+summary = "An article on the results of a study investigating the potential downsides of using AI at work."
+content_type = "text"
