@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W13"
+publication_date = "2026-03-29"
+summary = "This week has been about AI fatigue, a type-safe language that compiles to Bash, a SQL transpiler across 30 dialects and an MCP criticism."
+
+[[entries]]
+url = "https://siddhantkhare.com/writing/ai-fatigue-is-real"
+title = "AI fatigue is real and nobody talks about it"
+summary = "An article reflecting on the cognitive load increase derived of using AI code agents."
+content_type = "text"
+
+[[entries]]
+url = "https://amber-lang.com/"
+title = "amber"
+summary = "A type-safe programming language that compiles to Bash with the aim of easing the creation of shell scripts."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tobilg/polyglot"
+title = "Polyglot"
+summary = "A SQL transpiler across more than 30 dialects. It also offers formatting and validation."
+content_type = "text"
+
+[[entries]]
+url = "https://michal.sapka.pl/weblog/2026/mcp-is-a-terribe-solution-to-a-solved-problem/"
+title = "MCP is a terribe solution to a solved problem"
+summary = "An article on the issues of MCP and an alternative to avoid them."
+content_type = "text"
