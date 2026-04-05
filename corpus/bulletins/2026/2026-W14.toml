@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W14"
+publication_date = "2026-04-05"
+summary = "This week has been about a collection of SVG icons, Postgres concurrency isolation, WebAssembly holdbacks and a tool for managing markdown notes."
+
+[[entries]]
+url = "https://lucide.dev/"
+title = "Lucide"
+summary = "A collection of SVG icons."
+content_type = "text"
+
+[[entries]]
+url = "https://hakibenita.com/postgres-row-lock-with-join"
+title = "Row Locks With Joins Can Produce Surprising Results in PostgreSQL"
+summary = "An article showcasing how the default concurrency isolation in Postgres can produce unintuitive results."
+content_type = "text"
+
+[[entries]]
+url = "https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/"
+title = "Why is WebAssembly a second-class language on the web?"
+summary = "An article arguing that WebAssembly is a second-class language for the Web which creates unnecessary friction for adoption. It poses [WebAssembly Component Model](https://component-model.bytecodealliance.org/) as the solution to the problem."
+content_type = "text"
+
+[[entries]]
+url = "https://helixnotes.com/"
+title = "HelixNotes"
+summary = "A desktop application for taking notes in markdown. Built with Tauri."
+content_type = "text"
