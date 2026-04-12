@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W15"
+publication_date = "2026-04-12"
+summary = "This week has been about a puzzle game, a CSS game, a Tauri-based VS Code-based editor and a guide on split keyboards."
+
+[[entries]]
+url = "https://mehuleo.github.io/encircle/stage.html"
+title = "Encircle"
+summary = "A puzzele game to trap the dot inside the grid."
+content_type = "text"
+
+[[entries]]
+url = "https://www.keithcirkel.co.uk/css-or-bs/"
+title = "CSS or BS"
+summary = "A game to test your knowledge of the more than 600 CSS properties."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Sidenai/sidex"
+title = "SideX"
+summary = "A port of Visual Studio Code that replaces Electron with Tauri."
+content_type = "text"
+
+[[entries]]
+url = "https://www.justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/"
+title = "A Beginner’s Guide to Split Keyboards"
+summary = "An article walking through the world of split keyboards."
+content_type = "text"
