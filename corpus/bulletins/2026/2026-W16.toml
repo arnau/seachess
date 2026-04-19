@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W16"
+publication_date = "2026-04-19"
+summary = "This week has been about an open alternative to Google maps, a one dimension chess variant, a dynamodb emulator test suite and the spec comeback."
+
+[[entries]]
+url = "https://cartes.app/"
+title = "Cartes"
+summary = "A free and open map, a Web alternative to Google and Apple maps built on top of OpenStreetMap."
+content_type = "text"
+
+[[entries]]
+url = "https://rowan441.github.io/1dchess/chess.html"
+title = "1D-Chess"
+summary = "A chess variant with a single dimension."
+content_type = "text"
+
+[[entries]]
+url = "https://martinhicks.dev/articles/dynoxide-conformance-suite"
+title = "Building a DynamoDB conformance suite"
+summary = "An article introducing [dynamodb-conformance](https://github.com/nubo-db/dynamodb-conformance), an independent test suite to assess DynamoDB emulator conformity."
+content_type = "text"
+
+[[entries]]
+url = "https://lewiscampbell.tech/blog/260414.html"
+title = "Saying Goodbye to Agile"
+summary = "An article on the rise of spec driven development."
+content_type = "text"
