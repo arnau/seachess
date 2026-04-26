@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W17"
+publication_date = "2026-04-26"
+summary = "This week has been about a language server for Typst, a Unicode visual explorer, a model for Earth observation and a local DynamoDB emulator backed by SQLite."
+
+[[entries]]
+url = "https://github.com/Myriad-Dreamin/tinymist"
+title = "Tinymist"
+summary = "A language server for [Typst](https://typst.app/)."
+content_type = "text"
+
+[[entries]]
+url = "https://charcuterie.elastiq.ch/"
+title = "Charcuterie"
+summary = "A visual explorer for Unicode. You can browse the character set, discover related glyphs, and learn more about the scripts, symbols, and shapes that make up the standard."
+content_type = "text"
+
+[[entries]]
+url = "https://geotessera.org/"
+title = "TESSERA"
+summary = "A foundation model for Earth observation developed at the University of Cambridge. It compresses a full year of Sentinel-1 and Sentinel-2 satellite observations into dense, 128-dimensional per-pixel embeddings at 10m spatial resolution."
+content_type = "text"
+
+[[entries]]
+url = "https://dynoxide.dev/"
+title = "Dynoxide"
+summary = "A local DynamoDB emulator backed by SQLite written in Rust."
+content_type = "text"
