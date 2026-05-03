@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W18"
+publication_date = "2026-05-03"
+summary = "This week it has been about a tool to analyse disk usage, a tool to manage environment variables, a drop-in replacement for Apache Spark and an article on predictable versus deterministic software."
+
+[[entries]]
+url = "https://github.com/tw93/Mole"
+title = "Mole"
+summary = "A macOS tool to analyse disk usage and help remove caches, logs and other leftovers."
+content_type = "text"
+
+[[entries]]
+url = "https://varlock.dev/"
+title = "varlock"
+summary = "A tool aiming to provide a safer approach to environment variable management. It provides plugins for known keychain systems."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/lakehq/sail"
+title = "Sail"
+summary = "A drop-in Apache Spark replacement written in Rust, unifying batch processing, stream processing, and compute-intensive AI workloads."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.vrypan.net/2026/04/23/llm-assisted-coding-is-not-deterministic-does-it-matter/"
+title = "LLM-assisted coding is not deterministic. It does it matter?"
+summary = "An article reflecting on the difference of perdictable and deterministic software development methods."
+content_type = "text"
