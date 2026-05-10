@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W19"
+publication_date = "2026-05-10"
+summary = "This week has been about a strategy board game, a tool to manage self-contained virtual machines, an AWS-stack emulator and an article assessing whether relational joins are expensive."
+
+[[entries]]
+url = "https://playtiao.com/"
+title = "Tiao"
+summary = "A two-player strategy game reusing the Go board."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/smol-machines/smolvm"
+title = "smolvm"
+summary = "A tool to build and manage self-contained virtual machines able to run in macOS and Linux."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/floci-io/floci"
+title = "Floci"
+summary = "An AWS-stack emulator for working locally."
+content_type = "text"
+
+[[entries]]
+url = "https://www.database-doctor.com/posts/joins-are-not-expensive"
+title = "Joins are NOT Expensive! - Raw Reading"
+summary = "An article comparing performance of joined tables and pre-joined table analytical queries."
+content_type = "text"
