@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W20"
+publication_date = "2026-05-17"
+summary = "This week has been about a classless CSS framework, a federation of Git forges, how prompt injection works and the economic incentives of databases."
+
+[[entries]]
+url = "https://tangled.org/devins.page/dev.css"
+title = "dev.css"
+summary = "A tiny classless CSS framework designed to improve the plain HTML experience. The minified stylesheet weighs only ~4.8kb."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.tangled.org/intro/"
+title = "we need a federation of forges"
+summary = "An article introducing [Tangled](https://tangled.org/), an attempt to solve the centralisation problem arising from GitHub."
+content_type = "text"
+
+[[entries]]
+url = "https://calpaterson.com/disregard.html"
+title = "Disregard that! attacks"
+summary = "An article explaining how “prompt injection” works."
+content_type = "text"
+
+[[entries]]
+url = "https://www.bitsxpages.com/p/the-broken-economics-of-databases"
+title = "the broken economics of databases"
+summary = "An article exploring the reasons that make operating a database expensive."
+content_type = "text"
