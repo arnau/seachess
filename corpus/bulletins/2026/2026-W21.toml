@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W21"
+publication_date = "2026-05-24"
+summary = "This week has been about a man-in-the-middle proxy, a game engine in Rust, a collection of compatible databases and an article on the new DuckDB client-server protocol."
+
+[[entries]]
+url = "https://github.com/emanuele-em/proxelar"
+title = "Proxelar"
+summary = "A man-in-the-middle proxy sitting between your application and the internet, giving you full visibility into every HTTP/HTTPS request with the ability to transform them with Lua."
+content_type = "text"
+
+[[entries]]
+url = "https://fyrox.rs/"
+title = "Fyrox"
+summary = "A game engine written in Rust. It ships with an editor, a plugin system, hot reloading, animation system and more."
+content_type = "text"
+
+[[entries]]
+url = "https://www.opendata.dev/"
+title = "OpenData"
+summary = "A collection of open source databases built on top of [SlateDB](https://www.slatedb.io/) which means every database has a similar operational profile so it is easier to operate."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2026/05/12/quack-remote-protocol"
+title = "Quack: The DuckDB Client-Server Protocol"
+summary = "An article introducing a client-server protocol to let DuckDB connect to remote DuckDB instances."
+content_type = "text"
