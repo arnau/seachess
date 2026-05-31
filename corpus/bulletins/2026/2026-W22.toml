@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W22"
+publication_date = "2026-05-31"
+summary = "This week has been about a tool to display chess positions in the terminal, a visualisation SQL grammar, an article about the internals of Aurora DSQL and an article solving Sudoku through graph theory."
+
+[[entries]]
+url = "https://github.com/ptsouchlos/chess-cat"
+title = "chess-cat"
+summary = "A command-line interface to view FEN-based chess positions."
+content_type = "text"
+
+[[entries]]
+url = "https://ggsql.org/"
+title = "ggsql"
+summary = "A SQL grammar to build visualisations declaratively."
+content_type = "text"
+
+[[entries]]
+url = "https://marc-bowes.com/dsql-adjudicator.html"
+title = "Aurora DSQL: The Adjudicator"
+summary = "An article about an internal component of the Aurora DSQL architecture."
+content_type = "text"
+
+[[entries]]
+url = "https://chalkdustmagazine.com/features/unlocking-sudokus-secrets/"
+title = "Unlocking sudoku’s secrets"
+summary = "An article exploring solving the Sudoku game through graph theory."
+content_type = "text"
