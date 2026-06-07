@@ -1,0 +1,31 @@
+type = "bulletin"
+id = "2026-W23"
+publication_date = "2026-06-07"
+summary = "This week has been about a directory of Europe-based companies, a terminal-based reader for Epub and PDF, a website monitoring AI profitability and a Rust image processing library."
+
+[[entries]]
+url = "https://www.goeuropean.org/"
+title = "Go European"
+summary = "A community-driven directory to help find European-based product and service alternatives."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/bugzmanov/bookokrat"
+title = "Bookokrat"
+summary = "A modal terminal-based reader for Epub and PDF."
+content_type = "text"
+
+[[entries]]
+url = "https://isaiprofitable.com/"
+title = "Is AI profitable yet?"
+summary = """
+A website aiming to monitor the spend on developing the business of AI. Worth reading the full disclaimer at the end of the page. An excerpt:
+
+> The AI economy is circular: Google funds Anthropic, Anthropic runs on Google Cloud, Amazon funds Anthropic, Microsoft co-invests with OpenAI. This means aggregate industry figures double-count some revenue flows."""
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/silvia-odwyer/photon"
+title = "Photon"
+summary = "A high-performance Rust image processing library, which compiles to WebAssembly, allowing for fast image processing both natively and on the web."
+content_type = "text"
