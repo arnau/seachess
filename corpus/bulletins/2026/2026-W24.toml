@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W24"
+publication_date = "2026-06-14"
+summary = "This week has been about how a mechanical pencil works, the implications of UUID primary keys, query hints in Postgres and a game of mini golf."
+
+[[entries]]
+url = "https://mechanical-pencil.com/products/pencil"
+title = "Mechanical pencil"
+summary = "An illustrated analysis of the mechanical pen."
+content_type = "text"
+
+[[entries]]
+url = "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html"
+title = "The perils of UUID primary keys in SQLite"
+summary = "An article diving into the implications of using UUIDv4, UUIDv7 or relying on rowid as clustered indexes in SQLite."
+content_type = "text"
+
+[[entries]]
+url = "https://www.pgedge.com/blog/looking-forward-to-postgres-19-query-hints"
+title = "Looking Forward to Postgres 19: Query Hints"
+summary = "An article on the history that led to introducing query hints in Postgres 19."
+content_type = "text"
+
+[[entries]]
+url = "https://putt.day/"
+title = "putt.day"
+summary = "A game of mini golf."
+content_type = "text"
