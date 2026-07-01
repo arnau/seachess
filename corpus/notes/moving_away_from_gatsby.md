@@ -58,7 +58,7 @@ Although this is quite an appealing idea, I knew it wouldn't tick all the boxes 
 
 The process is as follows:
 
-- [Aquarium] takes the multiformat source and normalises it as a [SQLite] database.
+- **Aquarium** takes the multiformat source and normalises it as a [SQLite] database.
 - Then, it outputs all resources in Zola's [TOML] + [Markdown] with all complementary information needed in the TOML `extra` section.
 - Finally, Zola takes Aquarium's output and outputs HTML and assets with fairly minimal templating logic.
 
@@ -96,8 +96,6 @@ The not-so good:
 Building my own thing will give me headaches down the line but right now it feels good. Having control of my data on my own terms aligns well with my priorities.
 
 
-
-[Aquarium]: /projects/aquarium
 [Cobalt]: https://cobalt-org.github.io/
 [CommonMark]: https://commonmark.org/
 [Gatsby]: https://www.gatsbyjs.com/
