@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W27"
+publication_date = "2026-07-05"
+summary = "This week has been about an alternative to semantic versioning, a Postgres extension for background jobs, an ADBC-driven command-line query tool and an alternative to mermaid.js without the need for a web browser."
+
+[[entries]]
+url = "https://pacever.org/"
+title = "Pace Versioning"
+summary = "A versioning scheme for user-facing applications with a two-model release channels: gated native build through an app store, and over-the-air (OTA) update on top of an already-installed build."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/microsoft/pg_durable"
+title = "pg_durable"
+summary = "A Postgres extension to enable long-running, fault-tolerant SQL functions as background jobs."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/columnar-tech/databow"
+title = "Databow"
+summary = "A command-line tool to query databases via ADBC."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/Latias94/merman"
+title = "merman"
+summary = "A mermaid.js inspired library written in Rust to build diagrams without the need of a web browser."
+content_type = "text"
