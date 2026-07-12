@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W28"
+publication_date = "2026-07-12"
+summary = "This week has been about the Open Knowledge Format, a case for Postgres as a multi-modal solution, a Postgres connection pooler and an icon collection to compensate lack of colour."
+
+[[entries]]
+url = "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/"
+title = "Introducing the Open Knowledge Format"
+summary = "An attempt to formalise the baseline for structuring documents consumable by LLMs by simply borrowing the practice of using markdown with a yaml frontmatter."
+content_type = "text"
+
+[[entries]]
+url = "https://postgresisenough.dev/"
+title = "Postgres Is Enough"
+summary = "A collection of Postgres extensions to centralise storage within a single solution."
+content_type = "text"
+
+[[entries]]
+url = "https://pgdog.dev/blog/why-yet-another-connection-pooler"
+title = "Why we built yet another Postgres connection pooler"
+summary = "An article on the rationale behind PgDog, a Postgres connection pool."
+content_type = "text"
+
+[[entries]]
+url = "https://colorsym.com/"
+title = "colorsym"
+summary = "An icon-set for identifying colours systematically when colour is not available."
+content_type = "text"
