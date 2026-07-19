@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W29"
+publication_date = "2026-07-19"
+summary = "This week has been about a multi-model database browser, an article about the state of EPUB, a tool to query markdown files and a tool to manage tickets from the command line."
+
+[[entries]]
+url = "https://github.com/0xErwin1/dbflux/"
+title = "dbflux"
+summary = "A multi-model database browser written in Rust with GPUI."
+content_type = "text"
+
+[[entries]]
+url = "https://andreklein.net/your-epub-is-fine-kobo-disagrees-blame-adobe/"
+title = "Your EPUB Is Fine. Kobo Disagrees. Blame Adobe"
+summary = "An article on the dreadful state of epub readers based on Adobe solutions."
+content_type = "text"
+
+[[entries]]
+url = "https://mqlang.org/"
+title = "mq"
+summary = "A command-line tool to query markdown files using a syntax similar to jq."
+content_type = "text"
+
+[[entries]]
+url = "https://dev.to/moriturus/pinto-a-git-native-scrum-backlog-and-kanban-board-for-your-terminal-509"
+title = "pinto: A Git-Native Scrum Backlog and Kanban Board for Your Terminal"
+summary = "An article introducing a command-line tool for managing pending work."
+content_type = "text"
