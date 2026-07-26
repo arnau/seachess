@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W30"
+publication_date = "2026-07-26"
+summary = "This week has been about a desktop application for managing bookmarks, an article on MCP alternatives, a database for markdown and a curated collection of free e-books."
+
+[[entries]]
+url = "https://andi1984.github.io/ferrico_dot_app/"
+title = "Ferrico"
+summary = "A desktop application to manage bookmarks locally."
+content_type = "text"
+
+[[entries]]
+url = "https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/"
+title = "What if you don't need MCP at all?"
+summary = "An article arguing skills are enough to drive agents and let you control tokens and behaviour more precisely."
+content_type = "text"
+
+[[entries]]
+url = "https://db.mqlang.org/"
+title = "mq-db"
+summary = "A database specialised for markdown. It parses markdown into a flat block list with an interval index, turning heading hierarchy into O(1) integer comparisons. It can be queried via SQL or mq."
+content_type = "text"
+
+[[entries]]
+url = "https://standardebooks.org/"
+title = "Standard ebooks"
+summary = "A volunteer-driven project that produces new editions of public domain ebooks that are carefully formatted, open source and free of cost."
+content_type = "text"
