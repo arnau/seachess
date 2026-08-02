@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W31"
+publication_date = "2026-08-02"
+summary = "This week has been about a macOS tool to inspect usb-c cable capabilities, a static site generator for Typst, a tale on SQLite short-lived readers and a tool to do code reviews locally."
+
+[[entries]]
+url = "https://github.com/darrylmorley/whatcable"
+title = "WhatCable"
+summary = "A macOS menu bar application that tells you what each USB-C cable plugged into your computer can actually do."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/freecomputinglab/rheo"
+title = "Rheo"
+summary = "A typesetting and static site engine based on Typst. It compiles folders of Typst to PDF, HTML, and EPUB simultaneously."
+content_type = "text"
+
+[[entries]]
+url = "https://hynek.me/til/sqlite-read-only-wal-locked/"
+title = "SQLite WAL Mode Can Lock Short-Lived Readers"
+summary = "An article on the relationship of SQLite WAL mode with reader threads."
+content_type = "text"
+
+[[entries]]
+url = "https://wezfurlong.org/wiff/"
+title = "wiff"
+summary = "A terminal-based code-review tool. It lets you browse and annotate diffs with syntax highlighting, and persists the review as a local session accessible both manually and programmatically."
+content_type = "text"
