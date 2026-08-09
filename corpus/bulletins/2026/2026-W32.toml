@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W32"
+publication_date = "2026-08-09"
+summary = "This week has been about a LaTeX renderer in Rust, a Go-like programming language with terse error handling, a tool to reduce token usage and an article on the rise of cognitive and intent debt."
+
+[[entries]]
+url = "https://github.com/erweixin/RaTeX"
+title = "RaTeX"
+summary = "A KaTeX-compatible math rendering engine in Rust."
+content_type = "text"
+
+[[entries]]
+url = "https://soppolang.dev/"
+title = "Soppo"
+summary = "A programming language expanding Go with enums, pattern matching and terse error handling."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rtk-ai/rtk"
+title = "rtk"
+summary = "A tool for proxying command outputs to feed LLMs contexts with a filtered and compressed version. The author claims a 90% reduction in token usage."
+content_type = "text"
+
+[[entries]]
+url = "https://spawn-queue.acm.org/doi/10.1145/3807966"
+title = "From Technical Debt to Cognitive and Intent Debt"
+summary = "An article arguing two forms of debt are increasingly more present: Cognitive debt, the erosion of shared understanding across a team where no one can confidently explain how a system works or predict the impact of a change and intent debt, the absence of clear goals, constraints, and rationale that explain what the system is for and guide how it should evolve."
+content_type = "text"
