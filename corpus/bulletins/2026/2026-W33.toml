@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W33"
+publication_date = "2026-08-16"
+summary = "This week has been about an article on managing Postgres connections, a tool to transform documents to markdown, an assertion-based tool for JSON and a self-hosted durable objects system."
+
+[[entries]]
+url = "https://brandur.org/fragments/postgres-without-pgbouncer"
+title = "Does anyone run Postgres without PgBouncer?"
+summary = "An article arguing that PgBouncer is at all effects a core missing piece for PostgreSQL."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/firecrawl/anydoc"
+title = "anydoc"
+summary = "A Rust library to transform Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF into GitHub-Flavored Markdown. Includes bindings for Node.js, Python, and the browser (WebAssembly)."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/rh-jfuller/scheck"
+title = "scheck"
+summary = "A tool to validate JSON using assertion-based rules leveraging JSONPath expressions. Think Schematron without XML."
+content_type = "text"
+
+[[entries]]
+url = "https://celld.dev/"
+title = "celld"
+summary = "A self-hosted, distributed Durable Objects compatible implementation. It is a stateful distributed system that runs server-side JavaScript using the same API as Cloudflare Workers and Durable Objects. It organizes applications into cells—small, named servers each with a private SQLite database—that serve HTTP, hold WebSocket connections, set alarms, and make outbound connections, with single-threaded execution ensuring data consistency without locks."
+content_type = "text"
