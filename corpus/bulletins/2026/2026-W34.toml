@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W34"
+publication_date = "2026-08-23"
+summary = "This week has been about an open source e-paper firmware, a local-first portfolio tracker, the new DuckDB SQL parser and a protobuf tutorial."
+
+[[entries]]
+url = "https://freeink.org/"
+title = "FreeInk"
+summary = "An open-source effort building software, firmware and hardware for e-paper readers."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/wealthfolio/wealthfolio"
+title = "Wealthfolio"
+summary = "A local portfolio tracker to manage investments, net worth, spending, and simulations. All data is stored locally."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2026/08/20/duckdb-20-peg-parser"
+title = "DuckDB v2.0: Your Database Deserves a Better Parser"
+summary = "An article diving into the reasons and capabilities of the new DuckDB SQL parser."
+content_type = "text"
+
+[[entries]]
+url = "https://protobuf.com/"
+title = "Protobuf explained"
+summary = "An in-depth tutorial on how protobuf works."
+content_type = "text"
