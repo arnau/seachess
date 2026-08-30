@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W35"
+publication_date = "2026-08-30"
+summary = "This week has been about vintage AI, an s-expression configuration language, an open-source AI assistant optimising memory consumption and a message streaming platform for low-latency and high throughput."
+
+[[entries]]
+url = "https://blog.archive.org/2026/08/16/vintage-artificial-intelligence-before-it-got-awkward/"
+title = "Vintage Artificial Intelligence: Before It Got Awkward"
+summary = "An article presenting a collection showcasing 20th century microcomputers and game consoles providing the experience of autonomous or semi-autonomous virtual entities."
+content_type = "text"
+
+[[entries]]
+url = "https://hugodaniel.com/pages/sjon/"
+title = "SJON"
+summary = "A schema-constrained S-expression data language for domain tools."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/1jehuang/jcode"
+title = "jcode"
+summary = "An open-source AI coding assistant designed to run efficiently in the terminal. It supports a wide range of LLM providers—including Claude, OpenAI, Copilot, Gemini, DeepSeek, Ollama, and many more."
+content_type = "text"
+
+[[entries]]
+url = "https://iggy.apache.org/"
+title = "Iggy"
+summary = "A persistent message streaming platform built in Rust, designed for ultra-low latency and high-throughput workloads. It claims to process millions of messages per second. It supports multiple transport protocols (QUIC, TCP, WebSocket, and HTTP with TLS) and provides features like zero-copy serialization, fine-grained access control, and multi-tenant isolation."
+content_type = "text"
