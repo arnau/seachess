@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W36"
+publication_date = "2026-09-06"
+summary = "This week has been about executable emojis, a simple git server, append-only tables in Postgres and a composable query language for relational data."
+
+[[entries]]
+url = "https://martypc.blogspot.com/2026/08/executable-emoji.html"
+title = "Executable Emoji"
+summary = "An article exploring writing x86 assembly using emojis."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/tobi/walgit"
+title = "walgit"
+summary = "A git server as one binary in front of an object store."
+content_type = "text"
+
+[[entries]]
+url = "https://thoughtbot.com/blog/inserting-state-transitions-in-postgres"
+title = "Inserting State Transitions in Postgres"
+summary = "An article on modelling append-only tables with safe concurrent updates in Postgres."
+content_type = "text"
+
+[[entries]]
+url = "https://prela-lang.org/"
+title = "Prela"
+summary = "An embedded query language focusing on composability and control. Instead of providing a query optimizer, the language allows controling the exact plan."
+content_type = "text"
