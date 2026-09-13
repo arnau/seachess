@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W37"
+publication_date = "2026-09-13"
+summary = "This week has been about OTel progress, a language for transforming JSON, a privacy-oriented browser and a git forge hosted in the EU."
+
+[[entries]]
+url = "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/"
+title = "OTel Isn't Going Well (And I Made A Spreadsheet About It)"
+summary = "An article on the struggles of OpenTelemetry's adoption."
+content_type = "text"
+
+[[entries]]
+url = "https://jftl-lang.dev/"
+title = "jftl"
+summary = "A declarative language for transforming JSON documents. A template is itself valid JSON. Ordinary JSON remains unchanged, while dynamic behavior is introduced through a small set of language constructs such as navigation expressions, logic statements, interpolation, and expression engines."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/zhom/donutbrowser"
+title = "Donut Browser"
+summary = "An open-source Chromium-based browser that provides unlimited fully isolated profiles, each with its own fingerprint, cookies, extensions and DNS-level ad-blocking."
+content_type = "text"
+
+[[entries]]
+url = "https://pushin.eu/"
+title = "Pushin"
+summary = "A git forge hosted in the EU."
+content_type = "text"
