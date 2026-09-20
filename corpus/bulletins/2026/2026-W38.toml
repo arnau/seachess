@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W38"
+publication_date = "2026-09-20"
+summary = "This week has been about a template language for JSON to markdown, a terminal-based Obsidian browser, a Git GUI and a word-finding game."
+
+[[entries]]
+url = "https://knap.md/"
+title = "Knap"
+summary = "A template language for transforming JSON and CSV into Markdown."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/iamrohithrnair/emeraldian"
+title = "Emeraldian"
+summary = "A TUI for navigating Obsidian vaults, with live-preview Markdown, backlinks and a force-directed graph."
+content_type = "text"
+
+[[entries]]
+url = "https://gitcomet.dev/"
+title = "GitComet"
+summary = "A Git GUI for managing repositories locally."
+content_type = "text"
+
+[[entries]]
+url = "https://pzlgames.com/games/zanagrams/"
+title = "Zanagrams"
+summary = "A word-finding puzzle game."
+content_type = "text"
