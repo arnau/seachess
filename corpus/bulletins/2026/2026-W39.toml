@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W39"
+publication_date = "2026-09-27"
+summary = "This week has ben about a self-hosted service for managing pending readings, a full-text search for Postgres, a walkthrough for soliving sudoku in Prolog and an embedding search tool for the terminal."
+
+[[entries]]
+url = "https://wallabag.org/"
+title = "Wallabag"
+summary = "A self-host service for managing your pending readings found on the web."
+content_type = "text"
+
+[[entries]]
+url = "https://planetscale.com/blog/introducing-tin"
+title = "Introducing TIN: full-text search for Postgres"
+summary = "An article introducing a TIN, a full-text search extension for Postgres."
+content_type = "text"
+
+[[entries]]
+url = "https://www.youtube.com/watch?v=5KUdEZTu06o"
+title = "Sudoku in Prolog"
+summary = "A video walkthrough on how to model Sudoku with Prolog."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/BeaconBay/ck"
+title = "ck"
+summary = '""A terminal-based tool for searching text. It uses a hybrid search model combining lexical search (a-la grep) with embedding search.""'
+content_type = "text"
