@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W40"
+publication_date = "2026-10-04"
+summary = "This week has been about an EU software licence, improvements on Typst, a version control system for large assets and an article on alternatives to refer to AI."
+
+[[entries]]
+url = "https://bergie.iki.fi/blog/eupl/"
+title = "I changed my license"
+summary = "An article on the [EUPL-1.2](https://interoperable-europe.ec.europa.eu/collection/eupl) licence, an OSI-approved free software licence published by the European Union."
+content_type = "text"
+
+[[entries]]
+url = "https://lwn.net/Articles/1092993/"
+title = "Typst makes big strides"
+summary = "An overview of the lastest Typst features."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/EpicGames/lore"
+title = "Lore"
+summary = "A version control system optimized for projects that combine code with large binary assets."
+content_type = "text"
+
+[[entries]]
+url = "https://buttondown.com/maiht3k/archive/how-to-talk-about-ai-without-adding-to-the/"
+title = 'How to talk about "AI" without adding to the anthropomorphization'
+summary = "An article exploring alternative ways of talking about artificial intelligence that do not imply intent, emotion or self-awareness."
+content_type = "text"
