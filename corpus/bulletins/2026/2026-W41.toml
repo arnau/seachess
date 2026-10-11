@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W41"
+publication_date = "2026-10-11"
+summary = "This week has been about an OOXML viewer, Jev in DuckDB, Git 3 breaking changes and a tool to explain shell commands."
+
+[[entries]]
+url = "https://ooxml.silurus.dev/"
+title = "Office Open XML Viewer"
+summary = "A browser-based viewer for Office Open XML documents that renders to an HTML Canvas element. The parsers are written in Rust and compiled to WebAssembly; the renderers use the Canvas 2D API."
+content_type = "text"
+
+[[entries]]
+url = "https://duckdb.org/2026/09/29/jev"
+title = "Jev and DuckDB: Plain-English Conditions in SQL"
+summary = "An article on DuckDB extensions integrating with Jev to enhance SQL with plain English conditions that can return booleans, enums or scores."
+content_type = "text"
+
+[[entries]]
+url = "https://blog.gitbutler.com/git-3-sha-256"
+title = "Git 3.0's upcoming SHA-256 default will be a costly mistake"
+summary = "An article arguing on the unnecessary impact sha-256 will bring to Git."
+content_type = "text"
+
+[[entries]]
+url = "https://explainshell.com/"
+title = "Explain shell"
+summary = "A tool to help understand a given command-line by matching each argument to the relevant help text in the manpage."
+content_type = "text"
