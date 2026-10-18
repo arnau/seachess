@@ -1,0 +1,28 @@
+type = "bulletin"
+id = "2026-W42"
+publication_date = "2026-10-18"
+summary = "This week has been about a paper on how agents affect software engineering, the new SurrealMX in-memory storage engine, compiled typescript and a Rust implementation of Nix."
+
+[[entries]]
+url = "https://fion.ac/jellyfish.pdf"
+title = "Artificial Intelligence in the Firm: Bottlenecks in Software Production"
+summary = "A paper on the findings on how AI coding assistants and agents affect software engineering work, firm output, and employment. Data used for the analysis spans between 2021 and 2026. The study finds that while AI tools substantially increase coding productivity—with AI agents but these gains do not translate into proportional increases in firm-level software output or employment reductions."
+content_type = "text"
+
+[[entries]]
+url = "https://surrealdb.com/blog/introducing-surrealmx-surrealdbs-new-in-memory-storage-engine"
+title = "Introducing SurrealMX: SurrealDB’s new in-memory storage engine"
+summary = "An article introducing a new embedded storage engine for [SurrealDB](https://surrealdb.com/) that is in-memory first with optional persistence."
+content_type = "text"
+
+[[entries]]
+url = "https://github.com/vercel-labs/scriptc"
+title = "scriptc"
+summary = "A tool to compile TypeScript and JavaScript to native executables and WebAssembly."
+content_type = "text"
+
+[[entries]]
+url = "https://lix.systems/"
+title = "Lix"
+summary = "A Rust implementation of the Nix package manager, focused on correctness, usability, and growth."
+content_type = "text"
